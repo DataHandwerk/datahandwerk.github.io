@@ -1,0 +1,49 @@
+site:
+  title: DataHandwerk Docs
+  url: https://DataHandwerk.github.io
+  start_page: dhw::index.adoc
+  # start_page: dhw:arc:architecture.adoc
+  keys:
+    google_analytics: 'G-L4RM6Q8D27'
+content:
+  sources:
+  - url: D:\Repos\GitHub\DataHandwerk\DataHandwerk-docs
+    branches: HEAD
+    start_path: docs
+  # the folowing repository is required to include code examples. They must be inside Antora folders
+  # execute the xcopy in this project to update code examples from database project
+  - url: D:\Repos\GitHub\DataHandwerk\local-for-antora
+    branches: HEAD
+    start_path: docs
+  # - url: D:\Repos\GitHub\DataHandwerk\DataHandwerk-toolkit-mssql
+  #   branches: HEAD
+  #   start_path: docs
+  # - url: https://github.com/DataHandwerk/DataHandwerk-docs
+  #   branches: main
+  #   start_path: docs
+  # - url: https://gitlab.com/antora/demo/demo-component-a.git
+  #   branches: master
+  # - url: https://gitlab.com/antora/demo/demo-component-b.git
+  #   branches: [v2.0, v1.0]
+asciidoc:
+  attributes:
+    experimental: ''
+    :plantuml-server-url: http://www.plantuml.com/plantuml
+  extensions:
+  - asciidoctor-kroki
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+  supplemental_files: ./supplemental-ui
+  # - path: ui.yml
+  #   contents: |
+  #     static_files: [ .nojekyll ]
+  # - path: .nojekyll
+output:
+  clean: true
+  dir: ./local
+urls:
+  redirect_facility: static
+runtime:
+  fetch: true

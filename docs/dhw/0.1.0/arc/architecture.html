@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Architecture :: DataHandwerk Docs</title>
+    <link rel="canonical" href="https://DataHandwerk.github.io/dhw/0.1.0/arc/architecture.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4RM6Q8D27"></script>
+    <script>function gtag(){dataLayer.push(arguments)};window.dataLayer=window.dataLayer||[];gtag('js',new Date());gtag('config','G-L4RM6Q8D27')</script>
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://DataHandwerk.github.io">DataHandwerk Docs</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://github.com/DataHandwerk/DataHandwerk-toolkit-mssql" target="_blank">GitHub Project</a>
+            <a class="navbar-item" href="https://github.com/DataHandwerk/DataHandwerk-toolkit-mssql/discussions" target="_blank">Discussions</a>
+            <a class="navbar-item" href="https://dev.azure.com/DataHandwerk/89a7b008-69b9-42e4-b31f-4c2dfb6bd49a/_boards/board/t/f3077374-71b6-4a5b-bfd6-24a792bbc352/Microsoft.RequirementCategory/" target="_blank">Azure Boards</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <form action="https://www.google.com/search" method="get" target="searchresult">
+              <input type="hidden" name="q" value="site:datahandwerk.github.io">
+              <input type="text" name="q" alt="search">
+              <input type="submit" value="Search">
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="dhw" data-version="0.1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">DataHandwerk</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Architecture (one page)</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="architecture.html">Architecture</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Architecture (page per chapter)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture-01.html">01 Introduction and Goals</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture-02.html">02 Architecture Constraints</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture-03.html">03 System Scope and Context</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture-04.html">04 Solution Strategy</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture-05.html">05 Building Block View</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture-06.html">06 Runtime View</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture-about.html">About arc42</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Manual</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/create-update-connect-repo-db.html">Create, update and connect repository database</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">DataHandwerk</span>
+    <span class="version">0.1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">DataHandwerk</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">0.1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">DataHandwerk</a></li>
+    <li>Architecture (one page)</li>
+    <li><a href="architecture.html">Architecture</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/DataHandwerk/DataHandwerk-docs/edit/main/docs/modules/arc/pages/architecture.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Architecture</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/DatenHandwerk-toolkit-mssql.svg" alt="dhw">
+</div>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="section-introduction-and-goals"><a class="anchor" href="#section-introduction-and-goals"></a>1. 01 Introduction and Goals</h2>
+<div class="sectionbody">
+<div class="imageblock right">
+<div class="content">
+<a class="image" href="https://github.com/DataHandwerk/DataHandwerk-toolkit-mssql/discussions"><img src="https://img.shields.io/badge/collaborate-in%20discussions-blue.svg" alt="collaborate in%20discussions blue"></a>
+</div>
+</div>
+<div class="paragraph">
+<p><kbd>DHW</kbd> (<strong>D</strong>ata<strong>H</strong>and<strong>w</strong>erk) is designed to support BI and DWH developers working with the Microsoft BI platform (MS SQL Server).</p>
+</div>
+<div class="paragraph">
+<p>Handwerk statt Massenproduktion. - Craft instead of mass production.<br>
+MSSQL based tools for data craftsmen.  - Individual customization instead of assembly line.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Handwerk = craft<br>
+Handwerker = craftsmen</p>
+</div>
+<div class="paragraph">
+<p>Craft is the term used to describe numerous commercial activities that manufacture products mostly to order or provide services on demand. Craft activities are contrasted with industrial mass production.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The project&#8217;s key stakeholders are DWH developers who see their work as a <strong>craft</strong>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A toolkit is created for these data craftsmen and gradually filled and expanded with tools.</p>
+</li>
+<li>
+<p>The data craftsmen are given the <strong>possibility to work faster and better</strong> with the toolkit and <strong>to automate parts</strong> if (and only if) they wish to do so.</p>
+</li>
+<li>
+<p>Tools and methods can be used individually and independently <strong>optional</strong>. They do not have to be used in a mandatory way.</p>
+</li>
+<li>
+<p>The toolbox should always be <strong>perceived as an enrichment and aid</strong>, gladly as a supportive, never as a constricting corset.<br>
+A developer is not undesirably restricted by the use of tools and methods. He allows himself to be partially and consciously restricted if the advantages subjectively outweigh the disadvantages for him.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_requirements_overview"><a class="anchor" href="#_requirements_overview"></a>1.1. Requirements Overview</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Combination of manual work and the use of tools</p>
+<div class="ulist">
+<ul>
+<li>
+<p>The combination of <em>handwork without tools</em> and the <em>use of tools</em> is easily possible. There must be <strong>no one-way street</strong>.</p>
+</li>
+<li>
+<p>A <strong>developer does not become a slave</strong> to the tools or the methods, but can at any time, like a craftsman, decide for himself to what extent he wants to use which tools to support him, or not.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>mssql and Azure features</p>
+<div class="ulist">
+<ul>
+<li>
+<p>It must <strong>always</strong> be possible for BI developers to use <strong>all</strong> mssql and Azure features. So ultimately also <a href="https://azure.microsoft.com/en-us/services/synapse-analytics/">Azure Synapse Analytics</a>, Data Factory, BLOB Storage and other Azure products.</p>
+</li>
+<li>
+<p>Whenever possible or desired, a developer may prefer to use mssql features to realize goals, rather than proprietary solutions. Tools should simplify their use.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>temporal tables</p>
+</li>
+<li>
+<p>graph databases</p>
+</li>
+<li>
+<p>&#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>a minimally invasive <strong>repository</strong> supplements database metadata</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Functions and methods that are absent or insufficient in a database are supplemented via a repository (per database), which is connected via synonyms to system catalog views of the DWH database.</p>
+</li>
+<li>
+<p>A repository is also a database: the repository database.</p>
+</li>
+<li>
+<p>This repository does not need and should not contain all metadata to fully define a database, but only necessary or useful additions.</p>
+</li>
+<li>
+<p>A repository is externally connected to a DWH database, with <em>minimal invasive interventions</em> in this database.</p>
+</li>
+<li>
+<p>these minimal invasive interventions can be undone</p>
+</li>
+<li>
+<p>for these minimal invasive interventions (according to current conception) <code>extended properties</code> are used, which can be assigned to many database objects and also columns, parameters etc. and also removed again.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>by using unique <code>guid</code> it is possible to copy objects including the additional metadata stored in the <code>extended properties</code> into other databases.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Independence from immediate support</p>
+<div class="ulist">
+<ul>
+<li>
+<p>One should be able to work even if a tool does not work as expected. There shall be no blocking dependency on a tool or a method that requires support fire department interventions, but there shall always be a manual way out.</p>
+</li>
+<li>
+<p>This should especially make community collaboration more attractive: <span class="image"><a class="image" href="https://github.com/DataHandwerk/DataHandwerk-toolkit-mssql/discussions"><img src="https://img.shields.io/badge/collaborate-in%20discussions-blue.svg" alt="collaborate in%20discussions blue"></a></span></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Documentation</p>
+<div class="ulist">
+<ul>
+<li>
+<p>The repository, how it works, and the methods are <strong>clearly and thoroughly documented</strong>. Good documentation</p>
+<div class="ulist">
+<ul>
+<li>
+<p>provides transparency</p>
+</li>
+<li>
+<p>creates understanding</p>
+</li>
+<li>
+<p>facilitates independent work</p>
+</li>
+<li>
+<p>makes it easier to get started</p>
+</li>
+<li>
+<p>reduces dependence on support</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Modular structure and expandability</p>
+<div class="ulist">
+<ul>
+<li>
+<p>The toolbox concept allows the toolbox to be extended with modules (tools) by different users.</p>
+</li>
+<li>
+<p>Examples of possible modules:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Relation Management</p>
+<div class="ulist">
+<ul>
+<li>
+<p>virtual PK and FK</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Persistence and Historization Assistant</p>
+</li>
+<li>
+<p>Documentation Wizard (including creation and inheritance of descriptions and Friendly Name)</p>
+</li>
+<li>
+<p>Data Lineage Visualizer</p>
+</li>
+<li>
+<p>Import Wizard</p>
+</li>
+<li>
+<p>SSIS Generator</p>
+</li>
+<li>
+<p>Data Factory Generator</p>
+</li>
+<li>
+<p>Data Vault Wizard</p>
+</li>
+<li>
+<p>DSGVO Wizard</p>
+</li>
+<li>
+<p>SSAS Tabular Generator</p>
+</li>
+<li>
+<p>Easy Refactoring</p>
+</li>
+<li>
+<p>&#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_quality_goals"><a class="anchor" href="#_quality_goals"></a>1.2. Quality Goals</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Fixing bugs is more important than implementing new features.</p>
+</li>
+<li>
+<p>A feature is only as good as its documentation.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_stakeholders"><a class="anchor" href="#_stakeholders"></a>1.3. Stakeholders</h3>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Stakeholders</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Role/Name</th>
+<th class="tableblock halign-left valign-top">Expectations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dwh developer</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>wants to work faster, more efficiently and more effectively</p>
+</li>
+<li>
+<p>wants to automate boring work optionally</p>
+</li>
+<li>
+<p>wants to decide for himself what he automates and what not</p>
+</li>
+<li>
+<p>does not want to become a slave of the tools</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dwh user</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>wants a well documented DWH</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_alternatives"><a class="anchor" href="#_alternatives"></a>1.4. Alternatives</h3>
+<div class="sect3">
+<h4 id="_repository_based_database_generators"><a class="anchor" href="#_repository_based_database_generators"></a>1.4.1. Repository based database generators</h4>
+<div class="paragraph">
+<p>There are commercial tools that define the structure and function of relational and analytical databases via a repository in order to generate the code of these databases. These tools are <em>one-way</em>: repository &#8658; target database. One can work very successfully with these tools if one accepts the methods and approaches provided. My subjective praise of AnalyticsCreator can be found here (in German): <a href="http://analyticscreator.aisberg.de/2020-04-26-warum-analyticscreator/">Warum ich seit 2017 den AnalyticsCreator verwende</a>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.analyticscreator.com/">AnalyticsCreator</a></p>
+</li>
+<li>
+<p>Deltamaster Modeler (Additional program for the <a href="https://www.bissantz.de/software/?lang=en">Delta Master</a>)</p>
+</li>
+<li>
+<p><a href="https://www.wherescape.com/">Wherescape</a></p>
+</li>
+</ul>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="section-architecture-constraints"><a class="anchor" href="#section-architecture-constraints"></a>2. 02 Architecture Constraints</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The project is based on Microsoft SQL Server (mssql):<br>
+SQL Server 2019 or above</p>
+</li>
+<li>
+<p>It must <strong>always</strong> be possible for BI developers to use <strong>all</strong> mssql and Azure features in DWH databases.</p>
+</li>
+<li>
+<p>a minimally invasive <strong>repository database</strong> <em>supplements</em> DWH database metadata</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A repository database is externally connected to a DWH database via <strong>synonyms to system catalog views</strong> of the DWH database.</p>
+</li>
+<li>
+<p>Changes can be made both in repository and in DWH database. <strong>Synchronization</strong> is required for this.</p>
+</li>
+<li>
+<p>for additional <em>minimal invasive interventions</em> <code>extended properties</code> are used, which can be assigned to many database objects and also columns, parameters etc.</p>
+</li>
+<li>
+<p>The <strong>synchronization concept</strong> takes into account that renaming and refactoring can be performed in the repository as well as in the DWH database.</p>
+</li>
+<li>
+<p>The DWH database works without the repository and all traces of a repository can be removed (extended properties can be dropped).</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="section-system-scope-and-context"><a class="anchor" href="#section-system-scope-and-context"></a>3. 03 System Scope and Context</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_system_landscape"><a class="anchor" href="#_system_landscape"></a>3.1. System Landscape</h3>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNq1VU1v2kAQvftXjJxLKkXUNghoRJACqOLQSpGg5RByWPAAW8yutbsOSar-984uCyV8qGlU2xIS8_HezNvxrOEmQxg8a4Mr-MJEqqcsR5hJBd1CG7lCFQR6yUXOFFvBzwBAL1gq11zMYcYyjWRhSsn1ZynMgL8gxBGZUpyxIjNDfDK3GZ-LFQoDU_ohPIC1YvmIp2YBSWSjV-zpK2rN5ugRouBXsOApAtWlUJrnHAMjczASJtJQWZByhVPDpdirzlqYmGfYasXttiu2w6bLuZKFSLsyo6YuUveQx9brbZF7bLRUKSpv_XRrXyrkJEFSK52hbIJq2QTlSDSTGflJn3rpJ9AonaFZqkTV__kZ7MqG8Oam1x9BDx8xkzmqsWhp-m6v46h9f4dKS_HQ-mgt7bEYi10YyBn0mGF9WjNrVEsYSpktuQnBS800JI0Dnv14j2R3yT7lQM7MmqntGttyO9imh20GG02OMOf8LVi2j66kfXTYAhfwnTqmPQRdUlLJzNI63Ym2Ggc5KU97DcLtOg3dgbxuctR_l5ia8ICSLaVnjI-wMc_ks1u_Q2Sr8-hOLq_WIcidkj_oP3QsG3zTf6uy0P60Kfpyl_zBSeOVOaVB5x0nXNvg1U7jEXdauGvirQPj8RILuDcyDu3fZ-WPcMeDApeEdwW6mDxuHFdQqVScSG612Srq9N0lDajcXzQi-z5U2jTLcA0hSazdNW1QG3sZ00TSrbuTLzzKq8bbvDCIX7tq1uOTT7iT-tnMDahhS6pm6ppWMCl4llJocoDiWew8UjQJke9OB7ST8Dinfh6-egp-U-RvsPDMOw==" alt="structurizr-SystemLandscape">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_datahandwerk_development_context"><a class="anchor" href="#_datahandwerk_development_context"></a>3.2. DataHandwerk Development Context</h3>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNqtUsFuwjAMvfcrLDiPlV7KUKnEQBOXSZNA4gAcMuKWqGlcJWaFTfv3pVVBbNpui6Ucnp33XmyzYo0wFywWwsgabQFzfENNVYmG4Q6WZ8dYwowM44mDwBXKVMKKEj4CAHcQkmplcsiEdugRYS3VT756qd4RhqGHJGbiqHnl30-1yk3LvPcXWp-trajWSvIBorCpLsXpGZ0TOXYMYfAZHJRE8EYsEp8rDJgqYIJXYqYSpLK4Z0Xmxl2DCJNrTJIoTtPW7aPYF7mlo5Ez0mShL9vjM43hDgvb01STlWg79GHahHfyu8LoHxWuvNCbTOaL9WUgaLcmcb4n42GYbl7QOjK75L5B0q3ZmmsZUPZ9oisiXSjuQdcL4SCKf-j8sQG3kkvKuBYWu524aLe0o452FEQxDDb9OGxiN0g9BGPoHR06yPw_GR03--K1_GJcdXrBF2I315I=" alt="structurizr-DataHandwerkDevelopment-SystemContext">
+</div>
+</div>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNq1UsFq3DAQvesrBufc1N4clgbHkOwS9lIobOgesjkoq7FXWNYYaVwnLf33jlwTNiGn0Eqgw5uR3punx5Ydwlqz3mhvRgwtNJbhE2yfI2MHK_KMT6xUbK3vddAd_FIA8agNjdY3UGsXURAdAo230r21PxGKXCCDtR4c38n9a2cb36FnOMiBQapj0P3OGj7CIk_dnX76ijHqBucXcvVbHa1BECEBiZ97VEw9MMEjMVMHxgY8sCV_oi4h2jcOy7KoqknsjT60TaDBmxU5CnBmpiWVpHfG8mmlbgoGw4x-uU5bhLxLsFj-F4aanNTL8uJfDvAiG7Krq_VmB2v8gY56DHtfRnH8ssir-28YIvmH8nNCqr3f-5c2oPp1Tu6IXGs5g9kIHWGxVH_FTyRvQnXKs6WaRx1wjtkp4Yrky99yWQ_fRZp89ZTIQC7RTgYJ7UWherFIogPZaogSDQzZ5NzrqXebD00d5T2Qy4lyZizE0cUSzu_PlnnaD-eVqIBLyIaIMVPFeyXWLUY4TPMFeBysM9L6B2MWI-g=" alt="structurizr-DataHandwerkgit-SystemContext">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_customer_context"><a class="anchor" href="#_customer_context"></a>3.3. Customer Context</h3>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNqtkk1rwzAMhu_5FSI9r0tGYKykgX4wdhkMOuih3cGrldTUsYLsLu3G_vvsNCsd9DgbfHglP3pl2SmnEebLJ5jCHD9QU1OjcXADi6N1WMOMjMODiyK7U6YRLGr4igDsVkhqlamgFNqiVwQztY8-e6E-EdLESxJLsdfu1d-faFWZjrzxB7KPtiyapZJuC3dJyK7F4RmtFRX2hCT6jrZKIngjjOSODUaOGnAE7-Qc1SAV48YpMhfugiJMpTHP06LozE7FZlcx7Y2ckSaGgeyWjwS_vZZ0K2QTS-RefZiE7Y1cLZD9Y4HGM3zvEM_21veGHHfoczWIx-Mwp35KyGuTW_9QozQpVi_IlsxbfhuUYm3W5pwGVIL1vDDkGE6PIiyk19h__sAlf0GlawVj_yt-CwVeduJlvoUUhqvBfRL227CADEYQy96HjaMfH0DJpQ==" alt="structurizr-DWHBDevelopment-SystemContext">
+</div>
+</div>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNq1kkFv2zAMhe_-FYR72YDOs33IsCI10KYYdhlQIMV6aHpQItrRIosGJTfNhv33UYpXBFh32yTAh0fq0zP1ggkW4eb-M1xDZwK8g-XBB-xhQS7gc8gyvzNuUKx6-JEB-K3StDeug1ZZj6IoZtp_ku6l-Y5QlSJpbNVow52cv7Kmcz26ABv5IEt1z2q4NzpsoS5jd6-ev6D3qsOJUGY_s63RCGKEkcJhwCzQAIFgTSFQD9owboIhd-IuKsp1FufzqmmS2Wu12XVMo9MLssRwptOSSvQ7aWVasZtYI0_qx6u4xcirF9T_5YKWrNSFPvuH-EEYMlrIF6OX0SHnCf3yM5BfXsbnv8EntDQgr9zcyztcVGXzcIvsyT3O30elWbmVe2kDasELL2Ynh-PMlYfqDzYOlg4pAXeo-r_TI6Q-QmqBHIfx210K5-nZJbVhrxinuJ5aXJBER9zdMn0TJ3LWOPgqd0leUqyZLLwR3jn4cf10LJxDURRvk4fZZGIm06ugeDj7UMb9WDSiwQXko0efZ_VrpaB26GGTHDCsR2O1tP4CJ2AVnA==" alt="structurizr-DWHBgit-SystemContext">
+</div>
+</div>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNq1U01PAjEQve-vmKwXPYjLR2IksIlAjBcTEjAewEOlw1LZ7WzabgCN_91p3aAi3rRNmvR15r3X6dQplyOMHm5hAGNDslo4RRrOYbKzDgsYkna4dVFk10qXwogCXiMAuxKSNkpnsBS5RUaEMbS54eiJekFoJgxJXIoqd1POv85VpgvUDha8oOHTjRHlg5JuBa3ERxdie4fWigxrhiR6i1ZKIrARg-R2JUaOSnAET-QcFSCVweD3izuPCJ3l2Ou1Omka3A7EYp0ZqrQcUk4GTmQYfOIN11gSho8mI9HU6NW1n-zkuMJ_C7T_UKBkDq4uxMPKcvXQxIF6rwZxvz_CMqddeKgpimKue5Yfo9tM0tkYjSX92LvwSBrDx-2FhdYhCffRM--5o3xf3Vs0v_PM9VxXHAG0DNGn--QzL9H-kGj_8HnQsF8FJrR0G2GwbuFvjju15Q7XowWN2cll4udjI2UMuhDLUAC0wJ-g_PwPNlDFUftYDvu3cfQOPcANqA==" alt="structurizr-DWHBProduction-SystemContext">
+</div>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="section-solution-strategy"><a class="anchor" href="#section-solution-strategy"></a>4. 04 Solution Strategy</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>The toolkit should fit into the usual working environment of a DWH developer. Therefore, the toolkit is based on repositories in the form of <strong>SQL Server databases</strong>. A developer can work with these databases the same way he works with other databases: with SSMS, Azure Data Studio = ADS, Visual Studio database projects and other tools.</p>
+</li>
+<li>
+<p>There is <strong>one (1) repository per target DWH</strong>.</p>
+</li>
+<li>
+<p>Repository database and DWH database are <strong>separate databases</strong> so that a DWH database is not unnecessarily filled up with ballast. This is especially important when the structure of the database is transferred to a production system.</p>
+</li>
+<li>
+<p>all repository databases have the <strong>same structure</strong>, they differ per DWH database only in content. This simplifies maintenance and upgrades.</p>
+</li>
+<li>
+<p>Repository databases are connected via <strong>synonyms</strong> on system views and procedures of the DWH database. These system views always have the same structure (within a SQL Server version). Synomyms can be easily deleted by script and created with reference to another database.</p>
+</li>
+<li>
+<p>The current development is based on <strong>SQL Server version 2019</strong>. One reason is the improved support of <strong>graph databases</strong>. According to the current concept, the dependencies of objects should also be stored in graph databases.</p>
+</li>
+<li>
+<p>It seems reasonable to add missing functionality of standard SQL Server tools (SSMS, ADS, VS) via one or more different <strong>additional GUI</strong>.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>better input of multi-line strings</p>
+</li>
+<li>
+<p>linking of tables during data entry (filters and lookup tables)</p>
+</li>
+<li>
+<p>graphical interactive display of references (dependencies)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="section-building-block-view"><a class="anchor" href="#section-building-block-view"></a>5. 05 Building Block View</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_whitebox_overall_system"><a class="anchor" href="#_whitebox_overall_system"></a>5.1. Whitebox Overall System</h3>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNqtUcFOAkEMve9XNHjRg3GBE2TZBCGGi4kREw7IoTBlGdmdbmaKCxr_3e5mNcboxdhJ5vDavr72iZWcYIqCM3SmIr-HKT1TzmVBTuASJuwErSMfoijsrSvRYwGvEUDYoeHKugy2mAdSBL3n6kYb5vaFoBsrZGiLh1we6Cjj3GauYd3oR16zlcdyYY3soBfX1QUebykEzKhliKO3aGcNQdAGYjmVFAmXIAxrFuECjPW0Ecvuizqj66wxUJL0BmnaiL3GzT7zfHBmwjl7ODNNaKbW22JxE3U1e0O-RQfj-qmQnwb0438cUCqH7g6d3_x4dMs5b6VCTzA_6U2KVaeZ_iEIOqPRdDEDs4bzO89PehoYXzy6JOg9h904XX76OWxcr5tWyVWdTjvQ7oMB-vE31nsqOVhhf_o7eeOGkvcGuuw7yxTQzw==" alt="structurizr-DataHandwerkDevelopment-Container">
+</div>
+</div>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNq1U01v00AQvftXjNwLHCh2JCsiSi01jSg9IBCh9JDksPFOnCX2zmp2gxsQ_51Z160olAsCr-TDvJ333nxsMKFBmN-8gRnM8Qs25Fq0AV7ABdmgjEX2SeL3xjrFqoVvCYDfKU2dsTVsVeNRIoqZuteSsDBfEfJMQhq36tCEj3gbzhtT2561kh-yoB0rd2N02MEoi7dbdfsWvVc1DgxZ8j3ZGY3gJQEpHB0mgRwEgg2FQC1ow1gFQ_Ynd1oFtVEep9OiLHuvM1Xta6aD1RfUEMOJ7j9Bot0hlvVfvE2skYfoq_N4xMdT_Pn4vwjEkpStG1EY5f9QwQmHNBfS3ya9sssFbUOnGGFxlG6367SXva8V0rOzmKU3jxbk2Xumz-IWZs9XduplapM8K5cPWzOB-UCwnr6McJnC0DblIR-LwkOxUeLy-uoPPILcU6zsyl7K6uxMpRq49shwFTdqqyqM9H3PhH6U_1LAB3TkTSA-xjr-zntxx11IO_MxnC5Pxlk869MSCphAGjXebXreipjRO7IaOiNLLo8ArUYNjskhB4M-TUb5EyQHH6HiMSJyAi2Oluyx9dAYu48PIU7lbmTwyWAneT8AqCk4Vw==" alt="structurizr-DWHBDevelopment-Container">
+</div>
+</div>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNq1UsFO4zAQvfsrRuECB9jQqkJUJRJQIS5ISGXFoe1hWk9TL4knsl2Vstp_37EJJaDdG9hSpDzPzHsz84IJFcH48Rau4N6x3iyDYQvHcM02oLHkvFL-ydgGHdbwWwH4NWreGlvCCitPgqBzvL2RhIl5ITjNBdK0wk0VHug5XFamtDXZAEv5kJPXrcPm0eiwhl4eo2t8viPvsaS2Qq7-qLXRBF4SiMOuIRW4gcCw4BC4Bm0cJa0ddRFBW1Y0GvWKIom9wuVT6Xhj9TVX7OBApyMvUW-L5enEaHaaXIueX8YrQt4JNAZcoI_1B99C0Omg_4UE-7KQXVyMqal4lxbyQFjP7MjL0IeneTG9l3WznY9-RKTI4HWO6KH3sYQ45Zf8i2eic356cv-vMrMzu5EI4FWKPtwnH0WC_itBXzXSpxgAss9mnNnphFdhi45gshND1PMsTeZtG6kpSdKLroU7PF1xe18PYdzmf-h30DY8kLH14GR6cJbHOz8pBIMhZDqNjzwIR_NO55OyTPX_lSP9-0z9BdVEGbU=" alt="structurizr-DWHBProduction-Container">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_level_2"><a class="anchor" href="#_level_2"></a>5.2. Level 2</h3>
+<div class="sect3">
+<h4 id="_dwh_db_development_project_b"><a class="anchor" href="#_dwh_db_development_project_b"></a>5.2.1. DWH db Development (Project B)</h4>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNq1k01v00AQhu_-FSP3AgeKHSkiidJITQLiAOIjiB7aHjbeibPE3lnNbr5A_HdmjVsSUgEH6pUs-d2ddx7PzAYTKoTp1WsYwxQ3WJGr0QZ41mh6fiQ-ec_0BYsA46dyYEK1Iyu6TxK_MtYpVjV8SwD8UmnaGlvCQlUeRVHMtH1FNszMV4Q8E0njQq2r8Al34bIypW0yFPJClt0tK3dldFhCJ4una7V7i96rEluHLPmeLI1G8BKAFPYOk0AOAsGcQqAatGFhNWQP6LQKaq48Dofd0ahhHatiVTKtrZ5QRQxnunlkJ-K2WtY88TSxRm7V_mVcwvHLP2ZUtqwkQd579Az9x87Qyf5jhrvaQ3px8REdeROI93HGDubqxg69NHiQZ6PriVgrY5EHMG1jb4fP4_YohZ8dVB66iRM4GQxI_zyyN_ZBx7T5wfufjnQvdwGtRg0S7JCDQX_M1Q7-IU3TDMHJ-7-7zT68gRnyBhloHln-btbUXcw62YnZXua9ho3BrQdlNTimAvWa_wWx1yL2pBt5H86vz15kcd2ej6ALA0hjW941jFAQi6eYaNgauYZ4VxN3X5P0xKSTRRe0bIolhKWANrFKaxMvoqrA2AVxreJXmnSPo8VNok_lXpRne0t2X3uojF3FWx6b3Vbjc6yG0PQeotHoCzZzTJMfOyCSAQ==" alt="structurizr-DWHBDevelopment-DWHdbDevelopmentProjectB-Component">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_repository_db_development_project_b"><a class="anchor" href="#_repository_db_development_project_b"></a>5.2.2. Repository db Development (Project B)</h4>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNq1V11PKzcQfc-vGHFfQAppNkD4EBeJD12KUNvoUsrD5T44u07ismtvbS8hrfrfe8behCQEhSs1RCLseHbmzMyZGeOVzyVdPfxMF3Qln2VuykJqT7v0VZbGKW_shLI-bfes-VOmni52cHZpitJo6LlGwz0pXQorCvqnQeRGIjNjpYc0ELmTkAhrzfiL0f5O_S0paUOUyYGocv-7fPHnuRrq4DHFL2lxOraifFCZH1GnzdqFePlFOieGsrbQbvzbGKlMksML0vhJKRvelOQN9Y33pqBMWWBVRs-hY4nQw1yenibJ2VlAeyHSp6E1lc4uTW4sfcrCD04YcC1rhx_WNjaTtpYen_MHSFZ76Gzcw97GPexv3MPBxj10N-IhE170hWMHh5sOobtpBxuP4GjTDo43TqP2pj10_s-RNKUnbX3-zKMd83t-ts_N8kd96jBUTxDgt0vYF0pLe0JXtYHvpz_x8dkW1UwXjpLDxgw3O7i-v3nHCk6mBh71o77GXB-pVOR076SlGx73A5FKNh7Ch_FO0iiRAMx62np3AT3qlVi3Qv4WsEFtoIaVFbwLFlHWC2weILR1XBs0Vlg_IXXTVAqd0bOwylSOnPQeK87RAGn3I0l9ORLPCg9mEJ5La1KsLOlI6SCws1haHG6dysNlvDd6JK3CcyrXop3TJXjOJNJZKB1CZRxYrlJnMmMwpbReyYiX0_pbn1PpaOGRUpNXhXZN4oAzghkrB9iw8OACA-oiJcky7p60TmEbM5ZribIIhLo2gj-UHAcMSHEOdKnQyCSVtbEsJC8cNWNBoMrfpvI0ggYzI8i9hHULYkXtFu4nuB1wsLCFr4LvI6Eu0XTIEWoDl1YKeApFCRuVw9tbDu_rNA1rQ7paqAJzphAabA59h6K8JpS2M1lygXSKyuwgcD-WUq8vT4DarqG230Kd6q-nO545aSly4W0FD7hAgahWuoC2BrE9LcEzl6sZuZ1VlkWDSod-wZ8Kobw0qdVq7YS4kW5lyVX9Siu2MiNXUHzl2swchZnI-XPRTLO2McdfNmxlHus3UqWbpQ2qRajiUczM0XJi7v7Ke8Ji8KzNS1ALdEmZRqhaiJyzg56yYlaK3ZyH6nxNeQLgRUu5GaqUBhZ3UUbGwI4jsOM3wCba6Enh1uKaKuJGLaniDgWiNM6spSHzOrZif4RYLEoGqxk3w_xoY3DdCK67DO7-rvcDDV25kraBDDtpgOGcEfdonEA1ZXamTT6MRmOTC-7VQuSwk9FYTE44LJ7vDNWUXG3wFDkdsoBJ4EyB2Ix9GuRmTDIPDQaWgW8LBE053pqh4BeUdtORyrNYoJ3QS526lzrLwfN8-oHofzWeJtKTKsqIR2bB_n5tf_-tfVdx0B_bTuhL7pAwWHi0LbzNLOV6Uo688_bcfmUlGglTLo8bTFmPt6h326Qvt7u924Cwrn7ypvwPdYbXgjufK8aLTCuPZnitQ6yxK2WqBmgLBgLS8v90oGq4wcQBfFDjOMAdJjmk1rdPh23-fG-d0RGdxCvBbBpO-Rw5vmLdbTU6yaKRpMtWwFCcJctnbT57Kz-qxXvvqO99TL1Ty9ur1ZfEx1F8tGTkcKW4G6XHK6XdVSZmowR0eeIxwvPgboKlW1DYykDUWQ10_0PiGn_SfSdpB6vl_wEXnVtK" alt="structurizr-DWHBDevelopment-RepositorydbProjectB-Component">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_gui_project_b"><a class="anchor" href="#_gui_project_b"></a>5.2.3. GUI (Project B)</h4>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNq1Uk1vEzEQve-vGG0vrZSW7VYRIkoXNYkKKKoUBUIPTQ6TeLIxdTwr22naIv47Y7NFAXHgAB7Jkt98vDeeCToYgtHtexjAiB7IcLMlG-AU3s0-yD3kbcNWEJ9l_l7bBh1u4WsG4DeoeK9tDWs0ngRB53h_zTZ81M8E54VAita4M-ETPYYro2ubaq_kIifevcPmVquwgbKI0Vt8vCHvsaa2QpF9yzZaEXhJIA5PDWWBGwgMSw6Bt6C0o1XQbA_URQRtbajfL8uqSmoHuLqvHe-sGrJhB0cqHfFEwS1WpBOj2SlyLfrmKpoo-TPDxX9hUBhwiV4Iuv-w_ktVyC8vp9Sw14HdE6glHE8cf5GuYHAyt30v3987L6q7oZRGbcn1YNTmLvqvorvK4Yc29NDNGhEnY4NctmZuD9MEWOSpgZ-fFtmH09kIUvAhWbtrPXj7wjK3c5tiZRUdYaAOTAlVB2aNSq8RGQoUxaRJiJry4neyz9rv0OhnjIvyt6y_JvE6jQSMdBUbPXa0lpW0K_InHWFDA2gVPGgXJAsm4w5cj08n4ySsbIWVMoKyhLO7o9dFtMVZBV3oQb7z5PPsO8chJAw=" alt="structurizr-DWHBDevelopment-GUI-Component">
+</div>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="section-runtime-view"><a class="anchor" href="#section-runtime-view"></a>6. 06 Runtime View</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_repo_usp_main"><a class="anchor" href="#_repo_usp_main"></a>6.1. [repo].[usp_main]</h3>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNqNkstqwzAQRff6Cu0DxQ1p6DKQPuJVQ-yuQjCqNHVUnJHRSNCS9t8rP-I4Nn1gkEE6c3XvaBbkhHUkCseO7JiytTUSlLfA-Sfnd94Kpw1yAskmfGuhNLurracyOwiNuxqaT9nk8ow-UGa516oBrqMA_EBkm7D59PIG0rVwxQY4t6Lct_T6fpPESTpio1_YLkiMISJK6JX8aWVpCn9o4938y1C_Ihr2w5dKOAj0K1hAqTHPlsZjm2I-xDUqeA_rHqzuWb8dWT_ZiKuCxkF3Caj-dStBD74oGoZi7J-ljfx0JF_LZgk4FzA6P88FNGzBOexgXza_biiGQo-AEKbN2Oe6BQTWnbRKsKTJQdeKGfsK3wJQVZP7DREI88Q=" alt="dhw-tree-ExecutionLog-usp_main">
+</div>
+</div>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNq9V8tuwjAQvPcrIu70C6peUB85FRF6QihynS24Ck7kR9X-fVMSaHC88SZEvYBkz87sY7yCaH4fzTYKymJ7u7G6TA9MyO3shnEjPpkB76XnLHJ59Lfk6c6KDCVrI7ALnDZdVYcvbx_ATVjhEkzA1Lo7xcp9g1s-rJI4WaOyQSxF9W5OYcpgal202qUqOGRWQSy1YZJDuGhfyFW1-wiDLaBncZIO--ZCdKzNiJ5eFLk9yEHOPoeQkRSX-xIhRtDzIPj-zDrA_YFMiJP3K48aRrMrUVWKCHH_2jKrOKqM3kGB5ELu0kVhJb4sewIoNfSEYyUNVHQrFDKDr-pzD0p4dlMAGQJ05E72in-x9XjPqUPWLuKZ6Ueb5zVGx7J9t0aTnI4_WJo7u-mksVH_Y3Hu3I6SaQLGVBQabX8HNriLHQasGf1SyPvyeRgTCPodeVHu-vp7oc45r796ftyNoqL0YRQx1qjJsnQ7-QQSFDOFej2OQ4MyJ-4SlBbaQN_CIodTOkYmw7pEJuhIN_8XMOL6-gdcc5ji" alt="dhw-sequence-usp_main">
+</div>
+</div>
+<div class="sect3">
+<h4 id="_repo_usp_sync_guid_repoobject"><a class="anchor" href="#_repo_usp_sync_guid_repoobject"></a>6.1.1. [repo].[usp_sync_guid_RepoObject]</h4>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNqtVsFu2kAQvfsrRpwJSqiaA5EjVYpVIbUFAT1FlrWxp2YbvLZ21w301K_ph_VLOhhsr7EXnCgXJHbfvDfzZmdk9cxFxiRLIGHbBJViMSr-G2E8vnYc14VHiVnqjx5zlQVqJ8IgznkULOhw9vQTQ-3DFSjNpAbXdZxBASegopDlTh0xA7i6n8Gg5DKiBzCBpbcChb9Qsg3UV0EVHoxGI0eKVCNIHq_15OOHtwvV4ECwBH2oSzTQ5p-iYr-RwPU5fau8IX3Kvg9rSd6BShOEfZpD0LuMfv_9-fsOiUy_Lb0Fea75ZgMJV4qLGA73DfbxjdNNcdFkoxQVrjFhtdm1CY2bYSOoA10c9Uyvqr3Dlwm8SE4cJ24DFzoF3GoUEUaQyTRDqTkqSH9AFd_Qf6M5XBlPu3TfhZvOxrbJt1byB--Lt_LuaJLlM5VQUldiQ3jKNZDIPoXCnYQJmvcIrPKvHLDv84dPKw9SvUZpWDiEFzrAftLjrsoDYlJcUXNC7Pv-Ao1JltJSCfaz4_e01yCeyzTEKJc4FbThDsoT-OotPns0QqsZ2IENsdvDIo0ly9bHTTr3FsvpcnVmj5ZocyFW_W9fFqlFuEFSNbwCYoxRV2-BC9opuQyx5YZVb2bXy7OIEUm4ZoJa2Z_SzsiFoidTpns67T1tpAkuTLTC2_2ymN8CdvSg-5W8Ryts6rOL6j0bYxO4yH-mTbevtL3RrB7fGkf8f0pKBHc=" alt="dhw-sequence-usp_sync_guid_RepoObject">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_repo_usp_sync_guid_repoobjectcolumn"><a class="anchor" href="#_repo_usp_sync_guid_repoobjectcolumn"></a>6.1.2. [repo].[usp_sync_guid_RepoObjectColumn]</h4>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNq1Vt9v2jAQfuevOPEEEq0AdZvERKVqjdRKCCqg20OFIpMY4i2xI9uh7f76nZOQJiQhy9o9gez78d13d5-jfjEeEkkCCMhLQJUie6rYbwrj8bDTmU7hSdJQbC6fIhXa6pU79j5irr3Ew8X2J3X0N-FHAd_ABShNpIbptNPpxk5ortBx9apSmy5cXC-ge4xYitGFCTw-3N6sLTj6X2bepZT2gZHyoUHXkVxoCpLtPT0ZfRp2zqVshrSy1mCqKOThJKAbQHoqEWygpwWQg2AuOILvfOZoYBy0R4HTFw3385W1XCNlNOwX4A7PkdcA9A2kXYMKQ9QCrrtgCmEKSV1TAGKn3MX_oRQhlZpR1QL_S0MBt9bMSpt_eWowgB931tKC3lI8z6NgS-XiQOUc2wDXMOp_BRyHbFgbpiZu3ofRnvWS-T4ETCnG95DcFyfx6uojJrFUUTaK1TOa0uYRZbtst6OScm3KjK8V-o36cDO_hd79av44m_WYsmMmAsJRC9wBDPtoNOzX1PJPWy5wEWRuhgbwjAe0HYbxexBgYsVw_bhDJxCFLsGwlcwC4W48kUC0lmwbaSRtJ0UAmDZ_Jnb5oLYSkcSfZoF6rzwVKnmSwrFDNP1bKPHgGCdVEf8oDQHRjmemevuKcmZuIKYmv3JvvnYu96bfqtY2pRLXzbYtd5ECVChVeGIuUbYSBpqhFKC3BcS4wmnOMN3hxXfiMzexV_-v6bEstGm42THsago0sU55O1mx4ZfP55FmFFVs4QSeJavaK4MD6cInsuI9MYt0omQDmNED9ccFbO_Z_pgxFJlTxUwpMRyNzr0PlT1ret0SiavPapIOAMUEMLGZWhEbKXRkjgckcc7r4gnE-HNtL0nopd9rD9Zydb9aN36tHX1KjVplhdWZxJW51KeII7-FGH1P35ahfgcbci-acqfa7XiElxlpDN8UvbjTpSewFeM46DHf7b6qE68_miojRQ==" alt="dhw-sequence-usp_sync_guid_RepoObjectColumn">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_repo_usp_update_referencing_count"><a class="anchor" href="#_repo_usp_update_referencing_count"></a>6.1.3. [repo].[usp_update_Referencing_Count]</h4>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNqdkE0LwjAMhu_9FWH3iQ5BGNTL8DyY3sYodYuzaj_oB6i_3joQhyiit5DkSR5edxTKcMslSH6W6Bzv0YkrQpZNCaEUaotGN5M6OMOC6bhHVuEOLapWqJ4VOijfQArOc-uBUkKSAWHu4iJWxbLcHrD1I6pJIF2WkDxuP5fiJIf1agOj3rt_dy9t24F9HRKrtEewot_7PFt888Hus06hT0GqsdT_JrP57KdAUXUxzhtRv5My" alt="dhw-sequence-usp_update_Referencing_Count">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_repo_usp_index_inheritance"><a class="anchor" href="#_repo_usp_index_inheritance"></a>6.1.4. [repo].[usp_index_inheritance]</h4>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNq1VttO20AQfc9XjHgKEokAIaEihaoqbolAYMVBfYgia2MP9jb2rrsXIP36rm-J7bhOCumLZXlnZ86cOTNjuaQsIYLEEJO3GKUkAUr6G-H8_LQ3GsFMYMLnw5mWiUuZj2_mGaKgijAP5zAAqYhQMBr1ek1z25o4Y2fqjtNrX3mkY-ZO8BkFmqt--UZZ4N4S-U1HUW4jx6x6Nq0H-Ty4foOjMsxHXR_BFSihmUcUQoJCUqlSF2DiBah6gnFzIGgQqqvT3mHCmqCD68OmQJlEww-Johris4vL_1kUZH5Wknoq7-OjWVP3hQqlSZSld2PdW1ML-mLtGjIpApUQUymNk-Na4ucHwdQFafzgWJMp9LMTeA2pF4IMuY58WCAULZLhhA3qE1hoBQYnrFBVvneDL4pURHc311yJKuGUqVYG69dqPL4adGjKpwRFCcS8FyymcEunx_uIfxeo3ZgKIgsAtZgXjZhuILiUe8vF10lE08aWsFhBQpRCwWoBLt-X1OPurBxrCrOJsXlc_ERPFRaBpv4cTD-u3Q1noiLI9gsnMKPS9VF6puFSsyWuml62DRpMNsdAzpqDSpkLsj5iG9RmTzunr538tZsN-7Xwn3a67PSYS6SzR7Y9Pna6fLJvvjRA7sNR-8TLDR2MCVPU-y64TtohtNoVYmk5S2s8dbgWZtEO2wz-RslGR-04tpRq5JPv9kTQmIhVKbGzk8qZZvSXxuwz9BPBExKkW9O-g2fBY2gJbsaJ4tAeu3u8pME4-yh66P-4tSYWGKzDkEg3NNudi1V2REwpZcbtYL1L7Lv3o6rJq4TlCTQUuR5nUgmStmoVVvV_owFvB44NBf_ET62CSMzKMsUzeZNI8m2zHRg2w7iCoKa8InyyLPyux1-yTEdW5VtBSEcl03LNJvz1QccLFK69tFHYZnMxVWqti7WDNcRpuTypSolLVznJSGRt-j8gnpc1Y4zEpoQlYc3vYwcenu7vG5Nhrx_5fLj9AStPQus=" alt="dhw-sequence-usp_index_inheritance">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_repo_usp_repoobjectcolumn_update_repoobjectcolumn_column_id"><a class="anchor" href="#_repo_usp_repoobjectcolumn_update_repoobjectcolumn_column_id"></a>6.1.5. [repo].[usp_RepoObjectColumn_update_RepoObjectColumn_column_id]</h4>
+
+</div>
+<div class="sect3">
+<h4 id="_repo_usp_generatorusp_insert_update_persistence"><a class="anchor" href="#_repo_usp_generatorusp_insert_update_persistence"></a>6.1.6. [repo].[usp_GeneratorUsp_insert_update_persistence]</h4>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNqdkkFLw0AQhe_5FUMuXtriuRJvIj1VrJ5CWGL2kWyps8vO1NZ_78bUEoVQ7GlZZvZ9-x4vKwoqI4KvFuVegnkEI9bq42u6OBZENftga4UJiOJEwQ0qmpNoHZWKIsvyH4HndKzftmjUtNGLVDnN74-Unwlj9TRcksUOCvI7S4k-o0Pnmo6sh_CNEo6JRzV_vvuILLJPq9G1nS5vL0Apn0QOpohx6JFTquNnG0UwTyP3PWFNk7vfmCG0lBKCzKjpam5hr6ZdgJ08nWCJMUTnuL2GaFay4rpR9wEj0OAd678939Hm4YVKJ6lFg1ZFqWpnvcWv0Z9vZle3Emz7Tn4BhA4FFQ==" alt="usp_GeneratorUsp_insert_update_persistence">
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_runtime_scenario_2"><a class="anchor" href="#_runtime_scenario_2"></a>6.2. &lt;Runtime Scenario 2&gt;</h3>
+
+</div>
+<div class="sect2">
+<h3 id=""><a class="anchor" href="#"></a>6.3. &#8230;&#8203;</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_runtime_scenario_n"><a class="anchor" href="#_runtime_scenario_n"></a>6.4. &lt;Runtime Scenario n&gt;</h3>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="section-deployment-view"><a class="anchor" href="#section-deployment-view"></a>7. 07 Deployment View</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_infrastructure_level_1"><a class="anchor" href="#_infrastructure_level_1"></a>7.1. Infrastructure Level 1</h3>
+<div class="paragraph">
+<p><em><strong>&lt;Overview Diagram&gt;</strong></em></p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Motivation</dt>
+<dd>
+<p><em>&lt;explanation in text form&gt;</em></p>
+</dd>
+<dt class="hdlist1">Quality and/or Performance Features</dt>
+<dd>
+<p><em>&lt;explanation in text form&gt;</em></p>
+</dd>
+<dt class="hdlist1">Mapping of Building Blocks to Infrastructure</dt>
+<dd>
+<p><em>&lt;description of the mapping&gt;</em></p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_infrastructure_level_2"><a class="anchor" href="#_infrastructure_level_2"></a>7.2. Infrastructure Level 2</h3>
+<div class="sect3">
+<h4 id="_infrastructure_element_1"><a class="anchor" href="#_infrastructure_element_1"></a>7.2.1. <em>&lt;Infrastructure Element 1&gt;</em></h4>
+<div class="paragraph">
+<p><em>&lt;diagram + explanation&gt;</em></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_infrastructure_element_2"><a class="anchor" href="#_infrastructure_element_2"></a>7.2.2. <em>&lt;Infrastructure Element 2&gt;</em></h4>
+<div class="paragraph">
+<p><em>&lt;diagram + explanation&gt;</em></p>
+</div>
+<div class="paragraph">
+<p>&#8230;&#8203;</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_infrastructure_element_n"><a class="anchor" href="#_infrastructure_element_n"></a>7.2.3. <em>&lt;Infrastructure Element n&gt;</em></h4>
+<div class="paragraph">
+<p><em>&lt;diagram + explanation&gt;</em></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="section-concepts"><a class="anchor" href="#section-concepts"></a>8. 08 Cross-cutting Concepts</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_concept_1"><a class="anchor" href="#_concept_1"></a>8.1. <em>&lt;Concept 1&gt;</em></h3>
+<div class="paragraph">
+<p><em>&lt;explanation&gt;</em></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_concept_2"><a class="anchor" href="#_concept_2"></a>8.2. <em>&lt;Concept 2&gt;</em></h3>
+<div class="paragraph">
+<p><em>&lt;explanation&gt;</em></p>
+</div>
+<div class="paragraph">
+<p>&#8230;&#8203;</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_concept_n"><a class="anchor" href="#_concept_n"></a>8.3. <em>&lt;Concept n&gt;</em></h3>
+<div class="paragraph">
+<p><em>&lt;explanation&gt;</em></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="section-design-decisions"><a class="anchor" href="#section-design-decisions"></a>9. 09 Design Decisions</h2>
+<div class="sectionbody">
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="section-quality-scenarios"><a class="anchor" href="#section-quality-scenarios"></a>10. Q10 uality Requirements</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_quality_tree"><a class="anchor" href="#_quality_tree"></a>10.1. Quality Tree</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_quality_scenarios"><a class="anchor" href="#_quality_scenarios"></a>10.2. Quality Scenarios</h3>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="section-technical-risks"><a class="anchor" href="#section-technical-risks"></a>11. 11 Risks and Technical Debts</h2>
+<div class="sectionbody">
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="section-glossary"><a class="anchor" href="#section-glossary"></a>12. 12 Glossary</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Term</th>
+<th class="tableblock halign-left valign-top">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;Term-1&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;definition-1&gt;</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;Term-2&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;definition-2&gt;</p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_about_arc42"><a class="anchor" href="#_about_arc42"></a>13. About arc42</h2>
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>arc42, the Template for documentation of
+software and system architecture.</p>
+</div>
+<div class="paragraph">
+<p>By Dr. Gernot Starke, Dr. Peter Hruschka and contributors.</p>
+</div>
+<div class="paragraph">
+<p>Template Revision: 7.0 EN (based on asciidoc), January 2017</p>
+</div>
+<div class="paragraph">
+<p>&#169;
+We acknowledge that this document uses material from the
+arc 42 architecture template, <a href="https://arc42.de" class="bare">https://arc42.de</a>, <a href="https://arc42.org/" class="bare">https://arc42.org/</a>
+Created by Dr. Peter Hruschka &amp; Dr. Gernot Starke.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

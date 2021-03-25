@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>05 Building Block View :: DataHandwerk Docs</title>
+    <link rel="canonical" href="https://DataHandwerk.github.io/dhw/0.1.0/arc/architecture-05.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4RM6Q8D27"></script>
+    <script>function gtag(){dataLayer.push(arguments)};window.dataLayer=window.dataLayer||[];gtag('js',new Date());gtag('config','G-L4RM6Q8D27')</script>
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://DataHandwerk.github.io">DataHandwerk Docs</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://github.com/DataHandwerk/DataHandwerk-toolkit-mssql" target="_blank">GitHub Project</a>
+            <a class="navbar-item" href="https://github.com/DataHandwerk/DataHandwerk-toolkit-mssql/discussions" target="_blank">Discussions</a>
+            <a class="navbar-item" href="https://dev.azure.com/DataHandwerk/89a7b008-69b9-42e4-b31f-4c2dfb6bd49a/_boards/board/t/f3077374-71b6-4a5b-bfd6-24a792bbc352/Microsoft.RequirementCategory/" target="_blank">Azure Boards</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <form action="https://www.google.com/search" method="get" target="searchresult">
+              <input type="hidden" name="q" value="site:datahandwerk.github.io">
+              <input type="text" name="q" alt="search">
+              <input type="submit" value="Search">
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="dhw" data-version="0.1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">DataHandwerk</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Architecture (one page)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture.html">Architecture</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Architecture (page per chapter)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture-01.html">01 Introduction and Goals</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture-02.html">02 Architecture Constraints</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture-03.html">03 System Scope and Context</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture-04.html">04 Solution Strategy</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="architecture-05.html">05 Building Block View</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture-06.html">06 Runtime View</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture-about.html">About arc42</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Manual</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/create-update-connect-repo-db.html">Create, update and connect repository database</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">DataHandwerk</span>
+    <span class="version">0.1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">DataHandwerk</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">0.1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">DataHandwerk</a></li>
+    <li>Architecture (page per chapter)</li>
+    <li><a href="architecture-05.html">05 Building Block View</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/DataHandwerk/DataHandwerk-docs/edit/main/docs/modules/arc/pages/architecture-05.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">05 Building Block View</h1>
+<div class="sect1">
+<h2 id="_whitebox_overall_system"><a class="anchor" href="#_whitebox_overall_system"></a>1. Whitebox Overall System</h2>
+<div class="sectionbody">
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNqtUcFOAkEMve9XNHjRg3GBE2TZBCGGi4kREw7IoTBlGdmdbmaKCxr_3e5mNcboxdhJ5vDavr72iZWcYIqCM3SmIr-HKT1TzmVBTuASJuwErSMfoijsrSvRYwGvEUDYoeHKugy2mAdSBL3n6kYb5vaFoBsrZGiLh1we6Cjj3GauYd3oR16zlcdyYY3soBfX1QUebykEzKhliKO3aGcNQdAGYjmVFAmXIAxrFuECjPW0Ecvuizqj66wxUJL0BmnaiL3GzT7zfHBmwjl7ODNNaKbW22JxE3U1e0O-RQfj-qmQnwb0438cUCqH7g6d3_x4dMs5b6VCTzA_6U2KVaeZ_iEIOqPRdDEDs4bzO89PehoYXzy6JOg9h904XX76OWxcr5tWyVWdTjvQ7oMB-vE31nsqOVhhf_o7eeOGkvcGuuw7yxTQzw==" alt="structurizr-DataHandwerkDevelopment-Container">
+</div>
+</div>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNq1U01v00AQvftXjNwLHCh2JCsiSi01jSg9IBCh9JDksPFOnCX2zmp2gxsQ_51Z160olAsCr-TDvJ333nxsMKFBmN-8gRnM8Qs25Fq0AV7ABdmgjEX2SeL3xjrFqoVvCYDfKU2dsTVsVeNRIoqZuteSsDBfEfJMQhq36tCEj3gbzhtT2561kh-yoB0rd2N02MEoi7dbdfsWvVc1DgxZ8j3ZGY3gJQEpHB0mgRwEgg2FQC1ow1gFQ_Ynd1oFtVEep9OiLHuvM1Xta6aD1RfUEMOJ7j9Bot0hlvVfvE2skYfoq_N4xMdT_Pn4vwjEkpStG1EY5f9QwQmHNBfS3ya9sssFbUOnGGFxlG6367SXva8V0rOzmKU3jxbk2Xumz-IWZs9XduplapM8K5cPWzOB-UCwnr6McJnC0DblIR-LwkOxUeLy-uoPPILcU6zsyl7K6uxMpRq49shwFTdqqyqM9H3PhH6U_1LAB3TkTSA-xjr-zntxx11IO_MxnC5Pxlk869MSCphAGjXebXreipjRO7IaOiNLLo8ArUYNjskhB4M-TUb5EyQHH6HiMSJyAi2Oluyx9dAYu48PIU7lbmTwyWAneT8AqCk4Vw==" alt="structurizr-DWHBDevelopment-Container">
+</div>
+</div>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNq1UsFO4zAQvfsrRuECB9jQqkJUJRJQIS5ISGXFoe1hWk9TL4knsl2Vstp_37EJJaDdG9hSpDzPzHsz84IJFcH48Rau4N6x3iyDYQvHcM02oLHkvFL-ydgGHdbwWwH4NWreGlvCCitPgqBzvL2RhIl5ITjNBdK0wk0VHug5XFamtDXZAEv5kJPXrcPm0eiwhl4eo2t8viPvsaS2Qq7-qLXRBF4SiMOuIRW4gcCw4BC4Bm0cJa0ddRFBW1Y0GvWKIom9wuVT6Xhj9TVX7OBApyMvUW-L5enEaHaaXIueX8YrQt4JNAZcoI_1B99C0Omg_4UE-7KQXVyMqal4lxbyQFjP7MjL0IeneTG9l3WznY9-RKTI4HWO6KH3sYQ45Zf8i2eic356cv-vMrMzu5EI4FWKPtwnH0WC_itBXzXSpxgAss9mnNnphFdhi45gshND1PMsTeZtG6kpSdKLroU7PF1xe18PYdzmf-h30DY8kLH14GR6cJbHOz8pBIMhZDqNjzwIR_NO55OyTPX_lSP9-0z9BdVEGbU=" alt="structurizr-DWHBProduction-Container">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_level_2"><a class="anchor" href="#_level_2"></a>2. Level 2</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_dwh_db_development_project_b"><a class="anchor" href="#_dwh_db_development_project_b"></a>2.1. DWH db Development (Project B)</h3>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNq1k01v00AQhu_-FSP3AgeKHSkiidJITQLiAOIjiB7aHjbeibPE3lnNbr5A_HdmjVsSUgEH6pUs-d2ddx7PzAYTKoTp1WsYwxQ3WJGr0QZ41mh6fiQ-ec_0BYsA46dyYEK1Iyu6TxK_MtYpVjV8SwD8UmnaGlvCQlUeRVHMtH1FNszMV4Q8E0njQq2r8Al34bIypW0yFPJClt0tK3dldFhCJ4una7V7i96rEluHLPmeLI1G8BKAFPYOk0AOAsGcQqAatGFhNWQP6LQKaq48Dofd0ahhHatiVTKtrZ5QRQxnunlkJ-K2WtY88TSxRm7V_mVcwvHLP2ZUtqwkQd579Az9x87Qyf5jhrvaQ3px8REdeROI93HGDubqxg69NHiQZ6PriVgrY5EHMG1jb4fP4_YohZ8dVB66iRM4GQxI_zyyN_ZBx7T5wfufjnQvdwGtRg0S7JCDQX_M1Q7-IU3TDMHJ-7-7zT68gRnyBhloHln-btbUXcw62YnZXua9ho3BrQdlNTimAvWa_wWx1yL2pBt5H86vz15kcd2ej6ALA0hjW941jFAQi6eYaNgauYZ4VxN3X5P0xKSTRRe0bIolhKWANrFKaxMvoqrA2AVxreJXmnSPo8VNok_lXpRne0t2X3uojF3FWx6b3Vbjc6yG0PQeotHoCzZzTJMfOyCSAQ==" alt="structurizr-DWHBDevelopment-DWHdbDevelopmentProjectB-Component">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_repository_db_development_project_b"><a class="anchor" href="#_repository_db_development_project_b"></a>2.2. Repository db Development (Project B)</h3>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNq1V11PKzcQfc-vGHFfQAppNkD4EBeJD12KUNvoUsrD5T44u07ismtvbS8hrfrfe8behCQEhSs1RCLseHbmzMyZGeOVzyVdPfxMF3Qln2VuykJqT7v0VZbGKW_shLI-bfes-VOmni52cHZpitJo6LlGwz0pXQorCvqnQeRGIjNjpYc0ELmTkAhrzfiL0f5O_S0paUOUyYGocv-7fPHnuRrq4DHFL2lxOraifFCZH1GnzdqFePlFOieGsrbQbvzbGKlMksML0vhJKRvelOQN9Y33pqBMWWBVRs-hY4nQw1yenibJ2VlAeyHSp6E1lc4uTW4sfcrCD04YcC1rhx_WNjaTtpYen_MHSFZ76Gzcw97GPexv3MPBxj10N-IhE170hWMHh5sOobtpBxuP4GjTDo43TqP2pj10_s-RNKUnbX3-zKMd83t-ts_N8kd96jBUTxDgt0vYF0pLe0JXtYHvpz_x8dkW1UwXjpLDxgw3O7i-v3nHCk6mBh71o77GXB-pVOR076SlGx73A5FKNh7Ch_FO0iiRAMx62np3AT3qlVi3Qv4WsEFtoIaVFbwLFlHWC2weILR1XBs0Vlg_IXXTVAqd0bOwylSOnPQeK87RAGn3I0l9ORLPCg9mEJ5La1KsLOlI6SCws1haHG6dysNlvDd6JK3CcyrXop3TJXjOJNJZKB1CZRxYrlJnMmMwpbReyYiX0_pbn1PpaOGRUpNXhXZN4oAzghkrB9iw8OACA-oiJcky7p60TmEbM5ZribIIhLo2gj-UHAcMSHEOdKnQyCSVtbEsJC8cNWNBoMrfpvI0ggYzI8i9hHULYkXtFu4nuB1wsLCFr4LvI6Eu0XTIEWoDl1YKeApFCRuVw9tbDu_rNA1rQ7paqAJzphAabA59h6K8JpS2M1lygXSKyuwgcD-WUq8vT4DarqG230Kd6q-nO545aSly4W0FD7hAgahWuoC2BrE9LcEzl6sZuZ1VlkWDSod-wZ8Kobw0qdVq7YS4kW5lyVX9Siu2MiNXUHzl2swchZnI-XPRTLO2McdfNmxlHus3UqWbpQ2qRajiUczM0XJi7v7Ke8Ji8KzNS1ALdEmZRqhaiJyzg56yYlaK3ZyH6nxNeQLgRUu5GaqUBhZ3UUbGwI4jsOM3wCba6Enh1uKaKuJGLaniDgWiNM6spSHzOrZif4RYLEoGqxk3w_xoY3DdCK67DO7-rvcDDV25kraBDDtpgOGcEfdonEA1ZXamTT6MRmOTC-7VQuSwk9FYTE44LJ7vDNWUXG3wFDkdsoBJ4EyB2Ix9GuRmTDIPDQaWgW8LBE053pqh4BeUdtORyrNYoJ3QS526lzrLwfN8-oHofzWeJtKTKsqIR2bB_n5tf_-tfVdx0B_bTuhL7pAwWHi0LbzNLOV6Uo688_bcfmUlGglTLo8bTFmPt6h326Qvt7u924Cwrn7ypvwPdYbXgjufK8aLTCuPZnitQ6yxK2WqBmgLBgLS8v90oGq4wcQBfFDjOMAdJjmk1rdPh23-fG-d0RGdxCvBbBpO-Rw5vmLdbTU6yaKRpMtWwFCcJctnbT57Kz-qxXvvqO99TL1Ty9ur1ZfEx1F8tGTkcKW4G6XHK6XdVSZmowR0eeIxwvPgboKlW1DYykDUWQ10_0PiGn_SfSdpB6vl_wEXnVtK" alt="structurizr-DWHBDevelopment-RepositorydbProjectB-Component">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_gui_project_b"><a class="anchor" href="#_gui_project_b"></a>2.3. GUI (Project B)</h3>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNq1Uk1vEzEQve-vGG0vrZSW7VYRIkoXNYkKKKoUBUIPTQ6TeLIxdTwr22naIv47Y7NFAXHgAB7Jkt98vDeeCToYgtHtexjAiB7IcLMlG-AU3s0-yD3kbcNWEJ9l_l7bBh1u4WsG4DeoeK9tDWs0ngRB53h_zTZ81M8E54VAita4M-ETPYYro2ubaq_kIifevcPmVquwgbKI0Vt8vCHvsaa2QpF9yzZaEXhJIA5PDWWBGwgMSw6Bt6C0o1XQbA_URQRtbajfL8uqSmoHuLqvHe-sGrJhB0cqHfFEwS1WpBOj2SlyLfrmKpoo-TPDxX9hUBhwiV4Iuv-w_ktVyC8vp9Sw14HdE6glHE8cf5GuYHAyt30v3987L6q7oZRGbcn1YNTmLvqvorvK4Yc29NDNGhEnY4NctmZuD9MEWOSpgZ-fFtmH09kIUvAhWbtrPXj7wjK3c5tiZRUdYaAOTAlVB2aNSq8RGQoUxaRJiJry4neyz9rv0OhnjIvyt6y_JvE6jQSMdBUbPXa0lpW0K_InHWFDA2gVPGgXJAsm4w5cj08n4ySsbIWVMoKyhLO7o9dFtMVZBV3oQb7z5PPsO8chJAw=" alt="structurizr-DWHBDevelopment-GUI-Component">
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

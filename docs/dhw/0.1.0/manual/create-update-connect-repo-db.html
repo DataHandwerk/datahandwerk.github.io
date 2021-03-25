@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Create, update and connect repository database :: DataHandwerk Docs</title>
+    <link rel="canonical" href="https://DataHandwerk.github.io/dhw/0.1.0/manual/create-update-connect-repo-db.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4RM6Q8D27"></script>
+    <script>function gtag(){dataLayer.push(arguments)};window.dataLayer=window.dataLayer||[];gtag('js',new Date());gtag('config','G-L4RM6Q8D27')</script>
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://DataHandwerk.github.io">DataHandwerk Docs</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://github.com/DataHandwerk/DataHandwerk-toolkit-mssql" target="_blank">GitHub Project</a>
+            <a class="navbar-item" href="https://github.com/DataHandwerk/DataHandwerk-toolkit-mssql/discussions" target="_blank">Discussions</a>
+            <a class="navbar-item" href="https://dev.azure.com/DataHandwerk/89a7b008-69b9-42e4-b31f-4c2dfb6bd49a/_boards/board/t/f3077374-71b6-4a5b-bfd6-24a792bbc352/Microsoft.RequirementCategory/" target="_blank">Azure Boards</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <form action="https://www.google.com/search" method="get" target="searchresult">
+              <input type="hidden" name="q" value="site:datahandwerk.github.io">
+              <input type="text" name="q" alt="search">
+              <input type="submit" value="Search">
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="dhw" data-version="0.1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">DataHandwerk</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Architecture (one page)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../arc/architecture.html">Architecture</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Architecture (page per chapter)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../arc/architecture-01.html">01 Introduction and Goals</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../arc/architecture-02.html">02 Architecture Constraints</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../arc/architecture-03.html">03 System Scope and Context</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../arc/architecture-04.html">04 Solution Strategy</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../arc/architecture-05.html">05 Building Block View</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../arc/architecture-06.html">06 Runtime View</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../arc/architecture-about.html">About arc42</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Manual</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="create-update-connect-repo-db.html">Create, update and connect repository database</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">DataHandwerk</span>
+    <span class="version">0.1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">DataHandwerk</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">0.1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">DataHandwerk</a></li>
+    <li>Manual</li>
+    <li><a href="create-update-connect-repo-db.html">Create, update and connect repository database</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/DataHandwerk/DataHandwerk-docs/edit/main/docs/modules/manual/pages/create-update-connect-repo-db.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Create, update and connect repository database</h1>
+<div class="sect1">
+<h2 id="_summary"><a class="anchor" href="#_summary"></a>Summary</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>create a new repo database</p>
+</li>
+<li>
+<p>clone githup repository from project <a href="https://github.com/DataHandwerk/DataHandwerk-toolkit-mssql" class="bare">https://github.com/DataHandwerk/DataHandwerk-toolkit-mssql</a></p>
+</li>
+<li>
+<p>deploy the database project db_DataHandwerk to your database</p>
+</li>
+<li>
+<p>connect repo datatabase to dwh database using synonyms executing the storred procedure <code>[repo].[usp_connect_database]</code></p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_detailed"><a class="anchor" href="#_detailed"></a>1. Detailed</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>First we need to create a "repository database" and connect it with the "dwh database". Here are some excerpts from the architectur description:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div id="section-architecture-constraints" class="paragraph">
+<p>== 02 Architecture Constraints</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The project is based on Microsoft SQL Server (mssql):<br>
+SQL Server 2019 or above</p>
+</li>
+<li>
+<p>It must <strong>always</strong> be possible for BI developers to use <strong>all</strong> mssql and Azure features in DWH databases.</p>
+</li>
+<li>
+<p>a minimally invasive <strong>repository database</strong> <em>supplements</em> DWH database metadata</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A repository database is externally connected to a DWH database via <strong>synonyms to system catalog views</strong> of the DWH database.</p>
+</li>
+<li>
+<p>Changes can be made both in repository and in DWH database. <strong>Synchronization</strong> is required for this.</p>
+</li>
+<li>
+<p>for additional <em>minimal invasive interventions</em> <code>extended properties</code> are used, which can be assigned to many database objects and also columns, parameters etc.</p>
+</li>
+<li>
+<p>The <strong>synchronization concept</strong> takes into account that renaming and refactoring can be performed in the repository as well as in the DWH database.</p>
+</li>
+<li>
+<p>The DWH database works without the repository and all traces of a repository can be removed (extended properties can be dropped).</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNq1U01v00AQvftXjNwLHCh2JCsiSi01jSg9IBCh9JDksPFOnCX2zmp2gxsQ_51Z160olAsCr-TDvJ333nxsMKFBmN-8gRnM8Qs25Fq0AV7ABdmgjEX2SeL3xjrFqoVvCYDfKU2dsTVsVeNRIoqZuteSsDBfEfJMQhq36tCEj3gbzhtT2561kh-yoB0rd2N02MEoi7dbdfsWvVc1DgxZ8j3ZGY3gJQEpHB0mgRwEgg2FQC1ow1gFQ_Ynd1oFtVEep9OiLHuvM1Xta6aD1RfUEMOJ7j9Bot0hlvVfvE2skYfoq_N4xMdT_Pn4vwjEkpStG1EY5f9QwQmHNBfS3ya9sssFbUOnGGFxlG6367SXva8V0rOzmKU3jxbk2Xumz-IWZs9XduplapM8K5cPWzOB-UCwnr6McJnC0DblIR-LwkOxUeLy-uoPPILcU6zsyl7K6uxMpRq49shwFTdqqyqM9H3PhH6U_1LAB3TkTSA-xjr-zntxx11IO_MxnC5Pxlk869MSCphAGjXebXreipjRO7IaOiNLLo8ArUYNjskhB4M-TUb5EyQHH6HiMSJyAi2Oluyx9dAYu48PIU7lbmTwyWAneT8AqCk4Vw==" alt="structurizr-DWHBDevelopment-Container">
+</div>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNq1k01v00AQhu_-FSP3AgeKHSkiidJITQLiAOIjiB7aHjbeibPE3lnNbr5A_HdmjVsSUgEH6pUs-d2ddx7PzAYTKoTp1WsYwxQ3WJGr0QZ41mh6fiQ-ec_0BYsA46dyYEK1Iyu6TxK_MtYpVjV8SwD8UmnaGlvCQlUeRVHMtH1FNszMV4Q8E0njQq2r8Al34bIypW0yFPJClt0tK3dldFhCJ4una7V7i96rEluHLPmeLI1G8BKAFPYOk0AOAsGcQqAatGFhNWQP6LQKaq48Dofd0ahhHatiVTKtrZ5QRQxnunlkJ-K2WtY88TSxRm7V_mVcwvHLP2ZUtqwkQd579Az9x87Qyf5jhrvaQ3px8REdeROI93HGDubqxg69NHiQZ6PriVgrY5EHMG1jb4fP4_YohZ8dVB66iRM4GQxI_zyyN_ZBx7T5wfufjnQvdwGtRg0S7JCDQX_M1Q7-IU3TDMHJ-7-7zT68gRnyBhloHln-btbUXcw62YnZXua9ho3BrQdlNTimAvWa_wWx1yL2pBt5H86vz15kcd2ej6ALA0hjW941jFAQi6eYaNgauYZ4VxN3X5P0xKSTRRe0bIolhKWANrFKaxMvoqrA2AVxreJXmnSPo8VNok_lXpRne0t2X3uojF3FWx6b3Vbjc6yG0PQeotHoCzZzTJMfOyCSAQ==" alt="structurizr-DWHBDevelopment-DWHdbDevelopmentProjectB-Component">
+</div>
+</div>
+</blockquote>
+</div>
+<div class="sect2">
+<h3 id="_create_repo_database"><a class="anchor" href="#_create_repo_database"></a>1.1. create repo database</h3>
+<div class="paragraph">
+<p>As an example, we use <code>WideWorldImporters</code> as dwh database.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>create a new empty repository database <code>dhw_WideWorldImporters</code><br>
+<code>dhw</code> is an abbreviation for <strong>D</strong>ata<strong>H</strong>and<strong>w</strong>erk. <code>WideWorldImporters</code> is used to mark that it is a repository for <code>WideWorldImporters</code>.<br>
+You can also use any other name for your repository database.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_update_repo_database_from_database_project_db_datahandwerk"><a class="anchor" href="#_update_repo_database_from_database_project_db_datahandwerk"></a>1.2. update repo database from database project db_DataHandwerk</h3>
+<div class="paragraph">
+<p>The structure of the repo database must be updated from the dhw git (database project: db_DataHandwerk).</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNq1UsFq3DAQvesrBufc1N4clgbHkOwS9lIobOgesjkoq7FXWNYYaVwnLf33jlwTNiGn0Eqgw5uR3punx5Ydwlqz3mhvRgwtNJbhE2yfI2MHK_KMT6xUbK3vddAd_FIA8agNjdY3UGsXURAdAo230r21PxGKXCCDtR4c38n9a2cb36FnOMiBQapj0P3OGj7CIk_dnX76ijHqBucXcvVbHa1BECEBiZ97VEw9MMEjMVMHxgY8sCV_oi4h2jcOy7KoqknsjT60TaDBmxU5CnBmpiWVpHfG8mmlbgoGw4x-uU5bhLxLsFj-F4aanNTL8uJfDvAiG7Krq_VmB2v8gY56DHtfRnH8ssir-28YIvmH8nNCqr3f-5c2oPp1Tu6IXGs5g9kIHWGxVH_FTyRvQnXKs6WaRx1wjtkp4Yrky99yWQ_fRZp89ZTIQC7RTgYJ7UWherFIogPZaogSDQzZ5NzrqXebD00d5T2Qy4lyZizE0cUSzu_PlnnaD-eVqIBLyIaIMVPFeyXWLUY4TPMFeBysM9L6B2MWI-g=" alt="structurizr-DataHandwerkgit-SystemContext">
+</div>
+</div>
+</blockquote>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>clone the project <a href="https://github.com/DataHandwerk/DataHandwerk-toolkit-mssql" class="bare">https://github.com/DataHandwerk/DataHandwerk-toolkit-mssql</a></p>
+</li>
+<li>
+<p>using <a href="https://visualstudio.microsoft.com/vs/features/ssdt/">SQL Server Data Tools for Visual Studio</a>, open the database project:<br>
+"D:\Repos\GitHub\DataHandwerk\DataHandwerk-toolkit-mssql\db_DataHandwerk\db_DataHandwerk.sqlproj"<br>
+Your folder could be another</p>
+</li>
+<li>
+<p>Now there are several options</p>
+<div class="ulist">
+<ul>
+<li>
+<p>use publish</p>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="image"><img src="_images/create-update-connect-repo-db-publish-1.png" alt="create update connect repo db publish 1"></span></p>
+</li>
+<li>
+<p><span class="image"><img src="_images/create-update-connect-repo-db-publish-2.png" alt="create update connect repo db publish 2"></span></p>
+</li>
+<li>
+<p><span class="image"><img src="_images/create-update-connect-repo-db-publish-3.png" alt="create update connect repo db publish 3"></span></p>
+</li>
+<li>
+<p><span class="image"><img src="_images/create-update-connect-repo-db-publish-4.png" alt="create update connect repo db publish 4"></span></p>
+</li>
+<li>
+<p><span class="image"><img src="_images/create-update-connect-repo-db-publish-5.png" alt="create update connect repo db publish 5"></span></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>use an existing dacpac (under snapshots) or create a dacpac</p>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="image"><img src="_images/create-update-connect-repo-db-dacpac-1.png" alt="create update connect repo db dacpac 1"></span></p>
+</li>
+<li>
+<p>use VS Schema Compare, SSMS, Azure Data Studio (or other tools) to deploy the dacpac</p>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="image"><img src="_images/create-update-connect-repo-db-dacpac-2.png" alt="create update connect repo db dacpac 2"></span></p>
+</li>
+<li>
+<p><span class="image"><img src="_images/create-update-connect-repo-db-dacpac-3.png" alt="create update connect repo db dacpac 3"></span></p>
+</li>
+<li>
+<p>follow the wizard</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>the dacpac also includes the postdeployment script</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>use Schema Compare</p>
+<div class="ulist">
+<ul>
+<li>
+<p>use the prepared schema compare and adapt it or create your own</p>
+</li>
+<li>
+<p><span class="image"><img src="_images/create-update-connect-repo-db-sc-01.png" alt="create update connect repo db sc 01"></span></p>
+</li>
+<li>
+<p><span class="image"><img src="_images/create-update-connect-repo-db-sc-02.png" alt="create update connect repo db sc 02"></span></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_post_deployment"><a class="anchor" href="#_post_deployment"></a>1.2.1. post deployment</h4>
+<div class="paragraph">
+<p>After the database is created, some tables need to be populated with data. For this purpose, a post deployment script is included in the project.</p>
+</div>
+<div class="paragraph">
+<p>This is a one-time process that usually does not need to be repeated later.</p>
+</div>
+<div class="paragraph">
+<p>The post deployment script will be executed, if you use publish or build, but you should execute it, when using schemacompare. You can also just copy the code from here and execute it.<br>
+Or you can skip the execution, as long as the content of this script is also called in the procedure <code>[repo].[usp_connect_database]</code>.</p>
+</div>
+<div class="listingblock">
+<div class="title">postdeployment script</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">﻿/*
+Post-Deployment Script Template
+--------------------------------------------------------------------------------------
+ This file contains SQL statements that will be appended to the build script.
+ Use SQLCMD syntax to include a file in the post-deployment script.
+ Example:      :r .\myfile.sql
+ Use SQLCMD syntax to reference a variable in the post-deployment script.
+ Example:      :setvar TableName MyTable
+               SELECT * FROM [$(TableName)]
+--------------------------------------------------------------------------------------
+*/
+
+EXEC repo.usp_init_spt_values
+
+EXEC repo.usp_init_parameter</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_connect_repository_database_with_dwh_database_using_synonyms"><a class="anchor" href="#_connect_repository_database_with_dwh_database_using_synonyms"></a>1.3. connect repository database with dwh database, using synonyms</h3>
+<div class="paragraph">
+<p>The repository database is connected to the dwh database using synonyms. Execute <code>[repo].[usp_connect_database]</code> to connect the synonyms to the correct DWH database.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example 1. connect repository database to the dwh database 'WideWorldImporters'</div>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre>[repo].[usp_connect_database]
+@dwh_database_name = 'WideWorldImporters'</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">repo.usp_connect_database</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">﻿/*
+--example:
+
+[repo].[usp_connect_database]
+@dwh_database_name = 'WideWorldImporters'
+
+*/
+CREATE PROCEDURE [repo].[usp_connect_database] (@dwh_database_name NVARCHAR(128))
+AS
+--
+--ensure existence of required parameters like 'dwh_database_name'
+EXEC [repo].[usp_init_parameter]
+
+--ensure [repo].[spt_values] is filled, otherwise extended properties will not be written into database
+EXEC [repo].[usp_init_spt_values]
+
+DECLARE @dwh_database_name_old NVARCHAR(128) = (
+  SELECT [repo].[fs_dwh_database_name]()
+  )
+
+EXEC [repo].[usp_parameter_insert_update] @Parameter_name = 'dwh_database_name'
+ , @Parameter_value = @dwh_database_name
+
+--this required every time, in case synonyms are corrupt or new synonyms have been added
+--IF @dwh_database_name &lt;&gt; ISNULL(@dwh_database_name_old , '')
+BEGIN
+ DECLARE @SQLString NVARCHAR(4000)
+ DECLARE @ParmDefinition NVARCHAR(500)
+
+ SET @SQLString =
+  '
+DROP SYNONYM  IF EXISTS [sys_dwh].[columns]
+DROP SYNONYM  IF EXISTS [sys_dwh].[computed_columns]
+DROP SYNONYM  IF EXISTS [sys_dwh].[default_constraints]
+DROP SYNONYM  IF EXISTS [sys_dwh].[dm_exec_describe_first_result_set]
+DROP SYNONYM  IF EXISTS [sys_dwh].[dm_sql_referenced_entities]
+DROP SYNONYM  IF EXISTS [sys_dwh].[extended_properties]
+DROP SYNONYM  IF EXISTS [sys_dwh].[foreign_key_columns]
+DROP SYNONYM  IF EXISTS [sys_dwh].[foreign_keys]
+DROP SYNONYM  IF EXISTS [sys_dwh].[identity_columns]
+DROP SYNONYM  IF EXISTS [sys_dwh].[indexes]
+DROP SYNONYM  IF EXISTS [sys_dwh].[index_columns]
+DROP SYNONYM  IF EXISTS [sys_dwh].[objects]
+DROP SYNONYM  IF EXISTS [sys_dwh].[parameters]
+DROP SYNONYM  IF EXISTS [sys_dwh].[schemas]
+DROP SYNONYM  IF EXISTS [sys_dwh].[sp_addextendedproperty]
+DROP SYNONYM  IF EXISTS [sys_dwh].[sp_updateextendedproperty]
+DROP SYNONYM  IF EXISTS [sys_dwh].[sql_expression_dependencies]
+DROP SYNONYM  IF EXISTS [sys_dwh].[sql_modules]
+DROP SYNONYM  IF EXISTS [sys_dwh].[tables]
+DROP SYNONYM  IF EXISTS [sys_dwh].[types]
+
+CREATE SYNONYM [sys_dwh].[columns] FOR ['
+  + @dwh_database_name + '].[sys].[columns]
+CREATE SYNONYM [sys_dwh].[computed_columns] FOR [' + @dwh_database_name + '].[sys].[computed_columns]
+CREATE SYNONYM [sys_dwh].[default_constraints] FOR [' + @dwh_database_name + '].[sys].[default_constraints]
+CREATE SYNONYM [sys_dwh].[dm_exec_describe_first_result_set] FOR [' + @dwh_database_name + '].[sys].[dm_exec_describe_first_result_set]
+CREATE SYNONYM [sys_dwh].[dm_sql_referenced_entities] FOR [' + @dwh_database_name + '].[sys].[dm_sql_referenced_entities]
+CREATE SYNONYM [sys_dwh].[extended_properties] FOR [' + @dwh_database_name + '].[sys].[extended_properties]
+CREATE SYNONYM [sys_dwh].[foreign_key_columns] FOR [' + @dwh_database_name + '].[sys].[foreign_key_columns]
+CREATE SYNONYM [sys_dwh].[foreign_keys] FOR [' + @dwh_database_name + '].[sys].[foreign_keys]
+CREATE SYNONYM [sys_dwh].[identity_columns] FOR [' + @dwh_database_name + '].[sys].[identity_columns]
+CREATE SYNONYM [sys_dwh].[indexes] FOR [' + @dwh_database_name + '].[sys].[indexes]
+CREATE SYNONYM [sys_dwh].[index_columns] FOR [' + @dwh_database_name + '].[sys].[index_columns]
+CREATE SYNONYM [sys_dwh].[objects] FOR [' + @dwh_database_name +
+  '].[sys].[objects]
+CREATE SYNONYM [sys_dwh].[parameters] FOR [' + @dwh_database_name + '].[sys].[parameters]
+CREATE SYNONYM [sys_dwh].[schemas] FOR [' + @dwh_database_name + '].[sys].[schemas]
+CREATE SYNONYM [sys_dwh].[sp_addextendedproperty] FOR [' + @dwh_database_name + '].[sp_addextendedproperty]
+CREATE SYNONYM [sys_dwh].[sp_updateextendedproperty] FOR [' + @dwh_database_name + '].[sp_updateextendedproperty]
+CREATE SYNONYM [sys_dwh].[sql_expression_dependencies] FOR [' + @dwh_database_name + '].[sys].[sql_expression_dependencies]
+CREATE SYNONYM [sys_dwh].[sql_modules] FOR [' + @dwh_database_name + '].[sys].[sql_modules]
+CREATE SYNONYM [sys_dwh].[tables] FOR [' + @dwh_database_name + '].[sys].[tables]
+CREATE SYNONYM [sys_dwh].[types] FOR [' + @dwh_database_name + '].[sys].[types]
+'
+
+ EXECUTE sp_executesql @SQLString
+END
+
+GO
+EXECUTE sp_addextendedproperty @name = N'RepoObject_guid', @value = 'b390291c-9d61-eb11-84dc-a81e8446d5b0', @level0type = N'SCHEMA', @level0name = N'repo', @level1type = N'PROCEDURE', @level1name = N'usp_connect_database';</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

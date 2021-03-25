@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>01 Introduction and Goals :: DataHandwerk Docs</title>
+    <link rel="canonical" href="https://DataHandwerk.github.io/dhw/0.1.0/arc/architecture-01.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4RM6Q8D27"></script>
+    <script>function gtag(){dataLayer.push(arguments)};window.dataLayer=window.dataLayer||[];gtag('js',new Date());gtag('config','G-L4RM6Q8D27')</script>
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://DataHandwerk.github.io">DataHandwerk Docs</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://github.com/DataHandwerk/DataHandwerk-toolkit-mssql" target="_blank">GitHub Project</a>
+            <a class="navbar-item" href="https://github.com/DataHandwerk/DataHandwerk-toolkit-mssql/discussions" target="_blank">Discussions</a>
+            <a class="navbar-item" href="https://dev.azure.com/DataHandwerk/89a7b008-69b9-42e4-b31f-4c2dfb6bd49a/_boards/board/t/f3077374-71b6-4a5b-bfd6-24a792bbc352/Microsoft.RequirementCategory/" target="_blank">Azure Boards</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <form action="https://www.google.com/search" method="get" target="searchresult">
+              <input type="hidden" name="q" value="site:datahandwerk.github.io">
+              <input type="text" name="q" alt="search">
+              <input type="submit" value="Search">
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="dhw" data-version="0.1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">DataHandwerk</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Architecture (one page)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture.html">Architecture</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Architecture (page per chapter)</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="architecture-01.html">01 Introduction and Goals</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture-02.html">02 Architecture Constraints</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture-03.html">03 System Scope and Context</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture-04.html">04 Solution Strategy</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture-05.html">05 Building Block View</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture-06.html">06 Runtime View</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture-about.html">About arc42</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Manual</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/create-update-connect-repo-db.html">Create, update and connect repository database</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">DataHandwerk</span>
+    <span class="version">0.1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">DataHandwerk</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">0.1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">DataHandwerk</a></li>
+    <li>Architecture (page per chapter)</li>
+    <li><a href="architecture-01.html">01 Introduction and Goals</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/DataHandwerk/DataHandwerk-docs/edit/main/docs/modules/arc/pages/architecture-01.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">01 Introduction and Goals</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="imageblock right">
+<div class="content">
+<a class="image" href="https://github.com/DataHandwerk/DataHandwerk-toolkit-mssql/discussions"><img src="https://img.shields.io/badge/collaborate-in%20discussions-blue.svg" alt="collaborate in%20discussions blue"></a>
+</div>
+</div>
+<div class="paragraph">
+<p><kbd>DHW</kbd> (<strong>D</strong>ata<strong>H</strong>and<strong>w</strong>erk) is designed to support BI and DWH developers working with the Microsoft BI platform (MS SQL Server).</p>
+</div>
+<div class="paragraph">
+<p>Handwerk statt Massenproduktion. - Craft instead of mass production.<br>
+MSSQL based tools for data craftsmen.  - Individual customization instead of assembly line.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Handwerk = craft<br>
+Handwerker = craftsmen</p>
+</div>
+<div class="paragraph">
+<p>Craft is the term used to describe numerous commercial activities that manufacture products mostly to order or provide services on demand. Craft activities are contrasted with industrial mass production.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The project&#8217;s key stakeholders are DWH developers who see their work as a <strong>craft</strong>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A toolkit is created for these data craftsmen and gradually filled and expanded with tools.</p>
+</li>
+<li>
+<p>The data craftsmen are given the <strong>possibility to work faster and better</strong> with the toolkit and <strong>to automate parts</strong> if (and only if) they wish to do so.</p>
+</li>
+<li>
+<p>Tools and methods can be used individually and independently <strong>optional</strong>. They do not have to be used in a mandatory way.</p>
+</li>
+<li>
+<p>The toolbox should always be <strong>perceived as an enrichment and aid</strong>, gladly as a supportive, never as a constricting corset.<br>
+A developer is not undesirably restricted by the use of tools and methods. He allows himself to be partially and consciously restricted if the advantages subjectively outweigh the disadvantages for him.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_requirements_overview"><a class="anchor" href="#_requirements_overview"></a>1. Requirements Overview</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Combination of manual work and the use of tools</p>
+<div class="ulist">
+<ul>
+<li>
+<p>The combination of <em>handwork without tools</em> and the <em>use of tools</em> is easily possible. There must be <strong>no one-way street</strong>.</p>
+</li>
+<li>
+<p>A <strong>developer does not become a slave</strong> to the tools or the methods, but can at any time, like a craftsman, decide for himself to what extent he wants to use which tools to support him, or not.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>mssql and Azure features</p>
+<div class="ulist">
+<ul>
+<li>
+<p>It must <strong>always</strong> be possible for BI developers to use <strong>all</strong> mssql and Azure features. So ultimately also <a href="https://azure.microsoft.com/en-us/services/synapse-analytics/">Azure Synapse Analytics</a>, Data Factory, BLOB Storage and other Azure products.</p>
+</li>
+<li>
+<p>Whenever possible or desired, a developer may prefer to use mssql features to realize goals, rather than proprietary solutions. Tools should simplify their use.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>temporal tables</p>
+</li>
+<li>
+<p>graph databases</p>
+</li>
+<li>
+<p>&#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>a minimally invasive <strong>repository</strong> supplements database metadata</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Functions and methods that are absent or insufficient in a database are supplemented via a repository (per database), which is connected via synonyms to system catalog views of the DWH database.</p>
+</li>
+<li>
+<p>A repository is also a database: the repository database.</p>
+</li>
+<li>
+<p>This repository does not need and should not contain all metadata to fully define a database, but only necessary or useful additions.</p>
+</li>
+<li>
+<p>A repository is externally connected to a DWH database, with <em>minimal invasive interventions</em> in this database.</p>
+</li>
+<li>
+<p>these minimal invasive interventions can be undone</p>
+</li>
+<li>
+<p>for these minimal invasive interventions (according to current conception) <code>extended properties</code> are used, which can be assigned to many database objects and also columns, parameters etc. and also removed again.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>by using unique <code>guid</code> it is possible to copy objects including the additional metadata stored in the <code>extended properties</code> into other databases.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Independence from immediate support</p>
+<div class="ulist">
+<ul>
+<li>
+<p>One should be able to work even if a tool does not work as expected. There shall be no blocking dependency on a tool or a method that requires support fire department interventions, but there shall always be a manual way out.</p>
+</li>
+<li>
+<p>This should especially make community collaboration more attractive: <span class="image"><a class="image" href="https://github.com/DataHandwerk/DataHandwerk-toolkit-mssql/discussions"><img src="https://img.shields.io/badge/collaborate-in%20discussions-blue.svg" alt="collaborate in%20discussions blue"></a></span></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Documentation</p>
+<div class="ulist">
+<ul>
+<li>
+<p>The repository, how it works, and the methods are <strong>clearly and thoroughly documented</strong>. Good documentation</p>
+<div class="ulist">
+<ul>
+<li>
+<p>provides transparency</p>
+</li>
+<li>
+<p>creates understanding</p>
+</li>
+<li>
+<p>facilitates independent work</p>
+</li>
+<li>
+<p>makes it easier to get started</p>
+</li>
+<li>
+<p>reduces dependence on support</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Modular structure and expandability</p>
+<div class="ulist">
+<ul>
+<li>
+<p>The toolbox concept allows the toolbox to be extended with modules (tools) by different users.</p>
+</li>
+<li>
+<p>Examples of possible modules:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Relation Management</p>
+<div class="ulist">
+<ul>
+<li>
+<p>virtual PK and FK</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Persistence and Historization Assistant</p>
+</li>
+<li>
+<p>Documentation Wizard (including creation and inheritance of descriptions and Friendly Name)</p>
+</li>
+<li>
+<p>Data Lineage Visualizer</p>
+</li>
+<li>
+<p>Import Wizard</p>
+</li>
+<li>
+<p>SSIS Generator</p>
+</li>
+<li>
+<p>Data Factory Generator</p>
+</li>
+<li>
+<p>Data Vault Wizard</p>
+</li>
+<li>
+<p>DSGVO Wizard</p>
+</li>
+<li>
+<p>SSAS Tabular Generator</p>
+</li>
+<li>
+<p>Easy Refactoring</p>
+</li>
+<li>
+<p>&#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_quality_goals"><a class="anchor" href="#_quality_goals"></a>2. Quality Goals</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Fixing bugs is more important than implementing new features.</p>
+</li>
+<li>
+<p>A feature is only as good as its documentation.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_stakeholders"><a class="anchor" href="#_stakeholders"></a>3. Stakeholders</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Stakeholders</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Role/Name</th>
+<th class="tableblock halign-left valign-top">Expectations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dwh developer</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>wants to work faster, more efficiently and more effectively</p>
+</li>
+<li>
+<p>wants to automate boring work optionally</p>
+</li>
+<li>
+<p>wants to decide for himself what he automates and what not</p>
+</li>
+<li>
+<p>does not want to become a slave of the tools</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dwh user</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>wants a well documented DWH</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_alternatives"><a class="anchor" href="#_alternatives"></a>4. Alternatives</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_repository_based_database_generators"><a class="anchor" href="#_repository_based_database_generators"></a>4.1. Repository based database generators</h3>
+<div class="paragraph">
+<p>There are commercial tools that define the structure and function of relational and analytical databases via a repository in order to generate the code of these databases. These tools are <em>one-way</em>: repository &#8658; target database. One can work very successfully with these tools if one accepts the methods and approaches provided. My subjective praise of AnalyticsCreator can be found here (in German): <a href="http://analyticscreator.aisberg.de/2020-04-26-warum-analyticscreator/">Warum ich seit 2017 den AnalyticsCreator verwende</a>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.analyticscreator.com/">AnalyticsCreator</a></p>
+</li>
+<li>
+<p>Deltamaster Modeler (Additional program for the <a href="https://www.bissantz.de/software/?lang=en">Delta Master</a>)</p>
+</li>
+<li>
+<p><a href="https://www.wherescape.com/">Wherescape</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

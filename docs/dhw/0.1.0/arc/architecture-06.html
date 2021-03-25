@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>06 Runtime View :: DataHandwerk Docs</title>
+    <link rel="canonical" href="https://DataHandwerk.github.io/dhw/0.1.0/arc/architecture-06.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4RM6Q8D27"></script>
+    <script>function gtag(){dataLayer.push(arguments)};window.dataLayer=window.dataLayer||[];gtag('js',new Date());gtag('config','G-L4RM6Q8D27')</script>
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://DataHandwerk.github.io">DataHandwerk Docs</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://github.com/DataHandwerk/DataHandwerk-toolkit-mssql" target="_blank">GitHub Project</a>
+            <a class="navbar-item" href="https://github.com/DataHandwerk/DataHandwerk-toolkit-mssql/discussions" target="_blank">Discussions</a>
+            <a class="navbar-item" href="https://dev.azure.com/DataHandwerk/89a7b008-69b9-42e4-b31f-4c2dfb6bd49a/_boards/board/t/f3077374-71b6-4a5b-bfd6-24a792bbc352/Microsoft.RequirementCategory/" target="_blank">Azure Boards</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <form action="https://www.google.com/search" method="get" target="searchresult">
+              <input type="hidden" name="q" value="site:datahandwerk.github.io">
+              <input type="text" name="q" alt="search">
+              <input type="submit" value="Search">
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="dhw" data-version="0.1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">DataHandwerk</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Architecture (one page)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture.html">Architecture</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Architecture (page per chapter)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture-01.html">01 Introduction and Goals</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture-02.html">02 Architecture Constraints</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture-03.html">03 System Scope and Context</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture-04.html">04 Solution Strategy</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture-05.html">05 Building Block View</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="architecture-06.html">06 Runtime View</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture-about.html">About arc42</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Manual</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/create-update-connect-repo-db.html">Create, update and connect repository database</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">DataHandwerk</span>
+    <span class="version">0.1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">DataHandwerk</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">0.1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">DataHandwerk</a></li>
+    <li>Architecture (page per chapter)</li>
+    <li><a href="architecture-06.html">06 Runtime View</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/DataHandwerk/DataHandwerk-docs/edit/main/docs/modules/arc/pages/architecture-06.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">06 Runtime View</h1>
+<div class="sect1">
+<h2 id="_repo_usp_main"><a class="anchor" href="#_repo_usp_main"></a>1. [repo].[usp_main]</h2>
+<div class="sectionbody">
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNqNkstqwzAQRff6Cu0DxQ1p6DKQPuJVQ-yuQjCqNHVUnJHRSNCS9t8rP-I4Nn1gkEE6c3XvaBbkhHUkCseO7JiytTUSlLfA-Sfnd94Kpw1yAskmfGuhNLurracyOwiNuxqaT9nk8ow-UGa516oBrqMA_EBkm7D59PIG0rVwxQY4t6Lct_T6fpPESTpio1_YLkiMISJK6JX8aWVpCn9o4938y1C_Ihr2w5dKOAj0K1hAqTHPlsZjm2I-xDUqeA_rHqzuWb8dWT_ZiKuCxkF3Caj-dStBD74oGoZi7J-ljfx0JF_LZgk4FzA6P88FNGzBOexgXza_biiGQo-AEKbN2Oe6BQTWnbRKsKTJQdeKGfsK3wJQVZP7DREI88Q=" alt="dhw-tree-ExecutionLog-usp_main">
+</div>
+</div>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNq9V8tuwjAQvPcrIu70C6peUB85FRF6QihynS24Ck7kR9X-fVMSaHC88SZEvYBkz87sY7yCaH4fzTYKymJ7u7G6TA9MyO3shnEjPpkB76XnLHJ59Lfk6c6KDCVrI7ALnDZdVYcvbx_ATVjhEkzA1Lo7xcp9g1s-rJI4WaOyQSxF9W5OYcpgal202qUqOGRWQSy1YZJDuGhfyFW1-wiDLaBncZIO--ZCdKzNiJ5eFLk9yEHOPoeQkRSX-xIhRtDzIPj-zDrA_YFMiJP3K48aRrMrUVWKCHH_2jKrOKqM3kGB5ELu0kVhJb4sewIoNfSEYyUNVHQrFDKDr-pzD0p4dlMAGQJ05E72in-x9XjPqUPWLuKZ6Ueb5zVGx7J9t0aTnI4_WJo7u-mksVH_Y3Hu3I6SaQLGVBQabX8HNriLHQasGf1SyPvyeRgTCPodeVHu-vp7oc45r796ftyNoqL0YRQx1qjJsnQ7-QQSFDOFej2OQ4MyJ-4SlBbaQN_CIodTOkYmw7pEJuhIN_8XMOL6-gdcc5ji" alt="dhw-sequence-usp_main">
+</div>
+</div>
+<div class="sect2">
+<h3 id="_repo_usp_sync_guid_repoobject"><a class="anchor" href="#_repo_usp_sync_guid_repoobject"></a>1.1. [repo].[usp_sync_guid_RepoObject]</h3>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNqtVsFu2kAQvfsrRpwJSqiaA5EjVYpVIbUFAT1FlrWxp2YbvLZ21w301K_ph_VLOhhsr7EXnCgXJHbfvDfzZmdk9cxFxiRLIGHbBJViMSr-G2E8vnYc14VHiVnqjx5zlQVqJ8IgznkULOhw9vQTQ-3DFSjNpAbXdZxBASegopDlTh0xA7i6n8Gg5DKiBzCBpbcChb9Qsg3UV0EVHoxGI0eKVCNIHq_15OOHtwvV4ECwBH2oSzTQ5p-iYr-RwPU5fau8IX3Kvg9rSd6BShOEfZpD0LuMfv_9-fsOiUy_Lb0Fea75ZgMJV4qLGA73DfbxjdNNcdFkoxQVrjFhtdm1CY2bYSOoA10c9Uyvqr3Dlwm8SE4cJ24DFzoF3GoUEUaQyTRDqTkqSH9AFd_Qf6M5XBlPu3TfhZvOxrbJt1byB--Lt_LuaJLlM5VQUldiQ3jKNZDIPoXCnYQJmvcIrPKvHLDv84dPKw9SvUZpWDiEFzrAftLjrsoDYlJcUXNC7Pv-Ao1JltJSCfaz4_e01yCeyzTEKJc4FbThDsoT-OotPns0QqsZ2IENsdvDIo0ly9bHTTr3FsvpcnVmj5ZocyFW_W9fFqlFuEFSNbwCYoxRV2-BC9opuQyx5YZVb2bXy7OIEUm4ZoJa2Z_SzsiFoidTpns67T1tpAkuTLTC2_2ymN8CdvSg-5W8Ryts6rOL6j0bYxO4yH-mTbevtL3RrB7fGkf8f0pKBHc=" alt="dhw-sequence-usp_sync_guid_RepoObject">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_repo_usp_sync_guid_repoobjectcolumn"><a class="anchor" href="#_repo_usp_sync_guid_repoobjectcolumn"></a>1.2. [repo].[usp_sync_guid_RepoObjectColumn]</h3>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNq1Vt9v2jAQfuevOPEEEq0AdZvERKVqjdRKCCqg20OFIpMY4i2xI9uh7f76nZOQJiQhy9o9gez78d13d5-jfjEeEkkCCMhLQJUie6rYbwrj8bDTmU7hSdJQbC6fIhXa6pU79j5irr3Ew8X2J3X0N-FHAd_ABShNpIbptNPpxk5ortBx9apSmy5cXC-ge4xYitGFCTw-3N6sLTj6X2bepZT2gZHyoUHXkVxoCpLtPT0ZfRp2zqVshrSy1mCqKOThJKAbQHoqEWygpwWQg2AuOILvfOZoYBy0R4HTFw3385W1XCNlNOwX4A7PkdcA9A2kXYMKQ9QCrrtgCmEKSV1TAGKn3MX_oRQhlZpR1QL_S0MBt9bMSpt_eWowgB931tKC3lI8z6NgS-XiQOUc2wDXMOp_BRyHbFgbpiZu3ofRnvWS-T4ETCnG95DcFyfx6uojJrFUUTaK1TOa0uYRZbtst6OScm3KjK8V-o36cDO_hd79av44m_WYsmMmAsJRC9wBDPtoNOzX1PJPWy5wEWRuhgbwjAe0HYbxexBgYsVw_bhDJxCFLsGwlcwC4W48kUC0lmwbaSRtJ0UAmDZ_Jnb5oLYSkcSfZoF6rzwVKnmSwrFDNP1bKPHgGCdVEf8oDQHRjmemevuKcmZuIKYmv3JvvnYu96bfqtY2pRLXzbYtd5ECVChVeGIuUbYSBpqhFKC3BcS4wmnOMN3hxXfiMzexV_-v6bEstGm42THsago0sU55O1mx4ZfP55FmFFVs4QSeJavaK4MD6cInsuI9MYt0omQDmNED9ccFbO_Z_pgxFJlTxUwpMRyNzr0PlT1ret0SiavPapIOAMUEMLGZWhEbKXRkjgckcc7r4gnE-HNtL0nopd9rD9Zydb9aN36tHX1KjVplhdWZxJW51KeII7-FGH1P35ahfgcbci-acqfa7XiElxlpDN8UvbjTpSewFeM46DHf7b6qE68_miojRQ==" alt="dhw-sequence-usp_sync_guid_RepoObjectColumn">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_repo_usp_update_referencing_count"><a class="anchor" href="#_repo_usp_update_referencing_count"></a>1.3. [repo].[usp_update_Referencing_Count]</h3>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNqdkE0LwjAMhu_9FWH3iQ5BGNTL8DyY3sYodYuzaj_oB6i_3joQhyiit5DkSR5edxTKcMslSH6W6Bzv0YkrQpZNCaEUaotGN5M6OMOC6bhHVuEOLapWqJ4VOijfQArOc-uBUkKSAWHu4iJWxbLcHrD1I6pJIF2WkDxuP5fiJIf1agOj3rt_dy9t24F9HRKrtEewot_7PFt888Hus06hT0GqsdT_JrP57KdAUXUxzhtRv5My" alt="dhw-sequence-usp_update_Referencing_Count">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_repo_usp_index_inheritance"><a class="anchor" href="#_repo_usp_index_inheritance"></a>1.4. [repo].[usp_index_inheritance]</h3>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNq1VttO20AQfc9XjHgKEokAIaEihaoqbolAYMVBfYgia2MP9jb2rrsXIP36rm-J7bhOCumLZXlnZ86cOTNjuaQsIYLEEJO3GKUkAUr6G-H8_LQ3GsFMYMLnw5mWiUuZj2_mGaKgijAP5zAAqYhQMBr1ek1z25o4Y2fqjtNrX3mkY-ZO8BkFmqt--UZZ4N4S-U1HUW4jx6x6Nq0H-Ty4foOjMsxHXR_BFSihmUcUQoJCUqlSF2DiBah6gnFzIGgQqqvT3mHCmqCD68OmQJlEww-Johris4vL_1kUZH5Wknoq7-OjWVP3hQqlSZSld2PdW1ML-mLtGjIpApUQUymNk-Na4ucHwdQFafzgWJMp9LMTeA2pF4IMuY58WCAULZLhhA3qE1hoBQYnrFBVvneDL4pURHc311yJKuGUqVYG69dqPL4adGjKpwRFCcS8FyymcEunx_uIfxeo3ZgKIgsAtZgXjZhuILiUe8vF10lE08aWsFhBQpRCwWoBLt-X1OPurBxrCrOJsXlc_ERPFRaBpv4cTD-u3Q1noiLI9gsnMKPS9VF6puFSsyWuml62DRpMNsdAzpqDSpkLsj5iG9RmTzunr538tZsN-7Xwn3a67PSYS6SzR7Y9Pna6fLJvvjRA7sNR-8TLDR2MCVPU-y64TtohtNoVYmk5S2s8dbgWZtEO2wz-RslGR-04tpRq5JPv9kTQmIhVKbGzk8qZZvSXxuwz9BPBExKkW9O-g2fBY2gJbsaJ4tAeu3u8pME4-yh66P-4tSYWGKzDkEg3NNudi1V2REwpZcbtYL1L7Lv3o6rJq4TlCTQUuR5nUgmStmoVVvV_owFvB44NBf_ET62CSMzKMsUzeZNI8m2zHRg2w7iCoKa8InyyLPyux1-yTEdW5VtBSEcl03LNJvz1QccLFK69tFHYZnMxVWqti7WDNcRpuTypSolLVznJSGRt-j8gnpc1Y4zEpoQlYc3vYwcenu7vG5Nhrx_5fLj9AStPQus=" alt="dhw-sequence-usp_index_inheritance">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_repo_usp_repoobjectcolumn_update_repoobjectcolumn_column_id"><a class="anchor" href="#_repo_usp_repoobjectcolumn_update_repoobjectcolumn_column_id"></a>1.5. [repo].[usp_RepoObjectColumn_update_RepoObjectColumn_column_id]</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_repo_usp_generatorusp_insert_update_persistence"><a class="anchor" href="#_repo_usp_generatorusp_insert_update_persistence"></a>1.6. [repo].[usp_GeneratorUsp_insert_update_persistence]</h3>
+<div class="imageblock kroki">
+<div class="content">
+<img src="https://kroki.io/plantuml/svg/eNqdkkFLw0AQhe_5FUMuXtriuRJvIj1VrJ5CWGL2kWyps8vO1NZ_78bUEoVQ7GlZZvZ9-x4vKwoqI4KvFuVegnkEI9bq42u6OBZENftga4UJiOJEwQ0qmpNoHZWKIsvyH4HndKzftmjUtNGLVDnN74-Unwlj9TRcksUOCvI7S4k-o0Pnmo6sh_CNEo6JRzV_vvuILLJPq9G1nS5vL0Apn0QOpohx6JFTquNnG0UwTyP3PWFNk7vfmCG0lBKCzKjpam5hr6ZdgJ08nWCJMUTnuL2GaFay4rpR9wEj0OAd678939Hm4YVKJ6lFg1ZFqWpnvcWv0Z9vZle3Emz7Tn4BhA4FFQ==" alt="usp_GeneratorUsp_insert_update_persistence">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_runtime_scenario_2"><a class="anchor" href="#_runtime_scenario_2"></a>2. &lt;Runtime Scenario 2&gt;</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id=""><a class="anchor" href="#"></a>3. &#8230;&#8203;</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_runtime_scenario_n"><a class="anchor" href="#_runtime_scenario_n"></a>4. &lt;Runtime Scenario n&gt;</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
