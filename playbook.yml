@@ -7,14 +7,17 @@ site:
     google_analytics: 'G-L4RM6Q8D27'
 content:
   sources:
-  - url: https://github.com/DataHandwerk/DataHandwerk-docs
-    branches: main
-    start_path: docs
-  # the folowing repository is required to include code examples. They must be inside Antora folders
-  # execute the xcopy in this project to update code examples from database project
-  - url: D:\Repos\GitHub\DataHandwerk\local-for-antora
+  - url: D:\Repos\GitHub\DataHandwerk\DataHandwerk-docs
     branches: HEAD
     start_path: docs
+  # - url: https://github.com/DataHandwerk/DataHandwerk-docs
+  #   branches: main
+  #   start_path: docs
+  # # the folowing repository is required to include code examples. They must be inside Antora folders
+  # # execute the xcopy in this project to update code examples from database project
+  # - url: D:\Repos\GitHub\DataHandwerk\local-for-antora
+  #   branches: HEAD
+  #   start_path: docs
   # - url: D:\Repos\GitHub\DataHandwerk\DataHandwerk-docs
   #   branches: HEAD
   #   start_path: docs
@@ -24,8 +27,12 @@ content:
   #   branches: [v2.0, v1.0]
 asciidoc:
   attributes:
+    page-pagination: ''
     experimental: ''
     :plantuml-server-url: http://www.plantuml.com/plantuml
+    # You can use the kroki-fetch-diagram option to download the images from Kroki at build time. In other words, while viewing pages you won't rely on Kroki anymore.
+    # However, in Antora, this is not currently compatible with inline SVG images.
+    kroki-fetch-diagram: true
   extensions:
   - asciidoctor-kroki
 ui:

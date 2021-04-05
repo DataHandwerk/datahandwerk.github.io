@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1798px" preserveAspectRatio="none" style="width:969px;height:1798px;" version="1.1" viewBox="0 0 969 1798" width="969px" zoomAndPan="magnify"><defs><filter height="300%" id="fjf1y129uqm9c" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[fff6ae43099849df4ca3d5cf25168444]
+class docs.ExecutionLog_plantUML_Sequence_start_stop--><rect codeLine="26" fill="#F5F5F5" filter="url(#fjf1y129uqm9c)" height="132.6191" id="docs.ExecutionLog_plantUML_Sequence_start_stop" style="stroke:#A80036;stroke-width:1.5;" width="270" x="685" y="377.13"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="17" x="811.5" y="394.7628">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="263" x="688.5" y="410.9581">docs.ExecutionLog_plantUML_Sequence_start_stop</text><line style="stroke:#A80036;stroke-width:1.5;" x1="686" x2="954" y1="419.5206" y2="419.5206"/><ellipse cx="696" cy="430.5206" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="9" x="705" y="435.1007">id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="34" x="717" y="435.1007">: bigint</text><line style="stroke:#A80036;stroke-width:1.0;" x1="686" x2="954" y1="442.3663" y2="442.3663"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="705" y="457.9464">created_dt : datetime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="185" x="705" y="472.7921">parent_proc_fullname : nvarchar(517)</text><ellipse cx="696" cy="483.0577" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="244" x="705" y="487.6378">plantUML_Sequence_start_stop : nvarchar(1574)</text><ellipse cx="696" cy="497.9034" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="147" x="705" y="502.4835">proc_fullname : nvarchar(517)</text><!--MD5=[9cc166d1000a50190068224be0e5412e]
+class repo.ExecutionLog--><rect codeLine="35" fill="#FFFFFF" filter="url(#fjf1y129uqm9c)" height="770.9844" id="repo.ExecutionLog" style="stroke:#A80036;stroke-width:1.5;" width="234" x="7" y="945.13"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="115" y="962.7628">«U»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="93" x="77.5" y="978.9581">repo.ExecutionLog</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="240" y1="987.5206" y2="987.5206"/><ellipse cx="18" cy="998.5206" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="9" x="27" y="1003.1007">id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="34" x="39" y="1003.1007">: bigint</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="240" y1="1010.3663" y2="1010.3663"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="27" y="1025.9464">created_dt : datetime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="201" x="27" y="1040.7921">current_execution_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="59" x="27" y="1055.6378">deleted : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="27" y="1070.4835">event_info : nvarchar(max)</text><ellipse cx="18" cy="1080.7491" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="208" x="27" y="1085.3292">execution_instance_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="27" y="1100.1749">info_01 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="27" y="1115.0206">info_02 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="27" y="1129.8663">info_03 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="27" y="1144.712">info_04 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="27" y="1159.5577">info_05 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="27" y="1174.4034">info_06 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="27" y="1189.2491">info_07 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="27" y="1204.0948">info_08 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="27" y="1218.9405">info_09 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="63" x="27" y="1233.7863">inserted : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="27" y="1248.632">parameter_01 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="27" y="1263.4777">parameter_02 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="27" y="1278.3234">parameter_03 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="27" y="1293.1691">parameter_04 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="27" y="1308.0148">parameter_05 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="27" y="1322.8605">parameter_06 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="27" y="1337.7062">parameter_07 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="27" y="1352.5519">parameter_08 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="27" y="1367.3976">parameter_09 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="27" y="1382.2433">parameter_10 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="27" y="1397.089">parameter_11 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="27" y="1411.9347">parameter_12 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="27" y="1426.7804">parameter_13 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="27" y="1441.6261">parameter_14 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="27" y="1456.4718">parameter_15 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="27" y="1471.3175">parameter_16 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="27" y="1486.1632">parameter_17 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="27" y="1501.0089">parameter_18 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="27" y="1515.8546">parameter_19 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="27" y="1530.7003">parameter_20 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="158" x="27" y="1545.546">parent_execution_log_id : bigint</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="58" x="27" y="1560.3917">proc_id : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="132" x="27" y="1575.2374">proc_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="176" x="27" y="1590.0831">proc_schema_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="146" x="27" y="1604.9288">source_object : nvarchar(261)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="126" x="27" y="1619.7745">ssis_execution_id : bigint</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="59" x="27" y="1634.6202">step_id : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="140" x="27" y="1649.4659">step_name : nvarchar(1000)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="108" x="27" y="1664.3116">sub_execution_id : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="143" x="27" y="1679.1573">target_object : nvarchar(261)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="62" x="27" y="1694.003">updated : int</text><ellipse cx="18" cy="1704.2687" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="147" x="27" y="1708.8488">proc_fullname : nvarchar(517)</text><!--MD5=[9934f410bc71130ce3c2434c16e72538]
+class repo.ExecutionLog_gross--><rect codeLine="87" fill="#F5F5F5" filter="url(#fjf1y129uqm9c)" height="830.3672" id="repo.ExecutionLog_gross" style="stroke:#A80036;stroke-width:1.5;" width="292" x="317" y="887.13"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="17" x="454.5" y="904.7628">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="127" x="399.5" y="920.9581">repo.ExecutionLog_gross</text><line style="stroke:#A80036;stroke-width:1.5;" x1="318" x2="608" y1="929.5206" y2="929.5206"/><ellipse cx="328" cy="940.5206" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="9" x="337" y="945.1007">id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="34" x="349" y="945.1007">: bigint</text><line style="stroke:#A80036;stroke-width:1.0;" x1="318" x2="608" y1="952.3663" y2="952.3663"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="337" y="967.9464">created_dt : datetime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="266" x="337" y="982.7921">created_dt_max__execution_instance_guid : datetime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="264" x="337" y="997.6378">created_dt_min__execution_instance_guid : datetime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="201" x="337" y="1012.4835">current_execution_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="59" x="337" y="1027.3292">deleted : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="190" x="337" y="1042.1749">duration__current_execution_guid : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="197" x="337" y="1057.0206">duration__execution_instance_guid : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="337" y="1071.8663">event_info : nvarchar(max)</text><ellipse cx="328" cy="1082.132" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="208" x="337" y="1086.712">execution_instance_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="337" y="1101.5577">info_01 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="337" y="1116.4034">info_02 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="337" y="1131.2491">info_03 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="337" y="1146.0948">info_04 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="337" y="1160.9405">info_05 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="337" y="1175.7863">info_06 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="337" y="1190.632">info_07 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="337" y="1205.4777">info_08 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="337" y="1220.3234">info_09 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="63" x="337" y="1235.1691">inserted : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="337" y="1250.0148">parameter_01 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="337" y="1264.8605">parameter_02 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="337" y="1279.7062">parameter_03 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="337" y="1294.5519">parameter_04 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="337" y="1309.3976">parameter_05 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="337" y="1324.2433">parameter_06 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="337" y="1339.089">parameter_07 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="337" y="1353.9347">parameter_08 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="337" y="1368.7804">parameter_09 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="337" y="1383.6261">parameter_10 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="337" y="1398.4718">parameter_11 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="337" y="1413.3175">parameter_12 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="337" y="1428.1632">parameter_13 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="337" y="1443.0089">parameter_14 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="337" y="1457.8546">parameter_15 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="337" y="1472.7003">parameter_16 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="337" y="1487.546">parameter_17 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="337" y="1502.3917">parameter_18 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="337" y="1517.2374">parameter_19 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="337" y="1532.0831">parameter_20 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="158" x="337" y="1546.9288">parent_execution_log_id : bigint</text><ellipse cx="328" cy="1557.1945" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="186" x="337" y="1561.7745">plantUML_Sequence : nvarchar(1550)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="58" x="337" y="1576.6202">proc_id : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="132" x="337" y="1591.4659">proc_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="176" x="337" y="1606.3116">proc_schema_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="146" x="337" y="1621.1573">source_object : nvarchar(261)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="126" x="337" y="1636.003">ssis_execution_id : bigint</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="59" x="337" y="1650.8488">step_id : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="140" x="337" y="1665.6945">step_name : nvarchar(1000)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="108" x="337" y="1680.5402">sub_execution_id : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="143" x="337" y="1695.3859">target_object : nvarchar(261)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="62" x="337" y="1710.2316">updated : int</text><!--MD5=[3700caaac2bfe0bfff8e633e7ee97332]
+class repo.ExecutionLog_parent--><rect codeLine="143" fill="#F5F5F5" filter="url(#fjf1y129uqm9c)" height="503.7617" id="repo.ExecutionLog_parent" style="stroke:#A80036;stroke-width:1.5;" width="251" x="337.5" y="344.63"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="17" x="454.5" y="362.2628">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="131" x="397.5" y="378.4581">repo.ExecutionLog_parent</text><line style="stroke:#A80036;stroke-width:1.5;" x1="338.5" x2="587.5" y1="387.0206" y2="387.0206"/><ellipse cx="348.5" cy="398.0206" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="9" x="357.5" y="402.6007">id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="34" x="369.5" y="402.6007">: bigint</text><line style="stroke:#A80036;stroke-width:1.0;" x1="338.5" x2="587.5" y1="409.8663" y2="409.8663"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="144" x="343.5" y="425.4464">parent_created_dt : datetime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="239" x="343.5" y="440.2921">parent_current_execution_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="158" x="343.5" y="455.1378">parent_execution_log_id : bigint</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="173" x="343.5" y="469.9835">parent_parameter_01 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="173" x="343.5" y="484.8292">parent_parameter_02 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="173" x="343.5" y="499.6749">parent_parameter_03 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="173" x="343.5" y="514.5206">parent_parameter_04 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="173" x="343.5" y="529.3663">parent_parameter_05 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="173" x="343.5" y="544.212">parent_parameter_06 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="173" x="343.5" y="559.0577">parent_parameter_07 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="173" x="343.5" y="573.9034">parent_parameter_08 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="173" x="343.5" y="588.7491">parent_parameter_09 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="173" x="343.5" y="603.5948">parent_parameter_10 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="173" x="343.5" y="618.4405">parent_parameter_11 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="173" x="343.5" y="633.2862">parent_parameter_12 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="173" x="343.5" y="648.132">parent_parameter_13 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="173" x="343.5" y="662.9777">parent_parameter_14 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="173" x="343.5" y="677.8234">parent_parameter_15 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="173" x="343.5" y="692.6691">parent_parameter_16 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="173" x="343.5" y="707.5148">parent_parameter_17 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="173" x="343.5" y="722.3605">parent_parameter_18 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="173" x="343.5" y="737.2062">parent_parameter_19 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="173" x="343.5" y="752.0519">parent_parameter_20 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="185" x="343.5" y="766.8976">parent_proc_fullname : nvarchar(517)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="96" x="343.5" y="781.7433">parent_proc_id : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="170" x="343.5" y="796.589">parent_proc_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="214" x="343.5" y="811.4347">parent_proc_schema_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="97" x="343.5" y="826.2804">parent_step_id : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="178" x="343.5" y="841.1261">parent_step_name : nvarchar(1000)</text><!--MD5=[766547c06d7214e35c354867103b9f6b]
+class repo.usp_ExecutionLog_insert--><rect codeLine="177" fill="#00FFFF" filter="url(#fjf1y129uqm9c)" height="58.3906" id="repo.usp_ExecutionLog_insert" style="stroke:#A80036;stroke-width:1.5;" width="158" x="384" y="176.13"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="17" x="454.5" y="193.7628">«P»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="152" x="387" y="209.9581">repo.usp_ExecutionLog_insert</text><line style="stroke:#A80036;stroke-width:1.5;" x1="385" x2="541" y1="218.5206" y2="218.5206"/><line style="stroke:#A80036;stroke-width:1.0;" x1="385" x2="541" y1="226.5206" y2="226.5206"/><!--MD5=[da3afa98fd4847bc621869637d488fe1]
+reverse link repo.ExecutionLog to repo.usp_ExecutionLog_insert--><path codeLine="181" d="M151.4,935.74 C176.8,677.2 224.26,362.4 309,261.13 C327.79,238.68 356.39,225.23 383.81,217.17 " fill="none" id="repo.ExecutionLog-backto-repo.usp_ExecutionLog_insert" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="150.88,941.07,155.7362,932.5016,151.3662,936.0937,147.7741,931.7237,150.88,941.07" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="182" d="M254.08,1299.02 C271.96,1297.48 290.47,1295.89 308.73,1294.32 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="249.05,1299.46,258.3595,1302.6745,254.0316,1299.0318,257.6744,1294.7039,249.05,1299.46" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="186" d="M247.11,1019.82 C283.06,1015.25 276.01,962.13 316,962.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1020.13,251.2338,1023.5559,246.9901,1019.8154,250.7305,1015.5717,242,1020.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="188" d="M247.14,1033.91 C277.75,1031.26 282.47,1005.13 316,1005.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1034.13,251.163,1037.741,246.9954,1033.9159,250.8205,1029.7483,242,1034.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="189" d="M247.14,1047.91 C277.75,1045.26 282.47,1019.13 316,1019.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-3" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1048.13,251.163,1051.741,246.9954,1047.9159,250.8205,1043.7483,242,1048.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="190" d="M247.18,1062.13 C275.86,1062.13 284.91,1062.13 316,1062.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-4" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1062.13,251,1066.13,247,1062.13,251,1058.13,242,1062.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="191" d="M247.18,1076.13 C275.86,1076.13 284.91,1076.13 316,1076.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-5" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1076.13,251,1080.13,247,1076.13,251,1072.13,242,1076.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="192" d="M247.11,997.82 C283.06,993.25 276.01,940.13 316,940.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-6" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,998.13,251.2338,1001.5559,246.9901,997.8154,250.7305,993.5717,242,998.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="195" d="M247.18,1090.13 C275.86,1090.13 284.91,1090.13 316,1090.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-7" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1090.13,251,1094.13,247,1090.13,251,1086.13,242,1090.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="196" d="M247.18,1104.13 C275.86,1104.13 284.91,1104.13 316,1104.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-8" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1104.13,251,1108.13,247,1104.13,251,1100.13,242,1104.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="197" d="M247.18,1118.13 C275.86,1118.13 284.91,1118.13 316,1118.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-9" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1118.13,251,1122.13,247,1118.13,251,1114.13,242,1118.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="198" d="M247.18,1132.13 C275.86,1132.13 284.91,1132.13 316,1132.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-10" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1132.13,251,1136.13,247,1132.13,251,1128.13,242,1132.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="199" d="M247.18,1146.13 C275.86,1146.13 284.91,1146.13 316,1146.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-11" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1146.13,251,1150.13,247,1146.13,251,1142.13,242,1146.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="200" d="M247.18,1160.13 C275.86,1160.13 284.91,1160.13 316,1160.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-12" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1160.13,251,1164.13,247,1160.13,251,1156.13,242,1160.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="201" d="M247.18,1174.13 C275.86,1174.13 284.91,1174.13 316,1174.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-13" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1174.13,251,1178.13,247,1174.13,251,1170.13,242,1174.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="202" d="M247.18,1188.13 C275.86,1188.13 284.91,1188.13 316,1188.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-14" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1188.13,251,1192.13,247,1188.13,251,1184.13,242,1188.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="203" d="M247.18,1202.13 C275.86,1202.13 284.91,1202.13 316,1202.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-15" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1202.13,251,1206.13,247,1202.13,251,1198.13,242,1202.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="204" d="M247.18,1216.13 C275.86,1216.13 284.91,1216.13 316,1216.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-16" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1216.13,251,1220.13,247,1216.13,251,1212.13,242,1216.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="205" d="M247.18,1230.13 C275.86,1230.13 284.91,1230.13 316,1230.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-17" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1230.13,251,1234.13,247,1230.13,251,1226.13,242,1230.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="206" d="M247.18,1244.13 C275.86,1244.13 284.91,1244.13 316,1244.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-18" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1244.13,251,1248.13,247,1244.13,251,1240.13,242,1244.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="207" d="M247.18,1258.13 C275.86,1258.13 284.91,1258.13 316,1258.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-19" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1258.13,251,1262.13,247,1258.13,251,1254.13,242,1258.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="208" d="M247.18,1272.13 C275.86,1272.13 284.91,1272.13 316,1272.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-20" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1272.13,251,1276.13,247,1272.13,251,1268.13,242,1272.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="209" d="M247.18,1286.13 C275.86,1286.13 284.91,1286.13 316,1286.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-21" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1286.13,251,1290.13,247,1286.13,251,1282.13,242,1286.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="210" d="M247.18,1300.13 C275.86,1300.13 284.91,1300.13 316,1300.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-22" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1300.13,251,1304.13,247,1300.13,251,1296.13,242,1300.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="211" d="M247.18,1314.13 C275.86,1314.13 284.91,1314.13 316,1314.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-23" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1314.13,251,1318.13,247,1314.13,251,1310.13,242,1314.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="212" d="M247.18,1328.13 C275.86,1328.13 284.91,1328.13 316,1328.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-24" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1328.13,251,1332.13,247,1328.13,251,1324.13,242,1328.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="213" d="M247.18,1342.13 C275.86,1342.13 284.91,1342.13 316,1342.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-25" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1342.13,251,1346.13,247,1342.13,251,1338.13,242,1342.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="214" d="M247.18,1356.13 C275.86,1356.13 284.91,1356.13 316,1356.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-26" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1356.13,251,1360.13,247,1356.13,251,1352.13,242,1356.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="215" d="M247.18,1370.13 C275.86,1370.13 284.91,1370.13 316,1370.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-27" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1370.13,251,1374.13,247,1370.13,251,1366.13,242,1370.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="216" d="M247.18,1384.13 C275.86,1384.13 284.91,1384.13 316,1384.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-28" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1384.13,251,1388.13,247,1384.13,251,1380.13,242,1384.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="217" d="M247.18,1398.13 C275.86,1398.13 284.91,1398.13 316,1398.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-29" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1398.13,251,1402.13,247,1398.13,251,1394.13,242,1398.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="218" d="M247.18,1412.13 C275.86,1412.13 284.91,1412.13 316,1412.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-30" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1412.13,251,1416.13,247,1412.13,251,1408.13,242,1412.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="219" d="M247.18,1426.13 C275.86,1426.13 284.91,1426.13 316,1426.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-31" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1426.13,251,1430.13,247,1426.13,251,1422.13,242,1426.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="220" d="M247.18,1440.13 C275.86,1440.13 284.91,1440.13 316,1440.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-32" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1440.13,251,1444.13,247,1440.13,251,1436.13,242,1440.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="221" d="M247.18,1454.13 C275.86,1454.13 284.91,1454.13 316,1454.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-33" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1454.13,251,1458.13,247,1454.13,251,1450.13,242,1454.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="222" d="M247.18,1468.13 C275.86,1468.13 284.91,1468.13 316,1468.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-34" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1468.13,251,1472.13,247,1468.13,251,1464.13,242,1468.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="223" d="M247.18,1482.13 C275.86,1482.13 284.91,1482.13 316,1482.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-35" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1482.13,251,1486.13,247,1482.13,251,1478.13,242,1482.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="224" d="M247.18,1496.13 C275.86,1496.13 284.91,1496.13 316,1496.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-36" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1496.13,251,1500.13,247,1496.13,251,1492.13,242,1496.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="225" d="M247.18,1510.13 C275.86,1510.13 284.91,1510.13 316,1510.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-37" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1510.13,251,1514.13,247,1510.13,251,1506.13,242,1510.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="228" d="M247.26,1524.25 C276.32,1525.62 284.36,1538.13 316,1538.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-38" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1524.13,250.906,1528.3352,246.9987,1524.2446,251.0893,1520.3373,242,1524.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="229" d="M247.26,1538.25 C276.32,1539.62 284.36,1552.13 316,1552.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-39" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1538.13,250.906,1542.3352,246.9987,1538.2446,251.0893,1534.3373,242,1538.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="230" d="M247.26,1552.25 C276.32,1553.62 284.36,1566.13 316,1566.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-40" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1552.13,250.906,1556.3352,246.9987,1552.2446,251.0893,1548.3373,242,1552.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="231" d="M247.26,1566.25 C276.32,1567.62 284.36,1580.13 316,1580.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-41" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1566.13,250.906,1570.3352,246.9987,1566.2446,251.0893,1562.3373,242,1566.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="232" d="M247.26,1580.25 C276.32,1581.62 284.36,1594.13 316,1594.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-42" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1580.13,250.906,1584.3352,246.9987,1580.2446,251.0893,1576.3373,242,1580.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="233" d="M247.26,1594.25 C276.32,1595.62 284.36,1608.13 316,1608.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-43" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1594.13,250.906,1598.3352,246.9987,1594.2446,251.0893,1590.3373,242,1594.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="234" d="M247.26,1608.25 C276.32,1609.62 284.36,1622.13 316,1622.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-44" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1608.13,250.906,1612.3352,246.9987,1608.2446,251.0893,1604.3373,242,1608.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="235" d="M247.26,1622.25 C276.32,1623.62 284.36,1636.13 316,1636.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-45" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1622.13,250.906,1626.3352,246.9987,1622.2446,251.0893,1618.3373,242,1622.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="236" d="M247.26,1636.25 C276.32,1637.62 284.36,1650.13 316,1650.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-46" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1636.13,250.906,1640.3352,246.9987,1636.2446,251.0893,1632.3373,242,1636.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[08152775663cca821c513e982c75e979]
+reverse link repo.ExecutionLog to repo.ExecutionLog_gross--><path codeLine="237" d="M247.26,1650.25 C276.32,1651.62 284.36,1664.13 316,1664.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_gross-47" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1650.13,250.906,1654.3352,246.9987,1650.2446,251.0893,1646.3373,242,1650.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[9b5fa7fee04a6ef545f55f0993c37043]
+reverse link repo.ExecutionLog to repo.ExecutionLog_parent--><path codeLine="183" d="M251.05,992.82 C269.69,949.88 289.28,906.67 309,866.13 C315.52,852.73 322.4,839.07 329.49,825.36 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_parent" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="249.02,997.52,256.2669,990.8505,251.0068,992.9317,248.9257,987.6716,249.02,997.52" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[9b5fa7fee04a6ef545f55f0993c37043]
+reverse link repo.ExecutionLog to repo.ExecutionLog_parent--><path codeLine="194" d="M246.99,997.84 C372.6,982.99 203.72,398.13 337,398.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_parent-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,998.13,251.2141,1001.6085,246.9918,997.8439,250.7564,993.6216,242,998.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[9b5fa7fee04a6ef545f55f0993c37043]
+reverse link repo.ExecutionLog to repo.ExecutionLog_parent--><path codeLine="226" d="M247.04,1509.45 C356.26,1479.27 220.37,449.13 337,449.13 " fill="none" id="repo.ExecutionLog-backto-repo.ExecutionLog_parent-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1510.13,251.4554,1512.8858,246.9548,1509.4589,250.3817,1504.9582,242,1510.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[85d0d89facef7ae3fbd086808e23060a]
+reverse link repo.ExecutionLog to docs.ExecutionLog_plantUML_Sequence_start_stop--><path codeLine="184" d="M146.09,936 C168.65,690.66 214.88,401.33 309,323.13 C425.74,226.14 607.2,305.91 719.27,373.09 " fill="none" id="repo.ExecutionLog-backto-docs.ExecutionLog_plantUML_Sequence_start_stop" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="145.63,941.06,150.4351,932.4628,146.0865,936.0809,142.4685,931.7324,145.63,941.06" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[85d0d89facef7ae3fbd086808e23060a]
+reverse link repo.ExecutionLog to docs.ExecutionLog_plantUML_Sequence_start_stop--><path codeLine="187" d="M247.15,1019.32 C334.43,990.82 239.8,222.16 309,158.13 C409.48,65.16 509.99,72.76 617,158.13 C721.76,241.71 549.98,452.13 684,452.13 " fill="none" id="repo.ExecutionLog-backto-docs.ExecutionLog_plantUML_Sequence_start_stop-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1020.13,251.5092,1022.6943,246.9402,1019.359,250.2755,1014.79,242,1020.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[85d0d89facef7ae3fbd086808e23060a]
+reverse link repo.ExecutionLog to docs.ExecutionLog_plantUML_Sequence_start_stop--><path codeLine="193" d="M247.09,997.37 C338.47,969.16 236.88,166.08 309,99.13 C409.33,6 511.04,12.47 617,99.13 C733.18,194.15 533.91,430.13 684,430.13 " fill="none" id="repo.ExecutionLog-backto-docs.ExecutionLog_plantUML_Sequence_start_stop-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,998.13,251.4871,1000.7748,246.9466,997.4009,250.3205,992.8603,242,998.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[85d0d89facef7ae3fbd086808e23060a]
+reverse link repo.ExecutionLog to docs.ExecutionLog_plantUML_Sequence_start_stop--><path codeLine="227" d="M247.17,1664.35 C275.45,1666.86 278.44,1690.01 309,1697.13 C442.32,1728.18 517.55,1791.2 617,1697.13 C714.26,1605.14 550.13,494.13 684,494.13 " fill="none" id="repo.ExecutionLog-backto-docs.ExecutionLog_plantUML_Sequence_start_stop-3" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242,1664.13,250.8199,1668.5128,246.9954,1664.3447,251.1635,1660.5202,242,1664.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d6239f468100f8e4919cf31bfc2b7f2b]
+reverse link repo.ExecutionLog_parent to docs.ExecutionLog_plantUML_Sequence_start_stop--><path codeLine="185" d="M601.31,534.95 C626.12,524.26 652.02,513.09 676.96,502.35 " fill="none" id="repo.ExecutionLog_parent-backto-docs.ExecutionLog_plantUML_Sequence_start_stop" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="596.69,536.94,606.5384,537.0343,601.2783,534.9532,603.3595,529.6931,596.69,536.94" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d6239f468100f8e4919cf31bfc2b7f2b]
+reverse link repo.ExecutionLog_parent to docs.ExecutionLog_plantUML_Sequence_start_stop--><path codeLine="238" d="M595.06,758.99 C722.25,751.74 548.98,466.13 684,466.13 " fill="none" id="repo.ExecutionLog_parent-backto-docs.ExecutionLog_plantUML_Sequence_start_stop-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="590,759.13,599.1106,762.8713,594.998,758.9872,598.8821,754.8746,590,759.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[47506005fe0feb8eb60ad7781c77a582]
+@startuml
+left to right direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity docs.ExecutionLog_plantUML_Sequence_start_stop << V >> {
+  * **id** : bigint
+  - -
+  created_dt : datetime
+  parent_proc_fullname : nvarchar(517)
+  * plantUML_Sequence_start_stop : nvarchar(1574)
+  * proc_fullname : nvarchar(517)
+}
+
+entity repo.ExecutionLog << U >> {
+  * **id** : bigint
+  - -
+  created_dt : datetime
+  current_execution_guid : uniqueidentifier
+  deleted : int
+  event_info : nvarchar(max)
+  * execution_instance_guid : uniqueidentifier
+  info_01 : sql_variant
+  info_02 : sql_variant
+  info_03 : sql_variant
+  info_04 : sql_variant
+  info_05 : sql_variant
+  info_06 : sql_variant
+  info_07 : sql_variant
+  info_08 : sql_variant
+  info_09 : sql_variant
+  inserted : int
+  parameter_01 : sql_variant
+  parameter_02 : sql_variant
+  parameter_03 : sql_variant
+  parameter_04 : sql_variant
+  parameter_05 : sql_variant
+  parameter_06 : sql_variant
+  parameter_07 : sql_variant
+  parameter_08 : sql_variant
+  parameter_09 : sql_variant
+  parameter_10 : sql_variant
+  parameter_11 : sql_variant
+  parameter_12 : sql_variant
+  parameter_13 : sql_variant
+  parameter_14 : sql_variant
+  parameter_15 : sql_variant
+  parameter_16 : sql_variant
+  parameter_17 : sql_variant
+  parameter_18 : sql_variant
+  parameter_19 : sql_variant
+  parameter_20 : sql_variant
+  parent_execution_log_id : bigint
+  proc_id : int
+  proc_name : nvarchar(128)
+  proc_schema_name : nvarchar(128)
+  source_object : nvarchar(261)
+  ssis_execution_id : bigint
+  step_id : int
+  step_name : nvarchar(1000)
+  sub_execution_id : int
+  target_object : nvarchar(261)
+  updated : int
+  * {abstract} proc_fullname : nvarchar(517)
+}
+
+entity repo.ExecutionLog_gross << V >> {
+  * **id** : bigint
+  - -
+  created_dt : datetime
+  created_dt_max__execution_instance_guid : datetime
+  created_dt_min__execution_instance_guid : datetime
+  current_execution_guid : uniqueidentifier
+  deleted : int
+  duration__current_execution_guid : int
+  duration__execution_instance_guid : int
+  event_info : nvarchar(max)
+  * execution_instance_guid : uniqueidentifier
+  info_01 : sql_variant
+  info_02 : sql_variant
+  info_03 : sql_variant
+  info_04 : sql_variant
+  info_05 : sql_variant
+  info_06 : sql_variant
+  info_07 : sql_variant
+  info_08 : sql_variant
+  info_09 : sql_variant
+  inserted : int
+  parameter_01 : sql_variant
+  parameter_02 : sql_variant
+  parameter_03 : sql_variant
+  parameter_04 : sql_variant
+  parameter_05 : sql_variant
+  parameter_06 : sql_variant
+  parameter_07 : sql_variant
+  parameter_08 : sql_variant
+  parameter_09 : sql_variant
+  parameter_10 : sql_variant
+  parameter_11 : sql_variant
+  parameter_12 : sql_variant
+  parameter_13 : sql_variant
+  parameter_14 : sql_variant
+  parameter_15 : sql_variant
+  parameter_16 : sql_variant
+  parameter_17 : sql_variant
+  parameter_18 : sql_variant
+  parameter_19 : sql_variant
+  parameter_20 : sql_variant
+  parent_execution_log_id : bigint
+  * plantUML_Sequence : nvarchar(1550)
+  proc_id : int
+  proc_name : nvarchar(128)
+  proc_schema_name : nvarchar(128)
+  source_object : nvarchar(261)
+  ssis_execution_id : bigint
+  step_id : int
+  step_name : nvarchar(1000)
+  sub_execution_id : int
+  target_object : nvarchar(261)
+  updated : int
+}
+
+entity repo.ExecutionLog_parent << V >> {
+  * **id** : bigint
+  - -
+  parent_created_dt : datetime
+  parent_current_execution_guid : uniqueidentifier
+  parent_execution_log_id : bigint
+  parent_parameter_01 : sql_variant
+  parent_parameter_02 : sql_variant
+  parent_parameter_03 : sql_variant
+  parent_parameter_04 : sql_variant
+  parent_parameter_05 : sql_variant
+  parent_parameter_06 : sql_variant
+  parent_parameter_07 : sql_variant
+  parent_parameter_08 : sql_variant
+  parent_parameter_09 : sql_variant
+  parent_parameter_10 : sql_variant
+  parent_parameter_11 : sql_variant
+  parent_parameter_12 : sql_variant
+  parent_parameter_13 : sql_variant
+  parent_parameter_14 : sql_variant
+  parent_parameter_15 : sql_variant
+  parent_parameter_16 : sql_variant
+  parent_parameter_17 : sql_variant
+  parent_parameter_18 : sql_variant
+  parent_parameter_19 : sql_variant
+  parent_parameter_20 : sql_variant
+  parent_proc_fullname : nvarchar(517)
+  parent_proc_id : int
+  parent_proc_name : nvarchar(128)
+  parent_proc_schema_name : nvarchar(128)
+  parent_step_id : int
+  parent_step_name : nvarchar(1000)
+}
+
+entity repo.usp_ExecutionLog_insert << P >> {
+  - -
+}
+
+repo.ExecutionLog <.. repo.usp_ExecutionLog_insert
+repo.ExecutionLog <.. repo.ExecutionLog_gross
+repo.ExecutionLog <.. repo.ExecutionLog_parent
+repo.ExecutionLog <.. docs.ExecutionLog_plantUML_Sequence_start_stop
+repo.ExecutionLog_parent <.. docs.ExecutionLog_plantUML_Sequence_start_stop
+repo.ExecutionLog::created_dt <- - repo.ExecutionLog_gross::created_dt
+repo.ExecutionLog::created_dt <- - docs.ExecutionLog_plantUML_Sequence_start_stop::created_dt
+repo.ExecutionLog::current_execution_guid <- - repo.ExecutionLog_gross::current_execution_guid
+repo.ExecutionLog::deleted <- - repo.ExecutionLog_gross::deleted
+repo.ExecutionLog::event_info <- - repo.ExecutionLog_gross::event_info
+repo.ExecutionLog::execution_instance_guid <- - repo.ExecutionLog_gross::execution_instance_guid
+repo.ExecutionLog::id <- - repo.ExecutionLog_gross::id
+repo.ExecutionLog::id <- - docs.ExecutionLog_plantUML_Sequence_start_stop::id
+repo.ExecutionLog::id <- - repo.ExecutionLog_parent::id
+repo.ExecutionLog::info_01 <- - repo.ExecutionLog_gross::info_01
+repo.ExecutionLog::info_02 <- - repo.ExecutionLog_gross::info_02
+repo.ExecutionLog::info_03 <- - repo.ExecutionLog_gross::info_03
+repo.ExecutionLog::info_04 <- - repo.ExecutionLog_gross::info_04
+repo.ExecutionLog::info_05 <- - repo.ExecutionLog_gross::info_05
+repo.ExecutionLog::info_06 <- - repo.ExecutionLog_gross::info_06
+repo.ExecutionLog::info_07 <- - repo.ExecutionLog_gross::info_07
+repo.ExecutionLog::info_08 <- - repo.ExecutionLog_gross::info_08
+repo.ExecutionLog::info_09 <- - repo.ExecutionLog_gross::info_09
+repo.ExecutionLog::inserted <- - repo.ExecutionLog_gross::inserted
+repo.ExecutionLog::parameter_01 <- - repo.ExecutionLog_gross::parameter_01
+repo.ExecutionLog::parameter_02 <- - repo.ExecutionLog_gross::parameter_02
+repo.ExecutionLog::parameter_03 <- - repo.ExecutionLog_gross::parameter_03
+repo.ExecutionLog::parameter_04 <- - repo.ExecutionLog_gross::parameter_04
+repo.ExecutionLog::parameter_05 <- - repo.ExecutionLog_gross::parameter_05
+repo.ExecutionLog::parameter_06 <- - repo.ExecutionLog_gross::parameter_06
+repo.ExecutionLog::parameter_07 <- - repo.ExecutionLog_gross::parameter_07
+repo.ExecutionLog::parameter_08 <- - repo.ExecutionLog_gross::parameter_08
+repo.ExecutionLog::parameter_09 <- - repo.ExecutionLog_gross::parameter_09
+repo.ExecutionLog::parameter_10 <- - repo.ExecutionLog_gross::parameter_10
+repo.ExecutionLog::parameter_11 <- - repo.ExecutionLog_gross::parameter_11
+repo.ExecutionLog::parameter_12 <- - repo.ExecutionLog_gross::parameter_12
+repo.ExecutionLog::parameter_13 <- - repo.ExecutionLog_gross::parameter_13
+repo.ExecutionLog::parameter_14 <- - repo.ExecutionLog_gross::parameter_14
+repo.ExecutionLog::parameter_15 <- - repo.ExecutionLog_gross::parameter_15
+repo.ExecutionLog::parameter_16 <- - repo.ExecutionLog_gross::parameter_16
+repo.ExecutionLog::parameter_17 <- - repo.ExecutionLog_gross::parameter_17
+repo.ExecutionLog::parameter_18 <- - repo.ExecutionLog_gross::parameter_18
+repo.ExecutionLog::parameter_19 <- - repo.ExecutionLog_gross::parameter_19
+repo.ExecutionLog::parameter_20 <- - repo.ExecutionLog_gross::parameter_20
+repo.ExecutionLog::parent_execution_log_id <- - repo.ExecutionLog_gross::parent_execution_log_id
+repo.ExecutionLog::parent_execution_log_id <- - repo.ExecutionLog_parent::parent_execution_log_id
+repo.ExecutionLog::proc_fullname <- - docs.ExecutionLog_plantUML_Sequence_start_stop::proc_fullname
+repo.ExecutionLog::proc_id <- - repo.ExecutionLog_gross::proc_id
+repo.ExecutionLog::proc_name <- - repo.ExecutionLog_gross::proc_name
+repo.ExecutionLog::proc_schema_name <- - repo.ExecutionLog_gross::proc_schema_name
+repo.ExecutionLog::source_object <- - repo.ExecutionLog_gross::source_object
+repo.ExecutionLog::ssis_execution_id <- - repo.ExecutionLog_gross::ssis_execution_id
+repo.ExecutionLog::step_id <- - repo.ExecutionLog_gross::step_id
+repo.ExecutionLog::step_name <- - repo.ExecutionLog_gross::step_name
+repo.ExecutionLog::sub_execution_id <- - repo.ExecutionLog_gross::sub_execution_id
+repo.ExecutionLog::target_object <- - repo.ExecutionLog_gross::target_object
+repo.ExecutionLog::updated <- - repo.ExecutionLog_gross::updated
+repo.ExecutionLog_parent::parent_proc_fullname <- - docs.ExecutionLog_plantUML_Sequence_start_stop::parent_proc_fullname
+@enduml
+
+@startuml
+left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity docs.ExecutionLog_plantUML_Sequence_start_stop << V >> {
+  * **id** : bigint
+  - -
+  created_dt : datetime
+  parent_proc_fullname : nvarchar(517)
+  * plantUML_Sequence_start_stop : nvarchar(1574)
+  * proc_fullname : nvarchar(517)
+}
+
+entity repo.ExecutionLog << U >> {
+  * **id** : bigint
+  - -
+  created_dt : datetime
+  current_execution_guid : uniqueidentifier
+  deleted : int
+  event_info : nvarchar(max)
+  * execution_instance_guid : uniqueidentifier
+  info_01 : sql_variant
+  info_02 : sql_variant
+  info_03 : sql_variant
+  info_04 : sql_variant
+  info_05 : sql_variant
+  info_06 : sql_variant
+  info_07 : sql_variant
+  info_08 : sql_variant
+  info_09 : sql_variant
+  inserted : int
+  parameter_01 : sql_variant
+  parameter_02 : sql_variant
+  parameter_03 : sql_variant
+  parameter_04 : sql_variant
+  parameter_05 : sql_variant
+  parameter_06 : sql_variant
+  parameter_07 : sql_variant
+  parameter_08 : sql_variant
+  parameter_09 : sql_variant
+  parameter_10 : sql_variant
+  parameter_11 : sql_variant
+  parameter_12 : sql_variant
+  parameter_13 : sql_variant
+  parameter_14 : sql_variant
+  parameter_15 : sql_variant
+  parameter_16 : sql_variant
+  parameter_17 : sql_variant
+  parameter_18 : sql_variant
+  parameter_19 : sql_variant
+  parameter_20 : sql_variant
+  parent_execution_log_id : bigint
+  proc_id : int
+  proc_name : nvarchar(128)
+  proc_schema_name : nvarchar(128)
+  source_object : nvarchar(261)
+  ssis_execution_id : bigint
+  step_id : int
+  step_name : nvarchar(1000)
+  sub_execution_id : int
+  target_object : nvarchar(261)
+  updated : int
+  * {abstract} proc_fullname : nvarchar(517)
+}
+
+entity repo.ExecutionLog_gross << V >> {
+  * **id** : bigint
+  - -
+  created_dt : datetime
+  created_dt_max__execution_instance_guid : datetime
+  created_dt_min__execution_instance_guid : datetime
+  current_execution_guid : uniqueidentifier
+  deleted : int
+  duration__current_execution_guid : int
+  duration__execution_instance_guid : int
+  event_info : nvarchar(max)
+  * execution_instance_guid : uniqueidentifier
+  info_01 : sql_variant
+  info_02 : sql_variant
+  info_03 : sql_variant
+  info_04 : sql_variant
+  info_05 : sql_variant
+  info_06 : sql_variant
+  info_07 : sql_variant
+  info_08 : sql_variant
+  info_09 : sql_variant
+  inserted : int
+  parameter_01 : sql_variant
+  parameter_02 : sql_variant
+  parameter_03 : sql_variant
+  parameter_04 : sql_variant
+  parameter_05 : sql_variant
+  parameter_06 : sql_variant
+  parameter_07 : sql_variant
+  parameter_08 : sql_variant
+  parameter_09 : sql_variant
+  parameter_10 : sql_variant
+  parameter_11 : sql_variant
+  parameter_12 : sql_variant
+  parameter_13 : sql_variant
+  parameter_14 : sql_variant
+  parameter_15 : sql_variant
+  parameter_16 : sql_variant
+  parameter_17 : sql_variant
+  parameter_18 : sql_variant
+  parameter_19 : sql_variant
+  parameter_20 : sql_variant
+  parent_execution_log_id : bigint
+  * plantUML_Sequence : nvarchar(1550)
+  proc_id : int
+  proc_name : nvarchar(128)
+  proc_schema_name : nvarchar(128)
+  source_object : nvarchar(261)
+  ssis_execution_id : bigint
+  step_id : int
+  step_name : nvarchar(1000)
+  sub_execution_id : int
+  target_object : nvarchar(261)
+  updated : int
+}
+
+entity repo.ExecutionLog_parent << V >> {
+  * **id** : bigint
+  - -
+  parent_created_dt : datetime
+  parent_current_execution_guid : uniqueidentifier
+  parent_execution_log_id : bigint
+  parent_parameter_01 : sql_variant
+  parent_parameter_02 : sql_variant
+  parent_parameter_03 : sql_variant
+  parent_parameter_04 : sql_variant
+  parent_parameter_05 : sql_variant
+  parent_parameter_06 : sql_variant
+  parent_parameter_07 : sql_variant
+  parent_parameter_08 : sql_variant
+  parent_parameter_09 : sql_variant
+  parent_parameter_10 : sql_variant
+  parent_parameter_11 : sql_variant
+  parent_parameter_12 : sql_variant
+  parent_parameter_13 : sql_variant
+  parent_parameter_14 : sql_variant
+  parent_parameter_15 : sql_variant
+  parent_parameter_16 : sql_variant
+  parent_parameter_17 : sql_variant
+  parent_parameter_18 : sql_variant
+  parent_parameter_19 : sql_variant
+  parent_parameter_20 : sql_variant
+  parent_proc_fullname : nvarchar(517)
+  parent_proc_id : int
+  parent_proc_name : nvarchar(128)
+  parent_proc_schema_name : nvarchar(128)
+  parent_step_id : int
+  parent_step_name : nvarchar(1000)
+}
+
+entity repo.usp_ExecutionLog_insert << P >> {
+  - -
+}
+
+repo.ExecutionLog <.. repo.usp_ExecutionLog_insert
+repo.ExecutionLog <.. repo.ExecutionLog_gross
+repo.ExecutionLog <.. repo.ExecutionLog_parent
+repo.ExecutionLog <.. docs.ExecutionLog_plantUML_Sequence_start_stop
+repo.ExecutionLog_parent <.. docs.ExecutionLog_plantUML_Sequence_start_stop
+repo.ExecutionLog::created_dt <- - repo.ExecutionLog_gross::created_dt
+repo.ExecutionLog::created_dt <- - docs.ExecutionLog_plantUML_Sequence_start_stop::created_dt
+repo.ExecutionLog::current_execution_guid <- - repo.ExecutionLog_gross::current_execution_guid
+repo.ExecutionLog::deleted <- - repo.ExecutionLog_gross::deleted
+repo.ExecutionLog::event_info <- - repo.ExecutionLog_gross::event_info
+repo.ExecutionLog::execution_instance_guid <- - repo.ExecutionLog_gross::execution_instance_guid
+repo.ExecutionLog::id <- - repo.ExecutionLog_gross::id
+repo.ExecutionLog::id <- - docs.ExecutionLog_plantUML_Sequence_start_stop::id
+repo.ExecutionLog::id <- - repo.ExecutionLog_parent::id
+repo.ExecutionLog::info_01 <- - repo.ExecutionLog_gross::info_01
+repo.ExecutionLog::info_02 <- - repo.ExecutionLog_gross::info_02
+repo.ExecutionLog::info_03 <- - repo.ExecutionLog_gross::info_03
+repo.ExecutionLog::info_04 <- - repo.ExecutionLog_gross::info_04
+repo.ExecutionLog::info_05 <- - repo.ExecutionLog_gross::info_05
+repo.ExecutionLog::info_06 <- - repo.ExecutionLog_gross::info_06
+repo.ExecutionLog::info_07 <- - repo.ExecutionLog_gross::info_07
+repo.ExecutionLog::info_08 <- - repo.ExecutionLog_gross::info_08
+repo.ExecutionLog::info_09 <- - repo.ExecutionLog_gross::info_09
+repo.ExecutionLog::inserted <- - repo.ExecutionLog_gross::inserted
+repo.ExecutionLog::parameter_01 <- - repo.ExecutionLog_gross::parameter_01
+repo.ExecutionLog::parameter_02 <- - repo.ExecutionLog_gross::parameter_02
+repo.ExecutionLog::parameter_03 <- - repo.ExecutionLog_gross::parameter_03
+repo.ExecutionLog::parameter_04 <- - repo.ExecutionLog_gross::parameter_04
+repo.ExecutionLog::parameter_05 <- - repo.ExecutionLog_gross::parameter_05
+repo.ExecutionLog::parameter_06 <- - repo.ExecutionLog_gross::parameter_06
+repo.ExecutionLog::parameter_07 <- - repo.ExecutionLog_gross::parameter_07
+repo.ExecutionLog::parameter_08 <- - repo.ExecutionLog_gross::parameter_08
+repo.ExecutionLog::parameter_09 <- - repo.ExecutionLog_gross::parameter_09
+repo.ExecutionLog::parameter_10 <- - repo.ExecutionLog_gross::parameter_10
+repo.ExecutionLog::parameter_11 <- - repo.ExecutionLog_gross::parameter_11
+repo.ExecutionLog::parameter_12 <- - repo.ExecutionLog_gross::parameter_12
+repo.ExecutionLog::parameter_13 <- - repo.ExecutionLog_gross::parameter_13
+repo.ExecutionLog::parameter_14 <- - repo.ExecutionLog_gross::parameter_14
+repo.ExecutionLog::parameter_15 <- - repo.ExecutionLog_gross::parameter_15
+repo.ExecutionLog::parameter_16 <- - repo.ExecutionLog_gross::parameter_16
+repo.ExecutionLog::parameter_17 <- - repo.ExecutionLog_gross::parameter_17
+repo.ExecutionLog::parameter_18 <- - repo.ExecutionLog_gross::parameter_18
+repo.ExecutionLog::parameter_19 <- - repo.ExecutionLog_gross::parameter_19
+repo.ExecutionLog::parameter_20 <- - repo.ExecutionLog_gross::parameter_20
+repo.ExecutionLog::parent_execution_log_id <- - repo.ExecutionLog_gross::parent_execution_log_id
+repo.ExecutionLog::parent_execution_log_id <- - repo.ExecutionLog_parent::parent_execution_log_id
+repo.ExecutionLog::proc_fullname <- - docs.ExecutionLog_plantUML_Sequence_start_stop::proc_fullname
+repo.ExecutionLog::proc_id <- - repo.ExecutionLog_gross::proc_id
+repo.ExecutionLog::proc_name <- - repo.ExecutionLog_gross::proc_name
+repo.ExecutionLog::proc_schema_name <- - repo.ExecutionLog_gross::proc_schema_name
+repo.ExecutionLog::source_object <- - repo.ExecutionLog_gross::source_object
+repo.ExecutionLog::ssis_execution_id <- - repo.ExecutionLog_gross::ssis_execution_id
+repo.ExecutionLog::step_id <- - repo.ExecutionLog_gross::step_id
+repo.ExecutionLog::step_name <- - repo.ExecutionLog_gross::step_name
+repo.ExecutionLog::sub_execution_id <- - repo.ExecutionLog_gross::sub_execution_id
+repo.ExecutionLog::target_object <- - repo.ExecutionLog_gross::target_object
+repo.ExecutionLog::updated <- - repo.ExecutionLog_gross::updated
+repo.ExecutionLog_parent::parent_proc_fullname <- - docs.ExecutionLog_plantUML_Sequence_start_stop::parent_proc_fullname
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 07:55:08 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
