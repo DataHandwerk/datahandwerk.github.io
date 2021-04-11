@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="170px" preserveAspectRatio="none" style="width:216px;height:170px;" version="1.1" viewBox="0 0 216 170" width="216px" zoomAndPan="magnify"><defs><filter height="300%" id="f1x2ria4cvt128" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[5fdfda7e30a191bf9aa22d279dcb35b7]
+class repo.RepoObjectProperty_cross--><rect codeLine="26" fill="#F5F5F5" filter="url(#f1x2ria4cvt128)" height="149.9996" id="repo.RepoObjectProperty_cross" style="stroke:#A80036;stroke-width:1.5;" width="195" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="95.5" y="24.0001">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="167" x="21" y="38.4002">repo.RepoObjectProperty_cross</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="201" y1="45.8002" y2="45.8002"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="53.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="169" x="27" y="60.8001">idx_RepoObjectProperty_cross__1</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="0" x="30" y="74"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="8" x2="201" y1="80.2" y2="80.2"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="148" x="13" y="95.1999">property_name; nvarchar(128)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="201" y1="101.3999" y2="101.3999"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="109.3999"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="169" x="27" y="116.3998">idx_RepoObjectProperty_cross__2</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="93" x="27" y="129.5997">{RepoObject_guid}</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="8" x2="201" y1="135.7997" y2="135.7997"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="163" x="13" y="150.7996">RepoObject_guid; uniqueidentifier</text><!--MD5=[b00e49a9f947d639020a8de44d50fcf0]
+@startuml
+left to right direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity repo.RepoObjectProperty_cross << V >> {
+- idx_RepoObjectProperty_cross__1
+
+..
+property_name; nvarchar(128)
+- -
+- idx_RepoObjectProperty_cross__2
+{RepoObject_guid}
+..
+RepoObject_guid; uniqueidentifier
+}
+@enduml
+
+@startuml
+left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity repo.RepoObjectProperty_cross << V >> {
+- idx_RepoObjectProperty_cross__1
+
+..
+property_name; nvarchar(128)
+- -
+- idx_RepoObjectProperty_cross__2
+{RepoObject_guid}
+..
+RepoObject_guid; uniqueidentifier
+}
+@enduml
+
+PlantUML version 1.2021.4(Sun Apr 04 08:49:39 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="75px" preserveAspectRatio="none" style="width:855px;height:75px;" version="1.1" viewBox="0 0 855 75" width="855px" zoomAndPan="magnify"><defs><filter height="300%" id="f1ityyuauw8c4e" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[0522347ac7a64670e2a617c3cccb2b0c]
+class repo.RepoObjectColumn_reference_QueryPlan--><rect codeLine="26" fill="#F5F5F5" filter="url(#f1ityyuauw8c4e)" height="54.8002" id="repo.RepoObjectColumn_reference_QueryPlan" style="stroke:#A80036;stroke-width:1.5;" width="250" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="123" y="24.0001">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="244" x="10" y="38.4002">repo.RepoObjectColumn_reference_QueryPlan</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="256" y1="45.8002" y2="45.8002"/><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="256" y1="53.8002" y2="53.8002"/><!--MD5=[7eda9e26fd7e8c1ab8812b6583366abc]
+class repo.SysObjectColumn_QueryPlanExpression--><rect codeLine="29" fill="#F5F5F5" filter="url(#f1ityyuauw8c4e)" height="54.8002" id="repo.SysObjectColumn_QueryPlanExpression" style="stroke:#A80036;stroke-width:1.5;" width="246" x="317" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="431" y="24.0001">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="240" x="320" y="38.4002">repo.SysObjectColumn_QueryPlanExpression</text><line style="stroke:#A80036;stroke-width:1.5;" x1="318" x2="562" y1="45.8002" y2="45.8002"/><line style="stroke:#A80036;stroke-width:1.5;" x1="318" x2="562" y1="53.8002" y2="53.8002"/><!--MD5=[209e385d9bf5998b59f17aedd629ee5c]
+class repo.usp_RepoObjectSource_QueryPlan--><rect codeLine="32" fill="#00FFFF" filter="url(#f1ityyuauw8c4e)" height="54.8002" id="repo.usp_RepoObjectSource_QueryPlan" style="stroke:#A80036;stroke-width:1.5;" width="218" x="623" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="723" y="24.0001">«P»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="212" x="626" y="38.4002">repo.usp_RepoObjectSource_QueryPlan</text><line style="stroke:#A80036;stroke-width:1.5;" x1="624" x2="840" y1="45.8002" y2="45.8002"/><line style="stroke:#A80036;stroke-width:1.5;" x1="624" x2="840" y1="53.8002" y2="53.8002"/><!--MD5=[48ad24a3e4b2637980d55df9fe4f5a12]
+reverse link repo.RepoObjectColumn_reference_QueryPlan to repo.SysObjectColumn_QueryPlanExpression--><path codeLine="35" d="M262.12,34.5 C280.23,34.5 298.81,34.5 316.79,34.5 " fill="none" id="repo.RepoObjectColumn_reference_QueryPlan-backto-repo.SysObjectColumn_QueryPlanExpression" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="257.02,34.5,266.02,38.5,262.02,34.5,266.02,30.5,257.02,34.5" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[226149d95ee981a888839d19ef635cb0]
+reverse link repo.SysObjectColumn_QueryPlanExpression to repo.usp_RepoObjectSource_QueryPlan--><path codeLine="36" d="M568.27,34.5 C586.46,34.5 605.03,34.5 622.81,34.5 " fill="none" id="repo.SysObjectColumn_QueryPlanExpression-backto-repo.usp_RepoObjectSource_QueryPlan" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="563.15,34.5,572.15,38.5,568.15,34.5,572.15,30.5,563.15,34.5" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[95b1c2342f40ee56b98cf1b8a17fa2ac]
+@startuml
+left to right direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity repo.RepoObjectColumn_reference_QueryPlan << V >> {
+}
+
+entity repo.SysObjectColumn_QueryPlanExpression << V >> {
+}
+
+entity repo.usp_RepoObjectSource_QueryPlan << P >> {
+}
+
+repo.RepoObjectColumn_reference_QueryPlan <.. repo.SysObjectColumn_QueryPlanExpression
+repo.SysObjectColumn_QueryPlanExpression <.. repo.usp_RepoObjectSource_QueryPlan
+@enduml
+
+@startuml
+left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity repo.RepoObjectColumn_reference_QueryPlan << V >> {
+}
+
+entity repo.SysObjectColumn_QueryPlanExpression << V >> {
+}
+
+entity repo.usp_RepoObjectSource_QueryPlan << P >> {
+}
+
+repo.RepoObjectColumn_reference_QueryPlan <.. repo.SysObjectColumn_QueryPlanExpression
+repo.SysObjectColumn_QueryPlanExpression <.. repo.usp_RepoObjectSource_QueryPlan
+@enduml
+
+PlantUML version 1.2021.4(Sun Apr 04 08:49:39 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

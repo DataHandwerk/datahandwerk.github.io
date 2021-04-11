@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="443px" preserveAspectRatio="none" style="width:1415px;height:443px;" version="1.1" viewBox="0 0 1415 443" width="1415px" zoomAndPan="magnify"><defs><filter height="300%" id="feb50ke62omqn" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[cf435beb00eba7825c1150f6f18b510c]
+class repo.Index_referencing_IndexPatternColumnGuid--><rect codeLine="26" fill="#F5F5F5" filter="url(#feb50ke62omqn)" height="94.3999" id="repo.Index_referencing_IndexPatternColumnGuid" style="stroke:#A80036;stroke-width:1.5;" width="271" x="491" y="68.34"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="617.5" y="85.3401">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="255" x="499" y="99.7402">repo.Index_referencing_IndexPatternColumnGuid</text><line style="stroke:#A80036;stroke-width:1.5;" x1="492" x2="761" y1="107.1402" y2="107.1402"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="101" x="497" y="122.1401">source_index_guid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="601" y="122.1401">: uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="159" x="497" y="135.34">referencing_RepoObject_guid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="659" y="135.34">: uniqueidentifier</text><line style="stroke:#A80036;stroke-width:1.0;" x1="492" x2="761" y1="141.54" y2="141.54"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="259" x="497" y="156.5399">referencing_IndexPatternColumnGuid : varchar(8000)</text><!--MD5=[3a6fc997557acf2b40a51bf093e91e5e]
+class repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T--><rect codeLine="33" fill="#FFFFFF" filter="url(#feb50ke62omqn)" height="160.3994" id="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T" style="stroke:#A80036;stroke-width:1.5;" width="408" x="7" y="35.84"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="201.5" y="52.8401">«U»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="402" x="10" y="67.2402">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="414" y1="74.6402" y2="74.6402"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="59" x="27" y="89.6401">index_guid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="89" y="89.6401">: uniqueidentifier</text><ellipse cx="18" cy="98.8401" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="91" x="27" y="102.84">index_column_id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="17" x="121" y="102.84">: int</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="140" x="27" y="116.0399">RowNumberInReferencing</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="31" x="170" y="116.0399">: bigint</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="414" y1="122.2399" y2="122.2399"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="111" x="13" y="137.2398">is_descending_key : bit</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="225" x="13" y="150.4397">referenced_RepoObject_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="262" x="13" y="163.6396">referenced_RepoObjectColumn_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="227" x="13" y="176.8395">referencing_RepoObject_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="264" x="13" y="190.0394">referencing_RepoObjectColumn_guid : uniqueidentifier</text><!--MD5=[4f0ea1bc89bd8eeab44ec438ee72d629]
+class repo.IndexReferencedReferencing--><rect codeLine="45" fill="#F5F5F5" filter="url(#feb50ke62omqn)" height="133.9996" id="repo.IndexReferencedReferencing" style="stroke:#A80036;stroke-width:1.5;" width="252" x="500.5" y="204.84"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="617.5" y="221.8401">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="175" x="539" y="236.2402">repo.IndexReferencedReferencing</text><line style="stroke:#A80036;stroke-width:1.5;" x1="501.5" x2="751.5" y1="243.6402" y2="243.6402"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="155" x="506.5" y="258.6401">referenced_RepoObject_guid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="664.5" y="258.6401">: uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="159" x="506.5" y="271.84">referencing_RepoObject_guid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="668.5" y="271.84">: uniqueidentifier</text><line style="stroke:#A80036;stroke-width:1.0;" x1="501.5" x2="751.5" y1="278.04" y2="278.04"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="191" x="520.5" y="293.0399">referenced_index_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="187" x="520.5" y="306.2398">RowNumberInReferencing_Target : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="171" x="520.5" y="319.4397">source_index_guid : uniqueidentifier</text><ellipse cx="511.5" cy="328.6397" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="126" x="520.5" y="332.6396">source_index_type : tinyint</text><!--MD5=[3334c2be86d14e7b53e22736a824957e]
+class repo.IndexReferencedReferencing_HasFullColumnsInReferencing--><rect codeLine="55" fill="#F5F5F5" filter="url(#feb50ke62omqn)" height="160.3994" id="repo.IndexReferencedReferencing_HasFullColumnsInReferencing" style="stroke:#A80036;stroke-width:1.5;" width="346" x="838" y="178.84"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="1002" y="195.8401">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="340" x="841" y="210.2402">repo.IndexReferencedReferencing_HasFullColumnsInReferencing</text><line style="stroke:#A80036;stroke-width:1.5;" x1="839" x2="1183" y1="217.6402" y2="217.6402"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="155" x="844" y="232.6401">referenced_RepoObject_guid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="1002" y="232.6401">: uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="159" x="844" y="245.84">referencing_RepoObject_guid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="1006" y="245.84">: uniqueidentifier</text><line style="stroke:#A80036;stroke-width:1.0;" x1="839" x2="1183" y1="252.04" y2="252.04"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="191" x="858" y="267.0399">referenced_index_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="259" x="858" y="280.2398">referencing_IndexPatternColumnGuid : varchar(8000)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="163" x="858" y="293.4397">RowNumberInReferencing : bigint</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="187" x="858" y="306.6396">RowNumberInReferencing_Target : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="171" x="858" y="319.8395">source_index_guid : uniqueidentifier</text><ellipse cx="849" cy="329.0395" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="126" x="858" y="333.0394">source_index_type : tinyint</text><!--MD5=[41c92b7e9ea902507dcc75772e6d8599]
+class repo.usp_index_inheritance--><rect codeLine="67" fill="#00FFFF" filter="url(#feb50ke62omqn)" height="54.8002" id="repo.usp_index_inheritance" style="stroke:#A80036;stroke-width:1.5;" width="149" x="1252" y="230.34"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="1317.5" y="247.3401">«P»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="143" x="1255" y="261.7402">repo.usp_index_inheritance</text><line style="stroke:#A80036;stroke-width:1.5;" x1="1253" x2="1400" y1="269.1402" y2="269.1402"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1253" x2="1400" y1="277.1402" y2="277.1402"/><!--MD5=[6057052c453df2c594a37a633735b75c]
+reverse link repo.Index_referencing_IndexPatternColumnGuid to repo.IndexReferencedReferencing_HasFullColumnsInReferencing--><path codeLine="71" d="M767.48,167.17 C787.72,174.74 808.79,182.62 829.68,190.43 " fill="none" id="repo.Index_referencing_IndexPatternColumnGuid-backto-repo.IndexReferencedReferencing_HasFullColumnsInReferencing" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="762.62,165.36,769.6425,172.2654,767.3016,167.1156,772.4515,164.7748,762.62,165.36" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6057052c453df2c594a37a633735b75c]
+reverse link repo.Index_referencing_IndexPatternColumnGuid to repo.IndexReferencedReferencing_HasFullColumnsInReferencing--><path codeLine="76" d="M768.8,152.15 C824.13,158.94 775.18,274.84 837,274.84 " fill="none" id="repo.Index_referencing_IndexPatternColumnGuid-backto-repo.IndexReferencedReferencing_HasFullColumnsInReferencing-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="763.5,151.84,772.2564,156.3484,768.4918,152.1261,772.7141,148.3615,763.5,151.84" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[80e59d7b75c9d9930727740ddec23303]
+reverse link repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T to repo.IndexReferencedReferencing_HasFullColumnsInReferencing--><path codeLine="72" d="M428.04,41.82 C533.95,17.6 661.68,6 770,46.84 C838.13,72.53 899.49,127.34 943.11,174.66 " fill="none" id="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T-backto-repo.IndexReferencedReferencing_HasFullColumnsInReferencing" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="423.01,42.98,432.6806,44.8455,427.881,41.8515,430.875,37.052,423.01,42.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[80e59d7b75c9d9930727740ddec23303]
+reverse link repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T to repo.IndexReferencedReferencing_HasFullColumnsInReferencing--><path codeLine="79" d="M421.19,109.97 C526.33,115.42 393.46,290.21 483,358.84 C584.24,436.44 652.87,409.36 770,358.84 C809.84,341.66 793.61,287.84 837,287.84 " fill="none" id="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T-backto-repo.IndexReferencedReferencing_HasFullColumnsInReferencing-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="416,109.84,424.8942,114.07,420.9983,109.9685,425.0998,106.0727,416,109.84" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[51ae9b9ca9a82d2a271472181ce33127]
+reverse link repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T to repo.Index_referencing_IndexPatternColumnGuid--><path codeLine="73" d="M428.5,114.84 C446.94,114.84 465.27,114.84 482.91,114.84 " fill="none" id="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T-backto-repo.Index_referencing_IndexPatternColumnGuid" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="423.29,114.84,432.29,118.84,428.29,114.84,432.29,110.84,423.29,114.84" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[51ae9b9ca9a82d2a271472181ce33127]
+reverse link repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T to repo.Index_referencing_IndexPatternColumnGuid--><path codeLine="77" d="M421.29,84.1 C452.66,87.21 455.95,117.84 490.5,117.84 " fill="none" id="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T-backto-repo.Index_referencing_IndexPatternColumnGuid-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="416,83.84,424.7953,88.2719,420.9941,84.0826,425.1835,80.2813,416,83.84" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[51ae9b9ca9a82d2a271472181ce33127]
+reverse link repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T to repo.Index_referencing_IndexPatternColumnGuid--><path codeLine="78" d="M421.04,170.59 C453.6,167.18 454.68,130.84 490.5,130.84 " fill="none" id="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T-backto-repo.Index_referencing_IndexPatternColumnGuid-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="416,170.84,425.1936,174.3725,420.9934,170.5832,424.7827,166.383,416,170.84" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0d89bf38c11ddbcd0dc6d9f349224109]
+reverse link repo.IndexReferencedReferencing to repo.IndexReferencedReferencing_HasFullColumnsInReferencing--><path codeLine="74" d="M765.99,266.13 C786.73,265.43 808.35,264.69 829.8,263.97 " fill="none" id="repo.IndexReferencedReferencing-backto-repo.IndexReferencedReferencing_HasFullColumnsInReferencing" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="760.74,266.31,769.8718,269.9993,765.7371,266.1387,769.5977,262.004,760.74,266.31" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0d89bf38c11ddbcd0dc6d9f349224109]
+reverse link repo.IndexReferencedReferencing to repo.IndexReferencedReferencing_HasFullColumnsInReferencing--><path codeLine="80" d="M758.75,287.68 C792.98,285.46 799.95,261.84 837,261.84 " fill="none" id="repo.IndexReferencedReferencing-backto-repo.IndexReferencedReferencing_HasFullColumnsInReferencing-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="753.5,287.84,762.6212,291.5553,758.4975,287.6829,762.3699,283.5593,753.5,287.84" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0d89bf38c11ddbcd0dc6d9f349224109]
+reverse link repo.IndexReferencedReferencing to repo.IndexReferencedReferencing_HasFullColumnsInReferencing--><path codeLine="81" d="M758.75,252.68 C792.98,250.46 799.95,226.84 837,226.84 " fill="none" id="repo.IndexReferencedReferencing-backto-repo.IndexReferencedReferencing_HasFullColumnsInReferencing-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="753.5,252.84,762.6212,256.5553,758.4975,252.6829,762.3699,248.5593,753.5,252.84" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0d89bf38c11ddbcd0dc6d9f349224109]
+reverse link repo.IndexReferencedReferencing to repo.IndexReferencedReferencing_HasFullColumnsInReferencing--><path codeLine="82" d="M758.75,265.68 C792.98,263.46 799.95,239.84 837,239.84 " fill="none" id="repo.IndexReferencedReferencing-backto-repo.IndexReferencedReferencing_HasFullColumnsInReferencing-3" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="753.5,265.84,762.6212,269.5553,758.4975,265.6829,762.3699,261.5593,753.5,265.84" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0d89bf38c11ddbcd0dc6d9f349224109]
+reverse link repo.IndexReferencedReferencing to repo.IndexReferencedReferencing_HasFullColumnsInReferencing--><path codeLine="83" d="M758.54,300.84 C791.54,300.84 801.63,300.84 837,300.84 " fill="none" id="repo.IndexReferencedReferencing-backto-repo.IndexReferencedReferencing_HasFullColumnsInReferencing-4" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="753.5,300.84,762.5,304.84,758.5,300.84,762.5,296.84,753.5,300.84" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0d89bf38c11ddbcd0dc6d9f349224109]
+reverse link repo.IndexReferencedReferencing to repo.IndexReferencedReferencing_HasFullColumnsInReferencing--><path codeLine="84" d="M758.54,313.84 C791.54,313.84 801.63,313.84 837,313.84 " fill="none" id="repo.IndexReferencedReferencing-backto-repo.IndexReferencedReferencing_HasFullColumnsInReferencing-5" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="753.5,313.84,762.5,317.84,758.5,313.84,762.5,309.84,753.5,313.84" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0d89bf38c11ddbcd0dc6d9f349224109]
+reverse link repo.IndexReferencedReferencing to repo.IndexReferencedReferencing_HasFullColumnsInReferencing--><path codeLine="85" d="M758.54,326.84 C791.54,326.84 801.63,326.84 837,326.84 " fill="none" id="repo.IndexReferencedReferencing-backto-repo.IndexReferencedReferencing_HasFullColumnsInReferencing-6" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="753.5,326.84,762.5,330.84,758.5,326.84,762.5,322.84,753.5,326.84" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[4b4fa44ddee697a60226de14dfa499e2]
+reverse link repo.IndexReferencedReferencing_HasFullColumnsInReferencing to repo.usp_index_inheritance--><path codeLine="75" d="M1197.5,257.84 C1216.61,257.84 1235.12,257.84 1251.86,257.84 " fill="none" id="repo.IndexReferencedReferencing_HasFullColumnsInReferencing-backto-repo.usp_index_inheritance" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="1192.09,257.84,1201.09,261.84,1197.09,257.84,1201.09,253.84,1192.09,257.84" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[368fa9aa1de4d57cbaff7d05ffd0bae7]
+@startuml
+left to right direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity repo.Index_referencing_IndexPatternColumnGuid << V >> {
+  **source_index_guid** : uniqueidentifier
+  **referencing_RepoObject_guid** : uniqueidentifier
+  - -
+  referencing_IndexPatternColumnGuid : varchar(8000)
+}
+
+entity repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T << U >> {
+  **index_guid** : uniqueidentifier
+  * **index_column_id** : int
+  **RowNumberInReferencing** : bigint
+  - -
+  is_descending_key : bit
+  referenced_RepoObject_guid : uniqueidentifier
+  referenced_RepoObjectColumn_guid : uniqueidentifier
+  referencing_RepoObject_guid : uniqueidentifier
+  referencing_RepoObjectColumn_guid : uniqueidentifier
+}
+
+entity repo.IndexReferencedReferencing << V >> {
+  **referenced_RepoObject_guid** : uniqueidentifier
+  **referencing_RepoObject_guid** : uniqueidentifier
+  - -
+  referenced_index_guid : uniqueidentifier
+  RowNumberInReferencing_Target : int
+  source_index_guid : uniqueidentifier
+  * source_index_type : tinyint
+}
+
+entity repo.IndexReferencedReferencing_HasFullColumnsInReferencing << V >> {
+  **referenced_RepoObject_guid** : uniqueidentifier
+  **referencing_RepoObject_guid** : uniqueidentifier
+  - -
+  referenced_index_guid : uniqueidentifier
+  referencing_IndexPatternColumnGuid : varchar(8000)
+  RowNumberInReferencing : bigint
+  RowNumberInReferencing_Target : int
+  source_index_guid : uniqueidentifier
+  * source_index_type : tinyint
+}
+
+entity repo.usp_index_inheritance << P >> {
+  - -
+}
+
+repo.Index_referencing_IndexPatternColumnGuid <.. repo.IndexReferencedReferencing_HasFullColumnsInReferencing
+repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T <.. repo.IndexReferencedReferencing_HasFullColumnsInReferencing
+repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T <.. repo.Index_referencing_IndexPatternColumnGuid
+repo.IndexReferencedReferencing <.. repo.IndexReferencedReferencing_HasFullColumnsInReferencing
+repo.IndexReferencedReferencing_HasFullColumnsInReferencing <.. repo.usp_index_inheritance
+repo.Index_referencing_IndexPatternColumnGuid::referencing_IndexPatternColumnGuid <- - repo.IndexReferencedReferencing_HasFullColumnsInReferencing::referencing_IndexPatternColumnGuid
+repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T::index_guid <- - repo.Index_referencing_IndexPatternColumnGuid::source_index_guid
+repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T::referencing_RepoObject_guid <- - repo.Index_referencing_IndexPatternColumnGuid::referencing_RepoObject_guid
+repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T::RowNumberInReferencing <- - repo.IndexReferencedReferencing_HasFullColumnsInReferencing::RowNumberInReferencing
+repo.IndexReferencedReferencing::referenced_index_guid <- - repo.IndexReferencedReferencing_HasFullColumnsInReferencing::referenced_index_guid
+repo.IndexReferencedReferencing::referenced_RepoObject_guid <- - repo.IndexReferencedReferencing_HasFullColumnsInReferencing::referenced_RepoObject_guid
+repo.IndexReferencedReferencing::referencing_RepoObject_guid <- - repo.IndexReferencedReferencing_HasFullColumnsInReferencing::referencing_RepoObject_guid
+repo.IndexReferencedReferencing::RowNumberInReferencing_Target <- - repo.IndexReferencedReferencing_HasFullColumnsInReferencing::RowNumberInReferencing_Target
+repo.IndexReferencedReferencing::source_index_guid <- - repo.IndexReferencedReferencing_HasFullColumnsInReferencing::source_index_guid
+repo.IndexReferencedReferencing::source_index_type <- - repo.IndexReferencedReferencing_HasFullColumnsInReferencing::source_index_type
+@enduml
+
+@startuml
+left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity repo.Index_referencing_IndexPatternColumnGuid << V >> {
+  **source_index_guid** : uniqueidentifier
+  **referencing_RepoObject_guid** : uniqueidentifier
+  - -
+  referencing_IndexPatternColumnGuid : varchar(8000)
+}
+
+entity repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T << U >> {
+  **index_guid** : uniqueidentifier
+  * **index_column_id** : int
+  **RowNumberInReferencing** : bigint
+  - -
+  is_descending_key : bit
+  referenced_RepoObject_guid : uniqueidentifier
+  referenced_RepoObjectColumn_guid : uniqueidentifier
+  referencing_RepoObject_guid : uniqueidentifier
+  referencing_RepoObjectColumn_guid : uniqueidentifier
+}
+
+entity repo.IndexReferencedReferencing << V >> {
+  **referenced_RepoObject_guid** : uniqueidentifier
+  **referencing_RepoObject_guid** : uniqueidentifier
+  - -
+  referenced_index_guid : uniqueidentifier
+  RowNumberInReferencing_Target : int
+  source_index_guid : uniqueidentifier
+  * source_index_type : tinyint
+}
+
+entity repo.IndexReferencedReferencing_HasFullColumnsInReferencing << V >> {
+  **referenced_RepoObject_guid** : uniqueidentifier
+  **referencing_RepoObject_guid** : uniqueidentifier
+  - -
+  referenced_index_guid : uniqueidentifier
+  referencing_IndexPatternColumnGuid : varchar(8000)
+  RowNumberInReferencing : bigint
+  RowNumberInReferencing_Target : int
+  source_index_guid : uniqueidentifier
+  * source_index_type : tinyint
+}
+
+entity repo.usp_index_inheritance << P >> {
+  - -
+}
+
+repo.Index_referencing_IndexPatternColumnGuid <.. repo.IndexReferencedReferencing_HasFullColumnsInReferencing
+repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T <.. repo.IndexReferencedReferencing_HasFullColumnsInReferencing
+repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T <.. repo.Index_referencing_IndexPatternColumnGuid
+repo.IndexReferencedReferencing <.. repo.IndexReferencedReferencing_HasFullColumnsInReferencing
+repo.IndexReferencedReferencing_HasFullColumnsInReferencing <.. repo.usp_index_inheritance
+repo.Index_referencing_IndexPatternColumnGuid::referencing_IndexPatternColumnGuid <- - repo.IndexReferencedReferencing_HasFullColumnsInReferencing::referencing_IndexPatternColumnGuid
+repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T::index_guid <- - repo.Index_referencing_IndexPatternColumnGuid::source_index_guid
+repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T::referencing_RepoObject_guid <- - repo.Index_referencing_IndexPatternColumnGuid::referencing_RepoObject_guid
+repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T::RowNumberInReferencing <- - repo.IndexReferencedReferencing_HasFullColumnsInReferencing::RowNumberInReferencing
+repo.IndexReferencedReferencing::referenced_index_guid <- - repo.IndexReferencedReferencing_HasFullColumnsInReferencing::referenced_index_guid
+repo.IndexReferencedReferencing::referenced_RepoObject_guid <- - repo.IndexReferencedReferencing_HasFullColumnsInReferencing::referenced_RepoObject_guid
+repo.IndexReferencedReferencing::referencing_RepoObject_guid <- - repo.IndexReferencedReferencing_HasFullColumnsInReferencing::referencing_RepoObject_guid
+repo.IndexReferencedReferencing::RowNumberInReferencing_Target <- - repo.IndexReferencedReferencing_HasFullColumnsInReferencing::RowNumberInReferencing_Target
+repo.IndexReferencedReferencing::source_index_guid <- - repo.IndexReferencedReferencing_HasFullColumnsInReferencing::source_index_guid
+repo.IndexReferencedReferencing::source_index_type <- - repo.IndexReferencedReferencing_HasFullColumnsInReferencing::source_index_type
+@enduml
+
+PlantUML version 1.2021.4(Sun Apr 04 08:49:39 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

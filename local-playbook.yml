@@ -32,7 +32,7 @@ asciidoc:
     :plantuml-server-url: http://www.plantuml.com/plantuml
     # You can use the kroki-fetch-diagram option to download the images from Kroki at build time. In other words, while viewing pages you won't rely on Kroki anymore.
     # However, in Antora, this is not currently compatible with inline SVG images.
-    kroki-fetch-diagram: true
+    # kroki-fetch-diagram: true
   extensions:
   - asciidoctor-kroki
 ui:

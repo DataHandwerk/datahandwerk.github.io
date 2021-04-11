@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="102px" preserveAspectRatio="none" style="width:582px;height:102px;" version="1.1" viewBox="0 0 582 102" width="582px" zoomAndPan="magnify"><defs><filter height="300%" id="f1c9a2gdlkumc1" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[2d75bd37bcca07d6c18ab522ce7d20ae]
+class graph.RepoObjectColumn_ReferencingReferenced--><rect codeLine="26" fill="#F5F5F5" filter="url(#f1c9a2gdlkumc1)" height="81.2" id="graph.RepoObjectColumn_ReferencingReferenced" style="stroke:#A80036;stroke-width:1.5;" width="270" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="133" y="24.0001">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="264" x="10" y="38.4002">graph.RepoObjectColumn_ReferencingReferenced</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="276" y1="45.8002" y2="45.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="90" x="13" y="60.8001">Referenced_guid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="106" y="60.8001">: uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="94" x="13" y="74">Referencing_guid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="110" y="74">: uniqueidentifier</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="276" y1="80.2" y2="80.2"/><!--MD5=[5dca618206702dd8ef421e8769891bc2]
+class repo.ftv_RepoObject_DbmlColumnRelation--><rect codeLine="31" fill="#FFFF00" filter="url(#f1c9a2gdlkumc1)" height="54.8002" id="repo.ftv_RepoObject_DbmlColumnRelation" style="stroke:#A80036;stroke-width:1.5;" width="231" x="337" y="20"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="20" x="442.5" y="37.0001">«IF»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="225" x="340" y="51.4002">repo.ftv_RepoObject_DbmlColumnRelation</text><line style="stroke:#A80036;stroke-width:1.5;" x1="338" x2="567" y1="58.8002" y2="58.8002"/><line style="stroke:#A80036;stroke-width:1.5;" x1="338" x2="567" y1="66.8002" y2="66.8002"/><!--MD5=[a59200655aa4ef610458acaa0ee6a489]
+reverse link graph.RepoObjectColumn_ReferencingReferenced to repo.ftv_RepoObject_DbmlColumnRelation--><path codeLine="34" d="M282.53,47.5 C300.7,47.5 319.14,47.5 336.84,47.5 " fill="none" id="graph.RepoObjectColumn_ReferencingReferenced-backto-repo.ftv_RepoObject_DbmlColumnRelation" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="277.42,47.5,286.42,51.5,282.42,47.5,286.42,43.5,277.42,47.5" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[02d8a415c26ff84d27146744ec1ef73b]
+@startuml
+left to right direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity graph.RepoObjectColumn_ReferencingReferenced << V >> {
+  **Referenced_guid** : uniqueidentifier
+  **Referencing_guid** : uniqueidentifier
+}
+
+entity repo.ftv_RepoObject_DbmlColumnRelation << IF >> {
+}
+
+graph.RepoObjectColumn_ReferencingReferenced <.. repo.ftv_RepoObject_DbmlColumnRelation
+@enduml
+
+@startuml
+left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity graph.RepoObjectColumn_ReferencingReferenced << V >> {
+  **Referenced_guid** : uniqueidentifier
+  **Referencing_guid** : uniqueidentifier
+}
+
+entity repo.ftv_RepoObject_DbmlColumnRelation << IF >> {
+}
+
+graph.RepoObjectColumn_ReferencingReferenced <.. repo.ftv_RepoObject_DbmlColumnRelation
+@enduml
+
+PlantUML version 1.2021.4(Sun Apr 04 08:49:39 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
