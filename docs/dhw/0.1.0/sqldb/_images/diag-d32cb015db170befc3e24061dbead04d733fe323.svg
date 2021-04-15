@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="102px" preserveAspectRatio="none" style="width:524px;height:102px;" version="1.1" viewBox="0 0 524 102" width="524px" zoomAndPan="magnify"><defs><filter height="300%" id="fk31tmga01a57" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[3e14f38e2a3c34326bee20825a0b0cba]
+class docs.AntoraNavListRepoObject_by_schema--><rect codeLine="26" fill="#F5F5F5" filter="url(#fk31tmga01a57)" height="81.2" id="docs.AntoraNavListRepoObject_by_schema" style="stroke:#A80036;stroke-width:1.5;" width="249" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="122.5" y="24.0001">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="233" x="15" y="38.4002">docs.AntoraNavListRepoObject_by_schema</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="255" y1="45.8002" y2="45.8002"/><ellipse cx="18" cy="56.8002" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="145" x="27" y="60.8001">RepoObject_schema_name</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="75" x="175" y="60.8001">: nvarchar(128)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="255" y1="67.0001" y2="67.0001"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="115" x="13" y="82">nav_list : nvarchar(max)</text><!--MD5=[1314c2b8c82a4add9a137f5144610e4c]
+class docs.AntoraPage_ObjectBySchema--><rect codeLine="32" fill="#F5F5F5" filter="url(#fk31tmga01a57)" height="68.0001" id="docs.AntoraPage_ObjectBySchema" style="stroke:#A80036;stroke-width:1.5;" width="194" x="316" y="13.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="404" y="30.5001">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="188" x="319" y="44.9002">docs.AntoraPage_ObjectBySchema</text><line style="stroke:#A80036;stroke-width:1.5;" x1="317" x2="509" y1="52.3002" y2="52.3002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="317" x2="509" y1="60.3002" y2="60.3002"/><ellipse cx="327" cy="71.3002" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="155" x="336" y="75.3001">partial_content : nvarchar(4000)</text><!--MD5=[36402713f5de5d9ad9615f30dbcec3ab]
+reverse link docs.AntoraNavListRepoObject_by_schema to docs.AntoraPage_ObjectBySchema--><path codeLine="37" d="M261.48,47.5 C279.82,47.5 298.42,47.5 315.98,47.5 " fill="none" id="docs.AntoraNavListRepoObject_by_schema-backto-docs.AntoraPage_ObjectBySchema" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="256.31,47.5,265.31,51.5,261.31,47.5,265.31,43.5,256.31,47.5" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[2cb8f585b99625693d4199752a448120]
+@startuml
+left to right direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity docs.AntoraNavListRepoObject_by_schema << V >> {
+  * **RepoObject_schema_name** : nvarchar(128)
+  - -
+  nav_list : nvarchar(max)
+}
+
+entity docs.AntoraPage_ObjectBySchema << V >> {
+  - -
+  * partial_content : nvarchar(4000)
+}
+
+docs.AntoraNavListRepoObject_by_schema <.. docs.AntoraPage_ObjectBySchema
+@enduml
+
+@startuml
+left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity docs.AntoraNavListRepoObject_by_schema << V >> {
+  * **RepoObject_schema_name** : nvarchar(128)
+  - -
+  nav_list : nvarchar(max)
+}
+
+entity docs.AntoraPage_ObjectBySchema << V >> {
+  - -
+  * partial_content : nvarchar(4000)
+}
+
+docs.AntoraNavListRepoObject_by_schema <.. docs.AntoraPage_ObjectBySchema
+@enduml
+
+PlantUML version 1.2021.4(Sun Apr 04 08:49:39 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

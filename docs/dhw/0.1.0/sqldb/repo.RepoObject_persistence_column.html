@@ -6,7 +6,7 @@
     <title>repo.RepoObject_persistence_column :: DataHandwerk Docs</title>
     <link rel="canonical" href="https://DataHandwerk.github.io/dhw/0.1.0/sqldb/repo.RepoObject_persistence_column.html">
     <link rel="prev" href="repo.RepoObject_persistence.html">
-    <link rel="next" href="repo.RepoObject_persistence_ForInput.html">
+    <link rel="next" href="repo.RepoObject_persistence_ForUpdate.html">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4RM6Q8D27"></script>
@@ -108,10 +108,25 @@
     <a class="nav-link" href="nav/nav-schema-config.html">config</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="config.fs_dwh_database_name.html">config.fs_dwh_database_name</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="config.fs_get_parameter_value.html">config.fs_get_parameter_value</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="config.ftv_dwh_database.html">config.ftv_dwh_database</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="config.ftv_get_parameter_value.html">config.ftv_get_parameter_value</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="config.InheritanceType.html">config.InheritanceType</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="config.join_type.html">config.join_type</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="config.Parameter.html">config.Parameter</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="config.Parameter_default.html">config.Parameter_default</a>
@@ -126,10 +141,19 @@
     <a class="nav-link" href="config.type_level1type_level2type.html">config.type_level1type_level2type</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="config.usp_connect_database.html">config.usp_connect_database</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="config.usp_generate_merge.html">config.usp_generate_merge</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="config.usp_init_parameter.html">config.usp_init_parameter</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="config.usp_init_spt_values.html">config.usp_init_spt_values</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="config.usp_parameter_set.html">config.usp_parameter_set</a>
   </li>
 </ul>
   </li>
@@ -188,15 +212,15 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="dbo.sysdiagrams.html">dbo.sysdiagrams</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.zzz.html">dbo.zzz</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="nav/nav-schema-docs.html">docs</a>
 <ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="docs.9A569BEE-CE29-4CAF-8320-AB6939692ADA.html">docs.9A569BEE-CE29-4CAF-8320-AB6939692ADA</a>
-  </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.AntoraIndexSemanticgroup.html">docs.AntoraIndexSemanticgroup</a>
   </li>
@@ -228,7 +252,7 @@
     <a class="nav-link" href="docs.AntoraPage_ObjectByType.html">docs.AntoraPage_ObjectByType</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="docs.ExecutionLog_plantUML_Sequence_start_stop.html">docs.ExecutionLog_plantUML_Sequence_start_stop</a>
+    <a class="nav-link" href="docs.AntoraTemplate_examples.html">docs.AntoraTemplate_examples</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ForeignKey_RelationScript.html">docs.ForeignKey_RelationScript</a>
@@ -274,6 +298,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.RepoObject_Plantuml_ObjectRefList.html">docs.RepoObject_Plantuml_ObjectRefList</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.RepoObject_Plantuml_ObjectRefList_0_30.html">docs.RepoObject_Plantuml_ObjectRefList_0_30</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.RepoObject_Plantuml_ObjectRefList_30_0.html">docs.RepoObject_Plantuml_ObjectRefList_30_0</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.RepoObject_PlantUml_PumlEntityFkList.html">docs.RepoObject_PlantUml_PumlEntityFkList</a>
@@ -333,28 +363,16 @@
     <a class="nav-link" href="graph.Index_S.html">graph.Index_S</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="graph.ProcedureInstance.html">graph.ProcedureInstance</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="graph.ProcedureInstance_S.html">graph.ProcedureInstance_S</a>
-  </li>
-  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="graph.ReferencedObject.html">graph.ReferencedObject</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="graph.ReferencedObjectColumn.html">graph.ReferencedObjectColumn</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="graph.ReferencedProcedureInstance.html">graph.ReferencedProcedureInstance</a>
-  </li>
-  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="graph.ReferencingObject.html">graph.ReferencingObject</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="graph.ReferencingObjectColumn.html">graph.ReferencingObjectColumn</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="graph.ReferencingProcedureInstance.html">graph.ReferencingProcedureInstance</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="graph.RepoObject.html">graph.RepoObject</a>
@@ -381,9 +399,6 @@
     <a class="nav-link" href="graph.usp_PERSIST_Index.html">graph.usp_PERSIST_Index</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="graph.usp_PERSIST_ProcedureInstance.html">graph.usp_PERSIST_ProcedureInstance</a>
-  </li>
-  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="graph.usp_PERSIST_RepoObject.html">graph.usp_PERSIST_RepoObject</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -393,22 +408,34 @@
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="nav/nav-schema-logs.html">logs</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="logs.ExecutionLog.html">logs.ExecutionLog</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="logs.ExecutionLog_gross.html">logs.ExecutionLog_gross</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="logs.ExecutionLog_parent.html">logs.ExecutionLog_parent</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="logs.ExecutionLog_plantUML_Sequence_start_stop.html">logs.ExecutionLog_plantUML_Sequence_start_stop</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="logs.ftv_ExecutionLog_tree.html">logs.ftv_ExecutionLog_tree</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="logs.usp_ExecutionLog_insert.html">logs.usp_ExecutionLog_insert</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="nav/nav-schema-repo.html">repo</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.aaa_test_sql_table_column.html">repo.aaa_test_sql_table_column</a>
-  </li>
-  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.check_IndexColumn_virtual_referenced_setpoint.html">repo.check_IndexColumn_virtual_referenced_setpoint</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ExecutionLog.html">repo.ExecutionLog</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ExecutionLog_gross.html">repo.ExecutionLog_gross</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ExecutionLog_parent.html">repo.ExecutionLog_parent</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.ExtendedProperty_Repo2Sys_level1.html">repo.ExtendedProperty_Repo2Sys_level1</a>
@@ -444,31 +471,10 @@
     <a class="nav-link" href="repo.ForeignKey_virtual_Indexes.html">repo.ForeignKey_virtual_Indexes</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.fs_dwh_database_name.html">repo.fs_dwh_database_name</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.fs_get_parameter_value.html">repo.fs_get_parameter_value</a>
-  </li>
-  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.fs_get_RepoObjectColumnProperty_nvarchar.html">repo.fs_get_RepoObjectColumnProperty_nvarchar</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.fs_get_RepoObjectProperty_nvarchar.html">repo.fs_get_RepoObjectProperty_nvarchar</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ftv_dwh_database.html">repo.ftv_dwh_database</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ftv_ExecutionLog_tree.html">repo.ftv_ExecutionLog_tree</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ftv_GeneratorUspStep_sql.html">repo.ftv_GeneratorUspStep_sql</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ftv_GeneratorUspStep_tree.html">repo.ftv_GeneratorUspStep_tree</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ftv_get_parameter_value.html">repo.ftv_get_parameter_value</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.ftv_query_plan_extract_source.html">repo.ftv_query_plan_extract_source</a>
@@ -486,52 +492,16 @@
     <a class="nav-link" href="repo.ftv_RepoObject_ReferenceTree.html">repo.ftv_RepoObject_ReferenceTree</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.ftv_RepoObject_ReferenceTree_referenced.html">repo.ftv_RepoObject_ReferenceTree_referenced</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.ftv_RepoObject_ReferenceTree_referencing.html">repo.ftv_RepoObject_ReferenceTree_referencing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.ftv_RepoObject_ReferenceTree_via_fullname.html">repo.ftv_RepoObject_ReferenceTree_via_fullname</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.ftv_RepoObjectColumn_ReferenceTree.html">repo.ftv_RepoObjectColumn_ReferenceTree</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ftv_sqlparse.html">repo.ftv_sqlparse</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ftv_sqlparse_children_pivot.html">repo.ftv_sqlparse_children_pivot</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ftv_sqlparse_IdentifierList__TestOnly.html">repo.ftv_sqlparse_IdentifierList__TestOnly</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ftv_sqlparse_with_some_children.html">repo.ftv_sqlparse_with_some_children</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.GeneratorUsp.html">repo.GeneratorUsp</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.GeneratorUsp_filter_persistence.html">repo.GeneratorUsp_filter_persistence</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.GeneratorUsp_ParameterList.html">repo.GeneratorUsp_ParameterList</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.GeneratorUsp_SqlUsp.html">repo.GeneratorUsp_SqlUsp</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.GeneratorUsp_StepList.html">repo.GeneratorUsp_StepList</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.GeneratorUspParameter.html">repo.GeneratorUspParameter</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.GeneratorUspStep.html">repo.GeneratorUspStep</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.GeneratorUspStep_Persistence.html">repo.GeneratorUspStep_Persistence</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.GeneratorUspStep_Persistence_IsInactive_setpoint.html">repo.GeneratorUspStep_Persistence_IsInactive_setpoint</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.GeneratorUspStep_Sql.html">repo.GeneratorUspStep_Sql</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.Index_ColumList.html">repo.Index_ColumList</a>
@@ -597,18 +567,6 @@
     <a class="nav-link" href="repo.Match_RepoObject_referenced_UspPersistence.html">repo.Match_RepoObject_referenced_UspPersistence</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.Parameter.html">repo.Parameter</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ProcedureInstance.html">repo.ProcedureInstance</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ProcedureInstanceDependency.html">repo.ProcedureInstanceDependency</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ProcedureInstanceDependency_gross.html">repo.ProcedureInstanceDependency_gross</a>
-  </li>
-  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.PropertyName_RepoObject.html">repo.PropertyName_RepoObject</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -645,7 +603,7 @@
     <a class="nav-link" href="repo.RepoObject_persistence_column.html">repo.RepoObject_persistence_column</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_persistence_ForInput.html">repo.RepoObject_persistence_ForInput</a>
+    <a class="nav-link" href="repo.RepoObject_persistence_ForUpdate.html">repo.RepoObject_persistence_ForUpdate</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObject_persistence_ObjectNames.html">repo.RepoObject_persistence_ObjectNames</a>
@@ -663,9 +621,6 @@
     <a class="nav-link" href="repo.RepoObject_reference_union.html">repo.RepoObject_reference_union</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_reference_union_node_id.html">repo.RepoObject_reference_union_node_id</a>
-  </li>
-  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObject_referenced_level.html">repo.RepoObject_referenced_level</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -676,6 +631,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObject_ReferenceTree.html">repo.RepoObject_ReferenceTree</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.RepoObject_ReferenceTree_referenced.html">repo.RepoObject_ReferenceTree_referenced</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.RepoObject_ReferenceTree_referencing.html">repo.RepoObject_ReferenceTree_referencing</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObject_referencing_level.html">repo.RepoObject_referencing_level</a>
@@ -696,93 +657,6 @@
     <a class="nav-link" href="repo.RepoObject_SqlCreateTable.html">repo.RepoObject_SqlCreateTable</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules.html">repo.RepoObject_SqlModules</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_10_statement.html">repo.RepoObject_SqlModules_10_statement</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_20_statement_children.html">repo.RepoObject_SqlModules_20_statement_children</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_21_statement_children_helper.html">repo.RepoObject_SqlModules_21_statement_children_helper</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_22_identifier_alias_AS.html">repo.RepoObject_SqlModules_22_identifier_alias_AS</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_23_normalized_wo_nolock.html">repo.RepoObject_SqlModules_23_normalized_wo_nolock</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_24_IdentifierList_children.html">repo.RepoObject_SqlModules_24_IdentifierList_children</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_25_IdentifierList_children_IdentifierSplit.html">repo.RepoObject_SqlModules_25_IdentifierList_children_IdentifierSplit</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_26_IdentifierList_children_IdentifierSplit_QuoteName.html">repo.RepoObject_SqlModules_26_IdentifierList_children_IdentifierSplit_QuoteName</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_29_1_object_is_union.html">repo.RepoObject_SqlModules_29_1_object_is_union</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_29_2_object_is_GroupBy.html">repo.RepoObject_SqlModules_29_2_object_is_GroupBy</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_31_object.html">repo.RepoObject_SqlModules_31_object</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_32_ObjectClass.html">repo.RepoObject_SqlModules_32_ObjectClass</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_33_ObjectNormalized.html">repo.RepoObject_SqlModules_33_ObjectNormalized</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_39_object.html">repo.RepoObject_SqlModules_39_object</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_41_from.html">repo.RepoObject_SqlModules_41_from</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_41_from_T.html">repo.RepoObject_SqlModules_41_from_T</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_42_from_Identifier.html">repo.RepoObject_SqlModules_42_from_Identifier</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_43_from_Identifier.html">repo.RepoObject_SqlModules_43_from_Identifier</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_44_from_Identifier_QuoteName.html">repo.RepoObject_SqlModules_44_from_Identifier_QuoteName</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_51_Identitfier.html">repo.RepoObject_SqlModules_51_Identitfier</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_52_Identitfier_QuoteName.html">repo.RepoObject_SqlModules_52_Identitfier_QuoteName</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_61_SelectIdentifier_Union.html">repo.RepoObject_SqlModules_61_SelectIdentifier_Union</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_61_SelectIdentifier_Union_T.html">repo.RepoObject_SqlModules_61_SelectIdentifier_Union_T</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_71_reference_ExpliciteTableAlias.html">repo.RepoObject_SqlModules_71_reference_ExpliciteTableAlias</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_72_reference_NoTableAlias.html">repo.RepoObject_SqlModules_72_reference_NoTableAlias</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_79_reference_union.html">repo.RepoObject_SqlModules_79_reference_union</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_Identitfier.html">repo.RepoObject_SqlModules_Identitfier</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_Repo_Sys.html">repo.RepoObject_SqlModules_Repo_Sys</a>
-  </li>
-  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObjectColumn.html">repo.RepoObjectColumn</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -793,12 +667,6 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObjectColumn_Inheritance_temp.html">repo.RepoObjectColumn_Inheritance_temp</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObjectColumn_InheritanceType_InheritanceDefinition.html">repo.RepoObjectColumn_InheritanceType_InheritanceDefinition</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObjectColumn_InheritanceType_resulting_InheritanceDefinition.html">repo.RepoObjectColumn_InheritanceType_resulting_InheritanceDefinition</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObjectColumn_MissingSource_TypeV.html">repo.RepoObjectColumn_MissingSource_TypeV</a>
@@ -837,7 +705,19 @@
     <a class="nav-link" href="repo.RepoObjectColumn_RelationScript.html">repo.RepoObjectColumn_RelationScript</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.html">repo.RepoObjectColumn_RequiredRepoObjectColumnMerge</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObjectColumnProperty.html">repo.RepoObjectColumnProperty</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.RepoObjectColumnProperty_ForUpdate.html">repo.RepoObjectColumnProperty_ForUpdate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition.html">repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.RepoObjectColumnProperty_InheritanceType_resulting_InheritanceDefinition.html">repo.RepoObjectColumnProperty_InheritanceType_resulting_InheritanceDefinition</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObjectColumnProperty_sys_repo.html">repo.RepoObjectColumnProperty_sys_repo</a>
@@ -846,10 +726,16 @@
     <a class="nav-link" href="repo.RepoObjectProperty.html">repo.RepoObjectProperty</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObjectProperty_cross.html">repo.RepoObjectProperty_cross</a>
+    <a class="nav-link" href="repo.RepoObjectProperty_Collect_source_ROGross.html">repo.RepoObjectProperty_Collect_source_ROGross</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObjectProperty_from_sql_modules_definition.html">repo.RepoObjectProperty_from_sql_modules_definition</a>
+    <a class="nav-link" href="repo.RepoObjectProperty_Collect_source_sql_modules_definition.html">repo.RepoObjectProperty_Collect_source_sql_modules_definition</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.RepoObjectProperty_Collect_source_uspgenerator.html">repo.RepoObjectProperty_Collect_source_uspgenerator</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.RepoObjectProperty_cross.html">repo.RepoObjectProperty_cross</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObjectProperty_InheritanceType_InheritanceDefinition.html">repo.RepoObjectProperty_InheritanceType_InheritanceDefinition</a>
@@ -882,18 +768,6 @@
     <a class="nav-link" href="repo.SysObjectColumn_QueryPlanExpression.html">repo.SysObjectColumn_QueryPlanExpression</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.usp_connect_database.html">repo.usp_connect_database</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.usp_ExecutionLog_insert.html">repo.usp_ExecutionLog_insert</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.usp_generate_merge.html">repo.usp_generate_merge</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.usp_GeneratorUsp_insert_update_persistence.html">repo.usp_GeneratorUsp_insert_update_persistence</a>
-  </li>
-  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.usp_Index_finish.html">repo.usp_Index_finish</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -906,13 +780,10 @@
     <a class="nav-link" href="repo.usp_Index_Settings.html">repo.usp_Index_Settings</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.usp_Index_virtual_InsertUpdate.html">repo.usp_Index_virtual_InsertUpdate</a>
+    <a class="nav-link" href="repo.usp_Index_virtual_set.html">repo.usp_Index_virtual_set</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.usp_main.html">repo.usp_main</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.usp_parameter_insert_update.html">repo.usp_parameter_insert_update</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.usp_PERSIST_ForeignKey_Indexes_union_T.html">repo.usp_PERSIST_ForeignKey_Indexes_union_T</a>
@@ -927,13 +798,7 @@
     <a class="nav-link" href="repo.usp_PERSIST_RepoObject_referencing_level_T.html">repo.usp_PERSIST_RepoObject_referencing_level_T</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.usp_PERSIST_RepoObject_SqlModules_41_from_T.html">repo.usp_PERSIST_RepoObject_SqlModules_41_from_T</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.usp_PERSIST_RepoObject_SqlModules_61_SelectIdentifier_Union_T.html">repo.usp_PERSIST_RepoObject_SqlModules_61_SelectIdentifier_Union_T</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.usp_persistence_insert_update.html">repo.usp_persistence_insert_update</a>
+    <a class="nav-link" href="repo.usp_persistence_set.html">repo.usp_persistence_set</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.usp_RepoObject_Inheritance.html">repo.usp_RepoObject_Inheritance</a>
@@ -946,6 +811,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.usp_RepoObjectColumn_update_RepoObjectColumn_column_id.html">repo.usp_RepoObjectColumn_update_RepoObjectColumn_column_id</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.usp_RepoObjectColumnProperty_set.html">repo.usp_RepoObjectColumnProperty_set</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.usp_RepoObjectProperty_collect.html">repo.usp_RepoObjectProperty_collect</a>
@@ -979,12 +847,6 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.usp_update_Referencing_Count.html">repo.usp_update_Referencing_Count</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.Workflow.html">repo.Workflow</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.WorkflowStep.html">repo.WorkflowStep</a>
   </li>
 </ul>
   </li>
@@ -1039,6 +901,117 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo_sys.usp_dropextendedproperty_level_2.html">repo_sys.usp_dropextendedproperty_level_2</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="nav/nav-schema-sqlparse.html">sqlparse</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.ftv_sqlparse.html">sqlparse.ftv_sqlparse</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.ftv_sqlparse_children_pivot.html">sqlparse.ftv_sqlparse_children_pivot</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.ftv_sqlparse_IdentifierList__TestOnly.html">sqlparse.ftv_sqlparse_IdentifierList__TestOnly</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.ftv_sqlparse_with_some_children.html">sqlparse.ftv_sqlparse_with_some_children</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules.html">sqlparse.RepoObject_SqlModules</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_10_statement.html">sqlparse.RepoObject_SqlModules_10_statement</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_20_statement_children.html">sqlparse.RepoObject_SqlModules_20_statement_children</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_21_statement_children_helper.html">sqlparse.RepoObject_SqlModules_21_statement_children_helper</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_22_identifier_alias_AS.html">sqlparse.RepoObject_SqlModules_22_identifier_alias_AS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_23_normalized_wo_nolock.html">sqlparse.RepoObject_SqlModules_23_normalized_wo_nolock</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_24_IdentifierList_children.html">sqlparse.RepoObject_SqlModules_24_IdentifierList_children</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_25_IdentifierList_children_IdentifierSplit.html">sqlparse.RepoObject_SqlModules_25_IdentifierList_children_IdentifierSplit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_26_IdentifierList_children_IdentifierSplit_QuoteName.html">sqlparse.RepoObject_SqlModules_26_IdentifierList_children_IdentifierSplit_QuoteName</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_29_1_object_is_union.html">sqlparse.RepoObject_SqlModules_29_1_object_is_union</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_29_2_object_is_GroupBy.html">sqlparse.RepoObject_SqlModules_29_2_object_is_GroupBy</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_31_object.html">sqlparse.RepoObject_SqlModules_31_object</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_32_ObjectClass.html">sqlparse.RepoObject_SqlModules_32_ObjectClass</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_33_ObjectNormalized.html">sqlparse.RepoObject_SqlModules_33_ObjectNormalized</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_39_object.html">sqlparse.RepoObject_SqlModules_39_object</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_41_from.html">sqlparse.RepoObject_SqlModules_41_from</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_41_from_T.html">sqlparse.RepoObject_SqlModules_41_from_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_42_from_Identifier.html">sqlparse.RepoObject_SqlModules_42_from_Identifier</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_43_from_Identifier.html">sqlparse.RepoObject_SqlModules_43_from_Identifier</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_44_from_Identifier_QuoteName.html">sqlparse.RepoObject_SqlModules_44_from_Identifier_QuoteName</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_51_Identitfier.html">sqlparse.RepoObject_SqlModules_51_Identitfier</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_52_Identitfier_QuoteName.html">sqlparse.RepoObject_SqlModules_52_Identitfier_QuoteName</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_61_SelectIdentifier_Union.html">sqlparse.RepoObject_SqlModules_61_SelectIdentifier_Union</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_61_SelectIdentifier_Union_T.html">sqlparse.RepoObject_SqlModules_61_SelectIdentifier_Union_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_71_reference_ExpliciteTableAlias.html">sqlparse.RepoObject_SqlModules_71_reference_ExpliciteTableAlias</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_72_reference_NoTableAlias.html">sqlparse.RepoObject_SqlModules_72_reference_NoTableAlias</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_79_reference_union.html">sqlparse.RepoObject_SqlModules_79_reference_union</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_Identitfier.html">sqlparse.RepoObject_SqlModules_Identitfier</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_Repo_Sys.html">sqlparse.RepoObject_SqlModules_Repo_Sys</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.usp_PERSIST_RepoObject_SqlModules_41_from_T.html">sqlparse.usp_PERSIST_RepoObject_SqlModules_41_from_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.usp_PERSIST_RepoObject_SqlModules_61_SelectIdentifier_Union_T.html">sqlparse.usp_PERSIST_RepoObject_SqlModules_61_SelectIdentifier_Union_T</a>
   </li>
 </ul>
   </li>
@@ -1138,6 +1111,69 @@
   </li>
 </ul>
   </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="nav/nav-schema-uspgenerator.html">uspgenerator</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.ftv_GeneratorUspStep_sql.html">uspgenerator.ftv_GeneratorUspStep_sql</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.ftv_GeneratorUspStep_tree.html">uspgenerator.ftv_GeneratorUspStep_tree</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.GeneratorUsp.html">uspgenerator.GeneratorUsp</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.GeneratorUsp_filter_persistence.html">uspgenerator.GeneratorUsp_filter_persistence</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.GeneratorUsp_ParameterList.html">uspgenerator.GeneratorUsp_ParameterList</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.GeneratorUsp_SqlUsp.html">uspgenerator.GeneratorUsp_SqlUsp</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.GeneratorUsp_StepList.html">uspgenerator.GeneratorUsp_StepList</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.GeneratorUspParameter.html">uspgenerator.GeneratorUspParameter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.GeneratorUspStep.html">uspgenerator.GeneratorUspStep</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.GeneratorUspStep_Persistence.html">uspgenerator.GeneratorUspStep_Persistence</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.GeneratorUspStep_Persistence_IsInactive_setpoint.html">uspgenerator.GeneratorUspStep_Persistence_IsInactive_setpoint</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.GeneratorUspStep_Sql.html">uspgenerator.GeneratorUspStep_Sql</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.usp_GeneratorUsp_insert_update_persistence.html">uspgenerator.usp_GeneratorUsp_insert_update_persistence</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="nav/nav-schema-workflow.html">workflow</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="workflow.ProcedureDependency.html">workflow.ProcedureDependency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="workflow.ProcedureDependency_gross.html">workflow.ProcedureDependency_gross</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="workflow.Workflow.html">workflow.Workflow</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="workflow.WorkflowStep.html">workflow.WorkflowStep</a>
+  </li>
+</ul>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
@@ -1210,12 +1246,18 @@ V
 (
 view
 ), modify_date:
-2021-03-10 14:34:46</p>
+2021-04-13 19:02:37</p>
 </div>
 <div class="paragraph">
 <p>RepoObject_guid:
 0490291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_examples"><a class="anchor" href="#_examples"></a>Examples</h2>
+<div class="sectionbody">
+
 </div>
 </div>
 <div class="sect1">
@@ -1247,6 +1289,14 @@ view
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><a href="#column-target_RepoObject_guid">target_RepoObject_guid</a></strong></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>uniqueidentifier</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><a href="#column-RepoObjectColumn_guid_s">RepoObjectColumn_guid_s</a></strong></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>uniqueidentifier</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
@@ -1372,14 +1422,6 @@ view
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-RepoObjectColumn_guid_s">RepoObjectColumn_guid_s</a></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>uniqueidentifier</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-RepoObjectColumn_name_t">RepoObjectColumn_name_t</a></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(128)</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
@@ -1435,7 +1477,7 @@ view
 <div class="sectionbody">
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-3426218af1d0383ea32b84c68809bf74bf9292bc.svg" alt="entity_1_1_fk-repo.RepoObject_persistence_column">
+<img src="_images/diag-94ff759d03c45e9b197940ab6be1f5f24f6264a8.svg" alt="entity_1_1_fk-repo.RepoObject_persistence_column">
 </div>
 </div>
 </div>
@@ -1463,7 +1505,23 @@ view
 <h3 id="_object_reference_diagram"><a class="anchor" href="#_object_reference_diagram"></a>Object Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-a0806244b7cdee8ea851d598b629e2372ae9a96a.svg" alt="entity_1_1_objectref-repo.RepoObject_persistence_column">
+<img src="_images/diag-11bf77580df85db96a40e6531683ac67342cc368.svg" alt="entity_1_1_objectref-repo.RepoObject_persistence_column">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_object_reference_diagram_referenced"><a class="anchor" href="#_object_reference_diagram_referenced"></a>Object Reference Diagram - Referenced</h3>
+<div class="imageblock kroki">
+<div class="content">
+<img src="_images/diag-1e205dbe496f26bceb529ae11cfd4f39bc54318c.svg" alt="entity_30_0_objectref-repo.RepoObject_persistence_column">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_object_reference_diagram_referencing"><a class="anchor" href="#_object_reference_diagram_referencing"></a>Object Reference Diagram - Referencing</h3>
+<div class="imageblock kroki">
+<div class="content">
+<img src="_images/diag-64041b1c67ceadf6b7d17b9edd6b73ea59d5b3d9.svg" alt="entity_0_30_objectref-repo.RepoObject_persistence_column">
 </div>
 </div>
 </div>
@@ -1471,7 +1529,7 @@ view
 <h3 id="_column_reference_diagram"><a class="anchor" href="#_column_reference_diagram"></a>Column Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-2c7c6ad92d800335102c8ea1f9c0d95d9c14914b.svg" alt="entity_1_1_colref-repo.RepoObject_persistence_column">
+<img src="_images/diag-a0f0d2e0144d7e3542c0b9fcc86c0dfd44f111d7.svg" alt="entity_1_1_colref-repo.RepoObject_persistence_column">
 </div>
 </div>
 </div>
@@ -1482,6 +1540,33 @@ view
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="index-PK_RepoObject_persistence_column"><a class="anchor" href="#index-PK_RepoObject_persistence_column"></a>PK_RepoObject_persistence_column</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>IndexSemanticGroup: <a href="index/IndexSemanticGroup.html#_no_group" class="page">no_group</a></p>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#column-target_RepoObject_guid">target_RepoObject_guid</a>; uniqueidentifier</p>
+</li>
+<li>
+<p><a href="#column-RepoObjectColumn_guid_s">RepoObjectColumn_guid_s</a>; uniqueidentifier</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>PK, Unique, Real: 1, 1, 0</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="index-UK_RepoObject_persistence_column__1"><a class="anchor" href="#index-UK_RepoObject_persistence_column__1"></a>UK_RepoObject_persistence_column__1</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1499,7 +1584,7 @@ view
 </div>
 </li>
 <li>
-<p>PK, Unique, Real: 1, 1, 0</p>
+<p>PK, Unique, Real: 0, 1, 0</p>
 </li>
 </ul>
 </div>
@@ -1545,6 +1630,29 @@ view
 </div>
 </div>
 <div class="sect2">
+<h3 id="column-RepoObjectColumn_guid_s"><a class="anchor" href="#column-RepoObjectColumn_guid_s"></a>RepoObjectColumn_guid_s</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong>RepoObjectColumn_guid_s</strong></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>uniqueidentifier</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
 <h3 id="column-has_history"><a class="anchor" href="#column-has_history"></a>has_history</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -1566,6 +1674,14 @@ view
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Description</div>
+<div class="content">
+<div class="paragraph">
+<p>temporal table should be created, it will also automatically create the columns required for the history</p>
+</div>
+</div>
+</div>
 <div class="openblock">
 <div class="title">Referenced Columns</div>
 <div class="content">
@@ -1602,6 +1718,14 @@ view
 </tbody>
 </table>
 <div class="openblock">
+<div class="title">Description</div>
+<div class="content">
+<div class="paragraph">
+<p>history columns are created. Can be used if only these columns are required, but not the related history table</p>
+</div>
+</div>
+</div>
+<div class="openblock">
 <div class="title">Referenced Columns</div>
 <div class="content">
 <div class="ulist">
@@ -1637,6 +1761,15 @@ view
 </tbody>
 </table>
 <div class="openblock">
+<div class="title">Description</div>
+<div class="content">
+<div class="paragraph">
+<p>the final history_schema_name will be defined in <a href="repo.RepoObject_SqlCreateTable.html" class="page">repo.RepoObject_SqlCreateTable</a><br>
+it looks like this column here is currently not used and should or could be deleted</p>
+</div>
+</div>
+</div>
+<div class="openblock">
 <div class="title">Referenced Columns</div>
 <div class="content">
 <div class="ulist">
@@ -1671,6 +1804,15 @@ view
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Description</div>
+<div class="content">
+<div class="paragraph">
+<p>the final history_table_name will be defined in <a href="repo.RepoObject_SqlCreateTable.html" class="page">repo.RepoObject_SqlCreateTable</a><br>
+it looks like this column here is currently not used and should or could be deleted</p>
+</div>
+</div>
+</div>
 <div class="openblock">
 <div class="title">Referenced Columns</div>
 <div class="content">
@@ -1742,6 +1884,14 @@ view
 </tbody>
 </table>
 <div class="openblock">
+<div class="title">Description</div>
+<div class="content">
+<div class="paragraph">
+<p>persistence source should be checked empty source, empty source should not be persisted</p>
+</div>
+</div>
+</div>
+<div class="openblock">
 <div class="title">Referenced Columns</div>
 <div class="content">
 <div class="ulist">
@@ -1776,6 +1926,16 @@ view
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Description</div>
+<div class="content">
+<div class="paragraph">
+<p>changed columns should be deleted in persistence target<br>
+An alternative option is 'is_persistence_update_changed'<br>
+This requires a (real or virtual) PK defined in the source</p>
+</div>
+</div>
+</div>
 <div class="openblock">
 <div class="title">Referenced Columns</div>
 <div class="content">
@@ -1812,6 +1972,15 @@ view
 </tbody>
 </table>
 <div class="openblock">
+<div class="title">Description</div>
+<div class="content">
+<div class="paragraph">
+<p>missing columns should be deleted in persistence target<br>
+This requires a (real or virtual) PK defined in the source</p>
+</div>
+</div>
+</div>
+<div class="openblock">
 <div class="title">Referenced Columns</div>
 <div class="content">
 <div class="ulist">
@@ -1846,6 +2015,25 @@ view
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Description</div>
+<div class="content">
+<div class="paragraph">
+<p>missing columns or all columns should be inserted into persistence target<br>
+The final result depends on other settings</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>'is_persistence_truncate' = 1 and 'is_persistence_insert' = 1 will just truncate the persistence target and insert all entries from persistence source</p>
+</li>
+<li>
+<p>if a (real or virtual) PK is defined in the source, the insert can be combined with delete and update</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 <div class="openblock">
 <div class="title">Referenced Columns</div>
 <div class="content">
@@ -1916,6 +2104,16 @@ view
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Description</div>
+<div class="content">
+<div class="paragraph">
+<p>changed columns should be updated in persistence target<br>
+An alternative option is 'is_persistence_delete_changed'<br>
+This requires a (real or virtual) PK defined in the source</p>
+</div>
+</div>
+</div>
 <div class="openblock">
 <div class="title">Referenced Columns</div>
 <div class="content">
@@ -2015,29 +2213,6 @@ view
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>RepoObject_type_t</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>char(2)</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect2">
-<h3 id="column-RepoObjectColumn_guid_s"><a class="anchor" href="#column-RepoObjectColumn_guid_s"></a>RepoObjectColumn_guid_s</h3>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 16.6666%;">
-<col style="width: 16.6666%;">
-<col style="width: 16.6666%;">
-<col style="width: 16.6666%;">
-<col style="width: 16.6666%;">
-<col style="width: 16.667%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RepoObjectColumn_guid_s</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>uniqueidentifier</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
@@ -2206,32 +2381,33 @@ view
 wof�r soll diese Sicht verwendet werden?
 noch nicht fertig
 */
-CREATE VIEW [repo].[RepoObject_persistence_column]
-AS
+Create View repo.RepoObject_persistence_column
+As
 --
-SELECT [rop].[target_RepoObject_guid]
- , [rop].[source_RepoObject_guid]
- , [roc_s].[RepoObjectColumn_guid] AS [RepoObjectColumn_guid_s]
- , [ro_s].[SysObject_schema_name] AS [SysObject_schema_name_s]
- , [ro_s].[SysObject_name] AS [SysObject_name_s]
- , [roc_s].[SysObjectColumn_name] AS [SysObjectColumn_name_s]
- , [ro_s].[SysObject_type] AS [SysObject_type_s]
- , [ro_t].[RepoObject_schema_name] AS [RepoObject_schema_name_t]
- , [ro_t].[RepoObject_name] AS [RepoObject_name_t]
- , [roc_t].[RepoObjectColumn_name] AS [RepoObjectColumn_name_t]
- , [ro_t].[RepoObject_type] AS [RepoObject_type_t]
- , [ro_t].[is_repo_managed] AS [is_repo_managed_t]
- , [rop].[is_persistence_truncate]
- , [rop].[is_persistence_delete_missing]
- , [rop].[is_persistence_delete_changed]
- , [rop].[is_persistence_update_changed]
- , [rop].[is_persistence_insert]
- , [rop].has_history AS has_history
- , [rop].has_history_columns AS has_history_columns
- , [rop].[is_persistence_check_for_empty_source]
- , [rop].[history_schema_name]
- , [rop].[history_table_name]
- , [rop].[is_persistence]
+Select
+    rop.target_RepoObject_guid
+  , rop.source_RepoObject_guid
+  , roc_s.RepoObjectColumn_guid As RepoObjectColumn_guid_s
+  , ro_s.SysObject_schema_name  As SysObject_schema_name_s
+  , ro_s.SysObject_name         As SysObject_name_s
+  , roc_s.SysObjectColumn_name  As SysObjectColumn_name_s
+  , ro_s.SysObject_type         As SysObject_type_s
+  , ro_t.RepoObject_schema_name As RepoObject_schema_name_t
+  , ro_t.RepoObject_name        As RepoObject_name_t
+  , roc_t.RepoObjectColumn_name As RepoObjectColumn_name_t
+  , ro_t.RepoObject_type        As RepoObject_type_t
+  , ro_t.is_repo_managed        As is_repo_managed_t
+  , rop.is_persistence_truncate
+  , rop.is_persistence_delete_missing
+  , rop.is_persistence_delete_changed
+  , rop.is_persistence_update_changed
+  , rop.is_persistence_insert
+  , rop.has_history             As has_history
+  , rop.has_history_columns     As has_history_columns
+  , rop.is_persistence_check_for_empty_source
+  , rop.history_schema_name
+  , rop.history_table_name
+  , rop.is_persistence
 --       --, [roc_s].[RepoObject_guid]
 --       --, [roc_s].[RepoObjectColumn_name]
 --       --, [roc_s].[SysObjectColumn_column_id]
@@ -2258,23 +2434,35 @@ SELECT [rop].[target_RepoObject_guid]
 ----, [roc_t].[has_different_sys_names]
 ----, [roc_t].[is_RepoObjectColumn_name_uniqueidentifier]
 ----, [roc_t].[is_SysObjectColumn_name_uniqueidentifier]
-FROM repo.RepoObject_persistence AS rop
-INNER JOIN repo.RepoObject AS ro_t
- ON rop.target_RepoObject_guid = ro_t.RepoObject_guid
-LEFT OUTER JOIN repo.RepoObject AS ro_s
- ON rop.source_RepoObject_guid = ro_s.RepoObject_guid
-LEFT OUTER JOIN repo.RepoObjectColumn AS roc_s
- ON rop.source_RepoObject_guid = roc_s.RepoObject_guid
-LEFT JOIN repo.RepoObjectColumn AS roc_t
- ON roc_t.RepoObject_guid = rop.target_RepoObject_guid
-  AND roc_t.[persistence_source_RepoObjectColumn_guid] = roc_s.RepoObjectColumn_guid</code></pre>
+From
+    repo.RepoObject_persistence As rop
+    Inner Join
+        repo.RepoObject         As ro_t
+            On
+            rop.target_RepoObject_guid                         = ro_t.RepoObject_guid
+
+    Left Outer Join
+        repo.RepoObject         As ro_s
+            On
+            rop.source_RepoObject_guid                         = ro_s.RepoObject_guid
+
+    Left Outer Join
+        repo.RepoObjectColumn   As roc_s
+            On
+            rop.source_RepoObject_guid                         = roc_s.RepoObject_guid
+
+    Left Join
+        repo.RepoObjectColumn   As roc_t
+            On
+            roc_t.RepoObject_guid                              = rop.target_RepoObject_guid
+            And roc_t.persistence_source_RepoObjectColumn_guid = roc_s.RepoObjectColumn_guid;</code></pre>
 </div>
 </div>
 </div>
 </div>
 <nav class="pagination">
   <span class="prev"><a href="repo.RepoObject_persistence.html">repo.RepoObject_persistence</a></span>
-  <span class="next"><a href="repo.RepoObject_persistence_ForInput.html">repo.RepoObject_persistence_ForInput</a></span>
+  <span class="next"><a href="repo.RepoObject_persistence_ForUpdate.html">repo.RepoObject_persistence_ForUpdate</a></span>
 </nav>
 </article>
   </div>

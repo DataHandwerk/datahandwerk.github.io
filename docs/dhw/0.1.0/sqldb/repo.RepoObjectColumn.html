@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>repo.RepoObjectColumn :: DataHandwerk Docs</title>
     <link rel="canonical" href="https://DataHandwerk.github.io/dhw/0.1.0/sqldb/repo.RepoObjectColumn.html">
-    <link rel="prev" href="repo.RepoObject_SqlModules_Repo_Sys.html">
+    <link rel="prev" href="repo.RepoObject_SqlCreateTable.html">
     <link rel="next" href="repo.RepoObjectColumn_gross.html">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../../_/css/site.css">
@@ -108,10 +108,25 @@
     <a class="nav-link" href="nav/nav-schema-config.html">config</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="config.fs_dwh_database_name.html">config.fs_dwh_database_name</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="config.fs_get_parameter_value.html">config.fs_get_parameter_value</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="config.ftv_dwh_database.html">config.ftv_dwh_database</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="config.ftv_get_parameter_value.html">config.ftv_get_parameter_value</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="config.InheritanceType.html">config.InheritanceType</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="config.join_type.html">config.join_type</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="config.Parameter.html">config.Parameter</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="config.Parameter_default.html">config.Parameter_default</a>
@@ -126,10 +141,19 @@
     <a class="nav-link" href="config.type_level1type_level2type.html">config.type_level1type_level2type</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="config.usp_connect_database.html">config.usp_connect_database</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="config.usp_generate_merge.html">config.usp_generate_merge</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="config.usp_init_parameter.html">config.usp_init_parameter</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="config.usp_init_spt_values.html">config.usp_init_spt_values</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="config.usp_parameter_set.html">config.usp_parameter_set</a>
   </li>
 </ul>
   </li>
@@ -188,15 +212,15 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="dbo.sysdiagrams.html">dbo.sysdiagrams</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.zzz.html">dbo.zzz</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="nav/nav-schema-docs.html">docs</a>
 <ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="docs.9A569BEE-CE29-4CAF-8320-AB6939692ADA.html">docs.9A569BEE-CE29-4CAF-8320-AB6939692ADA</a>
-  </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.AntoraIndexSemanticgroup.html">docs.AntoraIndexSemanticgroup</a>
   </li>
@@ -228,7 +252,7 @@
     <a class="nav-link" href="docs.AntoraPage_ObjectByType.html">docs.AntoraPage_ObjectByType</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="docs.ExecutionLog_plantUML_Sequence_start_stop.html">docs.ExecutionLog_plantUML_Sequence_start_stop</a>
+    <a class="nav-link" href="docs.AntoraTemplate_examples.html">docs.AntoraTemplate_examples</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ForeignKey_RelationScript.html">docs.ForeignKey_RelationScript</a>
@@ -274,6 +298,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.RepoObject_Plantuml_ObjectRefList.html">docs.RepoObject_Plantuml_ObjectRefList</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.RepoObject_Plantuml_ObjectRefList_0_30.html">docs.RepoObject_Plantuml_ObjectRefList_0_30</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.RepoObject_Plantuml_ObjectRefList_30_0.html">docs.RepoObject_Plantuml_ObjectRefList_30_0</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.RepoObject_PlantUml_PumlEntityFkList.html">docs.RepoObject_PlantUml_PumlEntityFkList</a>
@@ -333,28 +363,16 @@
     <a class="nav-link" href="graph.Index_S.html">graph.Index_S</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="graph.ProcedureInstance.html">graph.ProcedureInstance</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="graph.ProcedureInstance_S.html">graph.ProcedureInstance_S</a>
-  </li>
-  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="graph.ReferencedObject.html">graph.ReferencedObject</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="graph.ReferencedObjectColumn.html">graph.ReferencedObjectColumn</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="graph.ReferencedProcedureInstance.html">graph.ReferencedProcedureInstance</a>
-  </li>
-  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="graph.ReferencingObject.html">graph.ReferencingObject</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="graph.ReferencingObjectColumn.html">graph.ReferencingObjectColumn</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="graph.ReferencingProcedureInstance.html">graph.ReferencingProcedureInstance</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="graph.RepoObject.html">graph.RepoObject</a>
@@ -381,9 +399,6 @@
     <a class="nav-link" href="graph.usp_PERSIST_Index.html">graph.usp_PERSIST_Index</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="graph.usp_PERSIST_ProcedureInstance.html">graph.usp_PERSIST_ProcedureInstance</a>
-  </li>
-  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="graph.usp_PERSIST_RepoObject.html">graph.usp_PERSIST_RepoObject</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -393,22 +408,34 @@
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="nav/nav-schema-logs.html">logs</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="logs.ExecutionLog.html">logs.ExecutionLog</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="logs.ExecutionLog_gross.html">logs.ExecutionLog_gross</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="logs.ExecutionLog_parent.html">logs.ExecutionLog_parent</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="logs.ExecutionLog_plantUML_Sequence_start_stop.html">logs.ExecutionLog_plantUML_Sequence_start_stop</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="logs.ftv_ExecutionLog_tree.html">logs.ftv_ExecutionLog_tree</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="logs.usp_ExecutionLog_insert.html">logs.usp_ExecutionLog_insert</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="nav/nav-schema-repo.html">repo</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.aaa_test_sql_table_column.html">repo.aaa_test_sql_table_column</a>
-  </li>
-  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.check_IndexColumn_virtual_referenced_setpoint.html">repo.check_IndexColumn_virtual_referenced_setpoint</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ExecutionLog.html">repo.ExecutionLog</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ExecutionLog_gross.html">repo.ExecutionLog_gross</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ExecutionLog_parent.html">repo.ExecutionLog_parent</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.ExtendedProperty_Repo2Sys_level1.html">repo.ExtendedProperty_Repo2Sys_level1</a>
@@ -444,31 +471,10 @@
     <a class="nav-link" href="repo.ForeignKey_virtual_Indexes.html">repo.ForeignKey_virtual_Indexes</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.fs_dwh_database_name.html">repo.fs_dwh_database_name</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.fs_get_parameter_value.html">repo.fs_get_parameter_value</a>
-  </li>
-  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.fs_get_RepoObjectColumnProperty_nvarchar.html">repo.fs_get_RepoObjectColumnProperty_nvarchar</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.fs_get_RepoObjectProperty_nvarchar.html">repo.fs_get_RepoObjectProperty_nvarchar</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ftv_dwh_database.html">repo.ftv_dwh_database</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ftv_ExecutionLog_tree.html">repo.ftv_ExecutionLog_tree</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ftv_GeneratorUspStep_sql.html">repo.ftv_GeneratorUspStep_sql</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ftv_GeneratorUspStep_tree.html">repo.ftv_GeneratorUspStep_tree</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ftv_get_parameter_value.html">repo.ftv_get_parameter_value</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.ftv_query_plan_extract_source.html">repo.ftv_query_plan_extract_source</a>
@@ -486,52 +492,16 @@
     <a class="nav-link" href="repo.ftv_RepoObject_ReferenceTree.html">repo.ftv_RepoObject_ReferenceTree</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.ftv_RepoObject_ReferenceTree_referenced.html">repo.ftv_RepoObject_ReferenceTree_referenced</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.ftv_RepoObject_ReferenceTree_referencing.html">repo.ftv_RepoObject_ReferenceTree_referencing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.ftv_RepoObject_ReferenceTree_via_fullname.html">repo.ftv_RepoObject_ReferenceTree_via_fullname</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.ftv_RepoObjectColumn_ReferenceTree.html">repo.ftv_RepoObjectColumn_ReferenceTree</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ftv_sqlparse.html">repo.ftv_sqlparse</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ftv_sqlparse_children_pivot.html">repo.ftv_sqlparse_children_pivot</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ftv_sqlparse_IdentifierList__TestOnly.html">repo.ftv_sqlparse_IdentifierList__TestOnly</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ftv_sqlparse_with_some_children.html">repo.ftv_sqlparse_with_some_children</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.GeneratorUsp.html">repo.GeneratorUsp</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.GeneratorUsp_filter_persistence.html">repo.GeneratorUsp_filter_persistence</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.GeneratorUsp_ParameterList.html">repo.GeneratorUsp_ParameterList</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.GeneratorUsp_SqlUsp.html">repo.GeneratorUsp_SqlUsp</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.GeneratorUsp_StepList.html">repo.GeneratorUsp_StepList</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.GeneratorUspParameter.html">repo.GeneratorUspParameter</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.GeneratorUspStep.html">repo.GeneratorUspStep</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.GeneratorUspStep_Persistence.html">repo.GeneratorUspStep_Persistence</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.GeneratorUspStep_Persistence_IsInactive_setpoint.html">repo.GeneratorUspStep_Persistence_IsInactive_setpoint</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.GeneratorUspStep_Sql.html">repo.GeneratorUspStep_Sql</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.Index_ColumList.html">repo.Index_ColumList</a>
@@ -597,18 +567,6 @@
     <a class="nav-link" href="repo.Match_RepoObject_referenced_UspPersistence.html">repo.Match_RepoObject_referenced_UspPersistence</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.Parameter.html">repo.Parameter</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ProcedureInstance.html">repo.ProcedureInstance</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ProcedureInstanceDependency.html">repo.ProcedureInstanceDependency</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.ProcedureInstanceDependency_gross.html">repo.ProcedureInstanceDependency_gross</a>
-  </li>
-  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.PropertyName_RepoObject.html">repo.PropertyName_RepoObject</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -645,7 +603,7 @@
     <a class="nav-link" href="repo.RepoObject_persistence_column.html">repo.RepoObject_persistence_column</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_persistence_ForInput.html">repo.RepoObject_persistence_ForInput</a>
+    <a class="nav-link" href="repo.RepoObject_persistence_ForUpdate.html">repo.RepoObject_persistence_ForUpdate</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObject_persistence_ObjectNames.html">repo.RepoObject_persistence_ObjectNames</a>
@@ -663,9 +621,6 @@
     <a class="nav-link" href="repo.RepoObject_reference_union.html">repo.RepoObject_reference_union</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_reference_union_node_id.html">repo.RepoObject_reference_union_node_id</a>
-  </li>
-  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObject_referenced_level.html">repo.RepoObject_referenced_level</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -676,6 +631,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObject_ReferenceTree.html">repo.RepoObject_ReferenceTree</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.RepoObject_ReferenceTree_referenced.html">repo.RepoObject_ReferenceTree_referenced</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.RepoObject_ReferenceTree_referencing.html">repo.RepoObject_ReferenceTree_referencing</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObject_referencing_level.html">repo.RepoObject_referencing_level</a>
@@ -695,93 +656,6 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObject_SqlCreateTable.html">repo.RepoObject_SqlCreateTable</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules.html">repo.RepoObject_SqlModules</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_10_statement.html">repo.RepoObject_SqlModules_10_statement</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_20_statement_children.html">repo.RepoObject_SqlModules_20_statement_children</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_21_statement_children_helper.html">repo.RepoObject_SqlModules_21_statement_children_helper</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_22_identifier_alias_AS.html">repo.RepoObject_SqlModules_22_identifier_alias_AS</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_23_normalized_wo_nolock.html">repo.RepoObject_SqlModules_23_normalized_wo_nolock</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_24_IdentifierList_children.html">repo.RepoObject_SqlModules_24_IdentifierList_children</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_25_IdentifierList_children_IdentifierSplit.html">repo.RepoObject_SqlModules_25_IdentifierList_children_IdentifierSplit</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_26_IdentifierList_children_IdentifierSplit_QuoteName.html">repo.RepoObject_SqlModules_26_IdentifierList_children_IdentifierSplit_QuoteName</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_29_1_object_is_union.html">repo.RepoObject_SqlModules_29_1_object_is_union</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_29_2_object_is_GroupBy.html">repo.RepoObject_SqlModules_29_2_object_is_GroupBy</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_31_object.html">repo.RepoObject_SqlModules_31_object</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_32_ObjectClass.html">repo.RepoObject_SqlModules_32_ObjectClass</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_33_ObjectNormalized.html">repo.RepoObject_SqlModules_33_ObjectNormalized</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_39_object.html">repo.RepoObject_SqlModules_39_object</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_41_from.html">repo.RepoObject_SqlModules_41_from</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_41_from_T.html">repo.RepoObject_SqlModules_41_from_T</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_42_from_Identifier.html">repo.RepoObject_SqlModules_42_from_Identifier</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_43_from_Identifier.html">repo.RepoObject_SqlModules_43_from_Identifier</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_44_from_Identifier_QuoteName.html">repo.RepoObject_SqlModules_44_from_Identifier_QuoteName</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_51_Identitfier.html">repo.RepoObject_SqlModules_51_Identitfier</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_52_Identitfier_QuoteName.html">repo.RepoObject_SqlModules_52_Identitfier_QuoteName</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_61_SelectIdentifier_Union.html">repo.RepoObject_SqlModules_61_SelectIdentifier_Union</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_61_SelectIdentifier_Union_T.html">repo.RepoObject_SqlModules_61_SelectIdentifier_Union_T</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_71_reference_ExpliciteTableAlias.html">repo.RepoObject_SqlModules_71_reference_ExpliciteTableAlias</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_72_reference_NoTableAlias.html">repo.RepoObject_SqlModules_72_reference_NoTableAlias</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_79_reference_union.html">repo.RepoObject_SqlModules_79_reference_union</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_Identitfier.html">repo.RepoObject_SqlModules_Identitfier</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObject_SqlModules_Repo_Sys.html">repo.RepoObject_SqlModules_Repo_Sys</a>
-  </li>
   <li class="nav-item is-current-page" data-depth="3">
     <a class="nav-link" href="repo.RepoObjectColumn.html">repo.RepoObjectColumn</a>
   </li>
@@ -793,12 +667,6 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObjectColumn_Inheritance_temp.html">repo.RepoObjectColumn_Inheritance_temp</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObjectColumn_InheritanceType_InheritanceDefinition.html">repo.RepoObjectColumn_InheritanceType_InheritanceDefinition</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObjectColumn_InheritanceType_resulting_InheritanceDefinition.html">repo.RepoObjectColumn_InheritanceType_resulting_InheritanceDefinition</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObjectColumn_MissingSource_TypeV.html">repo.RepoObjectColumn_MissingSource_TypeV</a>
@@ -837,7 +705,19 @@
     <a class="nav-link" href="repo.RepoObjectColumn_RelationScript.html">repo.RepoObjectColumn_RelationScript</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.html">repo.RepoObjectColumn_RequiredRepoObjectColumnMerge</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObjectColumnProperty.html">repo.RepoObjectColumnProperty</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.RepoObjectColumnProperty_ForUpdate.html">repo.RepoObjectColumnProperty_ForUpdate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition.html">repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.RepoObjectColumnProperty_InheritanceType_resulting_InheritanceDefinition.html">repo.RepoObjectColumnProperty_InheritanceType_resulting_InheritanceDefinition</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObjectColumnProperty_sys_repo.html">repo.RepoObjectColumnProperty_sys_repo</a>
@@ -846,10 +726,16 @@
     <a class="nav-link" href="repo.RepoObjectProperty.html">repo.RepoObjectProperty</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObjectProperty_cross.html">repo.RepoObjectProperty_cross</a>
+    <a class="nav-link" href="repo.RepoObjectProperty_Collect_source_ROGross.html">repo.RepoObjectProperty_Collect_source_ROGross</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.RepoObjectProperty_from_sql_modules_definition.html">repo.RepoObjectProperty_from_sql_modules_definition</a>
+    <a class="nav-link" href="repo.RepoObjectProperty_Collect_source_sql_modules_definition.html">repo.RepoObjectProperty_Collect_source_sql_modules_definition</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.RepoObjectProperty_Collect_source_uspgenerator.html">repo.RepoObjectProperty_Collect_source_uspgenerator</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.RepoObjectProperty_cross.html">repo.RepoObjectProperty_cross</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObjectProperty_InheritanceType_InheritanceDefinition.html">repo.RepoObjectProperty_InheritanceType_InheritanceDefinition</a>
@@ -882,18 +768,6 @@
     <a class="nav-link" href="repo.SysObjectColumn_QueryPlanExpression.html">repo.SysObjectColumn_QueryPlanExpression</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.usp_connect_database.html">repo.usp_connect_database</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.usp_ExecutionLog_insert.html">repo.usp_ExecutionLog_insert</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.usp_generate_merge.html">repo.usp_generate_merge</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.usp_GeneratorUsp_insert_update_persistence.html">repo.usp_GeneratorUsp_insert_update_persistence</a>
-  </li>
-  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.usp_Index_finish.html">repo.usp_Index_finish</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -906,13 +780,10 @@
     <a class="nav-link" href="repo.usp_Index_Settings.html">repo.usp_Index_Settings</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.usp_Index_virtual_InsertUpdate.html">repo.usp_Index_virtual_InsertUpdate</a>
+    <a class="nav-link" href="repo.usp_Index_virtual_set.html">repo.usp_Index_virtual_set</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.usp_main.html">repo.usp_main</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.usp_parameter_insert_update.html">repo.usp_parameter_insert_update</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.usp_PERSIST_ForeignKey_Indexes_union_T.html">repo.usp_PERSIST_ForeignKey_Indexes_union_T</a>
@@ -927,13 +798,7 @@
     <a class="nav-link" href="repo.usp_PERSIST_RepoObject_referencing_level_T.html">repo.usp_PERSIST_RepoObject_referencing_level_T</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.usp_PERSIST_RepoObject_SqlModules_41_from_T.html">repo.usp_PERSIST_RepoObject_SqlModules_41_from_T</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.usp_PERSIST_RepoObject_SqlModules_61_SelectIdentifier_Union_T.html">repo.usp_PERSIST_RepoObject_SqlModules_61_SelectIdentifier_Union_T</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.usp_persistence_insert_update.html">repo.usp_persistence_insert_update</a>
+    <a class="nav-link" href="repo.usp_persistence_set.html">repo.usp_persistence_set</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.usp_RepoObject_Inheritance.html">repo.usp_RepoObject_Inheritance</a>
@@ -946,6 +811,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.usp_RepoObjectColumn_update_RepoObjectColumn_column_id.html">repo.usp_RepoObjectColumn_update_RepoObjectColumn_column_id</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.usp_RepoObjectColumnProperty_set.html">repo.usp_RepoObjectColumnProperty_set</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.usp_RepoObjectProperty_collect.html">repo.usp_RepoObjectProperty_collect</a>
@@ -979,12 +847,6 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.usp_update_Referencing_Count.html">repo.usp_update_Referencing_Count</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.Workflow.html">repo.Workflow</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.WorkflowStep.html">repo.WorkflowStep</a>
   </li>
 </ul>
   </li>
@@ -1039,6 +901,117 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo_sys.usp_dropextendedproperty_level_2.html">repo_sys.usp_dropextendedproperty_level_2</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="nav/nav-schema-sqlparse.html">sqlparse</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.ftv_sqlparse.html">sqlparse.ftv_sqlparse</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.ftv_sqlparse_children_pivot.html">sqlparse.ftv_sqlparse_children_pivot</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.ftv_sqlparse_IdentifierList__TestOnly.html">sqlparse.ftv_sqlparse_IdentifierList__TestOnly</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.ftv_sqlparse_with_some_children.html">sqlparse.ftv_sqlparse_with_some_children</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules.html">sqlparse.RepoObject_SqlModules</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_10_statement.html">sqlparse.RepoObject_SqlModules_10_statement</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_20_statement_children.html">sqlparse.RepoObject_SqlModules_20_statement_children</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_21_statement_children_helper.html">sqlparse.RepoObject_SqlModules_21_statement_children_helper</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_22_identifier_alias_AS.html">sqlparse.RepoObject_SqlModules_22_identifier_alias_AS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_23_normalized_wo_nolock.html">sqlparse.RepoObject_SqlModules_23_normalized_wo_nolock</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_24_IdentifierList_children.html">sqlparse.RepoObject_SqlModules_24_IdentifierList_children</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_25_IdentifierList_children_IdentifierSplit.html">sqlparse.RepoObject_SqlModules_25_IdentifierList_children_IdentifierSplit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_26_IdentifierList_children_IdentifierSplit_QuoteName.html">sqlparse.RepoObject_SqlModules_26_IdentifierList_children_IdentifierSplit_QuoteName</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_29_1_object_is_union.html">sqlparse.RepoObject_SqlModules_29_1_object_is_union</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_29_2_object_is_GroupBy.html">sqlparse.RepoObject_SqlModules_29_2_object_is_GroupBy</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_31_object.html">sqlparse.RepoObject_SqlModules_31_object</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_32_ObjectClass.html">sqlparse.RepoObject_SqlModules_32_ObjectClass</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_33_ObjectNormalized.html">sqlparse.RepoObject_SqlModules_33_ObjectNormalized</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_39_object.html">sqlparse.RepoObject_SqlModules_39_object</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_41_from.html">sqlparse.RepoObject_SqlModules_41_from</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_41_from_T.html">sqlparse.RepoObject_SqlModules_41_from_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_42_from_Identifier.html">sqlparse.RepoObject_SqlModules_42_from_Identifier</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_43_from_Identifier.html">sqlparse.RepoObject_SqlModules_43_from_Identifier</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_44_from_Identifier_QuoteName.html">sqlparse.RepoObject_SqlModules_44_from_Identifier_QuoteName</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_51_Identitfier.html">sqlparse.RepoObject_SqlModules_51_Identitfier</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_52_Identitfier_QuoteName.html">sqlparse.RepoObject_SqlModules_52_Identitfier_QuoteName</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_61_SelectIdentifier_Union.html">sqlparse.RepoObject_SqlModules_61_SelectIdentifier_Union</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_61_SelectIdentifier_Union_T.html">sqlparse.RepoObject_SqlModules_61_SelectIdentifier_Union_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_71_reference_ExpliciteTableAlias.html">sqlparse.RepoObject_SqlModules_71_reference_ExpliciteTableAlias</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_72_reference_NoTableAlias.html">sqlparse.RepoObject_SqlModules_72_reference_NoTableAlias</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_79_reference_union.html">sqlparse.RepoObject_SqlModules_79_reference_union</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_Identitfier.html">sqlparse.RepoObject_SqlModules_Identitfier</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.RepoObject_SqlModules_Repo_Sys.html">sqlparse.RepoObject_SqlModules_Repo_Sys</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.usp_PERSIST_RepoObject_SqlModules_41_from_T.html">sqlparse.usp_PERSIST_RepoObject_SqlModules_41_from_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqlparse.usp_PERSIST_RepoObject_SqlModules_61_SelectIdentifier_Union_T.html">sqlparse.usp_PERSIST_RepoObject_SqlModules_61_SelectIdentifier_Union_T</a>
   </li>
 </ul>
   </li>
@@ -1138,6 +1111,69 @@
   </li>
 </ul>
   </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="nav/nav-schema-uspgenerator.html">uspgenerator</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.ftv_GeneratorUspStep_sql.html">uspgenerator.ftv_GeneratorUspStep_sql</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.ftv_GeneratorUspStep_tree.html">uspgenerator.ftv_GeneratorUspStep_tree</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.GeneratorUsp.html">uspgenerator.GeneratorUsp</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.GeneratorUsp_filter_persistence.html">uspgenerator.GeneratorUsp_filter_persistence</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.GeneratorUsp_ParameterList.html">uspgenerator.GeneratorUsp_ParameterList</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.GeneratorUsp_SqlUsp.html">uspgenerator.GeneratorUsp_SqlUsp</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.GeneratorUsp_StepList.html">uspgenerator.GeneratorUsp_StepList</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.GeneratorUspParameter.html">uspgenerator.GeneratorUspParameter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.GeneratorUspStep.html">uspgenerator.GeneratorUspStep</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.GeneratorUspStep_Persistence.html">uspgenerator.GeneratorUspStep_Persistence</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.GeneratorUspStep_Persistence_IsInactive_setpoint.html">uspgenerator.GeneratorUspStep_Persistence_IsInactive_setpoint</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.GeneratorUspStep_Sql.html">uspgenerator.GeneratorUspStep_Sql</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.usp_GeneratorUsp_insert_update_persistence.html">uspgenerator.usp_GeneratorUsp_insert_update_persistence</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="nav/nav-schema-workflow.html">workflow</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="workflow.ProcedureDependency.html">workflow.ProcedureDependency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="workflow.ProcedureDependency_gross.html">workflow.ProcedureDependency_gross</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="workflow.Workflow.html">workflow.Workflow</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="workflow.WorkflowStep.html">workflow.WorkflowStep</a>
+  </li>
+</ul>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
@@ -1210,7 +1246,7 @@ U
 (
 user table
 ), modify_date:
-2021-03-31 11:21:45</p>
+2021-04-14 19:37:06</p>
 </div>
 <div class="paragraph">
 <p>RepoObject_guid:
@@ -1220,6 +1256,12 @@ user table
 </div>
 <div class="sect1">
 <h2 id="_description"><a class="anchor" href="#_description"></a>Description</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_examples"><a class="anchor" href="#_examples"></a>Examples</h2>
 <div class="sectionbody">
 
 </div>
@@ -1307,6 +1349,14 @@ user table
 <tr>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-is_query_plan_expression">is_query_plan_expression</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>bit</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-is_required_ColumnMerge">is_required_ColumnMerge</a></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>bit</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
@@ -1529,7 +1579,7 @@ user table
 <div class="sectionbody">
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-a1b1e95a71b7d66e58fa3895d533a34ceb75162f.svg" alt="entity_1_1_fk-repo.RepoObjectColumn">
+<img src="_images/diag-aa96b879b0e222d3933ee65dfc5ce5d07dcb8d33.svg" alt="entity_1_1_fk-repo.RepoObjectColumn">
 </div>
 </div>
 </div>
@@ -1541,9 +1591,6 @@ user table
 <h3 id="_referencing_objects"><a class="anchor" href="#_referencing_objects"></a>Referencing Objects</h3>
 <div class="ulist">
 <ul>
-<li>
-<p><a href="repo.aaa_test_sql_table_column.html" class="page">repo.aaa_test_sql_table_column</a></p>
-</li>
 <li>
 <p><a href="repo.check_IndexColumn_virtual_referenced_setpoint.html" class="page">repo.check_IndexColumn_virtual_referenced_setpoint</a></p>
 </li>
@@ -1563,16 +1610,7 @@ user table
 <p><a href="repo.RepoObject_SqlCreateTable.html" class="page">repo.RepoObject_SqlCreateTable</a></p>
 </li>
 <li>
-<p><a href="repo.RepoObject_SqlModules_71_reference_ExpliciteTableAlias.html" class="page">repo.RepoObject_SqlModules_71_reference_ExpliciteTableAlias</a></p>
-</li>
-<li>
-<p><a href="repo.RepoObject_SqlModules_72_reference_NoTableAlias.html" class="page">repo.RepoObject_SqlModules_72_reference_NoTableAlias</a></p>
-</li>
-<li>
 <p><a href="repo.RepoObjectColumn_gross.html" class="page">repo.RepoObjectColumn_gross</a></p>
-</li>
-<li>
-<p><a href="repo.RepoObjectColumn_InheritanceType_InheritanceDefinition.html" class="page">repo.RepoObjectColumn_InheritanceType_InheritanceDefinition</a></p>
 </li>
 <li>
 <p><a href="repo.RepoObjectColumn_MissingSource_TypeV.html" class="page">repo.RepoObjectColumn_MissingSource_TypeV</a></p>
@@ -1590,6 +1628,12 @@ user table
 <p><a href="repo.RepoObjectColumn_RelationScript.html" class="page">repo.RepoObjectColumn_RelationScript</a></p>
 </li>
 <li>
+<p><a href="repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.html" class="page">repo.RepoObjectColumn_RequiredRepoObjectColumnMerge</a></p>
+</li>
+<li>
+<p><a href="repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition.html" class="page">repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition</a></p>
+</li>
+<li>
 <p><a href="repo.RepoObjectColumnProperty_sys_repo.html" class="page">repo.RepoObjectColumnProperty_sys_repo</a></p>
 </li>
 <li>
@@ -1599,7 +1643,10 @@ user table
 <p><a href="repo.SysColumn_RepoObjectColumn_via_name.html" class="page">repo.SysColumn_RepoObjectColumn_via_name</a></p>
 </li>
 <li>
-<p><a href="repo.usp_Index_virtual_InsertUpdate.html" class="page">repo.usp_Index_virtual_InsertUpdate</a></p>
+<p><a href="repo.usp_Index_virtual_set.html" class="page">repo.usp_Index_virtual_set</a></p>
+</li>
+<li>
+<p><a href="#.adoc" class="page unresolved">.adoc</a></p>
 </li>
 <li>
 <p><a href="repo.usp_RepoObjectSource_QueryPlan.html" class="page">repo.usp_RepoObjectSource_QueryPlan</a></p>
@@ -1610,22 +1657,1680 @@ user table
 <li>
 <p><a href="repo.usp_update_Referencing_Count.html" class="page">repo.usp_update_Referencing_Count</a></p>
 </li>
+<li>
+<p><a href="sqlparse.RepoObject_SqlModules_71_reference_ExpliciteTableAlias.html" class="page">sqlparse.RepoObject_SqlModules_71_reference_ExpliciteTableAlias</a></p>
+</li>
+<li>
+<p><a href="sqlparse.RepoObject_SqlModules_72_reference_NoTableAlias.html" class="page">sqlparse.RepoObject_SqlModules_72_reference_NoTableAlias</a></p>
+</li>
 </ul>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_object_reference_diagram"><a class="anchor" href="#_object_reference_diagram"></a>Object Reference Diagram</h3>
+<div class="literalblock kroki-error">
+<div class="content">
+<pre>left to right direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor&lt;&lt;FN&gt;&gt; Yellow
+  BackgroundColor&lt;&lt;FS&gt;&gt; Yellow
+  BackgroundColor&lt;&lt;FT&gt;&gt; LightGray
+  BackgroundColor&lt;&lt;IF&gt;&gt; Yellow
+  BackgroundColor&lt;&lt;IS&gt;&gt; Yellow
+  BackgroundColor&lt;&lt;P&gt;&gt; Aqua
+  BackgroundColor&lt;&lt;PC&gt;&gt; Aqua
+  BackgroundColor&lt;&lt;SN&gt;&gt; Yellow
+  BackgroundColor&lt;&lt;SO&gt;&gt; SlateBlue
+  BackgroundColor&lt;&lt;TF&gt;&gt; LightGray
+  BackgroundColor&lt;&lt;TR&gt;&gt; Tomato
+  BackgroundColor&lt;&lt;U&gt;&gt; White
+  BackgroundColor&lt;&lt;V&gt;&gt; WhiteSmoke
+  BackgroundColor&lt;&lt;X&gt;&gt; Aqua
+}
+
+
+entity repo.usp_RepoObjectColumnProperty_set &lt;&lt; P &gt;&gt; {
+}
+
+entity repo.check_IndexColumn_virtual_referenced_setpoint &lt;&lt; V &gt;&gt; {
+  * **index_guid** : uniqueidentifier
+  * **index_column_id** : int
+}
+
+entity repo.ExtendedProperty_Repo2Sys_level2_RepoObjectColumn &lt;&lt; V &gt;&gt; {
+  * **level0type** : nvarchar(6)
+  * **level0name** : nvarchar(128)
+  **level1type** : varchar(9)
+  * **level1name** : nvarchar(128)
+  * **level2type** : nvarchar(6)
+  * **level2name** : nvarchar(128)
+  * **property_name** : nvarchar(128)
+}
+
+entity repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing &lt;&lt; V &gt;&gt; {
+  **index_guid** : uniqueidentifier
+  * **index_column_id** : int
+  **RowNumberInReferencing** : bigint
+}
+
+entity repo.IndexColumn_virtual_gross &lt;&lt; V &gt;&gt; {
+  * **index_column_id** : int
+}
+
+entity repo.RepoObject_persistence_column &lt;&lt; V &gt;&gt; {
+  * **target_RepoObject_guid** : uniqueidentifier
+  **RepoObjectColumn_guid_s** : uniqueidentifier
+}
+
+entity repo.RepoObject_SqlCreateTable &lt;&lt; V &gt;&gt; {
+  * **RepoObject_guid** : uniqueidentifier
+}
+
+entity repo.RepoObjectColumn &lt;&lt; U &gt;&gt; {
+  * **RepoObjectColumn_guid** : uniqueidentifier
+}
+
+entity repo.RepoObjectColumn_gross &lt;&lt; V &gt;&gt; {
+  * **RepoObjectColumn_guid** : uniqueidentifier
+}
+
+entity repo.RepoObjectColumn_MissingSource_TypeV &lt;&lt; V &gt;&gt; {
+  * **RepoObjectColumn_guid** : uniqueidentifier
+}
+
+entity repo.RepoObjectColumn_reference_Persistence &lt;&lt; V &gt;&gt; {
+  **referencing_id** : int
+  **referencing_minor_id** : int
+  **referenced_id** : int
+  **referenced_minor_id** : int
+}
+
+entity repo.RepoObjectColumn_reference_SqlModules &lt;&lt; V &gt;&gt; {
+  **referencing_id** : int
+  **referencing_minor_id** : int
+  **referenced_id** : int
+  **referenced_minor_id** : int
+}
+
+entity repo.RepoObjectColumn_ReferenceTree &lt;&lt; V &gt;&gt; {
+}
+
+entity repo.RepoObjectColumn_RelationScript &lt;&lt; V &gt;&gt; {
+}
+
+entity repo.RepoObjectColumn_RequiredRepoObjectColumnMerge &lt;&lt; V &gt;&gt; {
+}
+
+entity repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition &lt;&lt; V &gt;&gt; {
+}
+
+entity repo.RepoObjectColumnProperty_sys_repo &lt;&lt; V &gt;&gt; {
+}
+
+entity repo.SysColumn_RepoObjectColumn_via_guid &lt;&lt; V &gt;&gt; {
+}
+
+entity repo.SysColumn_RepoObjectColumn_via_name &lt;&lt; V &gt;&gt; {
+}
+
+entity repo.usp_Index_virtual_set &lt;&lt; P &gt;&gt; {
+}
+
+entity repo.usp_RepoObjectSource_QueryPlan &lt;&lt; P &gt;&gt; {
+}
+
+entity repo.usp_sync_guid_RepoObjectColumn &lt;&lt; P &gt;&gt; {
+}
+
+entity repo.usp_update_Referencing_Count &lt;&lt; P &gt;&gt; {
+}
+
+entity sqlparse.RepoObject_SqlModules_71_reference_ExpliciteTableAlias &lt;&lt; V &gt;&gt; {
+}
+
+entity sqlparse.RepoObject_SqlModules_72_reference_NoTableAlias &lt;&lt; V &gt;&gt; {
+}
+
+repo.RepoObjectColumn &lt;.. sqlparse.RepoObject_SqlModules_71_reference_ExpliciteTableAlias
+repo.RepoObjectColumn &lt;.. sqlparse.RepoObject_SqlModules_72_reference_NoTableAlias
+repo.RepoObjectColumn &lt;.. repo.usp_Index_virtual_set
+repo.RepoObjectColumn &lt;.. repo.usp_sync_guid_RepoObjectColumn
+repo.RepoObjectColumn &lt;.. repo.RepoObjectColumn_MissingSource_TypeV
+repo.RepoObjectColumn &lt;.. repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing
+repo.RepoObjectColumn &lt;.. repo.check_IndexColumn_virtual_referenced_setpoint
+repo.RepoObjectColumn &lt;.. repo.usp_RepoObjectSource_QueryPlan
+repo.RepoObjectColumn &lt;.. repo.usp_update_Referencing_Count
+repo.RepoObjectColumn &lt;.. repo.RepoObjectColumn_gross
+repo.RepoObjectColumn &lt;.. repo.SysColumn_RepoObjectColumn_via_name
+repo.RepoObjectColumn &lt;.. repo.RepoObject_SqlCreateTable
+repo.RepoObjectColumn &lt;.. repo.SysColumn_RepoObjectColumn_via_guid
+repo.RepoObjectColumn &lt;.. repo.RepoObjectColumnProperty_sys_repo
+repo.RepoObjectColumn &lt;.. repo.RepoObject_persistence_column
+repo.RepoObjectColumn &lt;.. repo.RepoObjectColumn_reference_Persistence
+repo.RepoObjectColumn &lt;.. repo.IndexColumn_virtual_gross
+repo.RepoObjectColumn &lt;.. repo.RepoObjectColumn_RelationScript
+repo.RepoObjectColumn &lt;.. repo.RepoObjectColumn_ReferenceTree
+repo.RepoObjectColumn &lt;.. repo.ExtendedProperty_Repo2Sys_level2_RepoObjectColumn
+repo.RepoObjectColumn &lt;.. repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition
+repo.RepoObjectColumn &lt;.. repo.RepoObjectColumn_reference_SqlModules
+repo.RepoObjectColumn &lt;.. repo.RepoObjectColumn_RequiredRepoObjectColumnMerge
+repo.RepoObjectColumn &lt;..
+repo.RepoObjectColumn_RequiredRepoObjectColumnMerge &lt;.. repo.usp_sync_guid_RepoObjectColumn
+repo.SysColumn_RepoObjectColumn_via_guid &lt;.. repo.usp_sync_guid_RepoObjectColumn
+repo.SysColumn_RepoObjectColumn_via_name &lt;.. repo.usp_sync_guid_RepoObjectColumn</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_object_reference_diagram_referenced"><a class="anchor" href="#_object_reference_diagram_referenced"></a>Object Reference Diagram - Referenced</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-3088a031915d4e7cb920c12523541c32a37b45cb.svg" alt="entity_1_1_objectref-repo.RepoObjectColumn">
+<img src="_images/diag-61b401cfdf938aac6fb7ca6d017c877b501b9a40.svg" alt="entity_30_0_objectref-repo.RepoObjectColumn">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_object_reference_diagram_referencing"><a class="anchor" href="#_object_reference_diagram_referencing"></a>Object Reference Diagram - Referencing</h3>
+<div class="literalblock kroki-error">
+<div class="content">
+<pre>'Left to right direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor&lt;&lt;FN&gt;&gt; Yellow
+  BackgroundColor&lt;&lt;FS&gt;&gt; Yellow
+  BackgroundColor&lt;&lt;FT&gt;&gt; LightGray
+  BackgroundColor&lt;&lt;IF&gt;&gt; Yellow
+  BackgroundColor&lt;&lt;IS&gt;&gt; Yellow
+  BackgroundColor&lt;&lt;P&gt;&gt; Aqua
+  BackgroundColor&lt;&lt;PC&gt;&gt; Aqua
+  BackgroundColor&lt;&lt;SN&gt;&gt; Yellow
+  BackgroundColor&lt;&lt;SO&gt;&gt; SlateBlue
+  BackgroundColor&lt;&lt;TF&gt;&gt; LightGray
+  BackgroundColor&lt;&lt;TR&gt;&gt; Tomato
+  BackgroundColor&lt;&lt;U&gt;&gt; White
+  BackgroundColor&lt;&lt;V&gt;&gt; WhiteSmoke
+  BackgroundColor&lt;&lt;X&gt;&gt; Aqua
+}
+
+
+entity repo.usp_RepoObjectColumnProperty_set &lt;&lt; P &gt;&gt; {
+}
+
+entity repo.RepoObjectColumnProperty_ForUpdate &lt;&lt; V &gt;&gt; {
+}
+
+entity repo.RepoObject_ReferenceTree_referenced &lt;&lt; V &gt;&gt; {
+  **RepoObject_guid** : uniqueidentifier
+  **Referenced_Depth** : int
+  **Referencing_Depth** : int
+  **Referenced_guid** : uniqueidentifier
+  **Referencing_guid** : uniqueidentifier
+}
+
+entity repo.RepoObject_ReferenceTree_referencing &lt;&lt; V &gt;&gt; {
+  **RepoObject_guid** : uniqueidentifier
+  **Referenced_Depth** : int
+  **Referencing_Depth** : int
+  **Referenced_guid** : uniqueidentifier
+  **Referencing_guid** : uniqueidentifier
+}
+
+entity repo.RepoObjectProperty_Collect_source_ROGross &lt;&lt; V &gt;&gt; {
+}
+
+entity docs.AntoraIndexSemanticgroup &lt;&lt; V &gt;&gt; {
+  **IndexSemanticGroup** : nvarchar(512)
+}
+
+entity docs.AntoraIndexSemanticgroupPatterndatatype &lt;&lt; V &gt;&gt; {
+  **IndexSemanticGroup** : nvarchar(512)
+  **IndexPatternColumnDatatype** : nvarchar(4000)
+}
+
+entity docs.AntoraNavListPage_by_type &lt;&lt; V &gt;&gt; {
+  **type** : nvarchar(128)
+}
+
+entity docs.AntoraNavListRepoObject_by_schema &lt;&lt; V &gt;&gt; {
+  * **RepoObject_schema_name** : nvarchar(128)
+}
+
+entity docs.AntoraNavListRepoObject_by_schema_type &lt;&lt; V &gt;&gt; {
+  * **RepoObject_schema_name** : nvarchar(128)
+  **type** : char(2)
+}
+
+entity docs.AntoraNavListRepoObject_by_type &lt;&lt; V &gt;&gt; {
+  **type** : char(2)
+}
+
+entity docs.AntoraPage_IndexSemanticGroup &lt;&lt; V &gt;&gt; {
+  * **page_content** : nvarchar(max)
+}
+
+entity docs.AntoraPage_ObjectBySchema &lt;&lt; V &gt;&gt; {
+}
+
+entity docs.AntoraPage_ObjectByType &lt;&lt; V &gt;&gt; {
+}
+
+entity docs.ForeignKey_RelationScript &lt;&lt; V &gt;&gt; {
+  **referenced_RepoObject_guid** : uniqueidentifier
+  **referencing_RepoObject_guid** : uniqueidentifier
+}
+
+entity docs.ftv_RepoObject_Reference_PlantUml_EntityRefList &lt;&lt; IF &gt;&gt; {
+}
+
+entity docs.RepoObject_Adoc &lt;&lt; V &gt;&gt; {
+  * **RepoObject_guid** : uniqueidentifier
+}
+
+entity docs.RepoObject_Adoc_T &lt;&lt; U &gt;&gt; {
+  * **RepoObject_guid** : uniqueidentifier
+}
+
+entity docs.RepoObject_ColumnList &lt;&lt; V &gt;&gt; {
+  * **RepoObject_guid** : uniqueidentifier
+}
+
+entity docs.RepoObject_IndexList &lt;&lt; V &gt;&gt; {
+  **RepoObject_guid** : uniqueidentifier
+}
+
+entity docs.RepoObject_IndexList_T &lt;&lt; U &gt;&gt; {
+  **RepoObject_guid** : uniqueidentifier
+}
+
+entity docs.RepoObject_OutputFilter &lt;&lt; V &gt;&gt; {
+  * **RepoObject_guid** : uniqueidentifier
+}
+
+entity docs.RepoObject_Plantuml &lt;&lt; V &gt;&gt; {
+  * **RepoObject_guid** : uniqueidentifier
+}
+
+entity docs.RepoObject_Plantuml_ColRefList &lt;&lt; V &gt;&gt; {
+  * **RepoObject_guid** : uniqueidentifier
+}
+
+entity docs.RepoObject_Plantuml_Entity &lt;&lt; V &gt;&gt; {
+  * **RepoObject_guid** : uniqueidentifier
+}
+
+entity docs.RepoObject_Plantuml_Entity_T &lt;&lt; U &gt;&gt; {
+  * **RepoObject_guid** : uniqueidentifier
+}
+
+entity docs.RepoObject_PlantUml_FkRefList &lt;&lt; V &gt;&gt; {
+  **RepoObject_guid** : uniqueidentifier
+}
+
+entity docs.RepoObject_PlantUml_PumlEntityFkList &lt;&lt; V &gt;&gt; {
+  **RepoObject_guid** : uniqueidentifier
+}
+
+entity docs.RepoObject_Plantuml_T &lt;&lt; U &gt;&gt; {
+  * **RepoObject_guid** : uniqueidentifier
+}
+
+entity docs.usp_AntoraExport &lt;&lt; P &gt;&gt; {
+}
+
+entity docs.usp_AntoraExport_navigation &lt;&lt; P &gt;&gt; {
+}
+
+entity docs.usp_AntoraExport_ObjectPage &lt;&lt; P &gt;&gt; {
+}
+
+entity docs.usp_AntoraExport_ObjectPartialProperties &lt;&lt; P &gt;&gt; {
+}
+
+entity docs.usp_AntoraExport_ObjectPuml &lt;&lt; P &gt;&gt; {
+}
+
+entity docs.usp_PERSIST_RepoObject_Adoc_T &lt;&lt; P &gt;&gt; {
+}
+
+entity docs.usp_PERSIST_RepoObject_IndexList_T &lt;&lt; P &gt;&gt; {
+}
+
+entity docs.usp_PERSIST_RepoObject_Plantuml_Entity_T &lt;&lt; P &gt;&gt; {
+}
+
+entity docs.usp_PERSIST_RepoObject_Plantuml_T &lt;&lt; P &gt;&gt; {
+}
+
+entity graph.Index &lt;&lt; U &gt;&gt; {
+}
+
+entity graph.Index_S &lt;&lt; V &gt;&gt; {
+  * **Index_guid** : uniqueidentifier
+}
+
+entity graph.RepoObjectColumn &lt;&lt; U &gt;&gt; {
+}
+
+entity graph.RepoObjectColumn_ReferencingReferenced &lt;&lt; V &gt;&gt; {
+  **Referenced_guid** : uniqueidentifier
+  **Referencing_guid** : uniqueidentifier
+}
+
+entity graph.RepoObjectColumn_S &lt;&lt; V &gt;&gt; {
+  * **RepoObjectColumn_guid** : uniqueidentifier
+}
+
+entity graph.usp_PERSIST_Index &lt;&lt; P &gt;&gt; {
+}
+
+entity graph.usp_PERSIST_RepoObjectColumn &lt;&lt; P &gt;&gt; {
+}
+
+entity repo.check_IndexColumn_virtual_referenced_setpoint &lt;&lt; V &gt;&gt; {
+  * **index_guid** : uniqueidentifier
+  * **index_column_id** : int
+}
+
+entity repo.ExtendedProperty_Repo2Sys_level2_RepoObjectColumn &lt;&lt; V &gt;&gt; {
+  * **level0type** : nvarchar(6)
+  * **level0name** : nvarchar(128)
+  **level1type** : varchar(9)
+  * **level1name** : nvarchar(128)
+  * **level2type** : nvarchar(6)
+  * **level2name** : nvarchar(128)
+  * **property_name** : nvarchar(128)
+}
+
+entity repo.ExtendedProperty_Repo2Sys_level2_Union &lt;&lt; V &gt;&gt; {
+  * **level0type** : nvarchar(6)
+  * **level0name** : nvarchar(128)
+  **level1type** : varchar(9)
+  * **level1name** : nvarchar(128)
+  **level2type** : nvarchar(10)
+  * **level2name** : nvarchar(128)
+  * **property_name** : nvarchar(128)
+}
+
+entity repo.ForeignKey_gross &lt;&lt; V &gt;&gt; {
+  **ForeignKey_guid** : uniqueidentifier
+}
+
+entity repo.ForeignKey_Indexes &lt;&lt; V &gt;&gt; {
+  **ForeignKey_guid** : uniqueidentifier
+}
+
+entity repo.ForeignKey_Indexes_union &lt;&lt; V &gt;&gt; {
+  **ForeignKey_guid** : uniqueidentifier
+}
+
+entity repo.ForeignKey_Indexes_union_T &lt;&lt; U &gt;&gt; {
+  **ForeignKey_guid** : uniqueidentifier
+}
+
+entity repo.ForeignKey_virtual_Indexes &lt;&lt; V &gt;&gt; {
+  * **ForeignKey_guid** : uniqueidentifier
+}
+
+entity repo.ftv_RepoObject_ColumReferenceRepoObject &lt;&lt; IF &gt;&gt; {
+}
+
+entity repo.ftv_RepoObject_DbmlColumnRelation &lt;&lt; IF &gt;&gt; {
+}
+
+entity repo.ftv_RepoObjectColumn_ReferenceTree &lt;&lt; IF &gt;&gt; {
+}
+
+entity repo.Index_ColumList &lt;&lt; V &gt;&gt; {
+  **index_guid** : uniqueidentifier
+}
+
+entity repo.Index_gross &lt;&lt; V &gt;&gt; {
+  * **index_guid** : uniqueidentifier
+}
+
+entity repo.Index_IndexPattern &lt;&lt; V &gt;&gt; {
+  **index_guid** : uniqueidentifier
+}
+
+entity repo.Index_referencing_IndexPatternColumnGuid &lt;&lt; V &gt;&gt; {
+  **source_index_guid** : uniqueidentifier
+  **referencing_RepoObject_guid** : uniqueidentifier
+}
+
+entity repo.Index_SqlConstraint_PkUq &lt;&lt; V &gt;&gt; {
+  **index_guid** : uniqueidentifier
+}
+
+entity repo.Index_union &lt;&lt; V &gt;&gt; {
+  **index_guid** : uniqueidentifier
+}
+
+entity repo.Index_unique_IndexPatternColumnGuid &lt;&lt; V &gt;&gt; {
+  **index_guid** : uniqueidentifier
+}
+
+entity repo.Index_virtual_ForUpdate &lt;&lt; V &gt;&gt; {
+  * **index_guid** : uniqueidentifier
+}
+
+entity repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing &lt;&lt; V &gt;&gt; {
+  **index_guid** : uniqueidentifier
+  * **index_column_id** : int
+  **RowNumberInReferencing** : bigint
+}
+
+entity repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T &lt;&lt; U &gt;&gt; {
+  **index_guid** : uniqueidentifier
+  * **index_column_id** : int
+  **RowNumberInReferencing** : bigint
+}
+
+entity repo.IndexColumn_union &lt;&lt; V &gt;&gt; {
+  **index_guid** : uniqueidentifier
+  * **index_column_id** : int
+}
+
+entity repo.IndexColumn_virtual_gross &lt;&lt; V &gt;&gt; {
+  * **index_column_id** : int
+}
+
+entity repo.IndexColumn_virtual_referenced_setpoint &lt;&lt; V &gt;&gt; {
+  * **index_guid** : uniqueidentifier
+  * **index_column_id** : int
+}
+
+entity repo.IndexReferencedReferencing &lt;&lt; V &gt;&gt; {
+  **referenced_RepoObject_guid** : uniqueidentifier
+  **referencing_RepoObject_guid** : uniqueidentifier
+}
+
+entity repo.IndexReferencedReferencing_HasFullColumnsInReferencing &lt;&lt; V &gt;&gt; {
+  **referenced_RepoObject_guid** : uniqueidentifier
+  **referencing_RepoObject_guid** : uniqueidentifier
+}
+
+entity repo.Match_RepoObject_referenced_UspPersistence &lt;&lt; V &gt;&gt; {
+  **FirstNode** : uniqueidentifier
+  **LastNode** : uniqueidentifier
+}
+
+entity repo.Reference_UspPersistence &lt;&lt; V &gt;&gt; {
+  **referenced_usp_RepoObject_guid** : uniqueidentifier
+  **referencing_usp_RepoObject_guid** : uniqueidentifier
+}
+
+entity repo.RepoObject_ColumnList &lt;&lt; V &gt;&gt; {
+  * **RepoObject_guid** : uniqueidentifier
+}
+
+entity repo.RepoObject_gross &lt;&lt; V &gt;&gt; {
+  * **RepoObject_guid** : uniqueidentifier
+}
+
+entity repo.RepoObject_persistence_column &lt;&lt; V &gt;&gt; {
+  * **target_RepoObject_guid** : uniqueidentifier
+  **RepoObjectColumn_guid_s** : uniqueidentifier
+}
+
+entity repo.RepoObject_ReferenceTree &lt;&lt; V &gt;&gt; {
+  **RepoObject_guid** : uniqueidentifier
+  **Referenced_Depth** : int
+  **Referencing_Depth** : int
+  **Referenced_guid** : uniqueidentifier
+  **Referencing_guid** : uniqueidentifier
+}
+
+entity repo.RepoObject_related_FK_union &lt;&lt; V &gt;&gt; {
+  **RepoObject_guid** : uniqueidentifier
+  **included_RepoObject_guid** : uniqueidentifier
+}
+
+entity repo.RepoObject_SqlCreateTable &lt;&lt; V &gt;&gt; {
+  * **RepoObject_guid** : uniqueidentifier
+}
+
+entity repo.RepoObjectColumn &lt;&lt; U &gt;&gt; {
+  * **RepoObjectColumn_guid** : uniqueidentifier
+}
+
+entity repo.RepoObjectColumn_gross &lt;&lt; V &gt;&gt; {
+  * **RepoObjectColumn_guid** : uniqueidentifier
+}
+
+entity repo.RepoObjectColumn_MissingSource_TypeV &lt;&lt; V &gt;&gt; {
+  * **RepoObjectColumn_guid** : uniqueidentifier
+}
+
+entity repo.RepoObjectColumn_reference_BySamePredecessors &lt;&lt; V &gt;&gt; {
+}
+
+entity repo.RepoObjectColumn_reference_FirstResultSet &lt;&lt; V &gt;&gt; {
+}
+
+entity repo.RepoObjectColumn_reference_Persistence &lt;&lt; V &gt;&gt; {
+  **referencing_id** : int
+  **referencing_minor_id** : int
+  **referenced_id** : int
+  **referenced_minor_id** : int
+}
+
+entity repo.RepoObjectColumn_reference_QueryPlan &lt;&lt; V &gt;&gt; {
+  **referencing_id** : int
+  **referencing_minor_id** : int
+  **referenced_id** : int
+  **referenced_minor_id** : int
+}
+
+entity repo.RepoObjectColumn_reference_SqlModules &lt;&lt; V &gt;&gt; {
+  **referencing_id** : int
+  **referencing_minor_id** : int
+  **referenced_id** : int
+  **referenced_minor_id** : int
+}
+
+entity repo.RepoObjectColumn_reference_union &lt;&lt; V &gt;&gt; {
+}
+
+entity repo.RepoObjectColumn_ReferencedList &lt;&lt; V &gt;&gt; {
+  **Referencing_guid** : uniqueidentifier
+}
+
+entity repo.RepoObjectColumn_ReferenceTree &lt;&lt; V &gt;&gt; {
+}
+
+entity repo.RepoObjectColumn_ReferencingList &lt;&lt; V &gt;&gt; {
+  **Referenced_guid** : uniqueidentifier
+}
+
+entity repo.RepoObjectColumn_RelationScript &lt;&lt; V &gt;&gt; {
+}
+
+entity repo.RepoObjectColumn_RequiredRepoObjectColumnMerge &lt;&lt; V &gt;&gt; {
+}
+
+entity repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition &lt;&lt; V &gt;&gt; {
+}
+
+entity repo.RepoObjectColumnProperty_InheritanceType_resulting_InheritanceDefinition &lt;&lt; V &gt;&gt; {
+}
+
+entity repo.RepoObjectColumnProperty_sys_repo &lt;&lt; V &gt;&gt; {
+}
+
+entity repo.SysColumn_RepoObjectColumn_via_guid &lt;&lt; V &gt;&gt; {
+}
+
+entity repo.SysColumn_RepoObjectColumn_via_name &lt;&lt; V &gt;&gt; {
+}
+
+entity repo.SysObjectColumn_QueryPlanExpression &lt;&lt; V &gt;&gt; {
+}
+
+entity repo.usp_Index_finish &lt;&lt; P &gt;&gt; {
+}
+
+entity repo.usp_Index_ForeignKey &lt;&lt; P &gt;&gt; {
+}
+
+entity repo.usp_index_inheritance &lt;&lt; P &gt;&gt; {
+}
+
+entity repo.usp_Index_Settings &lt;&lt; P &gt;&gt; {
+}
+
+entity repo.usp_Index_virtual_set &lt;&lt; P &gt;&gt; {
+}
+
+entity repo.usp_main &lt;&lt; P &gt;&gt; {
+}
+
+entity repo.usp_PERSIST_ForeignKey_Indexes_union_T &lt;&lt; P &gt;&gt; {
+}
+
+entity repo.usp_PERSIST_IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T &lt;&lt; P &gt;&gt; {
+}
+
+entity repo.usp_persistence_set &lt;&lt; P &gt;&gt; {
+}
+
+entity repo.usp_RepoObject_update_SysObjectQueryPlan &lt;&lt; P &gt;&gt; {
+}
+
+entity repo.usp_RepoObjectColumn_Inheritance &lt;&lt; P &gt;&gt; {
+}
+
+entity repo.usp_RepoObjectProperty_collect &lt;&lt; P &gt;&gt; {
+}
+
+entity repo.usp_RepoObjectSource_FirstResultSet &lt;&lt; P &gt;&gt; {
+}
+
+entity repo.usp_RepoObjectSource_QueryPlan &lt;&lt; P &gt;&gt; {
+}
+
+entity repo.usp_sync_ExtendedProperties_Repo2Sys_Delete &lt;&lt; P &gt;&gt; {
+}
+
+entity repo.usp_sync_ExtendedProperties_Repo2Sys_InsertUpdate &lt;&lt; P &gt;&gt; {
+}
+
+entity repo.usp_sync_ExtendedProperties_Sys2Repo_InsertUpdate &lt;&lt; P &gt;&gt; {
+}
+
+entity repo.usp_sync_guid &lt;&lt; P &gt;&gt; {
+}
+
+entity repo.usp_sync_guid_RepoObjectColumn &lt;&lt; P &gt;&gt; {
+}
+
+entity repo.usp_update_Referencing_Count &lt;&lt; P &gt;&gt; {
+}
+
+entity repo_sys.IndexColumn_unique &lt;&lt; V &gt;&gt; {
+}
+
+entity sqlparse.RepoObject_SqlModules_71_reference_ExpliciteTableAlias &lt;&lt; V &gt;&gt; {
+}
+
+entity sqlparse.RepoObject_SqlModules_72_reference_NoTableAlias &lt;&lt; V &gt;&gt; {
+}
+
+entity sqlparse.RepoObject_SqlModules_79_reference_union &lt;&lt; V &gt;&gt; {
+}
+
+entity uspgenerator.GeneratorUspStep_Persistence &lt;&lt; V &gt;&gt; {
+  * **usp_id** : int
+}
+
+entity uspgenerator.GeneratorUspStep_Persistence_IsInactive_setpoint &lt;&lt; V &gt;&gt; {
+  * **usp_id** : int
+}
+
+entity uspgenerator.usp_GeneratorUsp_insert_update_persistence &lt;&lt; P &gt;&gt; {
+}
+
+ &lt;.. repo.usp_RepoObjectProperty_collect
+docs.AntoraIndexSemanticgroup &lt;.. docs.AntoraPage_IndexSemanticGroup
+docs.AntoraIndexSemanticgroupPatterndatatype &lt;.. docs.AntoraIndexSemanticgroup
+docs.AntoraNavListRepoObject_by_schema &lt;.. docs.AntoraPage_ObjectBySchema
+docs.AntoraNavListRepoObject_by_schema &lt;.. docs.usp_AntoraExport_navigation
+docs.AntoraNavListRepoObject_by_schema_type &lt;.. docs.usp_AntoraExport_navigation
+docs.AntoraNavListRepoObject_by_type &lt;.. docs.usp_AntoraExport_navigation
+docs.AntoraNavListRepoObject_by_type &lt;.. docs.AntoraPage_ObjectByType
+docs.ftv_RepoObject_Reference_PlantUml_EntityRefList &lt;.. docs.RepoObject_Plantuml
+docs.RepoObject_Adoc &lt;.. docs.RepoObject_Adoc_T
+docs.RepoObject_Adoc &lt;.. docs.usp_PERSIST_RepoObject_Adoc_T
+docs.RepoObject_Adoc_T &lt;.. docs.usp_PERSIST_RepoObject_Adoc_T
+docs.RepoObject_ColumnList &lt;.. docs.RepoObject_Adoc
+docs.RepoObject_ColumnList &lt;.. docs.RepoObject_Plantuml_Entity
+docs.RepoObject_IndexList &lt;.. docs.RepoObject_IndexList_T
+docs.RepoObject_IndexList &lt;.. docs.usp_PERSIST_RepoObject_IndexList_T
+docs.RepoObject_IndexList_T &lt;.. docs.usp_PERSIST_RepoObject_IndexList_T
+docs.RepoObject_IndexList_T &lt;.. docs.RepoObject_Plantuml_Entity
+docs.RepoObject_IndexList_T &lt;.. docs.RepoObject_Adoc
+docs.RepoObject_OutputFilter &lt;.. docs.usp_AntoraExport_ObjectPartialProperties
+docs.RepoObject_OutputFilter &lt;.. docs.AntoraNavListRepoObject_by_type
+docs.RepoObject_OutputFilter &lt;.. docs.AntoraNavListRepoObject_by_schema
+docs.RepoObject_OutputFilter &lt;.. docs.AntoraNavListRepoObject_by_schema_type
+docs.RepoObject_OutputFilter &lt;.. docs.usp_AntoraExport_ObjectPage
+docs.RepoObject_OutputFilter &lt;.. docs.AntoraNavListPage_by_type
+docs.RepoObject_OutputFilter &lt;.. docs.RepoObject_Plantuml_Entity
+docs.RepoObject_OutputFilter &lt;.. docs.usp_AntoraExport_ObjectPuml
+docs.RepoObject_Plantuml &lt;.. docs.RepoObject_Plantuml_T
+docs.RepoObject_Plantuml &lt;.. docs.usp_PERSIST_RepoObject_Plantuml_T
+docs.RepoObject_Plantuml_ColRefList &lt;.. docs.RepoObject_Plantuml
+docs.RepoObject_Plantuml_Entity &lt;.. docs.RepoObject_Plantuml_Entity_T
+docs.RepoObject_Plantuml_Entity &lt;.. docs.usp_PERSIST_RepoObject_Plantuml_Entity_T
+docs.RepoObject_Plantuml_Entity_T &lt;.. docs.usp_PERSIST_RepoObject_Plantuml_Entity_T
+docs.RepoObject_Plantuml_Entity_T &lt;.. docs.ftv_RepoObject_Reference_PlantUml_EntityRefList
+docs.RepoObject_Plantuml_Entity_T &lt;.. docs.RepoObject_PlantUml_PumlEntityFkList
+docs.RepoObject_PlantUml_FkRefList &lt;.. docs.RepoObject_Plantuml
+docs.RepoObject_PlantUml_PumlEntityFkList &lt;.. docs.RepoObject_Plantuml
+docs.RepoObject_Plantuml_T &lt;.. docs.usp_PERSIST_RepoObject_Plantuml_T
+docs.usp_AntoraExport_navigation &lt;.. docs.usp_AntoraExport
+docs.usp_AntoraExport_ObjectPage &lt;.. docs.usp_AntoraExport
+docs.usp_AntoraExport_ObjectPartialProperties &lt;.. docs.usp_AntoraExport
+docs.usp_AntoraExport_ObjectPuml &lt;.. docs.usp_AntoraExport
+docs.usp_PERSIST_RepoObject_Adoc_T &lt;.. docs.usp_AntoraExport_ObjectPartialProperties
+docs.usp_PERSIST_RepoObject_IndexList_T &lt;.. docs.usp_AntoraExport_ObjectPartialProperties
+docs.usp_PERSIST_RepoObject_Plantuml_Entity_T &lt;.. docs.usp_AntoraExport_ObjectPuml
+docs.usp_PERSIST_RepoObject_Plantuml_T &lt;.. docs.usp_AntoraExport_ObjectPuml
+graph.Index &lt;.. graph.usp_PERSIST_Index
+graph.Index_S &lt;.. graph.usp_PERSIST_Index
+graph.Index_S &lt;.. graph.Index
+graph.RepoObjectColumn &lt;.. graph.RepoObjectColumn_ReferencingReferenced
+graph.RepoObjectColumn &lt;.. docs.RepoObject_Plantuml_ColRefList
+graph.RepoObjectColumn &lt;.. repo.usp_sync_guid_RepoObjectColumn
+graph.RepoObjectColumn &lt;.. repo.usp_main
+graph.RepoObjectColumn &lt;.. graph.usp_PERSIST_RepoObjectColumn
+graph.RepoObjectColumn_ReferencingReferenced &lt;.. repo.ftv_RepoObjectColumn_ReferenceTree
+graph.RepoObjectColumn_ReferencingReferenced &lt;.. repo.ftv_RepoObject_DbmlColumnRelation
+graph.RepoObjectColumn_ReferencingReferenced &lt;.. repo.RepoObjectColumn_ReferencedList
+graph.RepoObjectColumn_ReferencingReferenced &lt;.. repo.RepoObjectColumn_ReferencingList
+graph.RepoObjectColumn_S &lt;.. graph.usp_PERSIST_RepoObjectColumn
+graph.RepoObjectColumn_S &lt;.. graph.RepoObjectColumn
+graph.RepoObjectColumn_S &lt;.. repo.usp_sync_guid_RepoObjectColumn
+graph.usp_PERSIST_Index &lt;.. repo.usp_Index_finish
+graph.usp_PERSIST_RepoObjectColumn &lt;.. repo.usp_sync_guid_RepoObjectColumn
+repo.ExtendedProperty_Repo2Sys_level2_RepoObjectColumn &lt;.. repo.ExtendedProperty_Repo2Sys_level2_Union
+repo.ExtendedProperty_Repo2Sys_level2_Union &lt;.. repo.usp_sync_ExtendedProperties_Repo2Sys_InsertUpdate
+repo.ExtendedProperty_Repo2Sys_level2_Union &lt;.. repo.usp_sync_ExtendedProperties_Repo2Sys_Delete
+repo.ForeignKey_gross &lt;.. docs.RepoObject_IndexList
+repo.ForeignKey_Indexes &lt;.. repo.ForeignKey_Indexes_union
+repo.ForeignKey_Indexes &lt;.. repo.usp_Index_ForeignKey
+repo.ForeignKey_Indexes_union &lt;.. repo.ForeignKey_Indexes_union_T
+repo.ForeignKey_Indexes_union &lt;.. repo.usp_PERSIST_ForeignKey_Indexes_union_T
+repo.ForeignKey_Indexes_union_T &lt;.. repo.usp_PERSIST_ForeignKey_Indexes_union_T
+repo.ForeignKey_Indexes_union_T &lt;.. docs.RepoObject_PlantUml_FkRefList
+repo.ForeignKey_Indexes_union_T &lt;.. docs.ForeignKey_RelationScript
+repo.ForeignKey_Indexes_union_T &lt;.. repo.usp_Index_finish
+repo.ForeignKey_Indexes_union_T &lt;.. repo.ForeignKey_gross
+repo.ForeignKey_Indexes_union_T &lt;.. repo.RepoObject_related_FK_union
+repo.ForeignKey_virtual_Indexes &lt;.. repo.ForeignKey_Indexes_union
+repo.ftv_RepoObjectColumn_ReferenceTree &lt;.. repo.RepoObjectColumn_ReferenceTree
+repo.Index_ColumList &lt;.. repo.Index_SqlConstraint_PkUq
+repo.Index_ColumList &lt;.. uspgenerator.GeneratorUspStep_Persistence
+repo.Index_ColumList &lt;.. repo.Index_gross
+repo.Index_gross &lt;.. repo.RepoObject_SqlCreateTable
+repo.Index_gross &lt;.. graph.Index_S
+repo.Index_gross &lt;.. repo.ForeignKey_gross
+repo.Index_gross &lt;.. docs.AntoraIndexSemanticgroupPatterndatatype
+repo.Index_gross &lt;.. docs.RepoObject_IndexList
+repo.Index_gross &lt;.. repo.ForeignKey_Indexes
+repo.Index_gross &lt;.. repo.ForeignKey_virtual_Indexes
+repo.Index_gross &lt;.. repo.usp_Index_finish
+repo.Index_gross &lt;.. repo.usp_Index_virtual_set
+repo.Index_gross &lt;.. repo.usp_index_inheritance
+repo.Index_IndexPattern &lt;.. repo.usp_Index_Settings
+repo.Index_referencing_IndexPatternColumnGuid &lt;.. repo.IndexReferencedReferencing_HasFullColumnsInReferencing
+repo.Index_SqlConstraint_PkUq &lt;.. repo.RepoObject_SqlCreateTable
+repo.Index_union &lt;.. repo.Index_SqlConstraint_PkUq
+repo.Index_union &lt;.. repo.Index_gross
+repo.Index_union &lt;.. repo.IndexReferencedReferencing
+repo.Index_union &lt;.. repo.usp_Index_finish
+repo.Index_unique_IndexPatternColumnGuid &lt;.. repo.Index_union
+repo.Index_virtual_ForUpdate &lt;.. repo.usp_index_inheritance
+repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing &lt;.. repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T
+repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing &lt;.. repo.usp_PERSIST_IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T
+repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T &lt;.. repo.usp_PERSIST_IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T
+repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T &lt;.. repo.Index_referencing_IndexPatternColumnGuid
+repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T &lt;.. repo.IndexReferencedReferencing_HasFullColumnsInReferencing
+repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T &lt;.. repo.IndexColumn_virtual_referenced_setpoint
+repo.IndexColumn_union &lt;.. repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing
+repo.IndexColumn_union &lt;.. repo.Index_ColumList
+repo.IndexColumn_union &lt;.. repo.RepoObjectColumn_gross
+repo.IndexColumn_union &lt;.. repo.Index_IndexPattern
+repo.IndexColumn_virtual_gross &lt;.. repo.IndexColumn_union
+repo.IndexColumn_virtual_referenced_setpoint &lt;.. repo.check_IndexColumn_virtual_referenced_setpoint
+repo.IndexColumn_virtual_referenced_setpoint &lt;.. repo.usp_index_inheritance
+repo.IndexReferencedReferencing &lt;.. repo.IndexReferencedReferencing_HasFullColumnsInReferencing
+repo.IndexReferencedReferencing_HasFullColumnsInReferencing &lt;.. repo.usp_index_inheritance
+repo.Match_RepoObject_referenced_UspPersistence &lt;.. repo.usp_main
+repo.Match_RepoObject_referenced_UspPersistence &lt;.. repo.Reference_UspPersistence
+repo.RepoObject_ColumnList &lt;.. repo.RepoObject_SqlCreateTable
+repo.RepoObject_ColumnList &lt;.. repo.RepoObject_gross
+repo.RepoObject_gross &lt;.. repo.RepoObject_SqlCreateTable
+repo.RepoObject_gross &lt;.. repo.Index_gross
+repo.RepoObject_gross &lt;.. repo.usp_RepoObjectSource_QueryPlan
+repo.RepoObject_gross &lt;.. uspgenerator.GeneratorUspStep_Persistence_IsInactive_setpoint
+repo.RepoObject_gross &lt;.. uspgenerator.GeneratorUspStep_Persistence
+repo.RepoObject_gross &lt;.. docs.RepoObject_Adoc
+repo.RepoObject_gross &lt;.. repo.RepoObject_ReferenceTree
+repo.RepoObject_gross &lt;.. docs.RepoObject_Plantuml
+repo.RepoObject_gross &lt;.. docs.RepoObject_OutputFilter
+repo.RepoObject_gross &lt;.. repo.Index_virtual_ForUpdate
+repo.RepoObject_gross &lt;.. repo.usp_RepoObject_update_SysObjectQueryPlan
+repo.RepoObject_gross &lt;.. repo.usp_RepoObjectSource_FirstResultSet
+repo.RepoObject_gross &lt;.. uspgenerator.usp_GeneratorUsp_insert_update_persistence
+repo.RepoObject_gross &lt;.. repo.Match_RepoObject_referenced_UspPersistence
+repo.RepoObject_gross &lt;..
+repo.RepoObject_gross &lt;..
+repo.RepoObject_gross &lt;..
+repo.RepoObject_related_FK_union &lt;.. docs.RepoObject_PlantUml_PumlEntityFkList
+repo.RepoObject_related_FK_union &lt;.. docs.RepoObject_PlantUml_FkRefList
+repo.RepoObject_SqlCreateTable &lt;.. repo.ftv_RepoObject_ColumReferenceRepoObject
+repo.RepoObjectColumn &lt;.. repo.RepoObjectColumn_ReferenceTree
+repo.RepoObjectColumn &lt;.. repo.RepoObjectColumn_reference_SqlModules
+repo.RepoObjectColumn &lt;.. sqlparse.RepoObject_SqlModules_71_reference_ExpliciteTableAlias
+repo.RepoObjectColumn &lt;.. sqlparse.RepoObject_SqlModules_72_reference_NoTableAlias
+repo.RepoObjectColumn &lt;.. repo.ExtendedProperty_Repo2Sys_level2_RepoObjectColumn
+repo.RepoObjectColumn &lt;.. repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition
+repo.RepoObjectColumn &lt;.. repo.RepoObjectColumn_RelationScript
+repo.RepoObjectColumn &lt;.. repo.usp_Index_virtual_set
+repo.RepoObjectColumn &lt;.. repo.usp_sync_guid_RepoObjectColumn
+repo.RepoObjectColumn &lt;.. repo.RepoObjectColumn_MissingSource_TypeV
+repo.RepoObjectColumn &lt;.. repo.usp_update_Referencing_Count
+repo.RepoObjectColumn &lt;.. repo.usp_RepoObjectSource_QueryPlan
+repo.RepoObjectColumn &lt;.. repo.check_IndexColumn_virtual_referenced_setpoint
+repo.RepoObjectColumn &lt;.. repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing
+repo.RepoObjectColumn &lt;.. repo.RepoObject_SqlCreateTable
+repo.RepoObjectColumn &lt;.. repo.RepoObjectColumnProperty_sys_repo
+repo.RepoObjectColumn &lt;.. repo.SysColumn_RepoObjectColumn_via_guid
+repo.RepoObjectColumn &lt;.. repo.SysColumn_RepoObjectColumn_via_name
+repo.RepoObjectColumn &lt;.. repo.RepoObjectColumn_gross
+repo.RepoObjectColumn &lt;.. repo.RepoObjectColumn_reference_Persistence
+repo.RepoObjectColumn &lt;.. repo.RepoObject_persistence_column
+repo.RepoObjectColumn &lt;.. repo.IndexColumn_virtual_gross
+repo.RepoObjectColumn &lt;.. repo.RepoObjectColumn_RequiredRepoObjectColumnMerge
+repo.RepoObjectColumn &lt;..
+repo.RepoObjectColumn_gross &lt;..
+repo.RepoObjectColumn_gross &lt;.. repo.RepoObjectColumn_reference_FirstResultSet
+repo.RepoObjectColumn_gross &lt;.. repo.RepoObjectColumn_reference_QueryPlan
+repo.RepoObjectColumn_gross &lt;.. repo.RepoObject_ColumnList
+repo.RepoObjectColumn_gross &lt;.. graph.RepoObjectColumn_S
+repo.RepoObjectColumn_gross &lt;.. docs.RepoObject_ColumnList
+repo.RepoObjectColumn_reference_FirstResultSet &lt;.. repo.RepoObjectColumn_reference_BySamePredecessors
+repo.RepoObjectColumn_reference_Persistence &lt;.. repo.RepoObjectColumn_reference_union
+repo.RepoObjectColumn_reference_QueryPlan &lt;.. repo.SysObjectColumn_QueryPlanExpression
+repo.RepoObjectColumn_reference_SqlModules &lt;.. repo.RepoObjectColumn_reference_union
+repo.RepoObjectColumn_reference_union &lt;.. repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing
+repo.RepoObjectColumn_reference_union &lt;.. repo.RepoObjectColumn_MissingSource_TypeV
+repo.RepoObjectColumn_reference_union &lt;.. repo.RepoObjectColumn_RelationScript
+repo.RepoObjectColumn_reference_union &lt;.. repo.usp_main
+repo.RepoObjectColumn_ReferencedList &lt;.. repo.RepoObjectColumn_gross
+repo.RepoObjectColumn_ReferenceTree &lt;.. repo.ftv_RepoObject_ColumReferenceRepoObject
+repo.RepoObjectColumn_ReferencingList &lt;.. repo.RepoObjectColumn_gross
+repo.RepoObjectColumn_RelationScript &lt;.. repo.ftv_RepoObject_ColumReferenceRepoObject
+repo.RepoObjectColumn_RequiredRepoObjectColumnMerge &lt;.. repo.usp_sync_guid_RepoObjectColumn
+repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition &lt;.. repo.RepoObjectColumnProperty_InheritanceType_resulting_InheritanceDefinition
+repo.RepoObjectColumnProperty_InheritanceType_resulting_InheritanceDefinition &lt;.. repo.usp_RepoObjectColumn_Inheritance
+repo.RepoObjectColumnProperty_sys_repo &lt;.. repo.usp_sync_ExtendedProperties_Sys2Repo_InsertUpdate
+repo.SysColumn_RepoObjectColumn_via_guid &lt;.. repo.usp_sync_guid_RepoObjectColumn
+repo.SysColumn_RepoObjectColumn_via_name &lt;.. repo.usp_sync_guid_RepoObjectColumn
+repo.SysColumn_RepoObjectColumn_via_name &lt;.. repo_sys.IndexColumn_unique
+repo.SysObjectColumn_QueryPlanExpression &lt;.. repo.usp_RepoObjectSource_QueryPlan
+repo.usp_Index_finish &lt;.. repo.usp_index_inheritance
+repo.usp_Index_finish &lt;.. repo.usp_Index_ForeignKey
+repo.usp_Index_ForeignKey &lt;.. repo.usp_main
+repo.usp_index_inheritance &lt;.. repo.usp_main
+repo.usp_Index_Settings &lt;.. repo.usp_Index_finish
+repo.usp_Index_virtual_set &lt;.. repo.usp_Index_ForeignKey
+repo.usp_PERSIST_ForeignKey_Indexes_union_T &lt;.. repo.usp_Index_ForeignKey
+repo.usp_PERSIST_IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T &lt;.. repo.usp_index_inheritance
+repo.usp_RepoObject_update_SysObjectQueryPlan &lt;.. repo.usp_main
+repo.usp_RepoObjectColumn_Inheritance &lt;.. repo.usp_main
+repo.usp_RepoObjectProperty_collect &lt;.. docs.usp_AntoraExport
+repo.usp_RepoObjectSource_FirstResultSet &lt;.. repo.usp_main
+repo.usp_RepoObjectSource_QueryPlan &lt;.. repo.usp_main
+repo.usp_sync_guid &lt;.. repo.usp_persistence_set
+repo.usp_sync_guid &lt;.. repo.usp_main
+repo.usp_sync_guid_RepoObjectColumn &lt;.. repo.usp_sync_guid
+repo.usp_update_Referencing_Count &lt;.. repo.usp_main
+repo_sys.IndexColumn_unique &lt;.. repo.Index_unique_IndexPatternColumnGuid
+repo_sys.IndexColumn_unique &lt;.. repo.IndexColumn_union
+sqlparse.RepoObject_SqlModules_71_reference_ExpliciteTableAlias &lt;.. sqlparse.RepoObject_SqlModules_79_reference_union
+sqlparse.RepoObject_SqlModules_72_reference_NoTableAlias &lt;.. sqlparse.RepoObject_SqlModules_79_reference_union
+sqlparse.RepoObject_SqlModules_79_reference_union &lt;.. repo.RepoObjectColumn_reference_SqlModules
+uspgenerator.GeneratorUspStep_Persistence &lt;.. uspgenerator.usp_GeneratorUsp_insert_update_persistence
+uspgenerator.GeneratorUspStep_Persistence_IsInactive_setpoint &lt;.. uspgenerator.usp_GeneratorUsp_insert_update_persistence
+uspgenerator.usp_GeneratorUsp_insert_update_persistence &lt;.. repo.usp_main</pre>
 </div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_column_reference_diagram"><a class="anchor" href="#_column_reference_diagram"></a>Column Reference Diagram</h3>
-<div class="imageblock kroki">
+<div class="literalblock kroki-error">
 <div class="content">
-<img src="_images/diag-fc705c31acd47434bf00d982deac3fe24aa16609.svg" alt="entity_1_1_colref-repo.RepoObjectColumn">
+<pre>left to right direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor&lt;&lt;FN&gt;&gt; Yellow
+  BackgroundColor&lt;&lt;FS&gt;&gt; Yellow
+  BackgroundColor&lt;&lt;FT&gt;&gt; LightGray
+  BackgroundColor&lt;&lt;IF&gt;&gt; Yellow
+  BackgroundColor&lt;&lt;IS&gt;&gt; Yellow
+  BackgroundColor&lt;&lt;P&gt;&gt; Aqua
+  BackgroundColor&lt;&lt;PC&gt;&gt; Aqua
+  BackgroundColor&lt;&lt;SN&gt;&gt; Yellow
+  BackgroundColor&lt;&lt;SO&gt;&gt; SlateBlue
+  BackgroundColor&lt;&lt;TF&gt;&gt; LightGray
+  BackgroundColor&lt;&lt;TR&gt;&gt; Tomato
+  BackgroundColor&lt;&lt;U&gt;&gt; White
+  BackgroundColor&lt;&lt;V&gt;&gt; WhiteSmoke
+  BackgroundColor&lt;&lt;X&gt;&gt; Aqua
+}
+
+
+entity repo.usp_RepoObjectColumnProperty_set &lt;&lt; P &gt;&gt; {
+  --
+}
+
+entity repo.check_IndexColumn_virtual_referenced_setpoint &lt;&lt; V &gt;&gt; {
+  * **index_guid** : uniqueidentifier
+  * **index_column_id** : int
+  --
+  referenced_index_guid : uniqueidentifier
+  referenced_RepoObject_guid : uniqueidentifier
+  referenced_RepoObjectColumn_guid : uniqueidentifier
+  referencing_RepoObject_guid : uniqueidentifier
+  referencing_RepoObjectColumn_guid : uniqueidentifier
+  RepoObject_guid_s : uniqueidentifier
+  RepoObject_guid_t : uniqueidentifier
+  RepoObjectColumn_guid_t : uniqueidentifier
+  SysObject_fullname_s : nvarchar(261)
+  SysObject_fullname_t : nvarchar(261)
+  SysObjectColumn_name_s : nvarchar(128)
+  SysObjectColumn_name_t : nvarchar(128)
+}
+
+entity repo.ExtendedProperty_Repo2Sys_level2_RepoObjectColumn &lt;&lt; V &gt;&gt; {
+  * **level0type** : nvarchar(6)
+  * **level0name** : nvarchar(128)
+  **level1type** : varchar(9)
+  * **level1name** : nvarchar(128)
+  * **level2type** : nvarchar(6)
+  * **level2name** : nvarchar(128)
+  * **property_name** : nvarchar(128)
+  --
+  * parent_RepoObject_guid : uniqueidentifier
+  * parent_RepoObject_type : char(2)
+  * property_value : sql_variant
+  Repo_user_type_fullname : nvarchar(128)
+  * RepoObjectColumn_guid : uniqueidentifier
+}
+
+entity repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing &lt;&lt; V &gt;&gt; {
+  **index_guid** : uniqueidentifier
+  * **index_column_id** : int
+  **RowNumberInReferencing** : bigint
+  --
+  is_descending_key : bit
+  referenced_RepoObject_guid : uniqueidentifier
+  referenced_RepoObjectColumn_guid : uniqueidentifier
+  referencing_RepoObject_guid : uniqueidentifier
+  referencing_RepoObjectColumn_guid : uniqueidentifier
+}
+
+entity repo.IndexColumn_virtual_gross &lt;&lt; V &gt;&gt; {
+  * **index_column_id** : int
+  --
+  column_user_type_fullname : nvarchar(128)
+  * index_guid : uniqueidentifier
+  index_name : nvarchar(128)
+  * is_descending_key : bit
+  * is_index_primary_key : bit
+  is_index_real : bit
+  * is_index_unique : bit
+  * Object_column_name : nvarchar(128)
+  parent_Object_fullname : nvarchar(261)
+  parent_Object_name : nvarchar(128)
+  * parent_RepoObject_guid : uniqueidentifier
+  parent_schema_name : nvarchar(128)
+  * RepoObjectColumn_guid : uniqueidentifier
+}
+
+entity repo.RepoObject_persistence_column &lt;&lt; V &gt;&gt; {
+  * **target_RepoObject_guid** : uniqueidentifier
+  **RepoObjectColumn_guid_s** : uniqueidentifier
+  --
+  * has_history : bit
+  * has_history_columns : bit
+  history_schema_name : nvarchar(128)
+  history_table_name : nvarchar(128)
+  is_persistence : bit
+  * is_persistence_check_for_empty_source : bit
+  * is_persistence_delete_changed : bit
+  * is_persistence_delete_missing : bit
+  * is_persistence_insert : bit
+  * is_persistence_truncate : bit
+  * is_persistence_update_changed : bit
+  is_repo_managed_t : bit
+  * RepoObject_name_t : nvarchar(128)
+  * RepoObject_schema_name_t : nvarchar(128)
+  * RepoObject_type_t : char(2)
+  RepoObjectColumn_name_t : nvarchar(128)
+  source_RepoObject_guid : uniqueidentifier
+  SysObject_name_s : nvarchar(128)
+  SysObject_schema_name_s : nvarchar(128)
+  SysObject_type_s : char(2)
+  SysObjectColumn_name_s : nvarchar(128)
+}
+
+entity repo.RepoObject_SqlCreateTable &lt;&lt; V &gt;&gt; {
+  * **RepoObject_guid** : uniqueidentifier
+  --
+  ConList : nvarchar(max)
+  * DbmlTable : nvarchar(max)
+  persistence_source_RepoObject_fullname : nvarchar(261)
+  persistence_source_RepoObject_guid : uniqueidentifier
+  persistence_source_SysObject_fullname : nvarchar(261)
+  * RepoObject_fullname : nvarchar(261)
+  * SqlCreateTable : nvarchar(max)
+}
+
+entity repo.RepoObjectColumn &lt;&lt; U &gt;&gt; {
+  * **RepoObjectColumn_guid** : uniqueidentifier
+  --
+  Inheritance_StringAggSeparatorSql : nvarchar(4000)
+  InheritanceDefinition : nvarchar(4000)
+  InheritanceType : tinyint
+  is_persistence_no_check : bit
+  is_persistence_no_include : bit
+  is_persistence_no_update : bit
+  is_query_plan_expression : bit
+  is_required_ColumnMerge : bit
+  is_SysObjectColumn_missing : bit
+  persistence_source_RepoObjectColumn_guid : uniqueidentifier
+  Referencing_Count : int
+  Repo_default_definition : nvarchar(max)
+  Repo_default_is_system_named : bit
+  Repo_default_name : nvarchar(128)
+  Repo_definition : nvarchar(max)
+  * Repo_generated_always_type : tinyint
+  Repo_graph_type : int
+  Repo_increment_value : sql_variant
+  * Repo_is_computed : bit
+  * Repo_is_identity : bit
+  Repo_is_nullable : bit
+  Repo_is_persisted : bit
+  Repo_seed_value : sql_variant
+  Repo_user_type_fullname : nvarchar(128)
+  Repo_user_type_name : nvarchar(128)
+  Repo_uses_database_collation : bit
+  * RepoObject_guid : uniqueidentifier
+  RepoObjectColumn_column_id : int
+  * RepoObjectColumn_name : nvarchar(128)
+  SysObjectColumn_column_id : int
+  * SysObjectColumn_name : nvarchar(128)
+  {abstract} has_different_sys_names : bit
+  * {static} is_RepoObjectColumn_name_uniqueidentifier : int
+  * {static} is_SysObjectColumn_name_uniqueidentifier : int
+}
+
+entity repo.RepoObjectColumn_gross &lt;&lt; V &gt;&gt; {
+  * **RepoObjectColumn_guid** : uniqueidentifier
+  --
+  AntoraReferencedColumnList : nvarchar(max)
+  AntoraReferencingColumnList : nvarchar(max)
+  has_different_sys_names : bit
+  has_get_referenced_issue : bit
+  index_column_id : int
+  index_name : nvarchar(128)
+  Inheritance_StringAggSeparatorSql : nvarchar(4000)
+  InheritanceDefinition : nvarchar(4000)
+  InheritanceType : tinyint
+  is_index_primary_key : bit
+  is_persistence_no_check : bit
+  is_persistence_no_include : bit
+  is_persistence_no_update : bit
+  is_query_plan_expression : bit
+  is_repo_managed : bit
+  * is_RepoObject_name_uniqueidentifier : int
+  * is_RepoObjectColumn_name_uniqueidentifier : int
+  is_required_ColumnMerge : bit
+  is_SysObject_missing : bit
+  * is_SysObject_name_uniqueidentifier : int
+  is_SysObjectColumn_missing : bit
+  * is_SysObjectColumn_name_uniqueidentifier : int
+  * modify_dt : datetime
+  node_id : bigint
+  persistence_source_RepoObjectColumn_guid : uniqueidentifier
+  pk_index_guid : uniqueidentifier
+  Property_ms_description : nvarchar(4000)
+  Referencing_Count : int
+  Repo_default_definition : nvarchar(max)
+  Repo_default_is_system_named : bit
+  Repo_default_name : nvarchar(128)
+  Repo_definition : nvarchar(max)
+  * Repo_generated_always_type : tinyint
+  Repo_graph_type : int
+  Repo_increment_value : sql_variant
+  * Repo_is_computed : bit
+  * Repo_is_identity : bit
+  Repo_is_nullable : bit
+  Repo_is_persisted : bit
+  Repo_seed_value : sql_variant
+  Repo_user_type_fullname : nvarchar(128)
+  Repo_user_type_name : nvarchar(128)
+  Repo_uses_database_collation : bit
+  * RepoObject_fullname : nvarchar(261)
+  * RepoObject_fullname2 : nvarchar(257)
+  * RepoObject_guid : uniqueidentifier
+  * RepoObject_name : nvarchar(128)
+  RepoObject_Referencing_Count : int
+  * RepoObject_schema_name : nvarchar(128)
+  * RepoObject_type : char(2)
+  RepoObjectColumn_column_id : int
+  * RepoObjectColumn_fullname : nvarchar(520)
+  * RepoObjectColumn_fullname2 : nvarchar(386)
+  * RepoObjectColumn_name : nvarchar(128)
+  * SysObject_fullname : nvarchar(261)
+  * SysObject_fullname2 : nvarchar(257)
+  SysObject_id : int
+  SysObject_modify_date : datetime
+  * SysObject_name : nvarchar(128)
+  * SysObject_parent_object_id : int
+  * SysObject_schema_name : nvarchar(128)
+  SysObject_type : char(2)
+  SysObjectColumn_column_id : int
+  * SysObjectColumn_name : nvarchar(128)
+}
+
+entity repo.RepoObjectColumn_MissingSource_TypeV &lt;&lt; V &gt;&gt; {
+  * **RepoObjectColumn_guid** : uniqueidentifier
+  --
+  has_different_sys_names : bit
+  is_query_plan_expression : bit
+  * is_RepoObjectColumn_name_uniqueidentifier : int
+  is_SysObjectColumn_missing : bit
+  * is_SysObjectColumn_name_uniqueidentifier : int
+  persistence_source_RepoObjectColumn_guid : uniqueidentifier
+  Referencing_Count : int
+  Repo_default_definition : nvarchar(max)
+  Repo_default_is_system_named : bit
+  Repo_default_name : nvarchar(128)
+  Repo_definition : nvarchar(max)
+  * Repo_generated_always_type : tinyint
+  Repo_graph_type : int
+  Repo_increment_value : sql_variant
+  * Repo_is_computed : bit
+  * Repo_is_identity : bit
+  Repo_is_nullable : bit
+  Repo_is_persisted : bit
+  Repo_seed_value : sql_variant
+  Repo_user_type_fullname : nvarchar(128)
+  Repo_user_type_name : nvarchar(128)
+  Repo_uses_database_collation : bit
+  * RepoObject_fullname : nvarchar(261)
+  * RepoObject_guid : uniqueidentifier
+  * RepoObjectColumn_name : nvarchar(128)
+  * SysObject_fullname : nvarchar(261)
+  SysObjectColumn_column_id : int
+  * SysObjectColumn_name : nvarchar(128)
+}
+
+entity repo.RepoObjectColumn_reference_Persistence &lt;&lt; V &gt;&gt; {
+  **referencing_id** : int
+  **referencing_minor_id** : int
+  **referenced_id** : int
+  **referenced_minor_id** : int
+  --
+  definition : nvarchar(max)
+  * InformationSource : varchar(27)
+  is_computed : bit
+  is_referenced_object : bit
+  is_referencing_object_equal_referenced_object : bit
+  * referenced_column_name : nvarchar(128)
+  * referenced_entity_name : nvarchar(128)
+  referenced_node_id : bigint
+  referenced_RepoObject_guid : uniqueidentifier
+  * referenced_RepoObjectColumn_guid : uniqueidentifier
+  * referenced_schema_name : nvarchar(128)
+  referenced_type : char(2)
+  * referencing_column_name : nvarchar(128)
+  * referencing_entity_name : nvarchar(128)
+  referencing_node_id : bigint
+  * referencing_RepoObject_guid : uniqueidentifier
+  * referencing_RepoObjectColumn_guid : uniqueidentifier
+  * referencing_schema_name : nvarchar(128)
+  referencing_type : char(2)
+}
+
+entity repo.RepoObjectColumn_reference_SqlModules &lt;&lt; V &gt;&gt; {
+  **referencing_id** : int
+  **referencing_minor_id** : int
+  **referenced_id** : int
+  **referenced_minor_id** : int
+  --
+  definition : nvarchar(max)
+  * InformationSource : varchar(27)
+  is_computed : bit
+  is_referenced_object : bit
+  is_referencing_object_equal_referenced_object : bit
+  * referenced_column_name : nvarchar(128)
+  * referenced_entity_name : nvarchar(128)
+  referenced_node_id : bigint
+  * referenced_RepoObject_guid : uniqueidentifier
+  * referenced_RepoObjectColumn_guid : uniqueidentifier
+  * referenced_schema_name : nvarchar(128)
+  referenced_type : char(2)
+  * referencing_column_name : nvarchar(128)
+  * referencing_entity_name : nvarchar(128)
+  referencing_node_id : bigint
+  * referencing_RepoObject_guid : uniqueidentifier
+  * referencing_RepoObjectColumn_guid : uniqueidentifier
+  * referencing_schema_name : nvarchar(128)
+  referencing_type : char(2)
+  SysObject_fullname : nvarchar(261)
+}
+
+entity repo.RepoObjectColumn_ReferenceTree &lt;&lt; V &gt;&gt; {
+  --
+  Referenced_Depth : int
+  Referenced_fullname : nvarchar(261)
+  Referenced_fullname2 : nvarchar(257)
+  Referenced_guid : uniqueidentifier
+  Referenced_RepoObject_guid : uniqueidentifier
+  Referenced_type : char(2)
+  ReferencedColumn_fullname : nvarchar(520)
+  ReferencedColumn_fullname2 : nvarchar(386)
+  ReferencedColumn_name : nvarchar(128)
+  ReferencedColumn_type : nvarchar(128)
+  Referencing_Depth : int
+  Referencing_fullname : nvarchar(261)
+  Referencing_fullname2 : nvarchar(257)
+  Referencing_guid : uniqueidentifier
+  Referencing_RepoObject_guid : uniqueidentifier
+  Referencing_type : char(2)
+  ReferencingColumn_fullname : nvarchar(520)
+  ReferencingColumn_fullname2 : nvarchar(386)
+  ReferencingColumn_name : nvarchar(128)
+  ReferencingColumn_type : nvarchar(128)
+  RepoObjectColumn_guid : uniqueidentifier
+}
+
+entity repo.RepoObjectColumn_RelationScript &lt;&lt; V &gt;&gt; {
+  --
+  * DbmlRelation : nvarchar(786)
+  referenced_RepoObject_guid : uniqueidentifier
+  referencing_RepoObject_guid : uniqueidentifier
+}
+
+entity repo.RepoObjectColumn_RequiredRepoObjectColumnMerge &lt;&lt; V &gt;&gt; {
+  --
+  * is_RepoObjectColumn_name_uniqueidentifier : int
+  * is_SysObjectColumn_name_uniqueidentifier : int
+  persistence_source_RepoObjectColumn_guid : uniqueidentifier
+  * RepoObject_guid : uniqueidentifier
+  * RepoObjectColumn_guid : uniqueidentifier
+  * RepoObjectColumn_name : nvarchar(128)
+  roc2_persistence_source_RepoObjectColumn_guid : uniqueidentifier
+  * roc2_RepoObjectColumn_guid : uniqueidentifier
+  * roc2_RepoObjectColumn_name : nvarchar(128)
+  * roc2_SysObjectColumn_name : nvarchar(128)
+  * SysObjectColumn_name : nvarchar(128)
+}
+
+entity repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition &lt;&lt; V &gt;&gt; {
+  --
+  Inheritance_StringAggSeparatorSql : nvarchar(4000)
+  InheritanceDefinition : nvarchar(4000)
+  InheritanceType : int
+  par_Inheritance_StringAggSeparatorSql : nvarchar(4000)
+  par_InheritanceDefinition : nvarchar(4000)
+  par_InheritanceType : int
+  * property_name : nvarchar(128)
+  property_value : sql_variant
+  * RepoObjectColumn_guid : uniqueidentifier
+  * RepoObjectColumn_name : nvarchar(128)
+  roc_Inheritance_StringAggSeparatorSql : nvarchar(4000)
+  roc_InheritanceDefinition : nvarchar(4000)
+  roc_InheritanceType : tinyint
+  sub_Inheritance_StringAggSeparatorSql : nvarchar(4000)
+  sub_InheritanceDefinition : nvarchar(4000)
+  sub_InheritanceType : int
+}
+
+entity repo.RepoObjectColumnProperty_sys_repo &lt;&lt; V &gt;&gt; {
+  --
+  * property_name : sysname
+  property_value : sql_variant
+  * RepoObjectColumn_guid : uniqueidentifier
+  RepoObjectColumnProperty_id : int
+  RepoObjectColumnProperty_property_value : sql_variant
+  SysObject_name : nvarchar(128)
+  SysObject_schema_name : nvarchar(128)
+  SysObjectColumn_name : nvarchar(128)
+}
+
+entity repo.SysColumn_RepoObjectColumn_via_guid &lt;&lt; V &gt;&gt; {
+  --
+  default_definition : nvarchar(max)
+  default_is_system_named : bit
+  default_name : sysname
+  definition : nvarchar(max)
+  generated_always_type : tinyint
+  graph_type : int
+  has_different_sys_names : bit
+  increment_value : sql_variant
+  * is_computed : bit
+  * is_identity : bit
+  is_nullable : bit
+  is_persisted : bit
+  is_query_plan_expression : bit
+  is_repo_managed : bit
+  is_RepoObjectColumn_name_uniqueidentifier : int
+  is_SysObjectColumn_missing : bit
+  is_SysObjectColumn_name_uniqueidentifier : int
+  persistence_source_RepoObjectColumn_guid : uniqueidentifier
+  Referencing_Count : int
+  Repo_default_definition : nvarchar(max)
+  Repo_default_is_system_named : bit
+  Repo_default_name : nvarchar(128)
+  Repo_definition : nvarchar(max)
+  Repo_generated_always_type : tinyint
+  Repo_graph_type : int
+  Repo_increment_value : sql_variant
+  Repo_is_computed : bit
+  Repo_is_identity : bit
+  Repo_is_nullable : bit
+  Repo_is_persisted : bit
+  Repo_seed_value : sql_variant
+  Repo_user_type_fullname : nvarchar(128)
+  Repo_user_type_name : nvarchar(128)
+  Repo_uses_database_collation : bit
+  RepoObject_fullname : nvarchar(261)
+  RepoObject_guid : uniqueidentifier
+  RepoObjectColumn_guid : uniqueidentifier
+  RepoObjectColumn_name : nvarchar(128)
+  RowNumberOverName : bigint
+  seed_value : sql_variant
+  * SysObject_column_id : int
+  SysObject_column_name : sysname
+  SysObject_fullname : nvarchar(261)
+  * SysObject_id : int
+  SysObject_name : nvarchar(128)
+  SysObject_RepoObject_guid : uniqueidentifier
+  SysObject_RepoObjectColumn_guid : uniqueidentifier
+  SysObject_schema_name : nvarchar(128)
+  SysObject_type : char(2)
+  SysObjectColumn_column_id : int
+  SysObjectColumn_name : nvarchar(128)
+  user_type_fullname : nvarchar(182)
+  user_type_name : sysname
+  uses_database_collation : bit
+}
+
+entity repo.SysColumn_RepoObjectColumn_via_name &lt;&lt; V &gt;&gt; {
+  --
+  default_definition : nvarchar(max)
+  default_is_system_named : bit
+  default_name : sysname
+  definition : nvarchar(max)
+  generated_always_type : tinyint
+  graph_type : int
+  has_different_sys_names : bit
+  increment_value : sql_variant
+  * is_computed : bit
+  * is_identity : bit
+  is_nullable : bit
+  is_persisted : bit
+  is_query_plan_expression : bit
+  is_repo_managed : bit
+  is_RepoObjectColumn_name_uniqueidentifier : int
+  is_SysObjectColumn_missing : bit
+  is_SysObjectColumn_name_uniqueidentifier : int
+  persistence_source_RepoObjectColumn_guid : uniqueidentifier
+  Referencing_Count : int
+  Repo_default_definition : nvarchar(max)
+  Repo_default_is_system_named : bit
+  Repo_default_name : nvarchar(128)
+  Repo_definition : nvarchar(max)
+  Repo_generated_always_type : tinyint
+  Repo_graph_type : int
+  Repo_increment_value : sql_variant
+  Repo_is_computed : bit
+  Repo_is_identity : bit
+  Repo_is_nullable : bit
+  Repo_is_persisted : bit
+  Repo_seed_value : sql_variant
+  Repo_user_type_fullname : nvarchar(128)
+  Repo_user_type_name : nvarchar(128)
+  Repo_uses_database_collation : bit
+  RepoObject_fullname : nvarchar(261)
+  RepoObject_guid : uniqueidentifier
+  RepoObjectColumn_guid : uniqueidentifier
+  RepoObjectColumn_name : nvarchar(128)
+  RowNumberOverName : bigint
+  seed_value : sql_variant
+  * SysObject_column_id : int
+  SysObject_column_name : sysname
+  SysObject_fullname : nvarchar(261)
+  * SysObject_id : int
+  SysObject_name : nvarchar(128)
+  SysObject_RepoObject_guid : uniqueidentifier
+  SysObject_RepoObjectColumn_guid : uniqueidentifier
+  SysObject_schema_name : nvarchar(128)
+  SysObject_type : char(2)
+  SysObjectColumn_column_id : int
+  SysObjectColumn_name : nvarchar(128)
+  user_type_fullname : nvarchar(182)
+  user_type_name : sysname
+  uses_database_collation : bit
+}
+
+entity repo.usp_Index_virtual_set &lt;&lt; P &gt;&gt; {
+  --
+}
+
+entity repo.usp_RepoObjectSource_QueryPlan &lt;&lt; P &gt;&gt; {
+  --
+}
+
+entity repo.usp_sync_guid_RepoObjectColumn &lt;&lt; P &gt;&gt; {
+  --
+}
+
+entity repo.usp_update_Referencing_Count &lt;&lt; P &gt;&gt; {
+  --
+}
+
+entity sqlparse.RepoObject_SqlModules_71_reference_ExpliciteTableAlias &lt;&lt; V &gt;&gt; {
+  --
+  alias_QuoteName : nvarchar(max)
+  normalized : nvarchar(max)
+  * RepoObject_guid : uniqueidentifier
+  * RepoObjectColumn_guid : uniqueidentifier
+  * RepoObjectColumn_name : nvarchar(128)
+  source_column_QuoteName : nvarchar(max)
+  * source_RepoObject_guid : uniqueidentifier
+  * source_RepoObjectColumn_guid : uniqueidentifier
+  * source_RepoObjectColumn_name : nvarchar(128)
+  * source_SysObject_fullname : nvarchar(261)
+  source_table_QuoteName : nvarchar(max)
+  SysObject_fullname : nvarchar(261)
+}
+
+entity sqlparse.RepoObject_SqlModules_72_reference_NoTableAlias &lt;&lt; V &gt;&gt; {
+  --
+  alias_QuoteName : nvarchar(max)
+  normalized : nvarchar(max)
+  * RepoObject_guid : uniqueidentifier
+  * RepoObjectColumn_guid : uniqueidentifier
+  * RepoObjectColumn_name : nvarchar(128)
+  source_column_QuoteName : nvarchar(max)
+  * source_RepoObject_guid : uniqueidentifier
+  * source_RepoObjectColumn_guid : uniqueidentifier
+  * source_RepoObjectColumn_name : nvarchar(128)
+  * source_SysObject_fullname : nvarchar(261)
+  source_table_QuoteName : nvarchar(max)
+  SysObject_fullname : nvarchar(261)
+}
+
+repo.RepoObjectColumn &lt;.. sqlparse.RepoObject_SqlModules_71_reference_ExpliciteTableAlias
+repo.RepoObjectColumn &lt;.. sqlparse.RepoObject_SqlModules_72_reference_NoTableAlias
+repo.RepoObjectColumn &lt;.. repo.usp_Index_virtual_set
+repo.RepoObjectColumn &lt;.. repo.usp_sync_guid_RepoObjectColumn
+repo.RepoObjectColumn &lt;.. repo.RepoObjectColumn_MissingSource_TypeV
+repo.RepoObjectColumn &lt;.. repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing
+repo.RepoObjectColumn &lt;.. repo.check_IndexColumn_virtual_referenced_setpoint
+repo.RepoObjectColumn &lt;.. repo.usp_RepoObjectSource_QueryPlan
+repo.RepoObjectColumn &lt;.. repo.usp_update_Referencing_Count
+repo.RepoObjectColumn &lt;.. repo.RepoObjectColumn_gross
+repo.RepoObjectColumn &lt;.. repo.SysColumn_RepoObjectColumn_via_name
+repo.RepoObjectColumn &lt;.. repo.RepoObject_SqlCreateTable
+repo.RepoObjectColumn &lt;.. repo.SysColumn_RepoObjectColumn_via_guid
+repo.RepoObjectColumn &lt;.. repo.RepoObjectColumnProperty_sys_repo
+repo.RepoObjectColumn &lt;.. repo.RepoObject_persistence_column
+repo.RepoObjectColumn &lt;.. repo.RepoObjectColumn_reference_Persistence
+repo.RepoObjectColumn &lt;.. repo.IndexColumn_virtual_gross
+repo.RepoObjectColumn &lt;.. repo.RepoObjectColumn_RelationScript
+repo.RepoObjectColumn &lt;.. repo.RepoObjectColumn_ReferenceTree
+repo.RepoObjectColumn &lt;.. repo.ExtendedProperty_Repo2Sys_level2_RepoObjectColumn
+repo.RepoObjectColumn &lt;.. repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition
+repo.RepoObjectColumn &lt;.. repo.RepoObjectColumn_reference_SqlModules
+repo.RepoObjectColumn &lt;.. repo.RepoObjectColumn_RequiredRepoObjectColumnMerge
+repo.RepoObjectColumn &lt;..
+repo.RepoObjectColumn_RequiredRepoObjectColumnMerge &lt;.. repo.usp_sync_guid_RepoObjectColumn
+repo.SysColumn_RepoObjectColumn_via_guid &lt;.. repo.usp_sync_guid_RepoObjectColumn
+repo.SysColumn_RepoObjectColumn_via_name &lt;.. repo.usp_sync_guid_RepoObjectColumn
+repo.RepoObjectColumn::has_different_sys_names &lt;-- repo.RepoObjectColumn_MissingSource_TypeV::has_different_sys_names
+repo.RepoObjectColumn::has_different_sys_names &lt;-- repo.RepoObjectColumn_gross::has_different_sys_names
+repo.RepoObjectColumn::has_different_sys_names &lt;-- repo.SysColumn_RepoObjectColumn_via_guid::has_different_sys_names
+repo.RepoObjectColumn::has_different_sys_names &lt;-- repo.SysColumn_RepoObjectColumn_via_name::has_different_sys_names
+repo.RepoObjectColumn::Inheritance_StringAggSeparatorSql &lt;-- repo.RepoObjectColumn_gross::Inheritance_StringAggSeparatorSql
+repo.RepoObjectColumn::Inheritance_StringAggSeparatorSql &lt;-- repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition::roc_Inheritance_StringAggSeparatorSql
+repo.RepoObjectColumn::Inheritance_StringAggSeparatorSql &lt;-- repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition::Inheritance_StringAggSeparatorSql
+repo.RepoObjectColumn::InheritanceDefinition &lt;-- repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition::roc_InheritanceDefinition
+repo.RepoObjectColumn::InheritanceDefinition &lt;-- repo.RepoObjectColumn_gross::InheritanceDefinition
+repo.RepoObjectColumn::InheritanceType &lt;-- repo.RepoObjectColumn_gross::InheritanceType
+repo.RepoObjectColumn::InheritanceType &lt;-- repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition::roc_InheritanceType
+repo.RepoObjectColumn::is_persistence_no_check &lt;-- repo.RepoObjectColumn_gross::is_persistence_no_check
+repo.RepoObjectColumn::is_persistence_no_include &lt;-- repo.RepoObjectColumn_gross::is_persistence_no_include
+repo.RepoObjectColumn::is_persistence_no_update &lt;-- repo.RepoObjectColumn_gross::is_persistence_no_update
+repo.RepoObjectColumn::is_query_plan_expression &lt;-- repo.RepoObjectColumn_gross::is_query_plan_expression
+repo.RepoObjectColumn::is_query_plan_expression &lt;-- repo.SysColumn_RepoObjectColumn_via_name::is_query_plan_expression
+repo.RepoObjectColumn::is_query_plan_expression &lt;-- repo.SysColumn_RepoObjectColumn_via_guid::is_query_plan_expression
+repo.RepoObjectColumn::is_query_plan_expression &lt;-- repo.RepoObjectColumn_MissingSource_TypeV::is_query_plan_expression
+repo.RepoObjectColumn::is_RepoObjectColumn_name_uniqueidentifier &lt;-- repo.RepoObjectColumn_MissingSource_TypeV::is_RepoObjectColumn_name_uniqueidentifier
+repo.RepoObjectColumn::is_RepoObjectColumn_name_uniqueidentifier &lt;-- repo.SysColumn_RepoObjectColumn_via_guid::is_RepoObjectColumn_name_uniqueidentifier
+repo.RepoObjectColumn::is_RepoObjectColumn_name_uniqueidentifier &lt;-- repo.SysColumn_RepoObjectColumn_via_name::is_RepoObjectColumn_name_uniqueidentifier
+repo.RepoObjectColumn::is_RepoObjectColumn_name_uniqueidentifier &lt;-- repo.RepoObjectColumn_gross::is_RepoObjectColumn_name_uniqueidentifier
+repo.RepoObjectColumn::is_RepoObjectColumn_name_uniqueidentifier &lt;-- repo.RepoObjectColumn_RequiredRepoObjectColumnMerge::is_RepoObjectColumn_name_uniqueidentifier
+repo.RepoObjectColumn::is_required_ColumnMerge &lt;-- repo.RepoObjectColumn_gross::is_required_ColumnMerge
+repo.RepoObjectColumn::is_SysObjectColumn_missing &lt;-- repo.RepoObjectColumn_gross::is_SysObjectColumn_missing
+repo.RepoObjectColumn::is_SysObjectColumn_missing &lt;-- repo.SysColumn_RepoObjectColumn_via_name::is_SysObjectColumn_missing
+repo.RepoObjectColumn::is_SysObjectColumn_missing &lt;-- repo.SysColumn_RepoObjectColumn_via_guid::is_SysObjectColumn_missing
+repo.RepoObjectColumn::is_SysObjectColumn_missing &lt;-- repo.RepoObjectColumn_MissingSource_TypeV::is_SysObjectColumn_missing
+repo.RepoObjectColumn::is_SysObjectColumn_name_uniqueidentifier &lt;-- repo.RepoObjectColumn_MissingSource_TypeV::is_SysObjectColumn_name_uniqueidentifier
+repo.RepoObjectColumn::is_SysObjectColumn_name_uniqueidentifier &lt;-- repo.SysColumn_RepoObjectColumn_via_guid::is_SysObjectColumn_name_uniqueidentifier
+repo.RepoObjectColumn::is_SysObjectColumn_name_uniqueidentifier &lt;-- repo.SysColumn_RepoObjectColumn_via_name::is_SysObjectColumn_name_uniqueidentifier
+repo.RepoObjectColumn::is_SysObjectColumn_name_uniqueidentifier &lt;-- repo.RepoObjectColumn_gross::is_SysObjectColumn_name_uniqueidentifier
+repo.RepoObjectColumn::is_SysObjectColumn_name_uniqueidentifier &lt;-- repo.RepoObjectColumn_RequiredRepoObjectColumnMerge::is_SysObjectColumn_name_uniqueidentifier
+repo.RepoObjectColumn::persistence_source_RepoObjectColumn_guid &lt;-- repo.RepoObjectColumn_RequiredRepoObjectColumnMerge::persistence_source_RepoObjectColumn_guid
+repo.RepoObjectColumn::persistence_source_RepoObjectColumn_guid &lt;-- repo.RepoObjectColumn_gross::persistence_source_RepoObjectColumn_guid
+repo.RepoObjectColumn::persistence_source_RepoObjectColumn_guid &lt;-- repo.SysColumn_RepoObjectColumn_via_name::persistence_source_RepoObjectColumn_guid
+repo.RepoObjectColumn::persistence_source_RepoObjectColumn_guid &lt;-- repo.SysColumn_RepoObjectColumn_via_guid::persistence_source_RepoObjectColumn_guid
+repo.RepoObjectColumn::persistence_source_RepoObjectColumn_guid &lt;-- repo.RepoObjectColumn_MissingSource_TypeV::persistence_source_RepoObjectColumn_guid
+repo.RepoObjectColumn::Referencing_Count &lt;-- repo.RepoObjectColumn_MissingSource_TypeV::Referencing_Count
+repo.RepoObjectColumn::Referencing_Count &lt;-- repo.SysColumn_RepoObjectColumn_via_guid::Referencing_Count
+repo.RepoObjectColumn::Referencing_Count &lt;-- repo.SysColumn_RepoObjectColumn_via_name::Referencing_Count
+repo.RepoObjectColumn::Referencing_Count &lt;-- repo.RepoObjectColumn_gross::Referencing_Count
+repo.RepoObjectColumn::Repo_default_definition &lt;-- repo.RepoObjectColumn_gross::Repo_default_definition
+repo.RepoObjectColumn::Repo_default_definition &lt;-- repo.SysColumn_RepoObjectColumn_via_name::Repo_default_definition
+repo.RepoObjectColumn::Repo_default_definition &lt;-- repo.SysColumn_RepoObjectColumn_via_guid::Repo_default_definition
+repo.RepoObjectColumn::Repo_default_definition &lt;-- repo.RepoObjectColumn_MissingSource_TypeV::Repo_default_definition
+repo.RepoObjectColumn::Repo_default_is_system_named &lt;-- repo.RepoObjectColumn_MissingSource_TypeV::Repo_default_is_system_named
+repo.RepoObjectColumn::Repo_default_is_system_named &lt;-- repo.SysColumn_RepoObjectColumn_via_guid::Repo_default_is_system_named
+repo.RepoObjectColumn::Repo_default_is_system_named &lt;-- repo.SysColumn_RepoObjectColumn_via_name::Repo_default_is_system_named
+repo.RepoObjectColumn::Repo_default_is_system_named &lt;-- repo.RepoObjectColumn_gross::Repo_default_is_system_named
+repo.RepoObjectColumn::Repo_default_name &lt;-- repo.RepoObjectColumn_gross::Repo_default_name
+repo.RepoObjectColumn::Repo_default_name &lt;-- repo.SysColumn_RepoObjectColumn_via_name::Repo_default_name
+repo.RepoObjectColumn::Repo_default_name &lt;-- repo.SysColumn_RepoObjectColumn_via_guid::Repo_default_name
+repo.RepoObjectColumn::Repo_default_name &lt;-- repo.RepoObjectColumn_MissingSource_TypeV::Repo_default_name
+repo.RepoObjectColumn::Repo_definition &lt;-- repo.RepoObjectColumn_MissingSource_TypeV::Repo_definition
+repo.RepoObjectColumn::Repo_definition &lt;-- repo.SysColumn_RepoObjectColumn_via_guid::Repo_definition
+repo.RepoObjectColumn::Repo_definition &lt;-- repo.SysColumn_RepoObjectColumn_via_name::Repo_definition
+repo.RepoObjectColumn::Repo_definition &lt;-- repo.RepoObjectColumn_gross::Repo_definition
+repo.RepoObjectColumn::Repo_generated_always_type &lt;-- repo.RepoObjectColumn_gross::Repo_generated_always_type
+repo.RepoObjectColumn::Repo_generated_always_type &lt;-- repo.SysColumn_RepoObjectColumn_via_name::Repo_generated_always_type
+repo.RepoObjectColumn::Repo_generated_always_type &lt;-- repo.SysColumn_RepoObjectColumn_via_guid::Repo_generated_always_type
+repo.RepoObjectColumn::Repo_generated_always_type &lt;-- repo.RepoObjectColumn_MissingSource_TypeV::Repo_generated_always_type
+repo.RepoObjectColumn::Repo_graph_type &lt;-- repo.RepoObjectColumn_MissingSource_TypeV::Repo_graph_type
+repo.RepoObjectColumn::Repo_graph_type &lt;-- repo.SysColumn_RepoObjectColumn_via_guid::Repo_graph_type
+repo.RepoObjectColumn::Repo_graph_type &lt;-- repo.SysColumn_RepoObjectColumn_via_name::Repo_graph_type
+repo.RepoObjectColumn::Repo_graph_type &lt;-- repo.RepoObjectColumn_gross::Repo_graph_type
+repo.RepoObjectColumn::Repo_increment_value &lt;-- repo.RepoObjectColumn_gross::Repo_increment_value
+repo.RepoObjectColumn::Repo_increment_value &lt;-- repo.SysColumn_RepoObjectColumn_via_name::Repo_increment_value
+repo.RepoObjectColumn::Repo_increment_value &lt;-- repo.SysColumn_RepoObjectColumn_via_guid::Repo_increment_value
+repo.RepoObjectColumn::Repo_increment_value &lt;-- repo.RepoObjectColumn_MissingSource_TypeV::Repo_increment_value
+repo.RepoObjectColumn::Repo_is_computed &lt;-- repo.RepoObjectColumn_MissingSource_TypeV::Repo_is_computed
+repo.RepoObjectColumn::Repo_is_computed &lt;-- repo.SysColumn_RepoObjectColumn_via_guid::Repo_is_computed
+repo.RepoObjectColumn::Repo_is_computed &lt;-- repo.SysColumn_RepoObjectColumn_via_name::Repo_is_computed
+repo.RepoObjectColumn::Repo_is_computed &lt;-- repo.RepoObjectColumn_gross::Repo_is_computed
+repo.RepoObjectColumn::Repo_is_identity &lt;-- repo.RepoObjectColumn_gross::Repo_is_identity
+repo.RepoObjectColumn::Repo_is_identity &lt;-- repo.SysColumn_RepoObjectColumn_via_name::Repo_is_identity
+repo.RepoObjectColumn::Repo_is_identity &lt;-- repo.SysColumn_RepoObjectColumn_via_guid::Repo_is_identity
+repo.RepoObjectColumn::Repo_is_identity &lt;-- repo.RepoObjectColumn_MissingSource_TypeV::Repo_is_identity
+repo.RepoObjectColumn::Repo_is_nullable &lt;-- repo.RepoObjectColumn_MissingSource_TypeV::Repo_is_nullable
+repo.RepoObjectColumn::Repo_is_nullable &lt;-- repo.SysColumn_RepoObjectColumn_via_guid::Repo_is_nullable
+repo.RepoObjectColumn::Repo_is_nullable &lt;-- repo.SysColumn_RepoObjectColumn_via_name::Repo_is_nullable
+repo.RepoObjectColumn::Repo_is_nullable &lt;-- repo.RepoObjectColumn_gross::Repo_is_nullable
+repo.RepoObjectColumn::Repo_is_persisted &lt;-- repo.RepoObjectColumn_gross::Repo_is_persisted
+repo.RepoObjectColumn::Repo_is_persisted &lt;-- repo.SysColumn_RepoObjectColumn_via_name::Repo_is_persisted
+repo.RepoObjectColumn::Repo_is_persisted &lt;-- repo.SysColumn_RepoObjectColumn_via_guid::Repo_is_persisted
+repo.RepoObjectColumn::Repo_is_persisted &lt;-- repo.RepoObjectColumn_MissingSource_TypeV::Repo_is_persisted
+repo.RepoObjectColumn::Repo_seed_value &lt;-- repo.RepoObjectColumn_MissingSource_TypeV::Repo_seed_value
+repo.RepoObjectColumn::Repo_seed_value &lt;-- repo.SysColumn_RepoObjectColumn_via_guid::Repo_seed_value
+repo.RepoObjectColumn::Repo_seed_value &lt;-- repo.SysColumn_RepoObjectColumn_via_name::Repo_seed_value
+repo.RepoObjectColumn::Repo_seed_value &lt;-- repo.RepoObjectColumn_gross::Repo_seed_value
+repo.RepoObjectColumn::Repo_user_type_fullname &lt;-- repo.RepoObjectColumn_gross::Repo_user_type_fullname
+repo.RepoObjectColumn::Repo_user_type_fullname &lt;-- repo.SysColumn_RepoObjectColumn_via_name::Repo_user_type_fullname
+repo.RepoObjectColumn::Repo_user_type_fullname &lt;-- repo.SysColumn_RepoObjectColumn_via_guid::Repo_user_type_fullname
+repo.RepoObjectColumn::Repo_user_type_fullname &lt;-- repo.IndexColumn_virtual_gross::column_user_type_fullname
+repo.RepoObjectColumn::Repo_user_type_fullname &lt;-- repo.RepoObjectColumn_MissingSource_TypeV::Repo_user_type_fullname
+repo.RepoObjectColumn::Repo_user_type_fullname &lt;-- repo.ExtendedProperty_Repo2Sys_level2_RepoObjectColumn::Repo_user_type_fullname
+repo.RepoObjectColumn::Repo_user_type_name &lt;-- repo.RepoObjectColumn_MissingSource_TypeV::Repo_user_type_name
+repo.RepoObjectColumn::Repo_user_type_name &lt;-- repo.SysColumn_RepoObjectColumn_via_guid::Repo_user_type_name
+repo.RepoObjectColumn::Repo_user_type_name &lt;-- repo.SysColumn_RepoObjectColumn_via_name::Repo_user_type_name
+repo.RepoObjectColumn::Repo_user_type_name &lt;-- repo.RepoObjectColumn_gross::Repo_user_type_name
+repo.RepoObjectColumn::Repo_uses_database_collation &lt;-- repo.RepoObjectColumn_gross::Repo_uses_database_collation
+repo.RepoObjectColumn::Repo_uses_database_collation &lt;-- repo.SysColumn_RepoObjectColumn_via_name::Repo_uses_database_collation
+repo.RepoObjectColumn::Repo_uses_database_collation &lt;-- repo.SysColumn_RepoObjectColumn_via_guid::Repo_uses_database_collation
+repo.RepoObjectColumn::Repo_uses_database_collation &lt;-- repo.RepoObjectColumn_MissingSource_TypeV::Repo_uses_database_collation
+repo.RepoObjectColumn::RepoObject_guid &lt;-- repo.RepoObjectColumn_MissingSource_TypeV::RepoObject_guid
+repo.RepoObjectColumn::RepoObject_guid &lt;-- repo.SysColumn_RepoObjectColumn_via_name::RepoObject_guid
+repo.RepoObjectColumn::RepoObject_guid &lt;-- repo.SysColumn_RepoObjectColumn_via_guid::RepoObject_guid
+repo.RepoObjectColumn::RepoObject_guid &lt;-- repo.RepoObjectColumn_gross::RepoObject_guid
+repo.RepoObjectColumn::RepoObject_guid &lt;-- repo.RepoObjectColumn_RequiredRepoObjectColumnMerge::RepoObject_guid
+repo.RepoObjectColumn::RepoObjectColumn_column_id &lt;-- repo.RepoObjectColumn_gross::RepoObjectColumn_column_id
+repo.RepoObjectColumn::RepoObjectColumn_guid &lt;-- repo.RepoObjectColumn_gross::RepoObjectColumn_guid
+repo.RepoObjectColumn::RepoObjectColumn_guid &lt;-- repo.SysColumn_RepoObjectColumn_via_name::RepoObjectColumn_guid
+repo.RepoObjectColumn::RepoObjectColumn_guid &lt;-- repo.SysColumn_RepoObjectColumn_via_guid::RepoObjectColumn_guid
+repo.RepoObjectColumn::RepoObjectColumn_guid &lt;-- repo.RepoObjectColumn_reference_Persistence::referenced_RepoObjectColumn_guid
+repo.RepoObjectColumn::RepoObjectColumn_guid &lt;-- repo.RepoObjectColumn_reference_Persistence::referencing_RepoObjectColumn_guid
+repo.RepoObjectColumn::RepoObjectColumn_guid &lt;-- repo.RepoObjectColumnProperty_sys_repo::RepoObjectColumn_guid
+repo.RepoObjectColumn::RepoObjectColumn_guid &lt;-- repo.RepoObjectColumn_MissingSource_TypeV::RepoObjectColumn_guid
+repo.RepoObjectColumn::RepoObjectColumn_guid &lt;-- sqlparse.RepoObject_SqlModules_72_reference_NoTableAlias::source_RepoObjectColumn_guid
+repo.RepoObjectColumn::RepoObjectColumn_guid &lt;-- sqlparse.RepoObject_SqlModules_72_reference_NoTableAlias::RepoObjectColumn_guid
+repo.RepoObjectColumn::RepoObjectColumn_guid &lt;-- sqlparse.RepoObject_SqlModules_71_reference_ExpliciteTableAlias::RepoObjectColumn_guid
+repo.RepoObjectColumn::RepoObjectColumn_guid &lt;-- sqlparse.RepoObject_SqlModules_71_reference_ExpliciteTableAlias::source_RepoObjectColumn_guid
+repo.RepoObjectColumn::RepoObjectColumn_guid &lt;-- repo.RepoObjectColumn_RequiredRepoObjectColumnMerge::RepoObjectColumn_guid
+repo.RepoObjectColumn::RepoObjectColumn_guid &lt;-- repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition::RepoObjectColumn_guid
+repo.RepoObjectColumn::RepoObjectColumn_name &lt;-- repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition::RepoObjectColumn_name
+repo.RepoObjectColumn::RepoObjectColumn_name &lt;-- repo.RepoObjectColumn_RequiredRepoObjectColumnMerge::RepoObjectColumn_name
+repo.RepoObjectColumn::RepoObjectColumn_name &lt;-- sqlparse.RepoObject_SqlModules_71_reference_ExpliciteTableAlias::source_RepoObjectColumn_name
+repo.RepoObjectColumn::RepoObjectColumn_name &lt;-- sqlparse.RepoObject_SqlModules_71_reference_ExpliciteTableAlias::RepoObjectColumn_name
+repo.RepoObjectColumn::RepoObjectColumn_name &lt;-- sqlparse.RepoObject_SqlModules_72_reference_NoTableAlias::RepoObjectColumn_name
+repo.RepoObjectColumn::RepoObjectColumn_name &lt;-- sqlparse.RepoObject_SqlModules_72_reference_NoTableAlias::source_RepoObjectColumn_name
+repo.RepoObjectColumn::RepoObjectColumn_name &lt;-- repo.ExtendedProperty_Repo2Sys_level2_RepoObjectColumn::level2name
+repo.RepoObjectColumn::RepoObjectColumn_name &lt;-- repo.RepoObjectColumn_MissingSource_TypeV::RepoObjectColumn_name
+repo.RepoObjectColumn::RepoObjectColumn_name &lt;-- repo.SysColumn_RepoObjectColumn_via_name::RepoObjectColumn_name
+repo.RepoObjectColumn::RepoObjectColumn_name &lt;-- repo.SysColumn_RepoObjectColumn_via_guid::RepoObjectColumn_name
+repo.RepoObjectColumn::RepoObjectColumn_name &lt;-- repo.RepoObjectColumn_gross::RepoObjectColumn_name
+repo.RepoObjectColumn::SysObjectColumn_column_id &lt;-- repo.RepoObjectColumn_gross::SysObjectColumn_column_id
+repo.RepoObjectColumn::SysObjectColumn_column_id &lt;-- repo.SysColumn_RepoObjectColumn_via_guid::SysObjectColumn_column_id
+repo.RepoObjectColumn::SysObjectColumn_column_id &lt;-- repo.SysColumn_RepoObjectColumn_via_name::SysObjectColumn_column_id
+repo.RepoObjectColumn::SysObjectColumn_column_id &lt;-- repo.RepoObjectColumn_reference_Persistence::referencing_minor_id
+repo.RepoObjectColumn::SysObjectColumn_column_id &lt;-- repo.RepoObjectColumn_reference_Persistence::referenced_minor_id
+repo.RepoObjectColumn::SysObjectColumn_column_id &lt;-- repo.RepoObjectColumn_MissingSource_TypeV::SysObjectColumn_column_id
+repo.RepoObjectColumn::SysObjectColumn_column_id &lt;-- repo.RepoObjectColumn_reference_SqlModules::referenced_minor_id
+repo.RepoObjectColumn::SysObjectColumn_column_id &lt;-- repo.RepoObjectColumn_reference_SqlModules::referencing_minor_id
+repo.RepoObjectColumn::SysObjectColumn_name &lt;-- repo.RepoObjectColumn_reference_SqlModules::referenced_column_name
+repo.RepoObjectColumn::SysObjectColumn_name &lt;-- repo.RepoObjectColumn_reference_SqlModules::referencing_column_name
+repo.RepoObjectColumn::SysObjectColumn_name &lt;-- repo.RepoObjectColumn_MissingSource_TypeV::SysObjectColumn_name
+repo.RepoObjectColumn::SysObjectColumn_name &lt;-- repo.RepoObjectColumn_reference_Persistence::referenced_column_name
+repo.RepoObjectColumn::SysObjectColumn_name &lt;-- repo.RepoObjectColumn_reference_Persistence::referencing_column_name
+repo.RepoObjectColumn::SysObjectColumn_name &lt;-- repo.SysColumn_RepoObjectColumn_via_name::SysObjectColumn_name
+repo.RepoObjectColumn::SysObjectColumn_name &lt;-- repo.SysColumn_RepoObjectColumn_via_guid::SysObjectColumn_name
+repo.RepoObjectColumn::SysObjectColumn_name &lt;-- repo.RepoObjectColumn_gross::SysObjectColumn_name
+repo.RepoObjectColumn::SysObjectColumn_name &lt;-- repo.RepoObjectColumn_RequiredRepoObjectColumnMerge::SysObjectColumn_name</pre>
 </div>
 </div>
 </div>
@@ -1782,31 +3487,22 @@ referenced: <a href="repo.RepoObject.html" class="page">repo.RepoObject</a>, <a 
 <div class="ulist">
 <ul>
 <li>
-<p><a href="repo.RepoObject_SqlModules_71_reference_ExpliciteTableAlias.html#column-RepoObjectColumn_guid" class="page">repo.RepoObject_SqlModules_71_reference_ExpliciteTableAlias.RepoObjectColumn_guid</a></p>
-</li>
-<li>
-<p><a href="repo.RepoObject_SqlModules_71_reference_ExpliciteTableAlias.html#column-source_RepoObjectColumn_guid" class="page">repo.RepoObject_SqlModules_71_reference_ExpliciteTableAlias.source_RepoObjectColumn_guid</a></p>
-</li>
-<li>
-<p><a href="repo.RepoObject_SqlModules_72_reference_NoTableAlias.html#column-source_RepoObjectColumn_guid" class="page">repo.RepoObject_SqlModules_72_reference_NoTableAlias.source_RepoObjectColumn_guid</a></p>
-</li>
-<li>
-<p><a href="repo.RepoObject_SqlModules_72_reference_NoTableAlias.html#column-RepoObjectColumn_guid" class="page">repo.RepoObject_SqlModules_72_reference_NoTableAlias.RepoObjectColumn_guid</a></p>
-</li>
-<li>
 <p><a href="repo.RepoObjectColumn_gross.html#column-RepoObjectColumn_guid" class="page">repo.RepoObjectColumn_gross.RepoObjectColumn_guid</a></p>
-</li>
-<li>
-<p><a href="repo.RepoObjectColumn_InheritanceType_InheritanceDefinition.html#column-RepoObjectColumn_guid" class="page">repo.RepoObjectColumn_InheritanceType_InheritanceDefinition.RepoObjectColumn_guid</a></p>
 </li>
 <li>
 <p><a href="repo.RepoObjectColumn_MissingSource_TypeV.html#column-RepoObjectColumn_guid" class="page">repo.RepoObjectColumn_MissingSource_TypeV.RepoObjectColumn_guid</a></p>
 </li>
 <li>
+<p><a href="repo.RepoObjectColumn_reference_Persistence.html#column-referenced_RepoObjectColumn_guid" class="page">repo.RepoObjectColumn_reference_Persistence.referenced_RepoObjectColumn_guid</a></p>
+</li>
+<li>
 <p><a href="repo.RepoObjectColumn_reference_Persistence.html#column-referencing_RepoObjectColumn_guid" class="page">repo.RepoObjectColumn_reference_Persistence.referencing_RepoObjectColumn_guid</a></p>
 </li>
 <li>
-<p><a href="repo.RepoObjectColumn_reference_Persistence.html#column-referenced_RepoObjectColumn_guid" class="page">repo.RepoObjectColumn_reference_Persistence.referenced_RepoObjectColumn_guid</a></p>
+<p><a href="repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.html#column-RepoObjectColumn_guid" class="page">repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.RepoObjectColumn_guid</a></p>
+</li>
+<li>
+<p><a href="repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition.html#column-RepoObjectColumn_guid" class="page">repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition.RepoObjectColumn_guid</a></p>
 </li>
 <li>
 <p><a href="repo.RepoObjectColumnProperty_sys_repo.html#column-RepoObjectColumn_guid" class="page">repo.RepoObjectColumnProperty_sys_repo.RepoObjectColumn_guid</a></p>
@@ -1816,6 +3512,18 @@ referenced: <a href="repo.RepoObject.html" class="page">repo.RepoObject</a>, <a 
 </li>
 <li>
 <p><a href="repo.SysColumn_RepoObjectColumn_via_name.html#column-RepoObjectColumn_guid" class="page">repo.SysColumn_RepoObjectColumn_via_name.RepoObjectColumn_guid</a></p>
+</li>
+<li>
+<p><a href="sqlparse.RepoObject_SqlModules_71_reference_ExpliciteTableAlias.html#column-RepoObjectColumn_guid" class="page">sqlparse.RepoObject_SqlModules_71_reference_ExpliciteTableAlias.RepoObjectColumn_guid</a></p>
+</li>
+<li>
+<p><a href="sqlparse.RepoObject_SqlModules_71_reference_ExpliciteTableAlias.html#column-source_RepoObjectColumn_guid" class="page">sqlparse.RepoObject_SqlModules_71_reference_ExpliciteTableAlias.source_RepoObjectColumn_guid</a></p>
+</li>
+<li>
+<p><a href="sqlparse.RepoObject_SqlModules_72_reference_NoTableAlias.html#column-source_RepoObjectColumn_guid" class="page">sqlparse.RepoObject_SqlModules_72_reference_NoTableAlias.source_RepoObjectColumn_guid</a></p>
+</li>
+<li>
+<p><a href="sqlparse.RepoObject_SqlModules_72_reference_NoTableAlias.html#column-RepoObjectColumn_guid" class="page">sqlparse.RepoObject_SqlModules_72_reference_NoTableAlias.RepoObjectColumn_guid</a></p>
 </li>
 </ul>
 </div>
@@ -1853,7 +3561,10 @@ referenced: <a href="repo.RepoObject.html" class="page">repo.RepoObject</a>, <a 
 <p><a href="repo.RepoObjectColumn_gross.html#column-Inheritance_StringAggSeparatorSql" class="page">repo.RepoObjectColumn_gross.Inheritance_StringAggSeparatorSql</a></p>
 </li>
 <li>
-<p><a href="repo.RepoObjectColumn_InheritanceType_InheritanceDefinition.html#column-roc_Inheritance_StringAggSeparatorSql" class="page">repo.RepoObjectColumn_InheritanceType_InheritanceDefinition.roc_Inheritance_StringAggSeparatorSql</a></p>
+<p><a href="repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition.html#column-Inheritance_StringAggSeparatorSql" class="page">repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition.Inheritance_StringAggSeparatorSql</a></p>
+</li>
+<li>
+<p><a href="repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition.html#column-roc_Inheritance_StringAggSeparatorSql" class="page">repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition.roc_Inheritance_StringAggSeparatorSql</a></p>
 </li>
 </ul>
 </div>
@@ -1891,7 +3602,7 @@ referenced: <a href="repo.RepoObject.html" class="page">repo.RepoObject</a>, <a 
 <p><a href="repo.RepoObjectColumn_gross.html#column-InheritanceDefinition" class="page">repo.RepoObjectColumn_gross.InheritanceDefinition</a></p>
 </li>
 <li>
-<p><a href="repo.RepoObjectColumn_InheritanceType_InheritanceDefinition.html#column-roc_InheritanceDefinition" class="page">repo.RepoObjectColumn_InheritanceType_InheritanceDefinition.roc_InheritanceDefinition</a></p>
+<p><a href="repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition.html#column-roc_InheritanceDefinition" class="page">repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition.roc_InheritanceDefinition</a></p>
 </li>
 </ul>
 </div>
@@ -1929,7 +3640,7 @@ referenced: <a href="repo.RepoObject.html" class="page">repo.RepoObject</a>, <a 
 <p><a href="repo.RepoObjectColumn_gross.html#column-InheritanceType" class="page">repo.RepoObjectColumn_gross.InheritanceType</a></p>
 </li>
 <li>
-<p><a href="repo.RepoObjectColumn_InheritanceType_InheritanceDefinition.html#column-roc_InheritanceType" class="page">repo.RepoObjectColumn_InheritanceType_InheritanceDefinition.roc_InheritanceType</a></p>
+<p><a href="repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition.html#column-roc_InheritanceType" class="page">repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition.roc_InheritanceType</a></p>
 </li>
 </ul>
 </div>
@@ -2086,6 +3797,41 @@ referenced: <a href="repo.RepoObject.html" class="page">repo.RepoObject</a>, <a 
 </div>
 </div>
 <div class="sect2">
+<h3 id="column-is_required_ColumnMerge"><a class="anchor" href="#column-is_required_ColumnMerge"></a>is_required_ColumnMerge</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>is_required_ColumnMerge</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>bit</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="openblock">
+<div class="title">Referencing Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="repo.RepoObjectColumn_gross.html#column-is_required_ColumnMerge" class="page">repo.RepoObjectColumn_gross.is_required_ColumnMerge</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="column-is_SysObjectColumn_missing"><a class="anchor" href="#column-is_SysObjectColumn_missing"></a>is_SysObjectColumn_missing</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -2161,6 +3907,9 @@ referenced: <a href="repo.RepoObject.html" class="page">repo.RepoObject</a>, <a 
 </li>
 <li>
 <p><a href="repo.RepoObjectColumn_MissingSource_TypeV.html#column-persistence_source_RepoObjectColumn_guid" class="page">repo.RepoObjectColumn_MissingSource_TypeV.persistence_source_RepoObjectColumn_guid</a></p>
+</li>
+<li>
+<p><a href="repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.html#column-persistence_source_RepoObjectColumn_guid" class="page">repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.persistence_source_RepoObjectColumn_guid</a></p>
 </li>
 <li>
 <p><a href="repo.SysColumn_RepoObjectColumn_via_guid.html#column-persistence_source_RepoObjectColumn_guid" class="page">repo.SysColumn_RepoObjectColumn_via_guid.persistence_source_RepoObjectColumn_guid</a></p>
@@ -2415,15 +4164,17 @@ referenced: <a href="repo.RepoObject.html" class="page">repo.RepoObject</a>, <a 
 </tr>
 </tbody>
 </table>
-<div class="literalblock">
+<div class="openblock">
 <div class="title">Description</div>
 <div class="content">
-<pre>Applies to: SQL Server 2016 (13.x) and later, SQL Database.
+<div class="paragraph">
+<p>Applies to: SQL Server 2016 (13.x) and later, SQL Database.
 Identifies when the column value is generated (will always be 0 for columns in system tables):
 0 = NOT_APPLICABLE
 1 = AS_ROW_START
 2 = AS_ROW_END
-For more information, see Temporal Tables (Relational databases).</pre>
+For more information, see Temporal Tables (Relational databases).</p>
+</div>
 </div>
 </div>
 <div class="literalblock">
@@ -2476,22 +4227,27 @@ For more information, see Temporal Tables (Relational databases).</pre>
 </tr>
 </tbody>
 </table>
-<div class="literalblock">
+<div class="openblock">
 <div class="title">Description</div>
 <div class="content">
-<pre>https://docs.microsoft.com/en-us/sql/relational-databases/graphs/sql-graph-architecture
-
-The sys.columns view contains additional columns graph_type and graph_type_desc, that indicate the type of the column in node and edge tables.
-
-graph_type
+<div class="paragraph">
+<p><a href="https://docs.microsoft.com/en-us/sql/relational-databases/graphs/sql-graph-architecture" class="bare">https://docs.microsoft.com/en-us/sql/relational-databases/graphs/sql-graph-architecture</a></p>
+</div>
+<div class="paragraph">
+<p>The sys.columns view contains additional columns graph_type and graph_type_desc, that indicate the type of the column in node and edge tables.</p>
+</div>
+<div class="paragraph">
+<p>graph_type
 int
-Internal column with a set of values. The values are between 1-8 for graph columns and NULL for others.
-
-graph_type_desc
+Internal column with a set of values. The values are between 1-8 for graph columns and NULL for others.</p>
+</div>
+<div class="paragraph">
+<p>graph_type_desc
 nvarchar(60)
-internal column with a set of values
-
-Column Value	Description
+internal column with a set of values</p>
+</div>
+<div class="paragraph">
+<p>Column Value	Description
 1	GRAPH_ID
 2	GRAPH_ID_COMPUTED
 3	GRAPH_FROM_ID
@@ -2499,7 +4255,8 @@ Column Value	Description
 5	GRAPH_FROM_ID_COMPUTED
 6	GRAPH_TO_ID
 7	GRAPH_TO_OBJ_ID
-8	GRAPH_TO_ID_COMPUTED</pre>
+8	GRAPH_TO_ID_COMPUTED</p>
+</div>
 </div>
 </div>
 <div class="openblock">
@@ -2552,9 +4309,6 @@ Column Value	Description
 <div class="ulist">
 <ul>
 <li>
-<p><a href="repo.aaa_test_sql_table_column.html#column-Repo_increment_value" class="page">repo.aaa_test_sql_table_column.Repo_increment_value</a></p>
-</li>
-<li>
 <p><a href="repo.RepoObjectColumn_gross.html#column-Repo_increment_value" class="page">repo.RepoObjectColumn_gross.Repo_increment_value</a></p>
 </li>
 <li>
@@ -2605,9 +4359,6 @@ Column Value	Description
 <div class="ulist">
 <ul>
 <li>
-<p><a href="repo.aaa_test_sql_table_column.html#column-Repo_is_computed" class="page">repo.aaa_test_sql_table_column.Repo_is_computed</a></p>
-</li>
-<li>
 <p><a href="repo.RepoObjectColumn_gross.html#column-Repo_is_computed" class="page">repo.RepoObjectColumn_gross.Repo_is_computed</a></p>
 </li>
 <li>
@@ -2657,9 +4408,6 @@ Column Value	Description
 <div class="content">
 <div class="ulist">
 <ul>
-<li>
-<p><a href="repo.aaa_test_sql_table_column.html#column-Repo_is_identity" class="page">repo.aaa_test_sql_table_column.Repo_is_identity</a></p>
-</li>
 <li>
 <p><a href="repo.RepoObjectColumn_gross.html#column-Repo_is_identity" class="page">repo.RepoObjectColumn_gross.Repo_is_identity</a></p>
 </li>
@@ -2749,9 +4497,6 @@ Column Value	Description
 <div class="ulist">
 <ul>
 <li>
-<p><a href="repo.aaa_test_sql_table_column.html#column-Repo_is_persisted" class="page">repo.aaa_test_sql_table_column.Repo_is_persisted</a></p>
-</li>
-<li>
 <p><a href="repo.RepoObjectColumn_gross.html#column-Repo_is_persisted" class="page">repo.RepoObjectColumn_gross.Repo_is_persisted</a></p>
 </li>
 <li>
@@ -2795,9 +4540,6 @@ Column Value	Description
 <div class="content">
 <div class="ulist">
 <ul>
-<li>
-<p><a href="repo.aaa_test_sql_table_column.html#column-Repo_seed_value" class="page">repo.aaa_test_sql_table_column.Repo_seed_value</a></p>
-</li>
 <li>
 <p><a href="repo.RepoObjectColumn_gross.html#column-Repo_seed_value" class="page">repo.RepoObjectColumn_gross.Repo_seed_value</a></p>
 </li>
@@ -2987,6 +4729,9 @@ Column Value	Description
 <p><a href="repo.RepoObjectColumn_MissingSource_TypeV.html#column-RepoObject_guid" class="page">repo.RepoObjectColumn_MissingSource_TypeV.RepoObject_guid</a></p>
 </li>
 <li>
+<p><a href="repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.html#column-RepoObject_guid" class="page">repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.RepoObject_guid</a></p>
+</li>
+<li>
 <p><a href="repo.SysColumn_RepoObjectColumn_via_guid.html#column-RepoObject_guid" class="page">repo.SysColumn_RepoObjectColumn_via_guid.RepoObject_guid</a></p>
 </li>
 <li>
@@ -3019,11 +4764,13 @@ Column Value	Description
 </tr>
 </tbody>
 </table>
-<div class="literalblock">
+<div class="openblock">
 <div class="title">Description</div>
 <div class="content">
-<pre>ID of the column. Is unique within the object.
-Column IDs might not be sequential.</pre>
+<div class="paragraph">
+<p>ID of the column. Is unique within the object.
+Column IDs might not be sequential.</p>
+</div>
 </div>
 </div>
 <div class="openblock">
@@ -3061,10 +4808,12 @@ Column IDs might not be sequential.</pre>
 </tr>
 </tbody>
 </table>
-<div class="literalblock">
+<div class="openblock">
 <div class="title">Description</div>
 <div class="content">
-<pre>Name of the column. Is unique within the object.</pre>
+<div class="paragraph">
+<p>Name of the column. Is unique within the object.</p>
+</div>
 </div>
 </div>
 <div class="literalblock">
@@ -3079,22 +4828,7 @@ Column IDs might not be sequential.</pre>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="repo.aaa_test_sql_table_column.html#column-RepoObjectColumn_name" class="page">repo.aaa_test_sql_table_column.RepoObjectColumn_name</a></p>
-</li>
-<li>
 <p><a href="repo.ExtendedProperty_Repo2Sys_level2_RepoObjectColumn.html#column-level2name" class="page">repo.ExtendedProperty_Repo2Sys_level2_RepoObjectColumn.level2name</a></p>
-</li>
-<li>
-<p><a href="repo.RepoObject_SqlModules_71_reference_ExpliciteTableAlias.html#column-source_RepoObjectColumn_name" class="page">repo.RepoObject_SqlModules_71_reference_ExpliciteTableAlias.source_RepoObjectColumn_name</a></p>
-</li>
-<li>
-<p><a href="repo.RepoObject_SqlModules_71_reference_ExpliciteTableAlias.html#column-RepoObjectColumn_name" class="page">repo.RepoObject_SqlModules_71_reference_ExpliciteTableAlias.RepoObjectColumn_name</a></p>
-</li>
-<li>
-<p><a href="repo.RepoObject_SqlModules_72_reference_NoTableAlias.html#column-RepoObjectColumn_name" class="page">repo.RepoObject_SqlModules_72_reference_NoTableAlias.RepoObjectColumn_name</a></p>
-</li>
-<li>
-<p><a href="repo.RepoObject_SqlModules_72_reference_NoTableAlias.html#column-source_RepoObjectColumn_name" class="page">repo.RepoObject_SqlModules_72_reference_NoTableAlias.source_RepoObjectColumn_name</a></p>
 </li>
 <li>
 <p><a href="#column-has_different_sys_names">repo.RepoObjectColumn.has_different_sys_names</a></p>
@@ -3106,16 +4840,31 @@ Column IDs might not be sequential.</pre>
 <p><a href="repo.RepoObjectColumn_gross.html#column-RepoObjectColumn_name" class="page">repo.RepoObjectColumn_gross.RepoObjectColumn_name</a></p>
 </li>
 <li>
-<p><a href="repo.RepoObjectColumn_InheritanceType_InheritanceDefinition.html#column-RepoObjectColumn_name" class="page">repo.RepoObjectColumn_InheritanceType_InheritanceDefinition.RepoObjectColumn_name</a></p>
+<p><a href="repo.RepoObjectColumn_MissingSource_TypeV.html#column-RepoObjectColumn_name" class="page">repo.RepoObjectColumn_MissingSource_TypeV.RepoObjectColumn_name</a></p>
 </li>
 <li>
-<p><a href="repo.RepoObjectColumn_MissingSource_TypeV.html#column-RepoObjectColumn_name" class="page">repo.RepoObjectColumn_MissingSource_TypeV.RepoObjectColumn_name</a></p>
+<p><a href="repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.html#column-RepoObjectColumn_name" class="page">repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.RepoObjectColumn_name</a></p>
+</li>
+<li>
+<p><a href="repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition.html#column-RepoObjectColumn_name" class="page">repo.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition.RepoObjectColumn_name</a></p>
 </li>
 <li>
 <p><a href="repo.SysColumn_RepoObjectColumn_via_guid.html#column-RepoObjectColumn_name" class="page">repo.SysColumn_RepoObjectColumn_via_guid.RepoObjectColumn_name</a></p>
 </li>
 <li>
 <p><a href="repo.SysColumn_RepoObjectColumn_via_name.html#column-RepoObjectColumn_name" class="page">repo.SysColumn_RepoObjectColumn_via_name.RepoObjectColumn_name</a></p>
+</li>
+<li>
+<p><a href="sqlparse.RepoObject_SqlModules_71_reference_ExpliciteTableAlias.html#column-source_RepoObjectColumn_name" class="page">sqlparse.RepoObject_SqlModules_71_reference_ExpliciteTableAlias.source_RepoObjectColumn_name</a></p>
+</li>
+<li>
+<p><a href="sqlparse.RepoObject_SqlModules_71_reference_ExpliciteTableAlias.html#column-RepoObjectColumn_name" class="page">sqlparse.RepoObject_SqlModules_71_reference_ExpliciteTableAlias.RepoObjectColumn_name</a></p>
+</li>
+<li>
+<p><a href="sqlparse.RepoObject_SqlModules_72_reference_NoTableAlias.html#column-RepoObjectColumn_name" class="page">sqlparse.RepoObject_SqlModules_72_reference_NoTableAlias.RepoObjectColumn_name</a></p>
+</li>
+<li>
+<p><a href="sqlparse.RepoObject_SqlModules_72_reference_NoTableAlias.html#column-source_RepoObjectColumn_name" class="page">sqlparse.RepoObject_SqlModules_72_reference_NoTableAlias.source_RepoObjectColumn_name</a></p>
 </li>
 </ul>
 </div>
@@ -3144,11 +4893,13 @@ Column IDs might not be sequential.</pre>
 </tr>
 </tbody>
 </table>
-<div class="literalblock">
+<div class="openblock">
 <div class="title">Description</div>
 <div class="content">
-<pre>ID of the column. Is unique within the object.
-Column IDs might not be sequential.</pre>
+<div class="paragraph">
+<p>ID of the column. Is unique within the object.
+Column IDs might not be sequential.</p>
+</div>
 </div>
 </div>
 <div class="openblock">
@@ -3207,11 +4958,13 @@ Column IDs might not be sequential.</pre>
 </tr>
 </tbody>
 </table>
-<div class="literalblock">
+<div class="openblock">
 <div class="title">Description</div>
 <div class="content">
-<pre>Name of the column. Is unique within the object.
-if it not exists in the database, the RepoObject_guid or any other guid is used, because this column should not be empty</pre>
+<div class="paragraph">
+<p>Name of the column. Is unique within the object.
+if it not exists in the database, the RepoObject_guid or any other guid is used, because this column should not be empty</p>
+</div>
 </div>
 </div>
 <div class="literalblock">
@@ -3250,6 +5003,9 @@ if it not exists in the database, the RepoObject_guid or any other guid is used,
 <p><a href="repo.RepoObjectColumn_reference_SqlModules.html#column-referenced_column_name" class="page">repo.RepoObjectColumn_reference_SqlModules.referenced_column_name</a></p>
 </li>
 <li>
+<p><a href="repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.html#column-SysObjectColumn_name" class="page">repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.SysObjectColumn_name</a></p>
+</li>
+<li>
 <p><a href="repo.SysColumn_RepoObjectColumn_via_guid.html#column-SysObjectColumn_name" class="page">repo.SysColumn_RepoObjectColumn_via_guid.SysObjectColumn_name</a></p>
 </li>
 <li>
@@ -3282,10 +5038,12 @@ if it not exists in the database, the RepoObject_guid or any other guid is used,
 </tr>
 </tbody>
 </table>
-<div class="literalblock">
+<div class="openblock">
 <div class="title">Description</div>
 <div class="content">
-<pre>(CONVERT([bit],case when [RepoObjectColumn_name]&lt;&gt;[SysObjectColumn_name] then (1) else (0) end))</pre>
+<div class="paragraph">
+<p>(CONVERT([bit],case when [RepoObjectColumn_name]&lt;&gt;[SysObjectColumn_name] then (1) else (0) end))</p>
+</div>
 </div>
 </div>
 <div class="literalblock">
@@ -3353,10 +5111,12 @@ if it not exists in the database, the RepoObject_guid or any other guid is used,
 </tr>
 </tbody>
 </table>
-<div class="literalblock">
+<div class="openblock">
 <div class="title">Description</div>
 <div class="content">
-<pre>(case when TRY_CAST([RepoObjectColumn_name] AS [uniqueidentifier]) IS NULL then (0) else (1) end)</pre>
+<div class="paragraph">
+<p>(case when TRY_CAST([RepoObjectColumn_name] AS [uniqueidentifier]) IS NULL then (0) else (1) end)</p>
+</div>
 </div>
 </div>
 <div class="literalblock">
@@ -3387,6 +5147,9 @@ if it not exists in the database, the RepoObject_guid or any other guid is used,
 </li>
 <li>
 <p><a href="repo.RepoObjectColumn_MissingSource_TypeV.html#column-is_RepoObjectColumn_name_uniqueidentifier" class="page">repo.RepoObjectColumn_MissingSource_TypeV.is_RepoObjectColumn_name_uniqueidentifier</a></p>
+</li>
+<li>
+<p><a href="repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.html#column-is_RepoObjectColumn_name_uniqueidentifier" class="page">repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.is_RepoObjectColumn_name_uniqueidentifier</a></p>
 </li>
 <li>
 <p><a href="repo.SysColumn_RepoObjectColumn_via_guid.html#column-is_RepoObjectColumn_name_uniqueidentifier" class="page">repo.SysColumn_RepoObjectColumn_via_guid.is_RepoObjectColumn_name_uniqueidentifier</a></p>
@@ -3421,10 +5184,12 @@ if it not exists in the database, the RepoObject_guid or any other guid is used,
 </tr>
 </tbody>
 </table>
-<div class="literalblock">
+<div class="openblock">
 <div class="title">Description</div>
 <div class="content">
-<pre>(case when TRY_CAST([SysObjectColumn_name] AS [uniqueidentifier]) IS NULL then (0) else (1) end)</pre>
+<div class="paragraph">
+<p>(case when TRY_CAST([SysObjectColumn_name] AS [uniqueidentifier]) IS NULL then (0) else (1) end)</p>
+</div>
 </div>
 </div>
 <div class="literalblock">
@@ -3457,6 +5222,9 @@ if it not exists in the database, the RepoObject_guid or any other guid is used,
 <p><a href="repo.RepoObjectColumn_MissingSource_TypeV.html#column-is_SysObjectColumn_name_uniqueidentifier" class="page">repo.RepoObjectColumn_MissingSource_TypeV.is_SysObjectColumn_name_uniqueidentifier</a></p>
 </li>
 <li>
+<p><a href="repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.html#column-is_SysObjectColumn_name_uniqueidentifier" class="page">repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.is_SysObjectColumn_name_uniqueidentifier</a></p>
+</li>
+<li>
 <p><a href="repo.SysColumn_RepoObjectColumn_via_guid.html#column-is_SysObjectColumn_name_uniqueidentifier" class="page">repo.SysColumn_RepoObjectColumn_via_guid.is_SysObjectColumn_name_uniqueidentifier</a></p>
 </li>
 <li>
@@ -3470,7 +5238,7 @@ if it not exists in the database, the RepoObject_guid or any other guid is used,
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="repo.RepoObject_SqlModules_Repo_Sys.html">repo.RepoObject_SqlModules_Repo_Sys</a></span>
+  <span class="prev"><a href="repo.RepoObject_SqlCreateTable.html">repo.RepoObject_SqlCreateTable</a></span>
   <span class="next"><a href="repo.RepoObjectColumn_gross.html">repo.RepoObjectColumn_gross</a></span>
 </nav>
 </article>

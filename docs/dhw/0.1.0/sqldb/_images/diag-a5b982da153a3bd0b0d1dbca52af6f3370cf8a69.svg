@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="203px" preserveAspectRatio="none" style="width:237px;height:203px;" version="1.1" viewBox="0 0 237 203" width="237px" zoomAndPan="magnify"><defs><filter height="300%" id="f1qokgn1v682l0" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[9cae4381d6cd6bbdcf196ab2da3042c6]
+class uspgenerator.ftv_GeneratorUspStep_sql--><rect codeLine="26" fill="#FFFF00" filter="url(#f1qokgn1v682l0)" height="54.8002" id="uspgenerator.ftv_GeneratorUspStep_sql" style="stroke:#A80036;stroke-width:1.5;" width="216" x="7" y="135"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="20" x="105" y="152.0001">«IF»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="210" x="10" y="166.4002">uspgenerator.ftv_GeneratorUspStep_sql</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="222" y1="173.8002" y2="173.8002"/><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="222" y1="181.8002" y2="181.8002"/><!--MD5=[f52a9a4f79a312e694002b8ac0060ecd]
+class uspgenerator.GeneratorUspStep--><rect codeLine="29" fill="#FFFFFF" filter="url(#f1qokgn1v682l0)" height="68.0001" id="uspgenerator.GeneratorUspStep" style="stroke:#A80036;stroke-width:1.5;" width="174" x="28" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="105.5" y="24.0001">«U»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="168" x="31" y="38.4002">uspgenerator.GeneratorUspStep</text><line style="stroke:#A80036;stroke-width:1.5;" x1="29" x2="201" y1="45.8002" y2="45.8002"/><ellipse cx="39" cy="56.8002" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="10" x="48" y="60.8001">id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="17" x="61" y="60.8001">: int</text><line style="stroke:#A80036;stroke-width:1.5;" x1="29" x2="201" y1="67.0001" y2="67.0001"/><!--MD5=[89a07b7f65a6cece16e07d4f65de6d4d]
+reverse link uspgenerator.GeneratorUspStep to uspgenerator.ftv_GeneratorUspStep_sql--><path codeLine="33" d="M115,80.68 C115,98.36 115,118.88 115,134.81 " fill="none" id="uspgenerator.GeneratorUspStep-backto-uspgenerator.ftv_GeneratorUspStep_sql" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="115,75.29,111,84.29,115,80.29,119,84.29,115,75.29" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[4b7f229242b337c38bd9aa62693e1514]
+@startuml
+'Left to right direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity uspgenerator.ftv_GeneratorUspStep_sql << IF >> {
+}
+
+entity uspgenerator.GeneratorUspStep << U >> {
+  * **id** : int
+}
+
+uspgenerator.GeneratorUspStep <.. uspgenerator.ftv_GeneratorUspStep_sql
+@enduml
+
+@startuml
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity uspgenerator.ftv_GeneratorUspStep_sql << IF >> {
+}
+
+entity uspgenerator.GeneratorUspStep << U >> {
+  * **id** : int
+}
+
+uspgenerator.GeneratorUspStep <.. uspgenerator.ftv_GeneratorUspStep_sql
+@enduml
+
+PlantUML version 1.2021.4(Sun Apr 04 08:49:39 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
