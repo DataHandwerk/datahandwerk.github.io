@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="184px" preserveAspectRatio="none" style="width:365px;height:184px;" version="1.1" viewBox="0 0 365 184" width="365px" zoomAndPan="magnify"><defs><filter height="300%" id="f1ekrc4vmoy5nb" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[6c88a6c7c1e6ff0f41a9674e6d528170]
+class uspgenerator.GeneratorUspStep_Persistence_IsInactive_setpoint--><rect codeLine="26" fill="#F5F5F5" filter="url(#f1ekrc4vmoy5nb)" height="163.1995" id="uspgenerator.GeneratorUspStep_Persistence_IsInactive_setpoint" style="stroke:#A80036;stroke-width:1.5;" width="344" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="170" y="24.0001">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="338" x="10" y="38.4002">uspgenerator.GeneratorUspStep_Persistence_IsInactive_setpoint</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="350" y1="45.8002" y2="45.8002"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="53.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="291" x="27" y="60.8001">PK_GeneratorUspStep_Persistence_IsInactive_setpoint</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="39" x="27" y="74">{usp_id}</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="8" x2="350" y1="80.2" y2="80.2"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="48" x="13" y="95.1999">usp_id; int</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="350" y1="101.3999" y2="101.3999"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="109.3999"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="285" x="27" y="116.3998">UK_GeneratorUspStep_Persistence_IsInactive_setpoint__2</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="81" x="27" y="129.5997">{usp_id,Number}</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="8" x2="350" y1="135.7997" y2="135.7997"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="48" x="13" y="150.7996">usp_id; int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="56" x="13" y="163.9995">Number; int</text><!--MD5=[fe00da0636d6a81fd88cd6b07acd356b]
+@startuml
+Left to right direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity uspgenerator.GeneratorUspStep_Persistence_IsInactive_setpoint << V >> {
+- **PK_GeneratorUspStep_Persistence_IsInactive_setpoint**
+{usp_id}
+..
+usp_id; int
+- -
+- UK_GeneratorUspStep_Persistence_IsInactive_setpoint__2
+{usp_id,Number}
+..
+usp_id; int
+Number; int
+}
+@enduml
+
+@startuml
+Left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity uspgenerator.GeneratorUspStep_Persistence_IsInactive_setpoint << V >> {
+- **PK_GeneratorUspStep_Persistence_IsInactive_setpoint**
+{usp_id}
+..
+usp_id; int
+- -
+- UK_GeneratorUspStep_Persistence_IsInactive_setpoint__2
+{usp_id,Number}
+..
+usp_id; int
+Number; int
+}
+@enduml
+
+PlantUML version 1.2021.4(Sun Apr 04 08:49:39 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="194px" preserveAspectRatio="none" style="width:642px;height:194px;" version="1.1" viewBox="0 0 642 194" width="642px" zoomAndPan="magnify"><defs><filter height="300%" id="f5vgyj9nzq4oi" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[9417e1e878c515f724b29ea6e14ca77a]
+class property.RepoObjectProperty_Collect_source_sql_modules_definition--><rect codeLine="26" fill="#F5F5F5" filter="url(#f5vgyj9nzq4oi)" height="94.3999" id="property.RepoObjectProperty_Collect_source_sql_modules_definition" style="stroke:#A80036;stroke-width:1.5;" width="369" x="259" y="47"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="434.5" y="64.0001">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="363" x="262" y="78.4002">property.RepoObjectProperty_Collect_source_sql_modules_definition</text><line style="stroke:#A80036;stroke-width:1.5;" x1="260" x2="627" y1="85.8002" y2="85.8002"/><ellipse cx="270" cy="96.8002" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="93" x="279" y="100.8001">RepoObject_guid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="375" y="100.8001">: uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="80" x="279" y="114">property_name</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="75" x="362" y="114">: nvarchar(128)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="260" x2="627" y1="120.2" y2="120.2"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="155" x="265" y="135.1999">property_value : nvarchar(4000)</text><!--MD5=[6b67db4260b479f259bd30d98988136f]
+class tool.ftv_extract_substrings--><rect codeLine="33" fill="#FFFF00" filter="url(#f5vgyj9nzq4oi)" height="173.5993" id="tool.ftv_extract_substrings" style="stroke:#A80036;stroke-width:1.5;" width="192" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="20" x="93" y="24.0001">«IF»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="136" x="35" y="38.4002">tool.ftv_extract_substrings</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="198" y1="45.8002" y2="45.8002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="198" y1="53.8002" y2="53.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="40" x="13" y="68.8001">len1 : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="40" x="13" y="82">len2 : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="57" x="13" y="95.1999">pos1 : bigint</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="71" x="13" y="108.3998">pos1eol : bigint</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="57" x="13" y="121.5997">pos2 : bigint</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="155" x="13" y="134.7996">substring_gross : nvarchar(max)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="144" x="13" y="147.9995">substring_net : nvarchar(max)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="180" x="13" y="161.1994">substring_netPostEol : nvarchar(max)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="176" x="13" y="174.3993">substring_netPreEol : nvarchar(max)</text><!--MD5=[73b4431f79eb9327c582467ff997fdbe]
+reverse link tool.ftv_extract_substrings to property.RepoObjectProperty_Collect_source_sql_modules_definition--><path codeLine="46" d="M204.51,94 C221.77,94 240.18,94 258.82,94 " fill="none" id="tool.ftv_extract_substrings-backto-property.RepoObjectProperty_Collect_source_sql_modules_definition" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="199.19,94,208.19,98,204.19,94,208.19,90,199.19,94" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[ea67f02fac9eaa669d562fb2e091df81]
+@startuml
+left to right direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity property.RepoObjectProperty_Collect_source_sql_modules_definition << V >> {
+  * **RepoObject_guid** : uniqueidentifier
+  **property_name** : nvarchar(128)
+  - -
+  property_value : nvarchar(4000)
+}
+
+entity tool.ftv_extract_substrings << IF >> {
+  - -
+  len1 : int
+  len2 : int
+  pos1 : bigint
+  pos1eol : bigint
+  pos2 : bigint
+  substring_gross : nvarchar(max)
+  substring_net : nvarchar(max)
+  substring_netPostEol : nvarchar(max)
+  substring_netPreEol : nvarchar(max)
+}
+
+tool.ftv_extract_substrings <.. property.RepoObjectProperty_Collect_source_sql_modules_definition
+@enduml
+
+@startuml
+left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity property.RepoObjectProperty_Collect_source_sql_modules_definition << V >> {
+  * **RepoObject_guid** : uniqueidentifier
+  **property_name** : nvarchar(128)
+  - -
+  property_value : nvarchar(4000)
+}
+
+entity tool.ftv_extract_substrings << IF >> {
+  - -
+  len1 : int
+  len2 : int
+  pos1 : bigint
+  pos1eol : bigint
+  pos2 : bigint
+  substring_gross : nvarchar(max)
+  substring_net : nvarchar(max)
+  substring_netPostEol : nvarchar(max)
+  substring_netPreEol : nvarchar(max)
+}
+
+tool.ftv_extract_substrings <.. property.RepoObjectProperty_Collect_source_sql_modules_definition
+@enduml
+
+PlantUML version 1.2021.4(Sun Apr 04 08:49:39 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

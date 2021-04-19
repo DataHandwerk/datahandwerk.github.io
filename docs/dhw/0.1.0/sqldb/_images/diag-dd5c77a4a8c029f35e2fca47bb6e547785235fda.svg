@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="620px" preserveAspectRatio="none" style="width:1353px;height:620px;" version="1.1" viewBox="0 0 1353 620" width="1353px" zoomAndPan="magnify"><defs><filter height="300%" id="foe6ei09a1xyz" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[fc5fcecd7b1b481ec4c357e04aab876d]
+class repo.ForeignKey_IndexPattern--><rect codeLine="26" fill="#F5F5F5" filter="url(#foe6ei09a1xyz)" height="186.7992" id="repo.ForeignKey_IndexPattern" style="stroke:#A80036;stroke-width:1.5;" width="284" x="1055" y="25.16"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="1188" y="42.1601">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="157" x="1118.5" y="56.5602">repo.ForeignKey_IndexPattern</text><line style="stroke:#A80036;stroke-width:1.5;" x1="1056" x2="1338" y1="63.9602" y2="63.9602"/><ellipse cx="1066" cy="74.9602" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="109" x="1075" y="78.9601">constraint_object_id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="17" x="1187" y="78.9601">: int</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="91" x="1075" y="92.16">ForeignKey_guid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="1169" y="92.16">: uniqueidentifier</text><line style="stroke:#A80036;stroke-width:1.0;" x1="1056" x2="1338" y1="98.36" y2="98.36"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="154" x="1061" y="113.3599">delete_referential_action : tinyint</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="179" x="1061" y="126.5598">ForeignKey_fullname : nvarchar(261)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="139" x="1061" y="139.7597">ForeignKey_name : sysname</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="270" x="1061" y="152.9596">referenced_IndexPatternColumnName : nvarchar(4000)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="225" x="1061" y="166.1595">referenced_RepoObject_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="272" x="1061" y="179.3594">referencing_IndexPatternColumnName : nvarchar(4000)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="227" x="1061" y="192.5593">referencing_RepoObject_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="158" x="1061" y="205.7592">update_referential_action : tinyint</text><!--MD5=[04197324ff093c4e006e17f566671fc0]
+class repo.RepoObject--><rect codeLine="40" fill="#FFFFFF" filter="url(#foe6ei09a1xyz)" height="503.5969" id="repo.RepoObject" style="stroke:#A80036;stroke-width:1.5;" width="281" x="7" y="102.66"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="138" y="119.6601">«U»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="88" x="103.5" y="134.0602">repo.RepoObject</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="287" y1="141.4602" y2="141.4602"/><ellipse cx="18" cy="152.4602" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="93" x="27" y="156.4601">RepoObject_guid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="123" y="156.4601">: uniqueidentifier</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="287" y1="162.6601" y2="162.6601"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="145" x="27" y="177.66">has_execution_plan_issue : bit</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="147" x="27" y="190.8599">has_get_referenced_issue : bit</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="254" x="27" y="204.0598">Inheritance_StringAggSeparatorSql : nvarchar(4000)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="182" x="27" y="217.2597">InheritanceDefinition : nvarchar(4000)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="114" x="27" y="230.4596">InheritanceType : tinyint</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="27" y="243.6595">is_repo_managed : bit</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="143" x="27" y="256.8594">is_required_ObjectMerge : bit</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="124" x="27" y="270.0593">is_SysObject_missing : bit</text><ellipse cx="18" cy="279.2593" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="96" x="27" y="283.2592">modify_dt : datetime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="150" x="27" y="296.4591">pk_index_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="255" x="27" y="309.659">pk_IndexPatternColumnName_new : nvarchar(4000)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="199" x="27" y="322.8589">Repo_history_table_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="136" x="27" y="336.0588">Repo_temporal_type : tinyint</text><ellipse cx="18" cy="345.2588" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="170" x="27" y="349.2587">RepoObject_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="179" x="27" y="362.4586">RepoObject_Referencing_Count : int</text><ellipse cx="18" cy="371.6586" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="214" x="27" y="375.6585">RepoObject_schema_name : nvarchar(128)</text><ellipse cx="18" cy="384.8585" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="130" x="27" y="388.8584">RepoObject_type : char(2)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="84" x="27" y="402.0583">SysObject_id : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="164" x="27" y="415.2582">SysObject_modify_date : datetime</text><ellipse cx="18" cy="424.4582" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="161" x="27" y="428.4582">SysObject_name : nvarchar(128)</text><ellipse cx="18" cy="437.6581" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="157" x="27" y="441.6581">SysObject_parent_object_id : int</text><ellipse cx="18" cy="450.858" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="205" x="27" y="454.858">SysObject_schema_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="121" x="27" y="468.0579">SysObject_type : char(2)</text><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="145" x="27" y="481.2578">has_different_sys_names : bit</text><ellipse cx="18" cy="490.4577" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="203" x="27" y="494.4577">is_RepoObject_name_uniqueidentifier : int</text><ellipse cx="18" cy="503.6576" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="194" x="27" y="507.6576">is_SysObject_name_uniqueidentifier : int</text><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="72" x="27" y="520.8575">node_id : bigint</text><ellipse cx="18" cy="530.0574" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="183" x="27" y="534.0574">RepoObject_fullname : nvarchar(261)</text><ellipse cx="18" cy="543.2573" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="189" x="27" y="547.2573">RepoObject_fullname2 : nvarchar(257)</text><ellipse cx="18" cy="556.4572" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="174" x="27" y="560.4572">SysObject_fullname : nvarchar(261)</text><ellipse cx="18" cy="569.6572" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="180" x="27" y="573.6571">SysObject_fullname2 : nvarchar(257)</text><ellipse cx="18" cy="582.8571" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="181" x="27" y="586.857">SysObject_query_sql : nvarchar(406)</text><ellipse cx="18" cy="596.057" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="189" x="27" y="600.0569">usp_persistence_name : nvarchar(140)</text><!--MD5=[a3a96a2eda1fd77e1b57f643a70be916]
+class repo_sys.ForeignKey--><rect codeLine="78" fill="#F5F5F5" filter="url(#foe6ei09a1xyz)" height="411.1975" id="repo_sys.ForeignKey" style="stroke:#A80036;stroke-width:1.5;" width="249" x="364" y="149.16"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="479.5" y="166.1601">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="110" x="433.5" y="180.5602">repo_sys.ForeignKey</text><line style="stroke:#A80036;stroke-width:1.5;" x1="365" x2="612" y1="187.9602" y2="187.9602"/><line style="stroke:#A80036;stroke-width:1.0;" x1="365" x2="612" y1="195.9602" y2="195.9602"/><ellipse cx="375" cy="206.9602" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="108" x="384" y="210.9601">create_date : datetime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="154" x="384" y="224.16">delete_referential_action : tinyint</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="219" x="384" y="237.3599">delete_referential_action_desc : nvarchar(60)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="179" x="384" y="250.5598">ForeignKey_fullname : nvarchar(261)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="162" x="384" y="263.7597">ForeignKey_guid : uniqueidentifier</text><ellipse cx="375" cy="272.9597" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="72" x="384" y="276.9596">is_disabled : bit</text><ellipse cx="375" cy="286.1596" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="90" x="384" y="290.1595">is_ms_shipped : bit</text><ellipse cx="375" cy="299.3595" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="122" x="384" y="303.3594">is_not_for_replication : bit</text><ellipse cx="375" cy="312.5594" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="87" x="384" y="316.5593">is_not_trusted : bit</text><ellipse cx="375" cy="325.7593" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="384" y="329.7592">is_published : bit</text><ellipse cx="375" cy="338.9592" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="122" x="384" y="342.9591">is_schema_published : bit</text><ellipse cx="375" cy="352.1591" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="105" x="384" y="356.159">is_system_named : bit</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="82" x="384" y="369.3589">key_index_id : int</text><ellipse cx="375" cy="378.5589" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="108" x="384" y="382.5588">modify_date : datetime</text><ellipse cx="375" cy="391.7588" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="384" y="395.7587">name : sysname</text><ellipse cx="375" cy="404.9587" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="64" x="384" y="408.9586">object_id : int</text><ellipse cx="375" cy="418.1586" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="101" x="384" y="422.1585">parent_object_id : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="220" x="384" y="435.3584">parent_RepoObject_fullname : nvarchar(261)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="203" x="384" y="448.5583">parent_RepoObject_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="211" x="384" y="461.7582">parent_SysObject_fullname : nvarchar(261)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="74" x="384" y="474.9582">principal_id : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="123" x="384" y="488.1581">referenced_object_id : int</text><ellipse cx="375" cy="497.358" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="72" x="384" y="501.358">schema_id : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="65" x="384" y="514.5579">type : char(2)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="121" x="384" y="527.7578">type_desc : nvarchar(60)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="158" x="384" y="540.9577">update_referential_action : tinyint</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="223" x="384" y="554.1576">update_referential_action_desc : nvarchar(60)</text><!--MD5=[bc11ede38ac303b4eee52da9d9a39ad9]
+class repo_sys.ForeignKeyColumn--><rect codeLine="109" fill="#F5F5F5" filter="url(#foe6ei09a1xyz)" height="331.9981" id="repo_sys.ForeignKeyColumn" style="stroke:#A80036;stroke-width:1.5;" width="290" x="689" y="175.16"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="825" y="192.1601">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="150" x="759" y="206.5602">repo_sys.ForeignKeyColumn</text><line style="stroke:#A80036;stroke-width:1.5;" x1="690" x2="978" y1="213.9602" y2="213.9602"/><line style="stroke:#A80036;stroke-width:1.0;" x1="690" x2="978" y1="221.9602" y2="221.9602"/><ellipse cx="700" cy="232.9602" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="122" x="709" y="236.9601">constraint_column_id : int</text><ellipse cx="700" cy="246.1601" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="117" x="709" y="250.16">constraint_object_id : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="179" x="709" y="263.3599">ForeignKey_fullname : nvarchar(261)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="162" x="709" y="276.5598">ForeignKey_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="139" x="709" y="289.7597">ForeignKey_name : sysname</text><ellipse cx="700" cy="298.9597" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="709" y="302.9596">parent_column_id : int</text><ellipse cx="700" cy="312.1596" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="101" x="709" y="316.1595">parent_object_id : int</text><ellipse cx="700" cy="325.3595" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="709" y="329.3594">referenced_column_id : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="178" x="709" y="342.5593">referenced_column_name : sysname</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="164" x="709" y="355.7592">referenced_name : nvarchar(128)</text><ellipse cx="700" cy="364.9592" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="123" x="709" y="368.9591">referenced_object_id : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="225" x="709" y="382.159">referenced_RepoObject_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="262" x="709" y="395.3589">referenced_RepoObjectColumn_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="208" x="709" y="408.5588">referenced_schema_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="180" x="709" y="421.7587">referencing_column_name : sysname</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="166" x="709" y="434.9586">referencing_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="244" x="709" y="448.1585">referencing_RepoObject_fullname : nvarchar(261)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="227" x="709" y="461.3584">referencing_RepoObject_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="264" x="709" y="474.5583">referencing_RepoObjectColumn_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="210" x="709" y="487.7582">referencing_schema_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="235" x="709" y="500.9582">referencing_SysObject_fullname : nvarchar(261)</text><!--MD5=[dc23bf7b9d0ae354e791220373334602]
+class sys_dwh.foreign_keys--><rect codeLine="134" fill="#FFFF00" filter="url(#foe6ei09a1xyz)" height="54.8002" id="sys_dwh.foreign_keys" style="stroke:#A80036;stroke-width:1.5;" width="122" x="86.5" y="8.66"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="27" x="134" y="25.6601">«SN»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="116" x="89.5" y="40.0602">sys_dwh.foreign_keys</text><line style="stroke:#A80036;stroke-width:1.5;" x1="87.5" x2="207.5" y1="47.4602" y2="47.4602"/><line style="stroke:#A80036;stroke-width:1.0;" x1="87.5" x2="207.5" y1="55.4602" y2="55.4602"/><!--MD5=[0a6fdc1bc892310da0a0c365d616566b]
+reverse link repo.RepoObject to repo_sys.ForeignKey--><path codeLine="138" d="M301.34,353.16 C319.58,353.16 338.08,353.16 355.99,353.16 " fill="none" id="repo.RepoObject-backto-repo_sys.ForeignKey" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="296.2,353.16,305.2,357.16,301.2,353.16,305.2,349.16,296.2,353.16" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0a6fdc1bc892310da0a0c365d616566b]
+reverse link repo.RepoObject to repo_sys.ForeignKey--><path codeLine="143" d="M294.71,528.84 C342.46,522.63 310.05,429.16 363.5,429.16 " fill="none" id="repo.RepoObject-backto-repo_sys.ForeignKey-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="289.5,529.16,298.7332,532.5875,294.4902,528.8463,298.2313,524.6033,289.5,529.16" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0a6fdc1bc892310da0a0c365d616566b]
+reverse link repo.RepoObject to repo_sys.ForeignKey--><path codeLine="144" d="M294.67,529 C414.89,521.45 234.85,245.16 363.5,245.16 " fill="none" id="repo.RepoObject-backto-repo_sys.ForeignKey-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="289.5,529.16,298.6212,532.8753,294.4975,529.0029,298.3699,524.8793,289.5,529.16" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0a6fdc1bc892310da0a0c365d616566b]
+reverse link repo.RepoObject to repo_sys.ForeignKey--><path codeLine="145" d="M294.64,151.47 C344.82,157.74 307.49,258.16 363.5,258.16 " fill="none" id="repo.RepoObject-backto-repo_sys.ForeignKey-3" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="289.5,151.16,298.2443,155.6918,294.491,151.4595,298.7234,147.7062,289.5,151.16" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0a6fdc1bc892310da0a0c365d616566b]
+reverse link repo.RepoObject to repo_sys.ForeignKey--><path codeLine="146" d="M294.79,151.32 C417.74,159.06 231.87,442.16 363.5,442.16 " fill="none" id="repo.RepoObject-backto-repo_sys.ForeignKey-4" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="289.5,151.16,298.3699,155.4407,294.4975,151.3171,298.6212,147.4447,289.5,151.16" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0a6fdc1bc892310da0a0c365d616566b]
+reverse link repo.RepoObject to repo_sys.ForeignKey--><path codeLine="147" d="M294.71,554.84 C342.46,548.63 310.05,455.16 363.5,455.16 " fill="none" id="repo.RepoObject-backto-repo_sys.ForeignKey-5" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="289.5,555.16,298.7332,558.5875,294.4902,554.8463,298.2313,550.6033,289.5,555.16" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[c9875d7e9bda42ccf4d384708a9abc5e]
+reverse link repo_sys.ForeignKey to repo_sys.ForeignKeyColumn--><path codeLine="139" d="M626.36,347.98 C644.28,347.3 662.73,346.6 680.88,345.92 " fill="none" id="repo_sys.ForeignKey-backto-repo_sys.ForeignKeyColumn" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="621.32,348.17,630.4727,351.8071,626.316,347.9702,630.1529,343.8135,621.32,348.17" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[c9875d7e9bda42ccf4d384708a9abc5e]
+reverse link repo_sys.ForeignKey to repo_sys.ForeignKeyColumn--><path codeLine="148" d="M619.72,245.27 C648.53,246.54 656.64,258.16 688,258.16 " fill="none" id="repo_sys.ForeignKey-backto-repo_sys.ForeignKeyColumn-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="614.5,245.16,623.4062,249.3646,619.4987,245.2743,623.5891,241.3667,614.5,245.16" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[c9875d7e9bda42ccf4d384708a9abc5e]
+reverse link repo_sys.ForeignKey to repo_sys.ForeignKeyColumn--><path codeLine="149" d="M619.72,258.27 C648.53,259.54 656.64,271.16 688,271.16 " fill="none" id="repo_sys.ForeignKey-backto-repo_sys.ForeignKeyColumn-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="614.5,258.16,623.4062,262.3646,619.4987,258.2743,623.5891,254.3667,614.5,258.16" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[c9875d7e9bda42ccf4d384708a9abc5e]
+reverse link repo_sys.ForeignKey to repo_sys.ForeignKeyColumn--><path codeLine="151" d="M619.59,389.86 C669.35,383.64 632.46,284.16 688,284.16 " fill="none" id="repo_sys.ForeignKey-backto-repo_sys.ForeignKeyColumn-3" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="614.5,390.16,623.7234,393.6138,619.491,389.8605,623.2443,385.6282,614.5,390.16" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[c9875d7e9bda42ccf4d384708a9abc5e]
+reverse link repo_sys.ForeignKey to repo_sys.ForeignKeyColumn--><path codeLine="152" d="M619.73,429.28 C648.6,430.65 656.56,443.16 688,443.16 " fill="none" id="repo_sys.ForeignKey-backto-repo_sys.ForeignKeyColumn-4" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="614.5,429.16,623.4062,433.3646,619.4987,429.2743,623.5891,425.3667,614.5,429.16" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[c9875d7e9bda42ccf4d384708a9abc5e]
+reverse link repo_sys.ForeignKey to repo_sys.ForeignKeyColumn--><path codeLine="153" d="M619.88,455.46 C651.7,459.12 652.7,495.16 688,495.16 " fill="none" id="repo_sys.ForeignKey-backto-repo_sys.ForeignKeyColumn-5" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="614.5,455.16,623.2692,459.6433,619.4926,455.4318,623.7041,451.6552,614.5,455.16" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[2b4266c692f7c8252fff78b2e77158b5]
+reverse link repo_sys.ForeignKey to repo.ForeignKey_IndexPattern--><path codeLine="140" d="M625.02,188.5 C642.51,174.62 661.26,162.39 681,153.16 C795.46,99.63 940.06,94.45 1046.89,100.59 " fill="none" id="repo_sys.ForeignKey-backto-repo.ForeignKey_IndexPattern" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="621.07,191.68,630.5932,189.1685,624.9702,188.5513,625.5873,182.9282,621.07,191.68" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[2b4266c692f7c8252fff78b2e77158b5]
+reverse link repo_sys.ForeignKey to repo.ForeignKey_IndexPattern--><path codeLine="150" d="M619.62,257.97 C687.37,252.82 619.75,142.39 681,100.16 C817.56,6 888.12,87.16 1054,87.16 " fill="none" id="repo_sys.ForeignKey-backto-repo.ForeignKey_IndexPattern-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="614.5,258.16,623.6423,261.8232,619.4966,257.9744,623.3453,253.8287,614.5,258.16" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[2a81e9c9ed1424be71b03fe03749e95e]
+reverse link repo_sys.ForeignKeyColumn to repo.ForeignKey_IndexPattern--><path codeLine="141" d="M991.69,243.8 C1009.96,232.57 1028.56,221.13 1046.72,209.96 " fill="none" id="repo_sys.ForeignKeyColumn-backto-repo.ForeignKey_IndexPattern" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="987.05,246.66,996.8093,245.3352,991.3044,244.0331,992.6064,238.5282,987.05,246.66" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[7042395779b91611d9dbc3c7c346f82b]
+reverse link sys_dwh.foreign_keys to repo_sys.ForeignKey--><path codeLine="142" d="M213.63,46.33 C240.95,52.94 271.91,63.72 296,81.16 C320.67,99.03 343.31,121.08 363.7,144.83 " fill="none" id="sys_dwh.foreign_keys-backto-repo_sys.ForeignKey" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="208.57,45.14,216.4146,51.095,213.4371,46.2852,218.2469,43.3077,208.57,45.14" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[2deb414ffac7cf88237986ab96ea7989]
+@startuml
+left to right direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity repo.ForeignKey_IndexPattern << V >> {
+  * **constraint_object_id** : int
+  **ForeignKey_guid** : uniqueidentifier
+  - -
+  delete_referential_action : tinyint
+  ForeignKey_fullname : nvarchar(261)
+  ForeignKey_name : sysname
+  referenced_IndexPatternColumnName : nvarchar(4000)
+  referenced_RepoObject_guid : uniqueidentifier
+  referencing_IndexPatternColumnName : nvarchar(4000)
+  referencing_RepoObject_guid : uniqueidentifier
+  update_referential_action : tinyint
+}
+
+entity repo.RepoObject << U >> {
+  * **RepoObject_guid** : uniqueidentifier
+  - -
+  has_execution_plan_issue : bit
+  has_get_referenced_issue : bit
+  Inheritance_StringAggSeparatorSql : nvarchar(4000)
+  InheritanceDefinition : nvarchar(4000)
+  InheritanceType : tinyint
+  is_repo_managed : bit
+  is_required_ObjectMerge : bit
+  is_SysObject_missing : bit
+  * modify_dt : datetime
+  pk_index_guid : uniqueidentifier
+  pk_IndexPatternColumnName_new : nvarchar(4000)
+  Repo_history_table_guid : uniqueidentifier
+  Repo_temporal_type : tinyint
+  * RepoObject_name : nvarchar(128)
+  RepoObject_Referencing_Count : int
+  * RepoObject_schema_name : nvarchar(128)
+  * RepoObject_type : char(2)
+  SysObject_id : int
+  SysObject_modify_date : datetime
+  * SysObject_name : nvarchar(128)
+  * SysObject_parent_object_id : int
+  * SysObject_schema_name : nvarchar(128)
+  SysObject_type : char(2)
+  {abstract} has_different_sys_names : bit
+  * {static} is_RepoObject_name_uniqueidentifier : int
+  * {static} is_SysObject_name_uniqueidentifier : int
+  {abstract} node_id : bigint
+  * {static} RepoObject_fullname : nvarchar(261)
+  * {static} RepoObject_fullname2 : nvarchar(257)
+  * {static} SysObject_fullname : nvarchar(261)
+  * {static} SysObject_fullname2 : nvarchar(257)
+  * {abstract} SysObject_query_sql : nvarchar(406)
+  * {static} usp_persistence_name : nvarchar(140)
+}
+
+entity repo_sys.ForeignKey << V >> {
+  - -
+  * create_date : datetime
+  delete_referential_action : tinyint
+  delete_referential_action_desc : nvarchar(60)
+  ForeignKey_fullname : nvarchar(261)
+  ForeignKey_guid : uniqueidentifier
+  * is_disabled : bit
+  * is_ms_shipped : bit
+  * is_not_for_replication : bit
+  * is_not_trusted : bit
+  * is_published : bit
+  * is_schema_published : bit
+  * is_system_named : bit
+  key_index_id : int
+  * modify_date : datetime
+  * name : sysname
+  * object_id : int
+  * parent_object_id : int
+  parent_RepoObject_fullname : nvarchar(261)
+  parent_RepoObject_guid : uniqueidentifier
+  parent_SysObject_fullname : nvarchar(261)
+  principal_id : int
+  referenced_object_id : int
+  * schema_id : int
+  type : char(2)
+  type_desc : nvarchar(60)
+  update_referential_action : tinyint
+  update_referential_action_desc : nvarchar(60)
+}
+
+entity repo_sys.ForeignKeyColumn << V >> {
+  - -
+  * constraint_column_id : int
+  * constraint_object_id : int
+  ForeignKey_fullname : nvarchar(261)
+  ForeignKey_guid : uniqueidentifier
+  ForeignKey_name : sysname
+  * parent_column_id : int
+  * parent_object_id : int
+  * referenced_column_id : int
+  referenced_column_name : sysname
+  referenced_name : nvarchar(128)
+  * referenced_object_id : int
+  referenced_RepoObject_guid : uniqueidentifier
+  referenced_RepoObjectColumn_guid : uniqueidentifier
+  referenced_schema_name : nvarchar(128)
+  referencing_column_name : sysname
+  referencing_name : nvarchar(128)
+  referencing_RepoObject_fullname : nvarchar(261)
+  referencing_RepoObject_guid : uniqueidentifier
+  referencing_RepoObjectColumn_guid : uniqueidentifier
+  referencing_schema_name : nvarchar(128)
+  referencing_SysObject_fullname : nvarchar(261)
+}
+
+entity sys_dwh.foreign_keys << SN >> {
+  - -
+}
+
+repo.RepoObject <.. repo_sys.ForeignKey
+repo_sys.ForeignKey <.. repo_sys.ForeignKeyColumn
+repo_sys.ForeignKey <.. repo.ForeignKey_IndexPattern
+repo_sys.ForeignKeyColumn <.. repo.ForeignKey_IndexPattern
+sys_dwh.foreign_keys <.. repo_sys.ForeignKey
+repo.RepoObject::RepoObject_fullname <- - repo_sys.ForeignKey::parent_RepoObject_fullname
+repo.RepoObject::RepoObject_fullname <- - repo_sys.ForeignKey::ForeignKey_fullname
+repo.RepoObject::RepoObject_guid <- - repo_sys.ForeignKey::ForeignKey_guid
+repo.RepoObject::RepoObject_guid <- - repo_sys.ForeignKey::parent_RepoObject_guid
+repo.RepoObject::SysObject_fullname <- - repo_sys.ForeignKey::parent_SysObject_fullname
+repo_sys.ForeignKey::ForeignKey_fullname <- - repo_sys.ForeignKeyColumn::ForeignKey_fullname
+repo_sys.ForeignKey::ForeignKey_guid <- - repo_sys.ForeignKeyColumn::ForeignKey_guid
+repo_sys.ForeignKey::ForeignKey_guid <- - repo.ForeignKey_IndexPattern::ForeignKey_guid
+repo_sys.ForeignKey::name <- - repo_sys.ForeignKeyColumn::ForeignKey_name
+repo_sys.ForeignKey::parent_RepoObject_fullname <- - repo_sys.ForeignKeyColumn::referencing_RepoObject_fullname
+repo_sys.ForeignKey::parent_SysObject_fullname <- - repo_sys.ForeignKeyColumn::referencing_SysObject_fullname
+@enduml
+
+@startuml
+left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity repo.ForeignKey_IndexPattern << V >> {
+  * **constraint_object_id** : int
+  **ForeignKey_guid** : uniqueidentifier
+  - -
+  delete_referential_action : tinyint
+  ForeignKey_fullname : nvarchar(261)
+  ForeignKey_name : sysname
+  referenced_IndexPatternColumnName : nvarchar(4000)
+  referenced_RepoObject_guid : uniqueidentifier
+  referencing_IndexPatternColumnName : nvarchar(4000)
+  referencing_RepoObject_guid : uniqueidentifier
+  update_referential_action : tinyint
+}
+
+entity repo.RepoObject << U >> {
+  * **RepoObject_guid** : uniqueidentifier
+  - -
+  has_execution_plan_issue : bit
+  has_get_referenced_issue : bit
+  Inheritance_StringAggSeparatorSql : nvarchar(4000)
+  InheritanceDefinition : nvarchar(4000)
+  InheritanceType : tinyint
+  is_repo_managed : bit
+  is_required_ObjectMerge : bit
+  is_SysObject_missing : bit
+  * modify_dt : datetime
+  pk_index_guid : uniqueidentifier
+  pk_IndexPatternColumnName_new : nvarchar(4000)
+  Repo_history_table_guid : uniqueidentifier
+  Repo_temporal_type : tinyint
+  * RepoObject_name : nvarchar(128)
+  RepoObject_Referencing_Count : int
+  * RepoObject_schema_name : nvarchar(128)
+  * RepoObject_type : char(2)
+  SysObject_id : int
+  SysObject_modify_date : datetime
+  * SysObject_name : nvarchar(128)
+  * SysObject_parent_object_id : int
+  * SysObject_schema_name : nvarchar(128)
+  SysObject_type : char(2)
+  {abstract} has_different_sys_names : bit
+  * {static} is_RepoObject_name_uniqueidentifier : int
+  * {static} is_SysObject_name_uniqueidentifier : int
+  {abstract} node_id : bigint
+  * {static} RepoObject_fullname : nvarchar(261)
+  * {static} RepoObject_fullname2 : nvarchar(257)
+  * {static} SysObject_fullname : nvarchar(261)
+  * {static} SysObject_fullname2 : nvarchar(257)
+  * {abstract} SysObject_query_sql : nvarchar(406)
+  * {static} usp_persistence_name : nvarchar(140)
+}
+
+entity repo_sys.ForeignKey << V >> {
+  - -
+  * create_date : datetime
+  delete_referential_action : tinyint
+  delete_referential_action_desc : nvarchar(60)
+  ForeignKey_fullname : nvarchar(261)
+  ForeignKey_guid : uniqueidentifier
+  * is_disabled : bit
+  * is_ms_shipped : bit
+  * is_not_for_replication : bit
+  * is_not_trusted : bit
+  * is_published : bit
+  * is_schema_published : bit
+  * is_system_named : bit
+  key_index_id : int
+  * modify_date : datetime
+  * name : sysname
+  * object_id : int
+  * parent_object_id : int
+  parent_RepoObject_fullname : nvarchar(261)
+  parent_RepoObject_guid : uniqueidentifier
+  parent_SysObject_fullname : nvarchar(261)
+  principal_id : int
+  referenced_object_id : int
+  * schema_id : int
+  type : char(2)
+  type_desc : nvarchar(60)
+  update_referential_action : tinyint
+  update_referential_action_desc : nvarchar(60)
+}
+
+entity repo_sys.ForeignKeyColumn << V >> {
+  - -
+  * constraint_column_id : int
+  * constraint_object_id : int
+  ForeignKey_fullname : nvarchar(261)
+  ForeignKey_guid : uniqueidentifier
+  ForeignKey_name : sysname
+  * parent_column_id : int
+  * parent_object_id : int
+  * referenced_column_id : int
+  referenced_column_name : sysname
+  referenced_name : nvarchar(128)
+  * referenced_object_id : int
+  referenced_RepoObject_guid : uniqueidentifier
+  referenced_RepoObjectColumn_guid : uniqueidentifier
+  referenced_schema_name : nvarchar(128)
+  referencing_column_name : sysname
+  referencing_name : nvarchar(128)
+  referencing_RepoObject_fullname : nvarchar(261)
+  referencing_RepoObject_guid : uniqueidentifier
+  referencing_RepoObjectColumn_guid : uniqueidentifier
+  referencing_schema_name : nvarchar(128)
+  referencing_SysObject_fullname : nvarchar(261)
+}
+
+entity sys_dwh.foreign_keys << SN >> {
+  - -
+}
+
+repo.RepoObject <.. repo_sys.ForeignKey
+repo_sys.ForeignKey <.. repo_sys.ForeignKeyColumn
+repo_sys.ForeignKey <.. repo.ForeignKey_IndexPattern
+repo_sys.ForeignKeyColumn <.. repo.ForeignKey_IndexPattern
+sys_dwh.foreign_keys <.. repo_sys.ForeignKey
+repo.RepoObject::RepoObject_fullname <- - repo_sys.ForeignKey::parent_RepoObject_fullname
+repo.RepoObject::RepoObject_fullname <- - repo_sys.ForeignKey::ForeignKey_fullname
+repo.RepoObject::RepoObject_guid <- - repo_sys.ForeignKey::ForeignKey_guid
+repo.RepoObject::RepoObject_guid <- - repo_sys.ForeignKey::parent_RepoObject_guid
+repo.RepoObject::SysObject_fullname <- - repo_sys.ForeignKey::parent_SysObject_fullname
+repo_sys.ForeignKey::ForeignKey_fullname <- - repo_sys.ForeignKeyColumn::ForeignKey_fullname
+repo_sys.ForeignKey::ForeignKey_guid <- - repo_sys.ForeignKeyColumn::ForeignKey_guid
+repo_sys.ForeignKey::ForeignKey_guid <- - repo.ForeignKey_IndexPattern::ForeignKey_guid
+repo_sys.ForeignKey::name <- - repo_sys.ForeignKeyColumn::ForeignKey_name
+repo_sys.ForeignKey::parent_RepoObject_fullname <- - repo_sys.ForeignKeyColumn::referencing_RepoObject_fullname
+repo_sys.ForeignKey::parent_SysObject_fullname <- - repo_sys.ForeignKeyColumn::referencing_SysObject_fullname
+@enduml
+
+PlantUML version 1.2021.4(Sun Apr 04 08:49:39 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
