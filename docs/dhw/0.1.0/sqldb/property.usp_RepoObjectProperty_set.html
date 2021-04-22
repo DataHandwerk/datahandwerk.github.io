@@ -1207,10 +1207,22 @@
     <a class="nav-link" href="../manual/create-update-connect-repo-db.html">Create, update and connect repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../manual/sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manual/sqlparser.html">SqlParser.py</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../manual/documentation-generator.html">Database documentation generator</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../manual/persistence-generator.html">Persistence generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
   </li>
 </ul>
   </li>
@@ -1264,7 +1276,7 @@ P
 (
 stored procedure
 ), modify_date:
-2021-04-16 19:26:53</p>
+2021-04-21 11:59:49</p>
 </div>
 <div class="paragraph">
 <p>RepoObject_guid:
@@ -1280,11 +1292,11 @@ stored procedure
 <div class="content">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">[repo].[usp_RepoObjectProperty_set]
-@RepoObject_fullname2 = 'repo.usp_connect_database'
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">EXEC [property].[usp_RepoObjectProperty_set]
+@RepoObject_fullname2 = 'SchemaName.ObjectName'
 , @property_name = 'MS_Description'
 , @property_value =
-'connect repo datatabase to dwh database using synonyms
+'description for SchemaName.ObjectName
 
 see details in xref:manual:create-update-connect-repo-db.adoc[]
 '</code></pre>
@@ -1338,7 +1350,7 @@ see details in xref:manual:create-update-connect-repo-db.adoc[]
 <h3 id="_object_reference_diagram"><a class="anchor" href="#_object_reference_diagram"></a>Object Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-fea4ae818998913e1c74a43e6965745319a131b1.svg" alt="entity_1_1_objectref-property.usp_RepoObjectProperty_set">
+<img src="_images/diag-346545b13a5701f07cead03133075708c52ef121.svg" alt="entity_1_1_objectref-property.usp_RepoObjectProperty_set">
 </div>
 </div>
 </div>
@@ -1346,7 +1358,7 @@ see details in xref:manual:create-update-connect-repo-db.adoc[]
 <h3 id="_object_reference_diagram_referenced"><a class="anchor" href="#_object_reference_diagram_referenced"></a>Object Reference Diagram - Referenced</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-700a1c388b2449677dfd478657665e68d9ccce16.svg" alt="entity_30_0_objectref-property.usp_RepoObjectProperty_set">
+<img src="_images/diag-2fb3f73c373e8958fd79d217a57806c2e67fbaad.svg" alt="entity_30_0_objectref-property.usp_RepoObjectProperty_set">
 </div>
 </div>
 </div>
@@ -1354,7 +1366,7 @@ see details in xref:manual:create-update-connect-repo-db.adoc[]
 <h3 id="_object_reference_diagram_referencing"><a class="anchor" href="#_object_reference_diagram_referencing"></a>Object Reference Diagram - Referencing</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-77d87e59e8a22c9fc6b541560f2f9a25d091d27e.svg" alt="entity_0_30_objectref-property.usp_RepoObjectProperty_set">
+<img src="_images/diag-734759cf489cb82ce9611b2421e699edcc5789a9.svg" alt="entity_0_30_objectref-property.usp_RepoObjectProperty_set">
 </div>
 </div>
 </div>
@@ -1368,11 +1380,11 @@ see details in xref:manual:create-update-connect-repo-db.adoc[]
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">/*
 &lt;&lt;property_start&gt;&gt;exampleUsage
-[repo].[usp_RepoObjectProperty_set]
-@RepoObject_fullname2 = 'repo.usp_connect_database'
+EXEC [property].[usp_RepoObjectProperty_set]
+@RepoObject_fullname2 = 'SchemaName.ObjectName'
 , @property_name = 'MS_Description'
 , @property_value =
-'connect repo datatabase to dwh database using synonyms
+'description for SchemaName.ObjectName
 
 see details in xref:manual:create-update-connect-repo-db.adoc[]
 '

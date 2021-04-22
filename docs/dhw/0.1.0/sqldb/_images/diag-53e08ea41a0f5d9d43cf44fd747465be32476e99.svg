@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="192px" preserveAspectRatio="none" style="width:489px;height:192px;" version="1.1" viewBox="0 0 489 192" width="489px" zoomAndPan="magnify"><defs><filter height="300%" id="f4gwm82lqnfre" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[04197324ff093c4e006e17f566671fc0]
+class repo.RepoObject--><rect codeLine="26" fill="#FFFFFF" filter="url(#f4gwm82lqnfre)" height="68.0001" id="repo.RepoObject" style="stroke:#A80036;stroke-width:1.5;" width="200" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="97.5" y="24.0001">«U»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="88" x="63" y="38.4002">repo.RepoObject</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="206" y1="45.8002" y2="45.8002"/><ellipse cx="18" cy="56.8002" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="93" x="27" y="60.8001">RepoObject_guid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="123" y="60.8001">: uniqueidentifier</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="206" y1="67.0001" y2="67.0001"/><!--MD5=[cb00ad9a1ec0c9791e3607096d07fefd]
+class workflow.ProcedureDependency--><rect codeLine="31" fill="#FFFFFF" filter="url(#f4gwm82lqnfre)" height="68.0001" id="workflow.ProcedureDependency" style="stroke:#A80036;stroke-width:1.5;" width="172" x="21" y="110"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="97.5" y="127.0001">«U»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="166" x="24" y="141.4002">workflow.ProcedureDependency</text><line style="stroke:#A80036;stroke-width:1.5;" x1="22" x2="192" y1="148.8002" y2="148.8002"/><ellipse cx="32" cy="159.8002" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="10" x="41" y="163.8001">id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="17" x="54" y="163.8001">: int</text><line style="stroke:#A80036;stroke-width:1.0;" x1="22" x2="192" y1="170.0001" y2="170.0001"/><!--MD5=[32d556aaad1007a2b25a4a1fc88f9d8a]
+class workflow.ProcedureDependency_gross--><rect codeLine="36" fill="#F5F5F5" filter="url(#f4gwm82lqnfre)" height="54.8002" id="workflow.ProcedureDependency_gross" style="stroke:#A80036;stroke-width:1.5;" width="208" x="267" y="65.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="362" y="82.5001">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="202" x="270" y="96.9002">workflow.ProcedureDependency_gross</text><line style="stroke:#A80036;stroke-width:1.5;" x1="268" x2="474" y1="104.3002" y2="104.3002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="268" x2="474" y1="112.3002" y2="112.3002"/><!--MD5=[58abac8951691db41246bbacaa387f07]
+reverse link repo.RepoObject to workflow.ProcedureDependency_gross--><path codeLine="40" d="M212.12,61.66 C230.14,65.24 248.88,68.96 266.88,72.53 " fill="none" id="repo.RepoObject-backto-workflow.ProcedureDependency_gross" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="207.05,60.66,215.0844,66.3564,211.9518,61.6461,216.6621,58.5135,207.05,60.66" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[09a752d8c177b0dc6217dbc3ea950a74]
+reverse link workflow.ProcedureDependency to workflow.ProcedureDependency_gross--><path codeLine="41" d="M198.04,126.47 C220.13,122.17 243.95,117.54 266.6,113.13 " fill="none" id="workflow.ProcedureDependency-backto-workflow.ProcedureDependency_gross" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="193.06,127.44,202.6599,129.6404,197.9673,126.4814,201.1262,121.7888,193.06,127.44" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[094a6865f68f6da70b32144ba45c1a15]
+@startuml
+left to right direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity repo.RepoObject << U >> {
+  * **RepoObject_guid** : uniqueidentifier
+  - -
+}
+
+entity workflow.ProcedureDependency << U >> {
+  * **id** : int
+  - -
+}
+
+entity workflow.ProcedureDependency_gross << V >> {
+  - -
+}
+
+repo.RepoObject <.. workflow.ProcedureDependency_gross
+workflow.ProcedureDependency <.. workflow.ProcedureDependency_gross
+@enduml
+
+@startuml
+left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity repo.RepoObject << U >> {
+  * **RepoObject_guid** : uniqueidentifier
+  - -
+}
+
+entity workflow.ProcedureDependency << U >> {
+  * **id** : int
+  - -
+}
+
+entity workflow.ProcedureDependency_gross << V >> {
+  - -
+}
+
+repo.RepoObject <.. workflow.ProcedureDependency_gross
+workflow.ProcedureDependency <.. workflow.ProcedureDependency_gross
+@enduml
+
+PlantUML version 1.2021.4(Sun Apr 04 08:49:39 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

@@ -1207,10 +1207,22 @@
     <a class="nav-link" href="../manual/create-update-connect-repo-db.html">Create, update and connect repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../manual/sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manual/sqlparser.html">SqlParser.py</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../manual/documentation-generator.html">Database documentation generator</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../manual/persistence-generator.html">Persistence generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
   </li>
 </ul>
   </li>
@@ -1264,7 +1276,7 @@ V
 (
 view
 ), modify_date:
-2021-04-17 17:52:57</p>
+2021-04-21 11:58:02</p>
 </div>
 <div class="paragraph">
 <p>RepoObject_guid:
@@ -1278,10 +1290,23 @@ DD8F291C-9D61-EB11-84DC-A81E8446D5B0</p>
 <div class="ulist">
 <ul>
 <li>
-<p>default parameters for <a href="config.Parameter.html" class="page">config.Parameter</a></p>
+<p>default parameter values are defined (hard coded) in <a href="config.Parameter_default.html" class="page">config.Parameter_default</a> and available in <a href="config.Parameter.html#column-Parameter_default_value" class="page">config.Parameter.Parameter_default_value</a></p>
 </li>
 <li>
-<p>content can be overwritten in <a href="config.Parameter.html#column-Parameter_value" class="page">config.Parameter.Parameter_value</a></p>
+<p>default parameter values can be overwritten by project specific content using <a href="config.Parameter.html#column-Parameter_value" class="page">config.Parameter.Parameter_value</a></p>
+</li>
+<li>
+<p>resulting content is available in</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="config.Parameter.html#column-Parameter_value<em>result_int" class="page">config.Parameter.Parameter_value</em>result_int</a></p>
+</li>
+<li>
+<p><a href="config.Parameter.html#column-Parameter_value<em>result_nvarchar" class="page">config.Parameter.Parameter_value</em>result_nvarchar</a></p>
+</li>
+</ul>
+</div>
 </li>
 </ul>
 </div>
@@ -1411,7 +1436,7 @@ WHERE NOT EXISTS (
 <h3 id="_object_reference_diagram"><a class="anchor" href="#_object_reference_diagram"></a>Object Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-c845d78525341194a9124437f76020414306445f.svg" alt="entity_1_1_objectref-config.Parameter_default">
+<img src="_images/diag-0a2693a53975e0ebffe1c5b564d0c6092e476a23.svg" alt="entity_1_1_objectref-config.Parameter_default">
 </div>
 </div>
 </div>
@@ -1419,7 +1444,7 @@ WHERE NOT EXISTS (
 <h3 id="_object_reference_diagram_referenced"><a class="anchor" href="#_object_reference_diagram_referenced"></a>Object Reference Diagram - Referenced</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-5ea6ba20a46e328c9cac7147015552795e6992fa.svg" alt="entity_30_0_objectref-config.Parameter_default">
+<img src="_images/diag-2a19e24643918d21d82cc26d57b00fc7fc5bf2dd.svg" alt="entity_30_0_objectref-config.Parameter_default">
 </div>
 </div>
 </div>
@@ -1427,7 +1452,7 @@ WHERE NOT EXISTS (
 <h3 id="_object_reference_diagram_referencing"><a class="anchor" href="#_object_reference_diagram_referencing"></a>Object Reference Diagram - Referencing</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-9f69e9ad985a372468d02d9fd65f8fbc450685d4.svg" alt="entity_0_30_objectref-config.Parameter_default">
+<img src="_images/diag-e79e49949cd2ba049cf1f89565d2f582120f1b8d.svg" alt="entity_0_30_objectref-config.Parameter_default">
 </div>
 </div>
 </div>
@@ -1578,8 +1603,11 @@ WHERE NOT EXISTS (
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">/*
 &lt;&lt;property_start&gt;&gt;MS_Description
-* default parameters for xref:sqldb:config.Parameter.adoc[]
-* content can be overwritten in xref:sqldb:config.Parameter.adoc#column-Parameter_value[config.Parameter.Parameter_value]
+* default parameter values are defined (hard coded) in xref:sqldb:config.Parameter_default.adoc[] and available in xref:sqldb:config.Parameter.adoc#column-Parameter_default_value[config.Parameter.Parameter_default_value]
+* default parameter values can be overwritten by project specific content using xref:sqldb:config.Parameter.adoc#column-Parameter_value[config.Parameter.Parameter_value]
+* resulting content is available in
+** xref:sqldb:config.Parameter.adoc#column-Parameter_value__result_int[config.Parameter.Parameter_value__result_int]
+** xref:sqldb:config.Parameter.adoc#column-Parameter_value__result_nvarchar[config.Parameter.Parameter_value__result_nvarchar]
 &lt;&lt;property_end&gt;&gt;
 
 &lt;&lt;property_start&gt;&gt;exampleUsage

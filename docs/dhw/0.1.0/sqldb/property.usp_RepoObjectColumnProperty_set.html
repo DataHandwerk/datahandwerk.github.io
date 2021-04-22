@@ -1207,10 +1207,22 @@
     <a class="nav-link" href="../manual/create-update-connect-repo-db.html">Create, update and connect repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../manual/sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manual/sqlparser.html">SqlParser.py</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../manual/documentation-generator.html">Database documentation generator</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../manual/persistence-generator.html">Persistence generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
   </li>
 </ul>
   </li>
@@ -1264,7 +1276,7 @@ P
 (
 stored procedure
 ), modify_date:
-2021-04-16 19:26:53</p>
+2021-04-21 12:00:34</p>
 </div>
 <div class="paragraph">
 <p>RepoObject_guid:
@@ -1280,7 +1292,7 @@ stored procedure
 <div class="content">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">Exec repo.usp_RepoObjectColumnProperty_set
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">EXEC property.usp_RepoObjectColumnProperty_set
     @RepoObject_fullname2 = 'SchemaName.TableName'
   , @RepoObjectColumn_name = 'ColumnName'
   , @property_name = 'MS_Description'
@@ -1344,7 +1356,7 @@ stored procedure
 <h3 id="_object_reference_diagram"><a class="anchor" href="#_object_reference_diagram"></a>Object Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-cc99ab15fb1b63d8d34d93c4e33f7df6c81c82f7.svg" alt="entity_1_1_objectref-property.usp_RepoObjectColumnProperty_set">
+<img src="_images/diag-7e0180717cfffc66473f3fd73b81d03455eb2906.svg" alt="entity_1_1_objectref-property.usp_RepoObjectColumnProperty_set">
 </div>
 </div>
 </div>
@@ -1352,7 +1364,7 @@ stored procedure
 <h3 id="_object_reference_diagram_referenced"><a class="anchor" href="#_object_reference_diagram_referenced"></a>Object Reference Diagram - Referenced</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-14e13bae35a6fa24c0671e53dae27c208b8880e1.svg" alt="entity_30_0_objectref-property.usp_RepoObjectColumnProperty_set">
+<img src="_images/diag-9276a3a5d54fa467576545b16b635f5249d5fb62.svg" alt="entity_30_0_objectref-property.usp_RepoObjectColumnProperty_set">
 </div>
 </div>
 </div>
@@ -1360,7 +1372,7 @@ stored procedure
 <h3 id="_object_reference_diagram_referencing"><a class="anchor" href="#_object_reference_diagram_referencing"></a>Object Reference Diagram - Referencing</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-e9d16c23eb7583ff1baf26b1a7cf0fba504db67e.svg" alt="entity_0_30_objectref-property.usp_RepoObjectColumnProperty_set">
+<img src="_images/diag-403333063827e833f28bc02b8e80434605b47007.svg" alt="entity_0_30_objectref-property.usp_RepoObjectColumnProperty_set">
 </div>
 </div>
 </div>
@@ -1374,7 +1386,7 @@ stored procedure
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">/*
 &lt;&lt;property_start&gt;&gt;exampleUsage
-Exec repo.usp_RepoObjectColumnProperty_set
+EXEC property.usp_RepoObjectColumnProperty_set
     @RepoObject_fullname2 = 'SchemaName.TableName'
   , @RepoObjectColumn_name = 'ColumnName'
   , @property_name = 'MS_Description'

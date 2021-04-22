@@ -1207,10 +1207,22 @@
     <a class="nav-link" href="../manual/create-update-connect-repo-db.html">Create, update and connect repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../manual/sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manual/sqlparser.html">SqlParser.py</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../manual/documentation-generator.html">Database documentation generator</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../manual/persistence-generator.html">Persistence generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
   </li>
 </ul>
   </li>
@@ -1264,7 +1276,7 @@ V
 (
 view
 ), modify_date:
-2021-04-17 13:33:30</p>
+2021-04-21 11:28:21</p>
 </div>
 <div class="paragraph">
 <p>RepoObject_guid:
@@ -1384,7 +1396,7 @@ BCD49D8D-4595-EB11-84F4-A81E8446D5B0</p>
 <h3 id="_object_reference_diagram"><a class="anchor" href="#_object_reference_diagram"></a>Object Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-b2f1d64d3861f593919a293b005c0d06e2df7927.svg" alt="entity_1_1_objectref-docs.RepoObject_Plantuml_Entity">
+<img src="_images/diag-84da3ed3f1b77afdeebde9ca7d84a72dd09b2908.svg" alt="entity_1_1_objectref-docs.RepoObject_Plantuml_Entity">
 </div>
 </div>
 </div>
@@ -1392,7 +1404,7 @@ BCD49D8D-4595-EB11-84F4-A81E8446D5B0</p>
 <h3 id="_object_reference_diagram_referenced"><a class="anchor" href="#_object_reference_diagram_referenced"></a>Object Reference Diagram - Referenced</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-ee5a47dad2e2f8b0c0b384fff3ef6d61e5dc6576.svg" alt="entity_30_0_objectref-docs.RepoObject_Plantuml_Entity">
+<img src="_images/diag-b0597ac263075a32d884f932c7d86a558a06b88a.svg" alt="entity_30_0_objectref-docs.RepoObject_Plantuml_Entity">
 </div>
 </div>
 </div>
@@ -1400,7 +1412,7 @@ BCD49D8D-4595-EB11-84F4-A81E8446D5B0</p>
 <h3 id="_object_reference_diagram_referencing"><a class="anchor" href="#_object_reference_diagram_referencing"></a>Object Reference Diagram - Referencing</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-e63b0e955935898c996d2c641b35aa56fb462b56.svg" alt="entity_0_30_objectref-docs.RepoObject_Plantuml_Entity">
+<img src="_images/diag-f55c9f2286d1edda84b4035a7e1038dd1d1ff74b.svg" alt="entity_0_30_objectref-docs.RepoObject_Plantuml_Entity">
 </div>
 </div>
 </div>
@@ -1613,7 +1625,7 @@ to be used in composed PlantUML diagrams
 you need to persist:
 EXEC [docs].[usp_PERSIST_RepoObject_Plantuml_Entity_T]
 */
-Create View docs.RepoObject_Plantuml_Entity
+CREATE View [docs].[RepoObject_Plantuml_Entity]
 As
 Select
     ro.RepoObject_guid
@@ -1637,6 +1649,8 @@ Select
                                         , ' {'
                                         , Char ( 13 ) + Char ( 10 )
                                         , collist.PlantumlPkEntityColumns
+                                        , '  --'
+                                        , Char ( 13 ) + Char ( 10 )
                                         , '}'
                                         , Char ( 13 ) + Char ( 10 )
                                       )

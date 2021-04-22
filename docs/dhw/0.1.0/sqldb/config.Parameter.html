@@ -1207,10 +1207,22 @@
     <a class="nav-link" href="../manual/create-update-connect-repo-db.html">Create, update and connect repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../manual/sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manual/sqlparser.html">SqlParser.py</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../manual/documentation-generator.html">Database documentation generator</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../manual/persistence-generator.html">Persistence generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
   </li>
 </ul>
   </li>
@@ -1269,6 +1281,34 @@ user table
 <div class="paragraph">
 <p>RepoObject_guid:
 2490291C-9D61-EB11-84DC-A81E8446D5B0</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_description"><a class="anchor" href="#_description"></a>Description</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>default parameter values are defined (hard coded) in <a href="config.Parameter_default.html" class="page">config.Parameter_default</a> and available in <a href="#column-Parameter_default_value">config.Parameter.Parameter_default_value</a></p>
+</li>
+<li>
+<p>default parameter values can be overwritten by project specific content using <a href="#column-Parameter_value">config.Parameter.Parameter_value</a></p>
+</li>
+<li>
+<p>resulting content is available in</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#column-Parameter_value<em>result_int">config.Parameter.Parameter_value</em>result_int</a></p>
+</li>
+<li>
+<p><a href="#column-Parameter_value<em>result_nvarchar">config.Parameter.Parameter_value</em>result_nvarchar</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1425,7 +1465,7 @@ user table
 <h3 id="_object_reference_diagram"><a class="anchor" href="#_object_reference_diagram"></a>Object Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-b495b36ef58beafb7ff2e5a16580dcfe1449aef2.svg" alt="entity_1_1_objectref-config.Parameter">
+<img src="_images/diag-50c6fb3569ff059b6e195dbd06766155fdd15495.svg" alt="entity_1_1_objectref-config.Parameter">
 </div>
 </div>
 </div>
@@ -1433,7 +1473,7 @@ user table
 <h3 id="_object_reference_diagram_referenced"><a class="anchor" href="#_object_reference_diagram_referenced"></a>Object Reference Diagram - Referenced</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-50e64c92c793ca41873aa138b57c8e4b03d84f33.svg" alt="entity_30_0_objectref-config.Parameter">
+<img src="_images/diag-3d06af3e90168e4d683403feec4e8efff85a7bbc.svg" alt="entity_30_0_objectref-config.Parameter">
 </div>
 </div>
 </div>
@@ -1441,7 +1481,7 @@ user table
 <h3 id="_object_reference_diagram_referencing"><a class="anchor" href="#_object_reference_diagram_referencing"></a>Object Reference Diagram - Referencing</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-ea7218f96612877e016dee9eb3b7d264812e6126.svg" alt="entity_0_30_objectref-config.Parameter">
+<img src="_images/diag-09791658d064848bc72f7e9085911eb4400398bf.svg" alt="entity_0_30_objectref-config.Parameter">
 </div>
 </div>
 </div>

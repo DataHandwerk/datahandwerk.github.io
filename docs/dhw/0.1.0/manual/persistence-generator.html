@@ -6,6 +6,7 @@
     <title>Persistence generator :: DataHandwerk Docs</title>
     <link rel="canonical" href="https://DataHandwerk.github.io/dhw/0.1.0/manual/persistence-generator.html">
     <link rel="prev" href="documentation-generator.html">
+    <link rel="next" href="sql-server-bug-sys-views-references.html">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4RM6Q8D27"></script>
@@ -1206,10 +1207,22 @@
     <a class="nav-link" href="create-update-connect-repo-db.html">Create, update and connect repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="sqlparser.html">SqlParser.py</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
     <a class="nav-link" href="documentation-generator.html">Database documentation generator</a>
   </li>
   <li class="nav-item is-current-page" data-depth="1">
     <a class="nav-link" href="persistence-generator.html">Persistence generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
   </li>
 </ul>
   </li>
@@ -1254,8 +1267,6 @@
 </aside>
 <article class="doc">
 <h1 class="page">Persistence generator</h1>
-<div id="preamble">
-<div class="sectionbody">
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -1275,7 +1286,7 @@ The procedure <a href="../sqldb/repo.usp_persistence_set.html" class="page">repo
 <i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-Before you execute the procedure <a href="../sqldb/repo.usp_persistence_set.html" class="page">repo.usp_persistence_set</a>, check, if the persistence source should have a real or virtual PK. Some persistence actions are not available, if no PK is defined in the source. Execute <a href="#sqldb:repo.usp_Index_virtual_set">[sqldb:repo.usp_Index_virtual_set]</a> to define virtual PK, whenever this is possible.
+Before you execute the procedure <a href="../sqldb/repo.usp_persistence_set.html" class="page">repo.usp_persistence_set</a>, check, if the persistence source should have a real or virtual PK. Some persistence actions are not available, if no PK is defined in the source. Execute <a href="../sqldb/repo.usp_Index_virtual_set.html" class="page">repo.usp_Index_virtual_set</a> to define virtual PK, whenever this is possible.
 </td>
 </tr>
 </table>
@@ -1401,7 +1412,7 @@ You could use the generated code in a Visual Studio database project and deploy 
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Currently it could be tricky to rename columns in persistence source and to promote this into the target. The target could be used. It still needs some testing and investigation to suggest the best practice. It looks like you sould:</p>
+<p>Currently it could be tricky to rename columns in persistence source and to promote this into the target. It still needs some testing and investigation to suggest the best practice. It looks like you should:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1409,22 +1420,19 @@ You could use the generated code in a Visual Studio database project and deploy 
 <p>start to change the source</p>
 </li>
 <li>
-<p>then EXEC repo.[usp_persistence_set]</p>
+<p><code>EXEC repo.[usp_persistence_set]</code></p>
 </li>
 <li>
 <p>check [repo].[RepoObjectColumn_gross]</p>
 </li>
 <li>
-<p>exec [repo].[usp_main]</p>
+<p><code>EXEC [repo].[usp_main]</code></p>
 </li>
 <li>
 <p>check [repo].[RepoObjectColumn_gross]</p>
 </li>
 <li>
-<p>maybe you need edit the content of the column [persistence_source_RepoObjectColumn_guid]</p>
-</li>
-<li>
-<p>todo: improve the usp</p>
+<p>maybe you need to edit the content of the column [persistence_source_RepoObjectColumn_guid]</p>
 </li>
 </ul>
 </div>
@@ -1432,178 +1440,9 @@ You could use the generated code in a Visual Studio database project and deploy 
 </tr>
 </table>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_faq"><a class="anchor" href="#_faq"></a>FAQ</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_error_in_usp_idnumberparent_number_19310_sql_server_bug_in_system_views"><a class="anchor" href="#_error_in_usp_idnumberparent_number_19310_sql_server_bug_in_system_views"></a>error in usp_id;Number;Parent_Number: 19;310; (SQL Server bug in system views)</h3>
-<div class="paragraph">
-<p>Executing [repo].[usp_main], I get this error:</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>usp_id;Number;Parent_Number: 19;310;
-Msg 205, Level 16, State 1, Procedure ftv_RepoObject_ReferenceTree_via_fullname, Line 41 [Batch Start Line 2]
-All queries combined using a UNION, INTERSECT or EXCEPT operator must have an equal number of expressions in their target lists.
-Msg 205, Level 16, State 1, Procedure ftv_RepoObject_ReferenceTree_via_fullname, Line 41 [Batch Start Line 2]
-All queries combined using a UNION, INTERSECT or EXCEPT operator must have an equal number of expressions in their target lists.
-Msg 2020, Level 16, State 1, Procedure repo.usp_update_Referencing_Count, Line 109 [Batch Start Line 2]
-The dependencies reported for entity "[repo].[ftv_RepoObject_ReferenceTree_via_fullname]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist.
-Msg 205, Level 16, State 1, Procedure ftv_RepoObject_ReferenceTree, Line 41 [Batch Start Line 2]
-All queries combined using a UNION, INTERSECT or EXCEPT operator must have an equal number of expressions in their target lists.
-Msg 205, Level 16, State 1, Procedure ftv_RepoObject_ReferenceTree, Line 41 [Batch Start Line 2]
-All queries combined using a UNION, INTERSECT or EXCEPT operator must have an equal number of expressions in their target lists.
-Msg 2020, Level 16, State 1, Procedure repo.usp_update_Referencing_Count, Line 109 [Batch Start Line 2]
-The dependencies reported for entity "[repo].[ftv_RepoObject_ReferenceTree]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist.
-Msg 205, Level 16, State 1, Procedure ftv_RepoObject_ReferenceTree, Line 41 [Batch Start Line 2]
-All queries combined using a UNION, INTERSECT or EXCEPT operator must have an equal number of expressions in their target lists.
-Msg 205, Level 16, State 1, Procedure ftv_RepoObject_ReferenceTree, Line 41 [Batch Start Line 2]
-All queries combined using a UNION, INTERSECT or EXCEPT operator must have an equal number of expressions in their target lists.
-Msg 2020, Level 16, State 1, Procedure repo.usp_update_Referencing_Count, Line 109 [Batch Start Line 2]
-The dependencies reported for entity "[repo].[RepoObject_ReferenceTree]" might not include references to all columns. This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist.
-
-(1 row affected)</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>usp_id 19 - usp_update_Referencing_Count</p>
-</div>
-<div class="paragraph">
-<p>Number 310</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">UPDATE repo.RepoObjectColumn
-SET [Referencing_Count] = [rorc].[Referencing_Count]
-FROM [repo].[RepoObjectColumn]
-LEFT OUTER JOIN [repo].[RepoObject] [ro]
- ON [repo].[RepoObjectColumn].[RepoObject_guid] = [ro].[RepoObject_guid]
-LEFT OUTER JOIN (
- SELECT [referenced_schema_name]
-  , [referenced_entity_name]
-  , [referenced_minor_name]
-  , COUNT(DISTINCT [RepoObject_guid]) AS [Referencing_Count]
- FROM [repo_sys].[RepoObjectReferenced] AS [ror]
- WHERE [referenced_database_name] = [repo].[fs_dwh_database_name]()
-  OR [referenced_database_name] IS NULL
- GROUP BY [referenced_schema_name]
-  , [referenced_entity_name]
-  , [referenced_minor_name]
- ) AS [rorc]
- ON [repo].[RepoObjectColumn].[SysObjectColumn_name] = [rorc].[referenced_minor_name]
-  AND [ro].[SysObject_name] = [rorc].[referenced_entity_name]
-  AND [ro].[SysObject_schema_name] = [referenced_schema_name]
-WHERE ISNULL([repo].[RepoObjectColumn].[Referencing_Count], 0) &lt;&gt; ISNULL([rorc].[Referencing_Count], 0)</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>the issue is related to <code>[repo_sys].[RepoObjectReferenced]</code></p>
-</div>
-<div class="paragraph">
-<p>there is a bug in SQL Server, and somtimes the usage of this system procedure causes an error:</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>FROM repo.RepoObject AS ro
-CROSS APPLY sys_dwh.dm_sql_referenced_entities(SysObject_fullname, 'OBJECT') AS referenced
-WHERE ISNULL([ro].[has_get_referenced_issue], 0) = 0</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>That&#8217;s why we use <code>[ro].[has_get_referenced_issue]</code></p>
-</div>
-<div class="paragraph">
-<p>it is required to find out the problematic RepoObject and to set<br>
-<code>repo.RepoObject.[has_get_referenced_issue] = 1</code></p>
-</div>
-<div class="paragraph">
-<p>Lets check the error message</p>
-</div>
-<div class="paragraph">
-<p><mark>The dependencies reported for entity "<strong>[repo].[ftv_RepoObject_ReferenceTree]</strong>" might not include references to all columns.</mark> This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist.</p>
-</div>
-<div class="paragraph">
-<p><mark>The dependencies reported for entity "<strong>[repo].[RepoObject_ReferenceTree]</strong>" might not include references to all columns.</mark> This is either because the entity references an object that does not exist or because of an error in one or more statements in the entity.  Before rerunning the query, ensure that there are no errors in the entity and that all objects referenced by the entity exist.</p>
-</div>
-<div class="paragraph">
-<p>we will mark these RepoObject</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">UPDATE [repo].[RepoObject]
-SET [has_get_referenced_issue] = 1
-WHERE [RepoObject_fullname] IN (
-  '[repo].[ftv_RepoObject_ReferenceTree]'
-  , '[repo].[RepoObject_ReferenceTree]'
-  )</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>let&#8217;s check:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">SELECT
-*
-FROM [repo_sys].[RepoObjectReferenced]
-ORDER BY [RepoObject_fullname]</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Maybe you need to exclude more objects, until the view will work again.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_how_to_add_columns_to_graph_tables_and_use_them_as_a_target_of_a_persistence"><a class="anchor" href="#_how_to_add_columns_to_graph_tables_and_use_them_as_a_target_of_a_persistence"></a>How to add columns to graph tables and use them as a target of a persistence?</h3>
-<div class="paragraph">
-<p>I want to use a graph table as persistence target. I created a source view containing the required structure. But now I want to add a column to the source and to the source. Visual Studio Schema compare can&#8217;t create valid SQL because I use restrictions. What should I do?</p>
-</div>
-<div class="paragraph">
-<p>Use TSQl to add columns:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">ALTER TABLE [graph].[RepoObject]
-ADD RepoObject_fullname2 nvarchar(257) NULL;
-
-ALTER TABLE [graph].[RepoObjectColumn]
-ADD
-RepoObject_fullname2 nvarchar(257) NULL,
- RepoObjectColumn_fullname2 nvarchar(386) NULL
-;</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Das funktioniert nicht, da es gerade bei graph tables Probleme gibt</p>
-</div>
-<div class="paragraph">
-<p>in repo.RepoObject mark them as is_repo_managed = 0</p>
-</div>
-<div class="paragraph">
-<p>Sie müssen also is_repo_managed = 1 sein</p>
-</div>
-<div class="paragraph">
-<p>und man muss die Spalten markieren, die null-bar sind.</p>
-</div>
-<div class="qlist qanda">
-<ol>
-<li>
-<p><em>What is the answer?</em></p>
-<p>This is the answer. No blocks are aupported?</p>
-</li>
-<li>
-<p><em>sss</em></p>
-<p>ssss</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
 <nav class="pagination">
   <span class="prev"><a href="documentation-generator.html">Database documentation generator</a></span>
+  <span class="next"><a href="sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a></span>
 </nav>
 </article>
   </div>

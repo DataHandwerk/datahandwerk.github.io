@@ -6,7 +6,7 @@
     <title>Create, update and connect repository database :: DataHandwerk Docs</title>
     <link rel="canonical" href="https://DataHandwerk.github.io/dhw/0.1.0/manual/create-update-connect-repo-db.html">
     <link rel="prev" href="../sqldb/index/IndexSemanticGroup.html">
-    <link rel="next" href="documentation-generator.html">
+    <link rel="next" href="sqlparse-to-get-col-references.html">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4RM6Q8D27"></script>
@@ -1207,10 +1207,22 @@
     <a class="nav-link" href="create-update-connect-repo-db.html">Create, update and connect repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="sqlparser.html">SqlParser.py</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
     <a class="nav-link" href="documentation-generator.html">Database documentation generator</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="persistence-generator.html">Persistence generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
   </li>
 </ul>
   </li>
@@ -1278,6 +1290,22 @@
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">EXEC [config].[usp_connect_database]
 @dwh_database_name = 'WideWorldImporters'</code></pre>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>check and edit the content of <a href="../sqldb/config.Parameter.html" class="page">config.Parameter</a></p>
+</li>
+<li>
+<p>synchronize repository with dwh database extended properties</p>
+<div class="exampleblock">
+<div class="title">Example 2. synchronize repository with dwh database extended properties</div>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">EXEC [repo].[usp_main]</code></pre>
 </div>
 </div>
 </div>
@@ -1553,7 +1581,7 @@ reconnect the repo database to the right dwh database after using publish or dac
 </table>
 </div>
 <div class="exampleblock">
-<div class="title">Example 2. connect repository database to the dwh database 'WideWorldImporters'</div>
+<div class="title">Example 3. connect repository database to the dwh database 'WideWorldImporters'</div>
 <div class="content">
 <div class="listingblock">
 <div class="content">
@@ -1565,9 +1593,120 @@ reconnect the repo database to the right dwh database after using publish or dac
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_check_config_parameter"><a class="anchor" href="#_check_config_parameter"></a>5. check config.Parameter</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>check and edit the content of <a href="../sqldb/config.Parameter.html" class="page">config.Parameter</a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>default parameter values are defined (hard coded) in <a href="../sqldb/config.Parameter_default.html" class="page">config.Parameter_default</a> and available in <a href="../sqldb/config.Parameter.html#column-Parameter_default_value" class="page">config.Parameter.Parameter_default_value</a></p>
+</li>
+<li>
+<p>default parameter values can be overwritten by project specific content using <a href="../sqldb/config.Parameter.html#column-Parameter_value" class="page">config.Parameter.Parameter_value</a></p>
+</li>
+<li>
+<p>resulting content is available in</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../sqldb/config.Parameter.html#column-Parameter_value<em>result_int" class="page">config.Parameter.Parameter_value</em>result_int</a></p>
+</li>
+<li>
+<p><a href="../sqldb/config.Parameter.html#column-Parameter_value<em>result_nvarchar" class="page">config.Parameter.Parameter_value</em>result_nvarchar</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_synchronize_repository_with_dwh_database_extended_properties"><a class="anchor" href="#_synchronize_repository_with_dwh_database_extended_properties"></a>6. synchronize repository with dwh database extended properties</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_description"><a class="anchor" href="#_description"></a>6.1. Description</h3>
+<div class="paragraph">
+<p>main procedure</p>
+</div>
+<div class="paragraph">
+<p>this central procedure must be executed regularly, try to get e feeling, when it is required<br>
+It does:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>EXEC repo.usp_sync_guid</code> to synchronize repository database and dwh database</p>
+<div class="ulist">
+<ul>
+<li>
+<p>some dwh database extended properties (ep) are synchronized with repository database</p>
+<div class="ulist">
+<ul>
+<li>
+<p>ep RepoObject_guid for each database object</p>
+</li>
+<li>
+<p>ep RepoObjectColumn_guid for each database object column</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>index processing</p>
+<div class="ulist">
+<ul>
+<li>
+<p>combination of real and virtual indexes</p>
+</li>
+<li>
+<p>virtual and real foreign key</p>
+</li>
+<li>
+<p>code generation and updates for persistence procedures</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>process references and data lineage</p>
+</li>
+<li>
+<p>inheritance of properties</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>see <a href="../sqldb/repo.usp_main.html#_procdure_steps" class="page">Procedure steps</a> for details.</p>
+</div>
+<div class="paragraph">
+<p>use links in <a href="../sqldb/repo.usp_main.html#_referenced_objects" class="page">Referenced objects</a> to get details of called sub procedures</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example 4. synchronize repository with dwh database extended properties</div>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">EXEC [repo].[usp_main]</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>See details: <a href="../sqldb/repo.usp_main.html" class="page">repo.usp_main</a></p>
+</div>
+</div>
+</div>
+</div>
 <nav class="pagination">
   <span class="prev"><a href="../sqldb/index/IndexSemanticGroup.html">Index SemanticGroup</a></span>
-  <span class="next"><a href="documentation-generator.html">Database documentation generator</a></span>
+  <span class="next"><a href="sqlparse-to-get-col-references.html">SqlParse to detect column references</a></span>
 </nav>
 </article>
   </div>

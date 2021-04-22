@@ -1207,10 +1207,22 @@
     <a class="nav-link" href="../manual/create-update-connect-repo-db.html">Create, update and connect repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../manual/sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manual/sqlparser.html">SqlParser.py</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../manual/documentation-generator.html">Database documentation generator</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../manual/persistence-generator.html">Persistence generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
   </li>
 </ul>
   </li>
@@ -1278,7 +1290,7 @@ B090291C-9D61-EB11-84DC-A81E8446D5B0</p>
 <div class="ulist">
 <ul>
 <li>
-<p>synchronizes RepoObject_guid with extended properties "RepoObject_guid"</p>
+<p>synchronizes RepoObject_guid with dwh database extended properties "RepoObject_guid"</p>
 </li>
 </ul>
 </div>
@@ -1677,7 +1689,7 @@ B090291C-9D61-EB11-84DC-A81E8446D5B0</p>
 <h3 id="_object_reference_diagram"><a class="anchor" href="#_object_reference_diagram"></a>Object Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-6dc0630384734f9f8dbaf2658ca8b50f2eed174c.svg" alt="entity_1_1_objectref-repo.usp_sync_guid_RepoObject">
+<img src="_images/diag-018461d6d0e125dd8f3de1358bca0cc1b6508de0.svg" alt="entity_1_1_objectref-repo.usp_sync_guid_RepoObject">
 </div>
 </div>
 </div>
@@ -1685,7 +1697,7 @@ B090291C-9D61-EB11-84DC-A81E8446D5B0</p>
 <h3 id="_object_reference_diagram_referenced"><a class="anchor" href="#_object_reference_diagram_referenced"></a>Object Reference Diagram - Referenced</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-68cf1665f7a0eca947c8acc2104304a2c6a5ec0d.svg" alt="entity_30_0_objectref-repo.usp_sync_guid_RepoObject">
+<img src="_images/diag-2eb271110b9cc13ce17d67e678faf9d95830606b.svg" alt="entity_30_0_objectref-repo.usp_sync_guid_RepoObject">
 </div>
 </div>
 </div>
@@ -1693,7 +1705,7 @@ B090291C-9D61-EB11-84DC-A81E8446D5B0</p>
 <h3 id="_object_reference_diagram_referencing"><a class="anchor" href="#_object_reference_diagram_referencing"></a>Object Reference Diagram - Referencing</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-e7c916dfdc3e0d29cf582394a1dc426d960004b5.svg" alt="entity_0_30_objectref-repo.usp_sync_guid_RepoObject">
+<img src="_images/diag-09bc7a48aa0103fa287c334a32d102d4933fc006.svg" alt="entity_0_30_objectref-repo.usp_sync_guid_RepoObject">
 </div>
 </div>
 </div>
