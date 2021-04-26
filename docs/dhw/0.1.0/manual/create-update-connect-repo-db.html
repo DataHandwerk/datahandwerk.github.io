@@ -385,10 +385,16 @@
     <a class="nav-link" href="../sqldb/logs.ExecutionLog_parent.html">logs.ExecutionLog_parent</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/logs.ExecutionLog_plantUML_Sequence_start_stop.html">logs.ExecutionLog_plantUML_Sequence_start_stop</a>
+    <a class="nav-link" href="../sqldb/logs.ExecutionLog_puml_Sequence_start_stop.html">logs.ExecutionLog_puml_Sequence_start_stop</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/logs.ftv_ExecutionLog_tree.html">logs.ftv_ExecutionLog_tree</a>
+    <a class="nav-link" href="../sqldb/logs.ftv_ExecutionLog_puml_sequence_start_stop_per_execution.html">logs.ftv_ExecutionLog_puml_sequence_start_stop_per_execution</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/logs.ftv_ExecutionLog_puml_tree.html">logs.ftv_ExecutionLog_puml_tree</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/logs.ftv_ExecutionLog_puml_tree_per_execution.html">logs.ftv_ExecutionLog_puml_tree_per_execution</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/logs.usp_ExecutionLog_insert.html">logs.usp_ExecutionLog_insert</a>
@@ -550,6 +556,9 @@
     <a class="nav-link" href="../sqldb/reference.RepoObject_reference_union.html">reference.RepoObject_reference_union</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.RepoObject_reference_virtual.html">reference.RepoObject_reference_virtual</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.RepoObject_referenced_level.html">reference.RepoObject_referenced_level</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -604,6 +613,9 @@
     <a class="nav-link" href="../sqldb/reference.RepoObjectColumn_reference_union.html">reference.RepoObjectColumn_reference_union</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.RepoObjectColumn_reference_virtual.html">reference.RepoObjectColumn_reference_virtual</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.RepoObjectColumn_ReferencedList.html">reference.RepoObjectColumn_ReferencedList</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -619,10 +631,16 @@
     <a class="nav-link" href="../sqldb/reference.RepoObjectColumn_RelationScript.html">reference.RepoObjectColumn_RelationScript</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.RepoObjectColumnSource_virtual.html">reference.RepoObjectColumnSource_virtual</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.RepoObjectSource_FirstResultSet.html">reference.RepoObjectSource_FirstResultSet</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.RepoObjectSource_QueryPlan.html">reference.RepoObjectSource_QueryPlan</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.RepoObjectSource_virtual.html">reference.RepoObjectSource_virtual</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.SysObjectColumn_QueryPlanExpression.html">reference.SysObjectColumn_QueryPlanExpression</a>
@@ -637,10 +655,16 @@
     <a class="nav-link" href="../sqldb/reference.usp_RepoObject_update_SysObjectQueryPlan.html">reference.usp_RepoObject_update_SysObjectQueryPlan</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.usp_RepoObjectColumnSource_virtual_set.html">reference.usp_RepoObjectColumnSource_virtual_set</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.usp_RepoObjectSource_FirstResultSet.html">reference.usp_RepoObjectSource_FirstResultSet</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.usp_RepoObjectSource_QueryPlan.html">reference.usp_RepoObjectSource_QueryPlan</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.usp_RepoObjectSource_virtual_set.html">reference.usp_RepoObjectSource_virtual_set</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.usp_update_Referencing_Count.html">reference.usp_update_Referencing_Count</a>
@@ -1217,7 +1241,16 @@
     <a class="nav-link" href="documentation-generator.html">Database documentation generator</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="execution-log.html">Execution log</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="uspgenerator.html">usp generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <a class="nav-link" href="persistence-generator.html">Persistence generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ssms-configuration.html">SSMS configuration</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
@@ -1274,13 +1307,13 @@
 <p>create a new repo database</p>
 </li>
 <li>
-<p>clone github repository from project <a href="https://github.com/DataHandwerk/DataHandwerk-toolkit-mssql" class="bare">https://github.com/DataHandwerk/DataHandwerk-toolkit-mssql</a></p>
+<p>clone GitHub repository from project <a href="https://github.com/DataHandwerk/DataHandwerk-toolkit-mssql" class="bare">https://github.com/DataHandwerk/DataHandwerk-toolkit-mssql</a></p>
 </li>
 <li>
 <p>deploy the database project db_DataHandwerk to your database</p>
 </li>
 <li>
-<p>connect repo datatabase to dwh database using synonyms executing the stored procedure <a href="../sqldb/config.usp_connect_database.html" class="page">config.usp_connect_database</a></p>
+<p>connect repo database to dwh database using synonyms executing the stored procedure <a href="../sqldb/config.usp_connect_database.html" class="page">config.usp_connect_database</a></p>
 <div class="exampleblock">
 <div class="title">Example 1. connect repository database to the dwh database 'WideWorldImporters'</div>
 <div class="content">
@@ -1309,6 +1342,16 @@
 </div>
 </div>
 </li>
+<li>
+<p>optional: import extended_properties from dwh database into repository properties</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../sqldb/property.usp_sync_ExtendedProperties_Sys2Repo_InsertUpdate.html" class="page">property.usp_sync_ExtendedProperties_Sys2Repo_InsertUpdate</a></p>
+</li>
+</ul>
+</div>
+</li>
 </ul>
 </div>
 <div class="admonitionblock important">
@@ -1331,7 +1374,7 @@ reconnect the repo database to the right dwh database after using publish or dac
 <div class="sectionbody">
 <div class="paragraph">
 <p>First we need to create a "repository database" and connect it with the "dwh database".<br>
-Here are some excerpts from the architectur description:</p>
+Here are some excerpts from the architecture description:</p>
 </div>
 <div class="quoteblock">
 <blockquote>
@@ -1342,7 +1385,7 @@ Here are some excerpts from the architectur description:</p>
 <ol class="arabic">
 <li>
 <p>The project is based on Microsoft SQL Server (mssql):<br>
-SQL Server 2019 or above</p>
+SQL Server 2019 or above.</p>
 </li>
 <li>
 <p>It must <strong>always</strong> be possible for BI developers to use <strong>all</strong> mssql and Azure features in DWH databases.</p>
@@ -1533,7 +1576,7 @@ reconnect the repo database to the right dwh database after using publish or dac
 <p>This is a one-time process that usually does not need to be repeated later.</p>
 </div>
 <div class="paragraph">
-<p>The post deployment script will be executed, if you use publish or build, but it is not executed, when using schemacompare. You can also just copy the code from here and execute it.<br>
+<p>The post deployment script will be executed, if you use publish or build, but it is not executed, when using schema compare. You can also just copy the code from here and execute it.<br>
 Or you can skip the execution at all, because and as long as the content of this script is also called in the procedure <a href="../sqldb/config.usp_connect_database.html" class="page">config.usp_connect_database</a>.</p>
 </div>
 <div class="listingblock">
@@ -1699,6 +1742,14 @@ It does:</p>
 <div class="paragraph">
 <p>See details: <a href="../sqldb/repo.usp_main.html" class="page">repo.usp_main</a></p>
 </div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_optional_import_extended_properties_from_dwh_database_into_repository_properties"><a class="anchor" href="#_optional_import_extended_properties_from_dwh_database_into_repository_properties"></a>7. optional: import extended_properties from dwh database into repository properties</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="../sqldb/property.usp_sync_ExtendedProperties_Sys2Repo_InsertUpdate.html" class="page">property.usp_sync_ExtendedProperties_Sys2Repo_InsertUpdate</a></p>
 </div>
 </div>
 </div>

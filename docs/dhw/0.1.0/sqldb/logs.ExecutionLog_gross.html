@@ -385,10 +385,16 @@
     <a class="nav-link" href="logs.ExecutionLog_parent.html">logs.ExecutionLog_parent</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="logs.ExecutionLog_plantUML_Sequence_start_stop.html">logs.ExecutionLog_plantUML_Sequence_start_stop</a>
+    <a class="nav-link" href="logs.ExecutionLog_puml_Sequence_start_stop.html">logs.ExecutionLog_puml_Sequence_start_stop</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="logs.ftv_ExecutionLog_tree.html">logs.ftv_ExecutionLog_tree</a>
+    <a class="nav-link" href="logs.ftv_ExecutionLog_puml_sequence_start_stop_per_execution.html">logs.ftv_ExecutionLog_puml_sequence_start_stop_per_execution</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="logs.ftv_ExecutionLog_puml_tree.html">logs.ftv_ExecutionLog_puml_tree</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="logs.ftv_ExecutionLog_puml_tree_per_execution.html">logs.ftv_ExecutionLog_puml_tree_per_execution</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="logs.usp_ExecutionLog_insert.html">logs.usp_ExecutionLog_insert</a>
@@ -550,6 +556,9 @@
     <a class="nav-link" href="reference.RepoObject_reference_union.html">reference.RepoObject_reference_union</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.RepoObject_reference_virtual.html">reference.RepoObject_reference_virtual</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObject_referenced_level.html">reference.RepoObject_referenced_level</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -604,6 +613,9 @@
     <a class="nav-link" href="reference.RepoObjectColumn_reference_union.html">reference.RepoObjectColumn_reference_union</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.RepoObjectColumn_reference_virtual.html">reference.RepoObjectColumn_reference_virtual</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObjectColumn_ReferencedList.html">reference.RepoObjectColumn_ReferencedList</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -619,10 +631,16 @@
     <a class="nav-link" href="reference.RepoObjectColumn_RelationScript.html">reference.RepoObjectColumn_RelationScript</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.RepoObjectColumnSource_virtual.html">reference.RepoObjectColumnSource_virtual</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObjectSource_FirstResultSet.html">reference.RepoObjectSource_FirstResultSet</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObjectSource_QueryPlan.html">reference.RepoObjectSource_QueryPlan</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.RepoObjectSource_virtual.html">reference.RepoObjectSource_virtual</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.SysObjectColumn_QueryPlanExpression.html">reference.SysObjectColumn_QueryPlanExpression</a>
@@ -637,10 +655,16 @@
     <a class="nav-link" href="reference.usp_RepoObject_update_SysObjectQueryPlan.html">reference.usp_RepoObject_update_SysObjectQueryPlan</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.usp_RepoObjectColumnSource_virtual_set.html">reference.usp_RepoObjectColumnSource_virtual_set</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.usp_RepoObjectSource_FirstResultSet.html">reference.usp_RepoObjectSource_FirstResultSet</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.usp_RepoObjectSource_QueryPlan.html">reference.usp_RepoObjectSource_QueryPlan</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.usp_RepoObjectSource_virtual_set.html">reference.usp_RepoObjectSource_virtual_set</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.usp_update_Referencing_Count.html">reference.usp_update_Referencing_Count</a>
@@ -1217,7 +1241,16 @@
     <a class="nav-link" href="../manual/documentation-generator.html">Database documentation generator</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/execution-log.html">Execution log</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/uspgenerator.html">usp generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../manual/persistence-generator.html">Persistence generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/ssms-configuration.html">SSMS configuration</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../manual/sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
@@ -1274,7 +1307,7 @@ V
 (
 view
 ), modify_date:
-2021-04-12 20:49:39</p>
+2021-04-25 21:22:20</p>
 </div>
 <div class="paragraph">
 <p>RepoObject_guid:
@@ -1285,7 +1318,41 @@ BB90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 <div class="sect1">
 <h2 id="_examples"><a class="anchor" href="#_examples"></a>Examples</h2>
 <div class="sectionbody">
+<div class="exampleblock">
+<div class="title">Example 1. Usage</div>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">--get detailed PlantUML sequence diagram
+--you could add skinparam to modify it, for example
+--skinparam maxmessagesize 250
 
+Select
+    id
+  , puml_Sequence
+  , execution_instance_guid
+  , parent_execution_log_id
+  , proc_schema_name
+  , proc_name
+  , step_id
+  , step_name
+  , created_dt
+  , source_object
+  , target_object
+  , inserted
+  , updated
+  , deleted
+From
+    logs.ExecutionLog_gross
+Where
+    id
+Between 33386 And 33404
+Order By
+    id;</code></pre>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -1642,14 +1709,6 @@ BB90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-plantUML_Sequence">plantUML_Sequence</a></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(1550)</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-proc_id">proc_id</a></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>int</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
@@ -1669,6 +1728,14 @@ BB90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-proc_schema_name">proc_schema_name</a></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(128)</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-puml_Sequence">puml_Sequence</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(1550)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
@@ -1760,7 +1827,7 @@ BB90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="logs.ftv_ExecutionLog_tree.html" class="page">logs.ftv_ExecutionLog_tree</a></p>
+<p><a href="logs.ftv_ExecutionLog_puml_tree.html" class="page">logs.ftv_ExecutionLog_puml_tree</a></p>
 </li>
 </ul>
 </div>
@@ -1769,7 +1836,7 @@ BB90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 <h3 id="_object_reference_diagram"><a class="anchor" href="#_object_reference_diagram"></a>Object Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-0ddb9b3de8517e82119f62c4c6d3a5e3eb3234b1.svg" alt="entity_1_1_objectref-logs.ExecutionLog_gross">
+<img src="_images/diag-fc83362b28857eddce033fd59adcded9c48d2d2d.svg" alt="entity_1_1_objectref-logs.ExecutionLog_gross">
 </div>
 </div>
 </div>
@@ -1785,7 +1852,7 @@ BB90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 <h3 id="_object_reference_diagram_referencing"><a class="anchor" href="#_object_reference_diagram_referencing"></a>Object Reference Diagram - Referencing</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-dba2aae2acb72d0951376309035da8ac1d7c5769.svg" alt="entity_0_30_objectref-logs.ExecutionLog_gross">
+<img src="_images/diag-b8f0a06be87a759b53f58d7528af06076782abaf.svg" alt="entity_0_30_objectref-logs.ExecutionLog_gross">
 </div>
 </div>
 </div>
@@ -1793,7 +1860,7 @@ BB90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 <h3 id="_column_reference_diagram"><a class="anchor" href="#_column_reference_diagram"></a>Column Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-48487e054e4fddc30c3668a09cd79e4a5066b2a9.svg" alt="entity_1_1_colref-logs.ExecutionLog_gross">
+<img src="_images/diag-7cb777a7b55f82a164af847e5c07c0ea8aba305e.svg" alt="entity_1_1_colref-logs.ExecutionLog_gross">
 </div>
 </div>
 </div>
@@ -3219,29 +3286,6 @@ BB90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="column-plantUML_Sequence"><a class="anchor" href="#column-plantUML_Sequence"></a>plantUML_Sequence</h3>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 16.6666%;">
-<col style="width: 16.6666%;">
-<col style="width: 16.6666%;">
-<col style="width: 16.6666%;">
-<col style="width: 16.6666%;">
-<col style="width: 16.667%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>plantUML_Sequence</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(1550)</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect2">
 <h3 id="column-proc_id"><a class="anchor" href="#column-proc_id"></a>proc_id</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -3345,6 +3389,29 @@ BB90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </div>
 </div>
 </div>
+</div>
+<div class="sect2">
+<h3 id="column-puml_Sequence"><a class="anchor" href="#column-puml_Sequence"></a>puml_Sequence</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>puml_Sequence</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(1550)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect2">
 <h3 id="column-source_object"><a class="anchor" href="#column-source_object"></a>source_object</h3>
@@ -3599,10 +3666,37 @@ BB90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 <div class="listingblock">
 <div class="title">logs.ExecutionLog_gross script</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">--, [plantUML_Sequence] = --
---  --combine the result with
---  --skinparam maxmessagesize 250
-CREATE View logs.ExecutionLog_gross
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">/*
+&lt;&lt;property_start&gt;&gt;exampleUsage
+--get detailed PlantUML sequence diagram
+--you could add skinparam to modify it, for example
+--skinparam maxmessagesize 250
+
+Select
+    id
+  , puml_Sequence
+  , execution_instance_guid
+  , parent_execution_log_id
+  , proc_schema_name
+  , proc_name
+  , step_id
+  , step_name
+  , created_dt
+  , source_object
+  , target_object
+  , inserted
+  , updated
+  , deleted
+From
+    logs.ExecutionLog_gross
+Where
+    id
+Between 33386 And 33404
+Order By
+    id;
+&lt;&lt;property_end&gt;&gt;
+*/
+CREATE View [logs].[ExecutionLog_gross]
 As
 Select
     id
@@ -3666,7 +3760,7 @@ Select
                                                          , Max ( created_dt ) Over ( Partition By execution_instance_guid )
                                                        )
   --
-  , plantUML_Sequence                       = --
+  , puml_Sequence                       = --
   --combine the result with
   --skinparam maxmessagesize 250
   Case

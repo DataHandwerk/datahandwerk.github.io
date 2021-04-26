@@ -6,7 +6,7 @@
     <title>Database documentation generator :: DataHandwerk Docs</title>
     <link rel="canonical" href="https://DataHandwerk.github.io/dhw/0.1.0/manual/documentation-generator.html">
     <link rel="prev" href="properties-inheritance.html">
-    <link rel="next" href="persistence-generator.html">
+    <link rel="next" href="execution-log.html">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4RM6Q8D27"></script>
@@ -385,10 +385,16 @@
     <a class="nav-link" href="../sqldb/logs.ExecutionLog_parent.html">logs.ExecutionLog_parent</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/logs.ExecutionLog_plantUML_Sequence_start_stop.html">logs.ExecutionLog_plantUML_Sequence_start_stop</a>
+    <a class="nav-link" href="../sqldb/logs.ExecutionLog_puml_Sequence_start_stop.html">logs.ExecutionLog_puml_Sequence_start_stop</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/logs.ftv_ExecutionLog_tree.html">logs.ftv_ExecutionLog_tree</a>
+    <a class="nav-link" href="../sqldb/logs.ftv_ExecutionLog_puml_sequence_start_stop_per_execution.html">logs.ftv_ExecutionLog_puml_sequence_start_stop_per_execution</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/logs.ftv_ExecutionLog_puml_tree.html">logs.ftv_ExecutionLog_puml_tree</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/logs.ftv_ExecutionLog_puml_tree_per_execution.html">logs.ftv_ExecutionLog_puml_tree_per_execution</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/logs.usp_ExecutionLog_insert.html">logs.usp_ExecutionLog_insert</a>
@@ -550,6 +556,9 @@
     <a class="nav-link" href="../sqldb/reference.RepoObject_reference_union.html">reference.RepoObject_reference_union</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.RepoObject_reference_virtual.html">reference.RepoObject_reference_virtual</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.RepoObject_referenced_level.html">reference.RepoObject_referenced_level</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -604,6 +613,9 @@
     <a class="nav-link" href="../sqldb/reference.RepoObjectColumn_reference_union.html">reference.RepoObjectColumn_reference_union</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.RepoObjectColumn_reference_virtual.html">reference.RepoObjectColumn_reference_virtual</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.RepoObjectColumn_ReferencedList.html">reference.RepoObjectColumn_ReferencedList</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -619,10 +631,16 @@
     <a class="nav-link" href="../sqldb/reference.RepoObjectColumn_RelationScript.html">reference.RepoObjectColumn_RelationScript</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.RepoObjectColumnSource_virtual.html">reference.RepoObjectColumnSource_virtual</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.RepoObjectSource_FirstResultSet.html">reference.RepoObjectSource_FirstResultSet</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.RepoObjectSource_QueryPlan.html">reference.RepoObjectSource_QueryPlan</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.RepoObjectSource_virtual.html">reference.RepoObjectSource_virtual</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.SysObjectColumn_QueryPlanExpression.html">reference.SysObjectColumn_QueryPlanExpression</a>
@@ -637,10 +655,16 @@
     <a class="nav-link" href="../sqldb/reference.usp_RepoObject_update_SysObjectQueryPlan.html">reference.usp_RepoObject_update_SysObjectQueryPlan</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.usp_RepoObjectColumnSource_virtual_set.html">reference.usp_RepoObjectColumnSource_virtual_set</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.usp_RepoObjectSource_FirstResultSet.html">reference.usp_RepoObjectSource_FirstResultSet</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.usp_RepoObjectSource_QueryPlan.html">reference.usp_RepoObjectSource_QueryPlan</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.usp_RepoObjectSource_virtual_set.html">reference.usp_RepoObjectSource_virtual_set</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.usp_update_Referencing_Count.html">reference.usp_update_Referencing_Count</a>
@@ -1217,7 +1241,16 @@
     <a class="nav-link" href="documentation-generator.html">Database documentation generator</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="execution-log.html">Execution log</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="uspgenerator.html">usp generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <a class="nav-link" href="persistence-generator.html">Persistence generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ssms-configuration.html">SSMS configuration</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
@@ -1300,7 +1333,7 @@
 </ul>
 </div>
 <div class="paragraph">
-<p>in the following steps replace "D:\Repos\GitHub\DataHandwerk\sqldb-docs" by your own folder and repository name</p>
+<p>steps</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1318,7 +1351,21 @@
 <p>at least one commit is required to enable Antora to use the repository</p>
 </li>
 <li>
-<p>create required folder structure</p>
+<p>create required folder structure<br>
+On Windows you can use <code>xcopy</code> to copy an existing folder structure without files</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>xcopy C:\SourceFolder D:\TargetFolder /t /e</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>xcopy D:\Repos\GitHub\DataHandwerk\sqldb-docs D:\Repos\aaa\bbb\MyDataBase_sqldb /t /e</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>in the following steps replace "D:\Repos\GitHub\DataHandwerk\sqldb-docs" by your own folder and repository name</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
@@ -1392,7 +1439,7 @@
 <p>D:\Repos\GitHub\DataHandwerk\sqldb-docs\docs\modules\sqldb\nav.adoc</p>
 </li>
 <li>
-<p>file content (remove the '/' infront of 'include')</p>
+<p>file content (Remove the <code>/</code> at the beginning of the line before the <code>include</code>.)</p>
 <div class="literalblock">
 <div class="content">
 <pre>/include::partial$navlist/nav-by-schema.adoc[]
@@ -1412,7 +1459,8 @@
 <div class="content">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">Update
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">--keep the "\" at the end of the Parameter_value!
+Update
     [config].[Parameter]
 Set
     [Parameter_value] = 'D:\Repos\GitHub\DataHandwerk\sqldb-docs\docs\modules\sqldb\'
@@ -1461,7 +1509,7 @@ nav: <i class="conum" data-value="2"></i><b>(2)</b>
 </div>
 </div>
 <div class="paragraph">
-<p>We have two (2) source repositories and we need the <code>antora.yml</code> in each source repository. The <code>title</code> should be contained only in the main <code>antora.yml</code>.</p>
+<p>We have two (2) source repositories, and we need the <code>antora.yml</code> in each source repository. The <code>title</code> should be contained only in the main <code>antora.yml</code>.</p>
 </div>
 <div class="exampleblock">
 <div class="content">
@@ -1533,7 +1581,7 @@ It is also the output for the generated documentation.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>They are different in the output dir.</p>
+<p>They are different in the output folder.</p>
 </li>
 <li>
 <p>they are different in the <code>kroki-fetch-diagram: true</code> option. It takes a lot of time to generate all diagrams and this option is used only to create the final site.</p>
@@ -1587,15 +1635,15 @@ runtime:
 <table>
 <tr>
 <td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>in case you have only the database documentation you need to set the start_page to some page in your modul (for example 'myproject:sqldb:dbo.MyTable.adoc'). 'dhw' or 'myproject' is the project name defined in the <code>antora.yml</code></td>
+<td>in case you have only the database documentation you need to set the <code>start_page</code> to some page in your module (for example 'myproject:sqldb:dbo.MyTable.adoc'). 'dhw' or 'myproject' is the project name defined in the <code>antora.yml</code></td>
 </tr>
 <tr>
 <td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>requird to render diagrams</td>
+<td>required to render diagrams</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="3"></i><b>3</b></td>
-<td>kroki-fetch-diagram is required for the final site, but it takes a lot of time and should be disables if you want to check the results localy. Keep in mind that some big digrams will not be shown if this option is disabled, but they will be rendered for the final site if enabled</td>
+<td>kroki-fetch-diagram is required for the final site, but it takes a lot of time and should be disabled if you want to check the results locally. Keep in mind that some big diagrams will not be shown if this option is disabled, but they will be rendered for the final site if enabled</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="4"></i><b>4</b></td>
@@ -1618,7 +1666,7 @@ runtime:
 </div>
 </li>
 <li>
-<p>the ".gitignore" file should contain some entries to avoid commiting some content into the repository.</p>
+<p>the ".gitignore" file should contain some entries to avoid committing some content into the repository.</p>
 <div class="exampleblock">
 <div class="content">
 <div class="literalblock">
@@ -1684,7 +1732,7 @@ New-Item .\docs\.nojekyll -ItemType file -Force <i class="conum" data-value="1">
 <table>
 <tr>
 <td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>the file <code>.nojekyll</code> needs to be created if the site should be published as github page. See: <a href="https://docs.antora.org/antora/2.3/publish-to-github-pages/#nojekyll" class="bare">https://docs.antora.org/antora/2.3/publish-to-github-pages/#nojekyll</a></td>
+<td>the file <code>.nojekyll</code> needs to be created if the site should be published as GitHub page. See: <a href="https://docs.antora.org/antora/2.3/publish-to-github-pages/#nojekyll" class="bare">https://docs.antora.org/antora/2.3/publish-to-github-pages/#nojekyll</a></td>
 </tr>
 </table>
 </div>
@@ -1943,25 +1991,30 @@ GO</code></pre>
 </td>
 <td class="content">
 Antora Export will not delete any content. After Antora Export and before creating the site you should check the <code>D:\Repos\GitHub\DataHandwerk\sqldb-docs\docs\modules\sqldb\pages</code> for outdated files and delete them to avoid them to be generated. Just sort the folder by file creation date.<br>
-You can also clean up the partials. But this is not so important, because these files are only used when they are included into the pages.
+You can also clean up the partials. This is not so important, because these files are only used when they are included into the pages.
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>In the Antora Playbook project call Antora to build the local or the final site. You can use the prepared scripts.</p>
+<p>In the Antora Playbook project call Antora to build the local or the final site. You can use the prepared scripts:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-powershell hljs" data-lang="powershell">./local-playbook.ps1</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p>The result is a static site. You can browse the content localy on the PC where you created the documentation.</p>
+<p>The result is a static site. You can browse the content locally on the PC where you created the documentation.</p>
 </div>
 <div class="paragraph">
-<p>If you want to publish the site as github page, you need to create <code>.nojekyll</code>: <a href="https://docs.antora.org/antora/2.3/publish-to-github-pages/#nojekyll" class="bare">https://docs.antora.org/antora/2.3/publish-to-github-pages/#nojekyll</a></p>
+<p>If you want to publish the site as GitHub page, you need to create <code>.nojekyll</code>: <a href="https://docs.antora.org/antora/2.3/publish-to-github-pages/#nojekyll" class="bare">https://docs.antora.org/antora/2.3/publish-to-github-pages/#nojekyll</a></p>
 </div>
 </div>
 </div>
 <nav class="pagination">
   <span class="prev"><a href="properties-inheritance.html">Properties Inheritance</a></span>
-  <span class="next"><a href="persistence-generator.html">Persistence generator</a></span>
+  <span class="next"><a href="execution-log.html">Execution log</a></span>
 </nav>
 </article>
   </div>

@@ -6,7 +6,7 @@
     <title>reference.RepoObjectColumn_reference_union :: DataHandwerk Docs</title>
     <link rel="canonical" href="https://DataHandwerk.github.io/dhw/0.1.0/sqldb/reference.RepoObjectColumn_reference_union.html">
     <link rel="prev" href="reference.RepoObjectColumn_reference_SqlModules.html">
-    <link rel="next" href="reference.RepoObjectColumn_ReferencedList.html">
+    <link rel="next" href="reference.RepoObjectColumn_reference_virtual.html">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4RM6Q8D27"></script>
@@ -385,10 +385,16 @@
     <a class="nav-link" href="logs.ExecutionLog_parent.html">logs.ExecutionLog_parent</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="logs.ExecutionLog_plantUML_Sequence_start_stop.html">logs.ExecutionLog_plantUML_Sequence_start_stop</a>
+    <a class="nav-link" href="logs.ExecutionLog_puml_Sequence_start_stop.html">logs.ExecutionLog_puml_Sequence_start_stop</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="logs.ftv_ExecutionLog_tree.html">logs.ftv_ExecutionLog_tree</a>
+    <a class="nav-link" href="logs.ftv_ExecutionLog_puml_sequence_start_stop_per_execution.html">logs.ftv_ExecutionLog_puml_sequence_start_stop_per_execution</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="logs.ftv_ExecutionLog_puml_tree.html">logs.ftv_ExecutionLog_puml_tree</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="logs.ftv_ExecutionLog_puml_tree_per_execution.html">logs.ftv_ExecutionLog_puml_tree_per_execution</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="logs.usp_ExecutionLog_insert.html">logs.usp_ExecutionLog_insert</a>
@@ -550,6 +556,9 @@
     <a class="nav-link" href="reference.RepoObject_reference_union.html">reference.RepoObject_reference_union</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.RepoObject_reference_virtual.html">reference.RepoObject_reference_virtual</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObject_referenced_level.html">reference.RepoObject_referenced_level</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -604,6 +613,9 @@
     <a class="nav-link" href="reference.RepoObjectColumn_reference_union.html">reference.RepoObjectColumn_reference_union</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.RepoObjectColumn_reference_virtual.html">reference.RepoObjectColumn_reference_virtual</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObjectColumn_ReferencedList.html">reference.RepoObjectColumn_ReferencedList</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -619,10 +631,16 @@
     <a class="nav-link" href="reference.RepoObjectColumn_RelationScript.html">reference.RepoObjectColumn_RelationScript</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.RepoObjectColumnSource_virtual.html">reference.RepoObjectColumnSource_virtual</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObjectSource_FirstResultSet.html">reference.RepoObjectSource_FirstResultSet</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObjectSource_QueryPlan.html">reference.RepoObjectSource_QueryPlan</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.RepoObjectSource_virtual.html">reference.RepoObjectSource_virtual</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.SysObjectColumn_QueryPlanExpression.html">reference.SysObjectColumn_QueryPlanExpression</a>
@@ -637,10 +655,16 @@
     <a class="nav-link" href="reference.usp_RepoObject_update_SysObjectQueryPlan.html">reference.usp_RepoObject_update_SysObjectQueryPlan</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.usp_RepoObjectColumnSource_virtual_set.html">reference.usp_RepoObjectColumnSource_virtual_set</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.usp_RepoObjectSource_FirstResultSet.html">reference.usp_RepoObjectSource_FirstResultSet</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.usp_RepoObjectSource_QueryPlan.html">reference.usp_RepoObjectSource_QueryPlan</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.usp_RepoObjectSource_virtual_set.html">reference.usp_RepoObjectSource_virtual_set</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.usp_update_Referencing_Count.html">reference.usp_update_Referencing_Count</a>
@@ -1217,7 +1241,16 @@
     <a class="nav-link" href="../manual/documentation-generator.html">Database documentation generator</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/execution-log.html">Execution log</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/uspgenerator.html">usp generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../manual/persistence-generator.html">Persistence generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/ssms-configuration.html">SSMS configuration</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../manual/sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
@@ -1274,7 +1307,7 @@ V
 (
 view
 ), modify_date:
-2021-04-17 13:33:30</p>
+2021-04-24 19:17:45</p>
 </div>
 <div class="paragraph">
 <p>RepoObject_guid:
@@ -1323,7 +1356,7 @@ view
 <tr>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-InformationSource">InformationSource</a></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>varchar(31)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>varchar(34)</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"></td>
@@ -1526,6 +1559,9 @@ view
 <li>
 <p><a href="reference.RepoObjectColumn_reference_SqlModules.html" class="page">reference.RepoObjectColumn_reference_SqlModules</a></p>
 </li>
+<li>
+<p><a href="reference.RepoObjectColumn_reference_virtual.html" class="page">reference.RepoObjectColumn_reference_virtual</a></p>
+</li>
 </ul>
 </div>
 </div>
@@ -1552,7 +1588,7 @@ view
 <h3 id="_object_reference_diagram"><a class="anchor" href="#_object_reference_diagram"></a>Object Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-a19075b6729c02c96033a78200b926884e47852d.svg" alt="entity_1_1_objectref-reference.RepoObjectColumn_reference_union">
+<img src="_images/diag-d6aaba01bb74e65f7ad233426d7a11164a6a551e.svg" alt="entity_1_1_objectref-reference.RepoObjectColumn_reference_union">
 </div>
 </div>
 </div>
@@ -1560,7 +1596,7 @@ view
 <h3 id="_object_reference_diagram_referenced"><a class="anchor" href="#_object_reference_diagram_referenced"></a>Object Reference Diagram - Referenced</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-0c4e6143e0a27baf91c5b5fc5c3a2d93d9f7f048.svg" alt="entity_30_0_objectref-reference.RepoObjectColumn_reference_union">
+<img src="_images/diag-08c7a979f0e12d9e9b917918e32eb9661f657331.svg" alt="entity_30_0_objectref-reference.RepoObjectColumn_reference_union">
 </div>
 </div>
 </div>
@@ -1568,7 +1604,7 @@ view
 <h3 id="_object_reference_diagram_referencing"><a class="anchor" href="#_object_reference_diagram_referencing"></a>Object Reference Diagram - Referencing</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-a220986b4d405c6b1de7a99706f0a839dd28eec7.svg" alt="entity_0_30_objectref-reference.RepoObjectColumn_reference_union">
+<img src="_images/diag-e5483656dd116e24a838392307c8422f84bdc512.svg" alt="entity_0_30_objectref-reference.RepoObjectColumn_reference_union">
 </div>
 </div>
 </div>
@@ -1576,7 +1612,7 @@ view
 <h3 id="_column_reference_diagram"><a class="anchor" href="#_column_reference_diagram"></a>Column Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-b491c558cea9a7b9d57cc8b23da4966ea34844a4.svg" alt="entity_1_1_colref-reference.RepoObjectColumn_reference_union">
+<img src="_images/diag-63a5c26c7669f6e59bb627436d58fadf8074ce6e.svg" alt="entity_1_1_colref-reference.RepoObjectColumn_reference_union">
 </div>
 </div>
 </div>
@@ -1623,7 +1659,7 @@ view
 <tr>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>InformationSource</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>varchar(31)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>varchar(34)</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"></td>
@@ -2180,7 +2216,7 @@ ORDER BY
 
 
 */
-CREATE View [reference].RepoObjectColumn_reference_union
+CREATE View reference.RepoObjectColumn_reference_union
 As
 --
 --repo.RepoObjectColumn_reference__sql_expression_dependencies
@@ -2212,7 +2248,7 @@ Select
   , is_referencing_object_equal_referenced_object
   , is_referenced_object
 From
-    [reference].RepoObjectColumn_reference_SqlExpressionDependencies
+    reference.RepoObjectColumn_reference_SqlExpressionDependencies
 --[repo].[RepoObjectColumn_reference__persistence]
 --contains virtual references for persistence tables
 --these references can't exist in the real database but only in the repository
@@ -2243,7 +2279,7 @@ Select
   , is_referencing_object_equal_referenced_object
   , is_referenced_object
 From
-    [reference].RepoObjectColumn_reference_Persistence
+    reference.RepoObjectColumn_reference_Persistence
 Union All
 Select
     --
@@ -2271,7 +2307,36 @@ Select
   , is_referencing_object_equal_referenced_object
   , is_referenced_object
 From
-    [reference].RepoObjectColumn_reference_SqlModules;
+    reference.RepoObjectColumn_reference_SqlModules
+Union All
+Select
+    --
+    referenced_schema_name
+  , referenced_entity_name
+  , referenced_column_name
+  , referencing_schema_name
+  , referencing_entity_name
+  , referencing_column_name
+  , referencing_id
+  , referencing_minor_id
+  , referencing_node_id
+  , referenced_id
+  , referenced_minor_id
+  , referenced_node_id
+  , referencing_RepoObject_guid
+  , referencing_RepoObjectColumn_guid
+  , referenced_RepoObject_guid
+  , referenced_RepoObjectColumn_guid
+  , referencing_type
+  , referenced_type
+  , InformationSource
+  , is_computed
+  , definition
+  , is_referencing_object_equal_referenced_object
+  , is_referenced_object
+From
+    reference.RepoObjectColumn_reference_virtual;
+
 --UNION ALL
 ----repo.RepoObjectColumn_reference__first_result_set
 ----"common" references
@@ -2401,7 +2466,7 @@ From
 </div>
 <nav class="pagination">
   <span class="prev"><a href="reference.RepoObjectColumn_reference_SqlModules.html">reference.RepoObjectColumn_reference_SqlModules</a></span>
-  <span class="next"><a href="reference.RepoObjectColumn_ReferencedList.html">reference.RepoObjectColumn_ReferencedList</a></span>
+  <span class="next"><a href="reference.RepoObjectColumn_reference_virtual.html">reference.RepoObjectColumn_reference_virtual</a></span>
 </nav>
 </article>
   </div>

@@ -383,10 +383,16 @@
     <a class="nav-link" href="../sqldb/logs.ExecutionLog_parent.html">logs.ExecutionLog_parent</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/logs.ExecutionLog_plantUML_Sequence_start_stop.html">logs.ExecutionLog_plantUML_Sequence_start_stop</a>
+    <a class="nav-link" href="../sqldb/logs.ExecutionLog_puml_Sequence_start_stop.html">logs.ExecutionLog_puml_Sequence_start_stop</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/logs.ftv_ExecutionLog_tree.html">logs.ftv_ExecutionLog_tree</a>
+    <a class="nav-link" href="../sqldb/logs.ftv_ExecutionLog_puml_sequence_start_stop_per_execution.html">logs.ftv_ExecutionLog_puml_sequence_start_stop_per_execution</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/logs.ftv_ExecutionLog_puml_tree.html">logs.ftv_ExecutionLog_puml_tree</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/logs.ftv_ExecutionLog_puml_tree_per_execution.html">logs.ftv_ExecutionLog_puml_tree_per_execution</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/logs.usp_ExecutionLog_insert.html">logs.usp_ExecutionLog_insert</a>
@@ -548,6 +554,9 @@
     <a class="nav-link" href="../sqldb/reference.RepoObject_reference_union.html">reference.RepoObject_reference_union</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.RepoObject_reference_virtual.html">reference.RepoObject_reference_virtual</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.RepoObject_referenced_level.html">reference.RepoObject_referenced_level</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -602,6 +611,9 @@
     <a class="nav-link" href="../sqldb/reference.RepoObjectColumn_reference_union.html">reference.RepoObjectColumn_reference_union</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.RepoObjectColumn_reference_virtual.html">reference.RepoObjectColumn_reference_virtual</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.RepoObjectColumn_ReferencedList.html">reference.RepoObjectColumn_ReferencedList</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -617,10 +629,16 @@
     <a class="nav-link" href="../sqldb/reference.RepoObjectColumn_RelationScript.html">reference.RepoObjectColumn_RelationScript</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.RepoObjectColumnSource_virtual.html">reference.RepoObjectColumnSource_virtual</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.RepoObjectSource_FirstResultSet.html">reference.RepoObjectSource_FirstResultSet</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.RepoObjectSource_QueryPlan.html">reference.RepoObjectSource_QueryPlan</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.RepoObjectSource_virtual.html">reference.RepoObjectSource_virtual</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.SysObjectColumn_QueryPlanExpression.html">reference.SysObjectColumn_QueryPlanExpression</a>
@@ -635,10 +653,16 @@
     <a class="nav-link" href="../sqldb/reference.usp_RepoObject_update_SysObjectQueryPlan.html">reference.usp_RepoObject_update_SysObjectQueryPlan</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.usp_RepoObjectColumnSource_virtual_set.html">reference.usp_RepoObjectColumnSource_virtual_set</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.usp_RepoObjectSource_FirstResultSet.html">reference.usp_RepoObjectSource_FirstResultSet</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.usp_RepoObjectSource_QueryPlan.html">reference.usp_RepoObjectSource_QueryPlan</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.usp_RepoObjectSource_virtual_set.html">reference.usp_RepoObjectSource_virtual_set</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.usp_update_Referencing_Count.html">reference.usp_update_Referencing_Count</a>
@@ -1215,7 +1239,16 @@
     <a class="nav-link" href="../manual/documentation-generator.html">Database documentation generator</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/execution-log.html">Execution log</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/uspgenerator.html">usp generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../manual/persistence-generator.html">Persistence generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/ssms-configuration.html">SSMS configuration</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../manual/sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
@@ -1267,52 +1300,60 @@
 <div class="sectionbody">
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-d716749e781807227c83d38a51267db4b1eff3a1.svg" alt="dhw-tree-ExecutionLog-usp_main">
+<img src="_images/diag-506898632a66358ffae7ff0517d3d9fe4aff2a1e.svg" alt="ProcedurePumlTreeTable-ExecutionLog-usp_main">
 </div>
 </div>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-6062e968451a2e85f3138ba0de1249daf1fc6c13.svg" alt="dhw-sequence-usp_main">
+<img src="_images/diag-e0a216803464824b4f3ecc3d266fa109af2b38ca.svg" alt="dhw-sequence-usp_main">
 </div>
 </div>
 <div class="sect2">
-<h3 id="_repo_usp_sync_guid_repoobject"><a class="anchor" href="#_repo_usp_sync_guid_repoobject"></a>1.1. [repo].[usp_sync_guid_RepoObject]</h3>
+<h3 id="_repo_usp_sync_guid_reposchema"><a class="anchor" href="#_repo_usp_sync_guid_reposchema"></a>1.1. [repo].[usp_sync_guid_RepoSchema]</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-67b07b396166ee795764abe78bd151052f802a2d.svg" alt="dhw-sequence-usp_sync_guid_RepoObject">
+<img src="_images/diag-3d10f94ccf9435f2c97939f0a38e079a9fe09ae4.svg" alt="dhw-sequence-usp_sync_guid_RepoObject">
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_repo_usp_sync_guid_repoobjectcolumn"><a class="anchor" href="#_repo_usp_sync_guid_repoobjectcolumn"></a>1.2. [repo].[usp_sync_guid_RepoObjectColumn]</h3>
+<h3 id="_repo_usp_sync_guid_repoobject"><a class="anchor" href="#_repo_usp_sync_guid_repoobject"></a>1.2. [repo].[usp_sync_guid_RepoObject]</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-1e2ca8d9c3e1b4bb844cbbf17f0285777d424e14.svg" alt="dhw-sequence-usp_sync_guid_RepoObjectColumn">
+<img src="_images/diag-27c271ccd82a183808b36458df56bf7cb945479f.svg" alt="dhw-sequence-usp_sync_guid_RepoObject">
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_repo_usp_update_referencing_count"><a class="anchor" href="#_repo_usp_update_referencing_count"></a>1.3. [repo].[usp_update_Referencing_Count]</h3>
+<h3 id="_repo_usp_sync_guid_repoobjectcolumn"><a class="anchor" href="#_repo_usp_sync_guid_repoobjectcolumn"></a>1.3. [repo].[usp_sync_guid_RepoObjectColumn]</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-431bba6bc0f9c394a81cfa8248ef7b79cae4520b.svg" alt="dhw-sequence-usp_update_Referencing_Count">
+<img src="_images/diag-08a6d71fff9fd29c4c81d5af841dde11f683eada.svg" alt="dhw-sequence-usp_sync_guid_RepoObjectColumn">
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_repo_usp_index_inheritance"><a class="anchor" href="#_repo_usp_index_inheritance"></a>1.4. [repo].[usp_index_inheritance]</h3>
+<h3 id="_reference_usp_update_referencing_count"><a class="anchor" href="#_reference_usp_update_referencing_count"></a>1.4. [reference].[usp_update_Referencing_Count]</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-023cd3d90d5544aa81e54d969c0485acb2c60287.svg" alt="dhw-sequence-usp_index_inheritance">
+<img src="_images/diag-494d09e3a4fcb6cdbc93dad3f81d1479d540c6ed.svg" alt="dhw-sequence-usp_update_Referencing_Count">
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_repo_usp_repoobjectcolumn_update_repoobjectcolumn_column_id"><a class="anchor" href="#_repo_usp_repoobjectcolumn_update_repoobjectcolumn_column_id"></a>1.5. [repo].[usp_RepoObjectColumn_update_RepoObjectColumn_column_id]</h3>
+<h3 id="_repo_usp_index_inheritance"><a class="anchor" href="#_repo_usp_index_inheritance"></a>1.5. [repo].[usp_index_inheritance]</h3>
+<div class="imageblock kroki">
+<div class="content">
+<img src="_images/diag-0cc476756a5c3e28e64c320b4a362ded53a7212e.svg" alt="dhw-sequence-usp_index_inheritance">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_repo_usp_repoobjectcolumn_update_repoobjectcolumn_column_id"><a class="anchor" href="#_repo_usp_repoobjectcolumn_update_repoobjectcolumn_column_id"></a>1.6. [repo].[usp_RepoObjectColumn_update_RepoObjectColumn_column_id]</h3>
 
 </div>
 <div class="sect2">
-<h3 id="_repo_usp_generatorusp_insert_update_persistence"><a class="anchor" href="#_repo_usp_generatorusp_insert_update_persistence"></a>1.6. [repo].[usp_GeneratorUsp_insert_update_persistence]</h3>
+<h3 id="_repo_usp_generatorusp_insert_update_persistence"><a class="anchor" href="#_repo_usp_generatorusp_insert_update_persistence"></a>1.7. [repo].[usp_GeneratorUsp_insert_update_persistence]</h3>
 <div class="imageblock kroki">
 <div class="content">
 <img src="_images/diag-1e8d6fa624cb2b5b8d1369af2aae4dbc8a07e918.svg" alt="usp_GeneratorUsp_insert_update_persistence">

@@ -6,7 +6,7 @@
     <title>logs.ExecutionLog_parent :: DataHandwerk Docs</title>
     <link rel="canonical" href="https://DataHandwerk.github.io/dhw/0.1.0/sqldb/logs.ExecutionLog_parent.html">
     <link rel="prev" href="logs.ExecutionLog_gross.html">
-    <link rel="next" href="logs.ExecutionLog_plantUML_Sequence_start_stop.html">
+    <link rel="next" href="logs.ExecutionLog_puml_Sequence_start_stop.html">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4RM6Q8D27"></script>
@@ -385,10 +385,16 @@
     <a class="nav-link" href="logs.ExecutionLog_parent.html">logs.ExecutionLog_parent</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="logs.ExecutionLog_plantUML_Sequence_start_stop.html">logs.ExecutionLog_plantUML_Sequence_start_stop</a>
+    <a class="nav-link" href="logs.ExecutionLog_puml_Sequence_start_stop.html">logs.ExecutionLog_puml_Sequence_start_stop</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="logs.ftv_ExecutionLog_tree.html">logs.ftv_ExecutionLog_tree</a>
+    <a class="nav-link" href="logs.ftv_ExecutionLog_puml_sequence_start_stop_per_execution.html">logs.ftv_ExecutionLog_puml_sequence_start_stop_per_execution</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="logs.ftv_ExecutionLog_puml_tree.html">logs.ftv_ExecutionLog_puml_tree</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="logs.ftv_ExecutionLog_puml_tree_per_execution.html">logs.ftv_ExecutionLog_puml_tree_per_execution</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="logs.usp_ExecutionLog_insert.html">logs.usp_ExecutionLog_insert</a>
@@ -550,6 +556,9 @@
     <a class="nav-link" href="reference.RepoObject_reference_union.html">reference.RepoObject_reference_union</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.RepoObject_reference_virtual.html">reference.RepoObject_reference_virtual</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObject_referenced_level.html">reference.RepoObject_referenced_level</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -604,6 +613,9 @@
     <a class="nav-link" href="reference.RepoObjectColumn_reference_union.html">reference.RepoObjectColumn_reference_union</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.RepoObjectColumn_reference_virtual.html">reference.RepoObjectColumn_reference_virtual</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObjectColumn_ReferencedList.html">reference.RepoObjectColumn_ReferencedList</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -619,10 +631,16 @@
     <a class="nav-link" href="reference.RepoObjectColumn_RelationScript.html">reference.RepoObjectColumn_RelationScript</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.RepoObjectColumnSource_virtual.html">reference.RepoObjectColumnSource_virtual</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObjectSource_FirstResultSet.html">reference.RepoObjectSource_FirstResultSet</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObjectSource_QueryPlan.html">reference.RepoObjectSource_QueryPlan</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.RepoObjectSource_virtual.html">reference.RepoObjectSource_virtual</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.SysObjectColumn_QueryPlanExpression.html">reference.SysObjectColumn_QueryPlanExpression</a>
@@ -637,10 +655,16 @@
     <a class="nav-link" href="reference.usp_RepoObject_update_SysObjectQueryPlan.html">reference.usp_RepoObject_update_SysObjectQueryPlan</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.usp_RepoObjectColumnSource_virtual_set.html">reference.usp_RepoObjectColumnSource_virtual_set</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.usp_RepoObjectSource_FirstResultSet.html">reference.usp_RepoObjectSource_FirstResultSet</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.usp_RepoObjectSource_QueryPlan.html">reference.usp_RepoObjectSource_QueryPlan</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.usp_RepoObjectSource_virtual_set.html">reference.usp_RepoObjectSource_virtual_set</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.usp_update_Referencing_Count.html">reference.usp_update_Referencing_Count</a>
@@ -1217,7 +1241,16 @@
     <a class="nav-link" href="../manual/documentation-generator.html">Database documentation generator</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/execution-log.html">Execution log</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/uspgenerator.html">usp generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../manual/persistence-generator.html">Persistence generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/ssms-configuration.html">SSMS configuration</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../manual/sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
@@ -1584,7 +1617,7 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="logs.ExecutionLog_plantUML_Sequence_start_stop.html" class="page">logs.ExecutionLog_plantUML_Sequence_start_stop</a></p>
+<p><a href="logs.ExecutionLog_puml_Sequence_start_stop.html" class="page">logs.ExecutionLog_puml_Sequence_start_stop</a></p>
 </li>
 </ul>
 </div>
@@ -1593,7 +1626,7 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 <h3 id="_object_reference_diagram"><a class="anchor" href="#_object_reference_diagram"></a>Object Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-ed21c3c4a7dbdb218bb051d25f53ca4e9bdb2e3d.svg" alt="entity_1_1_objectref-logs.ExecutionLog_parent">
+<img src="_images/diag-3629383e24b9e7439d3ca78ddf796663cdc4ac1c.svg" alt="entity_1_1_objectref-logs.ExecutionLog_parent">
 </div>
 </div>
 </div>
@@ -1609,7 +1642,7 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 <h3 id="_object_reference_diagram_referencing"><a class="anchor" href="#_object_reference_diagram_referencing"></a>Object Reference Diagram - Referencing</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-728bf166fb261ab46bef656605a406c14f59dfd0.svg" alt="entity_0_30_objectref-logs.ExecutionLog_parent">
+<img src="_images/diag-9429273e36e3fedece4e265bf4cfade4500193df.svg" alt="entity_0_30_objectref-logs.ExecutionLog_parent">
 </div>
 </div>
 </div>
@@ -1617,7 +1650,7 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 <h3 id="_column_reference_diagram"><a class="anchor" href="#_column_reference_diagram"></a>Column Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-f5669d2756fedd80f50beab2d8c601c23dd9b864.svg" alt="entity_1_1_colref-logs.ExecutionLog_parent">
+<img src="_images/diag-7f963581854f20200e7e97992c2ee354e656b822.svg" alt="entity_1_1_colref-logs.ExecutionLog_parent">
 </div>
 </div>
 </div>
@@ -2259,7 +2292,7 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="logs.ExecutionLog_plantUML_Sequence_start_stop.html#column-parent_proc_fullname" class="page">logs.ExecutionLog_plantUML_Sequence_start_stop.parent_proc_fullname</a></p>
+<p><a href="logs.ExecutionLog_puml_Sequence_start_stop.html#column-parent_proc_fullname" class="page">logs.ExecutionLog_puml_Sequence_start_stop.parent_proc_fullname</a></p>
 </li>
 </ul>
 </div>
@@ -2436,7 +2469,7 @@ Where
 </div>
 <nav class="pagination">
   <span class="prev"><a href="logs.ExecutionLog_gross.html">logs.ExecutionLog_gross</a></span>
-  <span class="next"><a href="logs.ExecutionLog_plantUML_Sequence_start_stop.html">logs.ExecutionLog_plantUML_Sequence_start_stop</a></span>
+  <span class="next"><a href="logs.ExecutionLog_puml_Sequence_start_stop.html">logs.ExecutionLog_puml_Sequence_start_stop</a></span>
 </nav>
 </article>
   </div>

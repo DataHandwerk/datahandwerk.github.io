@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Persistence generator :: DataHandwerk Docs</title>
     <link rel="canonical" href="https://DataHandwerk.github.io/dhw/0.1.0/manual/persistence-generator.html">
-    <link rel="prev" href="documentation-generator.html">
-    <link rel="next" href="sql-server-bug-sys-views-references.html">
+    <link rel="prev" href="uspgenerator.html">
+    <link rel="next" href="ssms-configuration.html">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4RM6Q8D27"></script>
@@ -385,10 +385,16 @@
     <a class="nav-link" href="../sqldb/logs.ExecutionLog_parent.html">logs.ExecutionLog_parent</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/logs.ExecutionLog_plantUML_Sequence_start_stop.html">logs.ExecutionLog_plantUML_Sequence_start_stop</a>
+    <a class="nav-link" href="../sqldb/logs.ExecutionLog_puml_Sequence_start_stop.html">logs.ExecutionLog_puml_Sequence_start_stop</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/logs.ftv_ExecutionLog_tree.html">logs.ftv_ExecutionLog_tree</a>
+    <a class="nav-link" href="../sqldb/logs.ftv_ExecutionLog_puml_sequence_start_stop_per_execution.html">logs.ftv_ExecutionLog_puml_sequence_start_stop_per_execution</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/logs.ftv_ExecutionLog_puml_tree.html">logs.ftv_ExecutionLog_puml_tree</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/logs.ftv_ExecutionLog_puml_tree_per_execution.html">logs.ftv_ExecutionLog_puml_tree_per_execution</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/logs.usp_ExecutionLog_insert.html">logs.usp_ExecutionLog_insert</a>
@@ -550,6 +556,9 @@
     <a class="nav-link" href="../sqldb/reference.RepoObject_reference_union.html">reference.RepoObject_reference_union</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.RepoObject_reference_virtual.html">reference.RepoObject_reference_virtual</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.RepoObject_referenced_level.html">reference.RepoObject_referenced_level</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -604,6 +613,9 @@
     <a class="nav-link" href="../sqldb/reference.RepoObjectColumn_reference_union.html">reference.RepoObjectColumn_reference_union</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.RepoObjectColumn_reference_virtual.html">reference.RepoObjectColumn_reference_virtual</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.RepoObjectColumn_ReferencedList.html">reference.RepoObjectColumn_ReferencedList</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -619,10 +631,16 @@
     <a class="nav-link" href="../sqldb/reference.RepoObjectColumn_RelationScript.html">reference.RepoObjectColumn_RelationScript</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.RepoObjectColumnSource_virtual.html">reference.RepoObjectColumnSource_virtual</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.RepoObjectSource_FirstResultSet.html">reference.RepoObjectSource_FirstResultSet</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.RepoObjectSource_QueryPlan.html">reference.RepoObjectSource_QueryPlan</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.RepoObjectSource_virtual.html">reference.RepoObjectSource_virtual</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.SysObjectColumn_QueryPlanExpression.html">reference.SysObjectColumn_QueryPlanExpression</a>
@@ -637,10 +655,16 @@
     <a class="nav-link" href="../sqldb/reference.usp_RepoObject_update_SysObjectQueryPlan.html">reference.usp_RepoObject_update_SysObjectQueryPlan</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.usp_RepoObjectColumnSource_virtual_set.html">reference.usp_RepoObjectColumnSource_virtual_set</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.usp_RepoObjectSource_FirstResultSet.html">reference.usp_RepoObjectSource_FirstResultSet</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.usp_RepoObjectSource_QueryPlan.html">reference.usp_RepoObjectSource_QueryPlan</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.usp_RepoObjectSource_virtual_set.html">reference.usp_RepoObjectSource_virtual_set</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.usp_update_Referencing_Count.html">reference.usp_update_Referencing_Count</a>
@@ -1216,8 +1240,17 @@
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="documentation-generator.html">Database documentation generator</a>
   </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="execution-log.html">Execution log</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="uspgenerator.html">usp generator</a>
+  </li>
   <li class="nav-item is-current-page" data-depth="1">
     <a class="nav-link" href="persistence-generator.html">Persistence generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ssms-configuration.html">SSMS configuration</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
@@ -1265,6 +1298,8 @@
 </aside>
 <article class="doc">
 <h1 class="page">Persistence generator</h1>
+<div id="preamble">
+<div class="sectionbody">
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -1288,6 +1323,26 @@ Before you execute the procedure <a href="../sqldb/repo.usp_persistence_set.html
 </td>
 </tr>
 </table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+If SSMS is used to retrieve the generated code, then the <a href="ssms-configuration.html" class="page">SSMS configuration</a> should be checked and adjusted.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_persistence_definition"><a class="anchor" href="#_persistence_definition"></a>Persistence definition</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>use <a href="../sqldb/repo.usp_persistence_set.html" class="page">repo.usp_persistence_set</a> to define (or change) a persistence.</p>
 </div>
 <div class="exampleblock">
 <div class="content">
@@ -1342,7 +1397,7 @@ EXEC [SchemaName].[usp_PERSIST_SourceViewName_T];</code></pre>
 <p>It will update properties for entries of existing target columns</p>
 </li>
 <li>
-<p>It will not delete entries for columns in the persistence target, which have been added to the persistence table definition (it is possible to have additional columns, for example calculated columns or just additional columns to input some data independently from the source)</p>
+<p>It will not delete entries for columns in the persistence target, which have been added to the persistence table definition (it is possible to have additional columns, for example calculated columns or just additional columns to input some data independently of the source)</p>
 </li>
 </ul>
 </div>
@@ -1352,7 +1407,7 @@ EXEC [SchemaName].[usp_PERSIST_SourceViewName_T];</code></pre>
 <div class="ulist">
 <ul>
 <li>
-<p>the new or changed columns have to be synchronized between DWH and repo</p>
+<p>the new or changed columns have to be synchronized between DWH and repository database</p>
 </li>
 <li>
 <p><a href="../sqldb/repo.RepoObjectColumn.html#column-RepoObjectColumn_column_id" class="page">repo.RepoObjectColumn.RepoObjectColumn_column_id</a> must get a value, this happens depending on the fulfilled prerequisites already in the first or only in the second pass</p>
@@ -1362,6 +1417,35 @@ EXEC [SchemaName].[usp_PERSIST_SourceViewName_T];</code></pre>
 <div class="paragraph">
 <p>The SQL code for the persistence target table is located in <a href="../sqldb/repo.RepoObject_SqlCreateTable.html#column-SqlCreateTable" class="page">repo.RepoObject_SqlCreateTable.SqlCreateTable</a></p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_persistence_procedure_code_generation"><a class="anchor" href="#_persistence_procedure_code_generation"></a>Persistence procedure code generation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>DataHandwerk provides the code for a persistence stored procedure for each managed persistence. The code of this procedure will change depending on:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>the columns of the persistence source</p>
+</li>
+<li>
+<p>settings in <a href="../sqldb/repo.RepoObject_persistence.html" class="page">repo.RepoObject_persistence</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The <a href="persistence-generator.html" class="page">Persistence generator</a> is used to create the persistence procedure code. Depending on changed settings in <a href="../sqldb/repo.RepoObject_persistence.html" class="page">repo.RepoObject_persistence</a> the generated code will change. After changing settings it is required to execute <a href="../sqldb/repo.usp_main.html" class="page">repo.usp_main</a></p>
+</div>
+<div class="paragraph">
+<p>The final code of the procedure is available in <a href="../sqldb/uspgenerator.GeneratorUsp_SqlUsp.html#column-SqlUsp" class="page">uspgenerator.GeneratorUsp_SqlUsp.SqlUsp</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_change_exisisting_persistence"><a class="anchor" href="#_change_exisisting_persistence"></a>change exisisting persistence</h2>
+<div class="sectionbody">
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -1369,7 +1453,7 @@ EXEC [SchemaName].[usp_PERSIST_SourceViewName_T];</code></pre>
 <i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-A change script is not yet created! You need to compare the generated code and the existing code.
+A change script for existing tables is not yet created! You need to compare the generated code and the existing code!
 </td>
 </tr>
 </table>
@@ -1386,22 +1470,6 @@ You could use the generated code in a Visual Studio database project and deploy 
 </tr>
 </table>
 </div>
-<div class="paragraph">
-<p>DataHandwerk provides the code for a persistence stored procedure for each managed persistence. The code of this procedure will change depending on</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>the columns of the persistence source</p>
-</li>
-<li>
-<p>settings in <a href="../sqldb/repo.RepoObject_persistence.html" class="page">repo.RepoObject_persistence</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>The code is available in <a href="../sqldb/uspgenerator.GeneratorUsp_SqlUsp.html#column-SqlUsp" class="page">uspgenerator.GeneratorUsp_SqlUsp.SqlUsp</a></p>
-</div>
 <div class="admonitionblock warning">
 <table>
 <tr>
@@ -1410,7 +1478,7 @@ You could use the generated code in a Visual Studio database project and deploy 
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Currently it could be tricky to rename columns in persistence source and to promote this into the target. It still needs some testing and investigation to suggest the best practice. It looks like you should:</p>
+<p>Currently, it could be tricky to rename columns in persistence source and to promote this into the target. It still needs some testing and investigation to suggest the best practice. It looks like you should:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1438,9 +1506,25 @@ You could use the generated code in a Visual Studio database project and deploy 
 </tr>
 </table>
 </div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>It can be very difficult to change the design of graph tables in SQL Server, especially when <a href="https://docs.microsoft.com/en-us/sql/relational-databases/tables/graph-edge-constraints?view=sql-server-ver15">Edge Constraints</a> are used. The code created by SSMS or by Visual Studio code is then unusable and does not work. I Azure Data Studio it is even worse.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
 <nav class="pagination">
-  <span class="prev"><a href="documentation-generator.html">Database documentation generator</a></span>
-  <span class="next"><a href="sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a></span>
+  <span class="prev"><a href="uspgenerator.html">usp generator</a></span>
+  <span class="next"><a href="ssms-configuration.html">SSMS configuration</a></span>
 </nav>
 </article>
   </div>

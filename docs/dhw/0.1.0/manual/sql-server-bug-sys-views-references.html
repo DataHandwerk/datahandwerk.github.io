@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>SQL Server bug in sys-views for references :: DataHandwerk Docs</title>
     <link rel="canonical" href="https://DataHandwerk.github.io/dhw/0.1.0/manual/sql-server-bug-sys-views-references.html">
-    <link rel="prev" href="persistence-generator.html">
+    <link rel="prev" href="ssms-configuration.html">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4RM6Q8D27"></script>
@@ -384,10 +384,16 @@
     <a class="nav-link" href="../sqldb/logs.ExecutionLog_parent.html">logs.ExecutionLog_parent</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/logs.ExecutionLog_plantUML_Sequence_start_stop.html">logs.ExecutionLog_plantUML_Sequence_start_stop</a>
+    <a class="nav-link" href="../sqldb/logs.ExecutionLog_puml_Sequence_start_stop.html">logs.ExecutionLog_puml_Sequence_start_stop</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/logs.ftv_ExecutionLog_tree.html">logs.ftv_ExecutionLog_tree</a>
+    <a class="nav-link" href="../sqldb/logs.ftv_ExecutionLog_puml_sequence_start_stop_per_execution.html">logs.ftv_ExecutionLog_puml_sequence_start_stop_per_execution</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/logs.ftv_ExecutionLog_puml_tree.html">logs.ftv_ExecutionLog_puml_tree</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/logs.ftv_ExecutionLog_puml_tree_per_execution.html">logs.ftv_ExecutionLog_puml_tree_per_execution</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/logs.usp_ExecutionLog_insert.html">logs.usp_ExecutionLog_insert</a>
@@ -549,6 +555,9 @@
     <a class="nav-link" href="../sqldb/reference.RepoObject_reference_union.html">reference.RepoObject_reference_union</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.RepoObject_reference_virtual.html">reference.RepoObject_reference_virtual</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.RepoObject_referenced_level.html">reference.RepoObject_referenced_level</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -603,6 +612,9 @@
     <a class="nav-link" href="../sqldb/reference.RepoObjectColumn_reference_union.html">reference.RepoObjectColumn_reference_union</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.RepoObjectColumn_reference_virtual.html">reference.RepoObjectColumn_reference_virtual</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.RepoObjectColumn_ReferencedList.html">reference.RepoObjectColumn_ReferencedList</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -618,10 +630,16 @@
     <a class="nav-link" href="../sqldb/reference.RepoObjectColumn_RelationScript.html">reference.RepoObjectColumn_RelationScript</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.RepoObjectColumnSource_virtual.html">reference.RepoObjectColumnSource_virtual</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.RepoObjectSource_FirstResultSet.html">reference.RepoObjectSource_FirstResultSet</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.RepoObjectSource_QueryPlan.html">reference.RepoObjectSource_QueryPlan</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.RepoObjectSource_virtual.html">reference.RepoObjectSource_virtual</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.SysObjectColumn_QueryPlanExpression.html">reference.SysObjectColumn_QueryPlanExpression</a>
@@ -636,10 +654,16 @@
     <a class="nav-link" href="../sqldb/reference.usp_RepoObject_update_SysObjectQueryPlan.html">reference.usp_RepoObject_update_SysObjectQueryPlan</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.usp_RepoObjectColumnSource_virtual_set.html">reference.usp_RepoObjectColumnSource_virtual_set</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.usp_RepoObjectSource_FirstResultSet.html">reference.usp_RepoObjectSource_FirstResultSet</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.usp_RepoObjectSource_QueryPlan.html">reference.usp_RepoObjectSource_QueryPlan</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.usp_RepoObjectSource_virtual_set.html">reference.usp_RepoObjectSource_virtual_set</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.usp_update_Referencing_Count.html">reference.usp_update_Referencing_Count</a>
@@ -1216,7 +1240,16 @@
     <a class="nav-link" href="documentation-generator.html">Database documentation generator</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="execution-log.html">Execution log</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="uspgenerator.html">usp generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <a class="nav-link" href="persistence-generator.html">Persistence generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ssms-configuration.html">SSMS configuration</a>
   </li>
   <li class="nav-item is-current-page" data-depth="1">
     <a class="nav-link" href="sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
@@ -1278,10 +1311,10 @@
 </blockquote>
 </div>
 <div class="paragraph">
-<p>The reason is a SQL Server bug.</p>
+<p>The reason is an SQL Server bug.</p>
 </div>
 <div class="paragraph">
-<p>In detail</p>
+<p>In detail:</p>
 </div>
 <div class="paragraph">
 <p>Executing [repo].[usp_main], I get this error:</p>
@@ -1343,10 +1376,10 @@ WHERE ISNULL([repo].[RepoObjectColumn].[Referencing_Count], 0) &lt;&gt; ISNULL([
 </div>
 </div>
 <div class="paragraph">
-<p>the issue is related to <code>[repo_sys].[RepoObjectReferenced]</code></p>
+<p>The issue is related to <code>[repo_sys].[RepoObjectReferenced]</code></p>
 </div>
 <div class="paragraph">
-<p>there is a bug in SQL Server, and somtimes the usage of this system procedure causes an error:</p>
+<p>there is a bug in SQL Server, and sometimes the usage of this system procedure causes an error:</p>
 </div>
 <div class="literalblock">
 <div class="content">
@@ -1359,11 +1392,11 @@ WHERE ISNULL([ro].[has_get_referenced_issue], 0) = 0</pre>
 <p>That&#8217;s why we use <code>[ro].[has_get_referenced_issue]</code></p>
 </div>
 <div class="paragraph">
-<p>it is required to find out the problematic RepoObject and to set<br>
+<p>It is required to find out the problematic RepoObject and to set<br>
 <code>repo.RepoObject.[has_get_referenced_issue] = 1</code></p>
 </div>
 <div class="paragraph">
-<p>Lets check the error message:</p>
+<p>Let&#8217;s check the error message:</p>
 </div>
 <div class="quoteblock">
 <blockquote>
@@ -1382,7 +1415,7 @@ WHERE ISNULL([ro].[has_get_referenced_issue], 0) = 0</pre>
 <div class="sect2">
 <h3 id="_solution_mark_repoobjects_with_has_get_referenced_issue_1"><a class="anchor" href="#_solution_mark_repoobjects_with_has_get_referenced_issue_1"></a>solution: mark RepoObjects with has_get_referenced_issue = 1</h3>
 <div class="paragraph">
-<p>We can&#8217;t solve the SQL Server bug, we can only avoid to get references for some problematic objects.</p>
+<p>We can&#8217;t solve the SQL Server bug, we can only avoid getting references for some problematic objects.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1412,7 +1445,7 @@ ORDER BY [RepoObject_fullname]</code></pre>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="persistence-generator.html">Persistence generator</a></span>
+  <span class="prev"><a href="ssms-configuration.html">SSMS configuration</a></span>
 </nav>
 </article>
   </div>

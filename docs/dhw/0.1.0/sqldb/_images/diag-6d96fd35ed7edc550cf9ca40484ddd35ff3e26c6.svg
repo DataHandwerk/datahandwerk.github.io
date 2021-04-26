@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="989px" preserveAspectRatio="none" style="width:1394px;height:989px;" version="1.1" viewBox="0 0 1394 989" width="1394px" zoomAndPan="magnify"><defs><filter height="300%" id="f1opf6uylanghk" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[35e664e8a043876a64f08fa29f251296]
+class docs.ForeignKey_RelationScript--><rect codeLine="26" fill="#F5F5F5" filter="url(#f1opf6uylanghk)" height="120.7997" id="docs.ForeignKey_RelationScript" style="stroke:#A80036;stroke-width:1.5;" width="270" x="804" y="762.48"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="930" y="779.4801">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="168" x="855" y="793.8802">docs.ForeignKey_RelationScript</text><line style="stroke:#A80036;stroke-width:1.5;" x1="805" x2="1073" y1="801.2802" y2="801.2802"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="155" x="810" y="816.2801">referenced_RepoObject_guid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="968" y="816.2801">: uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="159" x="810" y="829.48">referencing_RepoObject_guid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="972" y="829.48">: uniqueidentifier</text><line style="stroke:#A80036;stroke-width:1.0;" x1="805" x2="1073" y1="835.68" y2="835.68"/><ellipse cx="815" cy="846.68" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="148" x="824" y="850.6799">DbmlRelation : nvarchar(4000)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="242" x="824" y="863.8798">referenced_RepoObject_fullname : nvarchar(261)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="244" x="824" y="877.0797">referencing_RepoObject_fullname : nvarchar(261)</text><!--MD5=[456786ec8c7667f97c606beb3a3a08df]
+class docs.RepoObject_PlantUml_FkRefList--><rect codeLine="35" fill="#F5F5F5" filter="url(#f1opf6uylanghk)" height="94.3999" id="docs.RepoObject_PlantUml_FkRefList" style="stroke:#A80036;stroke-width:1.5;" width="209" x="1171" y="64.98"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="1266.5" y="81.9801">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="203" x="1174" y="96.3802">docs.RepoObject_PlantUml_FkRefList</text><line style="stroke:#A80036;stroke-width:1.5;" x1="1172" x2="1379" y1="103.7802" y2="103.7802"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1172" x2="1379" y1="111.7802" y2="111.7802"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="126" x="1177" y="126.7801">FkRefList : nvarchar(max)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="189" x="1177" y="139.98">RepoObject_fullname2 : nvarchar(257)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="166" x="1177" y="153.1799">RepoObject_guid : uniqueidentifier</text><!--MD5=[839e753bc9d84a5b336842aabac2c3b0]
+class repo.ForeignKey_gross--><rect codeLine="42" fill="#F5F5F5" filter="url(#f1opf6uylanghk)" height="384.7977" id="repo.ForeignKey_gross" style="stroke:#A80036;stroke-width:1.5;" width="312" x="783" y="340.48"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="930" y="357.4801">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="121" x="878.5" y="371.8802">repo.ForeignKey_gross</text><line style="stroke:#A80036;stroke-width:1.5;" x1="784" x2="1094" y1="379.2802" y2="379.2802"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="91" x="789" y="394.2801">ForeignKey_guid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="883" y="394.2801">: uniqueidentifier</text><line style="stroke:#A80036;stroke-width:1.0;" x1="784" x2="1094" y1="400.4801" y2="400.4801"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="154" x="803" y="415.48">delete_referential_action : tinyint</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="179" x="803" y="428.6799">ForeignKey_fullname : nvarchar(517)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="166" x="803" y="441.8798">ForeignKey_name : nvarchar(128)</text><ellipse cx="794" cy="451.0798" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="155" x="803" y="455.0797">is_MatchingDatatypePattern : int</text><ellipse cx="794" cy="464.2797" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="189" x="803" y="468.2796">referenced_AntoraXref : nvarchar(951)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="191" x="803" y="481.4795">referenced_index_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="195" x="803" y="494.6794">referenced_index_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="284" x="803" y="507.8793">referenced_IndexPatternColumnDatatype : nvarchar(4000)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="270" x="803" y="521.0792">referenced_IndexPatternColumnName : nvarchar(4000)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="242" x="803" y="534.2791">referenced_RepoObject_fullname : nvarchar(261)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="248" x="803" y="547.479">referenced_RepoObject_fullname2 : nvarchar(257)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="225" x="803" y="560.6789">referenced_RepoObject_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="220" x="803" y="573.8788">referenced_SysObject_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="264" x="803" y="587.0787">referenced_SysObject_schema_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="193" x="803" y="600.2786">referencing_index_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="197" x="803" y="613.4785">referencing_index_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="286" x="803" y="626.6784">referencing_IndexPatternColumnDatatype : nvarchar(4000)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="272" x="803" y="639.8783">referencing_IndexPatternColumnName : nvarchar(4000)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="244" x="803" y="653.0782">referencing_RepoObject_fullname : nvarchar(261)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="250" x="803" y="666.2782">referencing_RepoObject_fullname2 : nvarchar(257)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="227" x="803" y="679.4781">referencing_RepoObject_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="222" x="803" y="692.678">referencing_SysObject_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="266" x="803" y="705.8779">referencing_SysObject_schema_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="158" x="803" y="719.0778">update_referential_action : tinyint</text><!--MD5=[c65741e38c7bde2d61bac6d5852dc856]
+class repo.ForeignKey_Indexes_union--><rect codeLine="71" fill="#F5F5F5" filter="url(#f1opf6uylanghk)" height="371.5978" id="repo.ForeignKey_Indexes_union" style="stroke:#A80036;stroke-width:1.5;" width="312" x="7" y="353.98"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="154" y="370.9801">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="166" x="80" y="385.3802">repo.ForeignKey_Indexes_union</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="318" y1="392.7802" y2="392.7802"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="91" x="13" y="407.7801">ForeignKey_guid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="107" y="407.7801">: uniqueidentifier</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="318" y1="413.9801" y2="413.9801"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="154" x="27" y="428.98">delete_referential_action : tinyint</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="179" x="27" y="442.1799">ForeignKey_fullname : nvarchar(517)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="166" x="27" y="455.3798">ForeignKey_name : nvarchar(128)</text><ellipse cx="18" cy="464.5798" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="155" x="27" y="468.5797">is_MatchingDatatypePattern : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="191" x="27" y="481.7796">referenced_index_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="195" x="27" y="494.9795">referenced_index_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="284" x="27" y="508.1794">referenced_IndexPatternColumnDatatype : nvarchar(4000)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="270" x="27" y="521.3793">referenced_IndexPatternColumnName : nvarchar(4000)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="242" x="27" y="534.5792">referenced_RepoObject_fullname : nvarchar(261)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="248" x="27" y="547.7791">referenced_RepoObject_fullname2 : nvarchar(257)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="225" x="27" y="560.979">referenced_RepoObject_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="220" x="27" y="574.1789">referenced_SysObject_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="264" x="27" y="587.3788">referenced_SysObject_schema_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="193" x="27" y="600.5787">referencing_index_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="197" x="27" y="613.7786">referencing_index_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="286" x="27" y="626.9785">referencing_IndexPatternColumnDatatype : nvarchar(4000)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="272" x="27" y="640.1784">referencing_IndexPatternColumnName : nvarchar(4000)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="244" x="27" y="653.3783">referencing_RepoObject_fullname : nvarchar(261)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="250" x="27" y="666.5782">referencing_RepoObject_fullname2 : nvarchar(257)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="227" x="27" y="679.7782">referencing_RepoObject_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="222" x="27" y="692.9781">referencing_SysObject_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="266" x="27" y="706.178">referencing_SysObject_schema_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="158" x="27" y="719.3779">update_referential_action : tinyint</text><!--MD5=[292718ead1138fcbdd12d5ef9f09fac3]
+class repo.ForeignKey_Indexes_union_T--><rect codeLine="99" fill="#FFFFFF" filter="url(#f1opf6uylanghk)" height="371.5978" id="repo.ForeignKey_Indexes_union_T" style="stroke:#A80036;stroke-width:1.5;" width="312" x="395" y="353.98"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="541.5" y="370.9801">«U»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="181" x="460.5" y="385.3802">repo.ForeignKey_Indexes_union_T</text><line style="stroke:#A80036;stroke-width:1.5;" x1="396" x2="706" y1="392.7802" y2="392.7802"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="91" x="401" y="407.7801">ForeignKey_guid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="495" y="407.7801">: uniqueidentifier</text><line style="stroke:#A80036;stroke-width:1.0;" x1="396" x2="706" y1="413.9801" y2="413.9801"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="154" x="415" y="428.98">delete_referential_action : tinyint</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="179" x="415" y="442.1799">ForeignKey_fullname : nvarchar(517)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="166" x="415" y="455.3798">ForeignKey_name : nvarchar(128)</text><ellipse cx="406" cy="464.5798" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="155" x="415" y="468.5797">is_MatchingDatatypePattern : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="191" x="415" y="481.7796">referenced_index_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="195" x="415" y="494.9795">referenced_index_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="284" x="415" y="508.1794">referenced_IndexPatternColumnDatatype : nvarchar(4000)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="270" x="415" y="521.3793">referenced_IndexPatternColumnName : nvarchar(4000)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="242" x="415" y="534.5792">referenced_RepoObject_fullname : nvarchar(261)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="248" x="415" y="547.7791">referenced_RepoObject_fullname2 : nvarchar(257)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="225" x="415" y="560.979">referenced_RepoObject_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="220" x="415" y="574.1789">referenced_SysObject_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="264" x="415" y="587.3788">referenced_SysObject_schema_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="193" x="415" y="600.5787">referencing_index_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="197" x="415" y="613.7786">referencing_index_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="286" x="415" y="626.9785">referencing_IndexPatternColumnDatatype : nvarchar(4000)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="272" x="415" y="640.1784">referencing_IndexPatternColumnName : nvarchar(4000)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="244" x="415" y="653.3783">referencing_RepoObject_fullname : nvarchar(261)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="250" x="415" y="666.5782">referencing_RepoObject_fullname2 : nvarchar(257)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="227" x="415" y="679.7782">referencing_RepoObject_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="222" x="415" y="692.9781">referencing_SysObject_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="266" x="415" y="706.178">referencing_SysObject_schema_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="158" x="415" y="719.3779">update_referential_action : tinyint</text><!--MD5=[a352600806b338cbac6e3c6847174388]
+class repo.RepoObject_related_FK_union--><rect codeLine="127" fill="#F5F5F5" filter="url(#f1opf6uylanghk)" height="107.5998" id="repo.RepoObject_related_FK_union" style="stroke:#A80036;stroke-width:1.5;" width="247" x="815.5" y="100.98"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="930" y="117.9801">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="187" x="845.5" y="132.3802">repo.RepoObject_related_FK_union</text><line style="stroke:#A80036;stroke-width:1.5;" x1="816.5" x2="1061.5" y1="139.7802" y2="139.7802"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="93" x="821.5" y="154.7801">RepoObject_guid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="917.5" y="154.7801">: uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="145" x="821.5" y="167.98">included_RepoObject_guid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="969.5" y="167.98">: uniqueidentifier</text><line style="stroke:#A80036;stroke-width:1.0;" x1="816.5" x2="1061.5" y1="174.18" y2="174.18"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="235" x="821.5" y="189.1799">included_RepoObject_fullname2 : nvarchar(257)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="189" x="821.5" y="202.3798">RepoObject_fullname2 : nvarchar(257)</text><!--MD5=[4276122b64d569d5c71d95f92c398c48]
+class repo.usp_Index_finish--><rect codeLine="135" fill="#00FFFF" filter="url(#f1opf6uylanghk)" height="54.8002" id="repo.usp_Index_finish" style="stroke:#A80036;stroke-width:1.5;" width="120" x="879" y="246.48"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="930" y="263.4801">«P»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="114" x="882" y="277.8802">repo.usp_Index_finish</text><line style="stroke:#A80036;stroke-width:1.5;" x1="880" x2="998" y1="285.2802" y2="285.2802"/><line style="stroke:#A80036;stroke-width:1.0;" x1="880" x2="998" y1="293.2802" y2="293.2802"/><!--MD5=[72b7dc34019b00576fa22beee9467797]
+class repo.usp_PERSIST_ForeignKey_Indexes_union_T--><rect codeLine="139" fill="#00FFFF" filter="url(#f1opf6uylanghk)" height="54.8002" id="repo.usp_PERSIST_ForeignKey_Indexes_union_T" style="stroke:#A80036;stroke-width:1.5;" width="272" x="803" y="920.48"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="930" y="937.4801">«P»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="266" x="806" y="951.8802">repo.usp_PERSIST_ForeignKey_Indexes_union_T</text><line style="stroke:#A80036;stroke-width:1.5;" x1="804" x2="1074" y1="959.2802" y2="959.2802"/><line style="stroke:#A80036;stroke-width:1.0;" x1="804" x2="1074" y1="967.2802" y2="967.2802"/><!--MD5=[6f6681ed630f9ccc4faa52591ea25339]
+reverse link repo.ForeignKey_Indexes_union to repo.ForeignKey_Indexes_union_T--><path codeLine="143" d="M332.24,536.98 C350.36,536.98 368.77,536.98 386.83,536.98 " fill="none" id="repo.ForeignKey_Indexes_union-backto-repo.ForeignKey_Indexes_union_T" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="327.14,536.98,336.14,540.98,332.14,536.98,336.14,532.98,327.14,536.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6f6681ed630f9ccc4faa52591ea25339]
+reverse link repo.ForeignKey_Indexes_union to repo.ForeignKey_Indexes_union_T--><path codeLine="152" d="M325.18,422.98 C353.86,422.98 362.91,422.98 394,422.98 " fill="none" id="repo.ForeignKey_Indexes_union-backto-repo.ForeignKey_Indexes_union_T-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="320,422.98,329,426.98,325,422.98,329,418.98,320,422.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6f6681ed630f9ccc4faa52591ea25339]
+reverse link repo.ForeignKey_Indexes_union to repo.ForeignKey_Indexes_union_T--><path codeLine="153" d="M325.18,435.98 C353.86,435.98 362.91,435.98 394,435.98 " fill="none" id="repo.ForeignKey_Indexes_union-backto-repo.ForeignKey_Indexes_union_T-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="320,435.98,329,439.98,325,435.98,329,431.98,320,435.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6f6681ed630f9ccc4faa52591ea25339]
+reverse link repo.ForeignKey_Indexes_union to repo.ForeignKey_Indexes_union_T--><path codeLine="154" d="M325.18,401.98 C353.86,401.98 362.91,401.98 394,401.98 " fill="none" id="repo.ForeignKey_Indexes_union-backto-repo.ForeignKey_Indexes_union_T-3" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="320,401.98,329,405.98,325,401.98,329,397.98,320,401.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6f6681ed630f9ccc4faa52591ea25339]
+reverse link repo.ForeignKey_Indexes_union to repo.ForeignKey_Indexes_union_T--><path codeLine="155" d="M325.18,448.98 C353.86,448.98 362.91,448.98 394,448.98 " fill="none" id="repo.ForeignKey_Indexes_union-backto-repo.ForeignKey_Indexes_union_T-4" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="320,448.98,329,452.98,325,448.98,329,444.98,320,448.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6f6681ed630f9ccc4faa52591ea25339]
+reverse link repo.ForeignKey_Indexes_union to repo.ForeignKey_Indexes_union_T--><path codeLine="156" d="M325.18,461.98 C353.86,461.98 362.91,461.98 394,461.98 " fill="none" id="repo.ForeignKey_Indexes_union-backto-repo.ForeignKey_Indexes_union_T-5" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="320,461.98,329,465.98,325,461.98,329,457.98,320,461.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6f6681ed630f9ccc4faa52591ea25339]
+reverse link repo.ForeignKey_Indexes_union to repo.ForeignKey_Indexes_union_T--><path codeLine="157" d="M325.18,474.98 C353.86,474.98 362.91,474.98 394,474.98 " fill="none" id="repo.ForeignKey_Indexes_union-backto-repo.ForeignKey_Indexes_union_T-6" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="320,474.98,329,478.98,325,474.98,329,470.98,320,474.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6f6681ed630f9ccc4faa52591ea25339]
+reverse link repo.ForeignKey_Indexes_union to repo.ForeignKey_Indexes_union_T--><path codeLine="158" d="M325.18,487.98 C353.86,487.98 362.91,487.98 394,487.98 " fill="none" id="repo.ForeignKey_Indexes_union-backto-repo.ForeignKey_Indexes_union_T-7" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="320,487.98,329,491.98,325,487.98,329,483.98,320,487.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6f6681ed630f9ccc4faa52591ea25339]
+reverse link repo.ForeignKey_Indexes_union to repo.ForeignKey_Indexes_union_T--><path codeLine="159" d="M325.18,500.98 C353.86,500.98 362.91,500.98 394,500.98 " fill="none" id="repo.ForeignKey_Indexes_union-backto-repo.ForeignKey_Indexes_union_T-8" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="320,500.98,329,504.98,325,500.98,329,496.98,320,500.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6f6681ed630f9ccc4faa52591ea25339]
+reverse link repo.ForeignKey_Indexes_union to repo.ForeignKey_Indexes_union_T--><path codeLine="160" d="M325.18,513.98 C353.86,513.98 362.91,513.98 394,513.98 " fill="none" id="repo.ForeignKey_Indexes_union-backto-repo.ForeignKey_Indexes_union_T-9" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="320,513.98,329,517.98,325,513.98,329,509.98,320,513.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6f6681ed630f9ccc4faa52591ea25339]
+reverse link repo.ForeignKey_Indexes_union to repo.ForeignKey_Indexes_union_T--><path codeLine="161" d="M325.18,526.98 C353.86,526.98 362.91,526.98 394,526.98 " fill="none" id="repo.ForeignKey_Indexes_union-backto-repo.ForeignKey_Indexes_union_T-10" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="320,526.98,329,530.98,325,526.98,329,522.98,320,526.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6f6681ed630f9ccc4faa52591ea25339]
+reverse link repo.ForeignKey_Indexes_union to repo.ForeignKey_Indexes_union_T--><path codeLine="162" d="M325.18,540.98 C353.86,540.98 362.91,540.98 394,540.98 " fill="none" id="repo.ForeignKey_Indexes_union-backto-repo.ForeignKey_Indexes_union_T-11" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="320,540.98,329,544.98,325,540.98,329,536.98,320,540.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6f6681ed630f9ccc4faa52591ea25339]
+reverse link repo.ForeignKey_Indexes_union to repo.ForeignKey_Indexes_union_T--><path codeLine="163" d="M325.18,553.98 C353.86,553.98 362.91,553.98 394,553.98 " fill="none" id="repo.ForeignKey_Indexes_union-backto-repo.ForeignKey_Indexes_union_T-12" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="320,553.98,329,557.98,325,553.98,329,549.98,320,553.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6f6681ed630f9ccc4faa52591ea25339]
+reverse link repo.ForeignKey_Indexes_union to repo.ForeignKey_Indexes_union_T--><path codeLine="164" d="M325.18,566.98 C353.86,566.98 362.91,566.98 394,566.98 " fill="none" id="repo.ForeignKey_Indexes_union-backto-repo.ForeignKey_Indexes_union_T-13" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="320,566.98,329,570.98,325,566.98,329,562.98,320,566.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6f6681ed630f9ccc4faa52591ea25339]
+reverse link repo.ForeignKey_Indexes_union to repo.ForeignKey_Indexes_union_T--><path codeLine="165" d="M325.18,579.98 C353.86,579.98 362.91,579.98 394,579.98 " fill="none" id="repo.ForeignKey_Indexes_union-backto-repo.ForeignKey_Indexes_union_T-14" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="320,579.98,329,583.98,325,579.98,329,575.98,320,579.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6f6681ed630f9ccc4faa52591ea25339]
+reverse link repo.ForeignKey_Indexes_union to repo.ForeignKey_Indexes_union_T--><path codeLine="166" d="M325.18,592.98 C353.86,592.98 362.91,592.98 394,592.98 " fill="none" id="repo.ForeignKey_Indexes_union-backto-repo.ForeignKey_Indexes_union_T-15" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="320,592.98,329,596.98,325,592.98,329,588.98,320,592.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6f6681ed630f9ccc4faa52591ea25339]
+reverse link repo.ForeignKey_Indexes_union to repo.ForeignKey_Indexes_union_T--><path codeLine="167" d="M325.18,605.98 C353.86,605.98 362.91,605.98 394,605.98 " fill="none" id="repo.ForeignKey_Indexes_union-backto-repo.ForeignKey_Indexes_union_T-16" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="320,605.98,329,609.98,325,605.98,329,601.98,320,605.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6f6681ed630f9ccc4faa52591ea25339]
+reverse link repo.ForeignKey_Indexes_union to repo.ForeignKey_Indexes_union_T--><path codeLine="168" d="M325.18,618.98 C353.86,618.98 362.91,618.98 394,618.98 " fill="none" id="repo.ForeignKey_Indexes_union-backto-repo.ForeignKey_Indexes_union_T-17" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="320,618.98,329,622.98,325,618.98,329,614.98,320,618.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6f6681ed630f9ccc4faa52591ea25339]
+reverse link repo.ForeignKey_Indexes_union to repo.ForeignKey_Indexes_union_T--><path codeLine="169" d="M325.18,631.98 C353.86,631.98 362.91,631.98 394,631.98 " fill="none" id="repo.ForeignKey_Indexes_union-backto-repo.ForeignKey_Indexes_union_T-18" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="320,631.98,329,635.98,325,631.98,329,627.98,320,631.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6f6681ed630f9ccc4faa52591ea25339]
+reverse link repo.ForeignKey_Indexes_union to repo.ForeignKey_Indexes_union_T--><path codeLine="170" d="M325.18,644.98 C353.86,644.98 362.91,644.98 394,644.98 " fill="none" id="repo.ForeignKey_Indexes_union-backto-repo.ForeignKey_Indexes_union_T-19" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="320,644.98,329,648.98,325,644.98,329,640.98,320,644.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6f6681ed630f9ccc4faa52591ea25339]
+reverse link repo.ForeignKey_Indexes_union to repo.ForeignKey_Indexes_union_T--><path codeLine="171" d="M325.18,657.98 C353.86,657.98 362.91,657.98 394,657.98 " fill="none" id="repo.ForeignKey_Indexes_union-backto-repo.ForeignKey_Indexes_union_T-20" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="320,657.98,329,661.98,325,657.98,329,653.98,320,657.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6f6681ed630f9ccc4faa52591ea25339]
+reverse link repo.ForeignKey_Indexes_union to repo.ForeignKey_Indexes_union_T--><path codeLine="172" d="M325.18,670.98 C353.86,670.98 362.91,670.98 394,670.98 " fill="none" id="repo.ForeignKey_Indexes_union-backto-repo.ForeignKey_Indexes_union_T-21" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="320,670.98,329,674.98,325,670.98,329,666.98,320,670.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6f6681ed630f9ccc4faa52591ea25339]
+reverse link repo.ForeignKey_Indexes_union to repo.ForeignKey_Indexes_union_T--><path codeLine="173" d="M325.18,683.98 C353.86,683.98 362.91,683.98 394,683.98 " fill="none" id="repo.ForeignKey_Indexes_union-backto-repo.ForeignKey_Indexes_union_T-22" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="320,683.98,329,687.98,325,683.98,329,679.98,320,683.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6f6681ed630f9ccc4faa52591ea25339]
+reverse link repo.ForeignKey_Indexes_union to repo.ForeignKey_Indexes_union_T--><path codeLine="174" d="M325.18,696.98 C353.86,696.98 362.91,696.98 394,696.98 " fill="none" id="repo.ForeignKey_Indexes_union-backto-repo.ForeignKey_Indexes_union_T-23" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="320,696.98,329,700.98,325,696.98,329,692.98,320,696.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6f6681ed630f9ccc4faa52591ea25339]
+reverse link repo.ForeignKey_Indexes_union to repo.ForeignKey_Indexes_union_T--><path codeLine="175" d="M325.18,709.98 C353.86,709.98 362.91,709.98 394,709.98 " fill="none" id="repo.ForeignKey_Indexes_union-backto-repo.ForeignKey_Indexes_union_T-24" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="320,709.98,329,713.98,325,709.98,329,705.98,320,709.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b55fc215f085e393f5c743fc25246c49]
+reverse link repo.ForeignKey_Indexes_union to repo.usp_PERSIST_ForeignKey_Indexes_union_T--><path codeLine="144" d="M331.26,701.77 C349.41,716.24 368.15,729.94 387,741.98 C525.47,830.41 707.5,889.05 823.66,920.42 " fill="none" id="repo.ForeignKey_Indexes_union-backto-repo.usp_PERSIST_ForeignKey_Indexes_union_T" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="327.15,698.47,331.6673,707.2218,331.0502,701.5987,336.6732,700.9815,327.15,698.47" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[9231ece1f9e853494e6bff91e9cdfa79]
+reverse link repo.ForeignKey_Indexes_union_T to repo.usp_PERSIST_ForeignKey_Indexes_union_T--><path codeLine="145" d="M651.88,728.79 C694.27,803.7 741.52,877.71 775,902.98 C784.02,909.79 794.02,915.57 804.49,920.47 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-repo.usp_PERSIST_ForeignKey_Indexes_union_T" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="649.35,724.31,650.2867,734.1142,651.8061,728.6652,657.2551,730.1845,649.35,724.31" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[17cbd379c2bf1695aa805b6da8c36f72]
+reverse link repo.ForeignKey_Indexes_union_T to repo.RepoObject_related_FK_union--><path codeLine="146" d="M666.95,345.88 C698.31,303.78 734.85,261.96 775,228.98 C784.87,220.87 795.76,213.44 807.09,206.67 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-repo.RepoObject_related_FK_union" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="663.93,349.96,672.4996,345.106,666.9048,345.9412,666.0695,340.3463,663.93,349.96" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[51e13dfa192227a73493057aeaef3518]
+reverse link repo.ForeignKey_Indexes_union_T to repo.ForeignKey_gross--><path codeLine="147" d="M720.24,533.93 C738.36,533.6 756.77,533.27 774.83,532.94 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-repo.ForeignKey_gross" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="715.14,534.02,724.2072,537.8651,720.1393,533.9343,724.0701,529.8663,715.14,534.02" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[51e13dfa192227a73493057aeaef3518]
+reverse link repo.ForeignKey_Indexes_union_T to repo.ForeignKey_gross--><path codeLine="176" d="M713.25,422.87 C742.26,421.6 750.43,409.98 782,409.98 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-repo.ForeignKey_gross-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="708,422.98,717.0891,426.7733,712.9987,422.8657,716.9062,418.7754,708,422.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[51e13dfa192227a73493057aeaef3518]
+reverse link repo.ForeignKey_Indexes_union_T to repo.ForeignKey_gross--><path codeLine="177" d="M713.25,435.87 C742.26,434.6 750.43,422.98 782,422.98 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-repo.ForeignKey_gross-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="708,435.98,717.0891,439.7733,712.9987,435.8657,716.9062,431.7754,708,435.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[51e13dfa192227a73493057aeaef3518]
+reverse link repo.ForeignKey_Indexes_union_T to repo.ForeignKey_gross--><path codeLine="178" d="M713.25,401.87 C742.26,400.6 750.43,388.98 782,388.98 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-repo.ForeignKey_gross-3" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="708,401.98,717.0891,405.7733,712.9987,401.8657,716.9062,397.7754,708,401.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[51e13dfa192227a73493057aeaef3518]
+reverse link repo.ForeignKey_Indexes_union_T to repo.ForeignKey_gross--><path codeLine="179" d="M713.25,448.87 C742.26,447.6 750.43,435.98 782,435.98 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-repo.ForeignKey_gross-4" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="708,448.98,717.0891,452.7733,712.9987,448.8657,716.9062,444.7754,708,448.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[51e13dfa192227a73493057aeaef3518]
+reverse link repo.ForeignKey_Indexes_union_T to repo.ForeignKey_gross--><path codeLine="180" d="M713.25,461.87 C742.26,460.6 750.43,448.98 782,448.98 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-repo.ForeignKey_gross-5" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="708,461.98,717.0891,465.7733,712.9987,461.8657,716.9062,457.7754,708,461.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[51e13dfa192227a73493057aeaef3518]
+reverse link repo.ForeignKey_Indexes_union_T to repo.ForeignKey_gross--><path codeLine="181" d="M713.18,474.98 C741.86,474.98 750.91,474.98 782,474.98 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-repo.ForeignKey_gross-6" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="708,474.98,717,478.98,713,474.98,717,470.98,708,474.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[51e13dfa192227a73493057aeaef3518]
+reverse link repo.ForeignKey_Indexes_union_T to repo.ForeignKey_gross--><path codeLine="182" d="M713.18,500.98 C741.86,500.98 750.91,500.98 782,500.98 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-repo.ForeignKey_gross-7" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="708,500.98,717,504.98,713,500.98,717,496.98,708,500.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[51e13dfa192227a73493057aeaef3518]
+reverse link repo.ForeignKey_Indexes_union_T to repo.ForeignKey_gross--><path codeLine="183" d="M713.18,513.98 C741.86,513.98 750.91,513.98 782,513.98 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-repo.ForeignKey_gross-8" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="708,513.98,717,517.98,713,513.98,717,509.98,708,513.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[51e13dfa192227a73493057aeaef3518]
+reverse link repo.ForeignKey_Indexes_union_T to repo.ForeignKey_gross--><path codeLine="184" d="M713.18,526.98 C741.86,526.98 750.91,526.98 782,526.98 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-repo.ForeignKey_gross-9" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="708,526.98,717,530.98,713,526.98,717,522.98,708,526.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[51e13dfa192227a73493057aeaef3518]
+reverse link repo.ForeignKey_Indexes_union_T to repo.ForeignKey_gross--><path codeLine="186" d="M713.18,540.98 C741.86,540.98 750.91,540.98 782,540.98 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-repo.ForeignKey_gross-10" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="708,540.98,717,544.98,713,540.98,717,536.98,708,540.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[51e13dfa192227a73493057aeaef3518]
+reverse link repo.ForeignKey_Indexes_union_T to repo.ForeignKey_gross--><path codeLine="187" d="M713.18,553.98 C741.86,553.98 750.91,553.98 782,553.98 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-repo.ForeignKey_gross-11" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="708,553.98,717,557.98,713,553.98,717,549.98,708,553.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[51e13dfa192227a73493057aeaef3518]
+reverse link repo.ForeignKey_Indexes_union_T to repo.ForeignKey_gross--><path codeLine="189" d="M713.18,566.98 C741.86,566.98 750.91,566.98 782,566.98 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-repo.ForeignKey_gross-12" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="708,566.98,717,570.98,713,566.98,717,562.98,708,566.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[51e13dfa192227a73493057aeaef3518]
+reverse link repo.ForeignKey_Indexes_union_T to repo.ForeignKey_gross--><path codeLine="190" d="M713.18,579.98 C741.86,579.98 750.91,579.98 782,579.98 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-repo.ForeignKey_gross-13" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="708,579.98,717,583.98,713,579.98,717,575.98,708,579.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[51e13dfa192227a73493057aeaef3518]
+reverse link repo.ForeignKey_Indexes_union_T to repo.ForeignKey_gross--><path codeLine="191" d="M713.18,592.98 C741.86,592.98 750.91,592.98 782,592.98 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-repo.ForeignKey_gross-14" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="708,592.98,717,596.98,713,592.98,717,588.98,708,592.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[51e13dfa192227a73493057aeaef3518]
+reverse link repo.ForeignKey_Indexes_union_T to repo.ForeignKey_gross--><path codeLine="192" d="M713.18,618.98 C741.86,618.98 750.91,618.98 782,618.98 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-repo.ForeignKey_gross-15" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="708,618.98,717,622.98,713,618.98,717,614.98,708,618.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[51e13dfa192227a73493057aeaef3518]
+reverse link repo.ForeignKey_Indexes_union_T to repo.ForeignKey_gross--><path codeLine="193" d="M713.18,631.98 C741.86,631.98 750.91,631.98 782,631.98 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-repo.ForeignKey_gross-16" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="708,631.98,717,635.98,713,631.98,717,627.98,708,631.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[51e13dfa192227a73493057aeaef3518]
+reverse link repo.ForeignKey_Indexes_union_T to repo.ForeignKey_gross--><path codeLine="194" d="M713.18,644.98 C741.86,644.98 750.91,644.98 782,644.98 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-repo.ForeignKey_gross-17" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="708,644.98,717,648.98,713,644.98,717,640.98,708,644.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[51e13dfa192227a73493057aeaef3518]
+reverse link repo.ForeignKey_Indexes_union_T to repo.ForeignKey_gross--><path codeLine="196" d="M713.18,657.98 C741.86,657.98 750.91,657.98 782,657.98 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-repo.ForeignKey_gross-18" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="708,657.98,717,661.98,713,657.98,717,653.98,708,657.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[51e13dfa192227a73493057aeaef3518]
+reverse link repo.ForeignKey_Indexes_union_T to repo.ForeignKey_gross--><path codeLine="198" d="M713.18,670.98 C741.86,670.98 750.91,670.98 782,670.98 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-repo.ForeignKey_gross-19" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="708,670.98,717,674.98,713,670.98,717,666.98,708,670.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[51e13dfa192227a73493057aeaef3518]
+reverse link repo.ForeignKey_Indexes_union_T to repo.ForeignKey_gross--><path codeLine="199" d="M713.18,683.98 C741.86,683.98 750.91,683.98 782,683.98 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-repo.ForeignKey_gross-20" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="708,683.98,717,687.98,713,683.98,717,679.98,708,683.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[51e13dfa192227a73493057aeaef3518]
+reverse link repo.ForeignKey_Indexes_union_T to repo.ForeignKey_gross--><path codeLine="200" d="M713.18,696.98 C741.86,696.98 750.91,696.98 782,696.98 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-repo.ForeignKey_gross-21" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="708,696.98,717,700.98,713,696.98,717,692.98,708,696.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[51e13dfa192227a73493057aeaef3518]
+reverse link repo.ForeignKey_Indexes_union_T to repo.ForeignKey_gross--><path codeLine="201" d="M713.18,709.98 C741.86,709.98 750.91,709.98 782,709.98 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-repo.ForeignKey_gross-22" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="708,709.98,717,713.98,713,709.98,717,705.98,708,709.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[f472508e185624cb6457aced55aa7123]
+reverse link repo.ForeignKey_Indexes_union_T to repo.usp_Index_finish--><path codeLine="148" d="M719.07,357.28 C737.04,343.09 755.8,330.02 775,318.98 C806.81,300.69 846.42,289.53 878.63,282.9 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-repo.usp_Index_finish" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="715.01,360.51,724.5433,358.0367,718.9227,357.397,719.5624,351.7764,715.01,360.51" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b32d52ea4a72c0d32013c25bf999bf11]
+reverse link repo.ForeignKey_Indexes_union_T to docs.ForeignKey_RelationScript--><path codeLine="149" d="M719.3,698.91 C737.54,713.84 756.29,728.15 775,740.98 C783.73,746.97 792.97,752.77 802.43,758.35 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-docs.ForeignKey_RelationScript" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="715.17,695.51,719.5814,704.3157,719.0321,698.6855,724.6623,698.1362,715.17,695.51" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b32d52ea4a72c0d32013c25bf999bf11]
+reverse link repo.ForeignKey_Indexes_union_T to docs.ForeignKey_RelationScript--><path codeLine="185" d="M713.25,527.12 C856.56,534.72 651.32,858.98 803,858.98 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-docs.ForeignKey_RelationScript-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="708,526.98,716.8942,531.21,712.9983,527.1085,717.0998,523.2127,708,526.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b32d52ea4a72c0d32013c25bf999bf11]
+reverse link repo.ForeignKey_Indexes_union_T to docs.ForeignKey_RelationScript--><path codeLine="188" d="M713.18,554.14 C825.48,561.45 683.01,810.98 803,810.98 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-docs.ForeignKey_RelationScript-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="708,553.98,716.8699,558.2607,712.9975,554.1371,717.1212,550.2647,708,553.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b32d52ea4a72c0d32013c25bf999bf11]
+reverse link repo.ForeignKey_Indexes_union_T to docs.ForeignKey_RelationScript--><path codeLine="195" d="M713.26,645.17 C813.32,652.45 695.45,871.98 803,871.98 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-docs.ForeignKey_RelationScript-3" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="708,644.98,716.8577,649.286,712.9971,645.1513,717.1318,641.2907,708,644.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b32d52ea4a72c0d32013c25bf999bf11]
+reverse link repo.ForeignKey_Indexes_union_T to docs.ForeignKey_RelationScript--><path codeLine="197" d="M713.42,671.23 C785.41,678.11 724.46,824.98 803,824.98 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-docs.ForeignKey_RelationScript-4" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="708,670.98,716.7953,675.4119,712.9941,671.2226,717.1835,667.4213,708,670.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[325e1c82a10d040deab2765d8569c58b]
+reverse link repo.ForeignKey_Indexes_union_T to docs.RepoObject_PlantUml_FkRefList--><path codeLine="150" d="M594.16,344.85 C626.33,247.32 681.63,137.37 775,78.98 C891.7,6 1055.18,35.95 1162.9,69.4 " fill="none" id="repo.ForeignKey_Indexes_union_T-backto-docs.RepoObject_PlantUml_FkRefList" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="592.55,349.78,599.1379,342.4588,594.0967,345.0253,591.5303,339.9841,592.55,349.78" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[27b654218090a20730c185ed435bc000]
+reverse link repo.RepoObject_related_FK_union to docs.RepoObject_PlantUml_FkRefList--><path codeLine="151" d="M1075.77,136.93 C1104.69,133.3 1134.9,129.51 1162.8,126.01 " fill="none" id="repo.RepoObject_related_FK_union-backto-docs.RepoObject_PlantUml_FkRefList" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="1070.76,137.56,1080.1836,140.4228,1075.722,136.9451,1079.1998,132.4836,1070.76,137.56" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[27b654218090a20730c185ed435bc000]
+reverse link repo.RepoObject_related_FK_union to docs.RepoObject_PlantUml_FkRefList--><path codeLine="202" d="M1069.13,148.98 C1112.26,148.98 1124.92,148.98 1170.5,148.98 " fill="none" id="repo.RepoObject_related_FK_union-backto-docs.RepoObject_PlantUml_FkRefList-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="1064,148.98,1073,152.98,1069,148.98,1073,144.98,1064,148.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b49ee686f7b76854bb512d343143c95e]
+@startuml
+left to right direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity docs.ForeignKey_RelationScript << V >> {
+  **referenced_RepoObject_guid** : uniqueidentifier
+  **referencing_RepoObject_guid** : uniqueidentifier
+  - -
+  * DbmlRelation : nvarchar(4000)
+  referenced_RepoObject_fullname : nvarchar(261)
+  referencing_RepoObject_fullname : nvarchar(261)
+}
+
+entity docs.RepoObject_PlantUml_FkRefList << V >> {
+  - -
+  FkRefList : nvarchar(max)
+  RepoObject_fullname2 : nvarchar(257)
+  RepoObject_guid : uniqueidentifier
+}
+
+entity repo.ForeignKey_gross << V >> {
+  **ForeignKey_guid** : uniqueidentifier
+  - -
+  delete_referential_action : tinyint
+  ForeignKey_fullname : nvarchar(517)
+  ForeignKey_name : nvarchar(128)
+  * is_MatchingDatatypePattern : int
+  * referenced_AntoraXref : nvarchar(951)
+  referenced_index_guid : uniqueidentifier
+  referenced_index_name : nvarchar(128)
+  referenced_IndexPatternColumnDatatype : nvarchar(4000)
+  referenced_IndexPatternColumnName : nvarchar(4000)
+  referenced_RepoObject_fullname : nvarchar(261)
+  referenced_RepoObject_fullname2 : nvarchar(257)
+  referenced_RepoObject_guid : uniqueidentifier
+  referenced_SysObject_name : nvarchar(128)
+  referenced_SysObject_schema_name : nvarchar(128)
+  referencing_index_guid : uniqueidentifier
+  referencing_index_name : nvarchar(128)
+  referencing_IndexPatternColumnDatatype : nvarchar(4000)
+  referencing_IndexPatternColumnName : nvarchar(4000)
+  referencing_RepoObject_fullname : nvarchar(261)
+  referencing_RepoObject_fullname2 : nvarchar(257)
+  referencing_RepoObject_guid : uniqueidentifier
+  referencing_SysObject_name : nvarchar(128)
+  referencing_SysObject_schema_name : nvarchar(128)
+  update_referential_action : tinyint
+}
+
+entity repo.ForeignKey_Indexes_union << V >> {
+  **ForeignKey_guid** : uniqueidentifier
+  - -
+  delete_referential_action : tinyint
+  ForeignKey_fullname : nvarchar(517)
+  ForeignKey_name : nvarchar(128)
+  * is_MatchingDatatypePattern : int
+  referenced_index_guid : uniqueidentifier
+  referenced_index_name : nvarchar(128)
+  referenced_IndexPatternColumnDatatype : nvarchar(4000)
+  referenced_IndexPatternColumnName : nvarchar(4000)
+  referenced_RepoObject_fullname : nvarchar(261)
+  referenced_RepoObject_fullname2 : nvarchar(257)
+  referenced_RepoObject_guid : uniqueidentifier
+  referenced_SysObject_name : nvarchar(128)
+  referenced_SysObject_schema_name : nvarchar(128)
+  referencing_index_guid : uniqueidentifier
+  referencing_index_name : nvarchar(128)
+  referencing_IndexPatternColumnDatatype : nvarchar(4000)
+  referencing_IndexPatternColumnName : nvarchar(4000)
+  referencing_RepoObject_fullname : nvarchar(261)
+  referencing_RepoObject_fullname2 : nvarchar(257)
+  referencing_RepoObject_guid : uniqueidentifier
+  referencing_SysObject_name : nvarchar(128)
+  referencing_SysObject_schema_name : nvarchar(128)
+  update_referential_action : tinyint
+}
+
+entity repo.ForeignKey_Indexes_union_T << U >> {
+  **ForeignKey_guid** : uniqueidentifier
+  - -
+  delete_referential_action : tinyint
+  ForeignKey_fullname : nvarchar(517)
+  ForeignKey_name : nvarchar(128)
+  * is_MatchingDatatypePattern : int
+  referenced_index_guid : uniqueidentifier
+  referenced_index_name : nvarchar(128)
+  referenced_IndexPatternColumnDatatype : nvarchar(4000)
+  referenced_IndexPatternColumnName : nvarchar(4000)
+  referenced_RepoObject_fullname : nvarchar(261)
+  referenced_RepoObject_fullname2 : nvarchar(257)
+  referenced_RepoObject_guid : uniqueidentifier
+  referenced_SysObject_name : nvarchar(128)
+  referenced_SysObject_schema_name : nvarchar(128)
+  referencing_index_guid : uniqueidentifier
+  referencing_index_name : nvarchar(128)
+  referencing_IndexPatternColumnDatatype : nvarchar(4000)
+  referencing_IndexPatternColumnName : nvarchar(4000)
+  referencing_RepoObject_fullname : nvarchar(261)
+  referencing_RepoObject_fullname2 : nvarchar(257)
+  referencing_RepoObject_guid : uniqueidentifier
+  referencing_SysObject_name : nvarchar(128)
+  referencing_SysObject_schema_name : nvarchar(128)
+  update_referential_action : tinyint
+}
+
+entity repo.RepoObject_related_FK_union << V >> {
+  **RepoObject_guid** : uniqueidentifier
+  **included_RepoObject_guid** : uniqueidentifier
+  - -
+  included_RepoObject_fullname2 : nvarchar(257)
+  RepoObject_fullname2 : nvarchar(257)
+}
+
+entity repo.usp_Index_finish << P >> {
+  - -
+}
+
+entity repo.usp_PERSIST_ForeignKey_Indexes_union_T << P >> {
+  - -
+}
+
+repo.ForeignKey_Indexes_union <.. repo.ForeignKey_Indexes_union_T
+repo.ForeignKey_Indexes_union <.. repo.usp_PERSIST_ForeignKey_Indexes_union_T
+repo.ForeignKey_Indexes_union_T <.. repo.usp_PERSIST_ForeignKey_Indexes_union_T
+repo.ForeignKey_Indexes_union_T <.. repo.RepoObject_related_FK_union
+repo.ForeignKey_Indexes_union_T <.. repo.ForeignKey_gross
+repo.ForeignKey_Indexes_union_T <.. repo.usp_Index_finish
+repo.ForeignKey_Indexes_union_T <.. docs.ForeignKey_RelationScript
+repo.ForeignKey_Indexes_union_T <.. docs.RepoObject_PlantUml_FkRefList
+repo.RepoObject_related_FK_union <.. docs.RepoObject_PlantUml_FkRefList
+repo.ForeignKey_Indexes_union::delete_referential_action <- - repo.ForeignKey_Indexes_union_T::delete_referential_action
+repo.ForeignKey_Indexes_union::ForeignKey_fullname <- - repo.ForeignKey_Indexes_union_T::ForeignKey_fullname
+repo.ForeignKey_Indexes_union::ForeignKey_guid <- - repo.ForeignKey_Indexes_union_T::ForeignKey_guid
+repo.ForeignKey_Indexes_union::ForeignKey_name <- - repo.ForeignKey_Indexes_union_T::ForeignKey_name
+repo.ForeignKey_Indexes_union::is_MatchingDatatypePattern <- - repo.ForeignKey_Indexes_union_T::is_MatchingDatatypePattern
+repo.ForeignKey_Indexes_union::referenced_index_guid <- - repo.ForeignKey_Indexes_union_T::referenced_index_guid
+repo.ForeignKey_Indexes_union::referenced_index_name <- - repo.ForeignKey_Indexes_union_T::referenced_index_name
+repo.ForeignKey_Indexes_union::referenced_IndexPatternColumnDatatype <- - repo.ForeignKey_Indexes_union_T::referenced_IndexPatternColumnDatatype
+repo.ForeignKey_Indexes_union::referenced_IndexPatternColumnName <- - repo.ForeignKey_Indexes_union_T::referenced_IndexPatternColumnName
+repo.ForeignKey_Indexes_union::referenced_RepoObject_fullname <- - repo.ForeignKey_Indexes_union_T::referenced_RepoObject_fullname
+repo.ForeignKey_Indexes_union::referenced_RepoObject_fullname2 <- - repo.ForeignKey_Indexes_union_T::referenced_RepoObject_fullname2
+repo.ForeignKey_Indexes_union::referenced_RepoObject_guid <- - repo.ForeignKey_Indexes_union_T::referenced_RepoObject_guid
+repo.ForeignKey_Indexes_union::referenced_SysObject_name <- - repo.ForeignKey_Indexes_union_T::referenced_SysObject_name
+repo.ForeignKey_Indexes_union::referenced_SysObject_schema_name <- - repo.ForeignKey_Indexes_union_T::referenced_SysObject_schema_name
+repo.ForeignKey_Indexes_union::referencing_index_guid <- - repo.ForeignKey_Indexes_union_T::referencing_index_guid
+repo.ForeignKey_Indexes_union::referencing_index_name <- - repo.ForeignKey_Indexes_union_T::referencing_index_name
+repo.ForeignKey_Indexes_union::referencing_IndexPatternColumnDatatype <- - repo.ForeignKey_Indexes_union_T::referencing_IndexPatternColumnDatatype
+repo.ForeignKey_Indexes_union::referencing_IndexPatternColumnName <- - repo.ForeignKey_Indexes_union_T::referencing_IndexPatternColumnName
+repo.ForeignKey_Indexes_union::referencing_RepoObject_fullname <- - repo.ForeignKey_Indexes_union_T::referencing_RepoObject_fullname
+repo.ForeignKey_Indexes_union::referencing_RepoObject_fullname2 <- - repo.ForeignKey_Indexes_union_T::referencing_RepoObject_fullname2
+repo.ForeignKey_Indexes_union::referencing_RepoObject_guid <- - repo.ForeignKey_Indexes_union_T::referencing_RepoObject_guid
+repo.ForeignKey_Indexes_union::referencing_SysObject_name <- - repo.ForeignKey_Indexes_union_T::referencing_SysObject_name
+repo.ForeignKey_Indexes_union::referencing_SysObject_schema_name <- - repo.ForeignKey_Indexes_union_T::referencing_SysObject_schema_name
+repo.ForeignKey_Indexes_union::update_referential_action <- - repo.ForeignKey_Indexes_union_T::update_referential_action
+repo.ForeignKey_Indexes_union_T::delete_referential_action <- - repo.ForeignKey_gross::delete_referential_action
+repo.ForeignKey_Indexes_union_T::ForeignKey_fullname <- - repo.ForeignKey_gross::ForeignKey_fullname
+repo.ForeignKey_Indexes_union_T::ForeignKey_guid <- - repo.ForeignKey_gross::ForeignKey_guid
+repo.ForeignKey_Indexes_union_T::ForeignKey_name <- - repo.ForeignKey_gross::ForeignKey_name
+repo.ForeignKey_Indexes_union_T::is_MatchingDatatypePattern <- - repo.ForeignKey_gross::is_MatchingDatatypePattern
+repo.ForeignKey_Indexes_union_T::referenced_index_guid <- - repo.ForeignKey_gross::referenced_index_guid
+repo.ForeignKey_Indexes_union_T::referenced_IndexPatternColumnDatatype <- - repo.ForeignKey_gross::referenced_IndexPatternColumnDatatype
+repo.ForeignKey_Indexes_union_T::referenced_IndexPatternColumnName <- - repo.ForeignKey_gross::referenced_IndexPatternColumnName
+repo.ForeignKey_Indexes_union_T::referenced_RepoObject_fullname <- - repo.ForeignKey_gross::referenced_RepoObject_fullname
+repo.ForeignKey_Indexes_union_T::referenced_RepoObject_fullname <- - docs.ForeignKey_RelationScript::referenced_RepoObject_fullname
+repo.ForeignKey_Indexes_union_T::referenced_RepoObject_fullname2 <- - repo.ForeignKey_gross::referenced_RepoObject_fullname2
+repo.ForeignKey_Indexes_union_T::referenced_RepoObject_guid <- - repo.ForeignKey_gross::referenced_RepoObject_guid
+repo.ForeignKey_Indexes_union_T::referenced_RepoObject_guid <- - docs.ForeignKey_RelationScript::referenced_RepoObject_guid
+repo.ForeignKey_Indexes_union_T::referenced_SysObject_name <- - repo.ForeignKey_gross::referenced_SysObject_name
+repo.ForeignKey_Indexes_union_T::referenced_SysObject_schema_name <- - repo.ForeignKey_gross::referenced_SysObject_schema_name
+repo.ForeignKey_Indexes_union_T::referencing_index_guid <- - repo.ForeignKey_gross::referencing_index_guid
+repo.ForeignKey_Indexes_union_T::referencing_IndexPatternColumnDatatype <- - repo.ForeignKey_gross::referencing_IndexPatternColumnDatatype
+repo.ForeignKey_Indexes_union_T::referencing_IndexPatternColumnName <- - repo.ForeignKey_gross::referencing_IndexPatternColumnName
+repo.ForeignKey_Indexes_union_T::referencing_RepoObject_fullname <- - repo.ForeignKey_gross::referencing_RepoObject_fullname
+repo.ForeignKey_Indexes_union_T::referencing_RepoObject_fullname <- - docs.ForeignKey_RelationScript::referencing_RepoObject_fullname
+repo.ForeignKey_Indexes_union_T::referencing_RepoObject_fullname2 <- - repo.ForeignKey_gross::referencing_RepoObject_fullname2
+repo.ForeignKey_Indexes_union_T::referencing_RepoObject_guid <- - docs.ForeignKey_RelationScript::referencing_RepoObject_guid
+repo.ForeignKey_Indexes_union_T::referencing_RepoObject_guid <- - repo.ForeignKey_gross::referencing_RepoObject_guid
+repo.ForeignKey_Indexes_union_T::referencing_SysObject_name <- - repo.ForeignKey_gross::referencing_SysObject_name
+repo.ForeignKey_Indexes_union_T::referencing_SysObject_schema_name <- - repo.ForeignKey_gross::referencing_SysObject_schema_name
+repo.ForeignKey_Indexes_union_T::update_referential_action <- - repo.ForeignKey_gross::update_referential_action
+repo.RepoObject_related_FK_union::RepoObject_guid <- - docs.RepoObject_PlantUml_FkRefList::RepoObject_guid
+@enduml
+
+@startuml
+left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity docs.ForeignKey_RelationScript << V >> {
+  **referenced_RepoObject_guid** : uniqueidentifier
+  **referencing_RepoObject_guid** : uniqueidentifier
+  - -
+  * DbmlRelation : nvarchar(4000)
+  referenced_RepoObject_fullname : nvarchar(261)
+  referencing_RepoObject_fullname : nvarchar(261)
+}
+
+entity docs.RepoObject_PlantUml_FkRefList << V >> {
+  - -
+  FkRefList : nvarchar(max)
+  RepoObject_fullname2 : nvarchar(257)
+  RepoObject_guid : uniqueidentifier
+}
+
+entity repo.ForeignKey_gross << V >> {
+  **ForeignKey_guid** : uniqueidentifier
+  - -
+  delete_referential_action : tinyint
+  ForeignKey_fullname : nvarchar(517)
+  ForeignKey_name : nvarchar(128)
+  * is_MatchingDatatypePattern : int
+  * referenced_AntoraXref : nvarchar(951)
+  referenced_index_guid : uniqueidentifier
+  referenced_index_name : nvarchar(128)
+  referenced_IndexPatternColumnDatatype : nvarchar(4000)
+  referenced_IndexPatternColumnName : nvarchar(4000)
+  referenced_RepoObject_fullname : nvarchar(261)
+  referenced_RepoObject_fullname2 : nvarchar(257)
+  referenced_RepoObject_guid : uniqueidentifier
+  referenced_SysObject_name : nvarchar(128)
+  referenced_SysObject_schema_name : nvarchar(128)
+  referencing_index_guid : uniqueidentifier
+  referencing_index_name : nvarchar(128)
+  referencing_IndexPatternColumnDatatype : nvarchar(4000)
+  referencing_IndexPatternColumnName : nvarchar(4000)
+  referencing_RepoObject_fullname : nvarchar(261)
+  referencing_RepoObject_fullname2 : nvarchar(257)
+  referencing_RepoObject_guid : uniqueidentifier
+  referencing_SysObject_name : nvarchar(128)
+  referencing_SysObject_schema_name : nvarchar(128)
+  update_referential_action : tinyint
+}
+
+entity repo.ForeignKey_Indexes_union << V >> {
+  **ForeignKey_guid** : uniqueidentifier
+  - -
+  delete_referential_action : tinyint
+  ForeignKey_fullname : nvarchar(517)
+  ForeignKey_name : nvarchar(128)
+  * is_MatchingDatatypePattern : int
+  referenced_index_guid : uniqueidentifier
+  referenced_index_name : nvarchar(128)
+  referenced_IndexPatternColumnDatatype : nvarchar(4000)
+  referenced_IndexPatternColumnName : nvarchar(4000)
+  referenced_RepoObject_fullname : nvarchar(261)
+  referenced_RepoObject_fullname2 : nvarchar(257)
+  referenced_RepoObject_guid : uniqueidentifier
+  referenced_SysObject_name : nvarchar(128)
+  referenced_SysObject_schema_name : nvarchar(128)
+  referencing_index_guid : uniqueidentifier
+  referencing_index_name : nvarchar(128)
+  referencing_IndexPatternColumnDatatype : nvarchar(4000)
+  referencing_IndexPatternColumnName : nvarchar(4000)
+  referencing_RepoObject_fullname : nvarchar(261)
+  referencing_RepoObject_fullname2 : nvarchar(257)
+  referencing_RepoObject_guid : uniqueidentifier
+  referencing_SysObject_name : nvarchar(128)
+  referencing_SysObject_schema_name : nvarchar(128)
+  update_referential_action : tinyint
+}
+
+entity repo.ForeignKey_Indexes_union_T << U >> {
+  **ForeignKey_guid** : uniqueidentifier
+  - -
+  delete_referential_action : tinyint
+  ForeignKey_fullname : nvarchar(517)
+  ForeignKey_name : nvarchar(128)
+  * is_MatchingDatatypePattern : int
+  referenced_index_guid : uniqueidentifier
+  referenced_index_name : nvarchar(128)
+  referenced_IndexPatternColumnDatatype : nvarchar(4000)
+  referenced_IndexPatternColumnName : nvarchar(4000)
+  referenced_RepoObject_fullname : nvarchar(261)
+  referenced_RepoObject_fullname2 : nvarchar(257)
+  referenced_RepoObject_guid : uniqueidentifier
+  referenced_SysObject_name : nvarchar(128)
+  referenced_SysObject_schema_name : nvarchar(128)
+  referencing_index_guid : uniqueidentifier
+  referencing_index_name : nvarchar(128)
+  referencing_IndexPatternColumnDatatype : nvarchar(4000)
+  referencing_IndexPatternColumnName : nvarchar(4000)
+  referencing_RepoObject_fullname : nvarchar(261)
+  referencing_RepoObject_fullname2 : nvarchar(257)
+  referencing_RepoObject_guid : uniqueidentifier
+  referencing_SysObject_name : nvarchar(128)
+  referencing_SysObject_schema_name : nvarchar(128)
+  update_referential_action : tinyint
+}
+
+entity repo.RepoObject_related_FK_union << V >> {
+  **RepoObject_guid** : uniqueidentifier
+  **included_RepoObject_guid** : uniqueidentifier
+  - -
+  included_RepoObject_fullname2 : nvarchar(257)
+  RepoObject_fullname2 : nvarchar(257)
+}
+
+entity repo.usp_Index_finish << P >> {
+  - -
+}
+
+entity repo.usp_PERSIST_ForeignKey_Indexes_union_T << P >> {
+  - -
+}
+
+repo.ForeignKey_Indexes_union <.. repo.ForeignKey_Indexes_union_T
+repo.ForeignKey_Indexes_union <.. repo.usp_PERSIST_ForeignKey_Indexes_union_T
+repo.ForeignKey_Indexes_union_T <.. repo.usp_PERSIST_ForeignKey_Indexes_union_T
+repo.ForeignKey_Indexes_union_T <.. repo.RepoObject_related_FK_union
+repo.ForeignKey_Indexes_union_T <.. repo.ForeignKey_gross
+repo.ForeignKey_Indexes_union_T <.. repo.usp_Index_finish
+repo.ForeignKey_Indexes_union_T <.. docs.ForeignKey_RelationScript
+repo.ForeignKey_Indexes_union_T <.. docs.RepoObject_PlantUml_FkRefList
+repo.RepoObject_related_FK_union <.. docs.RepoObject_PlantUml_FkRefList
+repo.ForeignKey_Indexes_union::delete_referential_action <- - repo.ForeignKey_Indexes_union_T::delete_referential_action
+repo.ForeignKey_Indexes_union::ForeignKey_fullname <- - repo.ForeignKey_Indexes_union_T::ForeignKey_fullname
+repo.ForeignKey_Indexes_union::ForeignKey_guid <- - repo.ForeignKey_Indexes_union_T::ForeignKey_guid
+repo.ForeignKey_Indexes_union::ForeignKey_name <- - repo.ForeignKey_Indexes_union_T::ForeignKey_name
+repo.ForeignKey_Indexes_union::is_MatchingDatatypePattern <- - repo.ForeignKey_Indexes_union_T::is_MatchingDatatypePattern
+repo.ForeignKey_Indexes_union::referenced_index_guid <- - repo.ForeignKey_Indexes_union_T::referenced_index_guid
+repo.ForeignKey_Indexes_union::referenced_index_name <- - repo.ForeignKey_Indexes_union_T::referenced_index_name
+repo.ForeignKey_Indexes_union::referenced_IndexPatternColumnDatatype <- - repo.ForeignKey_Indexes_union_T::referenced_IndexPatternColumnDatatype
+repo.ForeignKey_Indexes_union::referenced_IndexPatternColumnName <- - repo.ForeignKey_Indexes_union_T::referenced_IndexPatternColumnName
+repo.ForeignKey_Indexes_union::referenced_RepoObject_fullname <- - repo.ForeignKey_Indexes_union_T::referenced_RepoObject_fullname
+repo.ForeignKey_Indexes_union::referenced_RepoObject_fullname2 <- - repo.ForeignKey_Indexes_union_T::referenced_RepoObject_fullname2
+repo.ForeignKey_Indexes_union::referenced_RepoObject_guid <- - repo.ForeignKey_Indexes_union_T::referenced_RepoObject_guid
+repo.ForeignKey_Indexes_union::referenced_SysObject_name <- - repo.ForeignKey_Indexes_union_T::referenced_SysObject_name
+repo.ForeignKey_Indexes_union::referenced_SysObject_schema_name <- - repo.ForeignKey_Indexes_union_T::referenced_SysObject_schema_name
+repo.ForeignKey_Indexes_union::referencing_index_guid <- - repo.ForeignKey_Indexes_union_T::referencing_index_guid
+repo.ForeignKey_Indexes_union::referencing_index_name <- - repo.ForeignKey_Indexes_union_T::referencing_index_name
+repo.ForeignKey_Indexes_union::referencing_IndexPatternColumnDatatype <- - repo.ForeignKey_Indexes_union_T::referencing_IndexPatternColumnDatatype
+repo.ForeignKey_Indexes_union::referencing_IndexPatternColumnName <- - repo.ForeignKey_Indexes_union_T::referencing_IndexPatternColumnName
+repo.ForeignKey_Indexes_union::referencing_RepoObject_fullname <- - repo.ForeignKey_Indexes_union_T::referencing_RepoObject_fullname
+repo.ForeignKey_Indexes_union::referencing_RepoObject_fullname2 <- - repo.ForeignKey_Indexes_union_T::referencing_RepoObject_fullname2
+repo.ForeignKey_Indexes_union::referencing_RepoObject_guid <- - repo.ForeignKey_Indexes_union_T::referencing_RepoObject_guid
+repo.ForeignKey_Indexes_union::referencing_SysObject_name <- - repo.ForeignKey_Indexes_union_T::referencing_SysObject_name
+repo.ForeignKey_Indexes_union::referencing_SysObject_schema_name <- - repo.ForeignKey_Indexes_union_T::referencing_SysObject_schema_name
+repo.ForeignKey_Indexes_union::update_referential_action <- - repo.ForeignKey_Indexes_union_T::update_referential_action
+repo.ForeignKey_Indexes_union_T::delete_referential_action <- - repo.ForeignKey_gross::delete_referential_action
+repo.ForeignKey_Indexes_union_T::ForeignKey_fullname <- - repo.ForeignKey_gross::ForeignKey_fullname
+repo.ForeignKey_Indexes_union_T::ForeignKey_guid <- - repo.ForeignKey_gross::ForeignKey_guid
+repo.ForeignKey_Indexes_union_T::ForeignKey_name <- - repo.ForeignKey_gross::ForeignKey_name
+repo.ForeignKey_Indexes_union_T::is_MatchingDatatypePattern <- - repo.ForeignKey_gross::is_MatchingDatatypePattern
+repo.ForeignKey_Indexes_union_T::referenced_index_guid <- - repo.ForeignKey_gross::referenced_index_guid
+repo.ForeignKey_Indexes_union_T::referenced_IndexPatternColumnDatatype <- - repo.ForeignKey_gross::referenced_IndexPatternColumnDatatype
+repo.ForeignKey_Indexes_union_T::referenced_IndexPatternColumnName <- - repo.ForeignKey_gross::referenced_IndexPatternColumnName
+repo.ForeignKey_Indexes_union_T::referenced_RepoObject_fullname <- - repo.ForeignKey_gross::referenced_RepoObject_fullname
+repo.ForeignKey_Indexes_union_T::referenced_RepoObject_fullname <- - docs.ForeignKey_RelationScript::referenced_RepoObject_fullname
+repo.ForeignKey_Indexes_union_T::referenced_RepoObject_fullname2 <- - repo.ForeignKey_gross::referenced_RepoObject_fullname2
+repo.ForeignKey_Indexes_union_T::referenced_RepoObject_guid <- - repo.ForeignKey_gross::referenced_RepoObject_guid
+repo.ForeignKey_Indexes_union_T::referenced_RepoObject_guid <- - docs.ForeignKey_RelationScript::referenced_RepoObject_guid
+repo.ForeignKey_Indexes_union_T::referenced_SysObject_name <- - repo.ForeignKey_gross::referenced_SysObject_name
+repo.ForeignKey_Indexes_union_T::referenced_SysObject_schema_name <- - repo.ForeignKey_gross::referenced_SysObject_schema_name
+repo.ForeignKey_Indexes_union_T::referencing_index_guid <- - repo.ForeignKey_gross::referencing_index_guid
+repo.ForeignKey_Indexes_union_T::referencing_IndexPatternColumnDatatype <- - repo.ForeignKey_gross::referencing_IndexPatternColumnDatatype
+repo.ForeignKey_Indexes_union_T::referencing_IndexPatternColumnName <- - repo.ForeignKey_gross::referencing_IndexPatternColumnName
+repo.ForeignKey_Indexes_union_T::referencing_RepoObject_fullname <- - repo.ForeignKey_gross::referencing_RepoObject_fullname
+repo.ForeignKey_Indexes_union_T::referencing_RepoObject_fullname <- - docs.ForeignKey_RelationScript::referencing_RepoObject_fullname
+repo.ForeignKey_Indexes_union_T::referencing_RepoObject_fullname2 <- - repo.ForeignKey_gross::referencing_RepoObject_fullname2
+repo.ForeignKey_Indexes_union_T::referencing_RepoObject_guid <- - docs.ForeignKey_RelationScript::referencing_RepoObject_guid
+repo.ForeignKey_Indexes_union_T::referencing_RepoObject_guid <- - repo.ForeignKey_gross::referencing_RepoObject_guid
+repo.ForeignKey_Indexes_union_T::referencing_SysObject_name <- - repo.ForeignKey_gross::referencing_SysObject_name
+repo.ForeignKey_Indexes_union_T::referencing_SysObject_schema_name <- - repo.ForeignKey_gross::referencing_SysObject_schema_name
+repo.ForeignKey_Indexes_union_T::update_referential_action <- - repo.ForeignKey_gross::update_referential_action
+repo.RepoObject_related_FK_union::RepoObject_guid <- - docs.RepoObject_PlantUml_FkRefList::RepoObject_guid
+@enduml
+
+PlantUML version 1.2021.4(Sun Apr 04 08:49:39 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
