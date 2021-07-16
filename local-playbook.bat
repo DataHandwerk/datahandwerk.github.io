@@ -1,0 +1,1 @@
+antora --fetch local-playbook.yml
