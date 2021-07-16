@@ -71,6 +71,9 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="nav/objects-by-schema.html">Objects by schema</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Objects by schema</span>
 <ul class="nav-list">
@@ -227,6 +230,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ForeignKey_RelationScript.html">docs.ForeignKey_RelationScript</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.fs_cleanStringForAnchorId.html">docs.fs_cleanStringForAnchorId</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.fs_cleanStringForLabel.html">docs.fs_cleanStringForLabel</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ftv_RepoObject_Reference_PlantUml_EntityRefList.html">docs.ftv_RepoObject_Reference_PlantUml_EntityRefList</a>
@@ -467,6 +476,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_cross.html">property.RepoObjectProperty_cross</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.RepoObjectProperty_ForUpdate.html">property.RepoObjectProperty_ForUpdate</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_InheritanceType_InheritanceDefinition.html">property.RepoObjectProperty_InheritanceType_InheritanceDefinition</a>
@@ -715,6 +727,9 @@
     <a class="nav-link" href="repo.Index_Settings.html">repo.Index_Settings</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.Index_Settings_ForUpdate.html">repo.Index_Settings_ForUpdate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.Index_SqlConstraint_PkUq.html">repo.Index_SqlConstraint_PkUq</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -737,6 +752,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T</a>
@@ -1223,6 +1241,9 @@
     <a class="nav-link" href="../manual/create-update-connect-repo-db.html">Create, update and connect repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/backup-repo-db.html">Backup repository database</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../manual/sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
 <ul class="nav-list">
@@ -1253,7 +1274,10 @@
     <a class="nav-link" href="../manual/ssms-configuration.html">SSMS configuration</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../manual/sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
+    <a class="nav-link" href="../manual/analyticscreator.html">Import from AnalyticsCreator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="#manual:sql-server-issue-sys-views-references.adoc">manual:sql-server-issue-sys-views-references.adoc</a>
   </li>
 </ul>
   </li>
@@ -1650,7 +1674,7 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 <h3 id="_column_reference_diagram"><a class="anchor" href="#_column_reference_diagram"></a>Column Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-7f963581854f20200e7e97992c2ee354e656b822.svg" alt="entity_1_1_colref-logs.ExecutionLog_parent">
+<img src="_images/diag-f2e035c6eda0bee05cc8048eba3862cd5c1b94e5.svg" alt="entity_1_1_colref-logs.ExecutionLog_parent">
 </div>
 </div>
 </div>
@@ -1745,6 +1769,18 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="logs.ExecutionLog.html#column-created_dt" class="page">logs.ExecutionLog.created_dt</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-parent_current_execution_guid"><a class="anchor" href="#column-parent_current_execution_guid"></a>parent_current_execution_guid</h3>
@@ -1768,6 +1804,18 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="logs.ExecutionLog.html#column-current_execution_guid" class="page">logs.ExecutionLog.current_execution_guid</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-parent_execution_log_id"><a class="anchor" href="#column-parent_execution_log_id"></a>parent_execution_log_id</h3>
@@ -1826,6 +1874,18 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="logs.ExecutionLog.html#column-parameter_01" class="page">logs.ExecutionLog.parameter_01</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-parent_parameter_02"><a class="anchor" href="#column-parent_parameter_02"></a>parent_parameter_02</h3>
@@ -1849,6 +1909,18 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="logs.ExecutionLog.html#column-parameter_02" class="page">logs.ExecutionLog.parameter_02</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-parent_parameter_03"><a class="anchor" href="#column-parent_parameter_03"></a>parent_parameter_03</h3>
@@ -1872,6 +1944,18 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="logs.ExecutionLog.html#column-parameter_03" class="page">logs.ExecutionLog.parameter_03</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-parent_parameter_04"><a class="anchor" href="#column-parent_parameter_04"></a>parent_parameter_04</h3>
@@ -1895,6 +1979,18 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="logs.ExecutionLog.html#column-parameter_04" class="page">logs.ExecutionLog.parameter_04</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-parent_parameter_05"><a class="anchor" href="#column-parent_parameter_05"></a>parent_parameter_05</h3>
@@ -1918,6 +2014,18 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="logs.ExecutionLog.html#column-parameter_05" class="page">logs.ExecutionLog.parameter_05</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-parent_parameter_06"><a class="anchor" href="#column-parent_parameter_06"></a>parent_parameter_06</h3>
@@ -1941,6 +2049,18 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="logs.ExecutionLog.html#column-parameter_06" class="page">logs.ExecutionLog.parameter_06</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-parent_parameter_07"><a class="anchor" href="#column-parent_parameter_07"></a>parent_parameter_07</h3>
@@ -1964,6 +2084,18 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="logs.ExecutionLog.html#column-parameter_07" class="page">logs.ExecutionLog.parameter_07</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-parent_parameter_08"><a class="anchor" href="#column-parent_parameter_08"></a>parent_parameter_08</h3>
@@ -1987,6 +2119,18 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="logs.ExecutionLog.html#column-parameter_08" class="page">logs.ExecutionLog.parameter_08</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-parent_parameter_09"><a class="anchor" href="#column-parent_parameter_09"></a>parent_parameter_09</h3>
@@ -2010,6 +2154,18 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="logs.ExecutionLog.html#column-parameter_09" class="page">logs.ExecutionLog.parameter_09</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-parent_parameter_10"><a class="anchor" href="#column-parent_parameter_10"></a>parent_parameter_10</h3>
@@ -2033,6 +2189,18 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="logs.ExecutionLog.html#column-parameter_10" class="page">logs.ExecutionLog.parameter_10</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-parent_parameter_11"><a class="anchor" href="#column-parent_parameter_11"></a>parent_parameter_11</h3>
@@ -2056,6 +2224,18 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="logs.ExecutionLog.html#column-parameter_11" class="page">logs.ExecutionLog.parameter_11</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-parent_parameter_12"><a class="anchor" href="#column-parent_parameter_12"></a>parent_parameter_12</h3>
@@ -2079,6 +2259,18 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="logs.ExecutionLog.html#column-parameter_12" class="page">logs.ExecutionLog.parameter_12</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-parent_parameter_13"><a class="anchor" href="#column-parent_parameter_13"></a>parent_parameter_13</h3>
@@ -2102,6 +2294,18 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="logs.ExecutionLog.html#column-parameter_13" class="page">logs.ExecutionLog.parameter_13</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-parent_parameter_14"><a class="anchor" href="#column-parent_parameter_14"></a>parent_parameter_14</h3>
@@ -2125,6 +2329,18 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="logs.ExecutionLog.html#column-parameter_14" class="page">logs.ExecutionLog.parameter_14</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-parent_parameter_15"><a class="anchor" href="#column-parent_parameter_15"></a>parent_parameter_15</h3>
@@ -2148,6 +2364,18 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="logs.ExecutionLog.html#column-parameter_15" class="page">logs.ExecutionLog.parameter_15</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-parent_parameter_16"><a class="anchor" href="#column-parent_parameter_16"></a>parent_parameter_16</h3>
@@ -2171,6 +2399,18 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="logs.ExecutionLog.html#column-parameter_16" class="page">logs.ExecutionLog.parameter_16</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-parent_parameter_17"><a class="anchor" href="#column-parent_parameter_17"></a>parent_parameter_17</h3>
@@ -2194,6 +2434,18 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="logs.ExecutionLog.html#column-parameter_17" class="page">logs.ExecutionLog.parameter_17</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-parent_parameter_18"><a class="anchor" href="#column-parent_parameter_18"></a>parent_parameter_18</h3>
@@ -2217,6 +2469,18 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="logs.ExecutionLog.html#column-parameter_18" class="page">logs.ExecutionLog.parameter_18</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-parent_parameter_19"><a class="anchor" href="#column-parent_parameter_19"></a>parent_parameter_19</h3>
@@ -2240,6 +2504,18 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="logs.ExecutionLog.html#column-parameter_19" class="page">logs.ExecutionLog.parameter_19</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-parent_parameter_20"><a class="anchor" href="#column-parent_parameter_20"></a>parent_parameter_20</h3>
@@ -2263,6 +2539,18 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="logs.ExecutionLog.html#column-parameter_20" class="page">logs.ExecutionLog.parameter_20</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-parent_proc_fullname"><a class="anchor" href="#column-parent_proc_fullname"></a>parent_proc_fullname</h3>
@@ -2286,6 +2574,26 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Description</div>
+<div class="content">
+<div class="paragraph">
+<p>(concat(quotename([proc_schema_name]),'.',quotename([proc_name])))</p>
+</div>
+</div>
+</div>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="logs.ExecutionLog.html#column-proc_fullname" class="page">logs.ExecutionLog.proc_fullname</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 <div class="openblock">
 <div class="title">Referencing Columns</div>
 <div class="content">
@@ -2321,6 +2629,18 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="logs.ExecutionLog.html#column-proc_id" class="page">logs.ExecutionLog.proc_id</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-parent_proc_name"><a class="anchor" href="#column-parent_proc_name"></a>parent_proc_name</h3>
@@ -2344,6 +2664,18 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="logs.ExecutionLog.html#column-proc_name" class="page">logs.ExecutionLog.proc_name</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-parent_proc_schema_name"><a class="anchor" href="#column-parent_proc_schema_name"></a>parent_proc_schema_name</h3>
@@ -2367,6 +2699,18 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="logs.ExecutionLog.html#column-proc_schema_name" class="page">logs.ExecutionLog.proc_schema_name</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-parent_step_id"><a class="anchor" href="#column-parent_step_id"></a>parent_step_id</h3>
@@ -2390,6 +2734,18 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="logs.ExecutionLog.html#column-step_id" class="page">logs.ExecutionLog.step_id</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-parent_step_name"><a class="anchor" href="#column-parent_step_name"></a>parent_step_name</h3>
@@ -2413,6 +2769,18 @@ BD90291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="logs.ExecutionLog.html#column-step_name" class="page">logs.ExecutionLog.step_name</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>

@@ -71,6 +71,9 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="nav/objects-by-schema.html">Objects by schema</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Objects by schema</span>
 <ul class="nav-list">
@@ -227,6 +230,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ForeignKey_RelationScript.html">docs.ForeignKey_RelationScript</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.fs_cleanStringForAnchorId.html">docs.fs_cleanStringForAnchorId</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.fs_cleanStringForLabel.html">docs.fs_cleanStringForLabel</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ftv_RepoObject_Reference_PlantUml_EntityRefList.html">docs.ftv_RepoObject_Reference_PlantUml_EntityRefList</a>
@@ -467,6 +476,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_cross.html">property.RepoObjectProperty_cross</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.RepoObjectProperty_ForUpdate.html">property.RepoObjectProperty_ForUpdate</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_InheritanceType_InheritanceDefinition.html">property.RepoObjectProperty_InheritanceType_InheritanceDefinition</a>
@@ -715,6 +727,9 @@
     <a class="nav-link" href="repo.Index_Settings.html">repo.Index_Settings</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.Index_Settings_ForUpdate.html">repo.Index_Settings_ForUpdate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.Index_SqlConstraint_PkUq.html">repo.Index_SqlConstraint_PkUq</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -737,6 +752,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T</a>
@@ -1223,6 +1241,9 @@
     <a class="nav-link" href="../manual/create-update-connect-repo-db.html">Create, update and connect repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/backup-repo-db.html">Backup repository database</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../manual/sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
 <ul class="nav-list">
@@ -1253,7 +1274,10 @@
     <a class="nav-link" href="../manual/ssms-configuration.html">SSMS configuration</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../manual/sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
+    <a class="nav-link" href="../manual/analyticscreator.html">Import from AnalyticsCreator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="#manual:sql-server-issue-sys-views-references.adoc">manual:sql-server-issue-sys-views-references.adoc</a>
   </li>
 </ul>
   </li>
@@ -1307,7 +1331,7 @@ IF
 (
 inline function
 ), modify_date:
-2021-04-13 19:02:37</p>
+2021-07-14 19:36:07</p>
 </div>
 <div class="paragraph">
 <p>RepoObject_guid:
@@ -1362,7 +1386,31 @@ inline function
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-Parameter_value__result_nvarchar">Parameter_value__result_nvarchar</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-Parameter_value_result_date">Parameter_value__result_date</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>date</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-Parameter_value_result_datetime">Parameter_value__result_datetime</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>datetime</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-Parameter_value_result_int">Parameter_value__result_int</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>int</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-Parameter_value_result_nvarchar">Parameter_value__result_nvarchar</a></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(4000)</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
@@ -1421,7 +1469,7 @@ inline function
 <h3 id="_object_reference_diagram_referencing"><a class="anchor" href="#_object_reference_diagram_referencing"></a>Object Reference Diagram - Referencing</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-d62dec15f4730d57c87cd8a3d0007768560c8005.svg" alt="entity_0_30_objectref-config.ftv_get_parameter_value">
+<img src="_images/diag-1f66e4a5abe75888b1e09f36628cb9387e0dfcf1.svg" alt="entity_0_30_objectref-config.ftv_get_parameter_value">
 </div>
 </div>
 </div>
@@ -1429,7 +1477,7 @@ inline function
 <h3 id="_column_reference_diagram"><a class="anchor" href="#_column_reference_diagram"></a>Column Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-b04810f02befcafa03d4ef4bd20cd34e48bbb95b.svg" alt="entity_1_1_colref-config.ftv_get_parameter_value">
+<img src="_images/diag-0ca5fc284f3da3580c87a423715a2de571ef0453.svg" alt="entity_1_1_colref-config.ftv_get_parameter_value">
 </div>
 </div>
 </div>
@@ -1439,7 +1487,76 @@ inline function
 <h2 id="_column_details"><a class="anchor" href="#_column_details"></a>Column Details</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="column-Parameter_value__result_nvarchar"><a class="anchor" href="#column-Parameter_value__result_nvarchar"></a>Parameter_value__result_nvarchar</h3>
+<h3 id="column-Parameter_value_result_date"><a class="anchor" href="#column-Parameter_value_result_date"></a>Parameter_value__result_date</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Parameter_value__result_date</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>date</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="column-Parameter_value_result_datetime"><a class="anchor" href="#column-Parameter_value_result_datetime"></a>Parameter_value__result_datetime</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Parameter_value__result_datetime</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>datetime</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="column-Parameter_value_result_int"><a class="anchor" href="#column-Parameter_value_result_int"></a>Parameter_value__result_int</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Parameter_value__result_int</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>int</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="column-Parameter_value_result_nvarchar"><a class="anchor" href="#column-Parameter_value_result_nvarchar"></a>Parameter_value__result_nvarchar</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 16.6666%;">
@@ -1469,7 +1586,7 @@ inline function
 <div class="listingblock">
 <div class="title">config.ftv_get_parameter_value script</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">CREATE Function [config].ftv_get_parameter_value
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">CREATE FUNCTION [config].[ftv_get_parameter_value]
 (
     @Parameter_name Varchar(100)
   , @sub_Parameter  NVarchar(128) = N''
@@ -1480,6 +1597,9 @@ Return
 (
     Select
         Parameter_value__result_nvarchar
+		, Parameter_value__result_int
+		, Parameter_value__result_date
+		, Parameter_value__result_datetime
     From
         [config].Parameter
     Where

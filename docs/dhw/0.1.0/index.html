@@ -72,6 +72,9 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="sqldb/nav/objects-by-schema.html">Objects by schema</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Objects by schema</span>
 <ul class="nav-list">
@@ -228,6 +231,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="sqldb/docs.ForeignKey_RelationScript.html">docs.ForeignKey_RelationScript</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqldb/docs.fs_cleanStringForAnchorId.html">docs.fs_cleanStringForAnchorId</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqldb/docs.fs_cleanStringForLabel.html">docs.fs_cleanStringForLabel</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="sqldb/docs.ftv_RepoObject_Reference_PlantUml_EntityRefList.html">docs.ftv_RepoObject_Reference_PlantUml_EntityRefList</a>
@@ -468,6 +477,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="sqldb/property.RepoObjectProperty_cross.html">property.RepoObjectProperty_cross</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqldb/property.RepoObjectProperty_ForUpdate.html">property.RepoObjectProperty_ForUpdate</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="sqldb/property.RepoObjectProperty_InheritanceType_InheritanceDefinition.html">property.RepoObjectProperty_InheritanceType_InheritanceDefinition</a>
@@ -716,6 +728,9 @@
     <a class="nav-link" href="sqldb/repo.Index_Settings.html">repo.Index_Settings</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqldb/repo.Index_Settings_ForUpdate.html">repo.Index_Settings_ForUpdate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="sqldb/repo.Index_SqlConstraint_PkUq.html">repo.Index_SqlConstraint_PkUq</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -738,6 +753,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="sqldb/repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sqldb/repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="sqldb/repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T</a>
@@ -1224,6 +1242,9 @@
     <a class="nav-link" href="manual/create-update-connect-repo-db.html">Create, update and connect repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="manual/backup-repo-db.html">Backup repository database</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="manual/sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
 <ul class="nav-list">
@@ -1254,7 +1275,10 @@
     <a class="nav-link" href="manual/ssms-configuration.html">SSMS configuration</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="manual/sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
+    <a class="nav-link" href="manual/analyticscreator.html">Import from AnalyticsCreator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="#manual:sql-server-issue-sys-views-references.adoc">manual:sql-server-issue-sys-views-references.adoc</a>
   </li>
 </ul>
   </li>
@@ -1305,18 +1329,11 @@
 <img src="_images/DatenHandwerk-toolkit-mssql.svg" alt="dhw">
 </div>
 </div>
-<div class="admonitionblock caution">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
-</td>
-<td class="content">
-The project was launched at the beginning of 2021 and is in the alpha stage. The main focus is currently the implementation. Various refactorings are still taking place in the database. The documentation is being created and is still very incomplete.
-</td>
-</tr>
-</table>
 </div>
+</div>
+<div class="sect1">
+<h2 id="_key_contents_of_the_architecture"><a class="anchor" href="#_key_contents_of_the_architecture"></a>Key contents of the architecture</h2>
+<div class="sectionbody">
 <div class="admonitionblock tip">
 <table>
 <tr>
@@ -1375,13 +1392,10 @@ A developer is not undesirably restricted by the use of tools and methods. He al
 </li>
 </ul>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_alternatives"><a class="anchor" href="#_alternatives"></a>Alternatives</h2>
-<div class="sectionbody">
 <div class="sect2">
-<h3 id="_data_warehouse_automation_repository_based_database_generators"><a class="anchor" href="#_data_warehouse_automation_repository_based_database_generators"></a>Data Warehouse Automation, repository based database generators</h3>
+<h3 id="_alternatives"><a class="anchor" href="#_alternatives"></a>Alternatives</h3>
+<div class="sect3">
+<h4 id="_data_warehouse_automation_repository_based_database_generators"><a class="anchor" href="#_data_warehouse_automation_repository_based_database_generators"></a>Data Warehouse Automation, repository based database generators</h4>
 <div class="paragraph">
 <p>There are commercial tools that define the structure and function of relational and analytical databases via a repository in order to generate the code of these databases.</p>
 </div>
@@ -1421,13 +1435,12 @@ These tools are <em>one-way</em>: repository &#8658; target database.
 </div>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_repository_database_components"><a class="anchor" href="#_repository_database_components"></a>Repository database components</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_repository_database_components"><a class="anchor" href="#_repository_database_components"></a>Repository database components</h3>
 <div class="imageblock kroki">
 <div class="content">
 <img src="_images/diag-c64ac119503103d684b4a28bcf98caed71bbf7dc.svg" alt="structurizr-DWHBDevelopment-RepositorydbProjectB-Component">
+</div>
 </div>
 </div>
 </div>
@@ -1489,7 +1502,39 @@ The documentation also contains</p>
 </li>
 </ul>
 </div>
-<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_development_status"><a class="anchor" href="#_development_status"></a>Development status</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can read why the project exists and how it developed in the following blog posts (in German):</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://datahandwerk.aisberg.de/2021-01-06-meine-vision-eines-werkzeugkastens-fur-daten-handwerker/" class="bare">http://datahandwerk.aisberg.de/2021-01-06-meine-vision-eines-werkzeugkastens-fur-daten-handwerker/</a></p>
+</li>
+<li>
+<p><a href="http://datahandwerk.aisberg.de/2021-03-23-datahandwerk-toolkit-mssql/" class="bare">http://datahandwerk.aisberg.de/2021-03-23-datahandwerk-toolkit-mssql/</a></p>
+</li>
+<li>
+<p><a href="http://datahandwerk.aisberg.de/2021-04-20-docs-code-mit-asciidoc-und-antora/" class="bare">http://datahandwerk.aisberg.de/2021-04-20-docs-code-mit-asciidoc-und-antora/</a></p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+The project was launched at the beginning of 2021 and is in the alpha stage. The main focus is currently the implementation. Various refactorings are still taking place in the database. The documentation is being created and is still very incomplete.
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
 <p>Azure Boards - Feature board</p>
 </div>
@@ -1505,6 +1550,17 @@ The documentation also contains</p>
 <div class="content">
 <a class="image" href="https://dev.azure.com/DataHandwerk/89a7b008-69b9-42e4-b31f-4c2dfb6bd49a/_boards/board/t/f3077374-71b6-4a5b-bfd6-24a792bbc352/Microsoft.RequirementCategory/" target="_blank" rel="noopener"><img src="https://dev.azure.com/DataHandwerk/89a7b008-69b9-42e4-b31f-4c2dfb6bd49a/f3077374-71b6-4a5b-bfd6-24a792bbc352/_apis/work/boardbadge/71c0586e-2955-431c-8b07-96da50563abc?columnOptions=1" alt="71c0586e 2955 431c 8b07 96da50563abc?columnOptions=1"></a>
 </div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_project_communication"><a class="anchor" href="#_project_communication"></a>Project communication</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The preferred channel for project communication is <a href="https://datahandwerk.zulipchat.com/" class="bare">https://datahandwerk.zulipchat.com/</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://zulip.com/why-zulip/">Why Zulip?</a></p>
 </div>
 </div>
 </div>

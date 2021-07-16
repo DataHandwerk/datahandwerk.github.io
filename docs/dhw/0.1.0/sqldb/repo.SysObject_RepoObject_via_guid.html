@@ -71,6 +71,9 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="nav/objects-by-schema.html">Objects by schema</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Objects by schema</span>
 <ul class="nav-list">
@@ -227,6 +230,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ForeignKey_RelationScript.html">docs.ForeignKey_RelationScript</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.fs_cleanStringForAnchorId.html">docs.fs_cleanStringForAnchorId</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.fs_cleanStringForLabel.html">docs.fs_cleanStringForLabel</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ftv_RepoObject_Reference_PlantUml_EntityRefList.html">docs.ftv_RepoObject_Reference_PlantUml_EntityRefList</a>
@@ -467,6 +476,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_cross.html">property.RepoObjectProperty_cross</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.RepoObjectProperty_ForUpdate.html">property.RepoObjectProperty_ForUpdate</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_InheritanceType_InheritanceDefinition.html">property.RepoObjectProperty_InheritanceType_InheritanceDefinition</a>
@@ -715,6 +727,9 @@
     <a class="nav-link" href="repo.Index_Settings.html">repo.Index_Settings</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.Index_Settings_ForUpdate.html">repo.Index_Settings_ForUpdate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.Index_SqlConstraint_PkUq.html">repo.Index_SqlConstraint_PkUq</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -737,6 +752,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T</a>
@@ -1223,6 +1241,9 @@
     <a class="nav-link" href="../manual/create-update-connect-repo-db.html">Create, update and connect repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/backup-repo-db.html">Backup repository database</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../manual/sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
 <ul class="nav-list">
@@ -1253,7 +1274,10 @@
     <a class="nav-link" href="../manual/ssms-configuration.html">SSMS configuration</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../manual/sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
+    <a class="nav-link" href="../manual/analyticscreator.html">Import from AnalyticsCreator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="#manual:sql-server-issue-sys-views-references.adoc">manual:sql-server-issue-sys-views-references.adoc</a>
   </li>
 </ul>
   </li>
@@ -1307,7 +1331,7 @@ V
 (
 view
 ), modify_date:
-2021-04-13 19:02:38</p>
+2021-07-14 19:36:07</p>
 </div>
 <div class="paragraph">
 <p>RepoObject_guid:
@@ -1562,7 +1586,7 @@ view
 <div class="sectionbody">
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-36c5fab46945616001023db46c86cd96898bd800.svg" alt="entity_1_1_fk-repo.SysObject_RepoObject_via_guid">
+<img src="_images/diag-4906481268d2b1b34bed4569537c105a913d173f.svg" alt="entity_1_1_fk-repo.SysObject_RepoObject_via_guid">
 </div>
 </div>
 </div>
@@ -1597,7 +1621,7 @@ view
 <h3 id="_object_reference_diagram"><a class="anchor" href="#_object_reference_diagram"></a>Object Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-32b41290c95951bc4c52e5257391dc1cde2eba74.svg" alt="entity_1_1_objectref-repo.SysObject_RepoObject_via_guid">
+<img src="_images/diag-cb4a02ec528be822c9caa4abf8a787a3b79f0a5e.svg" alt="entity_1_1_objectref-repo.SysObject_RepoObject_via_guid">
 </div>
 </div>
 </div>
@@ -1621,7 +1645,7 @@ view
 <h3 id="_column_reference_diagram"><a class="anchor" href="#_column_reference_diagram"></a>Column Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-9b811f1cabc94f746aa97067f9ea051e9d2d859c.svg" alt="entity_1_1_colref-repo.SysObject_RepoObject_via_guid">
+<img src="_images/diag-f05f7ed85fdd143a907c8bcff36fe4ae1bb050f3.svg" alt="entity_1_1_colref-repo.SysObject_RepoObject_via_guid">
 </div>
 </div>
 </div>
@@ -1631,7 +1655,7 @@ view
 <h2 id="_indexes"><a class="anchor" href="#_indexes"></a>Indexes</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="index-idx_SysObject_RepoObject_via_guid__1"><a class="anchor" href="#index-idx_SysObject_RepoObject_via_guid__1"></a>idx_SysObject_RepoObject_via_guid__1</h3>
+<h3 id="index-idx_SysObject_RepoObject_via_guid_1"><a class="anchor" href="#index-idx_SysObject_RepoObject_via_guid_1"></a>idx_SysObject_RepoObject_via_guid__1</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1641,7 +1665,7 @@ view
 <div class="ulist">
 <ul>
 <li>
-<p><a href="#column-RepoObject_guid">RepoObject_guid</a>; uniqueidentifier</p>
+<p><a href="#column-history_table_guid">history_table_guid</a>; uniqueidentifier</p>
 </li>
 </ul>
 </div>
@@ -1655,7 +1679,7 @@ view
 </div>
 </div>
 <div class="sect2">
-<h3 id="index-idx_SysObject_RepoObject_via_guid__2"><a class="anchor" href="#index-idx_SysObject_RepoObject_via_guid__2"></a>idx_SysObject_RepoObject_via_guid__2</h3>
+<h3 id="index-idx_SysObject_RepoObject_via_guid_2"><a class="anchor" href="#index-idx_SysObject_RepoObject_via_guid_2"></a>idx_SysObject_RepoObject_via_guid__2</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1665,10 +1689,10 @@ view
 <div class="ulist">
 <ul>
 <li>
-<p><a href="#column-SysObject_schema_name">SysObject_schema_name</a>; sysname</p>
+<p><a href="#column-RepoObject_SysObject_schema_name">RepoObject_SysObject_schema_name</a>; nvarchar(128)</p>
 </li>
 <li>
-<p><a href="#column-SysObject_name">SysObject_name</a>; sysname</p>
+<p><a href="#column-RepoObject_SysObject_name">RepoObject_SysObject_name</a>; nvarchar(128)</p>
 </li>
 </ul>
 </div>
@@ -1682,7 +1706,7 @@ view
 </div>
 </div>
 <div class="sect2">
-<h3 id="index-idx_SysObject_RepoObject_via_guid__3"><a class="anchor" href="#index-idx_SysObject_RepoObject_via_guid__3"></a>idx_SysObject_RepoObject_via_guid__3</h3>
+<h3 id="index-idx_SysObject_RepoObject_via_guid_3"><a class="anchor" href="#index-idx_SysObject_RepoObject_via_guid_3"></a>idx_SysObject_RepoObject_via_guid__3</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1735,6 +1759,18 @@ view
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="repo.RepoObject.html#column-RepoObject_guid" class="page">repo.RepoObject.RepoObject_guid</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-history_table_id"><a class="anchor" href="#column-history_table_id"></a>history_table_id</h3>
@@ -2097,6 +2133,18 @@ view
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="repo.RepoObject.html#column-is_SysObject_missing" class="page">repo.RepoObject.is_SysObject_missing</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-RepoObject_name"><a class="anchor" href="#column-RepoObject_name"></a>RepoObject_name</h3>
@@ -2190,6 +2238,18 @@ view
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="repo.RepoObject.html#column-SysObject_id" class="page">repo.RepoObject.SysObject_id</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-RepoObject_SysObject_modify_date"><a class="anchor" href="#column-RepoObject_SysObject_modify_date"></a>RepoObject_SysObject_modify_date</h3>
@@ -2213,6 +2273,18 @@ view
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="repo.RepoObject.html#column-SysObject_modify_date" class="page">repo.RepoObject.SysObject_modify_date</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-RepoObject_SysObject_name"><a class="anchor" href="#column-RepoObject_SysObject_name"></a>RepoObject_SysObject_name</h3>
@@ -2236,6 +2308,18 @@ view
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="repo.RepoObject.html#column-SysObject_name" class="page">repo.RepoObject.SysObject_name</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-RepoObject_SysObject_parent_object_id"><a class="anchor" href="#column-RepoObject_SysObject_parent_object_id"></a>RepoObject_SysObject_parent_object_id</h3>
@@ -2259,6 +2343,18 @@ view
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="repo.RepoObject.html#column-SysObject_parent_object_id" class="page">repo.RepoObject.SysObject_parent_object_id</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-RepoObject_SysObject_schema_name"><a class="anchor" href="#column-RepoObject_SysObject_schema_name"></a>RepoObject_SysObject_schema_name</h3>
@@ -2282,6 +2378,18 @@ view
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="repo.RepoObject.html#column-SysObject_schema_name" class="page">repo.RepoObject.SysObject_schema_name</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-RepoObject_SysObject_type"><a class="anchor" href="#column-RepoObject_SysObject_type"></a>RepoObject_SysObject_type</h3>
@@ -2305,6 +2413,26 @@ view
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Description</div>
+<div class="content">
+<div class="paragraph">
+<p>reference in [repo_sys].[type]</p>
+</div>
+</div>
+</div>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="repo.RepoObject.html#column-SysObject_type" class="page">repo.RepoObject.SysObject_type</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-RepoObject_type"><a class="anchor" href="#column-RepoObject_type"></a>RepoObject_type</h3>
@@ -2377,9 +2505,6 @@ view
 <div class="ulist">
 <ul>
 <li>
-<p><a href="repo.RepoObject.html#column-SysObject_id" class="page">repo.RepoObject.SysObject_id</a></p>
-</li>
-<li>
 <p><a href="repo_sys.SysObject.html#column-SysObject_id" class="page">repo_sys.SysObject.SysObject_id</a></p>
 </li>
 </ul>
@@ -2414,9 +2539,6 @@ view
 <div class="content">
 <div class="ulist">
 <ul>
-<li>
-<p><a href="repo.RepoObject.html#column-SysObject_name" class="page">repo.RepoObject.SysObject_name</a></p>
-</li>
 <li>
 <p><a href="repo_sys.SysObject.html#column-SysObject_name" class="page">repo_sys.SysObject.SysObject_name</a></p>
 </li>
@@ -2488,9 +2610,6 @@ view
 <div class="ulist">
 <ul>
 <li>
-<p><a href="repo.RepoObject.html#column-SysObject_schema_name" class="page">repo.RepoObject.SysObject_schema_name</a></p>
-</li>
-<li>
 <p><a href="repo_sys.SysObject.html#column-SysObject_schema_name" class="page">repo_sys.SysObject.SysObject_schema_name</a></p>
 </li>
 </ul>
@@ -2534,7 +2653,7 @@ view
 <div class="ulist">
 <ul>
 <li>
-<p><a href="repo.RepoObject.html#column-SysObject_type" class="page">repo.RepoObject.SysObject_type</a></p>
+<p><a href="repo_sys.SysObject.html#column-type" class="page">repo_sys.SysObject.type</a></p>
 </li>
 </ul>
 </div>

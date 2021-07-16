@@ -71,6 +71,9 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="nav/objects-by-schema.html">Objects by schema</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Objects by schema</span>
 <ul class="nav-list">
@@ -227,6 +230,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ForeignKey_RelationScript.html">docs.ForeignKey_RelationScript</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.fs_cleanStringForAnchorId.html">docs.fs_cleanStringForAnchorId</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.fs_cleanStringForLabel.html">docs.fs_cleanStringForLabel</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ftv_RepoObject_Reference_PlantUml_EntityRefList.html">docs.ftv_RepoObject_Reference_PlantUml_EntityRefList</a>
@@ -467,6 +476,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_cross.html">property.RepoObjectProperty_cross</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.RepoObjectProperty_ForUpdate.html">property.RepoObjectProperty_ForUpdate</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_InheritanceType_InheritanceDefinition.html">property.RepoObjectProperty_InheritanceType_InheritanceDefinition</a>
@@ -715,6 +727,9 @@
     <a class="nav-link" href="repo.Index_Settings.html">repo.Index_Settings</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.Index_Settings_ForUpdate.html">repo.Index_Settings_ForUpdate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.Index_SqlConstraint_PkUq.html">repo.Index_SqlConstraint_PkUq</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -737,6 +752,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T</a>
@@ -1223,6 +1241,9 @@
     <a class="nav-link" href="../manual/create-update-connect-repo-db.html">Create, update and connect repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/backup-repo-db.html">Backup repository database</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../manual/sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
 <ul class="nav-list">
@@ -1253,7 +1274,10 @@
     <a class="nav-link" href="../manual/ssms-configuration.html">SSMS configuration</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../manual/sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
+    <a class="nav-link" href="../manual/analyticscreator.html">Import from AnalyticsCreator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="#manual:sql-server-issue-sys-views-references.adoc">manual:sql-server-issue-sys-views-references.adoc</a>
   </li>
 </ul>
   </li>
@@ -1307,7 +1331,7 @@ V
 (
 view
 ), modify_date:
-2021-04-17 13:33:30</p>
+2021-07-16 13:06:04</p>
 </div>
 <div class="paragraph">
 <p>RepoObject_guid:
@@ -1363,14 +1387,6 @@ view
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-property_basetype">property_basetype</a></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sql_variant</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-property_name">property_name</a></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(128)</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
@@ -1405,6 +1421,22 @@ view
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-RepoObject_guid">RepoObject_guid</a></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>uniqueidentifier</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-RepoObject_name">RepoObject_name</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(128)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-RepoObject_schema_name">RepoObject_schema_name</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(128)</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"></td>
@@ -1450,7 +1482,7 @@ view
 <div class="sectionbody">
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-d4c5179bc4df7db400ff4a87798f9a32c71e31b4.svg" alt="entity_1_1_fk-property.RepoObjectColumnProperty_ForUpdate">
+<img src="_images/diag-bbcd887bf888a91c73d1665e5eba0d38ce791ea6.svg" alt="entity_1_1_fk-property.RepoObjectColumnProperty_ForUpdate">
 </div>
 </div>
 </div>
@@ -1483,7 +1515,7 @@ view
 <h3 id="_object_reference_diagram_referenced"><a class="anchor" href="#_object_reference_diagram_referenced"></a>Object Reference Diagram - Referenced</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-0c2ff86862b51c5e00e9bafa3d2334b6b5eb719a.svg" alt="entity_30_0_objectref-property.RepoObjectColumnProperty_ForUpdate">
+<img src="_images/diag-24677cc7600c967095c6217ec690bb8de7742f89.svg" alt="entity_30_0_objectref-property.RepoObjectColumnProperty_ForUpdate">
 </div>
 </div>
 </div>
@@ -1499,7 +1531,7 @@ view
 <h3 id="_column_reference_diagram"><a class="anchor" href="#_column_reference_diagram"></a>Column Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-64e445bce890405838ab2845d6f34ea710c697ee.svg" alt="entity_1_1_colref-property.RepoObjectColumnProperty_ForUpdate">
+<img src="_images/diag-366e31dbfc4a971ad9519f5189ab826ad1dc2cab.svg" alt="entity_1_1_colref-property.RepoObjectColumnProperty_ForUpdate">
 </div>
 </div>
 </div>
@@ -1533,7 +1565,7 @@ view
 </div>
 </div>
 <div class="sect2">
-<h3 id="index-idx_RepoObjectColumnProperty_ForUpdate__2"><a class="anchor" href="#index-idx_RepoObjectColumnProperty_ForUpdate__2"></a>idx_RepoObjectColumnProperty_ForUpdate__2</h3>
+<h3 id="index-idx_RepoObjectColumnProperty_ForUpdate_2"><a class="anchor" href="#index-idx_RepoObjectColumnProperty_ForUpdate_2"></a>idx_RepoObjectColumnProperty_ForUpdate__2</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1560,7 +1592,7 @@ view
 </div>
 </div>
 <div class="sect2">
-<h3 id="index-idx_RepoObjectColumnProperty_ForUpdate__3"><a class="anchor" href="#index-idx_RepoObjectColumnProperty_ForUpdate__3"></a>idx_RepoObjectColumnProperty_ForUpdate__3</h3>
+<h3 id="index-idx_RepoObjectColumnProperty_ForUpdate_3"><a class="anchor" href="#index-idx_RepoObjectColumnProperty_ForUpdate_3"></a>idx_RepoObjectColumnProperty_ForUpdate__3</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1584,7 +1616,7 @@ view
 </div>
 </div>
 <div class="sect2">
-<h3 id="index-idx_RepoObjectColumnProperty_ForUpdate__4"><a class="anchor" href="#index-idx_RepoObjectColumnProperty_ForUpdate__4"></a>idx_RepoObjectColumnProperty_ForUpdate__4</h3>
+<h3 id="index-idx_RepoObjectColumnProperty_ForUpdate_4"><a class="anchor" href="#index-idx_RepoObjectColumnProperty_ForUpdate_4"></a>idx_RepoObjectColumnProperty_ForUpdate__4</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1611,7 +1643,7 @@ view
 </div>
 </div>
 <div class="sect2">
-<h3 id="index-idx_RepoObjectColumnProperty_ForUpdate__5"><a class="anchor" href="#index-idx_RepoObjectColumnProperty_ForUpdate__5"></a>idx_RepoObjectColumnProperty_ForUpdate__5</h3>
+<h3 id="index-idx_RepoObjectColumnProperty_ForUpdate_5"><a class="anchor" href="#index-idx_RepoObjectColumnProperty_ForUpdate_5"></a>idx_RepoObjectColumnProperty_ForUpdate__5</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1622,6 +1654,33 @@ view
 <ul>
 <li>
 <p><a href="#column-RepoObject_guid">RepoObject_guid</a>; uniqueidentifier</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>PK, Unique, Real: 0, 0, 0</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="index-idx_RepoObjectColumnProperty_ForUpdate_6"><a class="anchor" href="#index-idx_RepoObjectColumnProperty_ForUpdate_6"></a>idx_RepoObjectColumnProperty_ForUpdate__6</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>IndexSemanticGroup: <a href="index/IndexSemanticGroup.html#_schema_name,object_name" class="page">schema_name,object_name</a></p>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#column-RepoObject_schema_name">RepoObject_schema_name</a>; nvarchar(128)</p>
+</li>
+<li>
+<p><a href="#column-RepoObject_name">RepoObject_name</a>; nvarchar(128)</p>
 </li>
 </ul>
 </div>
@@ -1703,49 +1762,6 @@ view
 <ul>
 <li>
 <p><a href="property.RepoObjectColumnProperty.html#column-inheritance" class="page">property.RepoObjectColumnProperty.inheritance</a></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="column-property_basetype"><a class="anchor" href="#column-property_basetype"></a>property_basetype</h3>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 16.6666%;">
-<col style="width: 16.6666%;">
-<col style="width: 16.6666%;">
-<col style="width: 16.6666%;">
-<col style="width: 16.6666%;">
-<col style="width: 16.667%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>property_basetype</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sql_variant</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-</tbody>
-</table>
-<div class="openblock">
-<div class="title">Description</div>
-<div class="content">
-<div class="paragraph">
-<p>(sql_variant_property([property_value],'BaseType'))</p>
-</div>
-</div>
-</div>
-<div class="openblock">
-<div class="title">Referenced Columns</div>
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p><a href="property.RepoObjectColumnProperty.html#column-property_basetype" class="page">property.RepoObjectColumnProperty.property_basetype</a></p>
 </li>
 </ul>
 </div>
@@ -1953,6 +1969,76 @@ therefore the maximum content is nvarchar(4000) or varchar(8000)</p>
 </div>
 </div>
 <div class="sect2">
+<h3 id="column-RepoObject_name"><a class="anchor" href="#column-RepoObject_name"></a>RepoObject_name</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RepoObject_name</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(128)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="repo.RepoObjectColumn_gross.html#column-RepoObject_name" class="page">repo.RepoObjectColumn_gross.RepoObject_name</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="column-RepoObject_schema_name"><a class="anchor" href="#column-RepoObject_schema_name"></a>RepoObject_schema_name</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RepoObject_schema_name</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(128)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="repo.RepoObjectColumn_gross.html#column-RepoObject_schema_name" class="page">repo.RepoObjectColumn_gross.RepoObject_schema_name</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="column-RepoObjectColumn_fullname"><a class="anchor" href="#column-RepoObjectColumn_fullname"></a>RepoObjectColumn_fullname</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -2108,7 +2194,7 @@ therefore the maximum content is nvarchar(4000) or varchar(8000)</p>
 <div class="listingblock">
 <div class="title">property.RepoObjectColumnProperty_ForUpdate script</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">CREATE View [property].[RepoObjectColumnProperty_ForUpdate]
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">CREATE VIEW [property].[RepoObjectColumnProperty_ForUpdate]
 As
 Select
     rocp.[RepoObjectColumnProperty_id]
@@ -2116,13 +2202,15 @@ Select
   , rocp.[property_name]
   , rocp.[property_value]
   , rocp.[inheritance]
-  , rocp.[property_basetype]
+  --, rocp.[property_basetype]
   , rocg.RepoObjectColumn_fullname
   , rocg.RepoObjectColumn_fullname2
   , rocg.RepoObjectColumn_name
   , rocg.RepoObject_fullname
   , rocg.RepoObject_fullname2
   , rocg.RepoObject_guid
+  , rocg.RepoObject_schema_name
+  , rocg.RepoObject_name
 From
     [property].[RepoObjectColumnProperty] rocp
     Inner Join

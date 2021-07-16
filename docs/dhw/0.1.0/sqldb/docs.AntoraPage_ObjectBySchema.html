@@ -71,6 +71,9 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="nav/objects-by-schema.html">Objects by schema</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Objects by schema</span>
 <ul class="nav-list">
@@ -227,6 +230,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ForeignKey_RelationScript.html">docs.ForeignKey_RelationScript</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.fs_cleanStringForAnchorId.html">docs.fs_cleanStringForAnchorId</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.fs_cleanStringForLabel.html">docs.fs_cleanStringForLabel</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ftv_RepoObject_Reference_PlantUml_EntityRefList.html">docs.ftv_RepoObject_Reference_PlantUml_EntityRefList</a>
@@ -467,6 +476,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_cross.html">property.RepoObjectProperty_cross</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.RepoObjectProperty_ForUpdate.html">property.RepoObjectProperty_ForUpdate</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_InheritanceType_InheritanceDefinition.html">property.RepoObjectProperty_InheritanceType_InheritanceDefinition</a>
@@ -715,6 +727,9 @@
     <a class="nav-link" href="repo.Index_Settings.html">repo.Index_Settings</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.Index_Settings_ForUpdate.html">repo.Index_Settings_ForUpdate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.Index_SqlConstraint_PkUq.html">repo.Index_SqlConstraint_PkUq</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -737,6 +752,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T</a>
@@ -1223,6 +1241,9 @@
     <a class="nav-link" href="../manual/create-update-connect-repo-db.html">Create, update and connect repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/backup-repo-db.html">Backup repository database</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../manual/sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
 <ul class="nav-list">
@@ -1253,7 +1274,10 @@
     <a class="nav-link" href="../manual/ssms-configuration.html">SSMS configuration</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../manual/sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
+    <a class="nav-link" href="../manual/analyticscreator.html">Import from AnalyticsCreator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="#manual:sql-server-issue-sys-views-references.adoc">manual:sql-server-issue-sys-views-references.adoc</a>
   </li>
 </ul>
   </li>
@@ -1307,7 +1331,7 @@ V
 (
 view
 ), modify_date:
-2021-04-17 13:33:31</p>
+2021-07-16 13:06:04</p>
 </div>
 <div class="paragraph">
 <p>RepoObject_guid:
@@ -1345,6 +1369,14 @@ AF5A9DE2-3799-EB11-84F5-A81E8446D5B0</p>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-page_content">page_content</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(4000)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-partial_content">partial_content</a></code></p></td>
@@ -1392,7 +1424,7 @@ AF5A9DE2-3799-EB11-84F5-A81E8446D5B0</p>
 <h3 id="_object_reference_diagram_referenced"><a class="anchor" href="#_object_reference_diagram_referenced"></a>Object Reference Diagram - Referenced</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-f5f6e8155333e9a8fd9510f54fe8e1082b4a90ca.svg" alt="entity_30_0_objectref-docs.AntoraPage_ObjectBySchema">
+<img src="_images/diag-d5c26432a71b0f237501924ffa4d753f92d2d036.svg" alt="entity_30_0_objectref-docs.AntoraPage_ObjectBySchema">
 </div>
 </div>
 </div>
@@ -1408,7 +1440,7 @@ AF5A9DE2-3799-EB11-84F5-A81E8446D5B0</p>
 <h3 id="_column_reference_diagram"><a class="anchor" href="#_column_reference_diagram"></a>Column Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-d32cb015db170befc3e24061dbead04d733fe323.svg" alt="entity_1_1_colref-docs.AntoraPage_ObjectBySchema">
+<img src="_images/diag-8e0754e44e05f8f43668d495a42fce806e02c66b.svg" alt="entity_1_1_colref-docs.AntoraPage_ObjectBySchema">
 </div>
 </div>
 </div>
@@ -1417,6 +1449,29 @@ AF5A9DE2-3799-EB11-84F5-A81E8446D5B0</p>
 <div class="sect1">
 <h2 id="_column_details"><a class="anchor" href="#_column_details"></a>Column Details</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="column-page_content"><a class="anchor" href="#column-page_content"></a>page_content</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>page_content</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(4000)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="sect2">
 <h3 id="column-partial_content"><a class="anchor" href="#column-partial_content"></a>partial_content</h3>
 <table class="tableblock frame-all grid-all stretch">
@@ -1449,7 +1504,7 @@ AF5A9DE2-3799-EB11-84F5-A81E8446D5B0</p>
 <div class="title">docs.AntoraPage_ObjectBySchema script</div>
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">/*
-output example:
+output example partial_content:
 
 * Objects by schema
 ** xref:nav/nav-schema-dbo.adoc[]
@@ -1458,31 +1513,54 @@ output example:
 include::partial$navlist/navlist-schema_dbo.adoc[]
 --
 
+output example page_content:
+
+= Objects by schema
+
+include::nav-schema-CFG.adoc[leveloffset=+1]
+
+include::nav-schema-Config.adoc[leveloffset=+1]
+
+include::nav-schema-ConfigH.adoc[leveloffset=+1]
+
 */
-Create View docs.AntoraPage_ObjectBySchema
+CREATE View [docs].[AntoraPage_ObjectBySchema]
 As
 Select
-    partial_content = Concat (
-                                 '* Objects by schema'
-                               , Char ( 13 ) + Char ( 10 )
-                               , String_Agg (
-                                                Concat (
-                                                           '** xref:nav/nav-schema-' + RepoObject_schema_name
-                                                           + '.adoc[]'
-                                                         , Char ( 13 ) + Char ( 10 )
-                                                         , '+'
-                                                         , Char ( 13 ) + Char ( 10 )
-                                                         , '--'
-                                                         , Char ( 13 ) + Char ( 10 )
-                                                         , '\include::partial$navlist/navlist-schema-'
-                                                           + RepoObject_schema_name + '.adoc[]'
-                                                         , Char ( 13 ) + Char ( 10 )
-                                                         , '--'
-                                                       )
-                                              , Char ( 13 ) + Char ( 10 )
-                                            ) Within Group(Order By
-                                                               RepoObject_schema_name)
-                             )
+    partial_content
+    --
+    = Concat (
+                 '* Objects by schema'
+               , Char ( 13 ) + Char ( 10 )
+               , String_Agg (
+                                Concat (
+                                           '** xref:nav/nav-schema-' + RepoObject_schema_name + '.adoc[]'
+                                         , Char ( 13 ) + Char ( 10 )
+                                         , '+'
+                                         , Char ( 13 ) + Char ( 10 )
+                                         , '--'
+                                         , Char ( 13 ) + Char ( 10 )
+                                         , '\include::partial$navlist/navlist-schema-' + RepoObject_schema_name
+                                           + '.adoc[]'
+                                         , Char ( 13 ) + Char ( 10 )
+                                         , '--'
+                                       )
+                              , Char ( 13 ) + Char ( 10 )
+                            ) Within Group(Order By
+                                               RepoObject_schema_name)
+             )
+  , page_content
+  --
+    = Concat (
+                 '= Objects by schema'
+               , Char ( 13 ) + Char ( 10 )
+               , Char ( 13 ) + Char ( 10 )
+               , String_Agg (
+                                '\include::nav-schema-' + RepoObject_schema_name + '.adoc[leveloffset=+1]'
+                              , Char ( 13 ) + Char ( 10 ) + Char ( 13 ) + Char ( 10 )
+                            ) Within Group(Order By
+                                               RepoObject_schema_name)
+             )
 From
     docs.AntoraNavListRepoObject_by_schema ro;</code></pre>
 </div>

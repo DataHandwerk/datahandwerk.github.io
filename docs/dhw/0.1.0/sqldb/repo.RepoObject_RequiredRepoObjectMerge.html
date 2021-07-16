@@ -71,6 +71,9 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="nav/objects-by-schema.html">Objects by schema</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Objects by schema</span>
 <ul class="nav-list">
@@ -227,6 +230,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ForeignKey_RelationScript.html">docs.ForeignKey_RelationScript</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.fs_cleanStringForAnchorId.html">docs.fs_cleanStringForAnchorId</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.fs_cleanStringForLabel.html">docs.fs_cleanStringForLabel</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ftv_RepoObject_Reference_PlantUml_EntityRefList.html">docs.ftv_RepoObject_Reference_PlantUml_EntityRefList</a>
@@ -467,6 +476,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_cross.html">property.RepoObjectProperty_cross</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.RepoObjectProperty_ForUpdate.html">property.RepoObjectProperty_ForUpdate</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_InheritanceType_InheritanceDefinition.html">property.RepoObjectProperty_InheritanceType_InheritanceDefinition</a>
@@ -715,6 +727,9 @@
     <a class="nav-link" href="repo.Index_Settings.html">repo.Index_Settings</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.Index_Settings_ForUpdate.html">repo.Index_Settings_ForUpdate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.Index_SqlConstraint_PkUq.html">repo.Index_SqlConstraint_PkUq</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -737,6 +752,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T</a>
@@ -1223,6 +1241,9 @@
     <a class="nav-link" href="../manual/create-update-connect-repo-db.html">Create, update and connect repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/backup-repo-db.html">Backup repository database</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../manual/sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
 <ul class="nav-list">
@@ -1253,7 +1274,10 @@
     <a class="nav-link" href="../manual/ssms-configuration.html">SSMS configuration</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../manual/sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
+    <a class="nav-link" href="../manual/analyticscreator.html">Import from AnalyticsCreator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="#manual:sql-server-issue-sys-views-references.adoc">manual:sql-server-issue-sys-views-references.adoc</a>
   </li>
 </ul>
   </li>
@@ -1384,14 +1408,6 @@ we need to replace roc1.RepoObject_guid by roc2.RepoObject_guid</p>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><a href="#column-ro2_RepoObject_guid">ro2_RepoObject_guid</a></strong></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>uniqueidentifier</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-RepoObject_fullname">RepoObject_fullname</a></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(261)</code></p></td>
@@ -1419,6 +1435,14 @@ we need to replace roc1.RepoObject_guid by roc2.RepoObject_guid</p>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-ro2_RepoObject_fullname">ro2_RepoObject_fullname</a></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(261)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-ro2_RepoObject_guid">ro2_RepoObject_guid</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>uniqueidentifier</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"></td>
@@ -1488,7 +1512,7 @@ we need to replace roc1.RepoObject_guid by roc2.RepoObject_guid</p>
 <div class="sectionbody">
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-3bf0aa4586acade596b500c8e42e385fa156dc4e.svg" alt="entity_1_1_fk-repo.RepoObject_RequiredRepoObjectMerge">
+<img src="_images/diag-74867d417cb537bb811d987d60cfc5187b6d7fd3.svg" alt="entity_1_1_fk-repo.RepoObject_RequiredRepoObjectMerge">
 </div>
 </div>
 </div>
@@ -1520,7 +1544,7 @@ we need to replace roc1.RepoObject_guid by roc2.RepoObject_guid</p>
 <h3 id="_object_reference_diagram"><a class="anchor" href="#_object_reference_diagram"></a>Object Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-a98716c784bc9cff4ae7d54ff19a220dccde5eef.svg" alt="entity_1_1_objectref-repo.RepoObject_RequiredRepoObjectMerge">
+<img src="_images/diag-55172107dafd990bf5da6ac40a8a72028b1f88ed.svg" alt="entity_1_1_objectref-repo.RepoObject_RequiredRepoObjectMerge">
 </div>
 </div>
 </div>
@@ -1528,7 +1552,7 @@ we need to replace roc1.RepoObject_guid by roc2.RepoObject_guid</p>
 <h3 id="_object_reference_diagram_referenced"><a class="anchor" href="#_object_reference_diagram_referenced"></a>Object Reference Diagram - Referenced</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-d7b7f6f6f66d0711ca905eec6bc63260b76de6aa.svg" alt="entity_30_0_objectref-repo.RepoObject_RequiredRepoObjectMerge">
+<img src="_images/diag-d4890a840dfbef65766f0b97e5f3d44dc471e89f.svg" alt="entity_30_0_objectref-repo.RepoObject_RequiredRepoObjectMerge">
 </div>
 </div>
 </div>
@@ -1536,7 +1560,7 @@ we need to replace roc1.RepoObject_guid by roc2.RepoObject_guid</p>
 <h3 id="_object_reference_diagram_referencing"><a class="anchor" href="#_object_reference_diagram_referencing"></a>Object Reference Diagram - Referencing</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-d6f162d30770f963fed46968ca57a4ed13ec9d61.svg" alt="entity_0_30_objectref-repo.RepoObject_RequiredRepoObjectMerge">
+<img src="_images/diag-b939ea2288bf7e8eee17aa2855c169119a4d8c4a.svg" alt="entity_0_30_objectref-repo.RepoObject_RequiredRepoObjectMerge">
 </div>
 </div>
 </div>
@@ -1544,7 +1568,7 @@ we need to replace roc1.RepoObject_guid by roc2.RepoObject_guid</p>
 <h3 id="_column_reference_diagram"><a class="anchor" href="#_column_reference_diagram"></a>Column Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-feaea430505248c82dc1b2b7486b0ddee6541e18.svg" alt="entity_1_1_colref-repo.RepoObject_RequiredRepoObjectMerge">
+<img src="_images/diag-a0b51859ab45c138f6f8b26987797fcfac284a22.svg" alt="entity_1_1_colref-repo.RepoObject_RequiredRepoObjectMerge">
 </div>
 </div>
 </div>
@@ -1555,33 +1579,6 @@ we need to replace roc1.RepoObject_guid by roc2.RepoObject_guid</p>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="index-PK_RepoObject_RequiredRepoObjectMerge"><a class="anchor" href="#index-PK_RepoObject_RequiredRepoObjectMerge"></a>PK_RepoObject_RequiredRepoObjectMerge</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>IndexSemanticGroup: <a href="index/IndexSemanticGroup.html#_no_group" class="page">no_group</a></p>
-<div class="openblock">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#column-RepoObject_guid">RepoObject_guid</a>; uniqueidentifier</p>
-</li>
-<li>
-<p><a href="#column-ro2_RepoObject_guid">ro2_RepoObject_guid</a>; uniqueidentifier</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</li>
-<li>
-<p>PK, Unique, Real: 1, 1, 0</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="index-UK_RepoObject_RequiredRepoObjectMerge__1"><a class="anchor" href="#index-UK_RepoObject_RequiredRepoObjectMerge__1"></a>UK_RepoObject_RequiredRepoObjectMerge__1</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1599,13 +1596,13 @@ we need to replace roc1.RepoObject_guid by roc2.RepoObject_guid</p>
 </div>
 </li>
 <li>
-<p>PK, Unique, Real: 0, 1, 0</p>
+<p>PK, Unique, Real: 1, 1, 0</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="index-idx_RepoObject_RequiredRepoObjectMerge__2"><a class="anchor" href="#index-idx_RepoObject_RequiredRepoObjectMerge__2"></a>idx_RepoObject_RequiredRepoObjectMerge__2</h3>
+<h3 id="index-idx_RepoObject_RequiredRepoObjectMerge_1"><a class="anchor" href="#index-idx_RepoObject_RequiredRepoObjectMerge_1"></a>idx_RepoObject_RequiredRepoObjectMerge__1</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1632,7 +1629,7 @@ we need to replace roc1.RepoObject_guid by roc2.RepoObject_guid</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="index-idx_RepoObject_RequiredRepoObjectMerge__3"><a class="anchor" href="#index-idx_RepoObject_RequiredRepoObjectMerge__3"></a>idx_RepoObject_RequiredRepoObjectMerge__3</h3>
+<h3 id="index-idx_RepoObject_RequiredRepoObjectMerge_2"><a class="anchor" href="#index-idx_RepoObject_RequiredRepoObjectMerge_2"></a>idx_RepoObject_RequiredRepoObjectMerge__2</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1642,7 +1639,7 @@ we need to replace roc1.RepoObject_guid by roc2.RepoObject_guid</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="#column-SysObject_name">SysObject_name</a>; nvarchar(128)</p>
+<p><a href="#column-ro2_SysObject_name">ro2_SysObject_name</a>; nvarchar(128)</p>
 </li>
 </ul>
 </div>
@@ -1656,7 +1653,7 @@ we need to replace roc1.RepoObject_guid by roc2.RepoObject_guid</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="index-idx_RepoObject_RequiredRepoObjectMerge__4"><a class="anchor" href="#index-idx_RepoObject_RequiredRepoObjectMerge__4"></a>idx_RepoObject_RequiredRepoObjectMerge__4</h3>
+<h3 id="index-idx_RepoObject_RequiredRepoObjectMerge_3"><a class="anchor" href="#index-idx_RepoObject_RequiredRepoObjectMerge_3"></a>idx_RepoObject_RequiredRepoObjectMerge__3</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1721,29 +1718,6 @@ we need to replace roc1.RepoObject_guid by roc2.RepoObject_guid</p>
 </div>
 </div>
 </div>
-</div>
-<div class="sect2">
-<h3 id="column-ro2_RepoObject_guid"><a class="anchor" href="#column-ro2_RepoObject_guid"></a>ro2_RepoObject_guid</h3>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 16.6666%;">
-<col style="width: 16.6666%;">
-<col style="width: 16.6666%;">
-<col style="width: 16.6666%;">
-<col style="width: 16.6666%;">
-<col style="width: 16.667%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong>ro2_RepoObject_guid</strong></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>uniqueidentifier</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="sect2">
 <h3 id="column-RepoObject_fullname"><a class="anchor" href="#column-RepoObject_fullname"></a>RepoObject_fullname</h3>
@@ -1880,6 +1854,61 @@ we need to replace roc1.RepoObject_guid by roc2.RepoObject_guid</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Description</div>
+<div class="content">
+<div class="paragraph">
+<p>(concat('[',[RepoObject_schema_name],'].[',[RepoObject_name],']'))</p>
+</div>
+</div>
+</div>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="repo.RepoObject.html#column-RepoObject_fullname" class="page">repo.RepoObject.RepoObject_fullname</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="column-ro2_RepoObject_guid"><a class="anchor" href="#column-ro2_RepoObject_guid"></a>ro2_RepoObject_guid</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ro2_RepoObject_guid</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>uniqueidentifier</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="repo.RepoObject.html#column-RepoObject_guid" class="page">repo.RepoObject.RepoObject_guid</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-ro2_RepoObject_name"><a class="anchor" href="#column-ro2_RepoObject_name"></a>ro2_RepoObject_name</h3>
@@ -1903,6 +1932,18 @@ we need to replace roc1.RepoObject_guid by roc2.RepoObject_guid</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="repo.RepoObject.html#column-RepoObject_name" class="page">repo.RepoObject.RepoObject_name</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-ro2_RepoObject_schema_name"><a class="anchor" href="#column-ro2_RepoObject_schema_name"></a>ro2_RepoObject_schema_name</h3>
@@ -1926,6 +1967,18 @@ we need to replace roc1.RepoObject_guid by roc2.RepoObject_guid</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="repo.RepoObject.html#column-RepoObject_schema_name" class="page">repo.RepoObject.RepoObject_schema_name</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-ro2_SysObject_fullname"><a class="anchor" href="#column-ro2_SysObject_fullname"></a>ro2_SysObject_fullname</h3>
@@ -1949,6 +2002,26 @@ we need to replace roc1.RepoObject_guid by roc2.RepoObject_guid</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Description</div>
+<div class="content">
+<div class="paragraph">
+<p>(concat('[',[SysObject_schema_name],'].[',[SysObject_name],']'))</p>
+</div>
+</div>
+</div>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="repo.RepoObject.html#column-SysObject_fullname" class="page">repo.RepoObject.SysObject_fullname</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-ro2_SysObject_name"><a class="anchor" href="#column-ro2_SysObject_name"></a>ro2_SysObject_name</h3>
@@ -1972,6 +2045,18 @@ we need to replace roc1.RepoObject_guid by roc2.RepoObject_guid</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="repo.RepoObject.html#column-SysObject_name" class="page">repo.RepoObject.SysObject_name</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-SysObject_fullname"><a class="anchor" href="#column-SysObject_fullname"></a>SysObject_fullname</h3>

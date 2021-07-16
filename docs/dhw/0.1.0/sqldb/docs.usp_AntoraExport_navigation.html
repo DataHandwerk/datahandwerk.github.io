@@ -71,6 +71,9 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="nav/objects-by-schema.html">Objects by schema</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Objects by schema</span>
 <ul class="nav-list">
@@ -227,6 +230,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ForeignKey_RelationScript.html">docs.ForeignKey_RelationScript</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.fs_cleanStringForAnchorId.html">docs.fs_cleanStringForAnchorId</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.fs_cleanStringForLabel.html">docs.fs_cleanStringForLabel</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ftv_RepoObject_Reference_PlantUml_EntityRefList.html">docs.ftv_RepoObject_Reference_PlantUml_EntityRefList</a>
@@ -467,6 +476,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_cross.html">property.RepoObjectProperty_cross</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.RepoObjectProperty_ForUpdate.html">property.RepoObjectProperty_ForUpdate</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_InheritanceType_InheritanceDefinition.html">property.RepoObjectProperty_InheritanceType_InheritanceDefinition</a>
@@ -715,6 +727,9 @@
     <a class="nav-link" href="repo.Index_Settings.html">repo.Index_Settings</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.Index_Settings_ForUpdate.html">repo.Index_Settings_ForUpdate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.Index_SqlConstraint_PkUq.html">repo.Index_SqlConstraint_PkUq</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -737,6 +752,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T</a>
@@ -1223,6 +1241,9 @@
     <a class="nav-link" href="../manual/create-update-connect-repo-db.html">Create, update and connect repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/backup-repo-db.html">Backup repository database</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../manual/sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
 <ul class="nav-list">
@@ -1253,7 +1274,10 @@
     <a class="nav-link" href="../manual/ssms-configuration.html">SSMS configuration</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../manual/sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
+    <a class="nav-link" href="../manual/analyticscreator.html">Import from AnalyticsCreator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="#manual:sql-server-issue-sys-views-references.adoc">manual:sql-server-issue-sys-views-references.adoc</a>
   </li>
 </ul>
   </li>
@@ -1307,7 +1331,7 @@ P
 (
 stored procedure
 ), modify_date:
-2021-04-24 15:22:02</p>
+2021-07-16 13:07:02</p>
 </div>
 <div class="paragraph">
 <p>RepoObject_guid:
@@ -1599,7 +1623,7 @@ GO</code></pre>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">610</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><strong>export FROM [docs].[AntoraPage_ObjectBySchema]</strong></p>
+<p><strong>export partial_content FROM [docs].[AntoraPage_ObjectBySchema]</strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -1610,6 +1634,9 @@ GO</code></pre>
 <p>[docs].[AntoraPage_ObjectBySchema]</p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p>--nav-by-schema.adoc</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
@@ -1627,6 +1654,29 @@ GO</code></pre>
 <p>[docs].[AntoraPage_ObjectByType]</p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p>nav-by-type.adoc</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">710</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>export page_content FROM [docs].[AntoraPage_ObjectBySchema]</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>u</p>
+</li>
+<li>
+<p>[docs].[AntoraPage_ObjectBySchema]</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>--objects-by-schema.adoc</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
@@ -1684,7 +1734,7 @@ GO</code></pre>
 <h3 id="_object_reference_diagram_referenced"><a class="anchor" href="#_object_reference_diagram_referenced"></a>Object Reference Diagram - Referenced</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-4827dff7e01e163581b3ba991bf05c377af3caa1.svg" alt="entity_30_0_objectref-docs.usp_AntoraExport_navigation">
+<img src="_images/diag-e029cc944f1c4837dc55ee19638d09676e4682a5.svg" alt="entity_30_0_objectref-docs.usp_AntoraExport_navigation">
 </div>
 </div>
 </div>
@@ -2102,7 +2152,6 @@ EXEC logs.usp_ExecutionLog_insert
 /*{"ReportUspStep":[{"Number":520,"Name":"export FROM [docs].[AntoraNavListPage_by_type]","has_logging":1,"is_condition":0,"is_inactive":0,"is_SubProcedure":0,"log_source_object":"[docs].[AntoraNavListPage_by_type]","log_flag_InsertUpdateDelete":"u"}]}*/
 PRINT CONCAT('usp_id;Number;Parent_Number: ',28,';',520,';',NULL);
 
-
 DECLARE page_cursor CURSOR Local Fast_Forward
 FOR
 SELECT type
@@ -2177,10 +2226,13 @@ EXEC logs.usp_ExecutionLog_insert
  , @updated = @rows
 -- Logging END --
 
-/*{"ReportUspStep":[{"Number":610,"Name":"export FROM [docs].[AntoraPage_ObjectBySchema]","has_logging":1,"is_condition":0,"is_inactive":0,"is_SubProcedure":0,"log_source_object":"[docs].[AntoraPage_ObjectBySchema]","log_flag_InsertUpdateDelete":"u"}]}*/
+/*{"ReportUspStep":[{"Number":610,"Name":"export partial_content FROM [docs].[AntoraPage_ObjectBySchema]","has_logging":1,"is_condition":0,"is_inactive":0,"is_SubProcedure":0,"log_source_object":"[docs].[AntoraPage_ObjectBySchema]","log_flag_InsertUpdateDelete":"u"}]}*/
 PRINT CONCAT('usp_id;Number;Parent_Number: ',28,';',610,';',NULL);
 
+/*
 --nav-by-schema.adoc
+
+*/
 SET @command = 'bcp "SELECT [partial_content] FROM [docs].[AntoraPage_ObjectBySchema]"  queryout ' + @outputDirPartNav + 'nav-by-schema.adoc'
  --
  + ' -S ' + @instanceName
@@ -2201,7 +2253,7 @@ EXEC xp_cmdshell @command
 -- Logging START --
 SET @rows = @@ROWCOUNT
 SET @step_id = @step_id + 1
-SET @step_name = 'export FROM [docs].[AntoraPage_ObjectBySchema]'
+SET @step_name = 'export partial_content FROM [docs].[AntoraPage_ObjectBySchema]'
 SET @source_object = '[docs].[AntoraPage_ObjectBySchema]'
 SET @target_object = NULL
 
@@ -2225,7 +2277,10 @@ EXEC logs.usp_ExecutionLog_insert
 /*{"ReportUspStep":[{"Number":620,"Name":"export FROM [docs].[AntoraPage_ObjectByType]","has_logging":1,"is_condition":0,"is_inactive":0,"is_SubProcedure":0,"log_source_object":"[docs].[AntoraPage_ObjectByType]","log_flag_InsertUpdateDelete":"u"}]}*/
 PRINT CONCAT('usp_id;Number;Parent_Number: ',28,';',620,';',NULL);
 
---nav-by-type.adoc
+/*
+nav-by-type.adoc
+
+*/
 SET @command = 'bcp "SELECT [partial_content] FROM [docs].[AntoraPage_ObjectByType]"  queryout ' + @outputDirPartNav + 'nav-by-type.adoc'
  --
  + ' -S ' + @instanceName
@@ -2248,6 +2303,54 @@ SET @rows = @@ROWCOUNT
 SET @step_id = @step_id + 1
 SET @step_name = 'export FROM [docs].[AntoraPage_ObjectByType]'
 SET @source_object = '[docs].[AntoraPage_ObjectByType]'
+SET @target_object = NULL
+
+EXEC logs.usp_ExecutionLog_insert
+ @execution_instance_guid = @execution_instance_guid
+ , @ssis_execution_id = @ssis_execution_id
+ , @sub_execution_id = @sub_execution_id
+ , @parent_execution_log_id = @parent_execution_log_id
+ , @current_execution_guid = @current_execution_guid
+ , @proc_id = @proc_id
+ , @proc_schema_name = @proc_schema_name
+ , @proc_name = @proc_name
+ , @event_info = @event_info
+ , @step_id = @step_id
+ , @step_name = @step_name
+ , @source_object = @source_object
+ , @target_object = @target_object
+ , @updated = @rows
+-- Logging END --
+
+/*{"ReportUspStep":[{"Number":710,"Name":"export page_content FROM [docs].[AntoraPage_ObjectBySchema]","has_logging":1,"is_condition":0,"is_inactive":0,"is_SubProcedure":0,"log_source_object":"[docs].[AntoraPage_ObjectBySchema]","log_flag_InsertUpdateDelete":"u"}]}*/
+PRINT CONCAT('usp_id;Number;Parent_Number: ',28,';',710,';',NULL);
+
+/*
+--objects-by-schema.adoc
+
+*/
+SET @command = 'bcp "SELECT [page_content] FROM [docs].[AntoraPage_ObjectBySchema]"  queryout ' + @outputDirPageNav + 'objects-by-schema.adoc'
+ --
+ + ' -S ' + @instanceName
+ --
+ + ' -d ' + @databaseName
+ --
+ + ' -c -C 65001'
+ --
+ + @TrustedUserPassword
+
+PRINT @command
+
+--Execute the BCP command
+EXEC xp_cmdshell @command
+ , no_output
+
+
+-- Logging START --
+SET @rows = @@ROWCOUNT
+SET @step_id = @step_id + 1
+SET @step_name = 'export page_content FROM [docs].[AntoraPage_ObjectBySchema]'
+SET @source_object = '[docs].[AntoraPage_ObjectBySchema]'
 SET @target_object = NULL
 
 EXEC logs.usp_ExecutionLog_insert

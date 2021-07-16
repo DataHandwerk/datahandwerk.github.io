@@ -71,6 +71,9 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="nav/objects-by-schema.html">Objects by schema</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Objects by schema</span>
 <ul class="nav-list">
@@ -227,6 +230,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ForeignKey_RelationScript.html">docs.ForeignKey_RelationScript</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.fs_cleanStringForAnchorId.html">docs.fs_cleanStringForAnchorId</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.fs_cleanStringForLabel.html">docs.fs_cleanStringForLabel</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ftv_RepoObject_Reference_PlantUml_EntityRefList.html">docs.ftv_RepoObject_Reference_PlantUml_EntityRefList</a>
@@ -467,6 +476,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_cross.html">property.RepoObjectProperty_cross</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.RepoObjectProperty_ForUpdate.html">property.RepoObjectProperty_ForUpdate</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_InheritanceType_InheritanceDefinition.html">property.RepoObjectProperty_InheritanceType_InheritanceDefinition</a>
@@ -715,6 +727,9 @@
     <a class="nav-link" href="repo.Index_Settings.html">repo.Index_Settings</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.Index_Settings_ForUpdate.html">repo.Index_Settings_ForUpdate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.Index_SqlConstraint_PkUq.html">repo.Index_SqlConstraint_PkUq</a>
   </li>
   <li class="nav-item is-current-page" data-depth="3">
@@ -737,6 +752,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T</a>
@@ -1223,6 +1241,9 @@
     <a class="nav-link" href="../manual/create-update-connect-repo-db.html">Create, update and connect repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/backup-repo-db.html">Backup repository database</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../manual/sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
 <ul class="nav-list">
@@ -1253,7 +1274,10 @@
     <a class="nav-link" href="../manual/ssms-configuration.html">SSMS configuration</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../manual/sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
+    <a class="nav-link" href="../manual/analyticscreator.html">Import from AnalyticsCreator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="#manual:sql-server-issue-sys-views-references.adoc">manual:sql-server-issue-sys-views-references.adoc</a>
   </li>
 </ul>
   </li>
@@ -1307,7 +1331,7 @@ V
 (
 view
 ), modify_date:
-2021-04-13 19:02:38</p>
+2021-07-14 19:36:07</p>
 </div>
 <div class="paragraph">
 <p>RepoObject_guid:
@@ -1469,6 +1493,9 @@ view
 <p><a href="repo.Index_gross.html" class="page">repo.Index_gross</a></p>
 </li>
 <li>
+<p><a href="repo.Index_Settings_ForUpdate.html" class="page">repo.Index_Settings_ForUpdate</a></p>
+</li>
+<li>
 <p><a href="repo.Index_SqlConstraint_PkUq.html" class="page">repo.Index_SqlConstraint_PkUq</a></p>
 </li>
 <li>
@@ -1484,7 +1511,7 @@ view
 <h3 id="_object_reference_diagram"><a class="anchor" href="#_object_reference_diagram"></a>Object Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-87544ecf071169c1048b365a8732a440bfcc4911.svg" alt="entity_1_1_objectref-repo.Index_union">
+<img src="_images/diag-34d0255d11f86dfb4662a153b2fb0562138a0567.svg" alt="entity_1_1_objectref-repo.Index_union">
 </div>
 </div>
 </div>
@@ -1500,7 +1527,7 @@ view
 <h3 id="_object_reference_diagram_referencing"><a class="anchor" href="#_object_reference_diagram_referencing"></a>Object Reference Diagram - Referencing</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-5c7fbd8a45c78c1f319db92b5bb3d79f5db70714.svg" alt="entity_0_30_objectref-repo.Index_union">
+<img src="_images/diag-171c38f1dff78ad67f1e73d5818e043964a55fa5.svg" alt="entity_0_30_objectref-repo.Index_union">
 </div>
 </div>
 </div>
@@ -1508,7 +1535,7 @@ view
 <h3 id="_column_reference_diagram"><a class="anchor" href="#_column_reference_diagram"></a>Column Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-92f52cdabdf692493bf0f1a544a8433ecbbbac07.svg" alt="entity_1_1_colref-repo.Index_union">
+<img src="_images/diag-fed85a1d3be06728d9c06e769d5bf3380c016dd5.svg" alt="entity_1_1_colref-repo.Index_union">
 </div>
 </div>
 </div>
@@ -1575,6 +1602,9 @@ view
 <ul>
 <li>
 <p><a href="repo.Index_SqlConstraint_PkUq.html#column-index_guid" class="page">repo.Index_SqlConstraint_PkUq.index_guid</a></p>
+</li>
+<li>
+<p><a href="repo.IndexReferencedReferencing.html#column-source_index_guid" class="page">repo.IndexReferencedReferencing.source_index_guid</a></p>
 </li>
 </ul>
 </div>
@@ -1645,6 +1675,9 @@ view
 <ul>
 <li>
 <p><a href="repo.Index_gross.html#column-index_type" class="page">repo.Index_gross.index_type</a></p>
+</li>
+<li>
+<p><a href="repo.IndexReferencedReferencing.html#column-source_index_type" class="page">repo.IndexReferencedReferencing.source_index_type</a></p>
 </li>
 </ul>
 </div>

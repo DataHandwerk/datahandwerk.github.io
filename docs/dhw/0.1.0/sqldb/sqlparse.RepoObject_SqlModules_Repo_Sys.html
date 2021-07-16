@@ -71,6 +71,9 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="nav/objects-by-schema.html">Objects by schema</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Objects by schema</span>
 <ul class="nav-list">
@@ -227,6 +230,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ForeignKey_RelationScript.html">docs.ForeignKey_RelationScript</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.fs_cleanStringForAnchorId.html">docs.fs_cleanStringForAnchorId</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.fs_cleanStringForLabel.html">docs.fs_cleanStringForLabel</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ftv_RepoObject_Reference_PlantUml_EntityRefList.html">docs.ftv_RepoObject_Reference_PlantUml_EntityRefList</a>
@@ -467,6 +476,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_cross.html">property.RepoObjectProperty_cross</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.RepoObjectProperty_ForUpdate.html">property.RepoObjectProperty_ForUpdate</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_InheritanceType_InheritanceDefinition.html">property.RepoObjectProperty_InheritanceType_InheritanceDefinition</a>
@@ -715,6 +727,9 @@
     <a class="nav-link" href="repo.Index_Settings.html">repo.Index_Settings</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.Index_Settings_ForUpdate.html">repo.Index_Settings_ForUpdate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.Index_SqlConstraint_PkUq.html">repo.Index_SqlConstraint_PkUq</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -737,6 +752,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T</a>
@@ -1223,6 +1241,9 @@
     <a class="nav-link" href="../manual/create-update-connect-repo-db.html">Create, update and connect repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/backup-repo-db.html">Backup repository database</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../manual/sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
 <ul class="nav-list">
@@ -1253,7 +1274,10 @@
     <a class="nav-link" href="../manual/ssms-configuration.html">SSMS configuration</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../manual/sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
+    <a class="nav-link" href="../manual/analyticscreator.html">Import from AnalyticsCreator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="#manual:sql-server-issue-sys-views-references.adoc">manual:sql-server-issue-sys-views-references.adoc</a>
   </li>
 </ul>
   </li>
@@ -1307,7 +1331,7 @@ V
 (
 view
 ), modify_date:
-2021-04-13 19:02:38</p>
+2021-07-14 19:36:07</p>
 </div>
 <div class="paragraph">
 <p>RepoObject_guid:
@@ -1491,7 +1515,7 @@ view
 <h3 id="_object_reference_diagram_referencing"><a class="anchor" href="#_object_reference_diagram_referencing"></a>Object Reference Diagram - Referencing</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-5fc76619f88096eb4e970f293b44b6b7b417dc85.svg" alt="entity_0_30_objectref-sqlparse.RepoObject_SqlModules_Repo_Sys">
+<img src="_images/diag-54fb35f9d9317c376d823e6db5514f5137a144f7.svg" alt="entity_0_30_objectref-sqlparse.RepoObject_SqlModules_Repo_Sys">
 </div>
 </div>
 </div>
@@ -1499,7 +1523,7 @@ view
 <h3 id="_column_reference_diagram"><a class="anchor" href="#_column_reference_diagram"></a>Column Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-6e3c8ac9cb5c0a1e559984055e0da1066e3435a6.svg" alt="entity_1_1_colref-sqlparse.RepoObject_SqlModules_Repo_Sys">
+<img src="_images/diag-b28c9aa7f88513cd5ea87f481c07b633e2a2144e.svg" alt="entity_1_1_colref-sqlparse.RepoObject_SqlModules_Repo_Sys">
 </div>
 </div>
 </div>
@@ -1509,7 +1533,7 @@ view
 <h2 id="_indexes"><a class="anchor" href="#_indexes"></a>Indexes</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="index-idx_RepoObject_SqlModules_Repo_Sys__1"><a class="anchor" href="#index-idx_RepoObject_SqlModules_Repo_Sys__1"></a>idx_RepoObject_SqlModules_Repo_Sys__1</h3>
+<h3 id="index-idx_RepoObject_SqlModules_Repo_Sys_1"><a class="anchor" href="#index-idx_RepoObject_SqlModules_Repo_Sys_1"></a>idx_RepoObject_SqlModules_Repo_Sys__1</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1947,7 +1971,7 @@ view
 <div class="listingblock">
 <div class="title">sqlparse.RepoObject_SqlModules_Repo_Sys script</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">Create View [sqlparse].RepoObject_SqlModules_Repo_Sys
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">CREATE View sqlparse.RepoObject_SqlModules_Repo_Sys
 As
 --
 Select
@@ -1982,16 +2006,17 @@ Select
                                0
                        End As Bit)
 From
-    repo.RepoObject                As ro
+    repo.RepoObject                    As ro
     Inner Join
-        repo_sys.SysObject         As so
+        repo_sys.SysObject             As so
             On
-            ro.RepoObject_guid  = so.SysObject_RepoObject_guid
+            --ro.RepoObject_guid  = so.SysObject_RepoObject_guid
+            so.SysObject_fullname2 = ro.SysObject_fullname2
 
     Left Join
-        [sqlparse].RepoObject_SqlModules As ros
+        sqlparse.RepoObject_SqlModules As ros
             On
-            ros.RepoObject_guid = ro.RepoObject_guid
+            ros.RepoObject_guid    = ro.RepoObject_guid
 Where
     Not so.sql_modules_definition Is Null;</code></pre>
 </div>

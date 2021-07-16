@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="634px" preserveAspectRatio="none" style="width:1050px;height:634px;background:#FFFFFF;" version="1.1" viewBox="0 0 1050 634" width="1050px" zoomAndPan="magnify"><defs><filter height="300%" id="f15dmatly67c7p" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[9cae4381d6cd6bbdcf196ab2da3042c6]
+class uspgenerator.ftv_GeneratorUspStep_sql--><rect codeLine="26" fill="#FFFF00" filter="url(#f15dmatly67c7p)" height="94.3999" id="uspgenerator.ftv_GeneratorUspStep_sql" style="stroke:#A80036;stroke-width:1.5;" width="216" x="275.5" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="20" x="373.5" y="24.0001">«IF»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="210" x="278.5" y="38.4002">uspgenerator.ftv_GeneratorUspStep_sql</text><line style="stroke:#A80036;stroke-width:1.5;" x1="276.5" x2="490.5" y1="45.8002" y2="45.8002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="276.5" x2="490.5" y1="53.8002" y2="53.8002"/><ellipse cx="286.5" cy="64.8002" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="59" x="295.5" y="68.8001">Number : int</text><ellipse cx="286.5" cy="78.0001" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="117" x="295.5" y="82">SqlStep : nvarchar(max)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="129" x="295.5" y="95.1999">Statement : nvarchar(max)</text><!--MD5=[57425e9750090cca1e087ee9867d4719]
+class uspgenerator.ftv_GeneratorUspStep_tree--><rect codeLine="33" fill="#FFFF00" filter="url(#f15dmatly67c7p)" height="226.3989" id="uspgenerator.ftv_GeneratorUspStep_tree" style="stroke:#A80036;stroke-width:1.5;" width="219" x="274" y="136"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="20" x="373.5" y="153.0001">«IF»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="213" x="277" y="167.4002">uspgenerator.ftv_GeneratorUspStep_tree</text><line style="stroke:#A80036;stroke-width:1.5;" x1="275" x2="492" y1="174.8002" y2="174.8002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="275" x2="492" y1="182.8002" y2="182.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="131" x="294" y="197.8001">Asc_PerParentChild : bigint</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="111" x="294" y="211">child_PerParent : bigint</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="49" x="294" y="224.1999">Depth : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="138" x="294" y="237.3998">Desc_PerParentChild : bigint</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="92" x="294" y="250.5997">is_condition : tinyint</text><ellipse cx="285" cy="259.7997" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="294" y="263.7996">is_required_ELSE : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="59" x="294" y="276.9995">Number : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="97" x="294" y="290.1994">Parent_Number : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="294" y="303.3993">Parent_Sort : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="69" x="294" y="316.5992">Root_Sort : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="137" x="294" y="329.7991">RowNumber_PerUsp : bigint</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="40" x="294" y="342.999">Sort : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="51" x="294" y="356.1989">usp_id : int</text><!--MD5=[96d926072184575f0ec1f3663cf4c832]
+class uspgenerator.GeneratorUsp--><rect codeLine="50" fill="#FFFFFF" filter="url(#f15dmatly67c7p)" height="147.1995" id="uspgenerator.GeneratorUsp" style="stroke:#A80036;stroke-width:1.5;" width="187" x="290" y="472.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="374" y="489.5001">«U»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="144" x="311.5" y="503.9002">uspgenerator.GeneratorUsp</text><line style="stroke:#A80036;stroke-width:1.5;" x1="291" x2="476" y1="511.3002" y2="511.3002"/><ellipse cx="301" cy="522.3002" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="10" x="310" y="526.3001">id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="17" x="323" y="526.3001">: int</text><line style="stroke:#A80036;stroke-width:1.0;" x1="291" x2="476" y1="532.5001" y2="532.5001"/><ellipse cx="301" cy="543.5001" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="93" x="310" y="547.5">has_logging : tinyint</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="161" x="310" y="560.6999">usp_Description : nvarchar(4000)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="153" x="310" y="573.8998">usp_Examples : nvarchar(4000)</text><ellipse cx="301" cy="583.0998" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="310" y="587.0997">usp_name : nvarchar(128)</text><ellipse cx="301" cy="596.2997" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="139" x="310" y="600.2996">usp_schema : nvarchar(128)</text><ellipse cx="301" cy="609.4996" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="141" x="310" y="613.4995">usp_fullname : nvarchar(261)</text><!--MD5=[4e94977fae3e343e9636b79ef0ad53b5]
+class uspgenerator.GeneratorUsp_StepList--><rect codeLine="61" fill="#F5F5F5" filter="url(#f15dmatly67c7p)" height="94.3999" id="uspgenerator.GeneratorUsp_StepList" style="stroke:#A80036;stroke-width:1.5;" width="200" x="836" y="438"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="927" y="455.0001">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="194" x="839" y="469.4002">uspgenerator.GeneratorUsp_StepList</text><line style="stroke:#A80036;stroke-width:1.5;" x1="837" x2="1035" y1="476.8002" y2="476.8002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="837" x2="1035" y1="484.8002" y2="484.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="143" x="856" y="499.8001">AdocStepList : nvarchar(max)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="118" x="856" y="513">StepList : nvarchar(max)</text><ellipse cx="847" cy="522.2" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="51" x="856" y="526.1999">usp_id : int</text><!--MD5=[f52a9a4f79a312e694002b8ac0060ecd]
+class uspgenerator.GeneratorUspStep--><rect codeLine="68" fill="#FFFFFF" filter="url(#f15dmatly67c7p)" height="358.3979" id="uspgenerator.GeneratorUspStep" style="stroke:#A80036;stroke-width:1.5;" width="207" x="7" y="70"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="101" y="87.0001">«U»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="168" x="26.5" y="101.4002">uspgenerator.GeneratorUspStep</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="213" y1="108.8002" y2="108.8002"/><ellipse cx="18" cy="119.8002" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="10" x="27" y="123.8001">id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="17" x="40" y="123.8001">: int</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="213" y1="130.0001" y2="130.0001"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="138" x="27" y="145">Description : nvarchar(4000)</text><ellipse cx="18" cy="154.2" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="93" x="27" y="158.1999">has_logging : tinyint</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="115" x="27" y="171.3998">info_01 : nvarchar(max)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="115" x="27" y="184.5997">info_02 : nvarchar(max)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="115" x="27" y="197.7996">info_03 : nvarchar(max)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="115" x="27" y="210.9995">info_04 : nvarchar(max)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="115" x="27" y="224.1994">info_05 : nvarchar(max)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="115" x="27" y="237.3993">info_06 : nvarchar(max)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="115" x="27" y="250.5992">info_07 : nvarchar(max)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="115" x="27" y="263.7991">info_08 : nvarchar(max)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="115" x="27" y="276.999">info_09 : nvarchar(max)</text><ellipse cx="18" cy="286.199" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="92" x="27" y="290.1989">is_condition : tinyint</text><ellipse cx="18" cy="299.3989" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="85" x="27" y="303.3988">is_inactive : tinyint</text><ellipse cx="18" cy="312.5988" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="119" x="27" y="316.5987">is_SubProcedure : tinyint</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="181" x="27" y="329.7986">log_flag_InsertUpdateDelete : char(1)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="167" x="27" y="342.9985">log_source_object : nvarchar(261)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="162" x="27" y="356.1984">log_target_object : nvarchar(261)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="113" x="27" y="369.3983">Name : nvarchar(1000)</text><ellipse cx="18" cy="378.5983" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="59" x="27" y="382.5982">Number : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="97" x="27" y="395.7982">Parent_Number : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="129" x="27" y="408.9981">Statement : nvarchar(max)</text><ellipse cx="18" cy="418.198" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="51" x="27" y="422.198">usp_id : int</text><!--MD5=[8994ee5cb1ba9e591b52153cba9ac7d3]
+class uspgenerator.GeneratorUspStep_Sql--><rect codeLine="95" fill="#F5F5F5" filter="url(#f15dmatly67c7p)" height="186.7992" id="uspgenerator.GeneratorUspStep_Sql" style="stroke:#A80036;stroke-width:1.5;" width="199" x="561" y="434"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="651.5" y="451.0001">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="193" x="564" y="465.4002">uspgenerator.GeneratorUspStep_Sql</text><line style="stroke:#A80036;stroke-width:1.5;" x1="562" x2="759" y1="472.8002" y2="472.8002"/><ellipse cx="572" cy="483.8002" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="36" x="581" y="487.8001">usp_id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="17" x="620" y="487.8001">: int</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="42" x="581" y="501">Number</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="17" x="626" y="501">: int</text><line style="stroke:#A80036;stroke-width:1.0;" x1="562" x2="759" y1="507.2" y2="507.2"/><ellipse cx="572" cy="518.2" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="127" x="581" y="522.1999">AdocStep : nvarchar(max)</text><ellipse cx="572" cy="531.3999" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="93" x="581" y="535.3998">has_logging : tinyint</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="581" y="548.5997">is_required_ELSE : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="126" x="581" y="561.7996">required_Begin_count : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="118" x="581" y="574.9995">required_End_count : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="137" x="581" y="588.1994">RowNumber_PerUsp : bigint</text><ellipse cx="572" cy="597.3994" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="117" x="581" y="601.3993">SqlStep : nvarchar(max)</text><ellipse cx="572" cy="610.5993" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="141" x="581" y="614.5992">usp_fullname : nvarchar(261)</text><!--MD5=[89890089f5276f64c4bb7fde65161ff9]
+reverse link uspgenerator.ftv_GeneratorUspStep_sql to uspgenerator.GeneratorUspStep_Sql--><path codeLine="109" d="M479.6,104.62 C484.41,108.82 488.92,113.28 493,118 C571.16,208.45 615.94,340.48 638.96,429.63 " fill="none" id="uspgenerator.ftv_GeneratorUspStep_sql-backto-uspgenerator.GeneratorUspStep_Sql" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="475.5,101.15,479.7852,110.0177,479.3164,104.3804,484.9538,103.9115,475.5,101.15" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[a0293f9b71e71017ac4f77f41abe7435]
+reverse link uspgenerator.ftv_GeneratorUspStep_tree to uspgenerator.GeneratorUspStep_Sql--><path codeLine="110" d="M496.76,362.08 C519.1,384.58 542.36,408.01 564.07,429.87 " fill="none" id="uspgenerator.ftv_GeneratorUspStep_tree-backto-uspgenerator.GeneratorUspStep_Sql" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="493.19,358.48,496.707,367.6795,496.7184,362.0227,502.3752,362.0341,493.19,358.48" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[231b11768a373ce3c55920213089f26b]
+reverse link uspgenerator.GeneratorUsp to uspgenerator.GeneratorUspStep_Sql--><path codeLine="111" d="M490.5,537.68 C510.89,536.27 532.25,534.79 552.66,533.38 " fill="none" id="uspgenerator.GeneratorUsp-backto-uspgenerator.GeneratorUspStep_Sql" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="485.34,538.03,494.5932,541.4031,490.3282,537.687,494.0444,533.422,485.34,538.03" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[231b11768a373ce3c55920213089f26b]
+reverse link uspgenerator.GeneratorUsp to uspgenerator.GeneratorUspStep_Sql--><path codeLine="116" d="M483.9,541.91 C516.25,540.81 525.54,530 560.5,530 " fill="none" id="uspgenerator.GeneratorUsp-backto-uspgenerator.GeneratorUspStep_Sql-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="478.5,542,487.5672,545.8451,483.4993,541.9143,487.4301,537.8463,478.5,542" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[231b11768a373ce3c55920213089f26b]
+reverse link uspgenerator.GeneratorUsp to uspgenerator.GeneratorUspStep_Sql--><path codeLine="117" d="M483.93,520.75 C519.06,517.43 522.04,482 560.5,482 " fill="none" id="uspgenerator.GeneratorUsp-backto-uspgenerator.GeneratorUspStep_Sql-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="478.5,521,487.6835,524.5587,483.4941,520.7574,487.2953,516.5681,478.5,521" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[231b11768a373ce3c55920213089f26b]
+reverse link uspgenerator.GeneratorUsp to uspgenerator.GeneratorUspStep_Sql--><path codeLine="118" d="M483.85,608 C515.94,608 525.91,608 560.5,608 " fill="none" id="uspgenerator.GeneratorUsp-backto-uspgenerator.GeneratorUspStep_Sql-3" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="478.5,608,487.5,612,483.5,608,487.5,604,478.5,608" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[22a25c7c2ebb49070872cef63420e971]
+reverse link uspgenerator.GeneratorUspStep to uspgenerator.GeneratorUspStep_Sql--><path codeLine="112" d="M218.33,343.11 C236.2,356.27 255.1,368.77 274,379 C364.1,427.78 397.49,413.91 493,451 C512.51,458.57 533.02,467.23 552.73,475.9 " fill="none" id="uspgenerator.GeneratorUspStep-backto-uspgenerator.GeneratorUspStep_Sql" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="214.3,340.11,219.154,348.6796,218.3188,343.0848,223.9137,342.2495,214.3,340.11" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[f5c751254a3243cbff4298c8971c8433]
+reverse link uspgenerator.GeneratorUspStep to uspgenerator.ftv_GeneratorUspStep_tree--><path codeLine="113" d="M219.38,249 C237.31,249 255.91,249 273.86,249 " fill="none" id="uspgenerator.GeneratorUspStep-backto-uspgenerator.ftv_GeneratorUspStep_tree" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="214.34,249,223.34,253,219.34,249,223.34,245,214.34,249" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[89a07b7f65a6cece16e07d4f65de6d4d]
+reverse link uspgenerator.GeneratorUspStep to uspgenerator.ftv_GeneratorUspStep_sql--><path codeLine="114" d="M218.36,159.25 C236.58,144.99 255.58,130.76 274,118 C282.18,112.33 290.88,106.66 299.66,101.16 " fill="none" id="uspgenerator.GeneratorUspStep-backto-uspgenerator.ftv_GeneratorUspStep_sql" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="214.24,162.48,223.7885,160.0664,218.1721,159.3915,218.847,153.7751,214.24,162.48" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b16467eeab459f3002ebcd5d5a02575c]
+reverse link uspgenerator.GeneratorUspStep_Sql to uspgenerator.GeneratorUsp_StepList--><path codeLine="115" d="M773.11,509.27 C791.2,506.56 809.89,503.76 827.87,501.06 " fill="none" id="uspgenerator.GeneratorUspStep_Sql-backto-uspgenerator.GeneratorUsp_StepList" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="768.03,510.03,777.5245,512.648,772.9745,509.2869,776.3356,504.7368,768.03,510.03" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b16467eeab459f3002ebcd5d5a02575c]
+reverse link uspgenerator.GeneratorUspStep_Sql to uspgenerator.GeneratorUsp_StepList--><path codeLine="119" d="M766.88,482.3 C798.7,485.96 799.7,522 835,522 " fill="none" id="uspgenerator.GeneratorUspStep_Sql-backto-uspgenerator.GeneratorUsp_StepList-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="761.5,482,770.2692,486.4833,766.4926,482.2718,770.7041,478.4952,761.5,482" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[9b8564ba322fc2f5aba471ce04e6a58b]
+@startuml
+left to right direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity uspgenerator.ftv_GeneratorUspStep_sql << IF >> {
+  - -
+  * Number : int
+  * SqlStep : nvarchar(max)
+  Statement : nvarchar(max)
+}
+
+entity uspgenerator.ftv_GeneratorUspStep_tree << IF >> {
+  - -
+  Asc_PerParentChild : bigint
+  child_PerParent : bigint
+  Depth : int
+  Desc_PerParentChild : bigint
+  is_condition : tinyint
+  * is_required_ELSE : int
+  Number : int
+  Parent_Number : int
+  Parent_Sort : int
+  Root_Sort : int
+  RowNumber_PerUsp : bigint
+  Sort : int
+  usp_id : int
+}
+
+entity uspgenerator.GeneratorUsp << U >> {
+  * **id** : int
+  - -
+  * has_logging : tinyint
+  usp_Description : nvarchar(4000)
+  usp_Examples : nvarchar(4000)
+  * usp_name : nvarchar(128)
+  * usp_schema : nvarchar(128)
+  * {static} usp_fullname : nvarchar(261)
+}
+
+entity uspgenerator.GeneratorUsp_StepList << V >> {
+  - -
+  AdocStepList : nvarchar(max)
+  StepList : nvarchar(max)
+  * usp_id : int
+}
+
+entity uspgenerator.GeneratorUspStep << U >> {
+  * **id** : int
+  - -
+  Description : nvarchar(4000)
+  * has_logging : tinyint
+  info_01 : nvarchar(max)
+  info_02 : nvarchar(max)
+  info_03 : nvarchar(max)
+  info_04 : nvarchar(max)
+  info_05 : nvarchar(max)
+  info_06 : nvarchar(max)
+  info_07 : nvarchar(max)
+  info_08 : nvarchar(max)
+  info_09 : nvarchar(max)
+  * is_condition : tinyint
+  * is_inactive : tinyint
+  * is_SubProcedure : tinyint
+  log_flag_InsertUpdateDelete : char(1)
+  log_source_object : nvarchar(261)
+  log_target_object : nvarchar(261)
+  Name : nvarchar(1000)
+  * Number : int
+  Parent_Number : int
+  Statement : nvarchar(max)
+  * usp_id : int
+}
+
+entity uspgenerator.GeneratorUspStep_Sql << V >> {
+  * **usp_id** : int
+  **Number** : int
+  - -
+  * AdocStep : nvarchar(max)
+  * has_logging : tinyint
+  is_required_ELSE : int
+  required_Begin_count : int
+  required_End_count : int
+  RowNumber_PerUsp : bigint
+  * SqlStep : nvarchar(max)
+  * usp_fullname : nvarchar(261)
+}
+
+uspgenerator.ftv_GeneratorUspStep_sql <.. uspgenerator.GeneratorUspStep_Sql
+uspgenerator.ftv_GeneratorUspStep_tree <.. uspgenerator.GeneratorUspStep_Sql
+uspgenerator.GeneratorUsp <.. uspgenerator.GeneratorUspStep_Sql
+uspgenerator.GeneratorUspStep <.. uspgenerator.GeneratorUspStep_Sql
+uspgenerator.GeneratorUspStep <.. uspgenerator.ftv_GeneratorUspStep_tree
+uspgenerator.GeneratorUspStep <.. uspgenerator.ftv_GeneratorUspStep_sql
+uspgenerator.GeneratorUspStep_Sql <.. uspgenerator.GeneratorUsp_StepList
+uspgenerator.GeneratorUsp::has_logging <- - uspgenerator.GeneratorUspStep_Sql::has_logging
+uspgenerator.GeneratorUsp::id <- - uspgenerator.GeneratorUspStep_Sql::usp_id
+uspgenerator.GeneratorUsp::usp_fullname <- - uspgenerator.GeneratorUspStep_Sql::usp_fullname
+uspgenerator.GeneratorUspStep_Sql::usp_id <- - uspgenerator.GeneratorUsp_StepList::usp_id
+@enduml
+
+@startuml
+left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity uspgenerator.ftv_GeneratorUspStep_sql << IF >> {
+  - -
+  * Number : int
+  * SqlStep : nvarchar(max)
+  Statement : nvarchar(max)
+}
+
+entity uspgenerator.ftv_GeneratorUspStep_tree << IF >> {
+  - -
+  Asc_PerParentChild : bigint
+  child_PerParent : bigint
+  Depth : int
+  Desc_PerParentChild : bigint
+  is_condition : tinyint
+  * is_required_ELSE : int
+  Number : int
+  Parent_Number : int
+  Parent_Sort : int
+  Root_Sort : int
+  RowNumber_PerUsp : bigint
+  Sort : int
+  usp_id : int
+}
+
+entity uspgenerator.GeneratorUsp << U >> {
+  * **id** : int
+  - -
+  * has_logging : tinyint
+  usp_Description : nvarchar(4000)
+  usp_Examples : nvarchar(4000)
+  * usp_name : nvarchar(128)
+  * usp_schema : nvarchar(128)
+  * {static} usp_fullname : nvarchar(261)
+}
+
+entity uspgenerator.GeneratorUsp_StepList << V >> {
+  - -
+  AdocStepList : nvarchar(max)
+  StepList : nvarchar(max)
+  * usp_id : int
+}
+
+entity uspgenerator.GeneratorUspStep << U >> {
+  * **id** : int
+  - -
+  Description : nvarchar(4000)
+  * has_logging : tinyint
+  info_01 : nvarchar(max)
+  info_02 : nvarchar(max)
+  info_03 : nvarchar(max)
+  info_04 : nvarchar(max)
+  info_05 : nvarchar(max)
+  info_06 : nvarchar(max)
+  info_07 : nvarchar(max)
+  info_08 : nvarchar(max)
+  info_09 : nvarchar(max)
+  * is_condition : tinyint
+  * is_inactive : tinyint
+  * is_SubProcedure : tinyint
+  log_flag_InsertUpdateDelete : char(1)
+  log_source_object : nvarchar(261)
+  log_target_object : nvarchar(261)
+  Name : nvarchar(1000)
+  * Number : int
+  Parent_Number : int
+  Statement : nvarchar(max)
+  * usp_id : int
+}
+
+entity uspgenerator.GeneratorUspStep_Sql << V >> {
+  * **usp_id** : int
+  **Number** : int
+  - -
+  * AdocStep : nvarchar(max)
+  * has_logging : tinyint
+  is_required_ELSE : int
+  required_Begin_count : int
+  required_End_count : int
+  RowNumber_PerUsp : bigint
+  * SqlStep : nvarchar(max)
+  * usp_fullname : nvarchar(261)
+}
+
+uspgenerator.ftv_GeneratorUspStep_sql <.. uspgenerator.GeneratorUspStep_Sql
+uspgenerator.ftv_GeneratorUspStep_tree <.. uspgenerator.GeneratorUspStep_Sql
+uspgenerator.GeneratorUsp <.. uspgenerator.GeneratorUspStep_Sql
+uspgenerator.GeneratorUspStep <.. uspgenerator.GeneratorUspStep_Sql
+uspgenerator.GeneratorUspStep <.. uspgenerator.ftv_GeneratorUspStep_tree
+uspgenerator.GeneratorUspStep <.. uspgenerator.ftv_GeneratorUspStep_sql
+uspgenerator.GeneratorUspStep_Sql <.. uspgenerator.GeneratorUsp_StepList
+uspgenerator.GeneratorUsp::has_logging <- - uspgenerator.GeneratorUspStep_Sql::has_logging
+uspgenerator.GeneratorUsp::id <- - uspgenerator.GeneratorUspStep_Sql::usp_id
+uspgenerator.GeneratorUsp::usp_fullname <- - uspgenerator.GeneratorUspStep_Sql::usp_fullname
+uspgenerator.GeneratorUspStep_Sql::usp_id <- - uspgenerator.GeneratorUsp_StepList::usp_id
+@enduml
+
+PlantUML version 1.2021.8(Sat Jun 26 08:20:59 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

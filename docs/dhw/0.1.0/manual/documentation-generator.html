@@ -71,6 +71,9 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../sqldb/nav/objects-by-schema.html">Objects by schema</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Objects by schema</span>
 <ul class="nav-list">
@@ -227,6 +230,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/docs.ForeignKey_RelationScript.html">docs.ForeignKey_RelationScript</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/docs.fs_cleanStringForAnchorId.html">docs.fs_cleanStringForAnchorId</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/docs.fs_cleanStringForLabel.html">docs.fs_cleanStringForLabel</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/docs.ftv_RepoObject_Reference_PlantUml_EntityRefList.html">docs.ftv_RepoObject_Reference_PlantUml_EntityRefList</a>
@@ -467,6 +476,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/property.RepoObjectProperty_cross.html">property.RepoObjectProperty_cross</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/property.RepoObjectProperty_ForUpdate.html">property.RepoObjectProperty_ForUpdate</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/property.RepoObjectProperty_InheritanceType_InheritanceDefinition.html">property.RepoObjectProperty_InheritanceType_InheritanceDefinition</a>
@@ -715,6 +727,9 @@
     <a class="nav-link" href="../sqldb/repo.Index_Settings.html">repo.Index_Settings</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.Index_Settings_ForUpdate.html">repo.Index_Settings_ForUpdate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.Index_SqlConstraint_PkUq.html">repo.Index_SqlConstraint_PkUq</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -737,6 +752,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T</a>
@@ -1223,6 +1241,9 @@
     <a class="nav-link" href="create-update-connect-repo-db.html">Create, update and connect repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="backup-repo-db.html">Backup repository database</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
 <ul class="nav-list">
@@ -1253,7 +1274,10 @@
     <a class="nav-link" href="ssms-configuration.html">SSMS configuration</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
+    <a class="nav-link" href="analyticscreator.html">Import from AnalyticsCreator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="#manual:sql-server-issue-sys-views-references.adoc">manual:sql-server-issue-sys-views-references.adoc</a>
   </li>
 </ul>
   </li>
@@ -1298,6 +1322,93 @@
 </aside>
 <article class="doc">
 <h1 class="page">Database documentation generator</h1>
+<div class="sect1">
+<h2 id="_abstract"><a class="anchor" href="#_abstract"></a>Abstract</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>setup Antora (one time task)</p>
+</li>
+<li>
+<p>setup sqldb-docs repository (one time per project task)</p>
+</li>
+<li>
+<p>setup Antora Playbook project (one time per project task)</p>
+</li>
+<li>
+<p>recurring steps</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Export files for Antora</p>
+<div class="exampleblock">
+<div class="title">Example 1. AntoraExport</div>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">--ensure consistent repository before sql parsing:
+Exec repo.usp_main;
+
+--use sqlparser to get the current parsing results
+
+--persist sql parsing results:
+Exec sqlparse.usp_PERSIST_RepoObject_SqlModules_41_from_T;
+Exec sqlparse.usp_PERSIST_RepoObject_SqlModules_61_SelectIdentifier_Union_T;
+
+--ensure consistent repository after sql parsing:
+Exec repo.usp_main;
+
+--export Antora documentation sources
+Exec docs.usp_AntoraExport;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>generate the static site</p>
+<div class="paragraph">
+<p>In the Antora Playbook project call Antora to build the local or the final site.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>You can use the prepared PowerShell scripts</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-powershell hljs" data-lang="powershell">./local-playbook.ps1</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-powershell hljs" data-lang="powershell">./playbook.ps1</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>you can also use Windows bat files:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>local-playbook.bat</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>playbook.bat</code></pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
 <div class="sect1">
 <h2 id="_setup_for_antora_usage"><a class="anchor" href="#_setup_for_antora_usage"></a>Setup for Antora usage</h2>
 <div class="sectionbody">
@@ -1737,6 +1848,23 @@ New-Item .\docs\.nojekyll -ItemType file -Force <i class="conum" data-value="1">
 </table>
 </div>
 </li>
+<li>
+<p>playbook.bat</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>antora --fetch playbook.yml
+copy /y NUL .\docs\.nojekyll <i class="conum" data-value="1"></i><b>(1)</b></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>the file <code>.nojekyll</code> needs to be created if the site should be published as GitHub page. See: <a href="https://docs.antora.org/antora/2.3/publish-to-github-pages/#nojekyll" class="bare">https://docs.antora.org/antora/2.3/publish-to-github-pages/#nojekyll</a></td>
+</tr>
+</table>
+</div>
+</li>
 </ul>
 </div>
 </li>
@@ -1978,6 +2106,29 @@ GO</code></pre>
 </li>
 </ul>
 </div>
+<div class="exampleblock">
+<div class="title">Example 2. Usage</div>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">--ensure consistent repository before sql parsing:
+Exec repo.usp_main;
+
+--use sqlparser to get the current parsing results
+
+--persist sql parsing results:
+Exec sqlparse.usp_PERSIST_RepoObject_SqlModules_41_from_T;
+Exec sqlparse.usp_PERSIST_RepoObject_SqlModules_61_SelectIdentifier_Union_T;
+
+--ensure consistent repository after sql parsing:
+Exec repo.usp_main;
+
+--export Antora documentation sources
+Exec docs.usp_AntoraExport;</code></pre>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -1997,18 +2148,56 @@ You can also clean up the partials. This is not so important, because these file
 </table>
 </div>
 <div class="paragraph">
-<p>In the Antora Playbook project call Antora to build the local or the final site. You can use the prepared scripts:</p>
+<p>In the Antora Playbook project call Antora to build the local or the final site.</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p>You can use the prepared PowerShell scripts</p>
 <div class="listingblock">
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-powershell hljs" data-lang="powershell">./local-playbook.ps1</code></pre>
 </div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-powershell hljs" data-lang="powershell">./playbook.ps1</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>you can also use Windows bat files:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>local-playbook.bat</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>playbook.bat</code></pre>
+</div>
+</div>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p>The result is a static site. You can browse the content locally on the PC where you created the documentation.</p>
 </div>
 <div class="paragraph">
 <p>If you want to publish the site as GitHub page, you need to create <code>.nojekyll</code>: <a href="https://docs.antora.org/antora/2.3/publish-to-github-pages/#nojekyll" class="bare">https://docs.antora.org/antora/2.3/publish-to-github-pages/#nojekyll</a></p>
+</div>
+<div class="sect2">
+<h3 id="_use_local_plantuml_server"><a class="anchor" href="#_use_local_plantuml_server"></a>use local PlantUML Server</h3>
+<div class="paragraph">
+<p>It is possible to use a local PlantUML server.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://plantuml.com/server" class="bare">https://plantuml.com/server</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://sourceforge.net/projects/plantuml/" class="bare">https://sourceforge.net/projects/plantuml/</a><br>
+here you can download a plantuml.war file to be used in a local webserver lice tomcat.</p>
+</div>
 </div>
 </div>
 </div>

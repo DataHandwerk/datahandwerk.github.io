@@ -71,6 +71,9 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="nav/objects-by-schema.html">Objects by schema</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Objects by schema</span>
 <ul class="nav-list">
@@ -227,6 +230,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ForeignKey_RelationScript.html">docs.ForeignKey_RelationScript</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.fs_cleanStringForAnchorId.html">docs.fs_cleanStringForAnchorId</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.fs_cleanStringForLabel.html">docs.fs_cleanStringForLabel</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ftv_RepoObject_Reference_PlantUml_EntityRefList.html">docs.ftv_RepoObject_Reference_PlantUml_EntityRefList</a>
@@ -467,6 +476,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_cross.html">property.RepoObjectProperty_cross</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.RepoObjectProperty_ForUpdate.html">property.RepoObjectProperty_ForUpdate</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_InheritanceType_InheritanceDefinition.html">property.RepoObjectProperty_InheritanceType_InheritanceDefinition</a>
@@ -715,6 +727,9 @@
     <a class="nav-link" href="repo.Index_Settings.html">repo.Index_Settings</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.Index_Settings_ForUpdate.html">repo.Index_Settings_ForUpdate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.Index_SqlConstraint_PkUq.html">repo.Index_SqlConstraint_PkUq</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -737,6 +752,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T</a>
@@ -1223,6 +1241,9 @@
     <a class="nav-link" href="../manual/create-update-connect-repo-db.html">Create, update and connect repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/backup-repo-db.html">Backup repository database</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../manual/sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
 <ul class="nav-list">
@@ -1253,7 +1274,10 @@
     <a class="nav-link" href="../manual/ssms-configuration.html">SSMS configuration</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../manual/sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
+    <a class="nav-link" href="../manual/analyticscreator.html">Import from AnalyticsCreator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="#manual:sql-server-issue-sys-views-references.adoc">manual:sql-server-issue-sys-views-references.adoc</a>
   </li>
 </ul>
   </li>
@@ -1426,7 +1450,7 @@ A90747EC-8CA3-EB11-84FA-A81E8446D5B0</p>
 <div class="sectionbody">
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-441bab4b63d7879ce28fba85d3430c889c073335.svg" alt="entity_1_1_fk-repo.RepoSchema">
+<img src="_images/diag-c6091be86e19e639104914510d58ff5b06ed62fa.svg" alt="entity_1_1_fk-repo.RepoSchema">
 </div>
 </div>
 </div>
@@ -1463,7 +1487,7 @@ A90747EC-8CA3-EB11-84FA-A81E8446D5B0</p>
 <h3 id="_object_reference_diagram"><a class="anchor" href="#_object_reference_diagram"></a>Object Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-23aea16092db0beb9de8476954a15ad330713330.svg" alt="entity_1_1_objectref-repo.RepoSchema">
+<img src="_images/diag-1abd5c3148174d4d0b3c113f548b5ce310b7013b.svg" alt="entity_1_1_objectref-repo.RepoSchema">
 </div>
 </div>
 </div>
@@ -1479,7 +1503,7 @@ A90747EC-8CA3-EB11-84FA-A81E8446D5B0</p>
 <h3 id="_object_reference_diagram_referencing"><a class="anchor" href="#_object_reference_diagram_referencing"></a>Object Reference Diagram - Referencing</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-d2acbf957769d0893e86dac849a19d4ba54064bd.svg" alt="entity_0_30_objectref-repo.RepoSchema">
+<img src="_images/diag-5fe52e027e91212153205311a92c2de3c4611a25.svg" alt="entity_0_30_objectref-repo.RepoSchema">
 </div>
 </div>
 </div>
@@ -1487,7 +1511,7 @@ A90747EC-8CA3-EB11-84FA-A81E8446D5B0</p>
 <h3 id="_column_reference_diagram"><a class="anchor" href="#_column_reference_diagram"></a>Column Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-a070b034caa5d561501390a2e816e39d5b4ec64e.svg" alt="entity_1_1_colref-repo.RepoSchema">
+<img src="_images/diag-5426cc6035406483df30241e1593c50774523e5c.svg" alt="entity_1_1_colref-repo.RepoSchema">
 </div>
 </div>
 </div>
@@ -1501,7 +1525,7 @@ A90747EC-8CA3-EB11-84FA-A81E8446D5B0</p>
 <div class="ulist">
 <ul>
 <li>
-<p>IndexSemanticGroup: <a href="index/IndexSemanticGroup.html#_no_group" class="page">no_group</a></p>
+<p>IndexSemanticGroup: <a href="index/IndexSemanticGroup.html#_reposchema_guid" class="page">RepoSchema_guid</a></p>
 <div class="openblock">
 <div class="content">
 <div class="ulist">
@@ -1615,6 +1639,21 @@ A90747EC-8CA3-EB11-84FA-A81E8446D5B0</p>
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referencing Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="repo.SysSchema_RepoSchema_via_guid.html#column-RepoSchema_is_SysSchema_missing" class="page">repo.SysSchema_RepoSchema_via_guid.RepoSchema_is_SysSchema_missing</a></p>
+</li>
+<li>
+<p><a href="repo.SysSchema_RepoSchema_via_name.html#column-RepoSchema_is_SysSchema_missing" class="page">repo.SysSchema_RepoSchema_via_name.RepoSchema_is_SysSchema_missing</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-RepoSchema_ms_description"><a class="anchor" href="#column-RepoSchema_ms_description"></a>RepoSchema_ms_description</h3>
@@ -1688,10 +1727,10 @@ A90747EC-8CA3-EB11-84FA-A81E8446D5B0</p>
 <p><a href="property.ExtendedProperty_Repo2Sys_level0.html#column-level0name" class="page">property.ExtendedProperty_Repo2Sys_level0.level0name</a></p>
 </li>
 <li>
-<p><a href="#column-is_RepoSchema_name_uniqueidentifier">repo.RepoSchema.is_RepoSchema_name_uniqueidentifier</a></p>
+<p><a href="#column-has_different_sys_names">repo.RepoSchema.has_different_sys_names</a></p>
 </li>
 <li>
-<p><a href="#column-has_different_sys_names">repo.RepoSchema.has_different_sys_names</a></p>
+<p><a href="#column-is_RepoSchema_name_uniqueidentifier">repo.RepoSchema.is_RepoSchema_name_uniqueidentifier</a></p>
 </li>
 <li>
 <p><a href="repo.SysSchema_RepoSchema_via_guid.html#column-RepoSchema_name" class="page">repo.SysSchema_RepoSchema_via_guid.RepoSchema_name</a></p>
@@ -1732,10 +1771,10 @@ A90747EC-8CA3-EB11-84FA-A81E8446D5B0</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="repo.SysSchema_RepoSchema_via_guid.html#column-SysSchema_id" class="page">repo.SysSchema_RepoSchema_via_guid.SysSchema_id</a></p>
+<p><a href="repo.SysSchema_RepoSchema_via_guid.html#column-RepoSchema_SysSchema_id" class="page">repo.SysSchema_RepoSchema_via_guid.RepoSchema_SysSchema_id</a></p>
 </li>
 <li>
-<p><a href="repo.SysSchema_RepoSchema_via_name.html#column-SysSchema_id" class="page">repo.SysSchema_RepoSchema_via_name.SysSchema_id</a></p>
+<p><a href="repo.SysSchema_RepoSchema_via_name.html#column-RepoSchema_SysSchema_id" class="page">repo.SysSchema_RepoSchema_via_name.RepoSchema_SysSchema_id</a></p>
 </li>
 </ul>
 </div>
@@ -1776,16 +1815,16 @@ A90747EC-8CA3-EB11-84FA-A81E8446D5B0</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="#column-is_SysSchema_name_uniqueidentifier">repo.RepoSchema.is_SysSchema_name_uniqueidentifier</a></p>
-</li>
-<li>
 <p><a href="#column-has_different_sys_names">repo.RepoSchema.has_different_sys_names</a></p>
 </li>
 <li>
-<p><a href="repo.SysSchema_RepoSchema_via_guid.html#column-SysSchema_name" class="page">repo.SysSchema_RepoSchema_via_guid.SysSchema_name</a></p>
+<p><a href="#column-is_SysSchema_name_uniqueidentifier">repo.RepoSchema.is_SysSchema_name_uniqueidentifier</a></p>
 </li>
 <li>
-<p><a href="repo.SysSchema_RepoSchema_via_name.html#column-SysSchema_name" class="page">repo.SysSchema_RepoSchema_via_name.SysSchema_name</a></p>
+<p><a href="repo.SysSchema_RepoSchema_via_guid.html#column-RepoSchema_SysSchema_name" class="page">repo.SysSchema_RepoSchema_via_guid.RepoSchema_SysSchema_name</a></p>
+</li>
+<li>
+<p><a href="repo.SysSchema_RepoSchema_via_name.html#column-RepoSchema_SysSchema_name" class="page">repo.SysSchema_RepoSchema_via_name.RepoSchema_SysSchema_name</a></p>
 </li>
 </ul>
 </div>

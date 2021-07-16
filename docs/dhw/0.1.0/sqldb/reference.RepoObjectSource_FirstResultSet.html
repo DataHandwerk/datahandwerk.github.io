@@ -71,6 +71,9 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="nav/objects-by-schema.html">Objects by schema</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Objects by schema</span>
 <ul class="nav-list">
@@ -227,6 +230,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ForeignKey_RelationScript.html">docs.ForeignKey_RelationScript</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.fs_cleanStringForAnchorId.html">docs.fs_cleanStringForAnchorId</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.fs_cleanStringForLabel.html">docs.fs_cleanStringForLabel</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ftv_RepoObject_Reference_PlantUml_EntityRefList.html">docs.ftv_RepoObject_Reference_PlantUml_EntityRefList</a>
@@ -467,6 +476,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_cross.html">property.RepoObjectProperty_cross</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.RepoObjectProperty_ForUpdate.html">property.RepoObjectProperty_ForUpdate</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_InheritanceType_InheritanceDefinition.html">property.RepoObjectProperty_InheritanceType_InheritanceDefinition</a>
@@ -715,6 +727,9 @@
     <a class="nav-link" href="repo.Index_Settings.html">repo.Index_Settings</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.Index_Settings_ForUpdate.html">repo.Index_Settings_ForUpdate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.Index_SqlConstraint_PkUq.html">repo.Index_SqlConstraint_PkUq</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -737,6 +752,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T</a>
@@ -1223,6 +1241,9 @@
     <a class="nav-link" href="../manual/create-update-connect-repo-db.html">Create, update and connect repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/backup-repo-db.html">Backup repository database</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../manual/sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
 <ul class="nav-list">
@@ -1253,7 +1274,10 @@
     <a class="nav-link" href="../manual/ssms-configuration.html">SSMS configuration</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../manual/sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
+    <a class="nav-link" href="../manual/analyticscreator.html">Import from AnalyticsCreator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="#manual:sql-server-issue-sys-views-references.adoc">manual:sql-server-issue-sys-views-references.adoc</a>
   </li>
 </ul>
   </li>
@@ -1307,7 +1331,7 @@ U
 (
 user table
 ), modify_date:
-2021-04-17 13:33:29</p>
+2021-04-27 12:41:32</p>
 </div>
 <div class="paragraph">
 <p>RepoObject_guid:
@@ -1501,7 +1525,7 @@ source: sys.dm_exec_describe_first_result_set</p>
 <h3 id="_object_reference_diagram_referencing"><a class="anchor" href="#_object_reference_diagram_referencing"></a>Object Reference Diagram - Referencing</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-e8dee44e6c17928c4aed683f83c5d047fedc1c45.svg" alt="entity_0_30_objectref-reference.RepoObjectSource_FirstResultSet">
+<img src="_images/diag-68a578301e614f29ba2977bff19a120ca2ba2c83.svg" alt="entity_0_30_objectref-reference.RepoObjectSource_FirstResultSet">
 </div>
 </div>
 </div>
@@ -1509,7 +1533,7 @@ source: sys.dm_exec_describe_first_result_set</p>
 <h3 id="_column_reference_diagram"><a class="anchor" href="#_column_reference_diagram"></a>Column Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-2ec1bb86e1f5c83a80f967349aa90b1c4f4b0f9c.svg" alt="entity_1_1_colref-reference.RepoObjectSource_FirstResultSet">
+<img src="_images/diag-13308c9054ee1aa1b1bf76388ed11e267c001ed5.svg" alt="entity_1_1_colref-reference.RepoObjectSource_FirstResultSet">
 </div>
 </div>
 </div>
@@ -1546,7 +1570,7 @@ source: sys.dm_exec_describe_first_result_set</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="index-idx_RepoObjectSource_FirstResultSet__1"><a class="anchor" href="#index-idx_RepoObjectSource_FirstResultSet__1"></a>idx_RepoObjectSource_FirstResultSet__1</h3>
+<h3 id="index-idx_RepoObjectSource_FirstResultSet_1"><a class="anchor" href="#index-idx_RepoObjectSource_FirstResultSet_1"></a>idx_RepoObjectSource_FirstResultSet__1</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1603,6 +1627,18 @@ referenced: <a href="repo.RepoObject.html" class="page">repo.RepoObject</a>, <a 
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referencing Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="reference.RepoObjectColumn_reference_FirstResultSet.html#column-referencing_RepoObject_guid" class="page">reference.RepoObjectColumn_reference_FirstResultSet.referencing_RepoObject_guid</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-column_ordinal"><a class="anchor" href="#column-column_ordinal"></a>column_ordinal</h3>
@@ -1707,6 +1743,18 @@ referenced: <a href="repo.RepoObject.html" class="page">repo.RepoObject</a>, <a 
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referencing Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="reference.RepoObjectColumn_reference_FirstResultSet.html#column-referenced_column_name" class="page">reference.RepoObjectColumn_reference_FirstResultSet.referenced_column_name</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-source_database_name"><a class="anchor" href="#column-source_database_name"></a>source_database_name</h3>
@@ -1753,6 +1801,18 @@ referenced: <a href="repo.RepoObject.html" class="page">repo.RepoObject</a>, <a 
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referencing Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="reference.RepoObjectColumn_reference_FirstResultSet.html#column-referenced_schema_name" class="page">reference.RepoObjectColumn_reference_FirstResultSet.referenced_schema_name</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-source_server_name"><a class="anchor" href="#column-source_server_name"></a>source_server_name</h3>
@@ -1799,6 +1859,18 @@ referenced: <a href="repo.RepoObject.html" class="page">repo.RepoObject</a>, <a 
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referencing Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="reference.RepoObjectColumn_reference_FirstResultSet.html#column-referenced_entity_name" class="page">reference.RepoObjectColumn_reference_FirstResultSet.referenced_entity_name</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="column-system_type_id"><a class="anchor" href="#column-system_type_id"></a>system_type_id</h3>
@@ -1868,6 +1940,18 @@ referenced: <a href="repo.RepoObject.html" class="page">repo.RepoObject</a>, <a 
 </tr>
 </tbody>
 </table>
+<div class="openblock">
+<div class="title">Referencing Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="reference.RepoObjectColumn_reference_FirstResultSet.html#column-referencing_column_name" class="page">reference.RepoObjectColumn_reference_FirstResultSet.referencing_column_name</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>

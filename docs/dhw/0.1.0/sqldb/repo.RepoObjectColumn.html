@@ -71,6 +71,9 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="nav/objects-by-schema.html">Objects by schema</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Objects by schema</span>
 <ul class="nav-list">
@@ -227,6 +230,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ForeignKey_RelationScript.html">docs.ForeignKey_RelationScript</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.fs_cleanStringForAnchorId.html">docs.fs_cleanStringForAnchorId</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.fs_cleanStringForLabel.html">docs.fs_cleanStringForLabel</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ftv_RepoObject_Reference_PlantUml_EntityRefList.html">docs.ftv_RepoObject_Reference_PlantUml_EntityRefList</a>
@@ -467,6 +476,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_cross.html">property.RepoObjectProperty_cross</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.RepoObjectProperty_ForUpdate.html">property.RepoObjectProperty_ForUpdate</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_InheritanceType_InheritanceDefinition.html">property.RepoObjectProperty_InheritanceType_InheritanceDefinition</a>
@@ -715,6 +727,9 @@
     <a class="nav-link" href="repo.Index_Settings.html">repo.Index_Settings</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.Index_Settings_ForUpdate.html">repo.Index_Settings_ForUpdate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.Index_SqlConstraint_PkUq.html">repo.Index_SqlConstraint_PkUq</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -737,6 +752,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T</a>
@@ -1223,6 +1241,9 @@
     <a class="nav-link" href="../manual/create-update-connect-repo-db.html">Create, update and connect repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/backup-repo-db.html">Backup repository database</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../manual/sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
 <ul class="nav-list">
@@ -1253,7 +1274,10 @@
     <a class="nav-link" href="../manual/ssms-configuration.html">SSMS configuration</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../manual/sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
+    <a class="nav-link" href="../manual/analyticscreator.html">Import from AnalyticsCreator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="#manual:sql-server-issue-sys-views-references.adoc">manual:sql-server-issue-sys-views-references.adoc</a>
   </li>
 </ul>
   </li>
@@ -1307,7 +1331,7 @@ U
 (
 user table
 ), modify_date:
-2021-04-24 18:48:48</p>
+2021-05-16 15:43:26</p>
 </div>
 <div class="paragraph">
 <p>RepoObject_guid:
@@ -1692,6 +1716,9 @@ user table
 <p><a href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing.html" class="page">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing</a></p>
 </li>
 <li>
+<p><a href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check.html" class="page">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check</a></p>
+</li>
+<li>
 <p><a href="repo.IndexColumn_virtual_gross.html" class="page">repo.IndexColumn_virtual_gross</a></p>
 </li>
 <li>
@@ -1737,7 +1764,7 @@ user table
 <h3 id="_object_reference_diagram"><a class="anchor" href="#_object_reference_diagram"></a>Object Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-2916edebe7e935aac6f995f8b988db5ad5a9ba8b.svg" alt="entity_1_1_objectref-repo.RepoObjectColumn">
+<img src="_images/diag-20c1e0ff44b607f275601482d9b887b8f8b4fe6a.svg" alt="entity_1_1_objectref-repo.RepoObjectColumn">
 </div>
 </div>
 </div>
@@ -1753,7 +1780,7 @@ user table
 <h3 id="_object_reference_diagram_referencing"><a class="anchor" href="#_object_reference_diagram_referencing"></a>Object Reference Diagram - Referencing</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-a759f2fcb6cd851a2ea32e180b7d8827311ff162.svg" alt="entity_0_30_objectref-repo.RepoObjectColumn">
+<img src="_images/diag-4ebb6bd84c75e649ce36e50609f466e300e9e520.svg" alt="entity_0_30_objectref-repo.RepoObjectColumn">
 </div>
 </div>
 </div>
@@ -1761,7 +1788,7 @@ user table
 <h3 id="_column_reference_diagram"><a class="anchor" href="#_column_reference_diagram"></a>Column Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-085f3a6b87d78b72ca22145907f96f656b2379bd.svg" alt="entity_1_1_colref-repo.RepoObjectColumn">
+<img src="_images/diag-0b48d41d405f88c223952278150c84834a5ab9f6.svg" alt="entity_1_1_colref-repo.RepoObjectColumn">
 </div>
 </div>
 </div>
@@ -1795,7 +1822,7 @@ user table
 </div>
 </div>
 <div class="sect2">
-<h3 id="index-UK_RepoObjectColumn__RepoNames"><a class="anchor" href="#index-UK_RepoObjectColumn__RepoNames"></a>UK_RepoObjectColumn__RepoNames</h3>
+<h3 id="index-UK_RepoObjectColumn_RepoNames"><a class="anchor" href="#index-UK_RepoObjectColumn_RepoNames"></a>UK_RepoObjectColumn__RepoNames</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1822,7 +1849,7 @@ user table
 </div>
 </div>
 <div class="sect2">
-<h3 id="index-UK_RepoObjectColumn__SysNames"><a class="anchor" href="#index-UK_RepoObjectColumn__SysNames"></a>UK_RepoObjectColumn__SysNames</h3>
+<h3 id="index-UK_RepoObjectColumn_SysNames"><a class="anchor" href="#index-UK_RepoObjectColumn_SysNames"></a>UK_RepoObjectColumn__SysNames</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1849,7 +1876,7 @@ user table
 </div>
 </div>
 <div class="sect2">
-<h3 id="index-idx_RepoObjectColumn__1"><a class="anchor" href="#index-idx_RepoObjectColumn__1"></a>idx_RepoObjectColumn__1</h3>
+<h3 id="index-idx_RepoObjectColumn_1"><a class="anchor" href="#index-idx_RepoObjectColumn_1"></a>idx_RepoObjectColumn__1</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1924,16 +1951,25 @@ referenced: <a href="repo.RepoObject.html" class="page">repo.RepoObject</a>, <a 
 <p><a href="property.RepoObjectColumnProperty_sys_repo.html#column-RepoObjectColumn_guid" class="page">property.RepoObjectColumnProperty_sys_repo.RepoObjectColumn_guid</a></p>
 </li>
 <li>
+<p><a href="reference.RepoObjectColumn_reference_Persistence.html#column-referenced_RepoObjectColumn_guid" class="page">reference.RepoObjectColumn_reference_Persistence.referenced_RepoObjectColumn_guid</a></p>
+</li>
+<li>
 <p><a href="reference.RepoObjectColumn_reference_Persistence.html#column-referencing_RepoObjectColumn_guid" class="page">reference.RepoObjectColumn_reference_Persistence.referencing_RepoObjectColumn_guid</a></p>
 </li>
 <li>
-<p><a href="reference.RepoObjectColumn_reference_Persistence.html#column-referenced_RepoObjectColumn_guid" class="page">reference.RepoObjectColumn_reference_Persistence.referenced_RepoObjectColumn_guid</a></p>
+<p><a href="repo.check_IndexColumn_virtual_referenced_setpoint.html#column-RepoObjectColumn_guid_t" class="page">repo.check_IndexColumn_virtual_referenced_setpoint.RepoObjectColumn_guid_t</a></p>
+</li>
+<li>
+<p><a href="repo.RepoObject_persistence_column.html#column-RepoObjectColumn_guid_s" class="page">repo.RepoObject_persistence_column.RepoObjectColumn_guid_s</a></p>
 </li>
 <li>
 <p><a href="repo.RepoObjectColumn_gross.html#column-RepoObjectColumn_guid" class="page">repo.RepoObjectColumn_gross.RepoObjectColumn_guid</a></p>
 </li>
 <li>
 <p><a href="repo.RepoObjectColumn_MissingSource_TypeV.html#column-RepoObjectColumn_guid" class="page">repo.RepoObjectColumn_MissingSource_TypeV.RepoObjectColumn_guid</a></p>
+</li>
+<li>
+<p><a href="repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.html#column-roc2_RepoObjectColumn_guid" class="page">repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.roc2_RepoObjectColumn_guid</a></p>
 </li>
 <li>
 <p><a href="repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.html#column-RepoObjectColumn_guid" class="page">repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.RepoObjectColumn_guid</a></p>
@@ -2341,6 +2377,9 @@ referenced: <a href="repo.RepoObject.html" class="page">repo.RepoObject</a>, <a 
 </li>
 <li>
 <p><a href="repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.html#column-persistence_source_RepoObjectColumn_guid" class="page">repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.persistence_source_RepoObjectColumn_guid</a></p>
+</li>
+<li>
+<p><a href="repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.html#column-roc2_persistence_source_RepoObjectColumn_guid" class="page">repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.roc2_persistence_source_RepoObjectColumn_guid</a></p>
 </li>
 <li>
 <p><a href="repo.SysColumn_RepoObjectColumn_via_guid.html#column-persistence_source_RepoObjectColumn_guid" class="page">repo.SysColumn_RepoObjectColumn_via_guid.persistence_source_RepoObjectColumn_guid</a></p>
@@ -3154,6 +3193,12 @@ internal column with a set of values</p>
 <div class="ulist">
 <ul>
 <li>
+<p><a href="repo.check_IndexColumn_virtual_referenced_setpoint.html#column-RepoObject_guid_s" class="page">repo.check_IndexColumn_virtual_referenced_setpoint.RepoObject_guid_s</a></p>
+</li>
+<li>
+<p><a href="repo.check_IndexColumn_virtual_referenced_setpoint.html#column-RepoObject_guid_t" class="page">repo.check_IndexColumn_virtual_referenced_setpoint.RepoObject_guid_t</a></p>
+</li>
+<li>
 <p><a href="repo.RepoObjectColumn_gross.html#column-RepoObject_guid" class="page">repo.RepoObjectColumn_gross.RepoObject_guid</a></p>
 </li>
 <li>
@@ -3265,6 +3310,9 @@ Column IDs might not be sequential.</p>
 <p><a href="property.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition.html#column-RepoObjectColumn_name" class="page">property.RepoObjectColumnProperty_InheritanceType_InheritanceDefinition.RepoObjectColumn_name</a></p>
 </li>
 <li>
+<p><a href="repo.RepoObject_persistence_column.html#column-RepoObjectColumn_name_t" class="page">repo.RepoObject_persistence_column.RepoObjectColumn_name_t</a></p>
+</li>
+<li>
 <p><a href="#column-has_different_sys_names">repo.RepoObjectColumn.has_different_sys_names</a></p>
 </li>
 <li>
@@ -3278,6 +3326,9 @@ Column IDs might not be sequential.</p>
 </li>
 <li>
 <p><a href="repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.html#column-RepoObjectColumn_name" class="page">repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.RepoObjectColumn_name</a></p>
+</li>
+<li>
+<p><a href="repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.html#column-roc2_RepoObjectColumn_name" class="page">repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.roc2_RepoObjectColumn_name</a></p>
 </li>
 <li>
 <p><a href="repo.SysColumn_RepoObjectColumn_via_guid.html#column-RepoObjectColumn_name" class="page">repo.SysColumn_RepoObjectColumn_via_guid.RepoObjectColumn_name</a></p>
@@ -3422,6 +3473,15 @@ if it not exists in the database, the RepoObject_guid or any other guid is used,
 <p><a href="reference.RepoObjectColumn_reference_SqlModules.html#column-referencing_column_name" class="page">reference.RepoObjectColumn_reference_SqlModules.referencing_column_name</a></p>
 </li>
 <li>
+<p><a href="repo.check_IndexColumn_virtual_referenced_setpoint.html#column-SysObjectColumn_name_s" class="page">repo.check_IndexColumn_virtual_referenced_setpoint.SysObjectColumn_name_s</a></p>
+</li>
+<li>
+<p><a href="repo.check_IndexColumn_virtual_referenced_setpoint.html#column-SysObjectColumn_name_t" class="page">repo.check_IndexColumn_virtual_referenced_setpoint.SysObjectColumn_name_t</a></p>
+</li>
+<li>
+<p><a href="repo.RepoObject_persistence_column.html#column-SysObjectColumn_name_s" class="page">repo.RepoObject_persistence_column.SysObjectColumn_name_s</a></p>
+</li>
+<li>
 <p><a href="#column-is_SysObjectColumn_name_uniqueidentifier">repo.RepoObjectColumn.is_SysObjectColumn_name_uniqueidentifier</a></p>
 </li>
 <li>
@@ -3432,6 +3492,9 @@ if it not exists in the database, the RepoObject_guid or any other guid is used,
 </li>
 <li>
 <p><a href="repo.RepoObjectColumn_MissingSource_TypeV.html#column-SysObjectColumn_name" class="page">repo.RepoObjectColumn_MissingSource_TypeV.SysObjectColumn_name</a></p>
+</li>
+<li>
+<p><a href="repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.html#column-roc2_SysObjectColumn_name" class="page">repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.roc2_SysObjectColumn_name</a></p>
 </li>
 <li>
 <p><a href="repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.html#column-SysObjectColumn_name" class="page">repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.SysObjectColumn_name</a></p>

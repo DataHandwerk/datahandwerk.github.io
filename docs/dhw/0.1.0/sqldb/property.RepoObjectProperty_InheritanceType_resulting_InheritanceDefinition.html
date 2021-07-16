@@ -71,6 +71,9 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="nav/objects-by-schema.html">Objects by schema</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Objects by schema</span>
 <ul class="nav-list">
@@ -227,6 +230,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ForeignKey_RelationScript.html">docs.ForeignKey_RelationScript</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.fs_cleanStringForAnchorId.html">docs.fs_cleanStringForAnchorId</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.fs_cleanStringForLabel.html">docs.fs_cleanStringForLabel</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ftv_RepoObject_Reference_PlantUml_EntityRefList.html">docs.ftv_RepoObject_Reference_PlantUml_EntityRefList</a>
@@ -467,6 +476,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_cross.html">property.RepoObjectProperty_cross</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.RepoObjectProperty_ForUpdate.html">property.RepoObjectProperty_ForUpdate</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_InheritanceType_InheritanceDefinition.html">property.RepoObjectProperty_InheritanceType_InheritanceDefinition</a>
@@ -715,6 +727,9 @@
     <a class="nav-link" href="repo.Index_Settings.html">repo.Index_Settings</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.Index_Settings_ForUpdate.html">repo.Index_Settings_ForUpdate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.Index_SqlConstraint_PkUq.html">repo.Index_SqlConstraint_PkUq</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -737,6 +752,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T</a>
@@ -1223,6 +1241,9 @@
     <a class="nav-link" href="../manual/create-update-connect-repo-db.html">Create, update and connect repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/backup-repo-db.html">Backup repository database</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../manual/sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
 <ul class="nav-list">
@@ -1253,7 +1274,10 @@
     <a class="nav-link" href="../manual/ssms-configuration.html">SSMS configuration</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../manual/sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
+    <a class="nav-link" href="../manual/analyticscreator.html">Import from AnalyticsCreator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="#manual:sql-server-issue-sys-views-references.adoc">manual:sql-server-issue-sys-views-references.adoc</a>
   </li>
 </ul>
   </li>
@@ -1307,7 +1331,7 @@ V
 (
 view
 ), modify_date:
-2021-04-16 19:26:52</p>
+2021-07-14 19:36:07</p>
 </div>
 <div class="paragraph">
 <p>RepoObject_guid:
@@ -1357,7 +1381,7 @@ view
 <td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><a href="#column-property_name">property_name</a></strong></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(128)</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
@@ -1474,7 +1498,7 @@ view
 <h3 id="_object_reference_diagram"><a class="anchor" href="#_object_reference_diagram"></a>Object Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-e961268e80e62301faab33280b552e7c534dddeb.svg" alt="entity_1_1_objectref-property.RepoObjectProperty_InheritanceType_resulting_InheritanceDefinition">
+<img src="_images/diag-95eb853e4e1f95f9c0fd3ecac2835093bd41182b.svg" alt="entity_1_1_objectref-property.RepoObjectProperty_InheritanceType_resulting_InheritanceDefinition">
 </div>
 </div>
 </div>
@@ -1482,7 +1506,7 @@ view
 <h3 id="_object_reference_diagram_referenced"><a class="anchor" href="#_object_reference_diagram_referenced"></a>Object Reference Diagram - Referenced</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-1ac099257c46a76727b41f90d51ef37f86e9792a.svg" alt="entity_30_0_objectref-property.RepoObjectProperty_InheritanceType_resulting_InheritanceDefinition">
+<img src="_images/diag-6f69843be502caf232cc6864d70b4342a34c5ab4.svg" alt="entity_30_0_objectref-property.RepoObjectProperty_InheritanceType_resulting_InheritanceDefinition">
 </div>
 </div>
 </div>
@@ -1490,7 +1514,7 @@ view
 <h3 id="_object_reference_diagram_referencing"><a class="anchor" href="#_object_reference_diagram_referencing"></a>Object Reference Diagram - Referencing</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-07f82e9502927ade4b1325690111b46e329a6027.svg" alt="entity_0_30_objectref-property.RepoObjectProperty_InheritanceType_resulting_InheritanceDefinition">
+<img src="_images/diag-bb9f053ae6d09da43d7f59fa0f6b43f0877d4c49.svg" alt="entity_0_30_objectref-property.RepoObjectProperty_InheritanceType_resulting_InheritanceDefinition">
 </div>
 </div>
 </div>
@@ -1498,7 +1522,7 @@ view
 <h3 id="_column_reference_diagram"><a class="anchor" href="#_column_reference_diagram"></a>Column Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-8dcf7ff513e79a37012b56d8c2e5fbab140a3cc3.svg" alt="entity_1_1_colref-property.RepoObjectProperty_InheritanceType_resulting_InheritanceDefinition">
+<img src="_images/diag-7c0fe6baeb98f65cd57224ed09b8fd5d75a631bc.svg" alt="entity_1_1_colref-property.RepoObjectProperty_InheritanceType_resulting_InheritanceDefinition">
 </div>
 </div>
 </div>
@@ -1535,7 +1559,7 @@ view
 </div>
 </div>
 <div class="sect2">
-<h3 id="index-idx_RepoObjectProperty_InheritanceType_resulting_InheritanceDefinition__2"><a class="anchor" href="#index-idx_RepoObjectProperty_InheritanceType_resulting_InheritanceDefinition__2"></a>idx_RepoObjectProperty_InheritanceType_resulting_InheritanceDefinition__2</h3>
+<h3 id="index-idx_RepoObjectProperty_InheritanceType_resulting_InheritanceDefinition_2"><a class="anchor" href="#index-idx_RepoObjectProperty_InheritanceType_resulting_InheritanceDefinition_2"></a>idx_RepoObjectProperty_InheritanceType_resulting_InheritanceDefinition__2</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1559,7 +1583,7 @@ view
 </div>
 </div>
 <div class="sect2">
-<h3 id="index-idx_RepoObjectProperty_InheritanceType_resulting_InheritanceDefinition__3"><a class="anchor" href="#index-idx_RepoObjectProperty_InheritanceType_resulting_InheritanceDefinition__3"></a>idx_RepoObjectProperty_InheritanceType_resulting_InheritanceDefinition__3</h3>
+<h3 id="index-idx_RepoObjectProperty_InheritanceType_resulting_InheritanceDefinition_3"><a class="anchor" href="#index-idx_RepoObjectProperty_InheritanceType_resulting_InheritanceDefinition_3"></a>idx_RepoObjectProperty_InheritanceType_resulting_InheritanceDefinition__3</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1638,7 +1662,7 @@ view
 <td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong>property_name</strong></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(128)</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
@@ -1982,7 +2006,7 @@ HAVING (NOT (resulting_InheritanceDefinition IS NULL))
 
 */
 
-CREATE View [property].RepoObjectProperty_InheritanceType_resulting_InheritanceDefinition
+CREATE View [property].[RepoObjectProperty_InheritanceType_resulting_InheritanceDefinition]
 As
 Select
     --
@@ -2026,7 +2050,7 @@ Select
           Then
           IsNull (
                      InheritanceDefinition
-                   , '[property].[fs_get_RepoObjectProperty_nvarchar]([referenced].[RepoObject_guid], [referencing].[property_name])'
+                   , '[property].[fs_get_RepoObjectProperty_nvarchar]([referenced].[RepoObject_guid], ''' + inh.property_name + ''')'
                  )
   End
   --normally the result from [resulting_InheritanceDefinition] should not be empty to be inherited

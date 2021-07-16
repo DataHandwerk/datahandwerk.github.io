@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1730px" preserveAspectRatio="none" style="width:933px;height:1730px;background:#FFFFFF;" version="1.1" viewBox="0 0 933 1730" width="933px" zoomAndPan="magnify"><defs><filter height="300%" id="f73brskxh588o" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[e5a1fafbeb3755c84e8dd574ab62367b]
+class logs.ExecutionLog--><rect codeLine="26" fill="#FFFFFF" filter="url(#f73brskxh588o)" height="688.3955" id="logs.ExecutionLog" style="stroke:#A80036;stroke-width:1.5;" width="225" x="7" y="445.22"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="110" y="462.2201">«U»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="95" x="72" y="476.6202">logs.ExecutionLog</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="231" y1="484.0202" y2="484.0202"/><ellipse cx="18" cy="495.0202" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="10" x="27" y="499.0201">id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="31" x="40" y="499.0201">: bigint</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="231" y1="505.2201" y2="505.2201"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="27" y="520.22">created_dt : datetime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="194" x="27" y="533.4199">current_execution_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="55" x="27" y="546.6198">deleted : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="129" x="27" y="559.8197">event_info : nvarchar(max)</text><ellipse cx="18" cy="569.0197" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="199" x="27" y="573.0196">execution_instance_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="27" y="586.2195">info_01 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="27" y="599.4194">info_02 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="27" y="612.6193">info_03 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="27" y="625.8192">info_04 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="27" y="639.0191">info_05 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="27" y="652.219">info_06 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="27" y="665.4189">info_07 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="27" y="678.6188">info_08 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="27" y="691.8187">info_09 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="58" x="27" y="705.0186">inserted : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="27" y="718.2185">parameter_01 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="27" y="731.4184">parameter_02 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="27" y="744.6183">parameter_03 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="27" y="757.8182">parameter_04 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="27" y="771.0182">parameter_05 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="27" y="784.2181">parameter_06 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="27" y="797.418">parameter_07 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="27" y="810.6179">parameter_08 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="27" y="823.8178">parameter_09 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="27" y="837.0177">parameter_10 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="27" y="850.2176">parameter_11 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="27" y="863.4175">parameter_12 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="27" y="876.6174">parameter_13 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="27" y="889.8173">parameter_14 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="27" y="903.0172">parameter_15 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="27" y="916.2171">parameter_16 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="27" y="929.417">parameter_17 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="27" y="942.6169">parameter_18 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="27" y="955.8168">parameter_19 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="27" y="969.0167">parameter_20 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="151" x="27" y="982.2166">parent_execution_log_id : bigint</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="56" x="27" y="995.4165">proc_id : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="133" x="27" y="1008.6164">proc_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="177" x="27" y="1021.8163">proc_schema_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="147" x="27" y="1035.0162">source_object : nvarchar(261)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="117" x="27" y="1048.2161">ssis_execution_id : bigint</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="54" x="27" y="1061.416">step_id : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="137" x="27" y="1074.6159">step_name : nvarchar(1000)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="103" x="27" y="1087.8158">sub_execution_id : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="142" x="27" y="1101.0157">target_object : nvarchar(261)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="59" x="27" y="1114.2156">updated : int</text><ellipse cx="18" cy="1123.4156" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="146" x="27" y="1127.4155">proc_fullname : nvarchar(517)</text><!--MD5=[8ffc35b34d1ed164003493380c01e401]
+class logs.ExecutionLog_gross--><rect codeLine="78" fill="#F5F5F5" filter="url(#f73brskxh588o)" height="741.1951" id="logs.ExecutionLog_gross" style="stroke:#A80036;stroke-width:1.5;" width="284" x="308" y="393.22"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="441" y="410.2201">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="131" x="384.5" y="424.6202">logs.ExecutionLog_gross</text><line style="stroke:#A80036;stroke-width:1.5;" x1="309" x2="591" y1="432.0202" y2="432.0202"/><ellipse cx="319" cy="443.0202" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="10" x="328" y="447.0201">id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="31" x="341" y="447.0201">: bigint</text><line style="stroke:#A80036;stroke-width:1.0;" x1="309" x2="591" y1="453.2201" y2="453.2201"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="328" y="468.22">created_dt : datetime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="258" x="328" y="481.4199">created_dt_max__execution_instance_guid : datetime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="255" x="328" y="494.6198">created_dt_min__execution_instance_guid : datetime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="194" x="328" y="507.8197">current_execution_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="55" x="328" y="521.0196">deleted : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="184" x="328" y="534.2195">duration__current_execution_guid : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="189" x="328" y="547.4194">duration__execution_instance_guid : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="129" x="328" y="560.6193">event_info : nvarchar(max)</text><ellipse cx="319" cy="569.8193" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="199" x="328" y="573.8192">execution_instance_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="328" y="587.0191">info_01 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="328" y="600.219">info_02 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="328" y="613.4189">info_03 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="328" y="626.6188">info_04 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="328" y="639.8187">info_05 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="328" y="653.0186">info_06 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="328" y="666.2185">info_07 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="328" y="679.4184">info_08 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="328" y="692.6183">info_09 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="58" x="328" y="705.8182">inserted : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="328" y="719.0182">parameter_01 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="328" y="732.2181">parameter_02 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="328" y="745.418">parameter_03 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="328" y="758.6179">parameter_04 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="328" y="771.8178">parameter_05 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="328" y="785.0177">parameter_06 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="328" y="798.2176">parameter_07 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="328" y="811.4175">parameter_08 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="328" y="824.6174">parameter_09 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="328" y="837.8173">parameter_10 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="328" y="851.0172">parameter_11 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="328" y="864.2171">parameter_12 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="328" y="877.417">parameter_13 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="328" y="890.6169">parameter_14 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="328" y="903.8168">parameter_15 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="328" y="917.0167">parameter_16 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="328" y="930.2166">parameter_17 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="328" y="943.4165">parameter_18 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="328" y="956.6164">parameter_19 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="328" y="969.8163">parameter_20 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="151" x="328" y="983.0162">parent_execution_log_id : bigint</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="56" x="328" y="996.2161">proc_id : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="133" x="328" y="1009.416">proc_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="177" x="328" y="1022.6159">proc_schema_name : nvarchar(128)</text><ellipse cx="319" cy="1031.8159" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="162" x="328" y="1035.8158">puml_Sequence : nvarchar(1550)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="147" x="328" y="1049.0157">source_object : nvarchar(261)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="117" x="328" y="1062.2156">ssis_execution_id : bigint</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="54" x="328" y="1075.4155">step_id : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="137" x="328" y="1088.6154">step_name : nvarchar(1000)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="103" x="328" y="1101.8153">sub_execution_id : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="142" x="328" y="1115.0152">target_object : nvarchar(261)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="59" x="328" y="1128.2151">updated : int</text><!--MD5=[2708117a385045f73cf13f6feb18682a]
+class logs.ExecutionLog_parent--><rect codeLine="134" fill="#F5F5F5" filter="url(#f73brskxh588o)" height="450.7972" id="logs.ExecutionLog_parent" style="stroke:#A80036;stroke-width:1.5;" width="243" x="328.5" y="1166.22"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="441" y="1183.2201">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="135" x="382.5" y="1197.6202">logs.ExecutionLog_parent</text><line style="stroke:#A80036;stroke-width:1.5;" x1="329.5" x2="570.5" y1="1205.0202" y2="1205.0202"/><ellipse cx="339.5" cy="1216.0202" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="10" x="348.5" y="1220.0201">id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="31" x="361.5" y="1220.0201">: bigint</text><line style="stroke:#A80036;stroke-width:1.0;" x1="329.5" x2="570.5" y1="1226.2201" y2="1226.2201"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="139" x="334.5" y="1241.22">parent_created_dt : datetime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="231" x="334.5" y="1254.4199">parent_current_execution_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="151" x="334.5" y="1267.6198">parent_execution_log_id : bigint</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="334.5" y="1280.8197">parent_parameter_01 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="334.5" y="1294.0196">parent_parameter_02 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="334.5" y="1307.2195">parent_parameter_03 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="334.5" y="1320.4194">parent_parameter_04 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="334.5" y="1333.6193">parent_parameter_05 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="334.5" y="1346.8192">parent_parameter_06 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="334.5" y="1360.0191">parent_parameter_07 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="334.5" y="1373.219">parent_parameter_08 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="334.5" y="1386.4189">parent_parameter_09 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="334.5" y="1399.6188">parent_parameter_10 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="334.5" y="1412.8187">parent_parameter_11 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="334.5" y="1426.0186">parent_parameter_12 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="334.5" y="1439.2185">parent_parameter_13 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="334.5" y="1452.4184">parent_parameter_14 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="334.5" y="1465.6183">parent_parameter_15 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="334.5" y="1478.8182">parent_parameter_16 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="334.5" y="1492.0182">parent_parameter_17 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="334.5" y="1505.2181">parent_parameter_18 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="334.5" y="1518.418">parent_parameter_19 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="334.5" y="1531.6179">parent_parameter_20 : sql_variant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="183" x="334.5" y="1544.8178">parent_proc_fullname : nvarchar(517)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="93" x="334.5" y="1558.0177">parent_proc_id : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="170" x="334.5" y="1571.2176">parent_proc_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="214" x="334.5" y="1584.4175">parent_proc_schema_name : nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="91" x="334.5" y="1597.6174">parent_step_id : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="174" x="334.5" y="1610.8173">parent_step_name : nvarchar(1000)</text><!--MD5=[2b121e0b24f8602c935d7c96743615b6]
+class logs.ExecutionLog_puml_Sequence_start_stop--><rect codeLine="168" fill="#F5F5F5" filter="url(#f73brskxh588o)" height="133.9996" id="logs.ExecutionLog_puml_Sequence_start_stop" style="stroke:#A80036;stroke-width:1.5;" width="251" x="668" y="270.22"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="784.5" y="287.2201">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="245" x="671" y="301.6202">logs.ExecutionLog_puml_Sequence_start_stop</text><line style="stroke:#A80036;stroke-width:1.5;" x1="669" x2="918" y1="309.0202" y2="309.0202"/><ellipse cx="679" cy="320.0202" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="10" x="688" y="324.0201">id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="31" x="701" y="324.0201">: bigint</text><line style="stroke:#A80036;stroke-width:1.0;" x1="669" x2="918" y1="330.2201" y2="330.2201"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="688" y="345.22">created_dt : datetime</text><ellipse cx="679" cy="354.42" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="199" x="688" y="358.4199">execution_instance_guid : uniqueidentifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="183" x="688" y="371.6198">parent_proc_fullname : nvarchar(517)</text><ellipse cx="679" cy="380.8198" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="146" x="688" y="384.8197">proc_fullname : nvarchar(517)</text><ellipse cx="679" cy="394.0197" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="215" x="688" y="398.0196">puml_Sequence_start_stop : nvarchar(1574)</text><!--MD5=[30b75435024ccafa03f20277af589fa2]
+class logs.usp_ExecutionLog_insert--><rect codeLine="178" fill="#00FFFF" filter="url(#f73brskxh588o)" height="54.8002" id="logs.usp_ExecutionLog_insert" style="stroke:#A80036;stroke-width:1.5;" width="162" x="369" y="227.72"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="441" y="244.7201">«P»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="156" x="372" y="259.1202">logs.usp_ExecutionLog_insert</text><line style="stroke:#A80036;stroke-width:1.5;" x1="370" x2="530" y1="266.5202" y2="266.5202"/><line style="stroke:#A80036;stroke-width:1.0;" x1="370" x2="530" y1="274.5202" y2="274.5202"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="182" d="M245.06,774.36 C262.97,772.95 281.54,771.48 299.87,770.03 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="240.03,774.76,249.3211,778.0274,245.014,774.3601,248.6813,770.0531,240.03,774.76" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="188" d="M238.83,513.89 C273.01,509.46 268.86,462.22 307,462.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,514.22,242.7338,517.6459,238.4901,513.9054,242.2305,509.6617,233.5,514.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="190" d="M238.55,527.03 C268.66,524.65 274.11,501.22 307,501.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,527.22,242.6423,530.8832,238.4966,527.0344,242.3453,522.8887,233.5,527.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="192" d="M238.55,540.03 C268.66,537.65 274.11,514.22 307,514.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-3" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,540.22,242.6423,543.8832,238.4966,540.0344,242.3453,535.8887,233.5,540.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="193" d="M238.65,553.22 C267.13,553.22 276.12,553.22 307,553.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-4" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,553.22,242.5,557.22,238.5,553.22,242.5,549.22,233.5,553.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="194" d="M238.65,566.22 C267.13,566.22 276.12,566.22 307,566.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-5" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,566.22,242.5,570.22,238.5,566.22,242.5,562.22,233.5,566.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="197" d="M238.83,492.89 C273.01,488.46 268.86,441.22 307,441.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-6" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,493.22,242.7338,496.6459,238.4901,492.9054,242.2305,488.6617,233.5,493.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="199" d="M238.65,579.22 C267.13,579.22 276.12,579.22 307,579.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-7" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,579.22,242.5,583.22,238.5,579.22,242.5,575.22,233.5,579.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="200" d="M238.65,592.22 C267.13,592.22 276.12,592.22 307,592.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-8" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,592.22,242.5,596.22,238.5,592.22,242.5,588.22,233.5,592.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="201" d="M238.65,605.22 C267.13,605.22 276.12,605.22 307,605.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-9" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,605.22,242.5,609.22,238.5,605.22,242.5,601.22,233.5,605.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="202" d="M238.65,618.22 C267.13,618.22 276.12,618.22 307,618.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-10" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,618.22,242.5,622.22,238.5,618.22,242.5,614.22,233.5,618.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="203" d="M238.65,631.22 C267.13,631.22 276.12,631.22 307,631.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-11" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,631.22,242.5,635.22,238.5,631.22,242.5,627.22,233.5,631.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="204" d="M238.65,644.22 C267.13,644.22 276.12,644.22 307,644.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-12" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,644.22,242.5,648.22,238.5,644.22,242.5,640.22,233.5,644.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="205" d="M238.65,657.22 C267.13,657.22 276.12,657.22 307,657.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-13" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,657.22,242.5,661.22,238.5,657.22,242.5,653.22,233.5,657.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="206" d="M238.65,670.22 C267.13,670.22 276.12,670.22 307,670.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-14" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,670.22,242.5,674.22,238.5,670.22,242.5,666.22,233.5,670.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="207" d="M238.65,683.22 C267.13,683.22 276.12,683.22 307,683.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-15" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,683.22,242.5,687.22,238.5,683.22,242.5,679.22,233.5,683.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="208" d="M238.65,696.22 C267.13,696.22 276.12,696.22 307,696.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-16" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,696.22,242.5,700.22,238.5,696.22,242.5,692.22,233.5,696.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="209" d="M238.65,709.22 C267.13,709.22 276.12,709.22 307,709.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-17" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,709.22,242.5,713.22,238.5,709.22,242.5,705.22,233.5,709.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="212" d="M238.65,722.22 C267.13,722.22 276.12,722.22 307,722.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-18" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,722.22,242.5,726.22,238.5,722.22,242.5,718.22,233.5,722.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="213" d="M238.65,735.22 C267.13,735.22 276.12,735.22 307,735.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-19" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,735.22,242.5,739.22,238.5,735.22,242.5,731.22,233.5,735.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="216" d="M238.65,748.22 C267.13,748.22 276.12,748.22 307,748.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-20" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,748.22,242.5,752.22,238.5,748.22,242.5,744.22,233.5,748.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="217" d="M238.65,761.23 C267.14,761.33 276.12,762.22 307,762.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-21" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,761.22,242.5,765.22,238.5,761.22,242.5,757.22,233.5,761.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="220" d="M238.65,774.23 C267.14,774.33 276.12,775.22 307,775.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-22" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,774.22,242.5,778.22,238.5,774.22,242.5,770.22,233.5,774.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="221" d="M238.65,788.22 C267.13,788.22 276.12,788.22 307,788.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-23" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,788.22,242.5,792.22,238.5,788.22,242.5,784.22,233.5,788.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="224" d="M238.65,801.22 C267.13,801.22 276.12,801.22 307,801.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-24" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,801.22,242.5,805.22,238.5,801.22,242.5,797.22,233.5,801.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="225" d="M238.65,814.22 C267.13,814.22 276.12,814.22 307,814.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-25" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,814.22,242.5,818.22,238.5,814.22,242.5,810.22,233.5,814.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="228" d="M238.65,827.22 C267.13,827.22 276.12,827.22 307,827.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-26" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,827.22,242.5,831.22,238.5,827.22,242.5,823.22,233.5,827.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="229" d="M238.65,840.22 C267.13,840.22 276.12,840.22 307,840.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-27" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,840.22,242.5,844.22,238.5,840.22,242.5,836.22,233.5,840.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="232" d="M238.65,853.22 C267.13,853.22 276.12,853.22 307,853.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-28" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,853.22,242.5,857.22,238.5,853.22,242.5,849.22,233.5,853.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="233" d="M238.65,866.22 C267.13,866.22 276.12,866.22 307,866.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-29" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,866.22,242.5,870.22,238.5,866.22,242.5,862.22,233.5,866.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="236" d="M238.65,879.22 C267.13,879.22 276.12,879.22 307,879.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-30" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,879.22,242.5,883.22,238.5,879.22,242.5,875.22,233.5,879.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="237" d="M238.65,892.22 C267.13,892.22 276.12,892.22 307,892.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-31" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,892.22,242.5,896.22,238.5,892.22,242.5,888.22,233.5,892.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="240" d="M238.65,905.22 C267.13,905.22 276.12,905.22 307,905.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-32" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,905.22,242.5,909.22,238.5,905.22,242.5,901.22,233.5,905.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="241" d="M238.65,918.22 C267.13,918.22 276.12,918.22 307,918.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-33" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,918.22,242.5,922.22,238.5,918.22,242.5,914.22,233.5,918.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="244" d="M238.65,931.22 C267.13,931.22 276.12,931.22 307,931.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-34" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,931.22,242.5,935.22,238.5,931.22,242.5,927.22,233.5,931.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="245" d="M238.65,944.22 C267.13,944.22 276.12,944.22 307,944.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-35" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,944.22,242.5,948.22,238.5,944.22,242.5,940.22,233.5,944.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="248" d="M238.65,957.22 C267.13,957.22 276.12,957.22 307,957.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-36" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,957.22,242.5,961.22,238.5,957.22,242.5,953.22,233.5,957.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="249" d="M238.65,970.22 C267.13,970.22 276.12,970.22 307,970.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-37" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,970.22,242.5,974.22,238.5,970.22,242.5,966.22,233.5,970.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="254" d="M238.65,983.22 C267.13,983.22 276.12,983.22 307,983.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-38" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,983.22,242.5,987.22,238.5,983.22,242.5,979.22,233.5,983.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="255" d="M238.65,996.22 C267.13,996.22 276.12,996.22 307,996.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-39" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,996.22,242.5,1000.22,238.5,996.22,242.5,992.22,233.5,996.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="258" d="M238.65,1009.22 C267.13,1009.22 276.12,1009.22 307,1009.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-40" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,1009.22,242.5,1013.22,238.5,1009.22,242.5,1005.22,233.5,1009.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="259" d="M238.72,1022.34 C267.53,1023.61 275.64,1035.22 307,1035.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-41" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,1022.22,242.4062,1026.4246,238.4987,1022.3343,242.5891,1018.4267,233.5,1022.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="260" d="M238.72,1035.34 C267.53,1036.61 275.64,1048.22 307,1048.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-42" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,1035.22,242.4062,1039.4246,238.4987,1035.3343,242.5891,1031.4267,233.5,1035.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="261" d="M238.72,1048.34 C267.53,1049.61 275.64,1061.22 307,1061.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-43" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,1048.22,242.4062,1052.4246,238.4987,1048.3343,242.5891,1044.4267,233.5,1048.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="264" d="M238.72,1061.34 C267.53,1062.61 275.64,1074.22 307,1074.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-44" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,1061.22,242.4062,1065.4246,238.4987,1061.3343,242.5891,1057.4267,233.5,1061.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="265" d="M238.72,1074.34 C267.53,1075.61 275.64,1087.22 307,1087.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-45" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,1074.22,242.4062,1078.4246,238.4987,1074.3343,242.5891,1070.4267,233.5,1074.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="266" d="M238.72,1087.34 C267.53,1088.61 275.64,1100.22 307,1100.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-46" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,1087.22,242.4062,1091.4246,238.4987,1087.3343,242.5891,1083.4267,233.5,1087.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c6fce4ae5ea62f3c89f40aa2d56fa2c]
+reverse link logs.ExecutionLog to logs.ExecutionLog_gross--><path codeLine="267" d="M238.72,1100.34 C267.53,1101.61 275.64,1113.22 307,1113.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_gross-47" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,1100.22,242.4062,1104.4246,238.4987,1100.3343,242.5891,1096.4267,233.5,1100.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="183" d="M242.39,1035.61 C261.18,1072.31 280.75,1109.43 300,1144.22 C306.55,1156.06 313.39,1168.14 320.39,1180.28 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="240.11,1031.14,240.6576,1040.9736,242.3916,1035.5891,247.7761,1037.3231,240.11,1031.14" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="189" d="M238.57,514.47 C390.22,529.63 168.14,1235.22 328,1235.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,514.22,242.2953,518.6519,238.4941,514.4626,242.6835,510.6613,233.5,514.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="191" d="M238.57,527.47 C390.22,542.63 168.14,1248.22 328,1248.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,527.22,242.2953,531.6519,238.4941,527.4626,242.6835,523.6613,233.5,527.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="196" d="M238.57,493.47 C390.22,508.63 168.14,1214.22 328,1214.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-3" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,493.22,242.2953,497.6519,238.4941,493.4626,242.6835,489.6613,233.5,493.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="210" d="M238.56,709.54 C356.48,724.57 202.44,1274.22 328,1274.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-4" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,709.22,242.2305,713.7783,238.4901,709.5346,242.7338,705.7941,233.5,709.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="211" d="M238.56,722.54 C356.48,737.57 202.44,1287.22 328,1287.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-5" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,722.22,242.2305,726.7783,238.4901,722.5346,242.7338,718.7941,233.5,722.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="214" d="M238.56,735.54 C356.48,750.57 202.44,1300.22 328,1300.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-6" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,735.22,242.2305,739.7783,238.4901,735.5346,242.7338,731.7941,233.5,735.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="215" d="M238.56,748.54 C356.48,763.57 202.44,1313.22 328,1313.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-7" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,748.22,242.2305,752.7783,238.4901,748.5346,242.7338,744.7941,233.5,748.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="218" d="M238.56,761.54 C356.48,776.57 202.44,1326.22 328,1326.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-8" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,761.22,242.2305,765.7783,238.4901,761.5346,242.7338,757.7941,233.5,761.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="219" d="M238.56,774.54 C356.48,789.57 202.44,1339.22 328,1339.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-9" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,774.22,242.2305,778.7783,238.4901,774.5346,242.7338,770.7941,233.5,774.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="222" d="M238.55,788.54 C356.27,803.54 202.66,1352.22 328,1352.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-10" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,788.22,242.2305,792.7783,238.4901,788.5346,242.7338,784.7941,233.5,788.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="223" d="M238.55,801.54 C356.27,816.54 202.66,1365.22 328,1365.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-11" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,801.22,242.2305,805.7783,238.4901,801.5346,242.7338,797.7941,233.5,801.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="226" d="M238.55,814.54 C356.27,829.54 202.66,1378.22 328,1378.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-12" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,814.22,242.2305,818.7783,238.4901,814.5346,242.7338,810.7941,233.5,814.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="227" d="M238.56,827.54 C356.48,842.57 202.44,1392.22 328,1392.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-13" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,827.22,242.2305,831.7783,238.4901,827.5346,242.7338,823.7941,233.5,827.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="230" d="M238.56,840.54 C356.48,855.57 202.44,1405.22 328,1405.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-14" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,840.22,242.2305,844.7783,238.4901,840.5346,242.7338,836.7941,233.5,840.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="231" d="M238.56,853.54 C356.48,868.57 202.44,1418.22 328,1418.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-15" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,853.22,242.2305,857.7783,238.4901,853.5346,242.7338,849.7941,233.5,853.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="234" d="M238.56,866.54 C356.48,881.57 202.44,1431.22 328,1431.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-16" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,866.22,242.2305,870.7783,238.4901,866.5346,242.7338,862.7941,233.5,866.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="235" d="M238.56,879.54 C356.48,894.57 202.44,1444.22 328,1444.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-17" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,879.22,242.2305,883.7783,238.4901,879.5346,242.7338,875.7941,233.5,879.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="238" d="M238.56,892.54 C356.48,907.57 202.44,1457.22 328,1457.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-18" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,892.22,242.2305,896.7783,238.4901,892.5346,242.7338,888.7941,233.5,892.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="239" d="M238.56,905.54 C356.48,920.57 202.44,1470.22 328,1470.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-19" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,905.22,242.2305,909.7783,238.4901,905.5346,242.7338,901.7941,233.5,905.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="242" d="M238.56,918.54 C356.48,933.57 202.44,1483.22 328,1483.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-20" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,918.22,242.2305,922.7783,238.4901,918.5346,242.7338,914.7941,233.5,918.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="243" d="M238.56,931.54 C356.48,946.57 202.44,1496.22 328,1496.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-21" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,931.22,242.2305,935.7783,238.4901,931.5346,242.7338,927.7941,233.5,931.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="246" d="M238.56,944.54 C356.48,959.57 202.44,1509.22 328,1509.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-22" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,944.22,242.2305,948.7783,238.4901,944.5346,242.7338,940.7941,233.5,944.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="247" d="M238.56,957.54 C356.48,972.57 202.44,1522.22 328,1522.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-23" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,957.22,242.2305,961.7783,238.4901,957.5346,242.7338,953.7941,233.5,957.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="250" d="M238.53,970.36 C365.03,977.56 193.74,1261.22 328,1261.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-24" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,970.22,242.3821,974.4754,238.498,970.3628,242.6106,966.4787,233.5,970.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="252" d="M238.73,1113.33 C420.36,1121.02 137.58,1535.22 328,1535.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-25" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,1113.22,242.4062,1117.4246,238.4987,1113.3343,242.5891,1109.4267,233.5,1113.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="253" d="M238.56,983.54 C356.48,998.57 202.44,1548.22 328,1548.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-26" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,983.22,242.2305,987.7783,238.4901,983.5346,242.7338,979.7941,233.5,983.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="256" d="M238.56,996.54 C356.48,1011.57 202.44,1561.22 328,1561.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-27" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,996.22,242.2305,1000.7783,238.4901,996.5346,242.7338,992.7941,233.5,996.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="257" d="M238.56,1009.54 C356.48,1024.57 202.44,1574.22 328,1574.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-28" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,1009.22,242.2305,1013.7783,238.4901,1009.5346,242.7338,1005.7941,233.5,1009.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="262" d="M238.67,1048.57 C350.81,1063.9 208.18,1587.22 328,1587.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-29" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,1048.22,242.2044,1052.828,238.4882,1048.563,242.7532,1044.8469,233.5,1048.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bf125967e012d8aa1a6583d9adad8a3a]
+reverse link logs.ExecutionLog to logs.ExecutionLog_parent--><path codeLine="263" d="M238.67,1061.57 C350.81,1076.9 208.18,1600.22 328,1600.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_parent-30" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,1061.22,242.2044,1065.828,238.4882,1061.563,242.7532,1057.8469,233.5,1061.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[a4ccefd177c55db21c836e29dae533a3]
+reverse link logs.ExecutionLog to logs.ExecutionLog_puml_Sequence_start_stop--><path codeLine="184" d="M233.56,437.1 C252.43,411.91 274.41,389.34 300,371.22 C403.91,297.69 552.99,297.69 659.87,310.66 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_puml_Sequence_start_stop" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="230.55,441.17,239.1196,436.316,233.5248,437.1512,232.6895,431.5563,230.55,441.17" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[a4ccefd177c55db21c836e29dae533a3]
+reverse link logs.ExecutionLog to logs.ExecutionLog_puml_Sequence_start_stop--><path codeLine="187" d="M238.69,514.13 C394.02,508.65 174.44,253.03 300,148.22 C402.36,62.78 491.2,71.15 600,148.22 C673.81,200.51 577.05,340.22 667.5,340.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_puml_Sequence_start_stop-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,514.22,242.5672,518.0651,238.4993,514.1343,242.4301,510.0663,233.5,514.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[a4ccefd177c55db21c836e29dae533a3]
+reverse link logs.ExecutionLog to logs.ExecutionLog_puml_Sequence_start_stop--><path codeLine="195" d="M238.56,566.14 C389.81,560.8 177.51,311.95 300,210.22 C351.29,167.63 543.69,174.54 600,210.22 C659.36,247.85 597.22,353.22 667.5,353.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_puml_Sequence_start_stop-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,566.22,242.5672,570.0651,238.4993,566.1343,242.4301,562.0663,233.5,566.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[a4ccefd177c55db21c836e29dae533a3]
+reverse link logs.ExecutionLog to logs.ExecutionLog_puml_Sequence_start_stop--><path codeLine="198" d="M238.59,492.84 C320.27,479.95 232.45,149.5 300,92.22 C401.7,6 493.08,12.57 600,92.22 C684.07,154.85 562.67,318.22 667.5,318.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_puml_Sequence_start_stop-3" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,493.22,242.7817,496.5139,238.4851,492.8343,242.1647,488.5377,233.5,493.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[a4ccefd177c55db21c836e29dae533a3]
+reverse link logs.ExecutionLog to logs.ExecutionLog_puml_Sequence_start_stop--><path codeLine="251" d="M238.77,1113.54 C345.55,1126.95 214.08,1556.61 300,1632.22 C400.09,1720.31 503.22,1723.93 600,1632.22 C701.2,1536.32 528.08,379.22 667.5,379.22 " fill="none" id="logs.ExecutionLog-backto-logs.ExecutionLog_puml_Sequence_start_stop-4" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="233.5,1113.22,242.2305,1117.7783,238.4901,1113.5346,242.7338,1109.7941,233.5,1113.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[89b27826bce0d7a1c22a8b577607ba82]
+reverse link logs.ExecutionLog to logs.usp_ExecutionLog_insert--><path codeLine="185" d="M211.49,436.69 C234.72,390.15 263.76,346.16 300,310.22 C318.7,291.68 344.18,279.32 368.79,271.11 " fill="none" id="logs.ExecutionLog-backto-logs.usp_ExecutionLog_insert" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="209.26,441.2,216.8305,434.9003,211.4732,436.7165,209.6569,431.3591,209.26,441.2" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d0825091a858a16703271ce8c41f9ff0]
+reverse link logs.ExecutionLog_parent to logs.ExecutionLog_puml_Sequence_start_stop--><path codeLine="186" d="M581.77,1184.26 C588.37,1170.93 594.52,1157.52 600,1144.22 C707.52,883.42 763.13,549.38 783.37,406.33 " fill="none" id="logs.ExecutionLog_parent-backto-logs.ExecutionLog_puml_Sequence_start_stop" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="579.52,1188.78,587.1306,1182.5287,581.7618,1184.3107,579.9798,1178.9419,579.52,1188.78" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d0825091a858a16703271ce8c41f9ff0]
+reverse link logs.ExecutionLog_parent to logs.ExecutionLog_puml_Sequence_start_stop--><path codeLine="268" d="M578.18,1534.57 C698.83,1503.48 538.97,366.22 667.5,366.22 " fill="none" id="logs.ExecutionLog_parent-backto-logs.ExecutionLog_puml_Sequence_start_stop-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="573,1535.22,582.4307,1538.0595,577.9605,1534.5928,581.4272,1530.1227,573,1535.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d86ac881ef1bed203f33dc0806f8be38]
+@startuml
+left to right direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity logs.ExecutionLog << U >> {
+  * **id** : bigint
+  - -
+  created_dt : datetime
+  current_execution_guid : uniqueidentifier
+  deleted : int
+  event_info : nvarchar(max)
+  * execution_instance_guid : uniqueidentifier
+  info_01 : sql_variant
+  info_02 : sql_variant
+  info_03 : sql_variant
+  info_04 : sql_variant
+  info_05 : sql_variant
+  info_06 : sql_variant
+  info_07 : sql_variant
+  info_08 : sql_variant
+  info_09 : sql_variant
+  inserted : int
+  parameter_01 : sql_variant
+  parameter_02 : sql_variant
+  parameter_03 : sql_variant
+  parameter_04 : sql_variant
+  parameter_05 : sql_variant
+  parameter_06 : sql_variant
+  parameter_07 : sql_variant
+  parameter_08 : sql_variant
+  parameter_09 : sql_variant
+  parameter_10 : sql_variant
+  parameter_11 : sql_variant
+  parameter_12 : sql_variant
+  parameter_13 : sql_variant
+  parameter_14 : sql_variant
+  parameter_15 : sql_variant
+  parameter_16 : sql_variant
+  parameter_17 : sql_variant
+  parameter_18 : sql_variant
+  parameter_19 : sql_variant
+  parameter_20 : sql_variant
+  parent_execution_log_id : bigint
+  proc_id : int
+  proc_name : nvarchar(128)
+  proc_schema_name : nvarchar(128)
+  source_object : nvarchar(261)
+  ssis_execution_id : bigint
+  step_id : int
+  step_name : nvarchar(1000)
+  sub_execution_id : int
+  target_object : nvarchar(261)
+  updated : int
+  * {abstract} proc_fullname : nvarchar(517)
+}
+
+entity logs.ExecutionLog_gross << V >> {
+  * **id** : bigint
+  - -
+  created_dt : datetime
+  created_dt_max__execution_instance_guid : datetime
+  created_dt_min__execution_instance_guid : datetime
+  current_execution_guid : uniqueidentifier
+  deleted : int
+  duration__current_execution_guid : int
+  duration__execution_instance_guid : int
+  event_info : nvarchar(max)
+  * execution_instance_guid : uniqueidentifier
+  info_01 : sql_variant
+  info_02 : sql_variant
+  info_03 : sql_variant
+  info_04 : sql_variant
+  info_05 : sql_variant
+  info_06 : sql_variant
+  info_07 : sql_variant
+  info_08 : sql_variant
+  info_09 : sql_variant
+  inserted : int
+  parameter_01 : sql_variant
+  parameter_02 : sql_variant
+  parameter_03 : sql_variant
+  parameter_04 : sql_variant
+  parameter_05 : sql_variant
+  parameter_06 : sql_variant
+  parameter_07 : sql_variant
+  parameter_08 : sql_variant
+  parameter_09 : sql_variant
+  parameter_10 : sql_variant
+  parameter_11 : sql_variant
+  parameter_12 : sql_variant
+  parameter_13 : sql_variant
+  parameter_14 : sql_variant
+  parameter_15 : sql_variant
+  parameter_16 : sql_variant
+  parameter_17 : sql_variant
+  parameter_18 : sql_variant
+  parameter_19 : sql_variant
+  parameter_20 : sql_variant
+  parent_execution_log_id : bigint
+  proc_id : int
+  proc_name : nvarchar(128)
+  proc_schema_name : nvarchar(128)
+  * puml_Sequence : nvarchar(1550)
+  source_object : nvarchar(261)
+  ssis_execution_id : bigint
+  step_id : int
+  step_name : nvarchar(1000)
+  sub_execution_id : int
+  target_object : nvarchar(261)
+  updated : int
+}
+
+entity logs.ExecutionLog_parent << V >> {
+  * **id** : bigint
+  - -
+  parent_created_dt : datetime
+  parent_current_execution_guid : uniqueidentifier
+  parent_execution_log_id : bigint
+  parent_parameter_01 : sql_variant
+  parent_parameter_02 : sql_variant
+  parent_parameter_03 : sql_variant
+  parent_parameter_04 : sql_variant
+  parent_parameter_05 : sql_variant
+  parent_parameter_06 : sql_variant
+  parent_parameter_07 : sql_variant
+  parent_parameter_08 : sql_variant
+  parent_parameter_09 : sql_variant
+  parent_parameter_10 : sql_variant
+  parent_parameter_11 : sql_variant
+  parent_parameter_12 : sql_variant
+  parent_parameter_13 : sql_variant
+  parent_parameter_14 : sql_variant
+  parent_parameter_15 : sql_variant
+  parent_parameter_16 : sql_variant
+  parent_parameter_17 : sql_variant
+  parent_parameter_18 : sql_variant
+  parent_parameter_19 : sql_variant
+  parent_parameter_20 : sql_variant
+  parent_proc_fullname : nvarchar(517)
+  parent_proc_id : int
+  parent_proc_name : nvarchar(128)
+  parent_proc_schema_name : nvarchar(128)
+  parent_step_id : int
+  parent_step_name : nvarchar(1000)
+}
+
+entity logs.ExecutionLog_puml_Sequence_start_stop << V >> {
+  * **id** : bigint
+  - -
+  created_dt : datetime
+  * execution_instance_guid : uniqueidentifier
+  parent_proc_fullname : nvarchar(517)
+  * proc_fullname : nvarchar(517)
+  * puml_Sequence_start_stop : nvarchar(1574)
+}
+
+entity logs.usp_ExecutionLog_insert << P >> {
+  - -
+}
+
+logs.ExecutionLog <.. logs.ExecutionLog_gross
+logs.ExecutionLog <.. logs.ExecutionLog_parent
+logs.ExecutionLog <.. logs.ExecutionLog_puml_Sequence_start_stop
+logs.ExecutionLog <.. logs.usp_ExecutionLog_insert
+logs.ExecutionLog_parent <.. logs.ExecutionLog_puml_Sequence_start_stop
+logs.ExecutionLog::created_dt <- - logs.ExecutionLog_puml_Sequence_start_stop::created_dt
+logs.ExecutionLog::created_dt <- - logs.ExecutionLog_gross::created_dt
+logs.ExecutionLog::created_dt <- - logs.ExecutionLog_parent::parent_created_dt
+logs.ExecutionLog::current_execution_guid <- - logs.ExecutionLog_gross::current_execution_guid
+logs.ExecutionLog::current_execution_guid <- - logs.ExecutionLog_parent::parent_current_execution_guid
+logs.ExecutionLog::deleted <- - logs.ExecutionLog_gross::deleted
+logs.ExecutionLog::event_info <- - logs.ExecutionLog_gross::event_info
+logs.ExecutionLog::execution_instance_guid <- - logs.ExecutionLog_gross::execution_instance_guid
+logs.ExecutionLog::execution_instance_guid <- - logs.ExecutionLog_puml_Sequence_start_stop::execution_instance_guid
+logs.ExecutionLog::id <- - logs.ExecutionLog_parent::id
+logs.ExecutionLog::id <- - logs.ExecutionLog_gross::id
+logs.ExecutionLog::id <- - logs.ExecutionLog_puml_Sequence_start_stop::id
+logs.ExecutionLog::info_01 <- - logs.ExecutionLog_gross::info_01
+logs.ExecutionLog::info_02 <- - logs.ExecutionLog_gross::info_02
+logs.ExecutionLog::info_03 <- - logs.ExecutionLog_gross::info_03
+logs.ExecutionLog::info_04 <- - logs.ExecutionLog_gross::info_04
+logs.ExecutionLog::info_05 <- - logs.ExecutionLog_gross::info_05
+logs.ExecutionLog::info_06 <- - logs.ExecutionLog_gross::info_06
+logs.ExecutionLog::info_07 <- - logs.ExecutionLog_gross::info_07
+logs.ExecutionLog::info_08 <- - logs.ExecutionLog_gross::info_08
+logs.ExecutionLog::info_09 <- - logs.ExecutionLog_gross::info_09
+logs.ExecutionLog::inserted <- - logs.ExecutionLog_gross::inserted
+logs.ExecutionLog::parameter_01 <- - logs.ExecutionLog_gross::parameter_01
+logs.ExecutionLog::parameter_01 <- - logs.ExecutionLog_parent::parent_parameter_01
+logs.ExecutionLog::parameter_02 <- - logs.ExecutionLog_parent::parent_parameter_02
+logs.ExecutionLog::parameter_02 <- - logs.ExecutionLog_gross::parameter_02
+logs.ExecutionLog::parameter_03 <- - logs.ExecutionLog_gross::parameter_03
+logs.ExecutionLog::parameter_03 <- - logs.ExecutionLog_parent::parent_parameter_03
+logs.ExecutionLog::parameter_04 <- - logs.ExecutionLog_parent::parent_parameter_04
+logs.ExecutionLog::parameter_04 <- - logs.ExecutionLog_gross::parameter_04
+logs.ExecutionLog::parameter_05 <- - logs.ExecutionLog_gross::parameter_05
+logs.ExecutionLog::parameter_05 <- - logs.ExecutionLog_parent::parent_parameter_05
+logs.ExecutionLog::parameter_06 <- - logs.ExecutionLog_parent::parent_parameter_06
+logs.ExecutionLog::parameter_06 <- - logs.ExecutionLog_gross::parameter_06
+logs.ExecutionLog::parameter_07 <- - logs.ExecutionLog_gross::parameter_07
+logs.ExecutionLog::parameter_07 <- - logs.ExecutionLog_parent::parent_parameter_07
+logs.ExecutionLog::parameter_08 <- - logs.ExecutionLog_parent::parent_parameter_08
+logs.ExecutionLog::parameter_08 <- - logs.ExecutionLog_gross::parameter_08
+logs.ExecutionLog::parameter_09 <- - logs.ExecutionLog_gross::parameter_09
+logs.ExecutionLog::parameter_09 <- - logs.ExecutionLog_parent::parent_parameter_09
+logs.ExecutionLog::parameter_10 <- - logs.ExecutionLog_parent::parent_parameter_10
+logs.ExecutionLog::parameter_10 <- - logs.ExecutionLog_gross::parameter_10
+logs.ExecutionLog::parameter_11 <- - logs.ExecutionLog_gross::parameter_11
+logs.ExecutionLog::parameter_11 <- - logs.ExecutionLog_parent::parent_parameter_11
+logs.ExecutionLog::parameter_12 <- - logs.ExecutionLog_parent::parent_parameter_12
+logs.ExecutionLog::parameter_12 <- - logs.ExecutionLog_gross::parameter_12
+logs.ExecutionLog::parameter_13 <- - logs.ExecutionLog_gross::parameter_13
+logs.ExecutionLog::parameter_13 <- - logs.ExecutionLog_parent::parent_parameter_13
+logs.ExecutionLog::parameter_14 <- - logs.ExecutionLog_parent::parent_parameter_14
+logs.ExecutionLog::parameter_14 <- - logs.ExecutionLog_gross::parameter_14
+logs.ExecutionLog::parameter_15 <- - logs.ExecutionLog_gross::parameter_15
+logs.ExecutionLog::parameter_15 <- - logs.ExecutionLog_parent::parent_parameter_15
+logs.ExecutionLog::parameter_16 <- - logs.ExecutionLog_parent::parent_parameter_16
+logs.ExecutionLog::parameter_16 <- - logs.ExecutionLog_gross::parameter_16
+logs.ExecutionLog::parameter_17 <- - logs.ExecutionLog_gross::parameter_17
+logs.ExecutionLog::parameter_17 <- - logs.ExecutionLog_parent::parent_parameter_17
+logs.ExecutionLog::parameter_18 <- - logs.ExecutionLog_parent::parent_parameter_18
+logs.ExecutionLog::parameter_18 <- - logs.ExecutionLog_gross::parameter_18
+logs.ExecutionLog::parameter_19 <- - logs.ExecutionLog_gross::parameter_19
+logs.ExecutionLog::parameter_19 <- - logs.ExecutionLog_parent::parent_parameter_19
+logs.ExecutionLog::parameter_20 <- - logs.ExecutionLog_parent::parent_parameter_20
+logs.ExecutionLog::parameter_20 <- - logs.ExecutionLog_gross::parameter_20
+logs.ExecutionLog::parent_execution_log_id <- - logs.ExecutionLog_gross::parent_execution_log_id
+logs.ExecutionLog::parent_execution_log_id <- - logs.ExecutionLog_parent::parent_execution_log_id
+logs.ExecutionLog::proc_fullname <- - logs.ExecutionLog_puml_Sequence_start_stop::proc_fullname
+logs.ExecutionLog::proc_fullname <- - logs.ExecutionLog_parent::parent_proc_fullname
+logs.ExecutionLog::proc_id <- - logs.ExecutionLog_parent::parent_proc_id
+logs.ExecutionLog::proc_id <- - logs.ExecutionLog_gross::proc_id
+logs.ExecutionLog::proc_name <- - logs.ExecutionLog_gross::proc_name
+logs.ExecutionLog::proc_name <- - logs.ExecutionLog_parent::parent_proc_name
+logs.ExecutionLog::proc_schema_name <- - logs.ExecutionLog_parent::parent_proc_schema_name
+logs.ExecutionLog::proc_schema_name <- - logs.ExecutionLog_gross::proc_schema_name
+logs.ExecutionLog::source_object <- - logs.ExecutionLog_gross::source_object
+logs.ExecutionLog::ssis_execution_id <- - logs.ExecutionLog_gross::ssis_execution_id
+logs.ExecutionLog::step_id <- - logs.ExecutionLog_gross::step_id
+logs.ExecutionLog::step_id <- - logs.ExecutionLog_parent::parent_step_id
+logs.ExecutionLog::step_name <- - logs.ExecutionLog_parent::parent_step_name
+logs.ExecutionLog::step_name <- - logs.ExecutionLog_gross::step_name
+logs.ExecutionLog::sub_execution_id <- - logs.ExecutionLog_gross::sub_execution_id
+logs.ExecutionLog::target_object <- - logs.ExecutionLog_gross::target_object
+logs.ExecutionLog::updated <- - logs.ExecutionLog_gross::updated
+logs.ExecutionLog_parent::parent_proc_fullname <- - logs.ExecutionLog_puml_Sequence_start_stop::parent_proc_fullname
+@enduml
+
+@startuml
+left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity logs.ExecutionLog << U >> {
+  * **id** : bigint
+  - -
+  created_dt : datetime
+  current_execution_guid : uniqueidentifier
+  deleted : int
+  event_info : nvarchar(max)
+  * execution_instance_guid : uniqueidentifier
+  info_01 : sql_variant
+  info_02 : sql_variant
+  info_03 : sql_variant
+  info_04 : sql_variant
+  info_05 : sql_variant
+  info_06 : sql_variant
+  info_07 : sql_variant
+  info_08 : sql_variant
+  info_09 : sql_variant
+  inserted : int
+  parameter_01 : sql_variant
+  parameter_02 : sql_variant
+  parameter_03 : sql_variant
+  parameter_04 : sql_variant
+  parameter_05 : sql_variant
+  parameter_06 : sql_variant
+  parameter_07 : sql_variant
+  parameter_08 : sql_variant
+  parameter_09 : sql_variant
+  parameter_10 : sql_variant
+  parameter_11 : sql_variant
+  parameter_12 : sql_variant
+  parameter_13 : sql_variant
+  parameter_14 : sql_variant
+  parameter_15 : sql_variant
+  parameter_16 : sql_variant
+  parameter_17 : sql_variant
+  parameter_18 : sql_variant
+  parameter_19 : sql_variant
+  parameter_20 : sql_variant
+  parent_execution_log_id : bigint
+  proc_id : int
+  proc_name : nvarchar(128)
+  proc_schema_name : nvarchar(128)
+  source_object : nvarchar(261)
+  ssis_execution_id : bigint
+  step_id : int
+  step_name : nvarchar(1000)
+  sub_execution_id : int
+  target_object : nvarchar(261)
+  updated : int
+  * {abstract} proc_fullname : nvarchar(517)
+}
+
+entity logs.ExecutionLog_gross << V >> {
+  * **id** : bigint
+  - -
+  created_dt : datetime
+  created_dt_max__execution_instance_guid : datetime
+  created_dt_min__execution_instance_guid : datetime
+  current_execution_guid : uniqueidentifier
+  deleted : int
+  duration__current_execution_guid : int
+  duration__execution_instance_guid : int
+  event_info : nvarchar(max)
+  * execution_instance_guid : uniqueidentifier
+  info_01 : sql_variant
+  info_02 : sql_variant
+  info_03 : sql_variant
+  info_04 : sql_variant
+  info_05 : sql_variant
+  info_06 : sql_variant
+  info_07 : sql_variant
+  info_08 : sql_variant
+  info_09 : sql_variant
+  inserted : int
+  parameter_01 : sql_variant
+  parameter_02 : sql_variant
+  parameter_03 : sql_variant
+  parameter_04 : sql_variant
+  parameter_05 : sql_variant
+  parameter_06 : sql_variant
+  parameter_07 : sql_variant
+  parameter_08 : sql_variant
+  parameter_09 : sql_variant
+  parameter_10 : sql_variant
+  parameter_11 : sql_variant
+  parameter_12 : sql_variant
+  parameter_13 : sql_variant
+  parameter_14 : sql_variant
+  parameter_15 : sql_variant
+  parameter_16 : sql_variant
+  parameter_17 : sql_variant
+  parameter_18 : sql_variant
+  parameter_19 : sql_variant
+  parameter_20 : sql_variant
+  parent_execution_log_id : bigint
+  proc_id : int
+  proc_name : nvarchar(128)
+  proc_schema_name : nvarchar(128)
+  * puml_Sequence : nvarchar(1550)
+  source_object : nvarchar(261)
+  ssis_execution_id : bigint
+  step_id : int
+  step_name : nvarchar(1000)
+  sub_execution_id : int
+  target_object : nvarchar(261)
+  updated : int
+}
+
+entity logs.ExecutionLog_parent << V >> {
+  * **id** : bigint
+  - -
+  parent_created_dt : datetime
+  parent_current_execution_guid : uniqueidentifier
+  parent_execution_log_id : bigint
+  parent_parameter_01 : sql_variant
+  parent_parameter_02 : sql_variant
+  parent_parameter_03 : sql_variant
+  parent_parameter_04 : sql_variant
+  parent_parameter_05 : sql_variant
+  parent_parameter_06 : sql_variant
+  parent_parameter_07 : sql_variant
+  parent_parameter_08 : sql_variant
+  parent_parameter_09 : sql_variant
+  parent_parameter_10 : sql_variant
+  parent_parameter_11 : sql_variant
+  parent_parameter_12 : sql_variant
+  parent_parameter_13 : sql_variant
+  parent_parameter_14 : sql_variant
+  parent_parameter_15 : sql_variant
+  parent_parameter_16 : sql_variant
+  parent_parameter_17 : sql_variant
+  parent_parameter_18 : sql_variant
+  parent_parameter_19 : sql_variant
+  parent_parameter_20 : sql_variant
+  parent_proc_fullname : nvarchar(517)
+  parent_proc_id : int
+  parent_proc_name : nvarchar(128)
+  parent_proc_schema_name : nvarchar(128)
+  parent_step_id : int
+  parent_step_name : nvarchar(1000)
+}
+
+entity logs.ExecutionLog_puml_Sequence_start_stop << V >> {
+  * **id** : bigint
+  - -
+  created_dt : datetime
+  * execution_instance_guid : uniqueidentifier
+  parent_proc_fullname : nvarchar(517)
+  * proc_fullname : nvarchar(517)
+  * puml_Sequence_start_stop : nvarchar(1574)
+}
+
+entity logs.usp_ExecutionLog_insert << P >> {
+  - -
+}
+
+logs.ExecutionLog <.. logs.ExecutionLog_gross
+logs.ExecutionLog <.. logs.ExecutionLog_parent
+logs.ExecutionLog <.. logs.ExecutionLog_puml_Sequence_start_stop
+logs.ExecutionLog <.. logs.usp_ExecutionLog_insert
+logs.ExecutionLog_parent <.. logs.ExecutionLog_puml_Sequence_start_stop
+logs.ExecutionLog::created_dt <- - logs.ExecutionLog_puml_Sequence_start_stop::created_dt
+logs.ExecutionLog::created_dt <- - logs.ExecutionLog_gross::created_dt
+logs.ExecutionLog::created_dt <- - logs.ExecutionLog_parent::parent_created_dt
+logs.ExecutionLog::current_execution_guid <- - logs.ExecutionLog_gross::current_execution_guid
+logs.ExecutionLog::current_execution_guid <- - logs.ExecutionLog_parent::parent_current_execution_guid
+logs.ExecutionLog::deleted <- - logs.ExecutionLog_gross::deleted
+logs.ExecutionLog::event_info <- - logs.ExecutionLog_gross::event_info
+logs.ExecutionLog::execution_instance_guid <- - logs.ExecutionLog_gross::execution_instance_guid
+logs.ExecutionLog::execution_instance_guid <- - logs.ExecutionLog_puml_Sequence_start_stop::execution_instance_guid
+logs.ExecutionLog::id <- - logs.ExecutionLog_parent::id
+logs.ExecutionLog::id <- - logs.ExecutionLog_gross::id
+logs.ExecutionLog::id <- - logs.ExecutionLog_puml_Sequence_start_stop::id
+logs.ExecutionLog::info_01 <- - logs.ExecutionLog_gross::info_01
+logs.ExecutionLog::info_02 <- - logs.ExecutionLog_gross::info_02
+logs.ExecutionLog::info_03 <- - logs.ExecutionLog_gross::info_03
+logs.ExecutionLog::info_04 <- - logs.ExecutionLog_gross::info_04
+logs.ExecutionLog::info_05 <- - logs.ExecutionLog_gross::info_05
+logs.ExecutionLog::info_06 <- - logs.ExecutionLog_gross::info_06
+logs.ExecutionLog::info_07 <- - logs.ExecutionLog_gross::info_07
+logs.ExecutionLog::info_08 <- - logs.ExecutionLog_gross::info_08
+logs.ExecutionLog::info_09 <- - logs.ExecutionLog_gross::info_09
+logs.ExecutionLog::inserted <- - logs.ExecutionLog_gross::inserted
+logs.ExecutionLog::parameter_01 <- - logs.ExecutionLog_gross::parameter_01
+logs.ExecutionLog::parameter_01 <- - logs.ExecutionLog_parent::parent_parameter_01
+logs.ExecutionLog::parameter_02 <- - logs.ExecutionLog_parent::parent_parameter_02
+logs.ExecutionLog::parameter_02 <- - logs.ExecutionLog_gross::parameter_02
+logs.ExecutionLog::parameter_03 <- - logs.ExecutionLog_gross::parameter_03
+logs.ExecutionLog::parameter_03 <- - logs.ExecutionLog_parent::parent_parameter_03
+logs.ExecutionLog::parameter_04 <- - logs.ExecutionLog_parent::parent_parameter_04
+logs.ExecutionLog::parameter_04 <- - logs.ExecutionLog_gross::parameter_04
+logs.ExecutionLog::parameter_05 <- - logs.ExecutionLog_gross::parameter_05
+logs.ExecutionLog::parameter_05 <- - logs.ExecutionLog_parent::parent_parameter_05
+logs.ExecutionLog::parameter_06 <- - logs.ExecutionLog_parent::parent_parameter_06
+logs.ExecutionLog::parameter_06 <- - logs.ExecutionLog_gross::parameter_06
+logs.ExecutionLog::parameter_07 <- - logs.ExecutionLog_gross::parameter_07
+logs.ExecutionLog::parameter_07 <- - logs.ExecutionLog_parent::parent_parameter_07
+logs.ExecutionLog::parameter_08 <- - logs.ExecutionLog_parent::parent_parameter_08
+logs.ExecutionLog::parameter_08 <- - logs.ExecutionLog_gross::parameter_08
+logs.ExecutionLog::parameter_09 <- - logs.ExecutionLog_gross::parameter_09
+logs.ExecutionLog::parameter_09 <- - logs.ExecutionLog_parent::parent_parameter_09
+logs.ExecutionLog::parameter_10 <- - logs.ExecutionLog_parent::parent_parameter_10
+logs.ExecutionLog::parameter_10 <- - logs.ExecutionLog_gross::parameter_10
+logs.ExecutionLog::parameter_11 <- - logs.ExecutionLog_gross::parameter_11
+logs.ExecutionLog::parameter_11 <- - logs.ExecutionLog_parent::parent_parameter_11
+logs.ExecutionLog::parameter_12 <- - logs.ExecutionLog_parent::parent_parameter_12
+logs.ExecutionLog::parameter_12 <- - logs.ExecutionLog_gross::parameter_12
+logs.ExecutionLog::parameter_13 <- - logs.ExecutionLog_gross::parameter_13
+logs.ExecutionLog::parameter_13 <- - logs.ExecutionLog_parent::parent_parameter_13
+logs.ExecutionLog::parameter_14 <- - logs.ExecutionLog_parent::parent_parameter_14
+logs.ExecutionLog::parameter_14 <- - logs.ExecutionLog_gross::parameter_14
+logs.ExecutionLog::parameter_15 <- - logs.ExecutionLog_gross::parameter_15
+logs.ExecutionLog::parameter_15 <- - logs.ExecutionLog_parent::parent_parameter_15
+logs.ExecutionLog::parameter_16 <- - logs.ExecutionLog_parent::parent_parameter_16
+logs.ExecutionLog::parameter_16 <- - logs.ExecutionLog_gross::parameter_16
+logs.ExecutionLog::parameter_17 <- - logs.ExecutionLog_gross::parameter_17
+logs.ExecutionLog::parameter_17 <- - logs.ExecutionLog_parent::parent_parameter_17
+logs.ExecutionLog::parameter_18 <- - logs.ExecutionLog_parent::parent_parameter_18
+logs.ExecutionLog::parameter_18 <- - logs.ExecutionLog_gross::parameter_18
+logs.ExecutionLog::parameter_19 <- - logs.ExecutionLog_gross::parameter_19
+logs.ExecutionLog::parameter_19 <- - logs.ExecutionLog_parent::parent_parameter_19
+logs.ExecutionLog::parameter_20 <- - logs.ExecutionLog_parent::parent_parameter_20
+logs.ExecutionLog::parameter_20 <- - logs.ExecutionLog_gross::parameter_20
+logs.ExecutionLog::parent_execution_log_id <- - logs.ExecutionLog_gross::parent_execution_log_id
+logs.ExecutionLog::parent_execution_log_id <- - logs.ExecutionLog_parent::parent_execution_log_id
+logs.ExecutionLog::proc_fullname <- - logs.ExecutionLog_puml_Sequence_start_stop::proc_fullname
+logs.ExecutionLog::proc_fullname <- - logs.ExecutionLog_parent::parent_proc_fullname
+logs.ExecutionLog::proc_id <- - logs.ExecutionLog_parent::parent_proc_id
+logs.ExecutionLog::proc_id <- - logs.ExecutionLog_gross::proc_id
+logs.ExecutionLog::proc_name <- - logs.ExecutionLog_gross::proc_name
+logs.ExecutionLog::proc_name <- - logs.ExecutionLog_parent::parent_proc_name
+logs.ExecutionLog::proc_schema_name <- - logs.ExecutionLog_parent::parent_proc_schema_name
+logs.ExecutionLog::proc_schema_name <- - logs.ExecutionLog_gross::proc_schema_name
+logs.ExecutionLog::source_object <- - logs.ExecutionLog_gross::source_object
+logs.ExecutionLog::ssis_execution_id <- - logs.ExecutionLog_gross::ssis_execution_id
+logs.ExecutionLog::step_id <- - logs.ExecutionLog_gross::step_id
+logs.ExecutionLog::step_id <- - logs.ExecutionLog_parent::parent_step_id
+logs.ExecutionLog::step_name <- - logs.ExecutionLog_parent::parent_step_name
+logs.ExecutionLog::step_name <- - logs.ExecutionLog_gross::step_name
+logs.ExecutionLog::sub_execution_id <- - logs.ExecutionLog_gross::sub_execution_id
+logs.ExecutionLog::target_object <- - logs.ExecutionLog_gross::target_object
+logs.ExecutionLog::updated <- - logs.ExecutionLog_gross::updated
+logs.ExecutionLog_parent::parent_proc_fullname <- - logs.ExecutionLog_puml_Sequence_start_stop::parent_proc_fullname
+@enduml
+
+PlantUML version 1.2021.8(Sat Jun 26 08:20:59 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

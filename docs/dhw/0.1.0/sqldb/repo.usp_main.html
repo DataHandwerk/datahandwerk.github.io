@@ -71,6 +71,9 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="nav/objects-by-schema.html">Objects by schema</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Objects by schema</span>
 <ul class="nav-list">
@@ -227,6 +230,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ForeignKey_RelationScript.html">docs.ForeignKey_RelationScript</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.fs_cleanStringForAnchorId.html">docs.fs_cleanStringForAnchorId</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.fs_cleanStringForLabel.html">docs.fs_cleanStringForLabel</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.ftv_RepoObject_Reference_PlantUml_EntityRefList.html">docs.ftv_RepoObject_Reference_PlantUml_EntityRefList</a>
@@ -467,6 +476,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_cross.html">property.RepoObjectProperty_cross</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.RepoObjectProperty_ForUpdate.html">property.RepoObjectProperty_ForUpdate</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_InheritanceType_InheritanceDefinition.html">property.RepoObjectProperty_InheritanceType_InheritanceDefinition</a>
@@ -715,6 +727,9 @@
     <a class="nav-link" href="repo.Index_Settings.html">repo.Index_Settings</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.Index_Settings_ForUpdate.html">repo.Index_Settings_ForUpdate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.Index_SqlConstraint_PkUq.html">repo.Index_SqlConstraint_PkUq</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -737,6 +752,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T</a>
@@ -1223,6 +1241,9 @@
     <a class="nav-link" href="../manual/create-update-connect-repo-db.html">Create, update and connect repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../manual/backup-repo-db.html">Backup repository database</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../manual/sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
 <ul class="nav-list">
@@ -1253,7 +1274,10 @@
     <a class="nav-link" href="../manual/ssms-configuration.html">SSMS configuration</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../manual/sql-server-bug-sys-views-references.html">SQL Server bug in sys-views for references</a>
+    <a class="nav-link" href="../manual/analyticscreator.html">Import from AnalyticsCreator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="#manual:sql-server-issue-sys-views-references.adoc">manual:sql-server-issue-sys-views-references.adoc</a>
   </li>
 </ul>
   </li>
@@ -1307,7 +1331,7 @@ P
 (
 stored procedure
 ), modify_date:
-2021-04-24 15:21:56</p>
+2021-07-14 19:36:23</p>
 </div>
 <div class="paragraph">
 <p>RepoObject_guid:
@@ -1498,10 +1522,12 @@ It does:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><code>EXEC [reference].[usp_RepoObject_update_SysObjectQueryPlan]
---This can take a very long time</code></p>
+<p><code>EXEC [reference].[usp_RepoObject_update_SysObjectQueryPlan]</code></p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p>This can take a very long time</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">400</p></td>
 </tr>
@@ -1528,10 +1554,12 @@ It does:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><code>EXEC [reference].[usp_RepoObjectSource_QueryPlan]
---This can take a very long time</code></p>
+<p><code>EXEC [reference].[usp_RepoObjectSource_QueryPlan]</code></p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p>This can take a very long time</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">500</p></td>
 </tr>
@@ -1557,11 +1585,15 @@ It does:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><code>EXEC [repo].[usp_index_inheritance]
---todo:
---should or could be executed several times until no new indexes are inherited</code></p>
+<p><code>EXEC [repo].[usp_index_inheritance]</code></p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p>todo:</p>
+</div>
+<div class="paragraph">
+<p>should or could be executed several times until no new indexes are inherited</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
@@ -1587,10 +1619,12 @@ It does:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><code>EXEC [repo].[usp_RepoObjectColumn_update_RepoObjectColumn_column_id]
---This must happen later than the index logic, because the PK can change there. And this affects the order of the columns.</code></p>
+<p><code>EXEC [repo].[usp_RepoObjectColumn_update_RepoObjectColumn_column_id]</code></p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p>This must happen later than the index logic, because the PK can change there. And this affects the order of the columns.</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
@@ -1602,10 +1636,12 @@ It does:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><code>EXEC [uspgenerator].[usp_GeneratorUsp_insert_update_persistence]
---RepoObjectColumn_column_id is required and should be updated before</code></p>
+<p><code>EXEC [uspgenerator].[usp_GeneratorUsp_insert_update_persistence]</code></p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p>RepoObjectColumn_column_id is required and should be updated before</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
@@ -1824,7 +1860,7 @@ It does:</p>
 <h3 id="_object_reference_diagram"><a class="anchor" href="#_object_reference_diagram"></a>Object Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-c591e7e012095f64aaa7d0e279b9c9945159a3cd.svg" alt="entity_1_1_objectref-repo.usp_main">
+<img src="_images/diag-194f19014c783fac1c4070102e506f97451e032a.svg" alt="entity_1_1_objectref-repo.usp_main">
 </div>
 </div>
 </div>
@@ -1832,7 +1868,7 @@ It does:</p>
 <h3 id="_object_reference_diagram_referenced"><a class="anchor" href="#_object_reference_diagram_referenced"></a>Object Reference Diagram - Referenced</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-2d0d64831b77b3c989826b849c5299f27af54df3.svg" alt="entity_30_0_objectref-repo.usp_main">
+<img src="_images/diag-fe13ad8639d7e2f449559d755460065ecf5233e8.svg" alt="entity_30_0_objectref-repo.usp_main">
 </div>
 </div>
 </div>
@@ -1952,7 +1988,6 @@ IF (select [config].[fs_get_parameter_value]('main enable usp_RepoObject_update_
 /*{"ReportUspStep":[{"Number":410,"Parent_Number":400,"Name":"[reference].[usp_RepoObject_update_SysObjectQueryPlan]","has_logging":0,"is_condition":0,"is_inactive":0,"is_SubProcedure":1}]}*/
 BEGIN
 EXEC [reference].[usp_RepoObject_update_SysObjectQueryPlan]
---This can take a very long time
 --add your own parameters
 --logging parameters
  @execution_instance_guid = @execution_instance_guid
@@ -1968,7 +2003,6 @@ IF (select [config].[fs_get_parameter_value]('main enable usp_RepoObjectSource_Q
 /*{"ReportUspStep":[{"Number":510,"Parent_Number":500,"Name":"[reference].[usp_RepoObjectSource_QueryPlan]\r\n--This can take a very long time","has_logging":0,"is_condition":0,"is_inactive":0,"is_SubProcedure":1}]}*/
 BEGIN
 EXEC [reference].[usp_RepoObjectSource_QueryPlan]
---This can take a very long time
 --add your own parameters
 --logging parameters
  @execution_instance_guid = @execution_instance_guid
@@ -1990,8 +2024,6 @@ EXEC [reference].[usp_update_Referencing_Count]
 
 /*{"ReportUspStep":[{"Number":710,"Name":"[repo].[usp_index_inheritance]","has_logging":0,"is_condition":0,"is_inactive":0,"is_SubProcedure":1}]}*/
 EXEC [repo].[usp_index_inheritance]
---todo:
---should or could be executed several times until no new indexes are inherited
 --add your own parameters
 --logging parameters
  @execution_instance_guid = @execution_instance_guid
@@ -2012,7 +2044,6 @@ EXEC [repo].[usp_Index_ForeignKey]
 
 /*{"ReportUspStep":[{"Number":810,"Name":"[repo].[usp_RepoObjectColumn_update_RepoObjectColumn_column_id]","has_logging":0,"is_condition":0,"is_inactive":0,"is_SubProcedure":1}]}*/
 EXEC [repo].[usp_RepoObjectColumn_update_RepoObjectColumn_column_id]
---This must happen later than the index logic, because the PK can change there. And this affects the order of the columns.
 --add your own parameters
 --logging parameters
  @execution_instance_guid = @execution_instance_guid
@@ -2023,7 +2054,6 @@ EXEC [repo].[usp_RepoObjectColumn_update_RepoObjectColumn_column_id]
 
 /*{"ReportUspStep":[{"Number":910,"Name":"[repo].[usp_GeneratorUsp_insert_update_persistence]","has_logging":0,"is_condition":0,"is_inactive":0,"is_SubProcedure":1}]}*/
 EXEC [uspgenerator].[usp_GeneratorUsp_insert_update_persistence]
---RepoObjectColumn_column_id is required and should be updated before
 --add your own parameters
 --logging parameters
  @execution_instance_guid = @execution_instance_guid
