@@ -71,9 +71,6 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../sqldb/nav/objects-by-schema.html">Objects by schema</a>
-  </li>
-  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Objects by schema</span>
 <ul class="nav-list">
@@ -1378,19 +1375,6 @@
 </li>
 </ul>
 </div>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-using <strong>publish</strong> or <strong>dacpac</strong> deployment to update the repo database will reset synonyms.<br>
-reconnect the repo database to the right dwh database after using publish or dacpac deployment by executing <a href="../sqldb/config.usp_connect_database.html" class="page">config.usp_connect_database</a>
-</td>
-</tr>
-</table>
-</div>
 </div>
 </div>
 <div class="sect1">
@@ -1578,52 +1562,6 @@ Your folder could be another</p>
 </li>
 </ul>
 </div>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
-</td>
-<td class="content">
-using <strong>publish</strong> or <strong>dacpac</strong> deployment to update the repo database will reset synonyms.<br>
-reconnect the repo database to the right dwh database after using publish or dacpac deployment by executing <a href="../sqldb/config.usp_connect_database.html" class="page">config.usp_connect_database</a>
-</td>
-</tr>
-</table>
-</div>
-<div class="sect2">
-<h3 id="_post_deployment"><a class="anchor" href="#_post_deployment"></a>3.1. post deployment</h3>
-<div class="paragraph">
-<p>After the database is created, some tables need to be populated with data. For this purpose, a post deployment script is included in the project.</p>
-</div>
-<div class="paragraph">
-<p>This is a one-time process that usually does not need to be repeated later.</p>
-</div>
-<div class="paragraph">
-<p>The post deployment script will be executed, if you use publish or build, but it is not executed, when using schema compare. You can also just copy the code from here and execute it.<br>
-Or you can skip the execution at all, because and as long as the content of this script is also called in the procedure <a href="../sqldb/config.usp_connect_database.html" class="page">config.usp_connect_database</a>.</p>
-</div>
-<div class="listingblock">
-<div class="title">postdeployment script</div>
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">﻿/*
-Post-Deployment Script Template
---------------------------------------------------------------------------------------
- This file contains SQL statements that will be appended to the build script.
- Use SQLCMD syntax to include a file in the post-deployment script.
- Example:      :r .\myfile.sql
- Use SQLCMD syntax to reference a variable in the post-deployment script.
- Example:      :setvar TableName MyTable
-               SELECT * FROM [$(TableName)]
---------------------------------------------------------------------------------------
-*/
-
-EXEC [config].usp_init_spt_values
-
-EXEC [config].usp_init_parameter</code></pre>
-</div>
-</div>
-</div>
 </div>
 </div>
 <div class="sect1">
@@ -1772,8 +1710,18 @@ It does:</p>
 <div class="sect1">
 <h2 id="_optional_import_extended_properties_from_dwh_database_into_repository_properties"><a class="anchor" href="#_optional_import_extended_properties_from_dwh_database_into_repository_properties"></a>7. optional: import extended_properties from dwh database into repository properties</h2>
 <div class="sectionbody">
+<div class="exampleblock">
+<div class="title">Example 5. synchronize repository with dwh database extended properties</div>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">EXEC [property].[usp_sync_ExtendedProperties_Sys2Repo_InsertUpdate]</code></pre>
+</div>
+</div>
+</div>
+</div>
 <div class="paragraph">
-<p><a href="../sqldb/property.usp_sync_ExtendedProperties_Sys2Repo_InsertUpdate.html" class="page">property.usp_sync_ExtendedProperties_Sys2Repo_InsertUpdate</a></p>
+<p>See details: <a href="../sqldb/property.usp_sync_ExtendedProperties_Sys2Repo_InsertUpdate.html" class="page">property.usp_sync_ExtendedProperties_Sys2Repo_InsertUpdate</a></p>
 </div>
 </div>
 </div>

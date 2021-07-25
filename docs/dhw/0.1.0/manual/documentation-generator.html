@@ -71,9 +71,6 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../sqldb/nav/objects-by-schema.html">Objects by schema</a>
-  </li>
-  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Objects by schema</span>
 <ul class="nav-list">
@@ -1337,6 +1334,9 @@
 <p>setup Antora Playbook project (one time per project task)</p>
 </li>
 <li>
+<p>setup <em>optional</em> additional docs repositories containing additional documentation (one time per project task)</p>
+</li>
+<li>
 <p>recurring steps</p>
 <div class="ulist">
 <ul>
@@ -1428,6 +1428,9 @@ Exec docs.usp_AntoraExport;</code></pre>
 <div class="paragraph">
 <p>We recommend using at least two git repositories, one for the documentation content, another for the playbooks and the final generated documentation.</p>
 </div>
+<div class="paragraph">
+<p>It is a good idea to use additional docs repositories for additional manually created documentation.</p>
+</div>
 <div class="sect2">
 <h3 id="_setup_sqldb_docs_repository"><a class="anchor" href="#_setup_sqldb_docs_repository"></a>setup sqldb-docs repository</h3>
 <div class="paragraph">
@@ -1474,76 +1477,10 @@ On Windows you can use <code>xcopy</code> to copy an existing folder structure w
 <pre class="highlightjs highlight"><code>xcopy D:\Repos\GitHub\DataHandwerk\sqldb-docs D:\Repos\aaa\bbb\MyDataBase_sqldb /t /e</code></pre>
 </div>
 </div>
-<div class="paragraph">
-<p>in the following steps replace "D:\Repos\GitHub\DataHandwerk\sqldb-docs" by your own folder and repository name</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>D:\Repos\GitHub\DataHandwerk\sqldb-docs\docs\modules\sqldb\attachments (optional)</p>
 </li>
 <li>
-<p>D:\Repos\GitHub\DataHandwerk\sqldb-docs\docs\modules\sqldb\examples (optional)</p>
-</li>
-<li>
-<p>D:\Repos\GitHub\DataHandwerk\sqldb-docs\docs\modules\sqldb\images (optional)</p>
-</li>
-<li>
-<p>D:\Repos\GitHub\DataHandwerk\sqldb-docs\docs\modules\sqldb\pages</p>
-<div class="ulist">
-<ul>
-<li>
-<p>D:\Repos\GitHub\DataHandwerk\sqldb-docs\docs\modules\sqldb\pages\index</p>
-</li>
-<li>
-<p>D:\Repos\GitHub\DataHandwerk\sqldb-docs\docs\modules\sqldb\pages\nav</p>
-</li>
-<li>
-<p>D:\Repos\GitHub\DataHandwerk\sqldb-docs\docs\modules\sqldb\pages\other (optional)</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>D:\Repos\GitHub\DataHandwerk\sqldb-docs\docs\modules\sqldb\partials</p>
-<div class="ulist">
-<ul>
-<li>
-<p>D:\Repos\GitHub\DataHandwerk\sqldb-docs\docs\modules\sqldb\partials\docsnippet</p>
-</li>
-<li>
-<p>D:\Repos\GitHub\DataHandwerk\sqldb-docs\docs\modules\sqldb\partials\navlist</p>
-</li>
-<li>
-<p>D:\Repos\GitHub\DataHandwerk\sqldb-docs\docs\modules\sqldb\partials\puml</p>
-<div class="ulist">
-<ul>
-<li>
-<p>D:\Repos\GitHub\DataHandwerk\sqldb-docs\docs\modules\sqldb\partials\puml\entity_0_30_objectref</p>
-</li>
-<li>
-<p>D:\Repos\GitHub\DataHandwerk\sqldb-docs\docs\modules\sqldb\partials\puml\entity_1_1_colref</p>
-</li>
-<li>
-<p>D:\Repos\GitHub\DataHandwerk\sqldb-docs\docs\modules\sqldb\partials\puml\entity_1_1_fk</p>
-</li>
-<li>
-<p>D:\Repos\GitHub\DataHandwerk\sqldb-docs\docs\modules\sqldb\partials\puml\entity_1_1_objectref</p>
-</li>
-<li>
-<p>D:\Repos\GitHub\DataHandwerk\sqldb-docs\docs\modules\sqldb\partials\puml\entity_30_0_objectref</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>create the Antora navigation file:</p>
+<p>create the Antora navigation file<br>
+You can copy an existing file (and adapt if required)</p>
 <div class="ulist">
 <ul>
 <li>
@@ -1585,42 +1522,12 @@ Where
 <div class="ulist">
 <ul>
 <li>
-<p>your source repositories should contain a file <code>antora.yml</code> in the same folder, where the folder <code>modules</code> is located. Read about <code>antora.yml</code> in <a href="https://docs.antora.org/antora/2.3/component-version-descriptor/" class="bare">https://docs.antora.org/antora/2.3/component-version-descriptor/</a><br>
-Our main <code>antora.yml</code> is located in <code>D:\Repos\GitHub\DataHandwerk\DataHandwerk-docs\docs</code> and has this content</p>
-<div class="exampleblock">
-<div class="content">
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">name: dhw <i class="conum" data-value="1"></i><b>(1)</b>
-title: DataHandwerk
-version: 0.1.0
-nav: <i class="conum" data-value="2"></i><b>(2)</b>
-- modules/ROOT/nav.adoc
-- modules/arc/nav.adoc
-- modules/sqldb/nav.adoc <i class="conum" data-value="3"></i><b>(3)</b>
-- modules/manual/nav.adoc</code></pre>
-</div>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>this project name is used in the playbooks</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>4 navigation files for 4 modules are included</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="3"></i><b>3</b></td>
-<td>include the navigation file for <code>sqldb</code> module in the main <code>antora.yml</code></td>
-</tr>
-</table>
-</div>
-</div>
+<p>your source repositories should contain a file <code>antora.yml</code> in the same folder, where the folder <code>modules</code> is located. Read about <code>antora.yml</code> in <a href="https://docs.antora.org/antora/2.3/component-version-descriptor/" class="bare">https://docs.antora.org/antora/2.3/component-version-descriptor/</a></p>
+<div class="paragraph">
+<p>In DataHandwerk We use two (2) docs source repositories, and we need the <code>antora.yml</code> in each source repository. The <code>title</code> should be contained only in the main <code>antora.yml</code>.</p>
 </div>
 <div class="paragraph">
-<p>We have two (2) source repositories, and we need the <code>antora.yml</code> in each source repository. The <code>title</code> should be contained only in the main <code>antora.yml</code>.</p>
+<p>The DataHandwerk content of <code>"D:\Repos\GitHub\DataHandwerk\sqldb-docs\docs\antora.yml"</code> is</p>
 </div>
 <div class="exampleblock">
 <div class="content">
@@ -1660,6 +1567,58 @@ version: 0.1.0 <i class="conum" data-value="3"></i><b>(3)</b>
 </div>
 </div>
 <div class="sect2">
+<h3 id="_setup_additional_docs_source_repository"><a class="anchor" href="#_setup_additional_docs_source_repository"></a>setup additional docs source repository</h3>
+<div class="paragraph">
+<p>DataHandwerk <code>sqldb-docs</code> contains only automatically generated documentation. Additional manual documentation is located in an additional repository <code>DataHandwerk-docs</code></p>
+</div>
+<div class="paragraph">
+<p>you can use xcopy to get a folder structure to start your own documentation:<br></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>xcopy D:\Repos\GitHub\DataHandwerk\DataHandwerk-docs D:\Repos\aaa\bbb\MyDataBase-docs /t /e</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>DataHandwerk main <code>antora.yml</code> is located in <code>D:\Repos\GitHub\DataHandwerk\DataHandwerk-docs\docs</code> and has this content</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">name: dhw <i class="conum" data-value="1"></i><b>(1)</b>
+title: DataHandwerk
+version: 0.1.0
+nav: <i class="conum" data-value="2"></i><b>(2)</b>
+- modules/ROOT/nav.adoc
+- modules/arc/nav.adoc
+- modules/sqldb/nav.adoc <i class="conum" data-value="3"></i><b>(3)</b>
+- modules/manual/nav.adoc</code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>this project name is used in the playbooks</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>4 navigation files for 4 modules are included</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>include the navigation file for <code>sqldb</code> module in the main <code>antora.yml</code></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>You could copy this file and modify.</p>
+</div>
+</div>
+<div class="sect2">
 <h3 id="_setup_antora_playbook_project"><a class="anchor" href="#_setup_antora_playbook_project"></a>setup Antora Playbook project</h3>
 <div class="paragraph">
 <p>learn about <a href="https://docs.antora.org/antora/2.3/playbook/">the Antora Playbook</a></p>
@@ -1677,6 +1636,44 @@ version: 0.1.0 <i class="conum" data-value="3"></i><b>(3)</b>
 <p>A playbook is usually located in a playbook project. A playbook project repository is responsible for generating a documentation site. It’s strictly a <em>configuration as code</em> repository—​it does not contain any content. Instead, it contains a playbook file, and, in certain situations, supplemental UI files and extension code.</p>
 </div>
 </blockquote>
+</div>
+<div class="paragraph">
+<p>Create a new project folder, for example
+<code>D:\Repos\aaa\bbb\MyProject-site</code></p>
+</div>
+<div class="paragraph">
+<p>Copy some files and folders from the DataHandwerk project and adapt them:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>supplemental-ui</code> (Folder)</p>
+</li>
+<li>
+<p>local-playbook.bat</p>
+</li>
+<li>
+<p>local-playbook.ps1</p>
+</li>
+<li>
+<p>local-playbook.yml</p>
+</li>
+<li>
+<p>playbook.bat</p>
+</li>
+<li>
+<p>playbook.ps1</p>
+</li>
+<li>
+<p>playbook.yml</p>
+</li>
+<li>
+<p>local-playbook-validate.ps1</p>
+</li>
+<li>
+<p>.gitignore</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p>DataHandwerk documentation uses the following Playbook project: <a href="https://github.com/DataHandwerk/datahandwerk.github.io" class="bare">https://github.com/DataHandwerk/datahandwerk.github.io</a><br>
@@ -2134,6 +2131,31 @@ Exec docs.usp_AntoraExport;</code></pre>
 <div class="sect1">
 <h2 id="_generate_the_static_site"><a class="anchor" href="#_generate_the_static_site"></a>generate the static site</h2>
 <div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The parameter 'dwh_readonly' is 0 by default.<br>
+No guid will be written as extended properties into the connected DWH database. This parameter should and can remain 0 if a database should only be documented but not modified.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Antora uses git repositories as sources. You must put the source repositories under Git version control, there must be at least one commit.
+</td>
+</tr>
+</table>
+</div>
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -2146,6 +2168,31 @@ You can also clean up the partials. This is not so important, because these file
 </td>
 </tr>
 </table>
+</div>
+<div class="paragraph">
+<p>export the automated documentation</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">--initial setup
+Exec repo.usp_main;
+
+--use the sqlparser
+--...
+--after using the sqlparser persist the results
+
+Exec sqlparse.usp_PERSIST_RepoObject_SqlModules_41_from_T;
+Exec sqlparse.usp_PERSIST_RepoObject_SqlModules_61_SelectIdentifier_Union_T;
+
+--process the sqlparser results
+Exec repo.usp_main;
+
+--import extended properties from source database into repository
+Exec [property].[usp_sync_ExtendedProperties_Sys2Repo_InsertUpdate]
+
+--export files for automated documentation
+Exec docs.usp_AntoraExport</code></pre>
+</div>
 </div>
 <div class="paragraph">
 <p>In the Antora Playbook project call Antora to build the local or the final site.</p>
