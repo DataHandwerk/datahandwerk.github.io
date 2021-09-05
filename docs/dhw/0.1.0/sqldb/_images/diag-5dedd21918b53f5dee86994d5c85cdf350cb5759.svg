@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="179px" preserveAspectRatio="none" style="width:770px;height:179px;background:#FFFFFF;" version="1.1" viewBox="0 0 770 179" width="770px" zoomAndPan="magnify"><defs><filter height="300%" id="f1ms8jrsjy9k56" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[8ed1504004dfd9581e2410813dd250b2]
+class repo.RepoSchema--><rect codeLine="27" fill="#FFFFFF" filter="url(#f1ms8jrsjy9k56)" height="68.0001" id="repo.RepoSchema" style="stroke:#A80036;stroke-width:1.5;" width="207" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="101" y="24.0001">«U»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="97" x="62" y="38.4002">repo.RepoSchema</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="213" y1="45.8002" y2="45.8002"/><ellipse cx="18" cy="56.8002" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="100" x="27" y="60.8001">RepoSchema_guid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="130" y="60.8001">: uniqueidentifier</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="213" y1="67.0001" y2="67.0001"/><!--MD5=[1cd66e31433df4d9b1b07e380fcd2de2]
+class repo.SysSchema_RepoSchema_via_name--><rect codeLine="32" fill="#F5F5F5" filter="url(#f1ms8jrsjy9k56)" height="54.8002" id="repo.SysSchema_RepoSchema_via_name" style="stroke:#A80036;stroke-width:1.5;" width="232" x="274" y="62.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="381" y="79.5001">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="226" x="277" y="93.9002">repo.SysSchema_RepoSchema_via_name</text><line style="stroke:#A80036;stroke-width:1.5;" x1="275" x2="505" y1="101.3002" y2="101.3002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="275" x2="505" y1="109.3002" y2="109.3002"/><!--MD5=[d8ffb4d0160ad8f9a87ec6d31492ec3e]
+class repo.usp_sync_guid_RepoSchema--><rect codeLine="36" fill="#00FFFF" filter="url(#f1ms8jrsjy9k56)" height="54.8002" id="repo.usp_sync_guid_RepoSchema" style="stroke:#A80036;stroke-width:1.5;" width="190" x="566" y="62.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="652" y="79.5001">«P»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="184" x="569" y="93.9002">repo.usp_sync_guid_RepoSchema</text><line style="stroke:#A80036;stroke-width:1.5;" x1="567" x2="755" y1="101.3002" y2="101.3002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="567" x2="755" y1="109.3002" y2="109.3002"/><!--MD5=[fa213660b528d0152269e8f9a7f6ca52]
+class repo_sys.SysSchema--><rect codeLine="40" fill="#F5F5F5" filter="url(#f1ms8jrsjy9k56)" height="54.8002" id="repo_sys.SysSchema" style="stroke:#A80036;stroke-width:1.5;" width="120" x="50.5" y="110.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="101.5" y="127.5001">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="114" x="53.5" y="141.9002">repo_sys.SysSchema</text><line style="stroke:#A80036;stroke-width:1.5;" x1="51.5" x2="169.5" y1="149.3002" y2="149.3002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="51.5" x2="169.5" y1="157.3002" y2="157.3002"/><!--MD5=[c459d2b5dd71e696909e60dd79d4047f]
+reverse link repo.RepoSchema to repo.SysSchema_RepoSchema_via_name--><path codeLine="44" d="M219.08,60 C237.01,63.16 255.67,66.46 273.79,69.66 " fill="none" id="repo.RepoSchema-backto-repo.SysSchema_RepoSchema_via_name" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="214.04,59.11,222.2061,64.6159,218.9636,59.9806,223.599,56.7381,214.04,59.11" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[c08996e9db04ffac303e2ca57f56a998]
+reverse link repo.SysSchema_RepoSchema_via_name to repo.usp_sync_guid_RepoSchema--><path codeLine="45" d="M511.37,90 C529.57,90 548.11,90 565.65,90 " fill="none" id="repo.SysSchema_RepoSchema_via_name-backto-repo.usp_sync_guid_RepoSchema" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="506.25,90,515.25,94,511.25,90,515.25,86,506.25,90" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6978270b70130de6808738ff684160ff]
+reverse link repo_sys.SysSchema to repo.SysSchema_RepoSchema_via_name--><path codeLine="46" d="M175.69,126.9 C204.88,121.85 240.34,115.71 273.89,109.91 " fill="none" id="repo_sys.SysSchema-backto-repo.SysSchema_RepoSchema_via_name" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="170.69,127.76,180.2423,130.1588,175.6161,126.9033,178.8715,122.2771,170.69,127.76" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[5221ee7664f385c887b6f4f13f45c341]
+@startuml
+left to right direction
+'top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity repo.RepoSchema << U >> {
+  * **RepoSchema_guid** : uniqueidentifier
+  - -
+}
+
+entity repo.SysSchema_RepoSchema_via_name << V >> {
+  - -
+}
+
+entity repo.usp_sync_guid_RepoSchema << P >> {
+  - -
+}
+
+entity repo_sys.SysSchema << V >> {
+  - -
+}
+
+repo.RepoSchema <.. repo.SysSchema_RepoSchema_via_name
+repo.SysSchema_RepoSchema_via_name <.. repo.usp_sync_guid_RepoSchema
+repo_sys.SysSchema <.. repo.SysSchema_RepoSchema_via_name
+@enduml
+
+@startuml
+left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity repo.RepoSchema << U >> {
+  * **RepoSchema_guid** : uniqueidentifier
+  - -
+}
+
+entity repo.SysSchema_RepoSchema_via_name << V >> {
+  - -
+}
+
+entity repo.usp_sync_guid_RepoSchema << P >> {
+  - -
+}
+
+entity repo_sys.SysSchema << V >> {
+  - -
+}
+
+repo.RepoSchema <.. repo.SysSchema_RepoSchema_via_name
+repo.SysSchema_RepoSchema_via_name <.. repo.usp_sync_guid_RepoSchema
+repo_sys.SysSchema <.. repo.SysSchema_RepoSchema_via_name
+@enduml
+
+PlantUML version 1.2021.8(Sat Jun 26 08:20:59 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

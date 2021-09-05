@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="179px" preserveAspectRatio="none" style="width:555px;height:179px;background:#FFFFFF;" version="1.1" viewBox="0 0 555 179" width="555px" zoomAndPan="magnify"><defs><filter height="300%" id="f18eei1bspuj2s" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[ae5a7b321517953e686038259351a9a9]
+class config.SsasDatabasename--><rect codeLine="27" fill="#FFFFFF" filter="url(#f18eei1bspuj2s)" height="68.0001" id="config.SsasDatabasename" style="stroke:#A80036;stroke-width:1.5;" width="181" x="43" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="124" y="24.0001">«U»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="141" x="63" y="38.4002">config.SsasDatabasename</text><line style="stroke:#A80036;stroke-width:1.5;" x1="44" x2="223" y1="45.8002" y2="45.8002"/><ellipse cx="54" cy="56.8002" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="77" x="63" y="60.8001">databasename</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="75" x="143" y="60.8001">: nvarchar(128)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="44" x2="223" y1="67.0001" y2="67.0001"/><!--MD5=[58f46c78dd030499032462e12c2c6a31]
+class configT.SsasDmvTableImport_DmvColumnList--><rect codeLine="32" fill="#F5F5F5" filter="url(#f18eei1bspuj2s)" height="54.8002" id="configT.SsasDmvTableImport_DmvColumnList" style="stroke:#A80036;stroke-width:1.5;" width="253" x="7" y="110.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="124.5" y="127.5001">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="247" x="10" y="141.9002">configT.SsasDmvTableImport_DmvColumnList</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="259" y1="149.3002" y2="149.3002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="259" y1="157.3002" y2="157.3002"/><!--MD5=[54a126eee7b3291797f96a1624563323]
+class configT.SsasDmvTableImport_ImportSql--><rect codeLine="36" fill="#F5F5F5" filter="url(#f18eei1bspuj2s)" height="54.8002" id="configT.SsasDmvTableImport_ImportSql" style="stroke:#A80036;stroke-width:1.5;" width="221" x="320" y="62.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="421.5" y="79.5001">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="215" x="323" y="93.9002">configT.SsasDmvTableImport_ImportSql</text><line style="stroke:#A80036;stroke-width:1.5;" x1="321" x2="540" y1="101.3002" y2="101.3002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="321" x2="540" y1="109.3002" y2="109.3002"/><!--MD5=[771c71973109c4860ef5ee4f0722f78c]
+reverse link config.SsasDatabasename to configT.SsasDmvTableImport_ImportSql--><path codeLine="40" d="M229.19,56.73 C258.1,61.53 290.11,66.85 319.92,71.8 " fill="none" id="config.SsasDatabasename-backto-configT.SsasDmvTableImport_ImportSql" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="224.21,55.9,232.4401,61.3097,229.1435,56.7127,233.7405,53.4161,224.21,55.9" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b4538a889ba940487f2d98771707e6fb]
+reverse link configT.SsasDmvTableImport_DmvColumnList to configT.SsasDmvTableImport_ImportSql--><path codeLine="41" d="M265.18,116.74 C283.46,113.76 302.09,110.73 319.93,107.83 " fill="none" id="configT.SsasDmvTableImport_DmvColumnList-backto-configT.SsasDmvTableImport_ImportSql" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="260.03,117.57,269.5535,120.0807,264.9658,116.7711,268.2753,112.1834,260.03,117.57" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[7b8d9c2cb78b613cda490a1a19ad84ef]
+@startuml
+left to right direction
+'top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity config.SsasDatabasename << U >> {
+  * **databasename** : nvarchar(128)
+  - -
+}
+
+entity configT.SsasDmvTableImport_DmvColumnList << V >> {
+  - -
+}
+
+entity configT.SsasDmvTableImport_ImportSql << V >> {
+  - -
+}
+
+config.SsasDatabasename <.. configT.SsasDmvTableImport_ImportSql
+configT.SsasDmvTableImport_DmvColumnList <.. configT.SsasDmvTableImport_ImportSql
+@enduml
+
+@startuml
+left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity config.SsasDatabasename << U >> {
+  * **databasename** : nvarchar(128)
+  - -
+}
+
+entity configT.SsasDmvTableImport_DmvColumnList << V >> {
+  - -
+}
+
+entity configT.SsasDmvTableImport_ImportSql << V >> {
+  - -
+}
+
+config.SsasDatabasename <.. configT.SsasDmvTableImport_ImportSql
+configT.SsasDmvTableImport_DmvColumnList <.. configT.SsasDmvTableImport_ImportSql
+@enduml
+
+PlantUML version 1.2021.8(Sat Jun 26 08:20:59 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

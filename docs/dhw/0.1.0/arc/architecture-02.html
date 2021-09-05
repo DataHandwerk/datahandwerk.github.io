@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>02 Architecture Constraints :: DataHandwerk Docs</title>
     <link rel="canonical" href="https://DataHandwerk.github.io/dhw/0.1.0/arc/architecture-02.html">
-    <meta name="generator" content="Antora 2.3.4">
+    <meta name="generator" content="Antora 3.0.0-alpha.9">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <link rel="stylesheet" href="../../../_/css/custom.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4RM6Q8D27"></script>
@@ -69,7 +69,7 @@
   </li>
   <li class="nav-item" data-depth="0">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">DHW Repository</span>
+    <span class="nav-text">DHW Repository (database)</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
@@ -93,6 +93,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/config.Parameter.html">config.Parameter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/config.SsasDatabasename.html">config.SsasDatabasename</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/config.usp_connect_database.html">config.usp_connect_database</a>
@@ -125,6 +128,18 @@
     <a class="nav-link" href="../sqldb/configT.spt_values.html">configT.spt_values</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/configT.SsasDmv_ExplicitDataType.html">configT.SsasDmv_ExplicitDataType</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/configT.SsasDmvTableImport.html">configT.SsasDmvTableImport</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/configT.SsasDmvTableImport_DmvColumnList.html">configT.SsasDmvTableImport_DmvColumnList</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/configT.SsasDmvTableImport_ImportSql.html">configT.SsasDmvTableImport_ImportSql</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/configT.type.html">configT.type</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -153,45 +168,6 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/dbeaver.DataSources_DbSchemaTable_FK.html">dbeaver.DataSources_DbSchemaTable_FK</a>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../sqldb/nav/nav-schema-dbo.html">dbo</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/dbo.__RefactorLog.html">dbo.__RefactorLog</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/dbo.fn_diagramobjects.html">dbo.fn_diagramobjects</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/dbo.sp_alterdiagram.html">dbo.sp_alterdiagram</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/dbo.sp_creatediagram.html">dbo.sp_creatediagram</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/dbo.sp_dropdiagram.html">dbo.sp_dropdiagram</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/dbo.sp_helpdiagramdefinition.html">dbo.sp_helpdiagramdefinition</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/dbo.sp_helpdiagrams.html">dbo.sp_helpdiagrams</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/dbo.sp_renamediagram.html">dbo.sp_renamediagram</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/dbo.sp_upgraddiagrams.html">dbo.sp_upgraddiagrams</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/dbo.sysdiagrams.html">dbo.sysdiagrams</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/dbo.zzz.html">dbo.zzz</a>
   </li>
 </ul>
   </li>
@@ -242,6 +218,15 @@
     <a class="nav-link" href="../sqldb/docs.fs_cleanStringForLabel.html">docs.fs_cleanStringForLabel</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/docs.fs_cleanStringForPuml.html">docs.fs_cleanStringForPuml</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/docs.fs_PumlHeaderLeftToRight.html">docs.fs_PumlHeaderLeftToRight</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/docs.fs_PumlHeaderTopToBottom.html">docs.fs_PumlHeaderTopToBottom</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/docs.ftv_RepoObject_Reference_PlantUml_EntityRefList.html">docs.ftv_RepoObject_Reference_PlantUml_EntityRefList</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -261,6 +246,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/docs.RepoObject_ColumnList.html">docs.RepoObject_ColumnList</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/docs.RepoObject_ColumnList_T.html">docs.RepoObject_ColumnList_T</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/docs.RepoObject_IndexList.html">docs.RepoObject_IndexList</a>
@@ -305,6 +293,21 @@
     <a class="nav-link" href="../sqldb/docs.RepoObject_Plantuml_T.html">docs.RepoObject_Plantuml_T</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/docs.Schema_EntityList.html">docs.Schema_EntityList</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/docs.Schema_PlantUml_FkRefList.html">docs.Schema_PlantUml_FkRefList</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/docs.Schema_puml.html">docs.Schema_puml</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/docs.Schema_SsasRelationList.html">docs.Schema_SsasRelationList</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/docs.ssas_PumlRelation.html">docs.ssas_PumlRelation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/docs.usp_AntoraExport.html">docs.usp_AntoraExport</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -333,6 +336,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/docs.usp_PERSIST_RepoObject_Adoc_T.html">docs.usp_PERSIST_RepoObject_Adoc_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/docs.usp_PERSIST_RepoObject_ColumnList_T.html">docs.usp_PERSIST_RepoObject_ColumnList_T</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/docs.usp_PERSIST_RepoObject_IndexList_T.html">docs.usp_PERSIST_RepoObject_IndexList_T</a>
@@ -500,6 +506,12 @@
     <a class="nav-link" href="../sqldb/nav/nav-schema-reference.html">reference</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.additional_Reference.html">reference.additional_Reference</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.additional_Reference_guid.html">reference.additional_Reference_guid</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.ftv_query_plan_extract_source.html">reference.ftv_query_plan_extract_source</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -539,10 +551,19 @@
     <a class="nav-link" href="../sqldb/reference.ReferenceTree_cyclic_union.html">reference.ReferenceTree_cyclic_union</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.RepoObject_ExternalReferencedList.html">reference.RepoObject_ExternalReferencedList</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.RepoObject_ExternalReferencingList.html">reference.RepoObject_ExternalReferencingList</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.RepoObject_QueryPlan.html">reference.RepoObject_QueryPlan</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.RepoObject_reference.html">reference.RepoObject_reference</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.RepoObject_reference_additional_internal.html">reference.RepoObject_reference_additional_internal</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.RepoObject_reference_persistence.html">reference.RepoObject_reference_persistence</a>
@@ -612,6 +633,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.RepoObjectColumn_reference.html">reference.RepoObjectColumn_reference</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.RepoObjectColumn_reference_additional_internal.html">reference.RepoObjectColumn_reference_additional_internal</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.RepoObjectColumn_reference_BySamePredecessors.html">reference.RepoObjectColumn_reference_BySamePredecessors</a>
@@ -686,6 +710,9 @@
     <a class="nav-link" href="../sqldb/reference.usp_RepoObject_ReferenceTree.html">reference.usp_RepoObject_ReferenceTree</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/reference.usp_RepoObject_ReferenceTree_insert.html">reference.usp_RepoObject_ReferenceTree_insert</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/reference.usp_RepoObject_update_SysObjectQueryPlan.html">reference.usp_RepoObject_update_SysObjectQueryPlan</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -728,6 +755,18 @@
     <a class="nav-link" href="../sqldb/repo.ForeignKey_IndexPattern.html">repo.ForeignKey_IndexPattern</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.ForeignKey_ssas_Indexes.html">repo.ForeignKey_ssas_Indexes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.ForeignKey_ssas_Indexes_old.html">repo.ForeignKey_ssas_Indexes_old</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.ForeignKey_ssas_IndexPattern.html">repo.ForeignKey_ssas_IndexPattern</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.ForeignKey_ssas_IndexPattern_old.html">repo.ForeignKey_ssas_IndexPattern_old</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.ForeignKey_virtual.html">repo.ForeignKey_virtual</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -755,6 +794,15 @@
     <a class="nav-link" href="../sqldb/repo.Index_SqlConstraint_PkUq.html">repo.Index_SqlConstraint_PkUq</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.Index_ssas.html">repo.Index_ssas</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.Index_ssas_IndexPatternColumnGuid.html">repo.Index_ssas_IndexPatternColumnGuid</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.Index_ssas_T.html">repo.Index_ssas_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.Index_union.html">repo.Index_union</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -780,6 +828,15 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T.html">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.IndexColumn_ssas.html">repo.IndexColumn_ssas</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.IndexColumn_ssas_gross.html">repo.IndexColumn_ssas_gross</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.IndexColumn_ssas_T.html">repo.IndexColumn_ssas_T</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.IndexColumn_union.html">repo.IndexColumn_union</a>
@@ -818,6 +875,9 @@
     <a class="nav-link" href="../sqldb/repo.RepoObject_gross.html">repo.RepoObject_gross</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.RepoObject_gross2.html">repo.RepoObject_gross2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.RepoObject_persistence.html">repo.RepoObject_persistence</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -839,10 +899,22 @@
     <a class="nav-link" href="../sqldb/repo.RepoObject_SqlCreateTable.html">repo.RepoObject_SqlCreateTable</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.RepoObject_SSAS_src.html">repo.RepoObject_SSAS_src</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.RepoObject_SSAS_tgt.html">repo.RepoObject_SSAS_tgt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.RepoObject_wo_referencing.html">repo.RepoObject_wo_referencing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.RepoObjectColumn.html">repo.RepoObjectColumn</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.RepoObjectColumn_gross.html">repo.RepoObjectColumn_gross</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.RepoObjectColumn_gross2.html">repo.RepoObjectColumn_gross2</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.RepoObjectColumn_HistValidColums_setpoint.html">repo.RepoObjectColumn_HistValidColums_setpoint</a>
@@ -854,7 +926,19 @@
     <a class="nav-link" href="../sqldb/repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.html">repo.RepoObjectColumn_RequiredRepoObjectColumnMerge</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.RepoObjectColumn_SSAS_src.html">repo.RepoObjectColumn_SSAS_src</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.RepoObjectColumn_SSAS_tgt.html">repo.RepoObjectColumn_SSAS_tgt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.RepoSchema.html">repo.RepoSchema</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.RepoSchema_ssas_src.html">repo.RepoSchema_ssas_src</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.RepoSchema_ssas_tgt.html">repo.RepoSchema_ssas_tgt</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.SysColumn_RepoObjectColumn_via_guid.html">repo.SysColumn_RepoObjectColumn_via_guid</a>
@@ -896,7 +980,22 @@
     <a class="nav-link" href="../sqldb/repo.usp_PERSIST_ForeignKey_Indexes_union_T.html">repo.usp_PERSIST_ForeignKey_Indexes_union_T</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.usp_PERSIST_Index_ssas_T.html">repo.usp_PERSIST_Index_ssas_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.usp_PERSIST_IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T.html">repo.usp_PERSIST_IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.usp_PERSIST_IndexColumn_ssas_T.html">repo.usp_PERSIST_IndexColumn_ssas_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.usp_PERSIST_RepoObject_SSAS_tgt.html">repo.usp_PERSIST_RepoObject_SSAS_tgt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.usp_PERSIST_RepoObjectColumn_SSAS_tgt.html">repo.usp_PERSIST_RepoObjectColumn_SSAS_tgt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.usp_PERSIST_RepoSchema_ssas_tgt.html">repo.usp_PERSIST_RepoSchema_ssas_tgt</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.usp_persistence_set.html">repo.usp_persistence_set</a>
@@ -911,10 +1010,22 @@
     <a class="nav-link" href="../sqldb/repo.usp_sync_guid_RepoObject.html">repo.usp_sync_guid_RepoObject</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.usp_sync_guid_RepoObject_ssas.html">repo.usp_sync_guid_RepoObject_ssas</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.usp_sync_guid_RepoObjectColumn.html">repo.usp_sync_guid_RepoObjectColumn</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.usp_sync_guid_RepoObjectColumn_ssas.html">repo.usp_sync_guid_RepoObjectColumn_ssas</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.usp_sync_guid_RepoSchema.html">repo.usp_sync_guid_RepoSchema</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.usp_sync_guid_RepoSchema_ssas.html">repo.usp_sync_guid_RepoSchema_ssas</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.usp_sync_guid_ssas.html">repo.usp_sync_guid_ssas</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.usp_update_Referencing_Count.html">repo.usp_update_Referencing_Count</a>
@@ -1094,6 +1205,243 @@
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../sqldb/nav/nav-schema-ssas.html">ssas</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.IndexColumn_from_IsKey.html">ssas.IndexColumn_from_IsKey</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.IndexColumn_from_IsUnique.html">ssas.IndexColumn_from_IsUnique</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.IndexColumn_from_Relationship.html">ssas.IndexColumn_from_Relationship</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.IndexColumn_union.html">ssas.IndexColumn_union</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json.html">ssas.model_json</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_10.html">ssas.model_json_10</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_20.html">ssas.model_json_20</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_201_descriptions_multiline.html">ssas.model_json_201_descriptions_multiline</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_2011_descriptions_StrAgg.html">ssas.model_json_2011_descriptions_StrAgg</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_31_tables.html">ssas.model_json_31_tables</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_31_tables_T.html">ssas.model_json_31_tables_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_311_tables_columns.html">ssas.model_json_311_tables_columns</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_311_tables_columns_T.html">ssas.model_json_311_tables_columns_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_3111_tables_columns_descriptions_multiline.html">ssas.model_json_3111_tables_columns_descriptions_multiline</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_31111_tables_columns_descriptions_StrAgg.html">ssas.model_json_31111_tables_columns_descriptions_StrAgg</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_3112_tables_columns_expressions_multiline.html">ssas.model_json_3112_tables_columns_expressions_multiline</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_31121_tables_columns_expressions_StrAgg.html">ssas.model_json_31121_tables_columns_expressions_StrAgg</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_312_tables_measures.html">ssas.model_json_312_tables_measures</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_313_tables_partitions.html">ssas.model_json_313_tables_partitions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_3131_tables_partitions_source.html">ssas.model_json_3131_tables_partitions_source</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_314_tables_hierarchies.html">ssas.model_json_314_tables_hierarchies</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_3141_tables_hierarchies_levels.html">ssas.model_json_3141_tables_hierarchies_levels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_315_tables_annotations.html">ssas.model_json_315_tables_annotations</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_316_tables_descriptions_multiline.html">ssas.model_json_316_tables_descriptions_multiline</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_3161_tables_descriptions_StrAgg.html">ssas.model_json_3161_tables_descriptions_StrAgg</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_32_relationships.html">ssas.model_json_32_relationships</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_32_relationships_T.html">ssas.model_json_32_relationships_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_33_dataSources.html">ssas.model_json_33_dataSources</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_331_dataSources_annotations.html">ssas.model_json_331_dataSources_annotations</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_34_cultures.html">ssas.model_json_34_cultures</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_341_cultures_translations.html">ssas.model_json_341_cultures_translations</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_3411_cultures_translations_model.html">ssas.model_json_3411_cultures_translations_model</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_35_roles.html">ssas.model_json_35_roles</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_351_roles_members.html">ssas.model_json_351_roles_members</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_352_roles_tablePermissions.html">ssas.model_json_352_roles_tablePermissions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_36_perspectives.html">ssas.model_json_36_perspectives</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_361_perspectives_tables.html">ssas.model_json_361_perspectives_tables</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_3611_perspectives_tables_columns.html">ssas.model_json_3611_perspectives_tables_columns</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_3612_perspectives_tables_hierarchies.html">ssas.model_json_3612_perspectives_tables_hierarchies</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_3613_perspectives_tables_measures.html">ssas.model_json_3613_perspectives_tables_measures</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.model_json_ImportModelSql.html">ssas.model_json_ImportModelSql</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_ANNOTATIONS.html">ssas.TMSCHEMA_ANNOTATIONS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_ATTRIBUTE_HIERARCHIES.html">ssas.TMSCHEMA_ATTRIBUTE_HIERARCHIES</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_COLUMN_PERMISSIONS.html">ssas.TMSCHEMA_COLUMN_PERMISSIONS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_COLUMNS.html">ssas.TMSCHEMA_COLUMNS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_COLUMNS_T.html">ssas.TMSCHEMA_COLUMNS_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_CULTURES.html">ssas.TMSCHEMA_CULTURES</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_DATA_SOURCES.html">ssas.TMSCHEMA_DATA_SOURCES</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_DETAIL_ROWS_DEFINITIONS.html">ssas.TMSCHEMA_DETAIL_ROWS_DEFINITIONS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_EXPRESSIONS.html">ssas.TMSCHEMA_EXPRESSIONS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_EXTENDED_PROPERTIES.html">ssas.TMSCHEMA_EXTENDED_PROPERTIES</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_HIERARCHIES.html">ssas.TMSCHEMA_HIERARCHIES</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_KPIS.html">ssas.TMSCHEMA_KPIS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_LEVELS.html">ssas.TMSCHEMA_LEVELS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_MEASURES.html">ssas.TMSCHEMA_MEASURES</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_MODEL.html">ssas.TMSCHEMA_MODEL</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_OBJECT_TRANSLATIONS.html">ssas.TMSCHEMA_OBJECT_TRANSLATIONS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_PARTITIONS.html">ssas.TMSCHEMA_PARTITIONS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_PERSPECTIVE_COLUMNS.html">ssas.TMSCHEMA_PERSPECTIVE_COLUMNS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_PERSPECTIVE_HIERARCHIES.html">ssas.TMSCHEMA_PERSPECTIVE_HIERARCHIES</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_PERSPECTIVE_MEASURES.html">ssas.TMSCHEMA_PERSPECTIVE_MEASURES</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_PERSPECTIVE_TABLES.html">ssas.TMSCHEMA_PERSPECTIVE_TABLES</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_PERSPECTIVES.html">ssas.TMSCHEMA_PERSPECTIVES</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_RELATIONSHIPS.html">ssas.TMSCHEMA_RELATIONSHIPS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_RELATIONSHIPS_T.html">ssas.TMSCHEMA_RELATIONSHIPS_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_ROLE_MEMBERSHIPS.html">ssas.TMSCHEMA_ROLE_MEMBERSHIPS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_ROLES.html">ssas.TMSCHEMA_ROLES</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_TABLE_PERMISSIONS.html">ssas.TMSCHEMA_TABLE_PERMISSIONS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_TABLES.html">ssas.TMSCHEMA_TABLES</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_TABLES_T.html">ssas.TMSCHEMA_TABLES_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.TMSCHEMA_VARIATIONS.html">ssas.TMSCHEMA_VARIATIONS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.usp_PERSIST_model_json_31_tables_T.html">ssas.usp_PERSIST_model_json_31_tables_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.usp_PERSIST_model_json_311_tables_columns_T.html">ssas.usp_PERSIST_model_json_311_tables_columns_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.usp_PERSIST_model_json_32_relationships_T.html">ssas.usp_PERSIST_model_json_32_relationships_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.usp_PERSIST_TMSCHEMA_COLUMNS_T.html">ssas.usp_PERSIST_TMSCHEMA_COLUMNS_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.usp_PERSIST_TMSCHEMA_RELATIONSHIPS_T.html">ssas.usp_PERSIST_TMSCHEMA_RELATIONSHIPS_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/ssas.usp_PERSIST_TMSCHEMA_TABLES_T.html">ssas.usp_PERSIST_TMSCHEMA_TABLES_T</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../sqldb/nav/nav-schema-sys_dwh.html">sys_dwh</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -1247,9 +1595,6 @@
     <a class="nav-link" href="../sqldb/nav/nav-schema-workflow.html">workflow</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/workflow.B575429B-AC5E-43C2-9903-561A17C103CF.html">workflow.B575429B-AC5E-43C2-9903-561A17C103CF</a>
-  </li>
-  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/workflow.Biml_Connection.html">workflow.Biml_Connection</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -1319,6 +1664,9 @@
     <a class="nav-link" href="../sqldb/workflow.Workflow_ProcedureDependency_T_NotInSortorder.html">workflow.Workflow_ProcedureDependency_T_NotInSortorder</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/workflow.Workflow_ProcedureDependency_T_NotInSortorder_check.html">workflow.Workflow_ProcedureDependency_T_NotInSortorder_check</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/workflow.Workflow_ProcedureDependency_T_redundant.html">workflow.Workflow_ProcedureDependency_T_redundant</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -1326,6 +1674,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/workflow.Workflow_ProcedureDependency_wo_redundant.html">workflow.Workflow_ProcedureDependency_wo_redundant</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/workflow.Workflow_SqlUsp.html">workflow.Workflow_SqlUsp</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/workflow.Workflow_UspList.html">workflow.Workflow_UspList</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/workflow.WorkflowStep.html">workflow.WorkflowStep</a>
@@ -1347,55 +1701,55 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../sqldb/index/ObjectRefCyclic.html">Cyclic Object References</a>
+    <a class="nav-link" href="../sqldb/other/ObjectRefCyclic.html">Cyclic Object References</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../sqldb/index/IndexSemanticGroup.html">Index SemanticGroup</a>
+    <a class="nav-link" href="../sqldb/other/IndexSemanticGroup.html">Index SemanticGroup</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="0">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">Manual</span>
+    <span class="nav-text">User Guide</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../manual/create-update-connect-repo-db.html">Create, update and connect repository database</a>
+    <a class="nav-link" href="../user-guide/create-update-connect-repo-db.html">Create, update and connect repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../manual/backup-repo-db.html">Backup repository database</a>
+    <a class="nav-link" href="../user-guide/backup-repo-db.html">Backup repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../manual/sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
+    <a class="nav-link" href="../user-guide/sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../manual/sqlparser.html">SqlParser.py</a>
+    <a class="nav-link" href="../user-guide/sqlparser.html">SqlParser.py</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../manual/properties.html">Properties</a>
+    <a class="nav-link" href="../user-guide/properties.html">Properties</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../manual/properties-inheritance.html">Properties Inheritance</a>
+    <a class="nav-link" href="../user-guide/properties-inheritance.html">Properties Inheritance</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../manual/documentation-generator.html">Database documentation generator</a>
+    <a class="nav-link" href="../user-guide/documentation-generator.html">Database documentation generator</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../manual/execution-log.html">Execution log</a>
+    <a class="nav-link" href="../user-guide/execution-log.html">Execution log</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../manual/uspgenerator.html">usp generator</a>
+    <a class="nav-link" href="../user-guide/uspgenerator.html">usp generator</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../manual/persistence-generator.html">Persistence generator</a>
+    <a class="nav-link" href="../user-guide/persistence-generator.html">Persistence generator</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../manual/ssms-configuration.html">SSMS configuration</a>
+    <a class="nav-link" href="../user-guide/ssms-configuration.html">SSMS configuration</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../manual/analyticscreator.html">Import from AnalyticsCreator</a>
+    <a class="nav-link" href="../user-guide/analyticscreator.html">Import from AnalyticsCreator</a>
   </li>
 </ul>
   </li>
@@ -1442,8 +1796,18 @@
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>The project is based on Microsoft SQL Server (mssql):<br>
-SQL Server 2019 or above.</p>
+<p>The project is based on Microsoft SQL Server (mssql):</p>
+<div class="ulist">
+<ul>
+<li>
+<p>initial restriction: SQL Server 2019 or above.<br>
+because features of the Graph database were used, which are only available in SQL Server 2019.</p>
+</li>
+<li>
+<p>Features of graph database are no longer used due to insufficient support by Visual Studio database projects and by DACPAC containing data. It should therefore be possible to use older versions of SQL Server (not tested).</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
 <p>It must <strong>always</strong> be possible for BI developers to use <strong>all</strong> mssql and Azure features in DWH databases.</p>
@@ -1466,6 +1830,12 @@ SQL Server 2019 or above.</p>
 </li>
 <li>
 <p>The DWH database works without the repository and all traces of a repository can be removed (extended properties can be dropped).</p>
+</li>
+<li>
+<p>It is possible to connect to the DWH database in <strong>read-only mode</strong>, without writing back and using extended properties. In this case, the database can be documented, for example.</p>
+</li>
+<li>
+<p><strong>SSAS Tabular</strong> databases can only be documented. This requires at least compatibility level 1200, since from this version on the model definition is expressed in JSON.</p>
 </li>
 </ul>
 </div>

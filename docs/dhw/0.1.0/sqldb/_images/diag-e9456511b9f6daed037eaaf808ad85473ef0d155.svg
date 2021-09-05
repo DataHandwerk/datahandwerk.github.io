@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="75px" preserveAspectRatio="none" style="width:341px;height:75px;background:#FFFFFF;" version="1.1" viewBox="0 0 341 75" width="341px" zoomAndPan="magnify"><defs><filter height="300%" id="fptvku3407yxm" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[a07488a5fe404a212914d893d860276d]
+class repo_sys.SysColumn--><rect codeLine="27" fill="#F5F5F5" filter="url(#fptvku3407yxm)" height="54.8002" id="repo_sys.SysColumn" style="stroke:#A80036;stroke-width:1.5;" width="117" x="210" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="259.5" y="24.0001">«V»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="111" x="213" y="38.4002">repo_sys.SysColumn</text><line style="stroke:#A80036;stroke-width:1.5;" x1="211" x2="326" y1="45.8002" y2="45.8002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="211" x2="326" y1="53.8002" y2="53.8002"/><!--MD5=[1971bad57cc0bea05f9094e73f947d7f]
+class sys_dwh.identity_columns--><rect codeLine="31" fill="#FFFF00" filter="url(#fptvku3407yxm)" height="54.8002" id="sys_dwh.identity_columns" style="stroke:#A80036;stroke-width:1.5;" width="143" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="27" x="65" y="24.0001">«SN»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="137" x="10" y="38.4002">sys_dwh.identity_columns</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="149" y1="45.8002" y2="45.8002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="149" y1="53.8002" y2="53.8002"/><!--MD5=[b50b13c5ab26fbb2da26e69f02398827]
+reverse link sys_dwh.identity_columns to repo_sys.SysColumn--><path codeLine="35" d="M155.15,34.5 C173.35,34.5 192.51,34.5 209.75,34.5 " fill="none" id="sys_dwh.identity_columns-backto-repo_sys.SysColumn" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="150.04,34.5,159.04,38.5,155.04,34.5,159.04,30.5,150.04,34.5" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1dbbf4df58571bcf7dffae9372b1360a]
+@startuml
+left to right direction
+'top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity repo_sys.SysColumn << V >> {
+  - -
+}
+
+entity sys_dwh.identity_columns << SN >> {
+  - -
+}
+
+sys_dwh.identity_columns <.. repo_sys.SysColumn
+@enduml
+
+@startuml
+left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity repo_sys.SysColumn << V >> {
+  - -
+}
+
+entity sys_dwh.identity_columns << SN >> {
+  - -
+}
+
+sys_dwh.identity_columns <.. repo_sys.SysColumn
+@enduml
+
+PlantUML version 1.2021.8(Sat Jun 26 08:20:59 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

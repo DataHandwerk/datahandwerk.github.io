@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="149px" preserveAspectRatio="none" style="width:285px;height:149px;background:#FFFFFF;" version="1.1" viewBox="0 0 285 149" width="285px" zoomAndPan="magnify"><defs><filter height="300%" id="f1xxb6bg2rirjd" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[ceb5b9cdb9949e6e71b05513e87ae33f]
+class ssas.TMSCHEMA_PERSPECTIVE_COLUMNS--><rect codeLine="27" fill="#FFFFFF" filter="url(#f1xxb6bg2rirjd)" height="128.7997" id="ssas.TMSCHEMA_PERSPECTIVE_COLUMNS" style="stroke:#A80036;stroke-width:1.5;" width="264" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="129.5" y="24.0001">«U»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="258" x="10" y="38.4002">ssas.TMSCHEMA_PERSPECTIVE_COLUMNS</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="270" y1="45.8002" y2="45.8002"/><ellipse cx="18" cy="56.8002" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="77" x="27" y="60.8001">databasename</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="75" x="107" y="60.8001">: nvarchar(128)</text><ellipse cx="18" cy="70.0001" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="11" x="27" y="74">ID</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="77" x="41" y="74">: numeric(20, 0)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="270" y1="80.2" y2="80.2"/><ellipse cx="18" cy="91.2" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="27" y="95.1999">ColumnID : numeric(20, 0)</text><ellipse cx="18" cy="104.3999" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="114" x="27" y="108.3998">ModifiedTime : datetime</text><ellipse cx="18" cy="117.5998" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="174" x="27" y="121.5997">PerspectiveTableID : numeric(20, 0)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="270" y1="127.7997" y2="127.7997"/><!--MD5=[eaa9f2a784b3710eb06a599f74eac659]
+@startuml
+left to right direction
+'top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity ssas.TMSCHEMA_PERSPECTIVE_COLUMNS << U >> {
+  * **databasename** : nvarchar(128)
+  * **ID** : numeric(20, 0)
+  - -
+  * ColumnID : numeric(20, 0)
+  * ModifiedTime : datetime
+  * PerspectiveTableID : numeric(20, 0)
+  - -
+}
+@enduml
+
+@startuml
+left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity ssas.TMSCHEMA_PERSPECTIVE_COLUMNS << U >> {
+  * **databasename** : nvarchar(128)
+  * **ID** : numeric(20, 0)
+  - -
+  * ColumnID : numeric(20, 0)
+  * ModifiedTime : datetime
+  * PerspectiveTableID : numeric(20, 0)
+  - -
+}
+@enduml
+
+PlantUML version 1.2021.8(Sat Jun 26 08:20:59 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
