@@ -1,3 +1,3 @@
 Get-Date
-antora --fetch local-playbook.yml
+antora --fetch local-playbook.yml --stacktrace
 Get-Date

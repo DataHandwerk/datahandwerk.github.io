@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="430px" preserveAspectRatio="none" style="width:927px;height:430px;background:#FFFFFF;" version="1.1" viewBox="0 0 927 430" width="927px" zoomAndPan="magnify"><defs><filter height="300%" id="f14eohyx925k7l" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[8ed1504004dfd9581e2410813dd250b2]
+class repo.RepoSchema--><rect codeLine="27" fill="#FFFFFF" filter="url(#f14eohyx925k7l)" height="202.7992" id="repo.RepoSchema" style="stroke:#A80036;stroke-width:1.5;" width="262" x="9" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="130.5" y="24.0001">«U»</text><a href="https://DataHandwerk.github.io/dhw/0.1.0/sqldb/repo.RepoSchema.html" target="_top" title="https://DataHandwerk.github.io/dhw/0.1.0/sqldb/repo.RepoSchema.html" xlink:actuate="onRequest" xlink:href="https://DataHandwerk.github.io/dhw/0.1.0/sqldb/repo.RepoSchema.html" xlink:show="new" xlink:title="https://DataHandwerk.github.io/dhw/0.1.0/sqldb/repo.RepoSchema.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="97" x="91.5" y="38.4002">repo.RepoSchema</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="10" x2="270" y1="45.8002" y2="45.8002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="17" y="53.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="100" x="29" y="60.8001">RepoSchema_guid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="86" x="132" y="60.8001">: (uniqueidentifier)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="10" x2="270" y1="67.0001" y2="67.0001"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="17" y="75.0001"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="62" x="29" y="82">is_ssas : (bit)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="139" x="29" y="95.1999">is_SysSchema_missing : (bit)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="236" x="29" y="108.3998">RepoSchema_ms_description : (nvarchar(4000))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="17" y="114.5998"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="185" x="29" y="121.5997">RepoSchema_name : (nvarchar(128))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="99" x="29" y="134.7996">SysSchema_id : (int)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="17" y="140.9996"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="176" x="29" y="147.9995">SysSchema_name : (nvarchar(128))</text><polygon fill="#4177AF" points="20,153.1995,16,159.1995,24,159.1995" style="stroke:#1963A0;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="149" x="29" y="161.1994">has_different_sys_names : (bit)</text><polygon fill="#FFFF44" points="20,165.3994,24,169.3994,20,173.3994,16,169.3994" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="218" x="29" y="174.3993">is_RepoSchema_name_uniqueidentifier : (int)</text><polygon fill="#FFFF44" points="20,178.5993,24,182.5993,20,186.5993,16,182.5993" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="209" x="29" y="187.5992">is_SysSchema_name_uniqueidentifier : (int)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="10" x2="270" y1="193.7992" y2="193.7992"/><line style="stroke:#A80036;stroke-width:1.0;" x1="10" x2="270" y1="201.7992" y2="201.7992"/><!--MD5=[719e6d4ed56ff7b769a9db7488dacf17]
+class repo.RepoSchema_ssas_src--><rect codeLine="43" fill="#F5F5F5" filter="url(#f14eohyx925k7l)" height="136.7997" id="repo.RepoSchema_ssas_src" style="stroke:#A80036;stroke-width:1.5;" width="258" x="11" y="250.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="131" y="267.5001">«V»</text><a href="https://DataHandwerk.github.io/dhw/0.1.0/sqldb/repo.RepoSchema_ssas_src.html" target="_top" title="https://DataHandwerk.github.io/dhw/0.1.0/sqldb/repo.RepoSchema_ssas_src.html" xlink:actuate="onRequest" xlink:href="https://DataHandwerk.github.io/dhw/0.1.0/sqldb/repo.RepoSchema_ssas_src.html" xlink:show="new" xlink:title="https://DataHandwerk.github.io/dhw/0.1.0/sqldb/repo.RepoSchema_ssas_src.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="152" x="64" y="281.9002">repo.RepoSchema_ssas_src</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="12" x2="268" y1="289.3002" y2="289.3002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="19" y="297.3002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="105" x="31" y="304.3001">RepoSchema_name</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="83" x="139" y="304.3001">: (nvarchar(128))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="12" x2="268" y1="310.5001" y2="310.5001"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="19" y="318.5001"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="62" x="31" y="325.5">is_ssas : (int)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="19" y="331.7"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="139" x="31" y="338.6999">is_SysSchema_missing : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="232" x="31" y="351.8998">RepoSchema_ms_description : (nvarchar(max))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="19" y="358.0998"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="176" x="31" y="365.0997">SysSchema_name : (nvarchar(128))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="12" x2="268" y1="371.2997" y2="371.2997"/><line style="stroke:#A80036;stroke-width:1.0;" x1="12" x2="268" y1="379.2997" y2="379.2997"/><!--MD5=[26b33d74d578acfaf897e298e380b374]
+class repo.RepoSchema_ssas_tgt--><rect codeLine="54" fill="#F5F5F5" filter="url(#f14eohyx925k7l)" height="202.7992" id="repo.RepoSchema_ssas_tgt" style="stroke:#A80036;stroke-width:1.5;" width="258" x="347" y="64"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="467" y="81.0001">«V»</text><a href="https://DataHandwerk.github.io/dhw/0.1.0/sqldb/repo.RepoSchema_ssas_tgt.html" target="_top" title="https://DataHandwerk.github.io/dhw/0.1.0/sqldb/repo.RepoSchema_ssas_tgt.html" xlink:actuate="onRequest" xlink:href="https://DataHandwerk.github.io/dhw/0.1.0/sqldb/repo.RepoSchema_ssas_tgt.html" xlink:show="new" xlink:title="https://DataHandwerk.github.io/dhw/0.1.0/sqldb/repo.RepoSchema_ssas_tgt.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="149" x="401.5" y="95.4002">repo.RepoSchema_ssas_tgt</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="348" x2="604" y1="102.8002" y2="102.8002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="355" y="110.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="105" x="367" y="117.8001">RepoSchema_name</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="83" x="475" y="117.8001">: (nvarchar(128))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="348" x2="604" y1="124.0001" y2="124.0001"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="149" x="367" y="139">has_different_sys_names : (bit)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="355" y="145.2"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="218" x="367" y="152.1999">is_RepoSchema_name_uniqueidentifier : (int)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="355" y="158.3999"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="62" x="367" y="165.3998">is_ssas : (int)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="355" y="171.5998"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="139" x="367" y="178.5997">is_SysSchema_missing : (int)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="355" y="184.7997"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="209" x="367" y="191.7996">is_SysSchema_name_uniqueidentifier : (int)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="355" y="197.9996"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="181" x="367" y="204.9995">RepoSchema_guid : (uniqueidentifier)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="232" x="367" y="218.1994">RepoSchema_ms_description : (nvarchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="99" x="367" y="231.3993">SysSchema_id : (int)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="355" y="237.5993"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="176" x="367" y="244.5992">SysSchema_name : (nvarchar(128))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="348" x2="604" y1="250.7992" y2="250.7992"/><line style="stroke:#A80036;stroke-width:1.0;" x1="348" x2="604" y1="258.7992" y2="258.7992"/><!--MD5=[879df428e1d4a8ff2e22ee0154923151]
+class repo.usp_PERSIST_RepoSchema_ssas_tgt--><rect codeLine="70" fill="#00FFFF" filter="url(#f14eohyx925k7l)" height="70.8002" id="repo.usp_PERSIST_RepoSchema_ssas_tgt" style="stroke:#A80036;stroke-width:1.5;" width="240" x="673" y="128.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="784" y="145.5001">«P»</text><a href="https://DataHandwerk.github.io/dhw/0.1.0/sqldb/repo.usp_PERSIST_RepoSchema_ssas_tgt.html" target="_top" title="https://DataHandwerk.github.io/dhw/0.1.0/sqldb/repo.usp_PERSIST_RepoSchema_ssas_tgt.html" xlink:actuate="onRequest" xlink:href="https://DataHandwerk.github.io/dhw/0.1.0/sqldb/repo.usp_PERSIST_RepoSchema_ssas_tgt.html" xlink:show="new" xlink:title="https://DataHandwerk.github.io/dhw/0.1.0/sqldb/repo.usp_PERSIST_RepoSchema_ssas_tgt.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="234" x="676" y="159.9002">repo.usp_PERSIST_RepoSchema_ssas_tgt</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="674" x2="912" y1="167.3002" y2="167.3002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="674" x2="912" y1="175.3002" y2="175.3002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="674" x2="912" y1="183.3002" y2="183.3002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="674" x2="912" y1="191.3002" y2="191.3002"/><!--MD5=[e022536aa994514f731169654abd29da]
+reverse link repo.RepoSchema to repo.RepoSchema_ssas_tgt--><path codeLine="76" d="M284.36,131.47 C302.49,134.56 320.99,137.72 338.99,140.79 " fill="none" id="repo.RepoSchema-backto-repo.RepoSchema_ssas_tgt" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="279.26,130.6,287.4723,136.0367,284.1908,131.4289,288.7986,128.1475,279.26,130.6" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[ddbe11325d23d29b42dab36e59b7fb82]
+reverse link repo.RepoSchema_ssas_tgt to repo.RepoSchema--><path codeLine="78" d="M333.9,139.92 C315.81,136.83 297.31,133.67 279.26,130.6 " fill="none" id="repo.RepoSchema_ssas_tgt-backto-repo.RepoSchema" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="338.99,140.79,330.7931,135.3301,334.0615,139.9472,329.4445,143.2157,338.99,140.79" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e022536aa994514f731169654abd29da]
+reverse link repo.RepoSchema to repo.RepoSchema_ssas_tgt--><path codeLine="80" d="M277.01,154.84 C306.93,152.82 313.43,133 346,133 " fill="none" id="repo.RepoSchema-backto-repo.RepoSchema_ssas_tgt-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="272,155,281.1215,158.7145,276.9975,154.8425,280.8695,150.7185,272,155" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e022536aa994514f731169654abd29da]
+reverse link repo.RepoSchema to repo.RepoSchema_ssas_tgt--><path codeLine="81" d="M277.01,167.84 C306.93,165.82 313.43,146 346,146 " fill="none" id="repo.RepoSchema-backto-repo.RepoSchema_ssas_tgt-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="272,168,281.1215,171.7145,276.9975,167.8425,280.8695,163.7185,272,168" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e022536aa994514f731169654abd29da]
+reverse link repo.RepoSchema to repo.RepoSchema_ssas_tgt--><path codeLine="82" d="M277.2,76.33 C319.68,82.05 298.41,159 346,159 " fill="none" id="repo.RepoSchema-backto-repo.RepoSchema_ssas_tgt-3" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="272,76,280.7313,80.5567,276.9902,76.3137,281.2332,72.5725,272,76" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e022536aa994514f731169654abd29da]
+reverse link repo.RepoSchema to repo.RepoSchema_ssas_tgt--><path codeLine="83" d="M277.24,89.34 C319.96,95.12 298.09,173 346,173 " fill="none" id="repo.RepoSchema-backto-repo.RepoSchema_ssas_tgt-4" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="272,89,280.7305,93.5583,276.9901,89.3146,281.2338,85.5741,272,89" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e022536aa994514f731169654abd29da]
+reverse link repo.RepoSchema to repo.RepoSchema_ssas_tgt--><path codeLine="84" d="M277.19,181.04 C305.92,181.53 314.84,186 346,186 " fill="none" id="repo.RepoSchema-backto-repo.RepoSchema_ssas_tgt-5" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="272,181,280.977,185.0514,276.9999,181.0286,281.0227,177.0515,272,181" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e022536aa994514f731169654abd29da]
+reverse link repo.RepoSchema to repo.RepoSchema_ssas_tgt--><path codeLine="85" d="M277.21,55.27 C340.5,62.22 275.87,199 346,199 " fill="none" id="repo.RepoSchema-backto-repo.RepoSchema_ssas_tgt-6" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="272,55,280.7827,59.457,276.9934,55.2568,281.1936,51.4675,272,55" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e022536aa994514f731169654abd29da]
+reverse link repo.RepoSchema to repo.RepoSchema_ssas_tgt--><path codeLine="86" d="M277.23,102.32 C328.28,108.77 288.92,212 346,212 " fill="none" id="repo.RepoSchema-backto-repo.RepoSchema_ssas_tgt-7" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="272,102,280.7443,106.5318,276.991,102.2995,281.2234,98.5462,272,102" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e022536aa994514f731169654abd29da]
+reverse link repo.RepoSchema to repo.RepoSchema_ssas_tgt--><path codeLine="87" d="M277.19,115.97 C305.9,115.57 314.86,112 346,112 " fill="none" id="repo.RepoSchema-backto-repo.RepoSchema_ssas_tgt-8" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="272,116,281.0227,119.9485,276.9999,115.9714,280.977,111.9486,272,116" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e022536aa994514f731169654abd29da]
+reverse link repo.RepoSchema to repo.RepoSchema_ssas_tgt--><path codeLine="88" d="M277.08,129.31 C323.73,135.27 293.92,225 346,225 " fill="none" id="repo.RepoSchema-backto-repo.RepoSchema_ssas_tgt-9" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="272,129,280.7305,133.5583,276.9901,129.3146,281.2338,125.5741,272,129" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e022536aa994514f731169654abd29da]
+reverse link repo.RepoSchema to repo.RepoSchema_ssas_tgt--><path codeLine="89" d="M277.08,142.31 C323.73,148.27 293.92,238 346,238 " fill="none" id="repo.RepoSchema-backto-repo.RepoSchema_ssas_tgt-10" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="272,142,280.7305,146.5583,276.9901,142.3146,281.2338,138.5741,272,142" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b3cdb0ef724048818c57cc029e11a25f]
+reverse link repo.RepoSchema_ssas_src to repo.RepoSchema_ssas_tgt--><path codeLine="77" d="M282.1,252.94 C300.89,244.28 320.13,235.41 338.83,226.78 " fill="none" id="repo.RepoSchema_ssas_src-backto-repo.RepoSchema_ssas_tgt" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="277.33,255.14,287.1778,254.9944,281.8685,253.042,283.821,247.7328,277.33,255.14" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b3cdb0ef724048818c57cc029e11a25f]
+reverse link repo.RepoSchema_ssas_src to repo.RepoSchema_ssas_tgt--><path codeLine="90" d="M275.33,320.74 C345.73,313.5 268.33,159 346,159 " fill="none" id="repo.RepoSchema_ssas_src-backto-repo.RepoSchema_ssas_tgt-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="270,321,279.184,324.5574,274.9941,320.7567,278.7947,316.5669,270,321" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b3cdb0ef724048818c57cc029e11a25f]
+reverse link repo.RepoSchema_ssas_src to repo.RepoSchema_ssas_tgt--><path codeLine="91" d="M275.3,333.74 C345.36,326.54 268.73,173 346,173 " fill="none" id="repo.RepoSchema_ssas_src-backto-repo.RepoSchema_ssas_tgt-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="270,334,279.184,337.5574,274.9941,333.7567,278.7947,329.5669,270,334" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b3cdb0ef724048818c57cc029e11a25f]
+reverse link repo.RepoSchema_ssas_src to repo.RepoSchema_ssas_tgt--><path codeLine="92" d="M275,346.74 C335.8,340.23 278.89,212 346,212 " fill="none" id="repo.RepoSchema_ssas_src-backto-repo.RepoSchema_ssas_tgt-3" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="270,347,279.1941,350.5311,274.9934,346.7425,278.782,342.5417,270,347" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b3cdb0ef724048818c57cc029e11a25f]
+reverse link repo.RepoSchema_ssas_src to repo.RepoSchema_ssas_tgt--><path codeLine="93" d="M275.04,298.79 C355.75,291.77 258.04,112 346,112 " fill="none" id="repo.RepoSchema_ssas_src-backto-repo.RepoSchema_ssas_tgt-4" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="270,299,279.163,302.611,274.9954,298.7859,278.8205,294.6183,270,299" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b3cdb0ef724048818c57cc029e11a25f]
+reverse link repo.RepoSchema_ssas_src to repo.RepoSchema_ssas_tgt--><path codeLine="94" d="M275.32,359.69 C330.95,352.96 283.99,238 346,238 " fill="none" id="repo.RepoSchema_ssas_src-backto-repo.RepoSchema_ssas_tgt-5" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="270,360,279.2135,363.48,274.9919,359.7148,278.7571,355.4931,270,360" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[9565dcbdb49ec1c299542caa974a72ad]
+reverse link repo.RepoSchema_ssas_tgt to repo.usp_PERSIST_RepoSchema_ssas_tgt--><path codeLine="79" d="M618.44,164 C636.59,164 655.03,164 672.77,164 " fill="none" id="repo.RepoSchema_ssas_tgt-backto-repo.usp_PERSIST_RepoSchema_ssas_tgt" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="613.33,164,622.33,168,618.33,164,622.33,160,613.33,164" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="328" x="293" y="410.2997">to view a reduced diagram in original size and to be able to click on the links:</text><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="225" x="344.5" y="422.2997">open the diagram in a new tab via the Context menu.</text><!--MD5=[ef3f116e1a56f6e83db85119dad64acc]
+@startuml
+left to right direction
+'top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity "[[https://DataHandwerk.github.io/dhw/0.1.0/sqldb/repo.RepoSchema.html repo.RepoSchema]]" as repo.RepoSchema << U >> {
+  - **RepoSchema_guid** : (uniqueidentifier)
+  - -
+  - is_ssas : (bit)
+  is_SysSchema_missing : (bit)
+  RepoSchema_ms_description : (nvarchar(4000))
+  - RepoSchema_name : (nvarchar(128))
+  SysSchema_id : (int)
+  - SysSchema_name : (nvarchar(128))
+  ~ has_different_sys_names : (bit)
+  # is_RepoSchema_name_uniqueidentifier : (int)
+  # is_SysSchema_name_uniqueidentifier : (int)
+  - -
+  - -
+}
+
+entity "[[https://DataHandwerk.github.io/dhw/0.1.0/sqldb/repo.RepoSchema_ssas_src.html repo.RepoSchema_ssas_src]]" as repo.RepoSchema_ssas_src << V >> {
+  - **RepoSchema_name** : (nvarchar(128))
+  - -
+  - is_ssas : (int)
+  - is_SysSchema_missing : (int)
+  RepoSchema_ms_description : (nvarchar(max))
+  - SysSchema_name : (nvarchar(128))
+  - -
+  - -
+}
+
+entity "[[https://DataHandwerk.github.io/dhw/0.1.0/sqldb/repo.RepoSchema_ssas_tgt.html repo.RepoSchema_ssas_tgt]]" as repo.RepoSchema_ssas_tgt << V >> {
+  - **RepoSchema_name** : (nvarchar(128))
+  - -
+  has_different_sys_names : (bit)
+  - is_RepoSchema_name_uniqueidentifier : (int)
+  - is_ssas : (int)
+  - is_SysSchema_missing : (int)
+  - is_SysSchema_name_uniqueidentifier : (int)
+  - RepoSchema_guid : (uniqueidentifier)
+  RepoSchema_ms_description : (nvarchar(max))
+  SysSchema_id : (int)
+  - SysSchema_name : (nvarchar(128))
+  - -
+  - -
+}
+
+entity "[[https://DataHandwerk.github.io/dhw/0.1.0/sqldb/repo.usp_PERSIST_RepoSchema_ssas_tgt.html repo.usp_PERSIST_RepoSchema_ssas_tgt]]" as repo.usp_PERSIST_RepoSchema_ssas_tgt << P >> {
+  - -
+  - -
+  - -
+}
+
+repo.RepoSchema <.. repo.RepoSchema_ssas_tgt
+repo.RepoSchema_ssas_src <.. repo.RepoSchema_ssas_tgt
+repo.RepoSchema_ssas_tgt <.. repo.RepoSchema
+repo.RepoSchema_ssas_tgt <.. repo.usp_PERSIST_RepoSchema_ssas_tgt
+repo.RepoSchema::has_different_sys_names <- - repo.RepoSchema_ssas_tgt::has_different_sys_names
+repo.RepoSchema::is_RepoSchema_name_uniqueidentifier <- - repo.RepoSchema_ssas_tgt::is_RepoSchema_name_uniqueidentifier
+repo.RepoSchema::is_ssas <- - repo.RepoSchema_ssas_tgt::is_ssas
+repo.RepoSchema::is_SysSchema_missing <- - repo.RepoSchema_ssas_tgt::is_SysSchema_missing
+repo.RepoSchema::is_SysSchema_name_uniqueidentifier <- - repo.RepoSchema_ssas_tgt::is_SysSchema_name_uniqueidentifier
+repo.RepoSchema::RepoSchema_guid <- - repo.RepoSchema_ssas_tgt::RepoSchema_guid
+repo.RepoSchema::RepoSchema_ms_description <- - repo.RepoSchema_ssas_tgt::RepoSchema_ms_description
+repo.RepoSchema::RepoSchema_name <- - repo.RepoSchema_ssas_tgt::RepoSchema_name
+repo.RepoSchema::SysSchema_id <- - repo.RepoSchema_ssas_tgt::SysSchema_id
+repo.RepoSchema::SysSchema_name <- - repo.RepoSchema_ssas_tgt::SysSchema_name
+repo.RepoSchema_ssas_src::is_ssas <- - repo.RepoSchema_ssas_tgt::is_ssas
+repo.RepoSchema_ssas_src::is_SysSchema_missing <- - repo.RepoSchema_ssas_tgt::is_SysSchema_missing
+repo.RepoSchema_ssas_src::RepoSchema_ms_description <- - repo.RepoSchema_ssas_tgt::RepoSchema_ms_description
+repo.RepoSchema_ssas_src::RepoSchema_name <- - repo.RepoSchema_ssas_tgt::RepoSchema_name
+repo.RepoSchema_ssas_src::SysSchema_name <- - repo.RepoSchema_ssas_tgt::SysSchema_name
+footer
+to view a reduced diagram in original size and to be able to click on the links:
+open the diagram in a new tab via the Context menu.
+end footer
+@enduml
+
+@startuml
+left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity "[[https://DataHandwerk.github.io/dhw/0.1.0/sqldb/repo.RepoSchema.html repo.RepoSchema]]" as repo.RepoSchema << U >> {
+  - **RepoSchema_guid** : (uniqueidentifier)
+  - -
+  - is_ssas : (bit)
+  is_SysSchema_missing : (bit)
+  RepoSchema_ms_description : (nvarchar(4000))
+  - RepoSchema_name : (nvarchar(128))
+  SysSchema_id : (int)
+  - SysSchema_name : (nvarchar(128))
+  ~ has_different_sys_names : (bit)
+  # is_RepoSchema_name_uniqueidentifier : (int)
+  # is_SysSchema_name_uniqueidentifier : (int)
+  - -
+  - -
+}
+
+entity "[[https://DataHandwerk.github.io/dhw/0.1.0/sqldb/repo.RepoSchema_ssas_src.html repo.RepoSchema_ssas_src]]" as repo.RepoSchema_ssas_src << V >> {
+  - **RepoSchema_name** : (nvarchar(128))
+  - -
+  - is_ssas : (int)
+  - is_SysSchema_missing : (int)
+  RepoSchema_ms_description : (nvarchar(max))
+  - SysSchema_name : (nvarchar(128))
+  - -
+  - -
+}
+
+entity "[[https://DataHandwerk.github.io/dhw/0.1.0/sqldb/repo.RepoSchema_ssas_tgt.html repo.RepoSchema_ssas_tgt]]" as repo.RepoSchema_ssas_tgt << V >> {
+  - **RepoSchema_name** : (nvarchar(128))
+  - -
+  has_different_sys_names : (bit)
+  - is_RepoSchema_name_uniqueidentifier : (int)
+  - is_ssas : (int)
+  - is_SysSchema_missing : (int)
+  - is_SysSchema_name_uniqueidentifier : (int)
+  - RepoSchema_guid : (uniqueidentifier)
+  RepoSchema_ms_description : (nvarchar(max))
+  SysSchema_id : (int)
+  - SysSchema_name : (nvarchar(128))
+  - -
+  - -
+}
+
+entity "[[https://DataHandwerk.github.io/dhw/0.1.0/sqldb/repo.usp_PERSIST_RepoSchema_ssas_tgt.html repo.usp_PERSIST_RepoSchema_ssas_tgt]]" as repo.usp_PERSIST_RepoSchema_ssas_tgt << P >> {
+  - -
+  - -
+  - -
+}
+
+repo.RepoSchema <.. repo.RepoSchema_ssas_tgt
+repo.RepoSchema_ssas_src <.. repo.RepoSchema_ssas_tgt
+repo.RepoSchema_ssas_tgt <.. repo.RepoSchema
+repo.RepoSchema_ssas_tgt <.. repo.usp_PERSIST_RepoSchema_ssas_tgt
+repo.RepoSchema::has_different_sys_names <- - repo.RepoSchema_ssas_tgt::has_different_sys_names
+repo.RepoSchema::is_RepoSchema_name_uniqueidentifier <- - repo.RepoSchema_ssas_tgt::is_RepoSchema_name_uniqueidentifier
+repo.RepoSchema::is_ssas <- - repo.RepoSchema_ssas_tgt::is_ssas
+repo.RepoSchema::is_SysSchema_missing <- - repo.RepoSchema_ssas_tgt::is_SysSchema_missing
+repo.RepoSchema::is_SysSchema_name_uniqueidentifier <- - repo.RepoSchema_ssas_tgt::is_SysSchema_name_uniqueidentifier
+repo.RepoSchema::RepoSchema_guid <- - repo.RepoSchema_ssas_tgt::RepoSchema_guid
+repo.RepoSchema::RepoSchema_ms_description <- - repo.RepoSchema_ssas_tgt::RepoSchema_ms_description
+repo.RepoSchema::RepoSchema_name <- - repo.RepoSchema_ssas_tgt::RepoSchema_name
+repo.RepoSchema::SysSchema_id <- - repo.RepoSchema_ssas_tgt::SysSchema_id
+repo.RepoSchema::SysSchema_name <- - repo.RepoSchema_ssas_tgt::SysSchema_name
+repo.RepoSchema_ssas_src::is_ssas <- - repo.RepoSchema_ssas_tgt::is_ssas
+repo.RepoSchema_ssas_src::is_SysSchema_missing <- - repo.RepoSchema_ssas_tgt::is_SysSchema_missing
+repo.RepoSchema_ssas_src::RepoSchema_ms_description <- - repo.RepoSchema_ssas_tgt::RepoSchema_ms_description
+repo.RepoSchema_ssas_src::RepoSchema_name <- - repo.RepoSchema_ssas_tgt::RepoSchema_name
+repo.RepoSchema_ssas_src::SysSchema_name <- - repo.RepoSchema_ssas_tgt::SysSchema_name
+footer
+to view a reduced diagram in original size and to be able to click on the links:
+open the diagram in a new tab via the Context menu.
+end footer
+@enduml
+
+PlantUML version 1.2021.8(Sat Jun 26 08:20:59 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

@@ -37,6 +37,17 @@ asciidoc:
     # You can use the kroki-fetch-diagram option to download the images from Kroki at build time. In other words, while viewing pages you won't rely on Kroki anymore.
     # However, in Antora, this is not currently compatible with inline SVG images.
     # kroki-fetch-diagram: true
+    # required for interactive diagram, but it is good idea in general
+    kroki-default-format: svg
+    # Allow URI read to retrieve SVG on compilation
+    # nur nötig für interaktive Grafiken
+    allow-uri-read: true
+    # use SVG unless otherwise specified
+    # Make SVG inline so that we can get interactive (can be overridden by schema with "opts=none")
+    # Das Problem dabei: sie sind dann wirklich inline, meistens zu groß,
+    # und man kann sie nicht mehr in einem separaten Fenster öffnen, um sie vollständig zu sehen
+    # das wäre also nur sinnvoll, wenn sichergestellt wird, dass das Diagramm nicht zu groß ist.
+    # kroki-default-options: inline
   extensions:
   - asciidoctor-kroki
 ui:
@@ -52,6 +63,10 @@ output:
   clean: true
   dir: ./local
 urls:
-  redirect_facility: static
+  latest_version_segment: current
+  latest_version_segment_strategy: redirect:to
+  # latest_prerelease_version_segment: unstable
+  # # static is default
+  # redirect_facility: static
 runtime:
   fetch: true
