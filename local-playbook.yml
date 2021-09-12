@@ -64,9 +64,18 @@ output:
   dir: ./local
 urls:
   latest_version_segment: current
+  # no redirects will be created in combination with redirect_facility: static
+  # but this could be useful if the site would be published on netlify or gitlab
+  # but the required redirect logic is not supported on github
+  # 'redirect:to' will create 'current' instead of the latest version
+  # this would allow static link to the latest version, also on github
+  # but it will not work for renamed, added, deleted pages
   latest_version_segment_strategy: redirect:to
+#  latest_version_segment_strategy: replace
   # latest_prerelease_version_segment: unstable
   # # static is default
-  # redirect_facility: static
+  # 'redirect_facility: static' doesn't work for the latest version, no static pages are created
+  # a hoster like netlify would be required, then the value could be netlify
+  redirect_facility: netlify
 runtime:
   fetch: true

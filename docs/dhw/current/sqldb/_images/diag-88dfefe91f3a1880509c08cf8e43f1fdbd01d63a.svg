@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="131px" preserveAspectRatio="none" style="width:228px;height:131px;background:#FFFFFF;" version="1.1" viewBox="0 0 228 131" width="228px" zoomAndPan="magnify"><defs><filter height="300%" id="f1c1hbtgq304tf" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[2bdf0cb3260612b655ff0574a065796a]
+class ssas.model_json_34_cultures--><rect codeLine="27" fill="#F5F5F5" filter="url(#f1c1hbtgq304tf)" height="110.3999" id="ssas.model_json_34_cultures" style="stroke:#A80036;stroke-width:1.5;" width="207" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="101.5" y="24.0001">«V»</text><a href="https://DataHandwerk.github.io/dhw/current/sqldb/ssas.model_json_34_cultures.html" target="_top" title="https://DataHandwerk.github.io/dhw/current/sqldb/ssas.model_json_34_cultures.html" xlink:actuate="onRequest" xlink:href="https://DataHandwerk.github.io/dhw/current/sqldb/ssas.model_json_34_cultures.html" xlink:show="new" xlink:title="https://DataHandwerk.github.io/dhw/current/sqldb/ssas.model_json_34_cultures.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="156" x="32.5" y="38.4002">ssas.model_json_34_cultures</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="213" y1="45.8002" y2="45.8002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="53.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="77" x="27" y="60.8001">databasename</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="83" x="107" y="60.8001">: (nvarchar(128))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="78" x="27" y="74">cultures_name</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="83" x="108" y="74">: (nvarchar(500))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="213" y1="80.2" y2="80.2"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="195" x="13" y="95.1999">cultures_translations_j : (nvarchar(max))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="213" y1="101.3999" y2="101.3999"/><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="213" y1="109.3999" y2="109.3999"/><!--MD5=[c03b711e27379128eebd73e83838c5ba]
+@startuml
+'Left to right direction
+top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity "[[https://DataHandwerk.github.io/dhw/current/sqldb/ssas.model_json_34_cultures.html ssas.model_json_34_cultures]]" as ssas.model_json_34_cultures << V >> {
+  - **databasename** : (nvarchar(128))
+  **cultures_name** : (nvarchar(500))
+  - -
+  cultures_translations_j : (nvarchar(max))
+  - -
+  - -
+}
+@enduml
+
+@startuml
+top to bottom direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity "[[https://DataHandwerk.github.io/dhw/current/sqldb/ssas.model_json_34_cultures.html ssas.model_json_34_cultures]]" as ssas.model_json_34_cultures << V >> {
+  - **databasename** : (nvarchar(128))
+  **cultures_name** : (nvarchar(500))
+  - -
+  cultures_translations_j : (nvarchar(max))
+  - -
+  - -
+}
+@enduml
+
+PlantUML version 1.2021.8(Sat Jun 26 08:20:59 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

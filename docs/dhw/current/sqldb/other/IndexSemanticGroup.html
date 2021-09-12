@@ -2558,12 +2558,6 @@ nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../docs.ssas_PumlRelation.html#index-idx_ssas_PumlRelation_9" class="page">docs.ssas_PumlRelation - idx_ssas_PumlRelation__9</a><br>
-SchemaName<br>
-nvarchar(128)<br>
-PK, Unique, Real: 0, 0, 0</p>
-</li>
-<li>
 <p><a href="../docs.ssas_PumlRelation.html#index-idx_ssas_PumlRelation_1" class="page">docs.ssas_PumlRelation - idx_ssas_PumlRelation__1</a><br>
 referenced_ObjectName<br>
 nvarchar(128)<br>
@@ -2596,6 +2590,12 @@ PK, Unique, Real: 0, 0, 0</p>
 <li>
 <p><a href="../docs.ssas_PumlRelation.html#index-idx_ssas_PumlRelation_6" class="page">docs.ssas_PumlRelation - idx_ssas_PumlRelation__6</a><br>
 referencing_ColumnName<br>
+nvarchar(128)<br>
+PK, Unique, Real: 0, 0, 0</p>
+</li>
+<li>
+<p><a href="../docs.ssas_PumlRelation.html#index-idx_ssas_PumlRelation_9" class="page">docs.ssas_PumlRelation - idx_ssas_PumlRelation__9</a><br>
+SchemaName<br>
 nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
@@ -2654,7 +2654,19 @@ nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
+<p><a href="../property.RepoObjectColumnProperty_InheritanceType_resulting_InheritanceDefinition.html#index-idx_RepoObjectColumnProperty_InheritanceType_resulting_InheritanceDefinition_4" class="page">property.RepoObjectColumnProperty_InheritanceType_resulting_InheritanceDefinition - idx_RepoObjectColumnProperty_InheritanceType_resulting_InheritanceDefinition__4</a><br>
+property_name<br>
+nvarchar(128)<br>
+PK, Unique, Real: 0, 0, 0</p>
+</li>
+<li>
 <p><a href="../property.RepoObjectProperty_InheritanceType_InheritanceDefinition.html#index-idx_RepoObjectProperty_InheritanceType_InheritanceDefinition_3" class="page">property.RepoObjectProperty_InheritanceType_InheritanceDefinition - idx_RepoObjectProperty_InheritanceType_InheritanceDefinition__3</a><br>
+property_name<br>
+nvarchar(128)<br>
+PK, Unique, Real: 0, 0, 0</p>
+</li>
+<li>
+<p><a href="../property.RepoObjectProperty_InheritanceType_resulting_InheritanceDefinition.html#index-idx_RepoObjectProperty_InheritanceType_resulting_InheritanceDefinition_3" class="page">property.RepoObjectProperty_InheritanceType_resulting_InheritanceDefinition - idx_RepoObjectProperty_InheritanceType_resulting_InheritanceDefinition__3</a><br>
 property_name<br>
 nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
@@ -2847,25 +2859,25 @@ PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
 <p><a href="../repo.RepoObject_SSAS_src.html#index-idx_RepoObject_SSAS_src_4" class="page">repo.RepoObject_SSAS_src - idx_RepoObject_SSAS_src__4</a><br>
-SysObject_schema_name<br>
+RepoObject_schema_name<br>
 nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
 <p><a href="../repo.RepoObject_SSAS_src.html#index-idx_RepoObject_SSAS_src_5" class="page">repo.RepoObject_SSAS_src - idx_RepoObject_SSAS_src__5</a><br>
-RepoObject_schema_name<br>
+SysObject_schema_name<br>
 nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
 <p><a href="../repo.RepoObject_SSAS_tgt.html#index-idx_RepoObject_SSAS_tgt_5" class="page">repo.RepoObject_SSAS_tgt - idx_RepoObject_SSAS_tgt__5</a><br>
-RepoObject_schema_name<br>
+SysObject_schema_name<br>
 nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
 <p><a href="../repo.RepoObject_SSAS_tgt.html#index-idx_RepoObject_SSAS_tgt_6" class="page">repo.RepoObject_SSAS_tgt - idx_RepoObject_SSAS_tgt__6</a><br>
-SysObject_schema_name<br>
+RepoObject_schema_name<br>
 nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
@@ -4400,14 +4412,14 @@ uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../property.ExtendedProperty_Repo2Sys_level2_RepoObjectColumn.html#index-idx_ExtendedProperty_Repo2Sys_level2_RepoObjectColumn_2" class="page">property.ExtendedProperty_Repo2Sys_level2_RepoObjectColumn - idx_ExtendedProperty_Repo2Sys_level2_RepoObjectColumn__2</a><br>
-parent_RepoObject_guid<br>
+<p><a href="../property.ExtendedProperty_Repo2Sys_level2_RepoObjectColumn.html#index-idx_ExtendedProperty_Repo2Sys_level2_RepoObjectColumn_6" class="page">property.ExtendedProperty_Repo2Sys_level2_RepoObjectColumn - idx_ExtendedProperty_Repo2Sys_level2_RepoObjectColumn__6</a><br>
+RepoObjectColumn_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../property.ExtendedProperty_Repo2Sys_level2_RepoObjectColumn.html#index-idx_ExtendedProperty_Repo2Sys_level2_RepoObjectColumn_6" class="page">property.ExtendedProperty_Repo2Sys_level2_RepoObjectColumn - idx_ExtendedProperty_Repo2Sys_level2_RepoObjectColumn__6</a><br>
-RepoObjectColumn_guid<br>
+<p><a href="../property.ExtendedProperty_Repo2Sys_level2_RepoObjectColumn.html#index-idx_ExtendedProperty_Repo2Sys_level2_RepoObjectColumn_2" class="page">property.ExtendedProperty_Repo2Sys_level2_RepoObjectColumn - idx_ExtendedProperty_Repo2Sys_level2_RepoObjectColumn__2</a><br>
+parent_RepoObject_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
@@ -4725,13 +4737,13 @@ PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
 <p><a href="../reference.RepoObjectColumn_reference_SqlExpressionDependencies.html#index-idx_RepoObjectColumn_reference_SqlExpressionDependencies_2" class="page">reference.RepoObjectColumn_reference_SqlExpressionDependencies - idx_RepoObjectColumn_reference_SqlExpressionDependencies__2</a><br>
-referencing_RepoObjectColumn_guid<br>
+referenced_RepoObjectColumn_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
 <p><a href="../reference.RepoObjectColumn_reference_SqlExpressionDependencies.html#index-idx_RepoObjectColumn_reference_SqlExpressionDependencies_3" class="page">reference.RepoObjectColumn_reference_SqlExpressionDependencies - idx_RepoObjectColumn_reference_SqlExpressionDependencies__3</a><br>
-referenced_RepoObjectColumn_guid<br>
+referencing_RepoObjectColumn_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
@@ -5156,14 +5168,14 @@ uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../repo.RepoObject_gross2.html#index-idx_RepoObject_gross2_4" class="page">repo.RepoObject_gross2 - idx_RepoObject_gross2__4</a><br>
-pk_index_guid<br>
+<p><a href="../repo.RepoObject_gross2.html#index-idx_RepoObject_gross2_1" class="page">repo.RepoObject_gross2 - idx_RepoObject_gross2__1</a><br>
+RepoObject_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../repo.RepoObject_gross2.html#index-idx_RepoObject_gross2_1" class="page">repo.RepoObject_gross2 - idx_RepoObject_gross2__1</a><br>
-RepoObject_guid<br>
+<p><a href="../repo.RepoObject_gross2.html#index-idx_RepoObject_gross2_4" class="page">repo.RepoObject_gross2 - idx_RepoObject_gross2__4</a><br>
+pk_index_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
@@ -5234,16 +5246,16 @@ uniqueidentifier<br>
 PK, Unique, Real: 1, 1, 0</p>
 </li>
 <li>
-<p><a href="../repo.RepoObject_SSAS_tgt.html#index-idx_RepoObject_SSAS_tgt_4" class="page">repo.RepoObject_SSAS_tgt - idx_RepoObject_SSAS_tgt__4</a><br>
-pk_index_guid<br>
-uniqueidentifier<br>
-PK, Unique, Real: 0, 0, 0</p>
-</li>
-<li>
 <p><a href="../repo.RepoObject_SSAS_tgt.html#index-PK_RepoObject_SSAS_tgt" class="page">repo.RepoObject_SSAS_tgt - PK_RepoObject_SSAS_tgt</a><br>
 RepoObject_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 1, 1, 0</p>
+</li>
+<li>
+<p><a href="../repo.RepoObject_SSAS_tgt.html#index-idx_RepoObject_SSAS_tgt_4" class="page">repo.RepoObject_SSAS_tgt - idx_RepoObject_SSAS_tgt__4</a><br>
+pk_index_guid<br>
+uniqueidentifier<br>
+PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
 <p><a href="../repo.RepoObject_wo_referencing.html#index-idx_RepoObject_wo_referencing_1" class="page">repo.RepoObject_wo_referencing - idx_RepoObject_wo_referencing__1</a><br>
@@ -5282,14 +5294,8 @@ uniqueidentifier<br>
 PK, Unique, Real: 1, 1, 0</p>
 </li>
 <li>
-<p><a href="../repo.RepoObjectColumn_gross2.html#index-idx_RepoObjectColumn_gross2_9" class="page">repo.RepoObjectColumn_gross2 - idx_RepoObjectColumn_gross2__9</a><br>
-persistence_source_RepoObject_guid_via_Column<br>
-uniqueidentifier<br>
-PK, Unique, Real: 0, 0, 0</p>
-</li>
-<li>
-<p><a href="../repo.RepoObjectColumn_gross2.html#index-idx_RepoObjectColumn_gross2_4" class="page">repo.RepoObjectColumn_gross2 - idx_RepoObjectColumn_gross2__4</a><br>
-RepoObjectColumn_guid<br>
+<p><a href="../repo.RepoObjectColumn_gross2.html#index-idx_RepoObjectColumn_gross2_3" class="page">repo.RepoObjectColumn_gross2 - idx_RepoObjectColumn_gross2__3</a><br>
+pk_index_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
@@ -5300,8 +5306,14 @@ uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../repo.RepoObjectColumn_gross2.html#index-idx_RepoObjectColumn_gross2_3" class="page">repo.RepoObjectColumn_gross2 - idx_RepoObjectColumn_gross2__3</a><br>
-pk_index_guid<br>
+<p><a href="../repo.RepoObjectColumn_gross2.html#index-idx_RepoObjectColumn_gross2_9" class="page">repo.RepoObjectColumn_gross2 - idx_RepoObjectColumn_gross2__9</a><br>
+persistence_source_RepoObject_guid_via_Column<br>
+uniqueidentifier<br>
+PK, Unique, Real: 0, 0, 0</p>
+</li>
+<li>
+<p><a href="../repo.RepoObjectColumn_gross2.html#index-idx_RepoObjectColumn_gross2_4" class="page">repo.RepoObjectColumn_gross2 - idx_RepoObjectColumn_gross2__4</a><br>
+RepoObjectColumn_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
@@ -5457,13 +5469,13 @@ PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
 <p><a href="../repo_sys.sql_expression_dependencies.html#index-idx_sql_expression_dependencies_1" class="page">repo_sys.sql_expression_dependencies - idx_sql_expression_dependencies__1</a><br>
-referenced_RepoObjectColumn_guid<br>
+referencing_RepoObjectColumn_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
 <p><a href="../repo_sys.sql_expression_dependencies.html#index-idx_sql_expression_dependencies_2" class="page">repo_sys.sql_expression_dependencies - idx_sql_expression_dependencies__2</a><br>
-referencing_RepoObjectColumn_guid<br>
+referenced_RepoObjectColumn_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
@@ -6081,13 +6093,13 @@ PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
 <p><a href="../reference.RepoObjectColumn_reference_virtual.html#index-idx_RepoObjectColumn_reference_virtual_5" class="page">reference.RepoObjectColumn_reference_virtual - idx_RepoObjectColumn_reference_virtual__5</a><br>
-referenced_RepoObjectColumn_guid,referencing_column_name<br>
+referencing_RepoObjectColumn_guid,referencing_column_name<br>
 uniqueidentifier,nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
 <p><a href="../reference.RepoObjectColumn_reference_virtual.html#index-idx_RepoObjectColumn_reference_virtual_6" class="page">reference.RepoObjectColumn_reference_virtual - idx_RepoObjectColumn_reference_virtual__6</a><br>
-referencing_RepoObjectColumn_guid,referenced_column_name<br>
+referenced_RepoObjectColumn_guid,referenced_column_name<br>
 uniqueidentifier,nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
@@ -6104,14 +6116,14 @@ uniqueidentifier,nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../repo.RepoObjectColumn.html#index-UK_RepoObjectColumn_RepoNames" class="page">repo.RepoObjectColumn - UK_RepoObjectColumn__RepoNames</a><br>
-RepoObject_guid,RepoObjectColumn_name<br>
+<p><a href="../repo.RepoObjectColumn.html#index-UK_RepoObjectColumn_SysNames" class="page">repo.RepoObjectColumn - UK_RepoObjectColumn__SysNames</a><br>
+RepoObjectColumn_guid,SysObjectColumn_name<br>
 uniqueidentifier,nvarchar(128)<br>
 PK, Unique, Real: 0, 1, 1</p>
 </li>
 <li>
-<p><a href="../repo.RepoObjectColumn.html#index-UK_RepoObjectColumn_SysNames" class="page">repo.RepoObjectColumn - UK_RepoObjectColumn__SysNames</a><br>
-RepoObjectColumn_guid,SysObjectColumn_name<br>
+<p><a href="../repo.RepoObjectColumn.html#index-UK_RepoObjectColumn_RepoNames" class="page">repo.RepoObjectColumn - UK_RepoObjectColumn__RepoNames</a><br>
+RepoObject_guid,RepoObjectColumn_name<br>
 uniqueidentifier,nvarchar(128)<br>
 PK, Unique, Real: 0, 1, 1</p>
 </li>
@@ -6152,14 +6164,14 @@ uniqueidentifier,nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.html#index-idx_RepoObjectColumn_RequiredRepoObjectColumnMerge_4" class="page">repo.RepoObjectColumn_RequiredRepoObjectColumnMerge - idx_RepoObjectColumn_RequiredRepoObjectColumnMerge__4</a><br>
-RepoObject_guid,RepoObjectColumn_name<br>
+<p><a href="../repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.html#index-idx_RepoObjectColumn_RequiredRepoObjectColumnMerge_2" class="page">repo.RepoObjectColumn_RequiredRepoObjectColumnMerge - idx_RepoObjectColumn_RequiredRepoObjectColumnMerge__2</a><br>
+RepoObjectColumn_guid,SysObjectColumn_name<br>
 uniqueidentifier,nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.html#index-idx_RepoObjectColumn_RequiredRepoObjectColumnMerge_2" class="page">repo.RepoObjectColumn_RequiredRepoObjectColumnMerge - idx_RepoObjectColumn_RequiredRepoObjectColumnMerge__2</a><br>
-RepoObjectColumn_guid,SysObjectColumn_name<br>
+<p><a href="../repo.RepoObjectColumn_RequiredRepoObjectColumnMerge.html#index-idx_RepoObjectColumn_RequiredRepoObjectColumnMerge_4" class="page">repo.RepoObjectColumn_RequiredRepoObjectColumnMerge - idx_RepoObjectColumn_RequiredRepoObjectColumnMerge__4</a><br>
+RepoObject_guid,RepoObjectColumn_name<br>
 uniqueidentifier,nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>

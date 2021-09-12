@@ -1878,7 +1878,7 @@ V
 (
 view
 ), modify_date:
-2021-08-17 18:49:49</p>
+2021-09-12 10:22:52</p>
 </div>
 <div class="paragraph">
 <p>RepoObject_guid:
@@ -1897,7 +1897,7 @@ view
 <div class="sectionbody">
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-ebbe56e58261b46ae972676e65cafae1319e70ca.svg" alt="entity-docs.ObjectRefCyclic">
+<img src="_images/diag-2eced2baafa1a14c27e5d8973b2dd305607498ab.svg" alt="entity-docs.ObjectRefCyclic">
 </div>
 </div>
 <div class="dlist">
@@ -1962,7 +1962,7 @@ view
 <div class="sectionbody">
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-161fb09f1baec03eec8b2d2f9e76b201e6088e2f.svg" alt="entity_1_1_fk-docs.ObjectRefCyclic">
+<img src="_images/diag-b4acc817286f90a783ffc4972cb6476e307f4732.svg" alt="entity_1_1_fk-docs.ObjectRefCyclic">
 </div>
 </div>
 </div>
@@ -1978,6 +1978,9 @@ view
 <p><a href="config.ftv_get_parameter_value.html" class="page">config.ftv_get_parameter_value</a></p>
 </li>
 <li>
+<p><a href="docs.fs_PumlHeaderTopToBottom.html" class="page">docs.fs_PumlHeaderTopToBottom</a></p>
+</li>
+<li>
 <p><a href="docs.ObjectRefCyclic_EntityList.html" class="page">docs.ObjectRefCyclic_EntityList</a></p>
 </li>
 <li>
@@ -1990,7 +1993,7 @@ view
 <h3 id="_object_reference_diagram_1_1"><a class="anchor" href="#_object_reference_diagram_1_1"></a>Object Reference Diagram - 1 1</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-1d1949da5b5d293c68e4a14b53472e6c7fbaa881.svg" alt="entity_1_1_objectref-docs.ObjectRefCyclic">
+<img src="_images/diag-e534c059e74710f6ee6a2ea777c88b0acb13e22e.svg" alt="entity_1_1_objectref-docs.ObjectRefCyclic">
 </div>
 </div>
 </div>
@@ -1998,7 +2001,7 @@ view
 <h3 id="_object_reference_diagram_referenced_30_0"><a class="anchor" href="#_object_reference_diagram_referenced_30_0"></a>Object Reference Diagram - Referenced - 30 0</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-ef6789fc422c97aa22fab31bf8e6c29e14258f31.svg" alt="entity_30_0_objectref-docs.ObjectRefCyclic">
+<img src="_images/diag-53c92b718638e9f097502df4995066e678a9e537.svg" alt="entity_30_0_objectref-docs.ObjectRefCyclic">
 </div>
 </div>
 </div>
@@ -2006,7 +2009,7 @@ view
 <h3 id="_object_reference_diagram_referencing_0_30"><a class="anchor" href="#_object_reference_diagram_referencing_0_30"></a>Object Reference Diagram - Referencing - 0 30</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-09447c359926e6f261e6ffb389c756317677f10a.svg" alt="entity_0_30_objectref-docs.ObjectRefCyclic">
+<img src="_images/diag-3c9306468ab0fdf1268e03fa930bd334c1337520.svg" alt="entity_0_30_objectref-docs.ObjectRefCyclic">
 </div>
 </div>
 </div>
@@ -2014,7 +2017,7 @@ view
 <h3 id="_column_reference_diagram"><a class="anchor" href="#_column_reference_diagram"></a>Column Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-65948dcacd5df757620ccbe77207e830ddac30f6.svg" alt="entity_1_1_colref-docs.ObjectRefCyclic">
+<img src="_images/diag-de573388efd3c54be095906f2c913cb823fbf4d2.svg" alt="entity_1_1_colref-docs.ObjectRefCyclic">
 </div>
 </div>
 </div>
@@ -2097,7 +2100,7 @@ Select
              , '== Object Reference Diagram - Cyclic'
              , Char ( 13 ) + Char ( 10 )
              , '
-[plantuml, ObjectRefCyclic, svg]
+[plantuml, ObjectRefCyclic, svg, subs=attributes]
 ....
 include::partial$puml/ObjectRefCyclic.puml[]
 ....
@@ -2106,27 +2109,18 @@ include::partial$puml/ObjectRefCyclic.puml[]
   , ObjectRefCyclic_Puml =
   --
   Concat (
-             --'left to right direction'
-             'top to bottom direction'
-           , Char ( 13 ) + Char ( 10 )
-           , 'hide circle'
-           , Char ( 13 ) + Char ( 10 )
-           , '''avoide "." issues:'
-           , Char ( 13 ) + Char ( 10 )
-           , 'set namespaceSeparator none'
-           , Char ( 13 ) + Char ( 10 )
-           , Char ( 13 ) + Char ( 10 )
-           , skin.Parameter_value_result
-           , Char ( 13 ) + Char ( 10 )
-           , Char ( 13 ) + Char ( 10 )
+             '@startuml' + Char ( 13 ) + Char ( 10 )
+           , docs.fs_PumlHeaderTopToBottom ()
            , elist.PumlEntityOnlyPkList
            , Char ( 13 ) + Char ( 10 )
            , olist.PumlObjectRefList
+           , puml_footer.Parameter_value_result
+           , Char ( 13 ) + Char ( 10 ) + '@enduml' + Char ( 13 ) + Char ( 10 )
          )
 From
     docs.ObjectRefCyclic_EntityList               As elist
     Cross Join docs.ObjectRefCyclic_ObjectRefList As olist
-    Cross Join config.ftv_get_parameter_value ( 'puml_skinparam_class', '' ) As skin</code></pre>
+    Cross Join config.ftv_get_parameter_value ( 'puml_footer', '' ) As puml_footer</code></pre>
 </div>
 </div>
 </div>
