@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="305px" preserveAspectRatio="none" style="width:335px;height:305px;background:#FFFFFF;" version="1.1" viewBox="0 0 335 305" width="335px" zoomAndPan="magnify"><defs><filter height="300%" id="f1wtvxddf3vws5" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[5ff65e6af567883318789a01620c8d1a]
+class reference.Persistence_bidirectional--><rect codeLine="27" fill="#F5F5F5" filter="url(#f1wtvxddf3vws5)" height="261.199" id="reference.Persistence_bidirectional" style="stroke:#A80036;stroke-width:1.5;" width="236" x="46" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="155" y="24.0001">«V»</text><a href="../reference.Persistence_bidirectional.html" target="_top" title="../reference.Persistence_bidirectional.html" xlink:actuate="onRequest" xlink:href="../reference.Persistence_bidirectional.html" xlink:show="new" xlink:title="../reference.Persistence_bidirectional.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="181" x="73.5" y="38.4002">reference.Persistence_bidirectional</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="47" x2="281" y1="45.8002" y2="45.8002"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="54" y="53.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="156" x="66" y="60.8001">idx_Persistence_bidirectional__1</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="0" x="69" y="74"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="47" x2="281" y1="80.2" y2="80.2"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="222" x="52" y="95.1999">referenced_RepoObject_guid; uniqueidentifier</text><line style="stroke:#A80036;stroke-width:1.0;" x1="47" x2="281" y1="101.3999" y2="101.3999"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="54" y="109.3999"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="156" x="66" y="116.3998">idx_Persistence_bidirectional__2</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="0" x="69" y="129.5997"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="47" x2="281" y1="135.7997" y2="135.7997"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="224" x="52" y="150.7996">referencing_RepoObject_guid; uniqueidentifier</text><line style="stroke:#A80036;stroke-width:1.0;" x1="47" x2="281" y1="156.9996" y2="156.9996"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="54" y="164.9996"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="156" x="66" y="171.9995">idx_Persistence_bidirectional__3</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="0" x="69" y="185.1994"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="47" x2="281" y1="191.3994" y2="191.3994"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="205" x="52" y="206.3993">referenced_schema_name; nvarchar(128)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="47" x2="281" y1="212.5993" y2="212.5993"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="54" y="220.5993"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="156" x="66" y="227.5992">idx_Persistence_bidirectional__4</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="0" x="69" y="240.7991"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="47" x2="281" y1="246.9991" y2="246.9991"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="207" x="52" y="261.999">referencing_schema_name; nvarchar(128)</text><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="328" x="0" y="285.199">to view a reduced diagram in original size and to be able to click on the links:</text><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="225" x="51.5" y="297.199">open the diagram in a new tab via the Context menu.</text><!--MD5=[694e72a508ea3778e993af846bf91c35]
+@startuml
+left to right direction
+'top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity "[[../reference.Persistence_bidirectional.html reference.Persistence_bidirectional]]" as reference.Persistence_bidirectional << V >> {
+- idx_Persistence_bidirectional__1
+
+..
+referenced_RepoObject_guid; uniqueidentifier
+- -
+- idx_Persistence_bidirectional__2
+
+..
+referencing_RepoObject_guid; uniqueidentifier
+- -
+- idx_Persistence_bidirectional__3
+
+..
+referenced_schema_name; nvarchar(128)
+- -
+- idx_Persistence_bidirectional__4
+
+..
+referencing_schema_name; nvarchar(128)
+}
+
+
+footer
+to view a reduced diagram in original size and to be able to click on the links:
+open the diagram in a new tab via the Context menu.
+end footer
+@enduml
+
+@startuml
+left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity "[[../reference.Persistence_bidirectional.html reference.Persistence_bidirectional]]" as reference.Persistence_bidirectional << V >> {
+- idx_Persistence_bidirectional__1
+
+..
+referenced_RepoObject_guid; uniqueidentifier
+- -
+- idx_Persistence_bidirectional__2
+
+..
+referencing_RepoObject_guid; uniqueidentifier
+- -
+- idx_Persistence_bidirectional__3
+
+..
+referenced_schema_name; nvarchar(128)
+- -
+- idx_Persistence_bidirectional__4
+
+..
+referencing_schema_name; nvarchar(128)
+}
+
+
+footer
+to view a reduced diagram in original size and to be able to click on the links:
+open the diagram in a new tab via the Context menu.
+end footer
+@enduml
+
+PlantUML version 1.2021.8(Sat Jun 26 08:20:59 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

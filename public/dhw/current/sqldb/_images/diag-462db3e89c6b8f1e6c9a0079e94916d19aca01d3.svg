@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="184px" preserveAspectRatio="none" style="width:235px;height:184px;background:#FFFFFF;" version="1.1" viewBox="0 0 235 184" width="235px" zoomAndPan="magnify"><defs><filter height="300%" id="f1suabsjp16405" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[5864387253309ac304b56f41b2fe6ef0]
+class ssas.TMSCHEMA_CULTURES--><rect codeLine="27" fill="#FFFFFF" filter="url(#f1suabsjp16405)" height="163.1995" id="ssas.TMSCHEMA_CULTURES" style="stroke:#A80036;stroke-width:1.5;" width="214" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="104.5" y="24.0001">«U»</text><a href="../ssas.TMSCHEMA_CULTURES.html" target="_top" title="../ssas.TMSCHEMA_CULTURES.html" xlink:actuate="onRequest" xlink:href="../ssas.TMSCHEMA_CULTURES.html" xlink:show="new" xlink:title="../ssas.TMSCHEMA_CULTURES.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="172" x="28" y="38.4002">ssas.TMSCHEMA_CULTURES</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="220" y1="45.8002" y2="45.8002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="53.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="77" x="27" y="60.8001">databasename</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="83" x="107" y="60.8001">: (nvarchar(128))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="67.0001"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="11" x="27" y="74">ID</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="85" x="41" y="74">: (numeric(20, 0))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="220" y1="80.2" y2="80.2"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="188" x="27" y="95.1999">LinguisticMetadataID : (numeric(20, 0))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="101.3999"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="27" y="108.3998">ModelID : (numeric(20, 0))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="114.5998"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="122" x="27" y="121.5997">ModifiedTime : (datetime)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="127.7997"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="117" x="27" y="134.7996">Name : (nvarchar(max))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="140.9996"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="167" x="27" y="147.9995">StructureModifiedTime : (datetime)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="220" y1="154.1995" y2="154.1995"/><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="220" y1="162.1995" y2="162.1995"/><!--MD5=[c441c94ac1217099c133274bc3f917dd]
+@startuml
+'Left to right direction
+top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity "[[../ssas.TMSCHEMA_CULTURES.html ssas.TMSCHEMA_CULTURES]]" as ssas.TMSCHEMA_CULTURES << U >> {
+  - **databasename** : (nvarchar(128))
+  - **ID** : (numeric(20, 0))
+  - -
+  LinguisticMetadataID : (numeric(20, 0))
+  - ModelID : (numeric(20, 0))
+  - ModifiedTime : (datetime)
+  - Name : (nvarchar(max))
+  - StructureModifiedTime : (datetime)
+  - -
+  - -
+}
+@enduml
+
+@startuml
+top to bottom direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity "[[../ssas.TMSCHEMA_CULTURES.html ssas.TMSCHEMA_CULTURES]]" as ssas.TMSCHEMA_CULTURES << U >> {
+  - **databasename** : (nvarchar(128))
+  - **ID** : (numeric(20, 0))
+  - -
+  LinguisticMetadataID : (numeric(20, 0))
+  - ModelID : (numeric(20, 0))
+  - ModifiedTime : (datetime)
+  - Name : (nvarchar(max))
+  - StructureModifiedTime : (datetime)
+  - -
+  - -
+}
+@enduml
+
+PlantUML version 1.2021.8(Sat Jun 26 08:20:59 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

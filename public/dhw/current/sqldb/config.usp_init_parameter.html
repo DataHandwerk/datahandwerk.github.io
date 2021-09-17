@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>config.usp_init_parameter :: DataHandwerk Docs</title>
-    <link rel="canonical" href="https://DataHandwerk.github.io/dhw/current/sqldb/config.usp_init_parameter.html">
+    <link rel="canonical" href="https://datahandwerk.gitlab.io/dhw/current/sqldb/config.usp_init_parameter.html">
     <link rel="prev" href="config.usp_connect_database.html">
     <link rel="next" href="config.usp_parameter_set.html">
     <meta name="generator" content="Antora 3.0.0-alpha.9">
@@ -18,7 +18,7 @@
 <header class="header">
   <nav class="navbar">
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://DataHandwerk.github.io">DataHandwerk Docs</a>
+      <a class="navbar-item" href="https://datahandwerk.gitlab.io">DataHandwerk Docs</a>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -27,7 +27,6 @@
     </div>
     <div id="topbar-nav" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item" href="">Home</a>
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link" href="#">Resources</a>
           <div class="navbar-dropdown">
@@ -1909,16 +1908,8 @@ stored procedure
 <div class="sectionbody">
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-b7e77145faadbdcf93344d508dd48b60fd93d721.svg" alt="entity-config.usp_init_parameter">
+<object type="image/svg+xml" data="_images/diag-e6e7f64d98e6408a23f77cf3efde854ec19d7713.svg"><span class="alt">entity-config.usp_init_parameter</span></object>
 </div>
-</div>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Dot prefix</dt>
-<dd>
-<p><code>NOT NULL</code></p>
-</dd>
-</dl>
 </div>
 <div class="paragraph">
 <p>todo: several entities (left to right), containing SSAS translations</p>
@@ -1955,7 +1946,7 @@ stored procedure
 <h3 id="_object_reference_diagram_1_1"><a class="anchor" href="#_object_reference_diagram_1_1"></a>Object Reference Diagram - 1 1</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-2e8b23253a56494fe51dbabe03531d55aafc4718.svg" alt="entity_1_1_objectref-config.usp_init_parameter">
+<object type="image/svg+xml" data="_images/diag-4f4d8c43befa1cd4a89e1122d27fee5a17563529.svg"><span class="alt">entity_1_1_objectref-config.usp_init_parameter</span></object>
 </div>
 </div>
 </div>
@@ -1963,7 +1954,7 @@ stored procedure
 <h3 id="_object_reference_diagram_referenced_30_0"><a class="anchor" href="#_object_reference_diagram_referenced_30_0"></a>Object Reference Diagram - Referenced - 30 0</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-4bd33bd63926ccc0c368048023700fc0da32083f.svg" alt="entity_30_0_objectref-config.usp_init_parameter">
+<object type="image/svg+xml" data="_images/diag-2900415e6e4abb0db63c9d609c537a2230e2f018.svg"><span class="alt">entity_30_0_objectref-config.usp_init_parameter</span></object>
 </div>
 </div>
 </div>
@@ -1971,7 +1962,7 @@ stored procedure
 <h3 id="_object_reference_diagram_referencing_0_30"><a class="anchor" href="#_object_reference_diagram_referencing_0_30"></a>Object Reference Diagram - Referencing - 0 30</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-2a1c0e4365ea314f46b1f345ded74644fd038758.svg" alt="entity_0_30_objectref-config.usp_init_parameter">
+<object type="image/svg+xml" data="_images/diag-6f93b98256a0efdb9db8a0bb7c105de8f87aba9f.svg"><span class="alt">entity_0_30_objectref-config.usp_init_parameter</span></object>
 </div>
 </div>
 </div>
@@ -1990,10 +1981,10 @@ stored procedure
 * merges default values for parameters from xref:sqldb:configT.Parameter_default.adoc[] into xref:sqldb:config.Parameter.adoc[]
 &lt;&lt;property_end&gt;&gt;
 */
-CREATE Procedure [config].[usp_init_parameter]
+CREATE Procedure config.usp_init_parameter
 As
 --
-Insert Into [config].Parameter
+Insert Into config.Parameter
 (
     Parameter_name
   , sub_Parameter
@@ -2001,19 +1992,19 @@ Insert Into [config].Parameter
   , Parameter_default_value
 )
 Select
-    Parameter_name
-  , sub_Parameter
-  , Parameter_desciption
-  , Parameter_default_value
+    T1.Parameter_name
+  , T1.sub_Parameter
+  , T1.Parameter_desciption
+  , T1.Parameter_default_value
 From
-    [configT].Parameter_default As T1
+    configT.Parameter_default As T1
 Where
     Not Exists
 (
     Select
         1
     From
-        [config].Parameter As target
+        config.Parameter As target
     Where
         target.Parameter_name    = T1.Parameter_name
         And target.sub_Parameter = T1.sub_Parameter
@@ -2025,14 +2016,15 @@ Set
     T2.Parameter_desciption = source.Parameter_desciption
   , T2.Parameter_default_value = source.Parameter_default_value
 From
-    [config].Parameter               As T2
+    config.Parameter              As T2
     Inner Join
-        [configT].Parameter_default As source
+        configT.Parameter_default As source
             On
             source.Parameter_name    = T2.Parameter_name
             And source.sub_Parameter = T2.sub_Parameter
 Where
-    T2.Parameter_desciption       &lt;&gt; source.Parameter_desciption
+    --we need case sensitive compairison
+    T2.Parameter_desciption Collate SQL_Latin1_General_CP1_CS_AS       &lt;&gt; source.Parameter_desciption Collate SQL_Latin1_General_CP1_CS_AS
     Or
     (
         T2.Parameter_desciption Is Null
@@ -2043,7 +2035,7 @@ Where
         Not T2.Parameter_desciption Is Null
         And source.Parameter_desciption Is Null
     )
-    Or T2.Parameter_default_value &lt;&gt; source.Parameter_default_value
+    Or T2.Parameter_default_value Collate SQL_Latin1_General_CP1_CS_AS &lt;&gt; source.Parameter_default_value Collate SQL_Latin1_General_CP1_CS_AS
     Or
     (
         T2.Parameter_default_value Is Null

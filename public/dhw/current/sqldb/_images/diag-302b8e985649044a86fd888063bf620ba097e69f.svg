@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="118px" preserveAspectRatio="none" style="width:202px;height:118px;background:#FFFFFF;" version="1.1" viewBox="0 0 202 118" width="202px" zoomAndPan="magnify"><defs><filter height="300%" id="fy82ot807n1u4" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[fa7e6f02a950cc3bcb60ec69d4cc4470]
+class configT.join_type--><rect codeLine="27" fill="#F5F5F5" filter="url(#fy82ot807n1u4)" height="97.2" id="configT.join_type" style="stroke:#A80036;stroke-width:1.5;" width="181" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="88.5" y="24.0001">«V»</text><a href="../configT.join_type.html" target="_top" title="../configT.join_type.html" xlink:actuate="onRequest" xlink:href="../configT.join_type.html" xlink:show="new" xlink:title="../configT.join_type.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="89" x="53" y="38.4002">configT.join_type</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="187" y1="45.8002" y2="45.8002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="53.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="49" x="27" y="60.8001">join_type</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="71" x="79" y="60.8001">: (varchar(16))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="187" y1="67.0001" y2="67.0001"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="75.0001"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="155" x="27" y="82">join_type_variant : (varchar(16))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="187" y1="88.2" y2="88.2"/><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="187" y1="96.2" y2="96.2"/><!--MD5=[9b7b4fa576db78656be5b2a837a5d4e3]
+@startuml
+'Left to right direction
+top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity "[[../configT.join_type.html configT.join_type]]" as configT.join_type << V >> {
+  - **join_type** : (varchar(16))
+  - -
+  - join_type_variant : (varchar(16))
+  - -
+  - -
+}
+@enduml
+
+@startuml
+top to bottom direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity "[[../configT.join_type.html configT.join_type]]" as configT.join_type << V >> {
+  - **join_type** : (varchar(16))
+  - -
+  - join_type_variant : (varchar(16))
+  - -
+  - -
+}
+@enduml
+
+PlantUML version 1.2021.8(Sat Jun 26 08:20:59 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

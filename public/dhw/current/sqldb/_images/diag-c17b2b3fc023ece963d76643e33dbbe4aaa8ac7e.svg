@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="276px" preserveAspectRatio="none" style="width:230px;height:276px;background:#FFFFFF;" version="1.1" viewBox="0 0 230 276" width="230px" zoomAndPan="magnify"><defs><filter height="300%" id="f1oylhnafbw92u" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[244dbb5bd60e5bb32dcc79a9528a3b2b]
+class ssas.TMSCHEMA_KPIS--><rect codeLine="27" fill="#FFFFFF" filter="url(#f1oylhnafbw92u)" height="255.5988" id="ssas.TMSCHEMA_KPIS" style="stroke:#A80036;stroke-width:1.5;" width="209" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="102" y="24.0001">«U»</text><a href="../ssas.TMSCHEMA_KPIS.html" target="_top" title="../ssas.TMSCHEMA_KPIS.html" xlink:actuate="onRequest" xlink:href="../ssas.TMSCHEMA_KPIS.html" xlink:show="new" xlink:title="../ssas.TMSCHEMA_KPIS.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="132" x="45.5" y="38.4002">ssas.TMSCHEMA_KPIS</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="215" y1="45.8002" y2="45.8002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="53.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="77" x="27" y="60.8001">databasename</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="83" x="107" y="60.8001">: (nvarchar(128))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="67.0001"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="11" x="27" y="74">ID</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="85" x="41" y="74">: (numeric(20, 0))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="215" y1="80.2" y2="80.2"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="142" x="27" y="95.1999">Description : (nvarchar(max))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="101.3999"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="141" x="27" y="108.3998">MeasureID : (numeric(20, 0))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="114.5998"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="122" x="27" y="121.5997">ModifiedTime : (datetime)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="172" x="27" y="134.7996">StatusDescription : (nvarchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="170" x="27" y="147.9995">StatusExpression : (nvarchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="156" x="27" y="161.1994">StatusGraphic : (nvarchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="174" x="27" y="174.3993">TargetDescription : (nvarchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="172" x="27" y="187.5992">TargetExpression : (nvarchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="183" x="27" y="200.7991">TargetFormatString : (nvarchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="171" x="27" y="213.999">TrendDescription : (nvarchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="169" x="27" y="227.1989">TrendExpression : (nvarchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="155" x="27" y="240.3988">TrendGraphic : (nvarchar(max))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="215" y1="246.5988" y2="246.5988"/><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="215" y1="254.5988" y2="254.5988"/><!--MD5=[28c07d2101b36a1172c9f8abaf96c2d7]
+@startuml
+'Left to right direction
+top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity "[[../ssas.TMSCHEMA_KPIS.html ssas.TMSCHEMA_KPIS]]" as ssas.TMSCHEMA_KPIS << U >> {
+  - **databasename** : (nvarchar(128))
+  - **ID** : (numeric(20, 0))
+  - -
+  Description : (nvarchar(max))
+  - MeasureID : (numeric(20, 0))
+  - ModifiedTime : (datetime)
+  StatusDescription : (nvarchar(max))
+  StatusExpression : (nvarchar(max))
+  StatusGraphic : (nvarchar(max))
+  TargetDescription : (nvarchar(max))
+  TargetExpression : (nvarchar(max))
+  TargetFormatString : (nvarchar(max))
+  TrendDescription : (nvarchar(max))
+  TrendExpression : (nvarchar(max))
+  TrendGraphic : (nvarchar(max))
+  - -
+  - -
+}
+@enduml
+
+@startuml
+top to bottom direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity "[[../ssas.TMSCHEMA_KPIS.html ssas.TMSCHEMA_KPIS]]" as ssas.TMSCHEMA_KPIS << U >> {
+  - **databasename** : (nvarchar(128))
+  - **ID** : (numeric(20, 0))
+  - -
+  Description : (nvarchar(max))
+  - MeasureID : (numeric(20, 0))
+  - ModifiedTime : (datetime)
+  StatusDescription : (nvarchar(max))
+  StatusExpression : (nvarchar(max))
+  StatusGraphic : (nvarchar(max))
+  TargetDescription : (nvarchar(max))
+  TargetExpression : (nvarchar(max))
+  TargetFormatString : (nvarchar(max))
+  TrendDescription : (nvarchar(max))
+  TrendExpression : (nvarchar(max))
+  TrendGraphic : (nvarchar(max))
+  - -
+  - -
+}
+@enduml
+
+PlantUML version 1.2021.8(Sat Jun 26 08:20:59 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

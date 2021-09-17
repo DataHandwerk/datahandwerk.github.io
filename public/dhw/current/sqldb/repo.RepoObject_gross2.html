@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>repo.RepoObject_gross2 :: DataHandwerk Docs</title>
-    <link rel="canonical" href="https://DataHandwerk.github.io/dhw/current/sqldb/repo.RepoObject_gross2.html">
+    <link rel="canonical" href="https://datahandwerk.gitlab.io/dhw/current/sqldb/repo.RepoObject_gross2.html">
     <link rel="prev" href="repo.RepoObject_gross.html">
     <link rel="next" href="repo.RepoObject_gross2_T.html">
     <meta name="generator" content="Antora 3.0.0-alpha.9">
@@ -18,7 +18,7 @@
 <header class="header">
   <nav class="navbar">
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://DataHandwerk.github.io">DataHandwerk Docs</a>
+      <a class="navbar-item" href="https://datahandwerk.gitlab.io">DataHandwerk Docs</a>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -27,7 +27,6 @@
     </div>
     <div id="topbar-nav" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item" href="">Home</a>
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link" href="#">Resources</a>
           <div class="navbar-dropdown">
@@ -1897,16 +1896,8 @@ view
 <div class="sectionbody">
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-002bb3cf0762a588d694329d8ef24af24ccb9111.svg" alt="entity-repo.RepoObject_gross2">
+<object type="image/svg+xml" data="_images/diag-afe8b15cb5c6787607724563286a36ff8086c8d6.svg"><span class="alt">entity-repo.RepoObject_gross2</span></object>
 </div>
-</div>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Dot prefix</dt>
-<dd>
-<p><code>NOT NULL</code></p>
-</dd>
-</dl>
 </div>
 <div class="paragraph">
 <p>todo: several entities (left to right), containing SSAS translations</p>
@@ -2674,7 +2665,7 @@ view
 <div class="sectionbody">
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-65d6ee4ccf0ee29f4c1de380ddd5918bf446bcd4.svg" alt="entity_1_1_fk-repo.RepoObject_gross2">
+<object type="image/svg+xml" data="_images/diag-1e0ef20e7e9e93db669e3e89ea9dc3cac0df6fba.svg"><span class="alt">entity_1_1_fk-repo.RepoObject_gross2</span></object>
 </div>
 </div>
 </div>
@@ -2733,7 +2724,7 @@ view
 <h3 id="_object_reference_diagram_1_1"><a class="anchor" href="#_object_reference_diagram_1_1"></a>Object Reference Diagram - 1 1</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-c20e6ef52839f481ef18eaeaaa45344cd4cf412b.svg" alt="entity_1_1_objectref-repo.RepoObject_gross2">
+<object type="image/svg+xml" data="_images/diag-309d5dfdff7dba1b4d5e66e528bfefbd8c53fd97.svg"><span class="alt">entity_1_1_objectref-repo.RepoObject_gross2</span></object>
 </div>
 </div>
 </div>
@@ -2741,7 +2732,7 @@ view
 <h3 id="_object_reference_diagram_referenced_30_0"><a class="anchor" href="#_object_reference_diagram_referenced_30_0"></a>Object Reference Diagram - Referenced - 30 0</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-dddd34d7eb319afef07b13ba8167d5e9c4e7fd6f.svg" alt="entity_30_0_objectref-repo.RepoObject_gross2">
+<object type="image/svg+xml" data="_images/diag-ba1035562e9590ae2928cb98902670d736fd563c.svg"><span class="alt">entity_30_0_objectref-repo.RepoObject_gross2</span></object>
 </div>
 </div>
 </div>
@@ -2749,7 +2740,7 @@ view
 <h3 id="_object_reference_diagram_referencing_0_30"><a class="anchor" href="#_object_reference_diagram_referencing_0_30"></a>Object Reference Diagram - Referencing - 0 30</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-9cd28f6371c6faa29da7884c8b3ec2db58494285.svg" alt="entity_0_30_objectref-repo.RepoObject_gross2">
+<object type="image/svg+xml" data="_images/diag-41917a736caf19f72dae0829a19889cc74c02b97.svg"><span class="alt">entity_0_30_objectref-repo.RepoObject_gross2</span></object>
 </div>
 </div>
 </div>
@@ -2757,7 +2748,7 @@ view
 <h3 id="_column_reference_diagram"><a class="anchor" href="#_column_reference_diagram"></a>Column Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-adcf0b1968053e50b52fb1889f0dd53b19c183d3.svg" alt="entity_1_1_colref-repo.RepoObject_gross2">
+<object type="image/svg+xml" data="_images/diag-eda7e76e898f8857d6bc96ae255f741ed73930eb.svg"><span class="alt">entity_1_1_colref-repo.RepoObject_gross2</span></object>
 </div>
 </div>
 </div>
@@ -6433,7 +6424,7 @@ This requires a (real or virtual) PK defined in the source</p>
 <div class="content">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">CREATE View repo.RepoObject_gross2
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">CREATE View [repo].[RepoObject_gross2]
 As
 Select
     ro.RepoObject_guid
@@ -6489,6 +6480,7 @@ Select
   , ro.persistence_source_SysObject_fullname
   , ro.persistence_source_SysObject_fullname2
   , ro.persistence_source_SysObject_xref
+  , ro.uspgenerator_usp_id
   , ro.has_history
   , ro.has_history_columns
   , ro.is_persistence

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>property.RepoObjectProperty_ForUpdate :: DataHandwerk Docs</title>
-    <link rel="canonical" href="https://DataHandwerk.github.io/dhw/current/sqldb/property.RepoObjectProperty_ForUpdate.html">
+    <link rel="canonical" href="https://datahandwerk.gitlab.io/dhw/current/sqldb/property.RepoObjectProperty_ForUpdate.html">
     <link rel="prev" href="property.RepoObjectProperty_cross.html">
     <link rel="next" href="property.RepoObjectProperty_InheritanceType_InheritanceDefinition.html">
     <meta name="generator" content="Antora 3.0.0-alpha.9">
@@ -18,7 +18,7 @@
 <header class="header">
   <nav class="navbar">
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://DataHandwerk.github.io">DataHandwerk Docs</a>
+      <a class="navbar-item" href="https://datahandwerk.gitlab.io">DataHandwerk Docs</a>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -27,7 +27,6 @@
     </div>
     <div id="topbar-nav" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item" href="">Home</a>
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link" href="#">Resources</a>
           <div class="navbar-dropdown">
@@ -1897,16 +1896,8 @@ view
 <div class="sectionbody">
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-16da033380bdc48753f1eec0609b610c1e5c35fe.svg" alt="entity-property.RepoObjectProperty_ForUpdate">
+<object type="image/svg+xml" data="_images/diag-fa0496b837d6976ebd79c472a44663865b3e5c1e.svg"><span class="alt">entity-property.RepoObjectProperty_ForUpdate</span></object>
 </div>
-</div>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Dot prefix</dt>
-<dd>
-<p><code>NOT NULL</code></p>
-</dd>
-</dl>
 </div>
 <div class="paragraph">
 <p>todo: several entities (left to right), containing SSAS translations</p>
@@ -2026,7 +2017,7 @@ view
 <div class="sectionbody">
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-5b7042f5775c2b79768db7cc70b639855dd4e38b.svg" alt="entity_1_1_fk-property.RepoObjectProperty_ForUpdate">
+<object type="image/svg+xml" data="_images/diag-ddef75b11da17d7b46aa75688f585bef26f27933.svg"><span class="alt">entity_1_1_fk-property.RepoObjectProperty_ForUpdate</span></object>
 </div>
 </div>
 </div>
@@ -2051,7 +2042,7 @@ view
 <h3 id="_object_reference_diagram_1_1"><a class="anchor" href="#_object_reference_diagram_1_1"></a>Object Reference Diagram - 1 1</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-1c6498d7fdbb583f5ac95b2f9bb35a33ba715db3.svg" alt="entity_1_1_objectref-property.RepoObjectProperty_ForUpdate">
+<object type="image/svg+xml" data="_images/diag-d54ecefebf3c1d8d12eadea34bdb432b4e8762d2.svg"><span class="alt">entity_1_1_objectref-property.RepoObjectProperty_ForUpdate</span></object>
 </div>
 </div>
 </div>
@@ -2059,7 +2050,7 @@ view
 <h3 id="_object_reference_diagram_referenced_30_0"><a class="anchor" href="#_object_reference_diagram_referenced_30_0"></a>Object Reference Diagram - Referenced - 30 0</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-4e4536bf32350a2fce1ab6fd92b8c56eda633b12.svg" alt="entity_30_0_objectref-property.RepoObjectProperty_ForUpdate">
+<object type="image/svg+xml" data="_images/diag-cbde251c20082a3ed8f05175faf1c31b43ccd8d0.svg"><span class="alt">entity_30_0_objectref-property.RepoObjectProperty_ForUpdate</span></object>
 </div>
 </div>
 </div>
@@ -2067,7 +2058,7 @@ view
 <h3 id="_object_reference_diagram_referencing_0_30"><a class="anchor" href="#_object_reference_diagram_referencing_0_30"></a>Object Reference Diagram - Referencing - 0 30</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-97e2a56d2acff04af36b69af1dbf636b45c74bf8.svg" alt="entity_0_30_objectref-property.RepoObjectProperty_ForUpdate">
+<object type="image/svg+xml" data="_images/diag-7365f36dff74dfa84a1a8c791d01df692cd52290.svg"><span class="alt">entity_0_30_objectref-property.RepoObjectProperty_ForUpdate</span></object>
 </div>
 </div>
 </div>
@@ -2075,7 +2066,7 @@ view
 <h3 id="_column_reference_diagram"><a class="anchor" href="#_column_reference_diagram"></a>Column Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-9cd4382a164cb2bf55cddc240c882f3cef593605.svg" alt="entity_1_1_colref-property.RepoObjectProperty_ForUpdate">
+<object type="image/svg+xml" data="_images/diag-cd60ac535d66afa5a297c56dca2c17dc7f1114cd.svg"><span class="alt">entity_1_1_colref-property.RepoObjectProperty_ForUpdate</span></object>
 </div>
 </div>
 </div>
@@ -2617,6 +2608,14 @@ Select
   , T2.RepoObject_schema_name
   , T2.RepoObject_name
   , T2.RepoObject_type
+  , tsql_comment_tag = Concat (
+                                  '&lt;&lt;property_start&gt;&gt;' + T1.property_name
+                                , Char ( 13 ) + Char ( 10 )
+                                , Replace ( T1.property_value, '''', '''''' )
+                                , Char ( 13 ) + Char ( 10 )
+                                , '&lt;&lt;property_end&gt;&gt;'
+                                , Char ( 13 ) + Char ( 10 )
+                              )
 From
     property.RepoObjectProperty As T1
     Inner Join

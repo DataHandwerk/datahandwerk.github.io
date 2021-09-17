@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>docs.usp_AntoraExport :: DataHandwerk Docs</title>
-    <link rel="canonical" href="https://DataHandwerk.github.io/dhw/current/sqldb/docs.usp_AntoraExport.html">
+    <link rel="canonical" href="https://datahandwerk.gitlab.io/dhw/current/sqldb/docs.usp_AntoraExport.html">
     <link rel="prev" href="docs.Unit_3.html">
     <link rel="next" href="docs.usp_AntoraExport_DocSnippet.html">
     <meta name="generator" content="Antora 3.0.0-alpha.9">
@@ -18,7 +18,7 @@
 <header class="header">
   <nav class="navbar">
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://DataHandwerk.github.io">DataHandwerk Docs</a>
+      <a class="navbar-item" href="https://datahandwerk.gitlab.io">DataHandwerk Docs</a>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -27,7 +27,6 @@
     </div>
     <div id="topbar-nav" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item" href="">Home</a>
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link" href="#">Resources</a>
           <div class="navbar-dropdown">
@@ -2210,7 +2209,7 @@ Exec docs.usp_AntoraExport;</code></pre>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">300</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">200</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><strong>[repo].[usp_RepoObjectProperty_collect]</strong></p>
 </div>
@@ -2232,6 +2231,121 @@ Exec docs.usp_AntoraExport;</code></pre>
 </div>
 </details></div></td>
 <td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">210</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>declare variables</strong></p>
+</div>
+<details>
+<summary class="title">Statement</summary>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">DECLARE @command NVARCHAR(4000)
+DECLARE @outputDir NVARCHAR(1000)
+DECLARE @outputDir2 NVARCHAR(1000)</code></pre>
+</div>
+</div>
+</div>
+</details></div></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">220</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>configure outputDirs</strong></p>
+</div>
+<details>
+<summary class="title">Statement</summary>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">SET @outputDir = ISNULL(@outputDir, (
+   SELECT [config].[fs_get_parameter_value]('AntoraComponentFolder', '') + '\modules\' + [config].[fs_get_parameter_value]('AntoraModule', '') + '\'
+   ) + 'partials')
+SET @outputDir2 = ISNULL(@outputDir2, (
+   SELECT [config].[fs_get_parameter_value]('AntoraComponentFolder', '') + '\modules\' + [config].[fs_get_parameter_value]('AntoraModule', '') + '\'
+   ) + 'pages')</code></pre>
+</div>
+</div>
+</div>
+</details></div></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">300</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>check Parameter AntoraDeleteFilesInModuleFolders</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>IF [config].[fs_get_parameter_value]('AntoraDeleteFilesInModuleFolders','') = 1</code></p>
+</li>
+<li>
+<p>[config].[Parameter]</p>
+</li>
+</ul>
+</div>
+<details>
+<summary class="title">Statement</summary>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">[config].[fs_get_parameter_value]('AntoraDeleteFilesInModuleFolders','') = 1</code></pre>
+</div>
+</div>
+</div>
+</details></div></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">310</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>Delete Files but not folder in AntoraModule pages and partials</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>I</p>
+</li>
+</ul>
+</div>
+<details>
+<summary class="title">Statement</summary>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">/*
+FORFILES /p "D:\Repos\GitHub\DataHandwerk\dhw-antora-sqldb\docs\modules\sqldb\partials" /s /m *.* /c "cmd /c if @isdir==FALSE del @path"
+*/
+Set @command = N'FORFILES /p "'
+               --
+               + @outputDir
+               --
+               + N'" /s /m *.* /c "cmd /c if @isdir==FALSE del @path"'
+
+Print @command
+
+--Execute the BCP command
+Exec sys.xp_cmdshell @command
+
+Set @command = N'FORFILES /p "'
+               --
+               + @outputDir2
+               --
+               + N'" /s /m *.* /c "cmd /c if @isdir==FALSE del @path"'
+
+Print @command
+
+--Execute the BCP command
+Exec sys.xp_cmdshell @command</code></pre>
+</div>
+</div>
+</div>
+</details></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">300</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">400</p></td>
@@ -2434,16 +2548,8 @@ Exec docs.usp_AntoraExport;</code></pre>
 <div class="sectionbody">
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-2569055b66b4dc13f57d2a78376223b1af252691.svg" alt="entity-docs.usp_AntoraExport">
+<object type="image/svg+xml" data="_images/diag-885a5dc856459841b8e8ae3062df1e68adf1d6c3.svg"><span class="alt">entity-docs.usp_AntoraExport</span></object>
 </div>
-</div>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Dot prefix</dt>
-<dd>
-<p><code>NOT NULL</code></p>
-</dd>
-</dl>
 </div>
 <div class="paragraph">
 <p>todo: several entities (left to right), containing SSAS translations</p>
@@ -2494,7 +2600,7 @@ Exec docs.usp_AntoraExport;</code></pre>
 <h3 id="_object_reference_diagram_1_1"><a class="anchor" href="#_object_reference_diagram_1_1"></a>Object Reference Diagram - 1 1</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-2fb700535e3c8e83fd2292dede9f98149ee497ba.svg" alt="entity_1_1_objectref-docs.usp_AntoraExport">
+<object type="image/svg+xml" data="_images/diag-d941777a41ecd59f7a64de34d7bb7eb4460027a8.svg"><span class="alt">entity_1_1_objectref-docs.usp_AntoraExport</span></object>
 </div>
 </div>
 </div>
@@ -2502,7 +2608,7 @@ Exec docs.usp_AntoraExport;</code></pre>
 <h3 id="_object_reference_diagram_referenced_30_0"><a class="anchor" href="#_object_reference_diagram_referenced_30_0"></a>Object Reference Diagram - Referenced - 30 0</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-968703861de47a180963741151f8d471425c7fea.svg" alt="entity_30_0_objectref-docs.usp_AntoraExport">
+<object type="image/svg+xml" data="_images/diag-6372f83cb7fc1648ec2a1ed063e0995769d9c2b8.svg"><span class="alt">entity_30_0_objectref-docs.usp_AntoraExport</span></object>
 </div>
 </div>
 </div>
@@ -2510,7 +2616,7 @@ Exec docs.usp_AntoraExport;</code></pre>
 <h3 id="_object_reference_diagram_referencing_0_30"><a class="anchor" href="#_object_reference_diagram_referencing_0_30"></a>Object Reference Diagram - Referencing - 0 30</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-aa7278076c44379d856d6105bcde0ce1d7b00c27.svg" alt="entity_0_30_objectref-docs.usp_AntoraExport">
+<object type="image/svg+xml" data="_images/diag-85190b71c3d3da7f26c7c5edb79dda2ac21249cd.svg"><span class="alt">entity_0_30_objectref-docs.usp_AntoraExport</span></object>
 </div>
 </div>
 </div>
@@ -2596,7 +2702,7 @@ PRINT '[docs].[usp_AntoraExport]'
 --
 ----- start here with your own code
 --
-/*{"ReportUspStep":[{"Number":300,"Name":"[repo].[usp_RepoObjectProperty_collect]","has_logging":1,"is_condition":0,"is_inactive":0,"is_SubProcedure":1}]}*/
+/*{"ReportUspStep":[{"Number":200,"Name":"[repo].[usp_RepoObjectProperty_collect]","has_logging":1,"is_condition":0,"is_inactive":0,"is_SubProcedure":1}]}*/
 EXEC [property].[usp_RepoObjectProperty_collect]
 --add your own parameters
 --logging parameters
@@ -2605,6 +2711,82 @@ EXEC [property].[usp_RepoObjectProperty_collect]
  , @sub_execution_id = @sub_execution_id
  , @parent_execution_log_id = @current_execution_log_id
 
+
+/*{"ReportUspStep":[{"Number":210,"Name":"declare variables","has_logging":0,"is_condition":0,"is_inactive":0,"is_SubProcedure":0}]}*/
+PRINT CONCAT('usp_id;Number;Parent_Number: ',27,';',210,';',NULL);
+
+DECLARE @command NVARCHAR(4000)
+DECLARE @outputDir NVARCHAR(1000)
+DECLARE @outputDir2 NVARCHAR(1000)
+
+
+/*{"ReportUspStep":[{"Number":220,"Name":"configure outputDirs","has_logging":0,"is_condition":0,"is_inactive":0,"is_SubProcedure":0}]}*/
+PRINT CONCAT('usp_id;Number;Parent_Number: ',27,';',220,';',NULL);
+
+SET @outputDir = ISNULL(@outputDir, (
+   SELECT [config].[fs_get_parameter_value]('AntoraComponentFolder', '') + '\modules\' + [config].[fs_get_parameter_value]('AntoraModule', '') + '\'
+   ) + 'partials')
+SET @outputDir2 = ISNULL(@outputDir2, (
+   SELECT [config].[fs_get_parameter_value]('AntoraComponentFolder', '') + '\modules\' + [config].[fs_get_parameter_value]('AntoraModule', '') + '\'
+   ) + 'pages')
+
+
+/*{"ReportUspStep":[{"Number":300,"Name":"check Parameter AntoraDeleteFilesInModuleFolders","has_logging":0,"is_condition":1,"is_inactive":0,"is_SubProcedure":0,"log_source_object":"[config].[Parameter]"}]}*/
+IF [config].[fs_get_parameter_value]('AntoraDeleteFilesInModuleFolders','') = 1
+
+/*{"ReportUspStep":[{"Number":310,"Parent_Number":300,"Name":"Delete Files but not folder in AntoraModule pages and partials","has_logging":1,"is_condition":0,"is_inactive":0,"is_SubProcedure":0,"log_flag_InsertUpdateDelete":"I"}]}*/
+BEGIN
+PRINT CONCAT('usp_id;Number;Parent_Number: ',27,';',310,';',300);
+
+/*
+FORFILES /p "D:\Repos\GitHub\DataHandwerk\dhw-antora-sqldb\docs\modules\sqldb\partials" /s /m *.* /c "cmd /c if @isdir==FALSE del @path"
+*/
+Set @command = N'FORFILES /p "'
+               --
+               + @outputDir
+               --
+               + N'" /s /m *.* /c "cmd /c if @isdir==FALSE del @path"'
+
+Print @command
+
+--Execute the BCP command
+Exec sys.xp_cmdshell @command
+
+Set @command = N'FORFILES /p "'
+               --
+               + @outputDir2
+               --
+               + N'" /s /m *.* /c "cmd /c if @isdir==FALSE del @path"'
+
+Print @command
+
+--Execute the BCP command
+Exec sys.xp_cmdshell @command
+
+-- Logging START --
+SET @rows = @@ROWCOUNT
+SET @step_id = @step_id + 1
+SET @step_name = 'Delete Files but not folder in AntoraModule pages and partials'
+SET @source_object = NULL
+SET @target_object = NULL
+
+EXEC logs.usp_ExecutionLog_insert
+ @execution_instance_guid = @execution_instance_guid
+ , @ssis_execution_id = @ssis_execution_id
+ , @sub_execution_id = @sub_execution_id
+ , @parent_execution_log_id = @parent_execution_log_id
+ , @current_execution_guid = @current_execution_guid
+ , @proc_id = @proc_id
+ , @proc_schema_name = @proc_schema_name
+ , @proc_name = @proc_name
+ , @event_info = @event_info
+ , @step_id = @step_id
+ , @step_name = @step_name
+ , @source_object = @source_object
+ , @target_object = @target_object
+ , @inserted = @rows
+-- Logging END --
+END;
 
 /*{"ReportUspStep":[{"Number":400,"Name":"[docs].[usp_AntoraExport_navigation]","has_logging":1,"is_condition":0,"is_inactive":0,"is_SubProcedure":1}]}*/
 EXEC [docs].[usp_AntoraExport_navigation]

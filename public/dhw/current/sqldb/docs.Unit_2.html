@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>docs.Unit_2 :: DataHandwerk Docs</title>
-    <link rel="canonical" href="https://DataHandwerk.github.io/dhw/current/sqldb/docs.Unit_2.html">
+    <link rel="canonical" href="https://datahandwerk.gitlab.io/dhw/current/sqldb/docs.Unit_2.html">
     <link rel="prev" href="docs.Unit_1_union.html">
     <link rel="next" href="docs.Unit_3.html">
     <meta name="generator" content="Antora 3.0.0-alpha.9">
@@ -18,7 +18,7 @@
 <header class="header">
   <nav class="navbar">
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://DataHandwerk.github.io">DataHandwerk Docs</a>
+      <a class="navbar-item" href="https://datahandwerk.gitlab.io">DataHandwerk Docs</a>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -27,7 +27,6 @@
     </div>
     <div id="topbar-nav" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item" href="">Home</a>
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link" href="#">Resources</a>
           <div class="navbar-dropdown">
@@ -1897,16 +1896,8 @@ E4F27B65-9D0F-EC11-8518-A81E8446D5B0</p>
 <div class="sectionbody">
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-e0b00bd6849e84c0f4bd2ebfd5763647cd5d1097.svg" alt="entity-docs.Unit_2">
+<object type="image/svg+xml" data="_images/diag-0e94aa3eff9a16a5faea183f43ab634d2db9c712.svg"><span class="alt">entity-docs.Unit_2</span></object>
 </div>
-</div>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Dot prefix</dt>
-<dd>
-<p><code>NOT NULL</code></p>
-</dd>
-</dl>
 </div>
 <div class="paragraph">
 <p>todo: several entities (left to right), containing SSAS translations</p>
@@ -2130,7 +2121,7 @@ E4F27B65-9D0F-EC11-8518-A81E8446D5B0</p>
 <div class="sectionbody">
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-4e361e120fe6c6b653de5f32e29a6d1bad9d3112.svg" alt="entity_1_1_fk-docs.Unit_2">
+<object type="image/svg+xml" data="_images/diag-48ecd68329e469e85219d02e62644c20ab6a5b0a.svg"><span class="alt">entity_1_1_fk-docs.Unit_2</span></object>
 </div>
 </div>
 </div>
@@ -2168,7 +2159,7 @@ E4F27B65-9D0F-EC11-8518-A81E8446D5B0</p>
 <h3 id="_object_reference_diagram_1_1"><a class="anchor" href="#_object_reference_diagram_1_1"></a>Object Reference Diagram - 1 1</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-d86c9e160f6532da6e85dce0f9aa29675884e08a.svg" alt="entity_1_1_objectref-docs.Unit_2">
+<object type="image/svg+xml" data="_images/diag-27085a014b13c7fb4e7e609897f9e2072cd7826a.svg"><span class="alt">entity_1_1_objectref-docs.Unit_2</span></object>
 </div>
 </div>
 </div>
@@ -2176,7 +2167,7 @@ E4F27B65-9D0F-EC11-8518-A81E8446D5B0</p>
 <h3 id="_object_reference_diagram_referenced_30_0"><a class="anchor" href="#_object_reference_diagram_referenced_30_0"></a>Object Reference Diagram - Referenced - 30 0</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-252000efb3c85d28fdd6384afcd558c470258a33.svg" alt="entity_30_0_objectref-docs.Unit_2">
+<object type="image/svg+xml" data="_images/diag-c07af5be6b4776991fa63c7268e1029dc979ca2c.svg"><span class="alt">entity_30_0_objectref-docs.Unit_2</span></object>
 </div>
 </div>
 </div>
@@ -2184,7 +2175,7 @@ E4F27B65-9D0F-EC11-8518-A81E8446D5B0</p>
 <h3 id="_object_reference_diagram_referencing_0_30"><a class="anchor" href="#_object_reference_diagram_referencing_0_30"></a>Object Reference Diagram - Referencing - 0 30</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-942950651e7e1e592aa96d8b8e9068420caa4785.svg" alt="entity_0_30_objectref-docs.Unit_2">
+<object type="image/svg+xml" data="_images/diag-2cdc40149de66c5e18cb741f547041eb4bd032c1.svg"><span class="alt">entity_0_30_objectref-docs.Unit_2</span></object>
 </div>
 </div>
 </div>
@@ -2192,7 +2183,7 @@ E4F27B65-9D0F-EC11-8518-A81E8446D5B0</p>
 <h3 id="_column_reference_diagram"><a class="anchor" href="#_column_reference_diagram"></a>Column Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-526111f49657e17e3ff658c74b7eb6a0a2948ae5.svg" alt="entity_1_1_colref-docs.Unit_2">
+<object type="image/svg+xml" data="_images/diag-f64e513b4dcf69320e61567a9364114a3ee2c07b.svg"><span class="alt">entity_1_1_colref-docs.Unit_2</span></object>
 </div>
 </div>
 </div>
@@ -3226,6 +3217,8 @@ Select
     T1.Unit_guid
   , T1.Unit_Metatype
   , T1.Unit_Schema
+  , T1.Unit_ObjectName
+  , T1.Unit_ColummName
   , T1.Unit_Name
   , T1.Unit_fullname2
   , T1.Unit_TypeName

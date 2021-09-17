@@ -1,6 +1,6 @@
 site:
   title: DataHandwerk Docs
-  url: https://DataHandwerk.github.io
+  url: https://datahandwerk.gitlab.io
   start_page: dhw::index.adoc
   # start_page: dhw:sqldb:nav/objects-by-schema.adoc
   # start_page: dhw:arc:architecture.adoc
@@ -8,7 +8,7 @@ site:
     google_analytics: 'G-L4RM6Q8D27'
 content:
   sources:
-  - url: D:\Repos\GitHub\DataHandwerk\DataHandwerk-docs
+  - url: D:\Repos\GitHub\DataHandwerk\dhw-antora-docs
     branches: HEAD
     start_path: docs
   - url: D:\Repos\GitHub\DataHandwerk\dhw-antora-sqldb
@@ -26,18 +26,13 @@ asciidoc:
     # However, in Antora, this is not currently compatible with inline SVG images.
     kroki-fetch-diagram: true
     # required for interactive diagram, but it is good idea in general
-    kroki-default-format: svg
-    # Allow URI read to retrieve SVG on compilation
-    # nur nötig für interaktive Grafiken
-    allow-uri-read: true
     # use SVG unless otherwise specified
+    kroki-default-format: svg
     # Make SVG inline so that we can get interactive (can be overridden by schema with "opts=none")
-    # Das Problem dabei: sie sind dann wirklich inline, meistens zu groß,
-    # und man kann sie nicht mehr in einem separaten Fenster öffnen, um sie vollständig zu sehen
-    # das wäre also nur sinnvoll, wenn sichergestellt wird, dass das Diagramm nicht zu groß ist.
-    #kroki-default-options: inline
+    kroki-default-options: interactive
   extensions:
   - asciidoctor-kroki
+  - ./lib/inline-puml-link-macro.js
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
@@ -67,6 +62,7 @@ urls:
   # # static is default
   # 'redirect_facility: static' doesn't work for the latest version, no static pages are created
   # a hoster like netlify would be required, then the value could be netlify
+  # use 'netlify' for gitlab in folder public and 'static' for github in folder docs
   redirect_facility: netlify
 runtime:
   fetch: true

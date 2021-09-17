@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>workflow.WorkflowStep :: DataHandwerk Docs</title>
-    <link rel="canonical" href="https://DataHandwerk.github.io/dhw/current/sqldb/workflow.WorkflowStep.html">
+    <link rel="canonical" href="https://datahandwerk.gitlab.io/dhw/current/sqldb/workflow.WorkflowStep.html">
     <link rel="prev" href="workflow.Workflow_UspList.html">
     <link rel="next" href="workflow.WorkflowStep_active.html">
     <meta name="generator" content="Antora 3.0.0-alpha.9">
@@ -18,7 +18,7 @@
 <header class="header">
   <nav class="navbar">
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://DataHandwerk.github.io">DataHandwerk Docs</a>
+      <a class="navbar-item" href="https://datahandwerk.gitlab.io">DataHandwerk Docs</a>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -27,7 +27,6 @@
     </div>
     <div id="topbar-nav" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item" href="">Home</a>
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link" href="#">Resources</a>
           <div class="navbar-dropdown">
@@ -1887,6 +1886,10 @@ user table
 <div class="paragraph">
 <p>is_repo_managed: 1</p>
 </div>
+<div class="paragraph">
+<p>InheritanceType:
+13</p>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -1900,16 +1903,8 @@ user table
 <div class="sectionbody">
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-132bb0d52204668e8bbeb696e0bbfec94f19d7fb.svg" alt="entity-workflow.WorkflowStep">
+<object type="image/svg+xml" data="_images/diag-671d191d09853ae2ff0ec68b8ad502fe13787971.svg"><span class="alt">entity-workflow.WorkflowStep</span></object>
 </div>
-</div>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Dot prefix</dt>
-<dd>
-<p><code>NOT NULL</code></p>
-</dd>
-</dl>
 </div>
 <div class="paragraph">
 <p>todo: several entities (left to right), containing SSAS translations</p>
@@ -2042,7 +2037,7 @@ user table
 <div class="sectionbody">
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-fe09aacffa33af049635d803342772d7c424a75d.svg" alt="entity_1_1_fk-workflow.WorkflowStep">
+<object type="image/svg+xml" data="_images/diag-57a4f130e1e2a4742a473501bfb257ecfb2fd303.svg"><span class="alt">entity_1_1_fk-workflow.WorkflowStep</span></object>
 </div>
 </div>
 </div>
@@ -2080,7 +2075,7 @@ user table
 <h3 id="_object_reference_diagram_1_1"><a class="anchor" href="#_object_reference_diagram_1_1"></a>Object Reference Diagram - 1 1</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-e3746f15431feb7465fde838fa238e51cc0d3da3.svg" alt="entity_1_1_objectref-workflow.WorkflowStep">
+<object type="image/svg+xml" data="_images/diag-443cf56e25d02558488a6517d8aa593cf1965b91.svg"><span class="alt">entity_1_1_objectref-workflow.WorkflowStep</span></object>
 </div>
 </div>
 </div>
@@ -2088,7 +2083,7 @@ user table
 <h3 id="_object_reference_diagram_referenced_30_0"><a class="anchor" href="#_object_reference_diagram_referenced_30_0"></a>Object Reference Diagram - Referenced - 30 0</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-fc5a177c3185b36542725b419ba5f5ad2e849976.svg" alt="entity_30_0_objectref-workflow.WorkflowStep">
+<object type="image/svg+xml" data="_images/diag-7c1b680d1e01136299f31d17723fa9f54c33011b.svg"><span class="alt">entity_30_0_objectref-workflow.WorkflowStep</span></object>
 </div>
 </div>
 </div>
@@ -2096,7 +2091,7 @@ user table
 <h3 id="_object_reference_diagram_referencing_0_30"><a class="anchor" href="#_object_reference_diagram_referencing_0_30"></a>Object Reference Diagram - Referencing - 0 30</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-1b7027f2dd528392f6be6bc794609a2244a92483.svg" alt="entity_0_30_objectref-workflow.WorkflowStep">
+<object type="image/svg+xml" data="_images/diag-6bbef09e8e5ec7f8f15308bacb694073feb62cfe.svg"><span class="alt">entity_0_30_objectref-workflow.WorkflowStep</span></object>
 </div>
 </div>
 </div>
@@ -2104,7 +2099,7 @@ user table
 <h3 id="_column_reference_diagram"><a class="anchor" href="#_column_reference_diagram"></a>Column Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-74edafe3859b9d9be677aff0e5018c759f5ceeda.svg" alt="entity_1_1_colref-workflow.WorkflowStep">
+<object type="image/svg+xml" data="_images/diag-45956105588b02a8d616e5e1c0479132d4a25a27.svg"><span class="alt">entity_1_1_colref-workflow.WorkflowStep</span></object>
 </div>
 </div>
 </div>
@@ -2217,8 +2212,7 @@ referenced: <a href="workflow.Workflow.html" class="page">workflow.Workflow</a>,
 <p>PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p>FK_WorkflowStep_RepoObject<br>
-referenced: <a href="repo.RepoObject.html" class="page">repo.RepoObject</a>, <a href="repo.RepoObject.html#index-PK_RepoObject" class="page">PK_RepoObject</a></p>
+<p>FK_WorkflowStep_RepoObject<br></p>
 </li>
 <li>
 <p>is disabled</p>

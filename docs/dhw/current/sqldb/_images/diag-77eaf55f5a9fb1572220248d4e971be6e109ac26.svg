@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="184px" preserveAspectRatio="none" style="width:339px;height:184px;background:#FFFFFF;" version="1.1" viewBox="0 0 339 184" width="339px" zoomAndPan="magnify"><defs><filter height="300%" id="f12mekdjldk0vs" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[0c2633fdbce4c93ad1901f3fe0da310d]
+class workflow.Workflow_ProcedureDependency_T_TaskName--><rect codeLine="27" fill="#F5F5F5" filter="url(#f12mekdjldk0vs)" height="163.1995" id="workflow.Workflow_ProcedureDependency_T_TaskName" style="stroke:#A80036;stroke-width:1.5;" width="318" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="157" y="24.0001">«V»</text><a href="../workflow.Workflow_ProcedureDependency_T_TaskName.html" target="_top" title="../workflow.Workflow_ProcedureDependency_T_TaskName.html" xlink:actuate="onRequest" xlink:href="../workflow.Workflow_ProcedureDependency_T_TaskName.html" xlink:show="new" xlink:title="../workflow.Workflow_ProcedureDependency_T_TaskName.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="302" x="15" y="38.4002">workflow.Workflow_ProcedureDependency_T_TaskName</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="324" y1="45.8002" y2="45.8002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="324" y1="53.8002" y2="53.8002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="61.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="290" x="27" y="68.8001">referenced_Procedure_RepoObject_guid : (uniqueidentifier)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="75.0001"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="256" x="27" y="82">referenced_RepoObject_fullname2 : (nvarchar(257))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="204" x="27" y="95.1999">referenced_TaskName : (nvarchar(4000))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="101.3999"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="292" x="27" y="108.3998">referencing_Procedure_RepoObject_guid : (uniqueidentifier)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="114.5998"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="258" x="27" y="121.5997">referencing_RepoObject_fullname2 : (nvarchar(257))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="206" x="27" y="134.7996">referencing_TaskName : (nvarchar(4000))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="140.9996"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="87" x="27" y="147.9995">Workflow_id : (int)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="324" y1="154.1995" y2="154.1995"/><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="324" y1="162.1995" y2="162.1995"/><!--MD5=[8d11316b15b1e8fb06456f077c75b3e2]
+@startuml
+'Left to right direction
+top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity "[[../workflow.Workflow_ProcedureDependency_T_TaskName.html workflow.Workflow_ProcedureDependency_T_TaskName]]" as workflow.Workflow_ProcedureDependency_T_TaskName << V >> {
+  - -
+  - referenced_Procedure_RepoObject_guid : (uniqueidentifier)
+  - referenced_RepoObject_fullname2 : (nvarchar(257))
+  referenced_TaskName : (nvarchar(4000))
+  - referencing_Procedure_RepoObject_guid : (uniqueidentifier)
+  - referencing_RepoObject_fullname2 : (nvarchar(257))
+  referencing_TaskName : (nvarchar(4000))
+  - Workflow_id : (int)
+  - -
+  - -
+}
+@enduml
+
+@startuml
+top to bottom direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+}
+
+
+entity "[[../workflow.Workflow_ProcedureDependency_T_TaskName.html workflow.Workflow_ProcedureDependency_T_TaskName]]" as workflow.Workflow_ProcedureDependency_T_TaskName << V >> {
+  - -
+  - referenced_Procedure_RepoObject_guid : (uniqueidentifier)
+  - referenced_RepoObject_fullname2 : (nvarchar(257))
+  referenced_TaskName : (nvarchar(4000))
+  - referencing_Procedure_RepoObject_guid : (uniqueidentifier)
+  - referencing_RepoObject_fullname2 : (nvarchar(257))
+  referencing_TaskName : (nvarchar(4000))
+  - Workflow_id : (int)
+  - -
+  - -
+}
+@enduml
+
+PlantUML version 1.2021.8(Sat Jun 26 08:20:59 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
