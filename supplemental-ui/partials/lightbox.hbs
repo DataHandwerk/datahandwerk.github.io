@@ -15,14 +15,36 @@
         document.getElementById("myModal").style.display = "none";
     }
 
-    document.querySelectorAll('.imageblock img').forEach(element => {
+    {{!-- document.querySelectorAll('.imageblock img').forEach(element => {
         element.className += " lightbox";
+        element.addEventListener('click', function (e) {
+        if (e.ctrlKey) {
+            console.log('With ctrl, do something...');
+            return;
+        }
+        });
         element.addEventListener('click', evt => {
             document.getElementById("imageinmodal").setAttribute("src", evt.currentTarget.getAttribute("src"))
             document.getElementById("imageinmodal").setAttribute("alt", evt.currentTarget.getAttribute("alt"))
             openModal();
         })
+    }); --}}
+
+    document.querySelectorAll('.imageblock kroki').forEach(element => {
+        element.className += " lightbox";
+        {{!-- element.addEventListener('click', evt => {
+            if (evt.ctrlKey) {
+                document.getElementById("imageinmodal").setAttribute("src", evt.currentTarget.getAttribute("src"))
+                document.getElementById("imageinmodal").setAttribute("alt", evt.currentTarget.getAttribute("alt"))
+                openModal();
+            }
+        }) --}}
+        element.addEventListener('click', evt => {
+            document.getElementById("imageinmodal").setAttribute("data", evt.currentTarget.getAttribute("data"))
+            openModal();
+        })
     });
+
 </script>
 <style>
     /* The Modal (background) */

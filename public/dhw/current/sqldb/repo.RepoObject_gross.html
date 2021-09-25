@@ -30,14 +30,14 @@
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link" href="#">Resources</a>
           <div class="navbar-dropdown">
-            <a class="navbar-item" href="https://github.com/DataHandwerk/DataHandwerk-toolkit-mssql" target="_blank">GitHub Project</a>
+            <a class="navbar-item" href="https://gitlab.com/datahandwerk/DataHandwerk-toolkit-mssql" target="_blank">GitLab Project</a>
+            <a class="navbar-item" href="https://gitlab.com/datahandwerk/DataHandwerk-toolkit-mssql/-/issues" target="_blank">GitLab Project issues</a>
             <a class="navbar-item" href="https://datahandwerk.zulipchat.com/" target="_blank">Community (Zulip: streams with topics)</a>
-            <a class="navbar-item" href="https://dev.azure.com/DataHandwerk/89a7b008-69b9-42e4-b31f-4c2dfb6bd49a/_boards/board/t/f3077374-71b6-4a5b-bfd6-24a792bbc352/Microsoft.RequirementCategory/" target="_blank">Azure Boards</a>
           </div>
         </div>
         <div class="navbar-item">
           <form action="https://www.google.com/search" method="get" target="searchresult">
-              <input type="hidden" name="q" value="site:datahandwerk.github.io">
+              <input type="hidden" name="q" value="site:datahandwerk.gitlab.io">
               <input type="text" name="q" alt="search">
               <input type="submit" value="Search">
           </form>
@@ -74,7 +74,7 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="nav/objects-by-schema.html">Objects by schema</a>
+    <a class="nav-link" href="nav/objects-by-schema.html">dhw_self - Objects by schema</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -435,6 +435,12 @@
     <a class="nav-link" href="property.ExtendedProperty_Repo2Sys_level2_Union.html">property.ExtendedProperty_Repo2Sys_level2_Union</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.external_RepoObjectColumnProperty.html">property.external_RepoObjectColumnProperty</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.external_RepoObjectProperty.html">property.external_RepoObjectProperty</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.fs_get_RepoObjectColumnProperty_nvarchar.html">property.fs_get_RepoObjectColumnProperty_nvarchar</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -460,6 +466,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectColumnProperty.html">property.RepoObjectColumnProperty</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.RepoObjectColumnProperty_external_src.html">property.RepoObjectColumnProperty_external_src</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.RepoObjectColumnProperty_external_tgt.html">property.RepoObjectColumnProperty_external_tgt</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectColumnProperty_ForUpdate.html">property.RepoObjectColumnProperty_ForUpdate</a>
@@ -489,6 +501,12 @@
     <a class="nav-link" href="property.RepoObjectProperty_cross.html">property.RepoObjectProperty_cross</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.RepoObjectProperty_external_src.html">property.RepoObjectProperty_external_src</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.RepoObjectProperty_external_tgt.html">property.RepoObjectProperty_external_tgt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_ForUpdate.html">property.RepoObjectProperty_ForUpdate</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -504,10 +522,22 @@
     <a class="nav-link" href="property.RepoSchemaProperty.html">property.RepoSchemaProperty</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.usp_external_property_import.html">property.usp_external_property_import</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.usp_external_RepoObjectProperty.html">property.usp_external_RepoObjectProperty</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.usp_PERSIST_PropertyName_RepoObject_T.html">property.usp_PERSIST_PropertyName_RepoObject_T</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.usp_PERSIST_PropertyName_RepoObjectColumn_T.html">property.usp_PERSIST_PropertyName_RepoObjectColumn_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.usp_PERSIST_RepoObjectColumnProperty_external_tgt.html">property.usp_PERSIST_RepoObjectColumnProperty_external_tgt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.usp_PERSIST_RepoObjectProperty_external_tgt.html">property.usp_PERSIST_RepoObjectProperty_external_tgt</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.usp_RepoObject_Inheritance.html">property.usp_RepoObject_Inheritance</a>
@@ -523,6 +553,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.usp_RepoObjectProperty_set.html">property.usp_RepoObjectProperty_set</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.usp_RepoSchemaProperty_set.html">property.usp_RepoSchemaProperty_set</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.usp_sync_ExtendedProperties_Repo2Sys_Delete.html">property.usp_sync_ExtendedProperties_Repo2Sys_Delete</a>
@@ -543,7 +576,28 @@
     <a class="nav-link" href="reference.additional_Reference.html">reference.additional_Reference</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.additional_Reference_database.html">reference.additional_Reference_database</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.additional_Reference_database_T.html">reference.additional_Reference_database_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.additional_Reference_guid.html">reference.additional_Reference_guid</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.additional_Reference_is_external.html">reference.additional_Reference_is_external</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.additional_Reference_Object.html">reference.additional_Reference_Object</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.additional_Reference_Object_T.html">reference.additional_Reference_Object_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.additional_Reference_ObjectColumn.html">reference.additional_Reference_ObjectColumn</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.additional_Reference_ObjectColumn_T.html">reference.additional_Reference_ObjectColumn_T</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.ftv_query_plan_extract_source.html">reference.ftv_query_plan_extract_source</a>
@@ -597,6 +651,9 @@
     <a class="nav-link" href="reference.RepoObject_reference.html">reference.RepoObject_reference</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.RepoObject_reference_additional.html">reference.RepoObject_reference_additional</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObject_reference_additional_internal.html">reference.RepoObject_reference_additional_internal</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -625,6 +682,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObject_ReferencedList.html">reference.RepoObject_ReferencedList</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.RepoObject_ReferencedReferencing.html">reference.RepoObject_ReferencedReferencing</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObject_ReferenceTree.html">reference.RepoObject_ReferenceTree</a>
@@ -663,10 +723,10 @@
     <a class="nav-link" href="reference.RepoObject_ReferencingList.html">reference.RepoObject_ReferencingList</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="reference.RepoObject_ReferencingReferenced.html">reference.RepoObject_ReferencingReferenced</a>
+    <a class="nav-link" href="reference.RepoObjectColumn_reference.html">reference.RepoObjectColumn_reference</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="reference.RepoObjectColumn_reference.html">reference.RepoObjectColumn_reference</a>
+    <a class="nav-link" href="reference.RepoObjectColumn_reference_additional.html">reference.RepoObjectColumn_reference_additional</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObjectColumn_reference_additional_internal.html">reference.RepoObjectColumn_reference_additional_internal</a>
@@ -702,13 +762,13 @@
     <a class="nav-link" href="reference.RepoObjectColumn_ReferencedList.html">reference.RepoObjectColumn_ReferencedList</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.RepoObjectColumn_ReferencedReferencing.html">reference.RepoObjectColumn_ReferencedReferencing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObjectColumn_ReferenceTree.html">reference.RepoObjectColumn_ReferenceTree</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObjectColumn_ReferencingList.html">reference.RepoObjectColumn_ReferencingList</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="reference.RepoObjectColumn_ReferencingReferenced.html">reference.RepoObjectColumn_ReferencingReferenced</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObjectColumn_RelationScript.html">reference.RepoObjectColumn_RelationScript</a>
@@ -727,6 +787,18 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.SysObjectColumn_QueryPlanExpression.html">reference.SysObjectColumn_QueryPlanExpression</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.usp_additional_Reference.html">reference.usp_additional_Reference</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.usp_PERSIST_additional_Reference_database_T.html">reference.usp_PERSIST_additional_Reference_database_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.usp_PERSIST_additional_Reference_Object_T.html">reference.usp_PERSIST_additional_Reference_Object_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.usp_PERSIST_additional_Reference_ObjectColumn_T.html">reference.usp_PERSIST_additional_Reference_ObjectColumn_T</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.usp_PERSIST_RepoObject_reference_T.html">reference.usp_PERSIST_RepoObject_reference_T</a>
@@ -900,6 +972,9 @@
     <a class="nav-link" href="repo.Measures.html">repo.Measures</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.Measures_union.html">repo.Measures_union</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObject.html">repo.RepoObject</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -910,6 +985,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObject_ColumnList.html">repo.RepoObject_ColumnList</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.RepoObject_external_src.html">repo.RepoObject_external_src</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.RepoObject_external_tgt.html">repo.RepoObject_external_tgt</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObject_fullname_u_v.html">repo.RepoObject_fullname_u_v</a>
@@ -958,6 +1039,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObjectColumn.html">repo.RepoObjectColumn</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.RepoObjectColumn_external_src.html">repo.RepoObjectColumn_external_src</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.RepoObjectColumn_external_tgt.html">repo.RepoObjectColumn_external_tgt</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObjectColumn_gross.html">repo.RepoObjectColumn_gross</a>
@@ -1044,7 +1131,13 @@
     <a class="nav-link" href="repo.usp_PERSIST_IndexColumn_union_T.html">repo.usp_PERSIST_IndexColumn_union_T</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.usp_PERSIST_RepoObject_external_tgt.html">repo.usp_PERSIST_RepoObject_external_tgt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.usp_PERSIST_RepoObject_SSAS_tgt.html">repo.usp_PERSIST_RepoObject_SSAS_tgt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.usp_PERSIST_RepoObjectColumn_external_tgt.html">repo.usp_PERSIST_RepoObjectColumn_external_tgt</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.usp_PERSIST_RepoObjectColumn_SSAS_tgt.html">repo.usp_PERSIST_RepoObjectColumn_SSAS_tgt</a>
@@ -1789,7 +1882,7 @@
     <a class="nav-link" href="../user-guide/create-update-connect-repo-db.html">Create, update and connect repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../user-guide/backup-repo-db.html">Backup repository database</a>
+    <a class="nav-link" href="../user-guide/backup-repo-db.html">Backup and restore repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
@@ -1856,12 +1949,12 @@
   <ul>
     <li><a href="../index.html">DataHandwerk</a></li>
     <li>DHW Repository (database)</li>
-    <li><a href="nav/objects-by-schema.html">Objects by schema</a></li>
+    <li><a href="nav/objects-by-schema.html">dhw_self - Objects by schema</a></li>
     <li><a href="nav/nav-schema-repo.html">repo</a></li>
     <li><a href="repo.RepoObject_gross.html">repo.RepoObject_gross</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="file:///D:/Repos/GitHub/DataHandwerk/dhw-antora-sqldb/docs/modules/sqldb/pages/repo.RepoObject_gross.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="file:///D:/Repos/gitlab/DataHandwerk/dhw-antora-sqldb/docs/modules/sqldb/pages/repo.RepoObject_gross.adoc">Edit this Page</a></div>
 </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
@@ -1877,7 +1970,7 @@ V
 (
 view
 ), modify_date:
-2021-09-06 22:28:39</p>
+2021-09-23 08:26:07</p>
 </div>
 <div class="paragraph">
 <p>RepoObject_guid:
@@ -1896,7 +1989,7 @@ view
 <div class="sectionbody">
 <div class="imageblock kroki">
 <div class="content">
-<object type="image/svg+xml" data="_images/diag-a9648b9e5cdb4a87eaf6857f144fced582e823d6.svg"><span class="alt">entity-repo.RepoObject_gross</span></object>
+<object type="image/svg+xml" data="_images/diag-4e5dead4297d03cb29937967907d7882598f4029.svg"><span class="alt">entity-repo.RepoObject_gross</span></object>
 </div>
 </div>
 <div class="paragraph">
@@ -1929,10 +2022,18 @@ view
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><a href="#column-RepoObject_guid">RepoObject_guid</a></strong></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>uniqueidentifier</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-AntoraComponent">AntoraComponent</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(max)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-AntoraModule">AntoraModule</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(max)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
@@ -1940,6 +2041,38 @@ view
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-Description">Description</a></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(max)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-external_AntoraComponent">external_AntoraComponent</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(128)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-external_AntoraModule">external_AntoraModule</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(128)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-external_DatabaseName">external_DatabaseName</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(128)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-external_RepoDatabaseName">external_RepoDatabaseName</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(128)</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"></td>
@@ -2037,6 +2170,14 @@ view
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-is_DocsOutput">is_DocsOutput</a></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>int</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-is_external">is_external</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>bit</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
@@ -2338,6 +2479,14 @@ view
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-RepoObject_guid">RepoObject_guid</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>uniqueidentifier</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-RepoObject_name">RepoObject_name</a></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(128)</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
@@ -2499,7 +2648,7 @@ view
 <tr>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-tables_isHidden">tables_isHidden</a></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(500)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>bit</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"></td>
@@ -2536,6 +2685,14 @@ view
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-uspgenerator_usp_id">uspgenerator_usp_id</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>int</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -2545,7 +2702,7 @@ view
 <div class="sectionbody">
 <div class="imageblock kroki">
 <div class="content">
-<object type="image/svg+xml" data="_images/diag-d8f305619f94baf6952265cef52fb4b5924fb00b.svg"><span class="alt">entity_1_1_fk-repo.RepoObject_gross</span></object>
+<object type="image/svg+xml" data="_images/diag-ac70c7d1cb57ed79642c21b561b597f3f854a038.svg"><span class="alt">entity_1_1_fk-repo.RepoObject_gross</span></object>
 </div>
 </div>
 </div>
@@ -2558,16 +2715,22 @@ view
 <div class="ulist">
 <ul>
 <li>
+<p><a href="config.ftv_get_parameter_value.html" class="page">config.ftv_get_parameter_value</a></p>
+</li>
+<li>
 <p><a href="configT.type.html" class="page">configT.type</a></p>
 </li>
 <li>
 <p><a href="property.fs_get_RepoObjectProperty_nvarchar.html" class="page">property.fs_get_RepoObjectProperty_nvarchar</a></p>
 </li>
 <li>
+<p><a href="reference.additional_Reference_database_T.html" class="page">reference.additional_Reference_database_T</a></p>
+</li>
+<li>
 <p><a href="reference.RepoObject_QueryPlan.html" class="page">reference.RepoObject_QueryPlan</a></p>
 </li>
 <li>
-<p><a href="reference.RepoObject_ReferencingReferenced.html" class="page">reference.RepoObject_ReferencingReferenced</a></p>
+<p><a href="reference.RepoObject_ReferencedReferencing.html" class="page">reference.RepoObject_ReferencedReferencing</a></p>
 </li>
 <li>
 <p><a href="repo.Index_Settings.html" class="page">repo.Index_Settings</a></p>
@@ -2583,6 +2746,9 @@ view
 </li>
 <li>
 <p><a href="ssas.model_json_3161_tables_descriptions_StrAgg.html" class="page">ssas.model_json_3161_tables_descriptions_StrAgg</a></p>
+</li>
+<li>
+<p><a href="uspgenerator.GeneratorUsp.html" class="page">uspgenerator.GeneratorUsp</a></p>
 </li>
 </ul>
 </div>
@@ -2664,7 +2830,7 @@ view
 <h3 id="_object_reference_diagram_1_1"><a class="anchor" href="#_object_reference_diagram_1_1"></a>Object Reference Diagram - 1 1</h3>
 <div class="imageblock kroki">
 <div class="content">
-<object type="image/svg+xml" data="_images/diag-1ab191d39e59c37d2107b366064d304c311deb83.svg"><span class="alt">entity_1_1_objectref-repo.RepoObject_gross</span></object>
+<object type="image/svg+xml" data="_images/diag-05e82b3f5f08bf1618fa41efa268c550e7e9e211.svg"><span class="alt">entity_1_1_objectref-repo.RepoObject_gross</span></object>
 </div>
 </div>
 </div>
@@ -2672,7 +2838,7 @@ view
 <h3 id="_object_reference_diagram_referenced_30_0"><a class="anchor" href="#_object_reference_diagram_referenced_30_0"></a>Object Reference Diagram - Referenced - 30 0</h3>
 <div class="imageblock kroki">
 <div class="content">
-<object type="image/svg+xml" data="_images/diag-522bc76bfada98e2f2de63a6594991feba3e9c0d.svg"><span class="alt">entity_30_0_objectref-repo.RepoObject_gross</span></object>
+<object type="image/svg+xml" data="_images/diag-bd94ff44426c8ae6688b453d71def7368d503fe0.svg"><span class="alt">entity_30_0_objectref-repo.RepoObject_gross</span></object>
 </div>
 </div>
 </div>
@@ -2680,7 +2846,7 @@ view
 <h3 id="_object_reference_diagram_referencing_0_30"><a class="anchor" href="#_object_reference_diagram_referencing_0_30"></a>Object Reference Diagram - Referencing - 0 30</h3>
 <div class="imageblock kroki">
 <div class="content">
-<object type="image/svg+xml" data="_images/diag-b51a74c224eb9d486cb667770ad9b2e908ff12c1.svg"><span class="alt">entity_0_30_objectref-repo.RepoObject_gross</span></object>
+<object type="image/svg+xml" data="_images/diag-27ef5100e62faf0c975d10825d809ef28211e8bc.svg"><span class="alt">entity_0_30_objectref-repo.RepoObject_gross</span></object>
 </div>
 </div>
 </div>
@@ -2688,7 +2854,7 @@ view
 <h3 id="_column_reference_diagram"><a class="anchor" href="#_column_reference_diagram"></a>Column Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<object type="image/svg+xml" data="_images/diag-85871f34dcfba01b79440aa075ae18411d88a817.svg"><span class="alt">entity_1_1_colref-repo.RepoObject_gross</span></object>
+<object type="image/svg+xml" data="_images/diag-c39427e76952c378bf402b72320221002786f03b.svg"><span class="alt">entity_1_1_colref-repo.RepoObject_gross</span></object>
 </div>
 </div>
 </div>
@@ -2698,11 +2864,11 @@ view
 <h2 id="_indexes"><a class="anchor" href="#_indexes"></a>Indexes</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="index-PK_RepoObject_gross"><a class="anchor" href="#index-PK_RepoObject_gross"></a>PK_RepoObject_gross</h3>
+<h3 id="index-idx_RepoObject_gross2x_1"><a class="anchor" href="#index-idx_RepoObject_gross2x_1"></a>idx_RepoObject_gross__1</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>IndexSemanticGroup: <a href="other/IndexSemanticGroup.html#_no_group" class="page">no_group</a></p>
+<p>IndexSemanticGroup: <a href="other/IndexSemanticGroup.html#openingbracketnoblankgroupclosingbracket" class="page">no_group</a></p>
 <div class="openblock">
 <div class="content">
 <div class="ulist">
@@ -2716,17 +2882,41 @@ view
 </div>
 </li>
 <li>
-<p>PK, Unique, Real: 1, 1, 0</p>
+<p>PK, Unique, Real: 0, 0, 0</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="index-idx_RepoObject_gross_2"><a class="anchor" href="#index-idx_RepoObject_gross_2"></a>idx_RepoObject_gross__2</h3>
+<h3 id="index-idx_RepoObject_gross2x_2"><a class="anchor" href="#index-idx_RepoObject_gross2x_2"></a>idx_RepoObject_gross__2</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>IndexSemanticGroup: <a href="other/IndexSemanticGroup.html#_no_group" class="page">no_group</a></p>
+<p>IndexSemanticGroup: <a href="other/IndexSemanticGroup.html#openingbracketnoblankgroupclosingbracket" class="page">no_group</a></p>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#column-usp_persistence_RepoObject_guid">usp_persistence_RepoObject_guid</a>; uniqueidentifier</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>PK, Unique, Real: 0, 0, 0</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="index-idx_RepoObject_gross2x_3"><a class="anchor" href="#index-idx_RepoObject_gross2x_3"></a>idx_RepoObject_gross__3</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>IndexSemanticGroup: <a href="other/IndexSemanticGroup.html#openingbracketnoblankgroupclosingbracket" class="page">no_group</a></p>
 <div class="openblock">
 <div class="content">
 <div class="ulist">
@@ -2749,11 +2939,11 @@ view
 </div>
 </div>
 <div class="sect2">
-<h3 id="index-idx_RepoObject_gross_3"><a class="anchor" href="#index-idx_RepoObject_gross_3"></a>idx_RepoObject_gross__3</h3>
+<h3 id="index-idx_RepoObject_gross2x_4"><a class="anchor" href="#index-idx_RepoObject_gross2x_4"></a>idx_RepoObject_gross__4</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>IndexSemanticGroup: <a href="other/IndexSemanticGroup.html#_no_group" class="page">no_group</a></p>
+<p>IndexSemanticGroup: <a href="other/IndexSemanticGroup.html#openingbracketnoblankgroupclosingbracket" class="page">no_group</a></p>
 <div class="openblock">
 <div class="content">
 <div class="ulist">
@@ -2776,11 +2966,35 @@ view
 </div>
 </div>
 <div class="sect2">
-<h3 id="index-idx_RepoObject_gross_4"><a class="anchor" href="#index-idx_RepoObject_gross_4"></a>idx_RepoObject_gross__4</h3>
+<h3 id="index-idx_RepoObject_gross2x_5"><a class="anchor" href="#index-idx_RepoObject_gross2x_5"></a>idx_RepoObject_gross__5</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>IndexSemanticGroup: <a href="other/IndexSemanticGroup.html#_no_group" class="page">no_group</a></p>
+<p>IndexSemanticGroup: <a href="other/IndexSemanticGroup.html#openingbracketnoblankgroupclosingbracket" class="page">no_group</a></p>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#column-uspgenerator_usp_id">uspgenerator_usp_id</a>; int</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>PK, Unique, Real: 0, 0, 0</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="index-idx_RepoObject_gross2x_6"><a class="anchor" href="#index-idx_RepoObject_gross2x_6"></a>idx_RepoObject_gross__6</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>IndexSemanticGroup: <a href="other/IndexSemanticGroup.html#openingbracketnoblankgroupclosingbracket" class="page">no_group</a></p>
 <div class="openblock">
 <div class="content">
 <div class="ulist">
@@ -2805,7 +3019,7 @@ view
 <h2 id="_column_details"><a class="anchor" href="#_column_details"></a>Column Details</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="column-RepoObject_guid"><a class="anchor" href="#column-RepoObject_guid"></a>RepoObject_guid</h3>
+<h3 id="column-AntoraComponent"><a class="anchor" href="#column-AntoraComponent"></a>AntoraComponent</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 7.6923%;">
@@ -2817,57 +3031,38 @@ view
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong>RepoObject_guid</strong></code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>uniqueidentifier</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>AntoraComponent</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(max)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 </table>
-<div class="openblock">
-<div class="title">Referenced Columns</div>
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p><a href="repo.RepoObject.html#column-RepoObject_guid" class="page">repo.RepoObject.RepoObject_guid</a></p>
-</li>
-</ul>
 </div>
-</div>
-</div>
-<div class="openblock">
-<div class="title">Referencing Columns</div>
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p><a href="docs.RepoObject_OutputFilter.html#column-RepoObject_guid" class="page">docs.RepoObject_OutputFilter.RepoObject_guid</a></p>
-</li>
-<li>
-<p><a href="docs.RepoObject_Plantuml.html#column-RepoObject_guid" class="page">docs.RepoObject_Plantuml.RepoObject_guid</a></p>
-</li>
-<li>
-<p><a href="reference.Persistence.html#column-referenced_RepoObject_guid" class="page">reference.Persistence.referenced_RepoObject_guid</a></p>
-</li>
-<li>
-<p><a href="reference.Persistence.html#column-referencing_RepoObject_guid" class="page">reference.Persistence.referencing_RepoObject_guid</a></p>
-</li>
-<li>
-<p><a href="reference.RepoObject_ReferenceTree_referenced_30_0.html#column-RepoObject_guid" class="page">reference.RepoObject_ReferenceTree_referenced_30_0.RepoObject_guid</a></p>
-</li>
-<li>
-<p><a href="reference.RepoObject_ReferenceTree_referencing_0_30.html#column-RepoObject_guid" class="page">reference.RepoObject_ReferenceTree_referencing_0_30.RepoObject_guid</a></p>
-</li>
-<li>
-<p><a href="repo.RepoObject_gross2.html#column-RepoObject_guid" class="page">repo.RepoObject_gross2.RepoObject_guid</a></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
+<div class="sect2">
+<h3 id="column-AntoraModule"><a class="anchor" href="#column-AntoraModule"></a>AntoraModule</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 7.6923%;">
+<col style="width: 61.5384%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6924%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>AntoraModule</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(max)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect2">
 <h3 id="column-Description"><a class="anchor" href="#column-Description"></a>Description</h3>
@@ -2903,6 +3098,98 @@ view
 </div>
 </div>
 </div>
+</div>
+<div class="sect2">
+<h3 id="column-external_AntoraComponent"><a class="anchor" href="#column-external_AntoraComponent"></a>external_AntoraComponent</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 7.6923%;">
+<col style="width: 61.5384%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6924%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>external_AntoraComponent</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(128)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="column-external_AntoraModule"><a class="anchor" href="#column-external_AntoraModule"></a>external_AntoraModule</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 7.6923%;">
+<col style="width: 61.5384%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6924%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>external_AntoraModule</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(128)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="column-external_DatabaseName"><a class="anchor" href="#column-external_DatabaseName"></a>external_DatabaseName</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 7.6923%;">
+<col style="width: 61.5384%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6924%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>external_DatabaseName</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(128)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="column-external_RepoDatabaseName"><a class="anchor" href="#column-external_RepoDatabaseName"></a>external_RepoDatabaseName</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 7.6923%;">
+<col style="width: 61.5384%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6924%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>external_RepoDatabaseName</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(128)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect2">
 <h3 id="column-has_different_sys_names"><a class="anchor" href="#column-has_different_sys_names"></a>has_different_sys_names</h3>
@@ -3527,6 +3814,29 @@ it looks like this column here is currently not used and should or could be dele
 </div>
 </div>
 </div>
+</div>
+<div class="sect2">
+<h3 id="column-is_external"><a class="anchor" href="#column-is_external"></a>is_external</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 7.6923%;">
+<col style="width: 61.5384%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6924%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>is_external</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>bit</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect2">
 <h3 id="column-is_in_reference"><a class="anchor" href="#column-is_in_reference"></a>is_in_reference</h3>
@@ -5502,6 +5812,71 @@ This requires a (real or virtual) PK defined in the source</p>
 </div>
 </div>
 <div class="sect2">
+<h3 id="column-RepoObject_guid"><a class="anchor" href="#column-RepoObject_guid"></a>RepoObject_guid</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 7.6923%;">
+<col style="width: 61.5384%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6924%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RepoObject_guid</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>uniqueidentifier</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="repo.RepoObject.html#column-RepoObject_guid" class="page">repo.RepoObject.RepoObject_guid</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="openblock">
+<div class="title">Referencing Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="docs.RepoObject_OutputFilter.html#column-RepoObject_guid" class="page">docs.RepoObject_OutputFilter.RepoObject_guid</a></p>
+</li>
+<li>
+<p><a href="docs.RepoObject_Plantuml.html#column-RepoObject_guid" class="page">docs.RepoObject_Plantuml.RepoObject_guid</a></p>
+</li>
+<li>
+<p><a href="reference.Persistence.html#column-referenced_RepoObject_guid" class="page">reference.Persistence.referenced_RepoObject_guid</a></p>
+</li>
+<li>
+<p><a href="reference.Persistence.html#column-referencing_RepoObject_guid" class="page">reference.Persistence.referencing_RepoObject_guid</a></p>
+</li>
+<li>
+<p><a href="reference.RepoObject_ReferenceTree_referenced_30_0.html#column-RepoObject_guid" class="page">reference.RepoObject_ReferenceTree_referenced_30_0.RepoObject_guid</a></p>
+</li>
+<li>
+<p><a href="reference.RepoObject_ReferenceTree_referencing_0_30.html#column-RepoObject_guid" class="page">reference.RepoObject_ReferenceTree_referencing_0_30.RepoObject_guid</a></p>
+</li>
+<li>
+<p><a href="repo.RepoObject_gross2.html#column-RepoObject_guid" class="page">repo.RepoObject_gross2.RepoObject_guid</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="column-RepoObject_name"><a class="anchor" href="#column-RepoObject_name"></a>RepoObject_name</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -6547,7 +6922,7 @@ This requires a (real or virtual) PK defined in the source</p>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>tables_isHidden</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(500)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>bit</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"></td>
@@ -6801,6 +7176,53 @@ This requires a (real or virtual) PK defined in the source</p>
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="column-uspgenerator_usp_id"><a class="anchor" href="#column-uspgenerator_usp_id"></a>uspgenerator_usp_id</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 7.6923%;">
+<col style="width: 61.5384%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6924%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>uspgenerator_usp_id</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>int</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="uspgenerator.GeneratorUsp.html#column-id" class="page">uspgenerator.GeneratorUsp.id</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="openblock">
+<div class="title">Referencing Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="repo.RepoObject_gross2.html#column-uspgenerator_usp_id" class="page">repo.RepoObject_gross2.uspgenerator_usp_id</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -6811,7 +7233,7 @@ This requires a (real or virtual) PK defined in the source</p>
 <div class="content">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">CREATE View repo.RepoObject_gross
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">CREATE View [repo].[RepoObject_gross]
 As
 Select
     --
@@ -6834,7 +7256,7 @@ Select
                                                            Select
                                                                1
                                                            From
-                                                               reference.RepoObject_ReferencingReferenced As ref
+                                                               reference.RepoObject_ReferencedReferencing As ref
                                                            Where
                                                                ref.Referenced_guid     = ro.RepoObject_guid
                                                                Or ref.Referencing_guid = ro.RepoObject_guid
@@ -6873,6 +7295,13 @@ Select
   , ro.SysObject_query_sql
   , ro.SysObject_schema_name
   , ro.SysObject_type
+  , ro.external_AntoraComponent
+  , ro.external_AntoraModule
+  , external_DatabaseName                   = ard.DatabaseName
+  , external_RepoDatabaseName               = ard.RepoDatabaseName
+  , ro.is_external
+  , AntoraComponent                         = Coalesce ( ro.external_AntoraComponent, AntoraComponent.Parameter_value_result )
+  , AntoraModule                            = Coalesce ( ro.external_AntoraModule, AntoraModule.Parameter_value_result )
   , SysObject_type_name                     = sys_type.type_desc
   , ro.usp_persistence_name
   , usp_persistence_RepoObject_guid         = ro_usp_p.RepoObject_guid
@@ -6902,8 +7331,12 @@ Select
   , ro_p.source_filter
   , ro_p.target_filter
   , ro_p.temporal_type
+  --Attention, this will be written back into Property 'Description'
+  --this could be an issue, if it will be changed in differen places, which should be the primary?
   , Description                             = Coalesce (
-                                                           modeltab.tables_description
+                                                           --keep existing Description
+                                                           property.fs_get_RepoObjectProperty_nvarchar ( ro.RepoObject_guid, 'Description' )
+                                                         , modeltab.tables_description
                                                          , modeltab2.descriptions_StrAgg
                                                          , property.fs_get_RepoObjectProperty_nvarchar ( ro.RepoObject_guid, 'ms_description' )
                                                        )
@@ -6940,63 +7373,71 @@ Select
 --, AntoraModule                             = AntoraModule.Parameter_value_result
 --, AntoraComponent                         = AntoraComponent.Parameter_value_result
 From
-    repo.RepoObject                                     As ro
+    repo.RepoObject                                                     As ro
     Left Outer Join
-        repo.RepoObject_persistence                     As ro_p
+        repo.RepoObject_persistence                                     As ro_p
             On
-            ro_p.target_RepoObject_guid         = ro.RepoObject_guid
+            ro_p.target_RepoObject_guid = ro.RepoObject_guid
 
     Left Outer Join
-        repo.RepoObject                                 As ro_p_s
+        repo.RepoObject                                                 As ro_p_s
             On
-            ro_p_s.RepoObject_guid              = ro_p.source_RepoObject_guid
+            ro_p_s.RepoObject_guid = ro_p.source_RepoObject_guid
 
     Left Outer Join
-        repo.RepoObject                                 As ro_usp_p
+        repo.RepoObject                                                 As ro_usp_p
             On
-            ro_usp_p.RepoObject_name            = ro.usp_persistence_name
+            ro_usp_p.RepoObject_name = ro.usp_persistence_name
             And ro_usp_p.RepoObject_schema_name = ro.RepoObject_schema_name
 
     Left Outer Join
-        reference.RepoObject_QueryPlan                  As QueryPlan
+        reference.RepoObject_QueryPlan                                  As QueryPlan
             On
-            QueryPlan.RepoObject_guid           = ro.RepoObject_guid
+            QueryPlan.RepoObject_guid = ro.RepoObject_guid
 
     Left Join
-        repo.Index_Settings                             As ipk
+        repo.Index_Settings                                             As ipk
             On
-            ipk.index_guid                      = ro.pk_index_guid
+            ipk.index_guid = ro.pk_index_guid
 
     Left Join
-        configT.type                                    As repo_type
+        configT.type                                                    As repo_type
             On
-            repo_type.type                      = ro.RepoObject_type
+            repo_type.type = ro.RepoObject_type
 
     Left Join
-        configT.type                                    As sys_type
+        configT.type                                                    As sys_type
             On
-            sys_type.type                       = ro.SysObject_type
+            sys_type.type = ro.SysObject_type
 
     Left Join
-        configT.type                                    As ty
+        configT.type                                                    As ty
             On
-            ty.type                             = ro.RepoObject_type
+            ty.type = ro.RepoObject_type
 
     Left Outer Join
-        ssas.model_json_31_tables_T                     As modeltab
+        ssas.model_json_31_tables_T                                     As modeltab
             On
-            modeltab.RepoObject_guid            = ro.RepoObject_guid
+            modeltab.RepoObject_guid = ro.RepoObject_guid
 
     Left Outer Join
-        ssas.model_json_3161_tables_descriptions_StrAgg As modeltab2
+        ssas.model_json_3161_tables_descriptions_StrAgg                 As modeltab2
             On
-            modeltab2.RepoObject_guid           = ro.RepoObject_guid
+            modeltab2.RepoObject_guid = ro.RepoObject_guid
 
     Left Join
-        uspgenerator.GeneratorUsp                       As gusp
+        uspgenerator.GeneratorUsp                                       As gusp
             On
-            gusp.usp_fullname                   = ro.RepoObject_fullname
+            gusp.usp_fullname = ro.RepoObject_fullname
 
+    Left Join
+        reference.additional_Reference_database_T                       As ard
+            On
+            ard.AntoraComponent = ro.external_AntoraComponent
+            And ard.AntoraModule = ro.external_AntoraModule
+
+    Cross Join config.ftv_get_parameter_value ( 'AntoraComponent', '' ) As AntoraComponent
+    Cross Join config.ftv_get_parameter_value ( 'AntoraModule', '' ) As AntoraModule
 --Left Outer Join
 --    ssas.TMSCHEMA_TABLES_T                          As ssastab
 --        On
@@ -7052,6 +7493,91 @@ From
   <p>This page was built using the Antora default UI.</p>
   <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
 </footer>
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content" onclick="closeModal()">
+        <!--suppress HtmlRequiredAltAttribute as this will be set when selecting the image via JavaScript,
+        RequiredAttributes as src will be set by when selecting the image via JavaScript -->
+        <img id="imageinmodal">
+    </div>
+</div>
+<script>
+    function openModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+
+    document.querySelectorAll('.imageblock kroki').forEach(element => {
+        element.className += " lightbox";
+        element.addEventListener('click', evt => {
+            document.getElementById("imageinmodal").setAttribute("data", evt.currentTarget.getAttribute("data"))
+            openModal();
+        })
+    });
+
+</script>
+<style>
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 10;
+        padding-top: 5vh;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        backdrop-filter: blur(3px);
+        background-color: rgba(30, 30, 30, 0.8);
+    }
+    img.lightbox {
+        cursor: pointer;
+    }
+    /* Modal Content */
+    .modal-content {
+        position: relative;
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        max-height: 90vh;
+        cursor: pointer;
+    }
+
+    .modal-content img {
+        width: auto;
+        height: auto;
+        max-width: 90vw;
+        max-height: 90vh;
+        min-width: 90vw;
+        min-height: 90vh;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        object-fit: contain;
+    }
+
+    /* The Close Button */
+    .close {
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
 <script src="../../../_/js/site.js"></script>
 <script async src="../../../_/js/vendor/highlight.js"></script>
   </body>

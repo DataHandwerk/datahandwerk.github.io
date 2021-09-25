@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="210px" preserveAspectRatio="none" style="width:258px;height:210px;background:#FFFFFF;" version="1.1" viewBox="0 0 258 210" width="258px" zoomAndPan="magnify"><defs><filter height="300%" id="f11vbxrjxvz8c" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[0dbeb3830fc13bf17eb7192e915ea8c9]
+class repo.IndexColumn_ssas_T--><rect codeLine="28" fill="#FFFFFF" filter="url(#f11vbxrjxvz8c)" height="189.5993" id="repo.IndexColumn_ssas_T" style="stroke:#A80036;stroke-width:1.5;" width="237" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="116" y="24.0001">«U»</text><a href="../repo.IndexColumn_ssas_T.html" target="_top" title="../repo.IndexColumn_ssas_T.html" xlink:actuate="onRequest" xlink:href="../repo.IndexColumn_ssas_T.html" xlink:show="new" xlink:title="../repo.IndexColumn_ssas_T.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="141" x="55" y="38.4002">repo.IndexColumn_ssas_T</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="243" y1="45.8002" y2="45.8002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="53.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="59" x="27" y="60.8001">index_guid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="86" x="89" y="60.8001">: (uniqueidentifier)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="67.0001"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="91" x="27" y="74">index_column_id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="25" x="121" y="74">: (int)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="243" y1="80.2" y2="80.2"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="88.2"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="152" x="27" y="95.1999">ColumnName : (nvarchar(128))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="101.3999"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="103" x="27" y="108.3998">ColumnType : (bigint)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="114.5998"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="157" x="27" y="121.5997">databasename : (nvarchar(128))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="127.7997"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="211" x="27" y="134.7996">RepoObjectColumn_guid : (uniqueidentifier)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="140.9996"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="126" x="27" y="147.9995">TableID : (numeric(20, 0))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="154.1995"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="144" x="27" y="161.1994">TableName : (nvarchar(max))</text><polygon fill="#4177AF" points="18,166.3994,14,172.3994,22,172.3994" style="stroke:#1963A0;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="119" x="27" y="174.3993">is_descending_key : (bit)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="243" y1="180.5993" y2="180.5993"/><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="243" y1="188.5993" y2="188.5993"/><!--MD5=[5676c99e28bddc61282bdd393c5b958e]
+@startuml
+'Left to right direction
+top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../repo.IndexColumn_ssas_T.html repo.IndexColumn_ssas_T]]" as repo.IndexColumn_ssas_T << U >> {
+  - **index_guid** : (uniqueidentifier)
+  - **index_column_id** : (int)
+  - -
+  - ColumnName : (nvarchar(128))
+  - ColumnType : (bigint)
+  - databasename : (nvarchar(128))
+  - RepoObjectColumn_guid : (uniqueidentifier)
+  - TableID : (numeric(20, 0))
+  - TableName : (nvarchar(max))
+  ~ is_descending_key : (bit)
+  - -
+  - -
+}
+@enduml
+
+@startuml
+top to bottom direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../repo.IndexColumn_ssas_T.html repo.IndexColumn_ssas_T]]" as repo.IndexColumn_ssas_T << U >> {
+  - **index_guid** : (uniqueidentifier)
+  - **index_column_id** : (int)
+  - -
+  - ColumnName : (nvarchar(128))
+  - ColumnType : (bigint)
+  - databasename : (nvarchar(128))
+  - RepoObjectColumn_guid : (uniqueidentifier)
+  - TableID : (numeric(20, 0))
+  - TableName : (nvarchar(max))
+  ~ is_descending_key : (bit)
+  - -
+  - -
+}
+@enduml
+
+PlantUML version 1.2021.8(Sat Jun 26 08:20:59 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

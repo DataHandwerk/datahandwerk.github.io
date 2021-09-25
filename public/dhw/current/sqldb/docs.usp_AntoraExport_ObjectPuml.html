@@ -30,14 +30,14 @@
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link" href="#">Resources</a>
           <div class="navbar-dropdown">
-            <a class="navbar-item" href="https://github.com/DataHandwerk/DataHandwerk-toolkit-mssql" target="_blank">GitHub Project</a>
+            <a class="navbar-item" href="https://gitlab.com/datahandwerk/DataHandwerk-toolkit-mssql" target="_blank">GitLab Project</a>
+            <a class="navbar-item" href="https://gitlab.com/datahandwerk/DataHandwerk-toolkit-mssql/-/issues" target="_blank">GitLab Project issues</a>
             <a class="navbar-item" href="https://datahandwerk.zulipchat.com/" target="_blank">Community (Zulip: streams with topics)</a>
-            <a class="navbar-item" href="https://dev.azure.com/DataHandwerk/89a7b008-69b9-42e4-b31f-4c2dfb6bd49a/_boards/board/t/f3077374-71b6-4a5b-bfd6-24a792bbc352/Microsoft.RequirementCategory/" target="_blank">Azure Boards</a>
           </div>
         </div>
         <div class="navbar-item">
           <form action="https://www.google.com/search" method="get" target="searchresult">
-              <input type="hidden" name="q" value="site:datahandwerk.github.io">
+              <input type="hidden" name="q" value="site:datahandwerk.gitlab.io">
               <input type="text" name="q" alt="search">
               <input type="submit" value="Search">
           </form>
@@ -74,7 +74,7 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="nav/objects-by-schema.html">Objects by schema</a>
+    <a class="nav-link" href="nav/objects-by-schema.html">dhw_self - Objects by schema</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -435,6 +435,12 @@
     <a class="nav-link" href="property.ExtendedProperty_Repo2Sys_level2_Union.html">property.ExtendedProperty_Repo2Sys_level2_Union</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.external_RepoObjectColumnProperty.html">property.external_RepoObjectColumnProperty</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.external_RepoObjectProperty.html">property.external_RepoObjectProperty</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.fs_get_RepoObjectColumnProperty_nvarchar.html">property.fs_get_RepoObjectColumnProperty_nvarchar</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -460,6 +466,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectColumnProperty.html">property.RepoObjectColumnProperty</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.RepoObjectColumnProperty_external_src.html">property.RepoObjectColumnProperty_external_src</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.RepoObjectColumnProperty_external_tgt.html">property.RepoObjectColumnProperty_external_tgt</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectColumnProperty_ForUpdate.html">property.RepoObjectColumnProperty_ForUpdate</a>
@@ -489,6 +501,12 @@
     <a class="nav-link" href="property.RepoObjectProperty_cross.html">property.RepoObjectProperty_cross</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.RepoObjectProperty_external_src.html">property.RepoObjectProperty_external_src</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.RepoObjectProperty_external_tgt.html">property.RepoObjectProperty_external_tgt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_ForUpdate.html">property.RepoObjectProperty_ForUpdate</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -504,10 +522,22 @@
     <a class="nav-link" href="property.RepoSchemaProperty.html">property.RepoSchemaProperty</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.usp_external_property_import.html">property.usp_external_property_import</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.usp_external_RepoObjectProperty.html">property.usp_external_RepoObjectProperty</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.usp_PERSIST_PropertyName_RepoObject_T.html">property.usp_PERSIST_PropertyName_RepoObject_T</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.usp_PERSIST_PropertyName_RepoObjectColumn_T.html">property.usp_PERSIST_PropertyName_RepoObjectColumn_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.usp_PERSIST_RepoObjectColumnProperty_external_tgt.html">property.usp_PERSIST_RepoObjectColumnProperty_external_tgt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.usp_PERSIST_RepoObjectProperty_external_tgt.html">property.usp_PERSIST_RepoObjectProperty_external_tgt</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.usp_RepoObject_Inheritance.html">property.usp_RepoObject_Inheritance</a>
@@ -523,6 +553,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.usp_RepoObjectProperty_set.html">property.usp_RepoObjectProperty_set</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.usp_RepoSchemaProperty_set.html">property.usp_RepoSchemaProperty_set</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.usp_sync_ExtendedProperties_Repo2Sys_Delete.html">property.usp_sync_ExtendedProperties_Repo2Sys_Delete</a>
@@ -543,7 +576,28 @@
     <a class="nav-link" href="reference.additional_Reference.html">reference.additional_Reference</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.additional_Reference_database.html">reference.additional_Reference_database</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.additional_Reference_database_T.html">reference.additional_Reference_database_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.additional_Reference_guid.html">reference.additional_Reference_guid</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.additional_Reference_is_external.html">reference.additional_Reference_is_external</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.additional_Reference_Object.html">reference.additional_Reference_Object</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.additional_Reference_Object_T.html">reference.additional_Reference_Object_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.additional_Reference_ObjectColumn.html">reference.additional_Reference_ObjectColumn</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.additional_Reference_ObjectColumn_T.html">reference.additional_Reference_ObjectColumn_T</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.ftv_query_plan_extract_source.html">reference.ftv_query_plan_extract_source</a>
@@ -597,6 +651,9 @@
     <a class="nav-link" href="reference.RepoObject_reference.html">reference.RepoObject_reference</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.RepoObject_reference_additional.html">reference.RepoObject_reference_additional</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObject_reference_additional_internal.html">reference.RepoObject_reference_additional_internal</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -625,6 +682,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObject_ReferencedList.html">reference.RepoObject_ReferencedList</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.RepoObject_ReferencedReferencing.html">reference.RepoObject_ReferencedReferencing</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObject_ReferenceTree.html">reference.RepoObject_ReferenceTree</a>
@@ -663,10 +723,10 @@
     <a class="nav-link" href="reference.RepoObject_ReferencingList.html">reference.RepoObject_ReferencingList</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="reference.RepoObject_ReferencingReferenced.html">reference.RepoObject_ReferencingReferenced</a>
+    <a class="nav-link" href="reference.RepoObjectColumn_reference.html">reference.RepoObjectColumn_reference</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="reference.RepoObjectColumn_reference.html">reference.RepoObjectColumn_reference</a>
+    <a class="nav-link" href="reference.RepoObjectColumn_reference_additional.html">reference.RepoObjectColumn_reference_additional</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObjectColumn_reference_additional_internal.html">reference.RepoObjectColumn_reference_additional_internal</a>
@@ -702,13 +762,13 @@
     <a class="nav-link" href="reference.RepoObjectColumn_ReferencedList.html">reference.RepoObjectColumn_ReferencedList</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.RepoObjectColumn_ReferencedReferencing.html">reference.RepoObjectColumn_ReferencedReferencing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObjectColumn_ReferenceTree.html">reference.RepoObjectColumn_ReferenceTree</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObjectColumn_ReferencingList.html">reference.RepoObjectColumn_ReferencingList</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="reference.RepoObjectColumn_ReferencingReferenced.html">reference.RepoObjectColumn_ReferencingReferenced</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObjectColumn_RelationScript.html">reference.RepoObjectColumn_RelationScript</a>
@@ -727,6 +787,18 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.SysObjectColumn_QueryPlanExpression.html">reference.SysObjectColumn_QueryPlanExpression</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.usp_additional_Reference.html">reference.usp_additional_Reference</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.usp_PERSIST_additional_Reference_database_T.html">reference.usp_PERSIST_additional_Reference_database_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.usp_PERSIST_additional_Reference_Object_T.html">reference.usp_PERSIST_additional_Reference_Object_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.usp_PERSIST_additional_Reference_ObjectColumn_T.html">reference.usp_PERSIST_additional_Reference_ObjectColumn_T</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.usp_PERSIST_RepoObject_reference_T.html">reference.usp_PERSIST_RepoObject_reference_T</a>
@@ -900,6 +972,9 @@
     <a class="nav-link" href="repo.Measures.html">repo.Measures</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.Measures_union.html">repo.Measures_union</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObject.html">repo.RepoObject</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -910,6 +985,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObject_ColumnList.html">repo.RepoObject_ColumnList</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.RepoObject_external_src.html">repo.RepoObject_external_src</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.RepoObject_external_tgt.html">repo.RepoObject_external_tgt</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObject_fullname_u_v.html">repo.RepoObject_fullname_u_v</a>
@@ -958,6 +1039,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObjectColumn.html">repo.RepoObjectColumn</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.RepoObjectColumn_external_src.html">repo.RepoObjectColumn_external_src</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.RepoObjectColumn_external_tgt.html">repo.RepoObjectColumn_external_tgt</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObjectColumn_gross.html">repo.RepoObjectColumn_gross</a>
@@ -1044,7 +1131,13 @@
     <a class="nav-link" href="repo.usp_PERSIST_IndexColumn_union_T.html">repo.usp_PERSIST_IndexColumn_union_T</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.usp_PERSIST_RepoObject_external_tgt.html">repo.usp_PERSIST_RepoObject_external_tgt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.usp_PERSIST_RepoObject_SSAS_tgt.html">repo.usp_PERSIST_RepoObject_SSAS_tgt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.usp_PERSIST_RepoObjectColumn_external_tgt.html">repo.usp_PERSIST_RepoObjectColumn_external_tgt</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.usp_PERSIST_RepoObjectColumn_SSAS_tgt.html">repo.usp_PERSIST_RepoObjectColumn_SSAS_tgt</a>
@@ -1789,7 +1882,7 @@
     <a class="nav-link" href="../user-guide/create-update-connect-repo-db.html">Create, update and connect repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../user-guide/backup-repo-db.html">Backup repository database</a>
+    <a class="nav-link" href="../user-guide/backup-repo-db.html">Backup and restore repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
@@ -1856,12 +1949,12 @@
   <ul>
     <li><a href="../index.html">DataHandwerk</a></li>
     <li>DHW Repository (database)</li>
-    <li><a href="nav/objects-by-schema.html">Objects by schema</a></li>
+    <li><a href="nav/objects-by-schema.html">dhw_self - Objects by schema</a></li>
     <li><a href="nav/nav-schema-docs.html">docs</a></li>
     <li><a href="docs.usp_AntoraExport_ObjectPuml.html">docs.usp_AntoraExport_ObjectPuml</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="file:///D:/Repos/GitHub/DataHandwerk/dhw-antora-sqldb/docs/modules/sqldb/pages/docs.usp_AntoraExport_ObjectPuml.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="file:///D:/Repos/gitlab/DataHandwerk/dhw-antora-sqldb/docs/modules/sqldb/pages/docs.usp_AntoraExport_ObjectPuml.adoc">Edit this Page</a></div>
 </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
@@ -1877,7 +1970,7 @@ P
 (
 stored procedure
 ), modify_date:
-2021-09-10 19:21:02</p>
+2021-09-25 19:58:56</p>
 </div>
 <div class="paragraph">
 <p>RepoObject_guid:
@@ -2261,53 +2354,56 @@ DECLARE @Object_fullname2 NVARCHAR(257);</code></pre>
 <div class="content">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">DECLARE db_cursor CURSOR Local Fast_Forward
-FOR
-SELECT RepoObject_fullname
- , RepoObject_fullname2
-FROM docs.[RepoObject_OutputFilter]
-ORDER BY RepoObject_fullname
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">Declare db_cursor Cursor Local Fast_Forward For
+Select
+    RepoObject_fullname
+  , RepoObject_fullname2
+From
+    docs.RepoObject_OutputFilter
+Where
+    is_external = 0
+Order By
+    RepoObject_fullname
 
-OPEN db_cursor
+Open db_cursor
 
-FETCH NEXT
-FROM db_cursor
-INTO @Object_fullname
- , @Object_fullname2
-
-WHILE @@FETCH_STATUS = 0
-BEGIN
- --Dynamically construct the BCP command
- --
- SET @command = 'bcp "SELECT [PlantumlEntity_1_1_FkRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
-  --
-  + @Object_fullname2
-  --
-  + '''" queryout "' + @outputDir3 + @Object_fullname2 + '.puml"'
-  --
-  + ' -S ' + @instanceName
-  --
-  + ' -d ' + @databaseName
-  --
-  + ' -c -C 65001'
-  --
-  + @TrustedUserPassword
-
- PRINT @command
-
- --Execute the BCP command
- EXEC xp_cmdshell @command
-  , no_output
-
- FETCH NEXT
- FROM db_cursor
- INTO @Object_fullname
+Fetch Next From db_cursor
+Into
+    @Object_fullname
   , @Object_fullname2
-END
 
-CLOSE db_cursor
+While @@Fetch_Status = 0
+Begin
+    --Dynamically construct the BCP command
+    --
+    Set @command
+        = 'bcp "SELECT [PlantumlEntity_1_1_FkRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
+          --
+          + @Object_fullname2
+          --
+          + '''" queryout "' + @outputDir3 + @Object_fullname2 + '.puml"'
+          --
+          + ' -S ' + @instanceName
+          --
+          + ' -d ' + @databaseName
+          --
+          + ' -c -C 65001'
+          --
+          + @TrustedUserPassword
 
-DEALLOCATE db_cursor</code></pre>
+    Print @command
+
+    --Execute the BCP command
+    Exec sys.xp_cmdshell @command, no_output
+
+    Fetch Next From db_cursor
+    Into
+        @Object_fullname
+      , @Object_fullname2
+End
+
+Close db_cursor
+Deallocate db_cursor</code></pre>
 </div>
 </div>
 </div>
@@ -2358,53 +2454,56 @@ DEALLOCATE db_cursor</code></pre>
 <div class="content">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">DECLARE db_cursor CURSOR Local Fast_Forward
-FOR
-SELECT RepoObject_fullname
- , RepoObject_fullname2
-FROM docs.[RepoObject_OutputFilter]
-ORDER BY RepoObject_fullname
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">Declare db_cursor Cursor Local Fast_Forward For
+Select
+    RepoObject_fullname
+  , RepoObject_fullname2
+From
+    docs.RepoObject_OutputFilter
+Where
+    is_external = 0
+Order By
+    RepoObject_fullname
 
-OPEN db_cursor
+Open db_cursor
 
-FETCH NEXT
-FROM db_cursor
-INTO @Object_fullname
- , @Object_fullname2
-
-WHILE @@FETCH_STATUS = 0
-BEGIN
- --Dynamically construct the BCP command
- --
- SET @command = 'bcp "SELECT [PlantumlEntity_0_30_ObjectRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
-  --
-  + @Object_fullname2
-  --
-  + '''" queryout "' + @outputDir4 + @Object_fullname2 + '.puml"'
-  --
-  + ' -S ' + @instanceName
-  --
-  + ' -d ' + @databaseName
-  --
-  + ' -c -C 65001'
-  --
-  + @TrustedUserPassword
-
- PRINT @command
-
- --Execute the BCP command
- EXEC xp_cmdshell @command
-  , no_output
-
- FETCH NEXT
- FROM db_cursor
- INTO @Object_fullname
+Fetch Next From db_cursor
+Into
+    @Object_fullname
   , @Object_fullname2
-END
 
-CLOSE db_cursor
+While @@Fetch_Status = 0
+Begin
+    --Dynamically construct the BCP command
+    --
+    Set @command
+        = 'bcp "SELECT [PlantumlEntity_0_30_ObjectRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
+          --
+          + @Object_fullname2
+          --
+          + '''" queryout "' + @outputDir4 + @Object_fullname2 + '.puml"'
+          --
+          + ' -S ' + @instanceName
+          --
+          + ' -d ' + @databaseName
+          --
+          + ' -c -C 65001'
+          --
+          + @TrustedUserPassword
 
-DEALLOCATE db_cursor</code></pre>
+    Print @command
+
+    --Execute the BCP command
+    Exec sys.xp_cmdshell @command, no_output
+
+    Fetch Next From db_cursor
+    Into
+        @Object_fullname
+      , @Object_fullname2
+End
+
+Close db_cursor
+Deallocate db_cursor</code></pre>
 </div>
 </div>
 </div>
@@ -2431,53 +2530,56 @@ DEALLOCATE db_cursor</code></pre>
 <div class="content">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">DECLARE db_cursor CURSOR Local Fast_Forward
-FOR
-SELECT RepoObject_fullname
- , RepoObject_fullname2
-FROM docs.[RepoObject_OutputFilter]
-ORDER BY RepoObject_fullname
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">Declare db_cursor Cursor Local Fast_Forward For
+Select
+    RepoObject_fullname
+  , RepoObject_fullname2
+From
+    docs.RepoObject_OutputFilter
+Where
+    is_external = 0
+Order By
+    RepoObject_fullname
 
-OPEN db_cursor
+Open db_cursor
 
-FETCH NEXT
-FROM db_cursor
-INTO @Object_fullname
- , @Object_fullname2
-
-WHILE @@FETCH_STATUS = 0
-BEGIN
- --Dynamically construct the BCP command
- --
- SET @command = 'bcp "SELECT [PlantumlEntity_30_0_ObjectRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
-  --
-  + @Object_fullname2
-  --
-  + '''" queryout "' + @outputDir5 + @Object_fullname2 + '.puml"'
-  --
-  + ' -S ' + @instanceName
-  --
-  + ' -d ' + @databaseName
-  --
-  + ' -c -C 65001'
-  --
-  + @TrustedUserPassword
-
- PRINT @command
-
- --Execute the BCP command
- EXEC xp_cmdshell @command
-  , no_output
-
- FETCH NEXT
- FROM db_cursor
- INTO @Object_fullname
+Fetch Next From db_cursor
+Into
+    @Object_fullname
   , @Object_fullname2
-END
 
-CLOSE db_cursor
+While @@Fetch_Status = 0
+Begin
+    --Dynamically construct the BCP command
+    --
+    Set @command
+        = 'bcp "SELECT [PlantumlEntity_30_0_ObjectRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
+          --
+          + @Object_fullname2
+          --
+          + '''" queryout "' + @outputDir5 + @Object_fullname2 + '.puml"'
+          --
+          + ' -S ' + @instanceName
+          --
+          + ' -d ' + @databaseName
+          --
+          + ' -c -C 65001'
+          --
+          + @TrustedUserPassword
 
-DEALLOCATE db_cursor</code></pre>
+    Print @command
+
+    --Execute the BCP command
+    Exec sys.xp_cmdshell @command, no_output
+
+    Fetch Next From db_cursor
+    Into
+        @Object_fullname
+      , @Object_fullname2
+End
+
+Close db_cursor
+Deallocate db_cursor</code></pre>
 </div>
 </div>
 </div>
@@ -2504,58 +2606,61 @@ DEALLOCATE db_cursor</code></pre>
 <div class="content">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">DECLARE db_cursor CURSOR Local Fast_Forward
-FOR
-SELECT RepoObject_fullname
- , RepoObject_fullname2
-FROM docs.[RepoObject_OutputFilter]
-ORDER BY RepoObject_fullname
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">Declare db_cursor Cursor Local Fast_Forward For
+Select
+    RepoObject_fullname
+  , RepoObject_fullname2
+From
+    docs.RepoObject_OutputFilter
+Where
+    is_external = 0
+Order By
+    RepoObject_fullname
 
-OPEN db_cursor
+Open db_cursor
 
-FETCH NEXT
-FROM db_cursor
-INTO @Object_fullname
- , @Object_fullname2
-
-WHILE @@FETCH_STATUS = 0
-BEGIN
- --Dynamically construct the BCP command
- --
- SET @command = 'bcp "SELECT [PlantumlEntity_1_1_ObjectRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
-  --
-  + @Object_fullname2
-  --
-  + '''" queryout "' + @outputDir2 + @Object_fullname2 + '.puml"'
-  --
-  + ' -S ' + @instanceName
-  --
-  + ' -d ' + @databaseName
-  --
-  + ' -c -C 65001'
-  --
-  + @TrustedUserPassword
-
- PRINT @command
-
- --Execute the BCP command
- EXEC xp_cmdshell @command
-  , no_output
-
- FETCH NEXT
- FROM db_cursor
- INTO @Object_fullname
+Fetch Next From db_cursor
+Into
+    @Object_fullname
   , @Object_fullname2
-END
 
-CLOSE db_cursor
+While @@Fetch_Status = 0
+Begin
+    --Dynamically construct the BCP command
+    --
+    Set @command
+        = 'bcp "SELECT [PlantumlEntity_1_1_ObjectRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
+          --
+          + @Object_fullname2
+          --
+          + '''" queryout "' + @outputDir2 + @Object_fullname2 + '.puml"'
+          --
+          + ' -S ' + @instanceName
+          --
+          + ' -d ' + @databaseName
+          --
+          + ' -c -C 65001'
+          --
+          + @TrustedUserPassword
 
-DEALLOCATE db_cursor</code></pre>
+    Print @command
+
+    --Execute the BCP command
+    Exec sys.xp_cmdshell @command, no_output
+
+    Fetch Next From db_cursor
+    Into
+        @Object_fullname
+      , @Object_fullname2
+End
+
+Close db_cursor
+Deallocate db_cursor</code></pre>
 </div>
 </div>
 </div>
 </details></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">520</p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">540</p></td>
@@ -2577,58 +2682,61 @@ DEALLOCATE db_cursor</code></pre>
 <div class="content">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">DECLARE db_cursor CURSOR Local Fast_Forward
-FOR
-SELECT RepoObject_fullname
- , RepoObject_fullname2
-FROM docs.[RepoObject_OutputFilter]
-ORDER BY RepoObject_fullname
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">Declare db_cursor Cursor Local Fast_Forward For
+Select
+    RepoObject_fullname
+  , RepoObject_fullname2
+From
+    docs.RepoObject_OutputFilter
+Where
+    is_external = 0
+Order By
+    RepoObject_fullname
 
-OPEN db_cursor
+Open db_cursor
 
-FETCH NEXT
-FROM db_cursor
-INTO @Object_fullname
- , @Object_fullname2
-
-WHILE @@FETCH_STATUS = 0
-BEGIN
- --Dynamically construct the BCP command
- --
- SET @command = 'bcp "SELECT [PlantumlEntity_1_1_ColRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
-  --
-  + @Object_fullname2
-  --
-  + '''" queryout "' + @outputDir + @Object_fullname2 + '.puml"'
-  --
-  + ' -S ' + @instanceName
-  --
-  + ' -d ' + @databaseName
-  --
-  + ' -c -C 65001'
-  --
-  + @TrustedUserPassword
-
- PRINT @command
-
- --Execute the BCP command
- EXEC xp_cmdshell @command
-  , no_output
-
- FETCH NEXT
- FROM db_cursor
- INTO @Object_fullname
+Fetch Next From db_cursor
+Into
+    @Object_fullname
   , @Object_fullname2
-END
 
-CLOSE db_cursor
+While @@Fetch_Status = 0
+Begin
+    --Dynamically construct the BCP command
+    --
+    Set @command
+        = 'bcp "SELECT [PlantumlEntity_1_1_ColRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
+          --
+          + @Object_fullname2
+          --
+          + '''" queryout "' + @outputDir + @Object_fullname2 + '.puml"'
+          --
+          + ' -S ' + @instanceName
+          --
+          + ' -d ' + @databaseName
+          --
+          + ' -c -C 65001'
+          --
+          + @TrustedUserPassword
 
-DEALLOCATE db_cursor</code></pre>
+    Print @command
+
+    --Execute the BCP command
+    Exec sys.xp_cmdshell @command, no_output
+
+    Fetch Next From db_cursor
+    Into
+        @Object_fullname
+      , @Object_fullname2
+End
+
+Close db_cursor
+Deallocate db_cursor</code></pre>
 </div>
 </div>
 </div>
 </details></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">530</p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">610</p></td>
@@ -2656,7 +2764,7 @@ Select
 From
     repo.RepoSchema
 Where
-    is_ssas = 1
+    is_ssas         = 1
 Order By
     RepoSchema_name
 
@@ -2728,6 +2836,8 @@ Select
     RepoObject_fullname2
 From
     docs.RepoObject_OutputFilter
+Where
+    is_external = 0
 Order By
     RepoObject_fullname2
 
@@ -2799,6 +2909,8 @@ Select
     RepoObject_fullname2
 From
     docs.RepoObject_OutputFilter
+Where
+    is_external = 0
 Order By
     RepoObject_fullname2
 
@@ -2870,6 +2982,8 @@ Select
     RepoObject_fullname2
 From
     docs.RepoObject_OutputFilter
+Where
+    is_external = 0
 Order By
     RepoObject_fullname2
 
@@ -2941,6 +3055,8 @@ Select
     RepoObject_fullname2
 From
     docs.RepoObject_OutputFilter
+Where
+    is_external = 0
 Order By
     RepoObject_fullname2
 
@@ -2996,7 +3112,7 @@ Deallocate db_cursor</code></pre>
 <div class="sectionbody">
 <div class="imageblock kroki">
 <div class="content">
-<object type="image/svg+xml" data="_images/diag-4a0050b688f64283fcdaa07915344a04746301ed.svg"><span class="alt">entity-docs.usp_AntoraExport_ObjectPuml</span></object>
+<object type="image/svg+xml" data="_images/diag-56876b21e2af54dd5778c2c5213671f94e4dec68.svg"><span class="alt">entity-docs.usp_AntoraExport_ObjectPuml</span></object>
 </div>
 </div>
 <div class="paragraph">
@@ -3046,7 +3162,7 @@ Deallocate db_cursor</code></pre>
 <h3 id="_object_reference_diagram_1_1"><a class="anchor" href="#_object_reference_diagram_1_1"></a>Object Reference Diagram - 1 1</h3>
 <div class="imageblock kroki">
 <div class="content">
-<object type="image/svg+xml" data="_images/diag-c44d085833948b508c576df9c877652ee398ef17.svg"><span class="alt">entity_1_1_objectref-docs.usp_AntoraExport_ObjectPuml</span></object>
+<object type="image/svg+xml" data="_images/diag-4a9ef7aecc203278ed7f16878aadeef9e992fe8a.svg"><span class="alt">entity_1_1_objectref-docs.usp_AntoraExport_ObjectPuml</span></object>
 </div>
 </div>
 </div>
@@ -3054,7 +3170,7 @@ Deallocate db_cursor</code></pre>
 <h3 id="_object_reference_diagram_referenced_30_0"><a class="anchor" href="#_object_reference_diagram_referenced_30_0"></a>Object Reference Diagram - Referenced - 30 0</h3>
 <div class="imageblock kroki">
 <div class="content">
-<object type="image/svg+xml" data="_images/diag-9a55b3da4d285ccc3cb03e95e0b042f5cc4bcde9.svg"><span class="alt">entity_30_0_objectref-docs.usp_AntoraExport_ObjectPuml</span></object>
+<object type="image/svg+xml" data="_images/diag-eb6f17f7604de344b2b490c2c47c8cf8eefc451c.svg"><span class="alt">entity_30_0_objectref-docs.usp_AntoraExport_ObjectPuml</span></object>
 </div>
 </div>
 </div>
@@ -3062,7 +3178,7 @@ Deallocate db_cursor</code></pre>
 <h3 id="_object_reference_diagram_referencing_0_30"><a class="anchor" href="#_object_reference_diagram_referencing_0_30"></a>Object Reference Diagram - Referencing - 0 30</h3>
 <div class="imageblock kroki">
 <div class="content">
-<object type="image/svg+xml" data="_images/diag-3f39840f9f98ee2b7c5dbd8913d381b089cc000d.svg"><span class="alt">entity_0_30_objectref-docs.usp_AntoraExport_ObjectPuml</span></object>
+<object type="image/svg+xml" data="_images/diag-ef62946b8a9cad9ff6dafd7bd68120aafce2db2f.svg"><span class="alt">entity_0_30_objectref-docs.usp_AntoraExport_ObjectPuml</span></object>
 </div>
 </div>
 </div>
@@ -3253,54 +3369,56 @@ EXEC [docs].[usp_PERSIST_RepoObject_Plantuml_T]
 /*{"ReportUspStep":[{"Number":430,"Name":"export FROM [docs].[RepoObject_Plantuml] [PlantumlEntity_1_1_FkRef]","has_logging":1,"is_condition":0,"is_inactive":0,"is_SubProcedure":0,"log_source_object":"[docs].[RepoObject_Plantuml_T]","log_flag_InsertUpdateDelete":"u"}]}*/
 PRINT CONCAT('usp_id;Number;Parent_Number: ',32,';',430,';',NULL);
 
-DECLARE db_cursor CURSOR Local Fast_Forward
-FOR
-SELECT RepoObject_fullname
- , RepoObject_fullname2
-FROM docs.[RepoObject_OutputFilter]
-ORDER BY RepoObject_fullname
+Declare db_cursor Cursor Local Fast_Forward For
+Select
+    RepoObject_fullname
+  , RepoObject_fullname2
+From
+    docs.RepoObject_OutputFilter
+Where
+    is_external = 0
+Order By
+    RepoObject_fullname
 
-OPEN db_cursor
+Open db_cursor
 
-FETCH NEXT
-FROM db_cursor
-INTO @Object_fullname
- , @Object_fullname2
-
-WHILE @@FETCH_STATUS = 0
-BEGIN
- --Dynamically construct the BCP command
- --
- SET @command = 'bcp "SELECT [PlantumlEntity_1_1_FkRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
-  --
-  + @Object_fullname2
-  --
-  + '''" queryout "' + @outputDir3 + @Object_fullname2 + '.puml"'
-  --
-  + ' -S ' + @instanceName
-  --
-  + ' -d ' + @databaseName
-  --
-  + ' -c -C 65001'
-  --
-  + @TrustedUserPassword
-
- PRINT @command
-
- --Execute the BCP command
- EXEC xp_cmdshell @command
-  , no_output
-
- FETCH NEXT
- FROM db_cursor
- INTO @Object_fullname
+Fetch Next From db_cursor
+Into
+    @Object_fullname
   , @Object_fullname2
-END
 
-CLOSE db_cursor
+While @@Fetch_Status = 0
+Begin
+    --Dynamically construct the BCP command
+    --
+    Set @command
+        = 'bcp "SELECT [PlantumlEntity_1_1_FkRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
+          --
+          + @Object_fullname2
+          --
+          + '''" queryout "' + @outputDir3 + @Object_fullname2 + '.puml"'
+          --
+          + ' -S ' + @instanceName
+          --
+          + ' -d ' + @databaseName
+          --
+          + ' -c -C 65001'
+          --
+          + @TrustedUserPassword
 
-DEALLOCATE db_cursor
+    Print @command
 
+    --Execute the BCP command
+    Exec sys.xp_cmdshell @command, no_output
+
+    Fetch Next From db_cursor
+    Into
+        @Object_fullname
+      , @Object_fullname2
+End
+
+Close db_cursor
+Deallocate db_cursor
 
 -- Logging START --
 SET @rows = @@ROWCOUNT
@@ -3333,54 +3451,56 @@ IF (select config.fs_get_parameter_value ( 'sync enable', 'dwh' )) = 1
 BEGIN
 PRINT CONCAT('usp_id;Number;Parent_Number: ',32,';',510,';',500);
 
-DECLARE db_cursor CURSOR Local Fast_Forward
-FOR
-SELECT RepoObject_fullname
- , RepoObject_fullname2
-FROM docs.[RepoObject_OutputFilter]
-ORDER BY RepoObject_fullname
+Declare db_cursor Cursor Local Fast_Forward For
+Select
+    RepoObject_fullname
+  , RepoObject_fullname2
+From
+    docs.RepoObject_OutputFilter
+Where
+    is_external = 0
+Order By
+    RepoObject_fullname
 
-OPEN db_cursor
+Open db_cursor
 
-FETCH NEXT
-FROM db_cursor
-INTO @Object_fullname
- , @Object_fullname2
-
-WHILE @@FETCH_STATUS = 0
-BEGIN
- --Dynamically construct the BCP command
- --
- SET @command = 'bcp "SELECT [PlantumlEntity_0_30_ObjectRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
-  --
-  + @Object_fullname2
-  --
-  + '''" queryout "' + @outputDir4 + @Object_fullname2 + '.puml"'
-  --
-  + ' -S ' + @instanceName
-  --
-  + ' -d ' + @databaseName
-  --
-  + ' -c -C 65001'
-  --
-  + @TrustedUserPassword
-
- PRINT @command
-
- --Execute the BCP command
- EXEC xp_cmdshell @command
-  , no_output
-
- FETCH NEXT
- FROM db_cursor
- INTO @Object_fullname
+Fetch Next From db_cursor
+Into
+    @Object_fullname
   , @Object_fullname2
-END
 
-CLOSE db_cursor
+While @@Fetch_Status = 0
+Begin
+    --Dynamically construct the BCP command
+    --
+    Set @command
+        = 'bcp "SELECT [PlantumlEntity_0_30_ObjectRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
+          --
+          + @Object_fullname2
+          --
+          + '''" queryout "' + @outputDir4 + @Object_fullname2 + '.puml"'
+          --
+          + ' -S ' + @instanceName
+          --
+          + ' -d ' + @databaseName
+          --
+          + ' -c -C 65001'
+          --
+          + @TrustedUserPassword
 
-DEALLOCATE db_cursor
+    Print @command
 
+    --Execute the BCP command
+    Exec sys.xp_cmdshell @command, no_output
+
+    Fetch Next From db_cursor
+    Into
+        @Object_fullname
+      , @Object_fullname2
+End
+
+Close db_cursor
+Deallocate db_cursor
 
 -- Logging START --
 SET @rows = @@ROWCOUNT
@@ -3409,54 +3529,56 @@ EXEC logs.usp_ExecutionLog_insert
 /*{"ReportUspStep":[{"Number":520,"Parent_Number":510,"Name":"export FROM [docs].[RepoObject_Plantuml] [PlantumlEntity_30_0_ObjectRef]","has_logging":1,"is_condition":0,"is_inactive":0,"is_SubProcedure":0,"log_source_object":"[docs].[RepoObject_Plantuml_T]","log_flag_InsertUpdateDelete":"u"}]}*/
 PRINT CONCAT('usp_id;Number;Parent_Number: ',32,';',520,';',510);
 
-DECLARE db_cursor CURSOR Local Fast_Forward
-FOR
-SELECT RepoObject_fullname
- , RepoObject_fullname2
-FROM docs.[RepoObject_OutputFilter]
-ORDER BY RepoObject_fullname
+Declare db_cursor Cursor Local Fast_Forward For
+Select
+    RepoObject_fullname
+  , RepoObject_fullname2
+From
+    docs.RepoObject_OutputFilter
+Where
+    is_external = 0
+Order By
+    RepoObject_fullname
 
-OPEN db_cursor
+Open db_cursor
 
-FETCH NEXT
-FROM db_cursor
-INTO @Object_fullname
- , @Object_fullname2
-
-WHILE @@FETCH_STATUS = 0
-BEGIN
- --Dynamically construct the BCP command
- --
- SET @command = 'bcp "SELECT [PlantumlEntity_30_0_ObjectRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
-  --
-  + @Object_fullname2
-  --
-  + '''" queryout "' + @outputDir5 + @Object_fullname2 + '.puml"'
-  --
-  + ' -S ' + @instanceName
-  --
-  + ' -d ' + @databaseName
-  --
-  + ' -c -C 65001'
-  --
-  + @TrustedUserPassword
-
- PRINT @command
-
- --Execute the BCP command
- EXEC xp_cmdshell @command
-  , no_output
-
- FETCH NEXT
- FROM db_cursor
- INTO @Object_fullname
+Fetch Next From db_cursor
+Into
+    @Object_fullname
   , @Object_fullname2
-END
 
-CLOSE db_cursor
+While @@Fetch_Status = 0
+Begin
+    --Dynamically construct the BCP command
+    --
+    Set @command
+        = 'bcp "SELECT [PlantumlEntity_30_0_ObjectRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
+          --
+          + @Object_fullname2
+          --
+          + '''" queryout "' + @outputDir5 + @Object_fullname2 + '.puml"'
+          --
+          + ' -S ' + @instanceName
+          --
+          + ' -d ' + @databaseName
+          --
+          + ' -c -C 65001'
+          --
+          + @TrustedUserPassword
 
-DEALLOCATE db_cursor
+    Print @command
 
+    --Execute the BCP command
+    Exec sys.xp_cmdshell @command, no_output
+
+    Fetch Next From db_cursor
+    Into
+        @Object_fullname
+      , @Object_fullname2
+End
+
+Close db_cursor
+Deallocate db_cursor
 
 -- Logging START --
 SET @rows = @@ROWCOUNT
@@ -3481,58 +3603,61 @@ EXEC logs.usp_ExecutionLog_insert
  , @target_object = @target_object
  , @updated = @rows
 -- Logging END --
+END;
 
-/*{"ReportUspStep":[{"Number":530,"Parent_Number":520,"Name":"export FROM [docs].[RepoObject_Plantuml] [PlantumlEntity_1_1_ObjectRef]","has_logging":1,"is_condition":0,"is_inactive":0,"is_SubProcedure":0,"log_source_object":"[docs].[RepoObject_Plantuml_T]","log_flag_InsertUpdateDelete":"u"}]}*/
-PRINT CONCAT('usp_id;Number;Parent_Number: ',32,';',530,';',520);
+/*{"ReportUspStep":[{"Number":530,"Name":"export FROM [docs].[RepoObject_Plantuml] [PlantumlEntity_1_1_ObjectRef]","has_logging":1,"is_condition":0,"is_inactive":0,"is_SubProcedure":0,"log_source_object":"[docs].[RepoObject_Plantuml_T]","log_flag_InsertUpdateDelete":"u"}]}*/
+PRINT CONCAT('usp_id;Number;Parent_Number: ',32,';',530,';',NULL);
 
-DECLARE db_cursor CURSOR Local Fast_Forward
-FOR
-SELECT RepoObject_fullname
- , RepoObject_fullname2
-FROM docs.[RepoObject_OutputFilter]
-ORDER BY RepoObject_fullname
+Declare db_cursor Cursor Local Fast_Forward For
+Select
+    RepoObject_fullname
+  , RepoObject_fullname2
+From
+    docs.RepoObject_OutputFilter
+Where
+    is_external = 0
+Order By
+    RepoObject_fullname
 
-OPEN db_cursor
+Open db_cursor
 
-FETCH NEXT
-FROM db_cursor
-INTO @Object_fullname
- , @Object_fullname2
-
-WHILE @@FETCH_STATUS = 0
-BEGIN
- --Dynamically construct the BCP command
- --
- SET @command = 'bcp "SELECT [PlantumlEntity_1_1_ObjectRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
-  --
-  + @Object_fullname2
-  --
-  + '''" queryout "' + @outputDir2 + @Object_fullname2 + '.puml"'
-  --
-  + ' -S ' + @instanceName
-  --
-  + ' -d ' + @databaseName
-  --
-  + ' -c -C 65001'
-  --
-  + @TrustedUserPassword
-
- PRINT @command
-
- --Execute the BCP command
- EXEC xp_cmdshell @command
-  , no_output
-
- FETCH NEXT
- FROM db_cursor
- INTO @Object_fullname
+Fetch Next From db_cursor
+Into
+    @Object_fullname
   , @Object_fullname2
-END
 
-CLOSE db_cursor
+While @@Fetch_Status = 0
+Begin
+    --Dynamically construct the BCP command
+    --
+    Set @command
+        = 'bcp "SELECT [PlantumlEntity_1_1_ObjectRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
+          --
+          + @Object_fullname2
+          --
+          + '''" queryout "' + @outputDir2 + @Object_fullname2 + '.puml"'
+          --
+          + ' -S ' + @instanceName
+          --
+          + ' -d ' + @databaseName
+          --
+          + ' -c -C 65001'
+          --
+          + @TrustedUserPassword
 
-DEALLOCATE db_cursor
+    Print @command
 
+    --Execute the BCP command
+    Exec sys.xp_cmdshell @command, no_output
+
+    Fetch Next From db_cursor
+    Into
+        @Object_fullname
+      , @Object_fullname2
+End
+
+Close db_cursor
+Deallocate db_cursor
 
 -- Logging START --
 SET @rows = @@ROWCOUNT
@@ -3558,57 +3683,59 @@ EXEC logs.usp_ExecutionLog_insert
  , @updated = @rows
 -- Logging END --
 
-/*{"ReportUspStep":[{"Number":540,"Parent_Number":530,"Name":"export FROM [docs].[RepoObject_Plantuml] [PlantumlEntity_1_1_ColRef]","has_logging":1,"is_condition":0,"is_inactive":0,"is_SubProcedure":0,"log_source_object":"[docs].[RepoObject_Plantuml_T]","log_flag_InsertUpdateDelete":"u"}]}*/
-PRINT CONCAT('usp_id;Number;Parent_Number: ',32,';',540,';',530);
+/*{"ReportUspStep":[{"Number":540,"Name":"export FROM [docs].[RepoObject_Plantuml] [PlantumlEntity_1_1_ColRef]","has_logging":1,"is_condition":0,"is_inactive":0,"is_SubProcedure":0,"log_source_object":"[docs].[RepoObject_Plantuml_T]","log_flag_InsertUpdateDelete":"u"}]}*/
+PRINT CONCAT('usp_id;Number;Parent_Number: ',32,';',540,';',NULL);
 
-DECLARE db_cursor CURSOR Local Fast_Forward
-FOR
-SELECT RepoObject_fullname
- , RepoObject_fullname2
-FROM docs.[RepoObject_OutputFilter]
-ORDER BY RepoObject_fullname
+Declare db_cursor Cursor Local Fast_Forward For
+Select
+    RepoObject_fullname
+  , RepoObject_fullname2
+From
+    docs.RepoObject_OutputFilter
+Where
+    is_external = 0
+Order By
+    RepoObject_fullname
 
-OPEN db_cursor
+Open db_cursor
 
-FETCH NEXT
-FROM db_cursor
-INTO @Object_fullname
- , @Object_fullname2
-
-WHILE @@FETCH_STATUS = 0
-BEGIN
- --Dynamically construct the BCP command
- --
- SET @command = 'bcp "SELECT [PlantumlEntity_1_1_ColRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
-  --
-  + @Object_fullname2
-  --
-  + '''" queryout "' + @outputDir + @Object_fullname2 + '.puml"'
-  --
-  + ' -S ' + @instanceName
-  --
-  + ' -d ' + @databaseName
-  --
-  + ' -c -C 65001'
-  --
-  + @TrustedUserPassword
-
- PRINT @command
-
- --Execute the BCP command
- EXEC xp_cmdshell @command
-  , no_output
-
- FETCH NEXT
- FROM db_cursor
- INTO @Object_fullname
+Fetch Next From db_cursor
+Into
+    @Object_fullname
   , @Object_fullname2
-END
 
-CLOSE db_cursor
+While @@Fetch_Status = 0
+Begin
+    --Dynamically construct the BCP command
+    --
+    Set @command
+        = 'bcp "SELECT [PlantumlEntity_1_1_ColRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
+          --
+          + @Object_fullname2
+          --
+          + '''" queryout "' + @outputDir + @Object_fullname2 + '.puml"'
+          --
+          + ' -S ' + @instanceName
+          --
+          + ' -d ' + @databaseName
+          --
+          + ' -c -C 65001'
+          --
+          + @TrustedUserPassword
 
-DEALLOCATE db_cursor
+    Print @command
 
+    --Execute the BCP command
+    Exec sys.xp_cmdshell @command, no_output
+
+    Fetch Next From db_cursor
+    Into
+        @Object_fullname
+      , @Object_fullname2
+End
+
+Close db_cursor
+Deallocate db_cursor
 
 -- Logging START --
 SET @rows = @@ROWCOUNT
@@ -3633,7 +3760,6 @@ EXEC logs.usp_ExecutionLog_insert
  , @target_object = @target_object
  , @updated = @rows
 -- Logging END --
-END;
 
 /*{"ReportUspStep":[{"Number":610,"Name":"export FROM [docs].[Schema_puml] [PumlSchemaSsasEr]","has_logging":1,"is_condition":0,"is_inactive":0,"is_SubProcedure":0,"log_source_object":"[docs].[Schema_puml]","log_flag_InsertUpdateDelete":"u"}]}*/
 PRINT CONCAT('usp_id;Number;Parent_Number: ',32,';',610,';',NULL);
@@ -3644,7 +3770,7 @@ Select
 From
     repo.RepoSchema
 Where
-    is_ssas = 1
+    is_ssas         = 1
 Order By
     RepoSchema_name
 
@@ -3718,6 +3844,8 @@ Select
     RepoObject_fullname2
 From
     docs.RepoObject_OutputFilter
+Where
+    is_external = 0
 Order By
     RepoObject_fullname2
 
@@ -3791,6 +3919,8 @@ Select
     RepoObject_fullname2
 From
     docs.RepoObject_OutputFilter
+Where
+    is_external = 0
 Order By
     RepoObject_fullname2
 
@@ -3864,6 +3994,8 @@ Select
     RepoObject_fullname2
 From
     docs.RepoObject_OutputFilter
+Where
+    is_external = 0
 Order By
     RepoObject_fullname2
 
@@ -3937,6 +4069,8 @@ Select
     RepoObject_fullname2
 From
     docs.RepoObject_OutputFilter
+Where
+    is_external = 0
 Order By
     RepoObject_fullname2
 
@@ -4048,6 +4182,91 @@ END</code></pre>
   <p>This page was built using the Antora default UI.</p>
   <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
 </footer>
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content" onclick="closeModal()">
+        <!--suppress HtmlRequiredAltAttribute as this will be set when selecting the image via JavaScript,
+        RequiredAttributes as src will be set by when selecting the image via JavaScript -->
+        <img id="imageinmodal">
+    </div>
+</div>
+<script>
+    function openModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+
+    document.querySelectorAll('.imageblock kroki').forEach(element => {
+        element.className += " lightbox";
+        element.addEventListener('click', evt => {
+            document.getElementById("imageinmodal").setAttribute("data", evt.currentTarget.getAttribute("data"))
+            openModal();
+        })
+    });
+
+</script>
+<style>
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 10;
+        padding-top: 5vh;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        backdrop-filter: blur(3px);
+        background-color: rgba(30, 30, 30, 0.8);
+    }
+    img.lightbox {
+        cursor: pointer;
+    }
+    /* Modal Content */
+    .modal-content {
+        position: relative;
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        max-height: 90vh;
+        cursor: pointer;
+    }
+
+    .modal-content img {
+        width: auto;
+        height: auto;
+        max-width: 90vw;
+        max-height: 90vh;
+        min-width: 90vw;
+        min-height: 90vh;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        object-fit: contain;
+    }
+
+    /* The Close Button */
+    .close {
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
 <script src="../../../_/js/site.js"></script>
 <script async src="../../../_/js/vendor/highlight.js"></script>
   </body>

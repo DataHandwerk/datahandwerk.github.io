@@ -27,14 +27,14 @@
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link" href="#">Resources</a>
           <div class="navbar-dropdown">
-            <a class="navbar-item" href="https://github.com/DataHandwerk/DataHandwerk-toolkit-mssql" target="_blank">GitHub Project</a>
+            <a class="navbar-item" href="https://gitlab.com/datahandwerk/DataHandwerk-toolkit-mssql" target="_blank">GitLab Project</a>
+            <a class="navbar-item" href="https://gitlab.com/datahandwerk/DataHandwerk-toolkit-mssql/-/issues" target="_blank">GitLab Project issues</a>
             <a class="navbar-item" href="https://datahandwerk.zulipchat.com/" target="_blank">Community (Zulip: streams with topics)</a>
-            <a class="navbar-item" href="https://dev.azure.com/DataHandwerk/89a7b008-69b9-42e4-b31f-4c2dfb6bd49a/_boards/board/t/f3077374-71b6-4a5b-bfd6-24a792bbc352/Microsoft.RequirementCategory/" target="_blank">Azure Boards</a>
           </div>
         </div>
         <div class="navbar-item">
           <form action="https://www.google.com/search" method="get" target="searchresult">
-              <input type="hidden" name="q" value="site:datahandwerk.github.io">
+              <input type="hidden" name="q" value="site:datahandwerk.gitlab.io">
               <input type="text" name="q" alt="search">
               <input type="submit" value="Search">
           </form>
@@ -87,6 +87,91 @@ If you typed the URL of this page manually, please double check that you entered
   <p>This page was built using the Antora default UI.</p>
   <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
 </footer>
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content" onclick="closeModal()">
+        <!--suppress HtmlRequiredAltAttribute as this will be set when selecting the image via JavaScript,
+        RequiredAttributes as src will be set by when selecting the image via JavaScript -->
+        <img id="imageinmodal">
+    </div>
+</div>
+<script>
+    function openModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+
+    document.querySelectorAll('.imageblock kroki').forEach(element => {
+        element.className += " lightbox";
+        element.addEventListener('click', evt => {
+            document.getElementById("imageinmodal").setAttribute("data", evt.currentTarget.getAttribute("data"))
+            openModal();
+        })
+    });
+
+</script>
+<style>
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 10;
+        padding-top: 5vh;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        backdrop-filter: blur(3px);
+        background-color: rgba(30, 30, 30, 0.8);
+    }
+    img.lightbox {
+        cursor: pointer;
+    }
+    /* Modal Content */
+    .modal-content {
+        position: relative;
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        max-height: 90vh;
+        cursor: pointer;
+    }
+
+    .modal-content img {
+        width: auto;
+        height: auto;
+        max-width: 90vw;
+        max-height: 90vh;
+        min-width: 90vw;
+        min-height: 90vh;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        object-fit: contain;
+    }
+
+    /* The Close Button */
+    .close {
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
 <script src="/_/js/site.js"></script>
 <script async src="/_/js/vendor/highlight.js"></script>
   </body>

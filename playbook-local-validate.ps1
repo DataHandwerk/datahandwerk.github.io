@@ -1,0 +1,1 @@
+antora --generator @antora/xref-validator playbook-local.yml

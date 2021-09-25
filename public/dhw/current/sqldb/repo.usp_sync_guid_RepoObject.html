@@ -30,14 +30,14 @@
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link" href="#">Resources</a>
           <div class="navbar-dropdown">
-            <a class="navbar-item" href="https://github.com/DataHandwerk/DataHandwerk-toolkit-mssql" target="_blank">GitHub Project</a>
+            <a class="navbar-item" href="https://gitlab.com/datahandwerk/DataHandwerk-toolkit-mssql" target="_blank">GitLab Project</a>
+            <a class="navbar-item" href="https://gitlab.com/datahandwerk/DataHandwerk-toolkit-mssql/-/issues" target="_blank">GitLab Project issues</a>
             <a class="navbar-item" href="https://datahandwerk.zulipchat.com/" target="_blank">Community (Zulip: streams with topics)</a>
-            <a class="navbar-item" href="https://dev.azure.com/DataHandwerk/89a7b008-69b9-42e4-b31f-4c2dfb6bd49a/_boards/board/t/f3077374-71b6-4a5b-bfd6-24a792bbc352/Microsoft.RequirementCategory/" target="_blank">Azure Boards</a>
           </div>
         </div>
         <div class="navbar-item">
           <form action="https://www.google.com/search" method="get" target="searchresult">
-              <input type="hidden" name="q" value="site:datahandwerk.github.io">
+              <input type="hidden" name="q" value="site:datahandwerk.gitlab.io">
               <input type="text" name="q" alt="search">
               <input type="submit" value="Search">
           </form>
@@ -74,7 +74,7 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="nav/objects-by-schema.html">Objects by schema</a>
+    <a class="nav-link" href="nav/objects-by-schema.html">dhw_self - Objects by schema</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -435,6 +435,12 @@
     <a class="nav-link" href="property.ExtendedProperty_Repo2Sys_level2_Union.html">property.ExtendedProperty_Repo2Sys_level2_Union</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.external_RepoObjectColumnProperty.html">property.external_RepoObjectColumnProperty</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.external_RepoObjectProperty.html">property.external_RepoObjectProperty</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.fs_get_RepoObjectColumnProperty_nvarchar.html">property.fs_get_RepoObjectColumnProperty_nvarchar</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -460,6 +466,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectColumnProperty.html">property.RepoObjectColumnProperty</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.RepoObjectColumnProperty_external_src.html">property.RepoObjectColumnProperty_external_src</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.RepoObjectColumnProperty_external_tgt.html">property.RepoObjectColumnProperty_external_tgt</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectColumnProperty_ForUpdate.html">property.RepoObjectColumnProperty_ForUpdate</a>
@@ -489,6 +501,12 @@
     <a class="nav-link" href="property.RepoObjectProperty_cross.html">property.RepoObjectProperty_cross</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.RepoObjectProperty_external_src.html">property.RepoObjectProperty_external_src</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.RepoObjectProperty_external_tgt.html">property.RepoObjectProperty_external_tgt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.RepoObjectProperty_ForUpdate.html">property.RepoObjectProperty_ForUpdate</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -504,10 +522,22 @@
     <a class="nav-link" href="property.RepoSchemaProperty.html">property.RepoSchemaProperty</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.usp_external_property_import.html">property.usp_external_property_import</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.usp_external_RepoObjectProperty.html">property.usp_external_RepoObjectProperty</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.usp_PERSIST_PropertyName_RepoObject_T.html">property.usp_PERSIST_PropertyName_RepoObject_T</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.usp_PERSIST_PropertyName_RepoObjectColumn_T.html">property.usp_PERSIST_PropertyName_RepoObjectColumn_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.usp_PERSIST_RepoObjectColumnProperty_external_tgt.html">property.usp_PERSIST_RepoObjectColumnProperty_external_tgt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.usp_PERSIST_RepoObjectProperty_external_tgt.html">property.usp_PERSIST_RepoObjectProperty_external_tgt</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.usp_RepoObject_Inheritance.html">property.usp_RepoObject_Inheritance</a>
@@ -523,6 +553,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.usp_RepoObjectProperty_set.html">property.usp_RepoObjectProperty_set</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.usp_RepoSchemaProperty_set.html">property.usp_RepoSchemaProperty_set</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.usp_sync_ExtendedProperties_Repo2Sys_Delete.html">property.usp_sync_ExtendedProperties_Repo2Sys_Delete</a>
@@ -543,7 +576,28 @@
     <a class="nav-link" href="reference.additional_Reference.html">reference.additional_Reference</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.additional_Reference_database.html">reference.additional_Reference_database</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.additional_Reference_database_T.html">reference.additional_Reference_database_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.additional_Reference_guid.html">reference.additional_Reference_guid</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.additional_Reference_is_external.html">reference.additional_Reference_is_external</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.additional_Reference_Object.html">reference.additional_Reference_Object</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.additional_Reference_Object_T.html">reference.additional_Reference_Object_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.additional_Reference_ObjectColumn.html">reference.additional_Reference_ObjectColumn</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.additional_Reference_ObjectColumn_T.html">reference.additional_Reference_ObjectColumn_T</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.ftv_query_plan_extract_source.html">reference.ftv_query_plan_extract_source</a>
@@ -597,6 +651,9 @@
     <a class="nav-link" href="reference.RepoObject_reference.html">reference.RepoObject_reference</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.RepoObject_reference_additional.html">reference.RepoObject_reference_additional</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObject_reference_additional_internal.html">reference.RepoObject_reference_additional_internal</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -625,6 +682,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObject_ReferencedList.html">reference.RepoObject_ReferencedList</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.RepoObject_ReferencedReferencing.html">reference.RepoObject_ReferencedReferencing</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObject_ReferenceTree.html">reference.RepoObject_ReferenceTree</a>
@@ -663,10 +723,10 @@
     <a class="nav-link" href="reference.RepoObject_ReferencingList.html">reference.RepoObject_ReferencingList</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="reference.RepoObject_ReferencingReferenced.html">reference.RepoObject_ReferencingReferenced</a>
+    <a class="nav-link" href="reference.RepoObjectColumn_reference.html">reference.RepoObjectColumn_reference</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="reference.RepoObjectColumn_reference.html">reference.RepoObjectColumn_reference</a>
+    <a class="nav-link" href="reference.RepoObjectColumn_reference_additional.html">reference.RepoObjectColumn_reference_additional</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObjectColumn_reference_additional_internal.html">reference.RepoObjectColumn_reference_additional_internal</a>
@@ -702,13 +762,13 @@
     <a class="nav-link" href="reference.RepoObjectColumn_ReferencedList.html">reference.RepoObjectColumn_ReferencedList</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.RepoObjectColumn_ReferencedReferencing.html">reference.RepoObjectColumn_ReferencedReferencing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObjectColumn_ReferenceTree.html">reference.RepoObjectColumn_ReferenceTree</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObjectColumn_ReferencingList.html">reference.RepoObjectColumn_ReferencingList</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="reference.RepoObjectColumn_ReferencingReferenced.html">reference.RepoObjectColumn_ReferencingReferenced</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.RepoObjectColumn_RelationScript.html">reference.RepoObjectColumn_RelationScript</a>
@@ -727,6 +787,18 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.SysObjectColumn_QueryPlanExpression.html">reference.SysObjectColumn_QueryPlanExpression</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.usp_additional_Reference.html">reference.usp_additional_Reference</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.usp_PERSIST_additional_Reference_database_T.html">reference.usp_PERSIST_additional_Reference_database_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.usp_PERSIST_additional_Reference_Object_T.html">reference.usp_PERSIST_additional_Reference_Object_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference.usp_PERSIST_additional_Reference_ObjectColumn_T.html">reference.usp_PERSIST_additional_Reference_ObjectColumn_T</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference.usp_PERSIST_RepoObject_reference_T.html">reference.usp_PERSIST_RepoObject_reference_T</a>
@@ -900,6 +972,9 @@
     <a class="nav-link" href="repo.Measures.html">repo.Measures</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.Measures_union.html">repo.Measures_union</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObject.html">repo.RepoObject</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -910,6 +985,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObject_ColumnList.html">repo.RepoObject_ColumnList</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.RepoObject_external_src.html">repo.RepoObject_external_src</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.RepoObject_external_tgt.html">repo.RepoObject_external_tgt</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObject_fullname_u_v.html">repo.RepoObject_fullname_u_v</a>
@@ -958,6 +1039,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObjectColumn.html">repo.RepoObjectColumn</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.RepoObjectColumn_external_src.html">repo.RepoObjectColumn_external_src</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.RepoObjectColumn_external_tgt.html">repo.RepoObjectColumn_external_tgt</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.RepoObjectColumn_gross.html">repo.RepoObjectColumn_gross</a>
@@ -1044,7 +1131,13 @@
     <a class="nav-link" href="repo.usp_PERSIST_IndexColumn_union_T.html">repo.usp_PERSIST_IndexColumn_union_T</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.usp_PERSIST_RepoObject_external_tgt.html">repo.usp_PERSIST_RepoObject_external_tgt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.usp_PERSIST_RepoObject_SSAS_tgt.html">repo.usp_PERSIST_RepoObject_SSAS_tgt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.usp_PERSIST_RepoObjectColumn_external_tgt.html">repo.usp_PERSIST_RepoObjectColumn_external_tgt</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.usp_PERSIST_RepoObjectColumn_SSAS_tgt.html">repo.usp_PERSIST_RepoObjectColumn_SSAS_tgt</a>
@@ -1789,7 +1882,7 @@
     <a class="nav-link" href="../user-guide/create-update-connect-repo-db.html">Create, update and connect repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../user-guide/backup-repo-db.html">Backup repository database</a>
+    <a class="nav-link" href="../user-guide/backup-repo-db.html">Backup and restore repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
@@ -1856,12 +1949,12 @@
   <ul>
     <li><a href="../index.html">DataHandwerk</a></li>
     <li>DHW Repository (database)</li>
-    <li><a href="nav/objects-by-schema.html">Objects by schema</a></li>
+    <li><a href="nav/objects-by-schema.html">dhw_self - Objects by schema</a></li>
     <li><a href="nav/nav-schema-repo.html">repo</a></li>
     <li><a href="repo.usp_sync_guid_RepoObject.html">repo.usp_sync_guid_RepoObject</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="file:///D:/Repos/GitHub/DataHandwerk/dhw-antora-sqldb/docs/modules/sqldb/pages/repo.usp_sync_guid_RepoObject.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="file:///D:/Repos/gitlab/DataHandwerk/dhw-antora-sqldb/docs/modules/sqldb/pages/repo.usp_sync_guid_RepoObject.adoc">Edit this Page</a></div>
 </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
@@ -1877,7 +1970,7 @@ P
 (
 stored procedure
 ), modify_date:
-2021-09-10 19:21:00</p>
+2021-09-25 19:59:04</p>
 </div>
 <div class="paragraph">
 <p>RepoObject_guid:
@@ -2683,20 +2776,30 @@ Deallocate property_cursor;</code></pre>
 <div class="content">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">UPDATE repo.RepoObject
-SET [is_SysObject_missing] = 1
-FROM [repo].[RepoObject] [T1]
-WHERE NOT EXISTS (
-  SELECT [SysObject_id]
-  FROM [repo_sys].[SysObject] AS [Filter]
-  WHERE [t1].[SysObject_schema_name] = [Filter].[SysObject_schema_name]
-   AND [T1].[SysObject_name] = [Filter].[SysObject_name]
-  )</code></pre>
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">Update
+    repo.RepoObject
+Set
+    is_SysObject_missing = 1
+From
+    repo.RepoObject As T1
+Where
+    Not Exists
+(
+    Select
+        Filter.SysObject_id
+    From
+        repo_sys.SysObject As Filter
+    Where
+        t1.SysObject_schema_name = Filter.SysObject_schema_name
+        And t1.SysObject_name    = Filter.SysObject_name
+)
+    And T1.is_ssas     = 0
+    And T1.is_external = 0</code></pre>
 </div>
 </div>
 </div>
 </details></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2010</p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2115</p></td>
@@ -2732,7 +2835,10 @@ Set
 From
     repo.RepoObject As T1
 Where
-    Exists
+    T1.is_SysObject_missing = 1
+    And
+    (
+        Exists
 (
     Select
         Filter.SysObject_id
@@ -2742,12 +2848,14 @@ Where
         t1.SysObject_schema_name = Filter.SysObject_schema_name
         And t1.SysObject_name    = Filter.SysObject_name
 )
-    And T1.is_SysObject_missing = 1</code></pre>
+        Or T1.is_ssas       = 0
+        Or T1.is_external   = 0
+    )</code></pre>
 </div>
 </div>
 </div>
 </details></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2110</p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2120</p></td>
@@ -2776,14 +2884,18 @@ if they are is_repo_managed we don&#8217;t want to delete them but there should 
 <div class="content">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">DELETE repo.RepoObject
-WHERE ISNULL([is_repo_managed], 0) = 0
- AND [is_SysObject_missing] = 1</code></pre>
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">Delete
+repo.RepoObject
+Where
+    is_SysObject_missing              = 1
+    And IsNull ( is_repo_managed, 0 ) = 0
+    And is_ssas                       = 0
+    And is_external                   = 0</code></pre>
 </div>
 </div>
 </div>
 </details></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2115</p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2310</p></td>
@@ -2814,42 +2926,52 @@ WHERE ISNULL([is_repo_managed], 0) = 0
 <div class="content">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">UPDATE ro
-SET [Repo_history_table_guid] = [history_table_guid]
- , [Repo_temporal_type] = [temporal_type]
-FROM [repo].[SysObject_RepoObject_via_guid] [ro]
-WHERE
- --not is_repo_managed
- ISNULL([ro].[is_repo_managed], 0) = 0
- AND (
-  --
-  1 = 0
-  --
-  OR [Repo_history_table_guid] &lt;&gt; [history_table_guid]
-  OR (
-   [Repo_history_table_guid] IS NULL
-   AND NOT [history_table_guid] IS NULL
-   )
-  OR (
-   [history_table_guid] IS NULL
-   AND NOT [Repo_history_table_guid] IS NULL
-   )
-  OR [Repo_temporal_type] &lt;&gt; [temporal_type]
-  OR (
-   [Repo_temporal_type] IS NULL
-   AND NOT [temporal_type] IS NULL
-   )
-  OR (
-   [temporal_type] IS NULL
-   AND NOT [Repo_temporal_type] IS NULL
-   )
-  --
-  )</code></pre>
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">Update
+    ro
+Set
+    ro.Repo_history_table_guid = ro.history_table_guid
+  , ro.Repo_temporal_type = ro.temporal_type
+From
+    repo.SysObject_RepoObject_via_guid As ro
+Where
+    --not is_repo_managed
+    IsNull ( ro.is_repo_managed, 0 )  = 0
+    And ro.is_ssas                    = 0
+    And ro.is_external                = 0
+    And
+    (
+        --
+        1                             = 0
+        --
+        Or ro.Repo_history_table_guid &lt;&gt; ro.history_table_guid
+        Or
+        (
+            ro.Repo_history_table_guid Is Null
+            And Not ro.history_table_guid Is Null
+        )
+        Or
+        (
+            ro.history_table_guid Is Null
+            And Not ro.Repo_history_table_guid Is Null
+        )
+        Or ro.Repo_temporal_type      &lt;&gt; ro.temporal_type
+        Or
+        (
+            ro.Repo_temporal_type Is Null
+            And Not ro.temporal_type Is Null
+        )
+        Or
+        (
+            ro.temporal_type Is Null
+            And Not ro.Repo_temporal_type Is Null
+        )
+    --
+    )</code></pre>
 </div>
 </div>
 </div>
 </details></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2120</p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">3010</p></td>
@@ -2877,17 +2999,17 @@ WHERE
 <pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">Delete
 ros
 From
-    reference.RepoObjectSource_virtual ros
+    reference.RepoObjectSource_virtual As ros
 Where
     Not Exists
 (
     Select
         1
     From
-        repo.RepoObject ro
+        repo.RepoObject As ro
     Where
         ro.RepoObject_guid = ros.Source_RepoObject_guid
-);</code></pre>
+)</code></pre>
 </div>
 </div>
 </div>
@@ -2933,13 +3055,19 @@ Where
 <div class="content">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">UPDATE ro
-SET [Repo_temporal_type] = rop.temporal_type
-FROM [repo].[RepoObject] ro
-INNER JOIN [repo].[RepoObject_persistence] rop
- ON rop.[target_RepoObject_guid] = ro.[RepoObject_guid]
-WHERE ro.[Repo_temporal_type] &lt;&gt; rop.temporal_type
- OR ro.[Repo_temporal_type] IS NULL</code></pre>
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">Update
+    ro
+Set
+    ro.Repo_temporal_type = rop.temporal_type
+From
+    repo.RepoObject                 As ro
+    Inner Join
+        repo.RepoObject_persistence As rop
+            On
+            rop.target_RepoObject_guid = ro.RepoObject_guid
+Where
+    ro.Repo_temporal_type &lt;&gt; rop.temporal_type
+    Or ro.Repo_temporal_type Is Null</code></pre>
 </div>
 </div>
 </div>
@@ -2955,7 +3083,7 @@ WHERE ro.[Repo_temporal_type] &lt;&gt; rop.temporal_type
 <div class="sectionbody">
 <div class="imageblock kroki">
 <div class="content">
-<object type="image/svg+xml" data="_images/diag-d180d80174905e53be404ee56b94f219e99d92fb.svg"><span class="alt">entity-repo.usp_sync_guid_RepoObject</span></object>
+<object type="image/svg+xml" data="_images/diag-781e6f6502e0328c8478eb186c1a3f44af03da77.svg"><span class="alt">entity-repo.usp_sync_guid_RepoObject</span></object>
 </div>
 </div>
 <div class="paragraph">
@@ -3020,7 +3148,7 @@ WHERE ro.[Repo_temporal_type] &lt;&gt; rop.temporal_type
 <h3 id="_object_reference_diagram_1_1"><a class="anchor" href="#_object_reference_diagram_1_1"></a>Object Reference Diagram - 1 1</h3>
 <div class="imageblock kroki">
 <div class="content">
-<object type="image/svg+xml" data="_images/diag-2641f2be774628fd4193f9222fcfba192a28d135.svg"><span class="alt">entity_1_1_objectref-repo.usp_sync_guid_RepoObject</span></object>
+<object type="image/svg+xml" data="_images/diag-f53b71dbabd61594fc183408b6ab7f7e98357d66.svg"><span class="alt">entity_1_1_objectref-repo.usp_sync_guid_RepoObject</span></object>
 </div>
 </div>
 </div>
@@ -3028,7 +3156,7 @@ WHERE ro.[Repo_temporal_type] &lt;&gt; rop.temporal_type
 <h3 id="_object_reference_diagram_referenced_30_0"><a class="anchor" href="#_object_reference_diagram_referenced_30_0"></a>Object Reference Diagram - Referenced - 30 0</h3>
 <div class="imageblock kroki">
 <div class="content">
-<object type="image/svg+xml" data="_images/diag-cd4974c8b942cd424d9c24ab21c199e10799797c.svg"><span class="alt">entity_30_0_objectref-repo.usp_sync_guid_RepoObject</span></object>
+<object type="image/svg+xml" data="_images/diag-ffb04522eaf72b80a643887a793179d16241cfb9.svg"><span class="alt">entity_30_0_objectref-repo.usp_sync_guid_RepoObject</span></object>
 </div>
 </div>
 </div>
@@ -3036,7 +3164,7 @@ WHERE ro.[Repo_temporal_type] &lt;&gt; rop.temporal_type
 <h3 id="_object_reference_diagram_referencing_0_30"><a class="anchor" href="#_object_reference_diagram_referencing_0_30"></a>Object Reference Diagram - Referencing - 0 30</h3>
 <div class="imageblock kroki">
 <div class="content">
-<object type="image/svg+xml" data="_images/diag-c29e786e7396ec320a07e97a323bbdcfb94e8b80.svg"><span class="alt">entity_0_30_objectref-repo.usp_sync_guid_RepoObject</span></object>
+<object type="image/svg+xml" data="_images/diag-235c8a0f5e7bdff076cb1227a61db8715d79f8ec.svg"><span class="alt">entity_0_30_objectref-repo.usp_sync_guid_RepoObject</span></object>
 </div>
 </div>
 </div>
@@ -3751,24 +3879,35 @@ EXEC logs.usp_ExecutionLog_insert
  , @target_object = @target_object
 
 -- Logging END --
+END;
 
-/*{"ReportUspStep":[{"Number":2110,"Parent_Number":2010,"Name":"SET is_SysObject_missing = 1","has_logging":1,"is_condition":0,"is_inactive":0,"is_SubProcedure":0,"log_source_object":"[repo].[RepoObject]","log_target_object":"[repo].[RepoObject]","log_flag_InsertUpdateDelete":"u"}]}*/
-PRINT CONCAT('usp_id;Number;Parent_Number: ',8,';',2110,';',2010);
+/*{"ReportUspStep":[{"Number":2110,"Name":"SET is_SysObject_missing = 1","has_logging":1,"is_condition":0,"is_inactive":0,"is_SubProcedure":0,"log_source_object":"[repo].[RepoObject]","log_target_object":"[repo].[RepoObject]","log_flag_InsertUpdateDelete":"u"}]}*/
+PRINT CONCAT('usp_id;Number;Parent_Number: ',8,';',2110,';',NULL);
 
 /*
 objects deleted or renamed in database but still referenced in [repo].[RepoObject] will be marked in RepoObject with is_SysObject_missing = 1
 
 check is required by `schema_name` and `name` but not by SysObject_ID, because SysObject_ID can change when objects are recreated
 */
-UPDATE repo.RepoObject
-SET [is_SysObject_missing] = 1
-FROM [repo].[RepoObject] [T1]
-WHERE NOT EXISTS (
-  SELECT [SysObject_id]
-  FROM [repo_sys].[SysObject] AS [Filter]
-  WHERE [t1].[SysObject_schema_name] = [Filter].[SysObject_schema_name]
-   AND [T1].[SysObject_name] = [Filter].[SysObject_name]
-  )
+Update
+    repo.RepoObject
+Set
+    is_SysObject_missing = 1
+From
+    repo.RepoObject As T1
+Where
+    Not Exists
+(
+    Select
+        Filter.SysObject_id
+    From
+        repo_sys.SysObject As Filter
+    Where
+        t1.SysObject_schema_name = Filter.SysObject_schema_name
+        And t1.SysObject_name    = Filter.SysObject_name
+)
+    And T1.is_ssas     = 0
+    And T1.is_external = 0
 
 -- Logging START --
 SET @rows = @@ROWCOUNT
@@ -3794,8 +3933,8 @@ EXEC logs.usp_ExecutionLog_insert
  , @updated = @rows
 -- Logging END --
 
-/*{"ReportUspStep":[{"Number":2115,"Parent_Number":2110,"Name":"SET is_SysObject_missing = 0 where not missing","has_logging":1,"is_condition":0,"is_inactive":0,"is_SubProcedure":0,"log_source_object":"[repo].[RepoObject]","log_target_object":"[repo].[RepoObject]","log_flag_InsertUpdateDelete":"u"}]}*/
-PRINT CONCAT('usp_id;Number;Parent_Number: ',8,';',2115,';',2110);
+/*{"ReportUspStep":[{"Number":2115,"Name":"SET is_SysObject_missing = 0 where not missing","has_logging":1,"is_condition":0,"is_inactive":0,"is_SubProcedure":0,"log_source_object":"[repo].[RepoObject]","log_target_object":"[repo].[RepoObject]","log_flag_InsertUpdateDelete":"u"}]}*/
+PRINT CONCAT('usp_id;Number;Parent_Number: ',8,';',2115,';',NULL);
 
 /*
 some objects could still be marked as missing, but they are not missing +
@@ -3808,7 +3947,10 @@ Set
 From
     repo.RepoObject As T1
 Where
-    Exists
+    T1.is_SysObject_missing = 1
+    And
+    (
+        Exists
 (
     Select
         Filter.SysObject_id
@@ -3818,7 +3960,9 @@ Where
         t1.SysObject_schema_name = Filter.SysObject_schema_name
         And t1.SysObject_name    = Filter.SysObject_name
 )
-    And T1.is_SysObject_missing = 1
+        Or T1.is_ssas       = 0
+        Or T1.is_external   = 0
+    )
 
 -- Logging START --
 SET @rows = @@ROWCOUNT
@@ -3844,17 +3988,21 @@ EXEC logs.usp_ExecutionLog_insert
  , @updated = @rows
 -- Logging END --
 
-/*{"ReportUspStep":[{"Number":2120,"Parent_Number":2115,"Name":"DELETE; marked missing SysObject, but not is_repo_managed  = 1","has_logging":1,"is_condition":0,"is_inactive":0,"is_SubProcedure":0,"log_source_object":"[repo].[RepoObject]","log_target_object":"[repo].[RepoObject]","log_flag_InsertUpdateDelete":"d"}]}*/
-PRINT CONCAT('usp_id;Number;Parent_Number: ',8,';',2120,';',2115);
+/*{"ReportUspStep":[{"Number":2120,"Name":"DELETE; marked missing SysObject, but not is_repo_managed  = 1","has_logging":1,"is_condition":0,"is_inactive":0,"is_SubProcedure":0,"log_source_object":"[repo].[RepoObject]","log_target_object":"[repo].[RepoObject]","log_flag_InsertUpdateDelete":"d"}]}*/
+PRINT CONCAT('usp_id;Number;Parent_Number: ',8,';',2120,';',NULL);
 
 /*
 delete objects, missing in SysObjects, if they are not is_repo_managed +
 if they are is_repo_managed we don't want to delete them but there should be some handling
 
 */
-DELETE repo.RepoObject
-WHERE ISNULL([is_repo_managed], 0) = 0
- AND [is_SysObject_missing] = 1
+Delete
+repo.RepoObject
+Where
+    is_SysObject_missing              = 1
+    And IsNull ( is_repo_managed, 0 ) = 0
+    And is_ssas                       = 0
+    And is_external                   = 0
 
 -- Logging START --
 SET @rows = @@ROWCOUNT
@@ -3880,8 +4028,8 @@ EXEC logs.usp_ExecutionLog_insert
  , @deleted = @rows
 -- Logging END --
 
-/*{"ReportUspStep":[{"Number":2310,"Parent_Number":2120,"Name":"UPDATE other properties, where not is_repo_managed  = 1","has_logging":1,"is_condition":0,"is_inactive":0,"is_SubProcedure":0,"log_source_object":"[repo_sys].[SysObject]","log_target_object":"[repo].[RepoObject]","log_flag_InsertUpdateDelete":"u"}]}*/
-PRINT CONCAT('usp_id;Number;Parent_Number: ',8,';',2310,';',2120);
+/*{"ReportUspStep":[{"Number":2310,"Name":"UPDATE other properties, where not is_repo_managed  = 1","has_logging":1,"is_condition":0,"is_inactive":0,"is_SubProcedure":0,"log_source_object":"[repo_sys].[SysObject]","log_target_object":"[repo].[RepoObject]","log_flag_InsertUpdateDelete":"u"}]}*/
+PRINT CONCAT('usp_id;Number;Parent_Number: ',8,';',2310,';',NULL);
 
 /*
 update other properties for RepoObject which are not is_repo_managed
@@ -3889,37 +4037,47 @@ update other properties for RepoObject which are not is_repo_managed
 we do this after updating guid in SysObjects to ensure the guid can be used to get [history_table_guid]
 
 */
-UPDATE ro
-SET [Repo_history_table_guid] = [history_table_guid]
- , [Repo_temporal_type] = [temporal_type]
-FROM [repo].[SysObject_RepoObject_via_guid] [ro]
-WHERE
- --not is_repo_managed
- ISNULL([ro].[is_repo_managed], 0) = 0
- AND (
-  --
-  1 = 0
-  --
-  OR [Repo_history_table_guid] &lt;&gt; [history_table_guid]
-  OR (
-   [Repo_history_table_guid] IS NULL
-   AND NOT [history_table_guid] IS NULL
-   )
-  OR (
-   [history_table_guid] IS NULL
-   AND NOT [Repo_history_table_guid] IS NULL
-   )
-  OR [Repo_temporal_type] &lt;&gt; [temporal_type]
-  OR (
-   [Repo_temporal_type] IS NULL
-   AND NOT [temporal_type] IS NULL
-   )
-  OR (
-   [temporal_type] IS NULL
-   AND NOT [Repo_temporal_type] IS NULL
-   )
-  --
-  )
+Update
+    ro
+Set
+    ro.Repo_history_table_guid = ro.history_table_guid
+  , ro.Repo_temporal_type = ro.temporal_type
+From
+    repo.SysObject_RepoObject_via_guid As ro
+Where
+    --not is_repo_managed
+    IsNull ( ro.is_repo_managed, 0 )  = 0
+    And ro.is_ssas                    = 0
+    And ro.is_external                = 0
+    And
+    (
+        --
+        1                             = 0
+        --
+        Or ro.Repo_history_table_guid &lt;&gt; ro.history_table_guid
+        Or
+        (
+            ro.Repo_history_table_guid Is Null
+            And Not ro.history_table_guid Is Null
+        )
+        Or
+        (
+            ro.history_table_guid Is Null
+            And Not ro.Repo_history_table_guid Is Null
+        )
+        Or ro.Repo_temporal_type      &lt;&gt; ro.temporal_type
+        Or
+        (
+            ro.Repo_temporal_type Is Null
+            And Not ro.temporal_type Is Null
+        )
+        Or
+        (
+            ro.temporal_type Is Null
+            And Not ro.Repo_temporal_type Is Null
+        )
+    --
+    )
 
 -- Logging START --
 SET @rows = @@ROWCOUNT
@@ -3944,7 +4102,6 @@ EXEC logs.usp_ExecutionLog_insert
  , @target_object = @target_object
  , @updated = @rows
 -- Logging END --
-END;
 
 /*{"ReportUspStep":[{"Number":3010,"Name":"DELETE [reference].[RepoObjectSource_virtual] missing Source_RepoObject_guid","has_logging":1,"is_condition":0,"is_inactive":0,"is_SubProcedure":0,"log_source_object":"[repo].[RepoObject]","log_target_object":"[reference].[RepoObjectSource_virtual]","log_flag_InsertUpdateDelete":"d"}]}*/
 PRINT CONCAT('usp_id;Number;Parent_Number: ',8,';',3010,';',NULL);
@@ -3952,17 +4109,17 @@ PRINT CONCAT('usp_id;Number;Parent_Number: ',8,';',3010,';',NULL);
 Delete
 ros
 From
-    reference.RepoObjectSource_virtual ros
+    reference.RepoObjectSource_virtual As ros
 Where
     Not Exists
 (
     Select
         1
     From
-        repo.RepoObject ro
+        repo.RepoObject As ro
     Where
         ro.RepoObject_guid = ros.Source_RepoObject_guid
-);
+)
 
 
 -- Logging START --
@@ -3999,13 +4156,19 @@ set temporal_type
 * 1 = HISTORY_TABLE
 * 2 = SYSTEM_VERSIONED_TEMPORAL_TABLE
 */
-UPDATE ro
-SET [Repo_temporal_type] = rop.temporal_type
-FROM [repo].[RepoObject] ro
-INNER JOIN [repo].[RepoObject_persistence] rop
- ON rop.[target_RepoObject_guid] = ro.[RepoObject_guid]
-WHERE ro.[Repo_temporal_type] &lt;&gt; rop.temporal_type
- OR ro.[Repo_temporal_type] IS NULL
+Update
+    ro
+Set
+    ro.Repo_temporal_type = rop.temporal_type
+From
+    repo.RepoObject                 As ro
+    Inner Join
+        repo.RepoObject_persistence As rop
+            On
+            rop.target_RepoObject_guid = ro.RepoObject_guid
+Where
+    ro.Repo_temporal_type &lt;&gt; rop.temporal_type
+    Or ro.Repo_temporal_type Is Null
 
 -- Logging START --
 SET @rows = @@ROWCOUNT
@@ -4077,6 +4240,91 @@ END</code></pre>
   <p>This page was built using the Antora default UI.</p>
   <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
 </footer>
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content" onclick="closeModal()">
+        <!--suppress HtmlRequiredAltAttribute as this will be set when selecting the image via JavaScript,
+        RequiredAttributes as src will be set by when selecting the image via JavaScript -->
+        <img id="imageinmodal">
+    </div>
+</div>
+<script>
+    function openModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+
+    document.querySelectorAll('.imageblock kroki').forEach(element => {
+        element.className += " lightbox";
+        element.addEventListener('click', evt => {
+            document.getElementById("imageinmodal").setAttribute("data", evt.currentTarget.getAttribute("data"))
+            openModal();
+        })
+    });
+
+</script>
+<style>
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 10;
+        padding-top: 5vh;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        backdrop-filter: blur(3px);
+        background-color: rgba(30, 30, 30, 0.8);
+    }
+    img.lightbox {
+        cursor: pointer;
+    }
+    /* Modal Content */
+    .modal-content {
+        position: relative;
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        max-height: 90vh;
+        cursor: pointer;
+    }
+
+    .modal-content img {
+        width: auto;
+        height: auto;
+        max-width: 90vw;
+        max-height: 90vh;
+        min-width: 90vw;
+        min-height: 90vh;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        object-fit: contain;
+    }
+
+    /* The Close Button */
+    .close {
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
 <script src="../../../_/js/site.js"></script>
 <script async src="../../../_/js/vendor/highlight.js"></script>
   </body>
