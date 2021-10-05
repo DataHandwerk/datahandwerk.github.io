@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="252px" preserveAspectRatio="none" style="width:277px;height:252px;background:#FFFFFF;" version="1.1" viewBox="0 0 277 252" width="277px" zoomAndPan="magnify"><defs><filter height="300%" id="f1ebew5ytf6k4v" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[9da8a155cc63fdbda44a1f45f5257533]
+class repo.RepoObject_persistence_ObjectNames--><rect codeLine="28" fill="#F5F5F5" filter="url(#f1ebew5ytf6k4v)" height="231.9991" id="repo.RepoObject_persistence_ObjectNames" style="stroke:#A80036;stroke-width:1.5;" width="256" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="126" y="24.0001">«V»</text><a href="../repo.repoobject_persistence_objectnames.html" target="_top" title="../repo.repoobject_persistence_objectnames.html" xlink:actuate="onRequest" xlink:href="../repo.repoobject_persistence_objectnames.html" xlink:show="new" xlink:title="../repo.repoobject_persistence_objectnames.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="233" x="18.5" y="38.4002">repo.RepoObject_persistence_ObjectNames</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="262" y1="45.8002" y2="45.8002"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="53.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="230" x="27" y="60.8001">idx_RepoObject_persistence_ObjectNames__1</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="0" x="30" y="74"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="8" x2="262" y1="80.2" y2="80.2"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="213" x="13" y="95.1999">SysObject_schema_name_s; nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="169" x="13" y="108.3998">SysObject_name_s; nvarchar(128)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="262" y1="114.5998" y2="114.5998"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="122.5998"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="230" x="27" y="129.5997">idx_RepoObject_persistence_ObjectNames__2</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="0" x="30" y="142.7996"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="8" x2="262" y1="148.9996" y2="148.9996"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="220" x="13" y="163.9995">RepoObject_schema_name_t; nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="176" x="13" y="177.1994">RepoObject_name_t; nvarchar(128)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="262" y1="183.3994" y2="183.3994"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="191.3994"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="230" x="27" y="198.3993">idx_RepoObject_persistence_ObjectNames__3</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="0" x="30" y="211.5992"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="8" x2="262" y1="217.7992" y2="217.7992"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="197" x="13" y="232.7991">target_RepoObject_guid; uniqueidentifier</text><!--MD5=[e82a9be24e3df6c3d442dd8a9aa84c8b]
+@startuml
+left to right direction
+'top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../repo.repoobject_persistence_objectnames.html repo.RepoObject_persistence_ObjectNames]]" as repo.RepoObject_persistence_ObjectNames << V >> {
+- idx_RepoObject_persistence_ObjectNames__1
+
+..
+SysObject_schema_name_s; nvarchar(128)
+SysObject_name_s; nvarchar(128)
+- -
+- idx_RepoObject_persistence_ObjectNames__2
+
+..
+RepoObject_schema_name_t; nvarchar(128)
+RepoObject_name_t; nvarchar(128)
+- -
+- idx_RepoObject_persistence_ObjectNames__3
+
+..
+target_RepoObject_guid; uniqueidentifier
+}
+@enduml
+
+@startuml
+left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../repo.repoobject_persistence_objectnames.html repo.RepoObject_persistence_ObjectNames]]" as repo.RepoObject_persistence_ObjectNames << V >> {
+- idx_RepoObject_persistence_ObjectNames__1
+
+..
+SysObject_schema_name_s; nvarchar(128)
+SysObject_name_s; nvarchar(128)
+- -
+- idx_RepoObject_persistence_ObjectNames__2
+
+..
+RepoObject_schema_name_t; nvarchar(128)
+RepoObject_name_t; nvarchar(128)
+- -
+- idx_RepoObject_persistence_ObjectNames__3
+
+..
+target_RepoObject_guid; uniqueidentifier
+}
+@enduml
+
+PlantUML version 1.2021.8(Sat Jun 26 08:20:59 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

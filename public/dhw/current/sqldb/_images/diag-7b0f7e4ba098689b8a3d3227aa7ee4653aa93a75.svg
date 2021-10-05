@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="263px" preserveAspectRatio="none" style="width:297px;height:263px;background:#FFFFFF;" version="1.1" viewBox="0 0 297 263" width="297px" zoomAndPan="magnify"><defs><filter height="300%" id="f1bxpv0kwomkbm" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[e0bd40bf78ad4e929e33bf01aa5939ee]
+class reference.additional_Reference_from_properties_tgt--><rect codeLine="28" fill="#F5F5F5" filter="url(#f1bxpv0kwomkbm)" height="242.3989" id="reference.additional_Reference_from_properties_tgt" style="stroke:#A80036;stroke-width:1.5;" width="276" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="136" y="24.0001">«V»</text><a href="../reference.additional_reference_from_properties_tgt.html" target="_top" title="../reference.additional_reference_from_properties_tgt.html" xlink:actuate="onRequest" xlink:href="../reference.additional_reference_from_properties_tgt.html" xlink:show="new" xlink:title="../reference.additional_reference_from_properties_tgt.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="270" x="10" y="38.4002">reference.additional_Reference_from_properties_tgt</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="282" y1="45.8002" y2="45.8002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="53.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="10" x="27" y="60.8001">Id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="25" x="40" y="60.8001">: (int)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="282" y1="67.0001" y2="67.0001"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="235" x="27" y="82">referenced_AntoraComponent : (nvarchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="214" x="27" y="95.1999">referenced_AntoraModule : (nvarchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="184" x="27" y="108.3998">referenced_Column : (nvarchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="180" x="27" y="121.5997">referenced_Object : (nvarchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="187" x="27" y="134.7996">referenced_Schema : (nvarchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="237" x="27" y="147.9995">referencing_AntoraComponent : (nvarchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="216" x="27" y="161.1994">referencing_AntoraModule : (nvarchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="186" x="27" y="174.3993">referencing_Column : (nvarchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="182" x="27" y="187.5992">referencing_Object : (nvarchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="189" x="27" y="200.7991">referencing_Schema : (nvarchar(max))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="206.9991"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="103" x="27" y="213.999">tik : (nvarchar(1311))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="27" y="227.1989">tik_hash : (binary(16))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="282" y1="233.3989" y2="233.3989"/><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="282" y1="241.3989" y2="241.3989"/><!--MD5=[1885c7bfbe0e895b66d0949dbbddf085]
+@startuml
+'Left to right direction
+top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../reference.additional_reference_from_properties_tgt.html reference.additional_Reference_from_properties_tgt]]" as reference.additional_Reference_from_properties_tgt << V >> {
+  - **Id** : (int)
+  - -
+  referenced_AntoraComponent : (nvarchar(max))
+  referenced_AntoraModule : (nvarchar(max))
+  referenced_Column : (nvarchar(max))
+  referenced_Object : (nvarchar(max))
+  referenced_Schema : (nvarchar(max))
+  referencing_AntoraComponent : (nvarchar(max))
+  referencing_AntoraModule : (nvarchar(max))
+  referencing_Column : (nvarchar(max))
+  referencing_Object : (nvarchar(max))
+  referencing_Schema : (nvarchar(max))
+  - tik : (nvarchar(1311))
+  tik_hash : (binary(16))
+  - -
+  - -
+}
+@enduml
+
+@startuml
+top to bottom direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../reference.additional_reference_from_properties_tgt.html reference.additional_Reference_from_properties_tgt]]" as reference.additional_Reference_from_properties_tgt << V >> {
+  - **Id** : (int)
+  - -
+  referenced_AntoraComponent : (nvarchar(max))
+  referenced_AntoraModule : (nvarchar(max))
+  referenced_Column : (nvarchar(max))
+  referenced_Object : (nvarchar(max))
+  referenced_Schema : (nvarchar(max))
+  referencing_AntoraComponent : (nvarchar(max))
+  referencing_AntoraModule : (nvarchar(max))
+  referencing_Column : (nvarchar(max))
+  referencing_Object : (nvarchar(max))
+  referencing_Schema : (nvarchar(max))
+  - tik : (nvarchar(1311))
+  tik_hash : (binary(16))
+  - -
+  - -
+}
+@enduml
+
+PlantUML version 1.2021.8(Sat Jun 26 08:20:59 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

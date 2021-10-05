@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="144px" preserveAspectRatio="none" style="width:339px;height:144px;background:#FFFFFF;" version="1.1" viewBox="0 0 339 144" width="339px" zoomAndPan="magnify"><defs><filter height="300%" id="f1mo2nzw3yhvvp" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[8af6c88f2241595eeca56a271a917dfc]
+class workflow.Workflow_ProcedureDependency_T_active--><rect codeLine="28" fill="#F5F5F5" filter="url(#f1mo2nzw3yhvvp)" height="123.5998" id="workflow.Workflow_ProcedureDependency_T_active" style="stroke:#A80036;stroke-width:1.5;" width="318" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="157" y="24.0001">«V»</text><a href="../workflow.workflow_proceduredependency_t_active.html" target="_top" title="../workflow.workflow_proceduredependency_t_active.html" xlink:actuate="onRequest" xlink:href="../workflow.workflow_proceduredependency_t_active.html" xlink:show="new" xlink:title="../workflow.workflow_proceduredependency_t_active.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="274" x="29" y="38.4002">workflow.Workflow_ProcedureDependency_T_active</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="324" y1="45.8002" y2="45.8002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="324" y1="53.8002" y2="53.8002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="61.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="90" x="27" y="68.8001">is_redundant : (bit)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="75.0001"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="290" x="27" y="82">referenced_Procedure_RepoObject_guid : (uniqueidentifier)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="88.2"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="292" x="27" y="95.1999">referencing_Procedure_RepoObject_guid : (uniqueidentifier)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="101.3999"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="87" x="27" y="108.3998">Workflow_id : (int)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="324" y1="114.5998" y2="114.5998"/><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="324" y1="122.5998" y2="122.5998"/><!--MD5=[cac8922d43ff8321d62a16d14142291d]
+@startuml
+'Left to right direction
+top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../workflow.workflow_proceduredependency_t_active.html workflow.Workflow_ProcedureDependency_T_active]]" as workflow.Workflow_ProcedureDependency_T_active << V >> {
+  - -
+  - is_redundant : (bit)
+  - referenced_Procedure_RepoObject_guid : (uniqueidentifier)
+  - referencing_Procedure_RepoObject_guid : (uniqueidentifier)
+  - Workflow_id : (int)
+  - -
+  - -
+}
+@enduml
+
+@startuml
+top to bottom direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../workflow.workflow_proceduredependency_t_active.html workflow.Workflow_ProcedureDependency_T_active]]" as workflow.Workflow_ProcedureDependency_T_active << V >> {
+  - -
+  - is_redundant : (bit)
+  - referenced_Procedure_RepoObject_guid : (uniqueidentifier)
+  - referencing_Procedure_RepoObject_guid : (uniqueidentifier)
+  - Workflow_id : (int)
+  - -
+  - -
+}
+@enduml
+
+PlantUML version 1.2021.8(Sat Jun 26 08:20:59 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

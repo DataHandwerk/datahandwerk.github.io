@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="157px" preserveAspectRatio="none" style="width:280px;height:157px;background:#FFFFFF;" version="1.1" viewBox="0 0 280 157" width="280px" zoomAndPan="magnify"><defs><filter height="300%" id="flyscii8zub6t" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[286b67bd122e215bddea983f5980c4e0]
+class repo.Index_Settings--><rect codeLine="28" fill="#FFFFFF" filter="url(#flyscii8zub6t)" height="136.7997" id="repo.Index_Settings" style="stroke:#A80036;stroke-width:1.5;" width="259" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="127" y="24.0001">«U»</text><a href="../repo.index_settings.html" target="_top" title="../repo.index_settings.html" xlink:actuate="onRequest" xlink:href="../repo.index_settings.html" xlink:show="new" xlink:title="../repo.index_settings.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="103" x="85" y="38.4002">repo.Index_Settings</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="265" y1="45.8002" y2="45.8002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="53.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="59" x="27" y="60.8001">index_guid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="86" x="89" y="60.8001">: (uniqueidentifier)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="265" y1="67.0001" y2="67.0001"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="233" x="27" y="82">IndexPatternColumnDatatype : (nvarchar(4000))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="219" x="27" y="95.1999">IndexPatternColumnName : (nvarchar(4000))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="187" x="27" y="108.3998">IndexSemanticGroup : (nvarchar(512))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="114.5998"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="125" x="27" y="121.5997">is_create_constraint : (bit)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="265" y1="127.7997" y2="127.7997"/><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="265" y1="135.7997" y2="135.7997"/><!--MD5=[d9c2a92cdace93ae7a8a1e03fa9c65d4]
+@startuml
+'Left to right direction
+top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../repo.index_settings.html repo.Index_Settings]]" as repo.Index_Settings << U >> {
+  - **index_guid** : (uniqueidentifier)
+  - -
+  IndexPatternColumnDatatype : (nvarchar(4000))
+  IndexPatternColumnName : (nvarchar(4000))
+  IndexSemanticGroup : (nvarchar(512))
+  - is_create_constraint : (bit)
+  - -
+  - -
+}
+@enduml
+
+@startuml
+top to bottom direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../repo.index_settings.html repo.Index_Settings]]" as repo.Index_Settings << U >> {
+  - **index_guid** : (uniqueidentifier)
+  - -
+  IndexPatternColumnDatatype : (nvarchar(4000))
+  IndexPatternColumnName : (nvarchar(4000))
+  IndexSemanticGroup : (nvarchar(512))
+  - is_create_constraint : (bit)
+  - -
+  - -
+}
+@enduml
+
+PlantUML version 1.2021.8(Sat Jun 26 08:20:59 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

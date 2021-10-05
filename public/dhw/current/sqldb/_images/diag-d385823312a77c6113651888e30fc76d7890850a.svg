@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="170px" preserveAspectRatio="none" style="width:335px;height:170px;background:#FFFFFF;" version="1.1" viewBox="0 0 335 170" width="335px" zoomAndPan="magnify"><defs><filter height="300%" id="fwzdmc04ilqq9" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[535e93677a6c156e55fdc688a4ce2806]
+class sqlparse.RepoObject_SqlModules_22_identifier_alias_AS--><rect codeLine="28" fill="#F5F5F5" filter="url(#fwzdmc04ilqq9)" height="149.9996" id="sqlparse.RepoObject_SqlModules_22_identifier_alias_AS" style="stroke:#A80036;stroke-width:1.5;" width="314" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="155" y="24.0001">«V»</text><a href="../sqlparse.repoobject_sqlmodules_22_identifier_alias_as.html" target="_top" title="../sqlparse.repoobject_sqlmodules_22_identifier_alias_as.html" xlink:actuate="onRequest" xlink:href="../sqlparse.repoobject_sqlmodules_22_identifier_alias_as.html" xlink:show="new" xlink:title="../sqlparse.repoobject_sqlmodules_22_identifier_alias_as.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="308" x="10" y="38.4002">sqlparse.RepoObject_SqlModules_22_identifier_alias_AS</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="320" y1="45.8002" y2="45.8002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="53.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="93" x="27" y="60.8001">RepoObject_guid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="86" x="123" y="60.8001">: (uniqueidentifier)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="67.0001"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="47" x="27" y="74">json_key</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="89" x="77" y="74">: (nvarchar(4000))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="66" x="27" y="87.1999">RowNumber</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="39" x="96" y="87.1999">: (bigint)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="320" y1="93.3999" y2="93.3999"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="155" x="13" y="108.3998">identifier_alias : (nvarchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="161" x="13" y="121.5997">identifier_name : (nvarchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="182" x="13" y="134.7996">SysObject_fullname : (nvarchar(261))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="320" y1="140.9996" y2="140.9996"/><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="320" y1="148.9996" y2="148.9996"/><!--MD5=[1bf613f558a349d9bb46704b3ff43e6d]
+@startuml
+'Left to right direction
+top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../sqlparse.repoobject_sqlmodules_22_identifier_alias_as.html sqlparse.RepoObject_SqlModules_22_identifier_alias_AS]]" as sqlparse.RepoObject_SqlModules_22_identifier_alias_AS << V >> {
+  - **RepoObject_guid** : (uniqueidentifier)
+  - **json_key** : (nvarchar(4000))
+  **RowNumber** : (bigint)
+  - -
+  identifier_alias : (nvarchar(max))
+  identifier_name : (nvarchar(max))
+  SysObject_fullname : (nvarchar(261))
+  - -
+  - -
+}
+@enduml
+
+@startuml
+top to bottom direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../sqlparse.repoobject_sqlmodules_22_identifier_alias_as.html sqlparse.RepoObject_SqlModules_22_identifier_alias_AS]]" as sqlparse.RepoObject_SqlModules_22_identifier_alias_AS << V >> {
+  - **RepoObject_guid** : (uniqueidentifier)
+  - **json_key** : (nvarchar(4000))
+  **RowNumber** : (bigint)
+  - -
+  identifier_alias : (nvarchar(max))
+  identifier_name : (nvarchar(max))
+  SysObject_fullname : (nvarchar(261))
+  - -
+  - -
+}
+@enduml
+
+PlantUML version 1.2021.8(Sat Jun 26 08:20:59 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

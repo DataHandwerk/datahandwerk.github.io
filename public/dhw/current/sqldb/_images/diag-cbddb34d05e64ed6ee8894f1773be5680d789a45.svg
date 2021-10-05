@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="131px" preserveAspectRatio="none" style="width:319px;height:131px;background:#FFFFFF;" version="1.1" viewBox="0 0 319 131" width="319px" zoomAndPan="magnify"><defs><filter height="300%" id="fa9ckkqqg559z" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[402572907af3ca4442767a0658bc7a3f]
+class property.RepoObjectProperty_Collect_source_ROGross--><rect codeLine="28" fill="#F5F5F5" filter="url(#fa9ckkqqg559z)" height="110.3999" id="property.RepoObjectProperty_Collect_source_ROGross" style="stroke:#A80036;stroke-width:1.5;" width="298" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="147" y="24.0001">«V»</text><a href="../property.repoobjectproperty_collect_source_rogross.html" target="_top" title="../property.repoobjectproperty_collect_source_rogross.html" xlink:actuate="onRequest" xlink:href="../property.repoobjectproperty_collect_source_rogross.html" xlink:show="new" xlink:title="../property.repoobjectproperty_collect_source_rogross.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="292" x="10" y="38.4002">property.RepoObjectProperty_Collect_source_ROGross</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="304" y1="45.8002" y2="45.8002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="53.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="93" x="27" y="60.8001">RepoObject_guid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="86" x="123" y="60.8001">: (uniqueidentifier)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="67.0001"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="80" x="27" y="74">property_name</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="71" x="110" y="74">: (varchar(39))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="304" y1="80.2" y2="80.2"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="159" x="13" y="95.1999">property_value : (nvarchar(max))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="304" y1="101.3999" y2="101.3999"/><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="304" y1="109.3999" y2="109.3999"/><!--MD5=[009023b371b596c601ccd44bb46b5a68]
+@startuml
+'Left to right direction
+top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../property.repoobjectproperty_collect_source_rogross.html property.RepoObjectProperty_Collect_source_ROGross]]" as property.RepoObjectProperty_Collect_source_ROGross << V >> {
+  - **RepoObject_guid** : (uniqueidentifier)
+  - **property_name** : (varchar(39))
+  - -
+  property_value : (nvarchar(max))
+  - -
+  - -
+}
+@enduml
+
+@startuml
+top to bottom direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../property.repoobjectproperty_collect_source_rogross.html property.RepoObjectProperty_Collect_source_ROGross]]" as property.RepoObjectProperty_Collect_source_ROGross << V >> {
+  - **RepoObject_guid** : (uniqueidentifier)
+  - **property_name** : (varchar(39))
+  - -
+  property_value : (nvarchar(max))
+  - -
+  - -
+}
+@enduml
+
+PlantUML version 1.2021.8(Sat Jun 26 08:20:59 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

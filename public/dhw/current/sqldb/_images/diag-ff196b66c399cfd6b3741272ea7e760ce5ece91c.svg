@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="75px" preserveAspectRatio="none" style="width:402px;height:75px;background:#FFFFFF;" version="1.1" viewBox="0 0 402 75" width="402px" zoomAndPan="magnify"><defs><filter height="300%" id="f1ih7zs8nfnpwh" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[2a618efffcd1b59417075f7df2095830]
+class repo_sys.ExtendedProperties--><rect codeLine="28" fill="#F5F5F5" filter="url(#f1ih7zs8nfnpwh)" height="54.8002" id="repo_sys.ExtendedProperties" style="stroke:#A80036;stroke-width:1.5;" width="159" x="229" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="299.5" y="24.0001">«V»</text><a href="../repo_sys.extendedproperties.html" target="_top" title="../repo_sys.extendedproperties.html" xlink:actuate="onRequest" xlink:href="../repo_sys.extendedproperties.html" xlink:show="new" xlink:title="../repo_sys.extendedproperties.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="153" x="232" y="38.4002">repo_sys.ExtendedProperties</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="230" x2="387" y1="45.8002" y2="45.8002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="230" x2="387" y1="53.8002" y2="53.8002"/><!--MD5=[97f4b9377e562468b64e4f8fe3d7d702]
+class sys_dwh.extended_properties--><rect codeLine="32" fill="#FFFF00" filter="url(#f1ih7zs8nfnpwh)" height="54.8002" id="sys_dwh.extended_properties" style="stroke:#A80036;stroke-width:1.5;" width="162" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="27" x="74.5" y="24.0001">«SN»</text><a href="../sys_dwh.extended_properties.html" target="_top" title="../sys_dwh.extended_properties.html" xlink:actuate="onRequest" xlink:href="../sys_dwh.extended_properties.html" xlink:show="new" xlink:title="../sys_dwh.extended_properties.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="156" x="10" y="38.4002">sys_dwh.extended_properties</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="168" y1="45.8002" y2="45.8002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="168" y1="53.8002" y2="53.8002"/><!--MD5=[41b9bba9178db75acf7d4ad6724d8126]
+reverse link sys_dwh.extended_properties to repo_sys.ExtendedProperties--><path codeLine="36" d="M174.17,34.5 C192.18,34.5 211.1,34.5 228.85,34.5 " fill="none" id="sys_dwh.extended_properties-backto-repo_sys.ExtendedProperties" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="169.12,34.5,178.12,38.5,174.12,34.5,178.12,30.5,169.12,34.5" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[416563971e44d541a9ff26efda0eec62]
+@startuml
+left to right direction
+'top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../repo_sys.extendedproperties.html repo_sys.ExtendedProperties]]" as repo_sys.ExtendedProperties << V >> {
+  - -
+}
+
+entity "[[../sys_dwh.extended_properties.html sys_dwh.extended_properties]]" as sys_dwh.extended_properties << SN >> {
+  - -
+}
+
+sys_dwh.extended_properties <.. repo_sys.ExtendedProperties
+@enduml
+
+@startuml
+left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../repo_sys.extendedproperties.html repo_sys.ExtendedProperties]]" as repo_sys.ExtendedProperties << V >> {
+  - -
+}
+
+entity "[[../sys_dwh.extended_properties.html sys_dwh.extended_properties]]" as sys_dwh.extended_properties << SN >> {
+  - -
+}
+
+sys_dwh.extended_properties <.. repo_sys.ExtendedProperties
+@enduml
+
+PlantUML version 1.2021.8(Sat Jun 26 08:20:59 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

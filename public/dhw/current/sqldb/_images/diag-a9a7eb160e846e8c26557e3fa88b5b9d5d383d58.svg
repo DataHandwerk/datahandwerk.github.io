@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="266px" preserveAspectRatio="none" style="width:283px;height:266px;background:#FFFFFF;" version="1.1" viewBox="0 0 283 266" width="283px" zoomAndPan="magnify"><defs><filter height="300%" id="fd8b8p5ep5nnn" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[cbec6f7df4ce89d939cf7554fa1b352b]
+class ssas.model_json_352_roles_tablePermissions--><rect codeLine="28" fill="#F5F5F5" filter="url(#fd8b8p5ep5nnn)" height="245.199" id="ssas.model_json_352_roles_tablePermissions" style="stroke:#A80036;stroke-width:1.5;" width="262" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="129" y="24.0001">«V»</text><a href="../ssas.model_json_352_roles_tablepermissions.html" target="_top" title="../ssas.model_json_352_roles_tablepermissions.html" xlink:actuate="onRequest" xlink:href="../ssas.model_json_352_roles_tablepermissions.html" xlink:show="new" xlink:title="../ssas.model_json_352_roles_tablepermissions.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="245" x="15.5" y="38.4002">ssas.model_json_352_roles_tablePermissions</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="268" y1="45.8002" y2="45.8002"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="53.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="236" x="27" y="60.8001">PK_model_json_352_roles_tablePermissions</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="0" x="30" y="74"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="8" x2="268" y1="80.2" y2="80.2"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="146" x="13" y="95.1999">databasename; nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="131" x="13" y="108.3998">roles_name; nvarchar(500)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="217" x="13" y="121.5997">roles_tablePermissions_name; nvarchar(500)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="268" y1="127.7997" y2="127.7997"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="135.7997"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="231" x="27" y="142.7996">idx_model_json_352_roles_tablePermissions__2</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="0" x="30" y="155.9995"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="8" x2="268" y1="162.1995" y2="162.1995"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="146" x="13" y="177.1994">databasename; nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="131" x="13" y="190.3993">roles_name; nvarchar(500)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="268" y1="196.5993" y2="196.5993"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="204.5993"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="231" x="27" y="211.5992">idx_model_json_352_roles_tablePermissions__3</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="0" x="30" y="224.7991"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="8" x2="268" y1="230.9991" y2="230.9991"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="146" x="13" y="245.999">databasename; nvarchar(128)</text><!--MD5=[965f31451cdc9c579ca2ee0fd2baa49b]
+@startuml
+left to right direction
+'top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../ssas.model_json_352_roles_tablepermissions.html ssas.model_json_352_roles_tablePermissions]]" as ssas.model_json_352_roles_tablePermissions << V >> {
+- **PK_model_json_352_roles_tablePermissions**
+
+..
+databasename; nvarchar(128)
+roles_name; nvarchar(500)
+roles_tablePermissions_name; nvarchar(500)
+- -
+- idx_model_json_352_roles_tablePermissions__2
+
+..
+databasename; nvarchar(128)
+roles_name; nvarchar(500)
+- -
+- idx_model_json_352_roles_tablePermissions__3
+
+..
+databasename; nvarchar(128)
+}
+@enduml
+
+@startuml
+left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../ssas.model_json_352_roles_tablepermissions.html ssas.model_json_352_roles_tablePermissions]]" as ssas.model_json_352_roles_tablePermissions << V >> {
+- **PK_model_json_352_roles_tablePermissions**
+
+..
+databasename; nvarchar(128)
+roles_name; nvarchar(500)
+roles_tablePermissions_name; nvarchar(500)
+- -
+- idx_model_json_352_roles_tablePermissions__2
+
+..
+databasename; nvarchar(128)
+roles_name; nvarchar(500)
+- -
+- idx_model_json_352_roles_tablePermissions__3
+
+..
+databasename; nvarchar(128)
+}
+@enduml
+
+PlantUML version 1.2021.8(Sat Jun 26 08:20:59 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
