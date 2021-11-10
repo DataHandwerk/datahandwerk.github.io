@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="181px" preserveAspectRatio="none" style="width:299px;height:181px;background:#FFFFFF;" version="1.1" viewBox="0 0 299 181" width="299px" zoomAndPan="magnify"><defs><filter height="300%" id="f12vcjg56d2vch" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[7e1b7b7203c4dbb26482ea178ae505e5]
+class reference.ReferenceTree_cyclic_ref_PersistenceUsp--><rect codeLine="28" fill="#F5F5F5" filter="url(#f12vcjg56d2vch)" height="160.3994" id="reference.ReferenceTree_cyclic_ref_PersistenceUsp" style="stroke:#A80036;stroke-width:1.5;" width="278" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="137" y="24.0001">«V»</text><a href="../reference.referencetree_cyclic_ref_persistenceusp.html" target="_top" title="../reference.referencetree_cyclic_ref_persistenceusp.html" xlink:actuate="onRequest" xlink:href="../reference.referencetree_cyclic_ref_persistenceusp.html" xlink:show="new" xlink:title="../reference.referencetree_cyclic_ref_persistenceusp.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="272" x="10" y="38.4002">reference.ReferenceTree_cyclic_ref_PersistenceUsp</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="284" y1="45.8002" y2="45.8002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="53.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="185" x="27" y="60.8001">referenced_fullname : (nvarchar(261))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="67.0001"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="191" x="27" y="74">referenced_fullname2 : (nvarchar(257))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="80.2"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="172" x="27" y="87.1999">Referenced_guid : (uniqueidentifier)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="132" x="27" y="100.3998">referenced_type : (char(2))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="106.5998"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="187" x="27" y="113.5997">referencing_fullname : (nvarchar(261))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="119.7997"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="193" x="27" y="126.7996">referencing_fullname2 : (nvarchar(257))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="132.9996"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="174" x="27" y="139.9995">Referencing_guid : (uniqueidentifier)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="149" x="27" y="153.1994">referencing_type : (varchar(2))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="284" y1="159.3994" y2="159.3994"/><!--MD5=[aa09a26ac35d44d9920b3dfbcf0053ef]
+@startuml
+'Left to right direction
+top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../reference.referencetree_cyclic_ref_persistenceusp.html reference.ReferenceTree_cyclic_ref_PersistenceUsp]]" as reference.ReferenceTree_cyclic_ref_PersistenceUsp << V >> {
+  - referenced_fullname : (nvarchar(261))
+  - referenced_fullname2 : (nvarchar(257))
+  - Referenced_guid : (uniqueidentifier)
+  referenced_type : (char(2))
+  - referencing_fullname : (nvarchar(261))
+  - referencing_fullname2 : (nvarchar(257))
+  - Referencing_guid : (uniqueidentifier)
+  referencing_type : (varchar(2))
+  - -
+}
+@enduml
+
+@startuml
+top to bottom direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../reference.referencetree_cyclic_ref_persistenceusp.html reference.ReferenceTree_cyclic_ref_PersistenceUsp]]" as reference.ReferenceTree_cyclic_ref_PersistenceUsp << V >> {
+  - referenced_fullname : (nvarchar(261))
+  - referenced_fullname2 : (nvarchar(257))
+  - Referenced_guid : (uniqueidentifier)
+  referenced_type : (char(2))
+  - referencing_fullname : (nvarchar(261))
+  - referencing_fullname2 : (nvarchar(257))
+  - Referencing_guid : (uniqueidentifier)
+  referencing_type : (varchar(2))
+  - -
+}
+@enduml
+
+PlantUML version 1.2021.10(Mon Aug 30 13:43:48 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

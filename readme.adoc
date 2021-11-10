@@ -20,6 +20,20 @@ ____
 A playbook is usually located in a playbook project. A playbook project repository is responsible for generating a documentation site. It’s strictly a _configuration as code_ repository—​it does not contain any content. Instead, it contains a playbook file, and, in certain situations, supplemental UI files and extension code.
 ____
 
+== local npm Packages
+
+....
+node -e "require('fs').writeFileSync('package.json', '{}')"
+npm i -D @antora/cli@3.0.0-beta.1 @antora/site-generator-default@3.0.0-beta.1
+npm i -D asciidoctor asciidoctor-kroki
+
+npx antora antora-playbook-local.yml --stacktrace
+npx antora antora-playbook-public.yml --stacktrace
+npx antora antora-playbook-local.yml --stacktrace --log-file antora-local.log
+npx antora antora-playbook-public.yml --stacktrace --log-file antora-public.log
+....
+
+
 == GitHub pages vs GtLab Pages
 
 The first place to publish Datahandwerk documentation was GitHub, using GitHub pages. And this page is now promoted: https://datahandwerk.github.io/dhw/current/index.html[]

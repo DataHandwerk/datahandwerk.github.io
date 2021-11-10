@@ -9,11 +9,15 @@ site:
 content:
   sources:
   - url: D:\Repos\gitlab\DataHandwerk\dhw-antora-docs
-    branches: HEAD
+    branches:
+    - HEAD
+    # - v*
     start_path: docs
   - url: D:\Repos\gitlab\DataHandwerk\dhw-antora-sqldb
-    branches: HEAD
-    start_path: docs
+    branches:
+    - HEAD
+    # - v*
+    start_paths: docs, docsmanual
   # - url: https://github.com/DataHandwerk/DataHandwerk-docs
   #   branches: main
   #   start_path: docs
@@ -63,6 +67,6 @@ urls:
   # 'redirect_facility: static' doesn't work for the latest version, no static pages are created
   # a hoster like netlify would be required, then the value could be netlify
   # use 'netlify' for gitlab in folder public and 'static' for github in folder docs
-  redirect_facility: netlify
+  redirect_facility: gitlab
 runtime:
   fetch: true

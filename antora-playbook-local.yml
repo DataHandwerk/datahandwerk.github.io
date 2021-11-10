@@ -9,11 +9,15 @@ site:
 content:
   sources:
   - url: D:\Repos\gitlab\DataHandwerk\dhw-antora-docs
-    branches: HEAD
+    branches:
+    - HEAD
+    # - v*
     start_path: docs
   - url: D:\Repos\gitlab\DataHandwerk\dhw-antora-sqldb
-    branches: HEAD
-    start_path: docs
+    branches:
+    - HEAD
+    # - v*
+    start_paths: docs, docsmanual
   # # the folowing repository is required to include code examples. They must be inside Antora folders
   # # execute the xcopy in this project to update code examples from database project
   # - url: D:\Repos\GitHub\DataHandwerk\local-for-antora

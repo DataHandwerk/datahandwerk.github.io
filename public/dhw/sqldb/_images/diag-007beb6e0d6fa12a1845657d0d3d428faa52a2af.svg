@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="195px" preserveAspectRatio="none" style="width:204px;height:195px;background:#FFFFFF;" version="1.1" viewBox="0 0 204 195" width="204px" zoomAndPan="magnify"><defs><filter height="300%" id="f1scvakrb1b5ty" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[ae49b080183ea53d69b0e16b8f904c21]
+class ssas.model_json_31_tables_T--><rect codeLine="28" fill="#FFFFFF" filter="url(#f1scvakrb1b5ty)" height="163.1995" id="ssas.model_json_31_tables_T" style="stroke:#A80036;stroke-width:1.5;" width="183" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="89" y="24.0001">«U»</text><a href="../ssas.model_json_31_tables_t.html" target="_top" title="../ssas.model_json_31_tables_t.html" xlink:actuate="onRequest" xlink:href="../ssas.model_json_31_tables_t.html" xlink:show="new" xlink:title="../ssas.model_json_31_tables_t.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="163" x="17" y="38.4002">ssas.model_json_31_tables_T</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="189" y1="45.8002" y2="45.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="152" x="13" y="60.8001">PK_model_json_31_tables_T</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="0" x="16" y="74"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="8" x2="189" y1="80.2" y2="80.2"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="146" x="13" y="95.1999">databasename; nvarchar(128)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="136" x="13" y="108.3998">tables_name; nvarchar(128)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="189" y1="114.5998" y2="114.5998"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="122.5998"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="157" x="27" y="129.5997">idx_model_json_31_tables_T__1</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="0" x="30" y="142.7996"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="8" x2="189" y1="148.9996" y2="148.9996"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="146" x="13" y="163.9995">databasename; nvarchar(128)</text><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="191" x="3" y="187.1995">The diagram is interactive and contains links.</text><!--MD5=[7385fa6235f9313f4d6696178316fef5]
+@startuml
+left to right direction
+'top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../ssas.model_json_31_tables_t.html ssas.model_json_31_tables_T]]" as ssas.model_json_31_tables_T << U >> {
+**PK_model_json_31_tables_T**
+
+..
+databasename; nvarchar(128)
+tables_name; nvarchar(128)
+- -
+- idx_model_json_31_tables_T__1
+
+..
+databasename; nvarchar(128)
+}
+
+
+
+footer The diagram is interactive and contains links.
+@enduml
+
+@startuml
+left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>> Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>> White
+  BackgroundColor<<V>> WhiteSmoke
+  BackgroundColor<<X>> Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../ssas.model_json_31_tables_t.html ssas.model_json_31_tables_T]]" as ssas.model_json_31_tables_T << U >> {
+**PK_model_json_31_tables_T**
+
+..
+databasename; nvarchar(128)
+tables_name; nvarchar(128)
+- -
+- idx_model_json_31_tables_T__1
+
+..
+databasename; nvarchar(128)
+}
+
+
+
+footer The diagram is interactive and contains links.
+@enduml
+
+PlantUML version 1.2021.10(Mon Aug 30 13:43:48 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
