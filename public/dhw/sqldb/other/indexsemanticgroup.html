@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Index SemanticGroup :: DataHandwerk Docs</title>
     <link rel="canonical" href="https://datahandwerk.gitlab.io/dhw/sqldb/other/indexsemanticgroup.html">
-    <link rel="prev" href="objectrefcyclic.html">
+    <link rel="prev" href="../objectrefcyclic.html">
     <link rel="next" href="../../user-guide/create-update-connect-repo-db.html">
-    <meta name="generator" content="Antora 3.0.0-beta.1">
+    <meta name="generator" content="Antora 3.0.0-beta.2">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <link rel="stylesheet" href="../../../_/css/custom.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4RM6Q8D27"></script>
@@ -102,6 +102,9 @@
     <a class="nav-link" href="../config.usp_connect_database.html">config.usp_connect_database</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../config.usp_extract_dacpac.html">config.usp_extract_dacpac</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../config.usp_init_parameter.html">config.usp_init_parameter</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -178,6 +181,21 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../dbo.crlf.html">dbo.crlf</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dbo.usp_altertablesdatacompression.html">dbo.usp_AlterTablesDataCompression</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dbo.usp_generate_merge.html">dbo.usp_generate_merge</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dbo.usp_longprint.html">dbo.usp_longprint</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dbo.usp_refreshviews.html">dbo.usp_RefreshViews</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dbo.usp_truncatetables.html">dbo.usp_TruncateTables</a>
   </li>
 </ul>
   </li>
@@ -264,6 +282,9 @@
     <a class="nav-link" href="../docs.ftv_repoobject_reference_plantuml_entityreflist.html">docs.ftv_RepoObject_Reference_PlantUml_EntityRefList</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../docs.measure_measurepropertylist.html">docs.Measure_MeasurePropertyList</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../docs.objectrefcyclic.html">docs.ObjectRefCyclic</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -292,6 +313,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../docs.repoobject_indexlist_t.html">docs.RepoObject_IndexList_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../docs.repoobject_measuredescriptionlist.html">docs.RepoObject_MeasureDescriptionList</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../docs.repoobject_measurelist.html">docs.RepoObject_MeasureList</a>
@@ -441,7 +465,7 @@
     <a class="nav-link" href="../docs.usp_antoraexport_objectpagetemplate.html">docs.usp_AntoraExport_ObjectPageTemplate</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../docs.usp_antoraexport_objectpartialproperties.html">docs.usp_AntoraExport_ObjectPartialProperties</a>
+    <a class="nav-link" href="../docs.usp_antoraexport_objectpartialscontent.html">docs.usp_AntoraExport_ObjectPartialsContent</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../docs.usp_antoraexport_objectpuml.html">docs.usp_AntoraExport_ObjectPuml</a>
@@ -462,7 +486,7 @@
     <a class="nav-link" href="../docs.usp_antoraexport_ssispagetemplate.html">docs.usp_AntoraExport_SsisPageTemplate</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../docs.usp_antoraexport_ssispartialproperties.html">docs.usp_AntoraExport_SsisPartialProperties</a>
+    <a class="nav-link" href="../docs.usp_antoraexport_ssispartialscontent.html">docs.usp_AntoraExport_SsisPartialsContent</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../docs.usp_antoraexport_ssispuml.html">docs.usp_AntoraExport_SsisPuml</a>
@@ -564,6 +588,15 @@
     <a class="nav-link" href="../property.fs_get_repoobjectproperty_nvarchar.html">property.fs_get_RepoObjectProperty_nvarchar</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../property.measureproperty.html">property.MeasureProperty</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../property.propertyname_measure.html">property.PropertyName_Measure</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../property.propertyname_measure_t.html">property.PropertyName_Measure_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../property.propertyname_repoobject.html">property.PropertyName_RepoObject</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -646,6 +679,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../property.usp_external_repoobjectproperty.html">property.usp_external_RepoObjectProperty</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../property.usp_measureproperty_set.html">property.usp_MeasureProperty_set</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../property.usp_persist_propertyname_measure_t.html">property.usp_PERSIST_PropertyName_Measure_T</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../property.usp_persist_propertyname_repoobject_t.html">property.usp_PERSIST_PropertyName_RepoObject_T</a>
@@ -1014,6 +1053,12 @@
     <a class="nav-link" href="../repo.foreignkey_virtual_indexes.html">repo.ForeignKey_virtual_Indexes</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../repo.fs_measure_fullname2.html">repo.fs_Measure_fullname2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../repo.fs_repoobject_fullname2.html">repo.fs_RepoObject_fullname2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../repo.index_columlist.html">repo.Index_ColumList</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -1104,10 +1149,10 @@
     <a class="nav-link" href="../repo.indexreferencedreferencing_hasfullcolumnsinreferencing.html">repo.IndexReferencedReferencing_HasFullColumnsInReferencing</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../repo.measures.html">repo.Measures</a>
+    <a class="nav-link" href="../repo.measure.html">repo.Measure</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../repo.measures_union.html">repo.Measures_union</a>
+    <a class="nav-link" href="../repo.measure_union.html">repo.Measure_union</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../repo.repoobject.html">repo.RepoObject</a>
@@ -1132,6 +1177,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../repo.repoobject_gross.html">repo.RepoObject_gross</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../repo.repoobject_gross_persistence.html">repo.RepoObject_gross_persistence</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../repo.repoobject_gross2.html">repo.RepoObject_gross2</a>
@@ -1285,6 +1333,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../repo.usp_persist_reposchema_ssas_tgt.html">repo.usp_PERSIST_RepoSchema_ssas_tgt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../repo.usp_persistence_delete.html">repo.usp_persistence_delete</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../repo.usp_persistence_set.html">repo.usp_persistence_set</a>
@@ -1524,13 +1575,13 @@
     <a class="nav-link" href="../ssas.indexcolumn_union.html">ssas.IndexColumn_union</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../ssas.measures_translation.html">ssas.Measures_translation</a>
+    <a class="nav-link" href="../ssas.measure_translation.html">ssas.Measure_translation</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../ssas.measures_translation_displayfolder_union.html">ssas.Measures_translation_displayfolder_union</a>
+    <a class="nav-link" href="../ssas.measure_translation_displayfolder_union.html">ssas.Measure_translation_displayfolder_union</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../ssas.measures_translation_t.html">ssas.Measures_translation_T</a>
+    <a class="nav-link" href="../ssas.measure_translation_t.html">ssas.Measure_translation_T</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../ssas.model_json.html">ssas.model_json</a>
@@ -1803,7 +1854,7 @@
     <a class="nav-link" href="../ssas.tmschema_variations.html">ssas.TMSCHEMA_VARIATIONS</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../ssas.usp_persist_measures_translation_t.html">ssas.usp_PERSIST_Measures_translation_T</a>
+    <a class="nav-link" href="../ssas.usp_persist_measure_translation_t.html">ssas.usp_PERSIST_Measure_translation_T</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../ssas.usp_persist_model_json_31_tables_t.html">ssas.usp_PERSIST_model_json_31_tables_T</a>
@@ -2288,24 +2339,15 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../tool.ftv_extract_substrings.html">tool.ftv_extract_substrings</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../tool.usp_generate_merge.html">tool.usp_generate_merge</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../tool.usp_longprint.html">tool.usp_longprint</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../tool.usp_refreshviews.html">tool.usp_RefreshViews</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../tool.usp_truncatetables.html">tool.usp_TruncateTables</a>
-  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../nav/nav-schema-uspgenerator.html">uspgenerator</a>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../uspgenerator.fs_usp_fullname.html">uspgenerator.fs_usp_fullname</a>
+  </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../uspgenerator.ftv_generatoruspstep_sql.html">uspgenerator.ftv_GeneratorUspStep_sql</a>
   </li>
@@ -2341,6 +2383,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../uspgenerator.generatoruspstep_sql.html">uspgenerator.GeneratorUspStep_Sql</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../uspgenerator.usp_copy_procedure.html">uspgenerator.usp_copy_procedure</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../uspgenerator.usp_generatorusp_insert_update_persistence.html">uspgenerator.usp_GeneratorUsp_insert_update_persistence</a>
@@ -2382,7 +2427,16 @@
     <a class="nav-link" href="../workflow.proceduredependency_input_persistencedependency_s.html">workflow.ProcedureDependency_input_PersistenceDependency_S</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../workflow.proceduredependency_persistencedependency_src.html">workflow.ProcedureDependency_PersistenceDependency_src</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../workflow.proceduredependency_persistencedependency_tgt.html">workflow.ProcedureDependency_PersistenceDependency_tgt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../workflow.usp_persist_proceduredependency_input_persistencedependency.html">workflow.usp_PERSIST_ProcedureDependency_input_PersistenceDependency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../workflow.usp_persist_proceduredependency_persistencedependency_tgt.html">workflow.usp_PERSIST_ProcedureDependency_PersistenceDependency_tgt</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../workflow.usp_persist_workflow_proceduredependency_t.html">workflow.usp_PERSIST_Workflow_ProcedureDependency_T</a>
@@ -2458,7 +2512,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="objectrefcyclic.html">Cyclic Object References</a>
+    <a class="nav-link" href="../objectrefcyclic.html">Cyclic Object References</a>
   </li>
   <li class="nav-item is-current-page" data-depth="1">
     <a class="nav-link" href="indexsemanticgroup.html">Index SemanticGroup</a>
@@ -2476,6 +2530,9 @@
     <a class="nav-link" href="../../user-guide/backup-repo-db.html">Backup and restore repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../user-guide/documentation-generator.html">Database documentation generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../../user-guide/sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
 <ul class="nav-list">
@@ -2491,16 +2548,13 @@
     <a class="nav-link" href="../../user-guide/properties-inheritance.html">Properties Inheritance</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../../user-guide/documentation-generator.html">Database documentation generator</a>
-  </li>
-  <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../../user-guide/execution-log.html">Execution log</a>
-  </li>
-  <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../../user-guide/uspgenerator.html">usp generator</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../../user-guide/persistence-generator.html">Persistence generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../user-guide/execution-log.html">Execution log</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../../user-guide/ssms-configuration.html">SSMS configuration</a>
@@ -2524,6 +2578,22 @@
       <ul class="versions">
         <li class="version is-current is-latest">
           <a href="../../index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../aw/index.html">Demo AdventureWorks</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../aw/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../ssis/index.html">Demo SSIS</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../ssis/index.html">default</a>
         </li>
       </ul>
     </li>
@@ -2579,10 +2649,31 @@ PK, Unique, Real: 0, 0, 0</p>
 </div>
 </div>
 <div class="sect1">
+<h2 id="measureunderlineguid"><a class="anchor" href="#measureunderlineguid"></a>Measure_guid,cultures_name,RepoObject_name</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../ssas.measure_translation.html#index-pkunderlinemeasureunderlinetranslation" class="xref page">ssas.Measure_translation - PK_Measure_translation</a><br>
+Measure_guid,cultures_name,RepoObject_name<br>
+uniqueidentifier,nvarchar(10),nvarchar(128)<br>
+PK, Unique, Real: 1, 1, 0</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="propertyunderlinename"><a class="anchor" href="#propertyunderlinename"></a>property_name</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
+<li>
+<p><a href="../property.propertyname_measure.html#index-pkunderlinepropertynameunderlinemeasure" class="xref page">property.PropertyName_Measure - PK_PropertyName_Measure</a><br>
+property_name<br>
+nvarchar(128)<br>
+PK, Unique, Real: 1, 1, 0</p>
+</li>
 <li>
 <p><a href="../property.propertyname_repoobject.html#index-pkunderlinepropertynameunderlinerepoobject" class="xref page">property.PropertyName_RepoObject - PK_PropertyName_RepoObject</a><br>
 property_name<br>
@@ -2594,6 +2685,27 @@ PK, Unique, Real: 1, 1, 0</p>
 property_name<br>
 nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="referencedunderlineprocedureunderlinerepoobjectunderlineguid"><a class="anchor" href="#referencedunderlineprocedureunderlinerepoobjectunderlineguid"></a>referenced_Procedure_RepoObject_guid,referencing_Procedure_RepoObject_guid</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../workflow.proceduredependency_persistencedependency_src.html#index-pkunderlineproceduredependencyunderlinepersistencedependencyunderlinesrc" class="xref page">workflow.ProcedureDependency_PersistenceDependency_src - PK_ProcedureDependency_PersistenceDependency_src</a><br>
+referenced_Procedure_RepoObject_guid,referencing_Procedure_RepoObject_guid<br>
+uniqueidentifier,uniqueidentifier<br>
+PK, Unique, Real: 1, 1, 0</p>
+</li>
+<li>
+<p><a href="../workflow.proceduredependency_persistencedependency_tgt.html#index-pkunderlineproceduredependencyunderlinepersistencedependencyunderlinetgt" class="xref page">workflow.ProcedureDependency_PersistenceDependency_tgt - PK_ProcedureDependency_PersistenceDependency_tgt</a><br>
+referenced_Procedure_RepoObject_guid,referencing_Procedure_RepoObject_guid<br>
+uniqueidentifier,uniqueidentifier<br>
+PK, Unique, Real: 1, 1, 0</p>
 </li>
 </ul>
 </div>
@@ -2650,7 +2762,7 @@ PK, Unique, Real: 1, 1, 0</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="../repo.measures.html#index-idxunderlinemeasuresunderlineunderline2" class="xref page">repo.Measures - idx_Measures__2</a><br>
+<p><a href="../repo.measure.html#index-idxunderlinemeasureunderlineunderline2" class="xref page">repo.Measure - idx_Measure__2</a><br>
 RepoSchema_name,RepoObject_name,measures_name<br>
 nvarchar(128),nvarchar(128),nvarchar(500)<br>
 PK, Unique, Real: 0, 0, 0</p>
@@ -2701,10 +2813,10 @@ PK, Unique, Real: 0, 0, 0</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="../logs.executionlog.html#index-uqunderlineexecutionlog" class="xref page">logs.ExecutionLog - uq_ExecutionLog</a><br>
+<p><a href="../logs.executionlog.html#index-pkunderlineexecutionlog" class="xref page">logs.ExecutionLog - PK_ExecutionLog</a><br>
 id<br>
 bigint<br>
-PK, Unique, Real: 0, 1, 1</p>
+PK, Unique, Real: 1, 1, 1</p>
 </li>
 <li>
 <p><a href="../logs.executionlog_gross.html#index-idxunderlineexecutionlogunderlinegrossunderlineunderline1" class="xref page">logs.ExecutionLog_gross - idx_ExecutionLog_gross__1</a><br>
@@ -2737,24 +2849,6 @@ binary(16)<br>
 PK, Unique, Real: 0, 1, 1</p>
 </li>
 <li>
-<p><a href="../reference.additional_reference_from_properties_tgt.html#index-ukunderlineadditionalunderlinereferenceunderlinefromunderlinepropertiesunderlinetgtunderlineunderline2" class="xref page">reference.additional_Reference_from_properties_tgt - UK_additional_Reference_from_properties_tgt__2</a><br>
-tik_hash<br>
-binary(16)<br>
-PK, Unique, Real: 0, 1, 0</p>
-</li>
-<li>
-<p><a href="../reference.additional_reference_from_ssas_tgt.html#index-ukunderlineadditionalunderlinereferenceunderlinefromunderlinessasunderlinetgtunderlineunderline2" class="xref page">reference.additional_Reference_from_ssas_tgt - UK_additional_Reference_from_ssas_tgt__2</a><br>
-tik_hash<br>
-binary(16)<br>
-PK, Unique, Real: 0, 1, 0</p>
-</li>
-<li>
-<p><a href="../reference.additional_reference_wo_columns_from_properties_tgt.html#index-ukunderlineadditionalunderlinereferenceunderlinewounderlinecolumnsunderlinefromunderlinepropertiesunderlinetgtunderlineunderline2" class="xref page">reference.additional_Reference_wo_columns_from_properties_tgt - UK_additional_Reference_wo_columns_from_properties_tgt__2</a><br>
-tik_hash<br>
-binary(16)<br>
-PK, Unique, Real: 0, 1, 0</p>
-</li>
-<li>
 <p><a href="../docs.antoranavlistrepoobject_by_type.html#index-pkunderlineantoranavlistrepoobjectunderlinebyunderlinetype" class="xref page">docs.AntoraNavListRepoObject_by_type - PK_AntoraNavListRepoObject_by_type</a><br>
 type<br>
 char(2)<br>
@@ -2769,6 +2863,12 @@ PK, Unique, Real: 1, 1, 0</p>
 <li>
 <p><a href="../dbeaver.datasources.html#index-pkunderlinedbeaverunderlinedatasources" class="xref page">dbeaver.DataSources - PK_dbeaver_DataSources</a><br>
 id<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../property.measureproperty.html#index-pkunderlinemeasureproperty" class="xref page">property.MeasureProperty - PK_MeasureProperty</a><br>
+MeasureProperty_id<br>
 int<br>
 PK, Unique, Real: 1, 1, 1</p>
 </li>
@@ -2819,24 +2919,6 @@ PK, Unique, Real: 1, 1, 1</p>
 Id<br>
 int<br>
 PK, Unique, Real: 1, 1, 1</p>
-</li>
-<li>
-<p><a href="../reference.additional_reference_from_properties_tgt.html#index-pkunderlineadditionalunderlinereferenceunderlinefromunderlinepropertiesunderlinetgt" class="xref page">reference.additional_Reference_from_properties_tgt - PK_additional_Reference_from_properties_tgt</a><br>
-Id<br>
-int<br>
-PK, Unique, Real: 1, 1, 0</p>
-</li>
-<li>
-<p><a href="../reference.additional_reference_from_ssas_tgt.html#index-pkunderlineadditionalunderlinereferenceunderlinefromunderlinessasunderlinetgt" class="xref page">reference.additional_Reference_from_ssas_tgt - PK_additional_Reference_from_ssas_tgt</a><br>
-Id<br>
-int<br>
-PK, Unique, Real: 1, 1, 0</p>
-</li>
-<li>
-<p><a href="../reference.additional_reference_wo_columns_from_properties_tgt.html#index-pkunderlineadditionalunderlinereferenceunderlinewounderlinecolumnsunderlinefromunderlinepropertiesunderlinetgt" class="xref page">reference.additional_Reference_wo_columns_from_properties_tgt - PK_additional_Reference_wo_columns_from_properties_tgt</a><br>
-Id<br>
-int<br>
-PK, Unique, Real: 1, 1, 0</p>
 </li>
 <li>
 <p><a href="../repo.check_indexcolumn_virtual_referenced_setpoint.html#index-idxunderlinecheckunderlineindexcolumnunderlinevirtualunderlinereferencedunderlinesetpointunderlineunderline8" class="xref page">repo.check_IndexColumn_virtual_referenced_setpoint - idx_check_IndexColumn_virtual_referenced_setpoint__8</a><br>
@@ -3061,16 +3143,16 @@ int<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../uspgenerator.generatoruspparameter.html#index-idxunderlinegeneratoruspparameterunderlineunderline1" class="xref page">uspgenerator.GeneratorUspParameter - idx_GeneratorUspParameter__1</a><br>
-usp_id<br>
-int<br>
-PK, Unique, Real: 0, 0, 0</p>
-</li>
-<li>
 <p><a href="../uspgenerator.generatoruspparameter.html#index-pkunderlinegeneratoruspparameter" class="xref page">uspgenerator.GeneratorUspParameter - PK_GeneratorUspParameter</a><br>
 id<br>
 int<br>
 PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../uspgenerator.generatoruspparameter.html#index-idxunderlinegeneratoruspparameterunderlineunderline1" class="xref page">uspgenerator.GeneratorUspParameter - idx_GeneratorUspParameter__1</a><br>
+usp_id<br>
+int<br>
+PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
 <p><a href="../uspgenerator.generatoruspstep.html#index-pkunderlinegeneratoruspstep" class="xref page">uspgenerator.GeneratorUspStep - PK_GeneratorUspStep</a><br>
@@ -3475,6 +3557,12 @@ nvarchar(10)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
+<p><a href="../docs.repoobject_measuredescriptionlist.html#index-idxunderlinerepoobjectunderlinemeasuredescriptionlistunderlineunderline1" class="xref page">docs.RepoObject_MeasureDescriptionList - idx_RepoObject_MeasureDescriptionList__1</a><br>
+cultures_name<br>
+nvarchar(10)<br>
+PK, Unique, Real: 0, 0, 0</p>
+</li>
+<li>
 <p><a href="../docs.repoobject_measurelist.html#index-idxunderlinerepoobjectunderlinemeasurelistunderlineunderline2" class="xref page">docs.RepoObject_MeasureList - idx_RepoObject_MeasureList__2</a><br>
 cultures_name<br>
 nvarchar(10)<br>
@@ -3643,6 +3731,12 @@ nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
+<p><a href="../property.propertyname_measure_t.html#index-pkunderlinepropertynameunderlinemeasureunderlinet" class="xref page">property.PropertyName_Measure_T - PK_PropertyName_Measure_T</a><br>
+property_name<br>
+nvarchar(128)<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
 <p><a href="../property.propertyname_repoobject_t.html#index-pkunderlinepropertynameunderlinerepoobjectunderlinet" class="xref page">property.PropertyName_RepoObject_T - PK_PropertyName_RepoObject_T</a><br>
 property_name<br>
 nvarchar(128)<br>
@@ -3709,14 +3803,14 @@ nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../reference.additional_reference_from_ssas_tgt.html#index-idxunderlineadditionalunderlinereferenceunderlinefromunderlinessasunderlinetgtunderlineunderline6" class="xref page">reference.additional_Reference_from_ssas_tgt - idx_additional_Reference_from_ssas_tgt__6</a><br>
-referencing_Schema<br>
+<p><a href="../reference.additional_reference_from_ssas_tgt.html#index-idxunderlineadditionalunderlinereferenceunderlinefromunderlinessasunderlinetgtunderlineunderline2" class="xref page">reference.additional_Reference_from_ssas_tgt - idx_additional_Reference_from_ssas_tgt__2</a><br>
+referencing_Column<br>
 nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
 <p><a href="../reference.additional_reference_from_ssas_tgt.html#index-idxunderlineadditionalunderlinereferenceunderlinefromunderlinessasunderlinetgtunderlineunderline4" class="xref page">reference.additional_Reference_from_ssas_tgt - idx_additional_Reference_from_ssas_tgt__4</a><br>
-referencing_Column<br>
+referencing_Schema<br>
 nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
@@ -3763,18 +3857,6 @@ nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../repo.foreignkey_ssas_indexes.html#index-idxunderlineforeignkeyunderlinessasunderlineindexesunderlineunderline10" class="xref page">repo.ForeignKey_ssas_Indexes - idx_ForeignKey_ssas_Indexes__10</a><br>
-referencing_SysObject_schema_name<br>
-nvarchar(128)<br>
-PK, Unique, Real: 0, 0, 0</p>
-</li>
-<li>
-<p><a href="../repo.foreignkey_ssas_indexes.html#index-idxunderlineforeignkeyunderlinessasunderlineindexesunderlineunderline11" class="xref page">repo.ForeignKey_ssas_Indexes - idx_ForeignKey_ssas_Indexes__11</a><br>
-referenced_SysObject_schema_name<br>
-nvarchar(128)<br>
-PK, Unique, Real: 0, 0, 0</p>
-</li>
-<li>
 <p><a href="../repo.foreignkey_ssas_indexes.html#index-idxunderlineforeignkeyunderlinessasunderlineindexesunderlineunderline5" class="xref page">repo.ForeignKey_ssas_Indexes - idx_ForeignKey_ssas_Indexes__5</a><br>
 referencing_SysObject_name<br>
 nvarchar(128)<br>
@@ -3799,8 +3881,14 @@ nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../repo.foreignkey_ssas_indexpattern.html#index-idxunderlineforeignkeyunderlinessasunderlineindexpatternunderlineunderline9" class="xref page">repo.ForeignKey_ssas_IndexPattern - idx_ForeignKey_ssas_IndexPattern__9</a><br>
-databasename<br>
+<p><a href="../repo.foreignkey_ssas_indexes.html#index-idxunderlineforeignkeyunderlinessasunderlineindexesunderlineunderline10" class="xref page">repo.ForeignKey_ssas_Indexes - idx_ForeignKey_ssas_Indexes__10</a><br>
+referenced_SysObject_schema_name<br>
+nvarchar(128)<br>
+PK, Unique, Real: 0, 0, 0</p>
+</li>
+<li>
+<p><a href="../repo.foreignkey_ssas_indexes.html#index-idxunderlineforeignkeyunderlinessasunderlineindexesunderlineunderline11" class="xref page">repo.ForeignKey_ssas_Indexes - idx_ForeignKey_ssas_Indexes__11</a><br>
+referencing_SysObject_schema_name<br>
 nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
@@ -3841,6 +3929,12 @@ nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
+<p><a href="../repo.foreignkey_ssas_indexpattern.html#index-idxunderlineforeignkeyunderlinessasunderlineindexpatternunderlineunderline9" class="xref page">repo.ForeignKey_ssas_IndexPattern - idx_ForeignKey_ssas_IndexPattern__9</a><br>
+databasename<br>
+nvarchar(128)<br>
+PK, Unique, Real: 0, 0, 0</p>
+</li>
+<li>
 <p><a href="../repo.indexcolumn_referencedreferencing_hasfullcolumnsinreferencing_check.html#index-idxunderlineindexcolumnunderlinereferencedreferencingunderlinehasfullcolumnsinreferencingunderlinecheckunderlineunderline1" class="xref page">repo.IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check - idx_IndexColumn_ReferencedReferencing_HasFullColumnsInReferencing_check__1</a><br>
 referenced_RepoObjectColumn_name<br>
 nvarchar(128)<br>
@@ -3871,7 +3965,7 @@ nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../repo.measures.html#index-idxunderlinemeasuresunderlineunderline4" class="xref page">repo.Measures - idx_Measures__4</a><br>
+<p><a href="../repo.measure.html#index-idxunderlinemeasureunderlineunderline4" class="xref page">repo.Measure - idx_Measure__4</a><br>
 RepoSchema_name<br>
 nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
@@ -3955,10 +4049,10 @@ nvarchar(128)<br>
 PK, Unique, Real: 0, 1, 1</p>
 </li>
 <li>
-<p><a href="../repo.reposchema_ssas_src.html#index-idxunderlinereposchemaunderlinessasunderlinesrcunderlineunderline1" class="xref page">repo.RepoSchema_ssas_src - idx_RepoSchema_ssas_src__1</a><br>
+<p><a href="../repo.reposchema_ssas_src.html#index-pkunderlinereposchemaunderlinessasunderlinesrc" class="xref page">repo.RepoSchema_ssas_src - PK_RepoSchema_ssas_src</a><br>
 RepoSchema_name<br>
 nvarchar(128)<br>
-PK, Unique, Real: 0, 0, 0</p>
+PK, Unique, Real: 1, 1, 0</p>
 </li>
 <li>
 <p><a href="../repo.reposchema_ssas_tgt.html#index-ukunderlinereposchemaunderlinessasunderlinetgtunderlineunderline2" class="xref page">repo.RepoSchema_ssas_tgt - UK_RepoSchema_ssas_tgt__2</a><br>
@@ -4723,7 +4817,7 @@ nvarchar(128),nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../reference.additional_reference_from_ssas_tgt.html#index-idxunderlineadditionalunderlinereferenceunderlinefromunderlinessasunderlinetgtunderlineunderline5" class="xref page">reference.additional_Reference_from_ssas_tgt - idx_additional_Reference_from_ssas_tgt__5</a><br>
+<p><a href="../reference.additional_reference_from_ssas_tgt.html#index-idxunderlineadditionalunderlinereferenceunderlinefromunderlinessasunderlinetgtunderlineunderline3" class="xref page">reference.additional_Reference_from_ssas_tgt - idx_additional_Reference_from_ssas_tgt__3</a><br>
 referencing_Schema,referencing_Object<br>
 nvarchar(128),nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
@@ -4855,7 +4949,7 @@ nvarchar(128),nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../repo.measures.html#index-idxunderlinemeasuresunderlineunderline3" class="xref page">repo.Measures - idx_Measures__3</a><br>
+<p><a href="../repo.measure.html#index-idxunderlinemeasureunderlineunderline3" class="xref page">repo.Measure - idx_Measure__3</a><br>
 RepoSchema_name,RepoObject_name<br>
 nvarchar(128),nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
@@ -4898,6 +4992,18 @@ PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
 <p><a href="../repo.repoobject_gross.html#index-idxunderlinerepoobjectunderlinegrossunderlineunderline4" class="xref page">repo.RepoObject_gross - idx_RepoObject_gross__4</a><br>
+RepoObject_schema_name,RepoObject_name<br>
+nvarchar(128),nvarchar(128)<br>
+PK, Unique, Real: 0, 0, 0</p>
+</li>
+<li>
+<p><a href="../repo.repoobject_gross_persistence.html#index-idxunderlinerepoobjectunderlinegrossunderlinepersistenceunderlineunderline3" class="xref page">repo.RepoObject_gross_persistence - idx_RepoObject_gross_persistence__3</a><br>
+SysObject_schema_name,SysObject_name<br>
+nvarchar(128),nvarchar(128)<br>
+PK, Unique, Real: 0, 0, 0</p>
+</li>
+<li>
+<p><a href="../repo.repoobject_gross_persistence.html#index-idxunderlinerepoobjectunderlinegrossunderlinepersistenceunderlineunderline4" class="xref page">repo.RepoObject_gross_persistence - idx_RepoObject_gross_persistence__4</a><br>
 RepoObject_schema_name,RepoObject_name<br>
 nvarchar(128),nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
@@ -5239,14 +5345,14 @@ nvarchar(128),nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../ssas.repoobjectcolumn_translation_t.html#index-idxunderlinerepoobjectcolumnunderlinetranslationunderlinetunderlineunderline2" class="xref page">ssas.RepoObjectColumn_translation_T - idx_RepoObjectColumn_translation_T__2</a><br>
-databasename,tables_name<br>
+<p><a href="../ssas.repoobjectcolumn_translation_t.html#index-idxunderlinerepoobjectcolumnunderlinetranslationunderlinetunderlineunderline5" class="xref page">ssas.RepoObjectColumn_translation_T - idx_RepoObjectColumn_translation_T__5</a><br>
+RepoObject_schema_name,RepoObject_name<br>
 nvarchar(128),nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../ssas.repoobjectcolumn_translation_t.html#index-idxunderlinerepoobjectcolumnunderlinetranslationunderlinetunderlineunderline5" class="xref page">ssas.RepoObjectColumn_translation_T - idx_RepoObjectColumn_translation_T__5</a><br>
-RepoObject_schema_name,RepoObject_name<br>
+<p><a href="../ssas.repoobjectcolumn_translation_t.html#index-idxunderlinerepoobjectcolumnunderlinetranslationunderlinetunderlineunderline2" class="xref page">ssas.RepoObjectColumn_translation_T - idx_RepoObjectColumn_translation_T__2</a><br>
+databasename,tables_name<br>
 nvarchar(128),nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
@@ -5479,10 +5585,10 @@ nvarchar(128),nvarchar(128),nvarchar(max),nvarchar(max),nvarchar(500),nvarchar(m
 PK, Unique, Real: 1, 1, 0</p>
 </li>
 <li>
-<p><a href="../reference.additional_reference_from_ssas_tgt.html#index-ukunderlineadditionalunderlinereferenceunderlinefromunderlinessasunderlinetgtunderlineunderline3" class="xref page">reference.additional_Reference_from_ssas_tgt - UK_additional_Reference_from_ssas_tgt__3</a><br>
+<p><a href="../reference.additional_reference_from_ssas_tgt.html#index-pkunderlineadditionalunderlinereferenceunderlinefromunderlinessasunderlinetgt" class="xref page">reference.additional_Reference_from_ssas_tgt - PK_additional_Reference_from_ssas_tgt</a><br>
 referenced_AntoraComponent,referenced_AntoraModule,referenced_Schema,referenced_Object,referenced_Column,referencing_AntoraComponent,referencing_AntoraModule,referencing_Schema,referencing_Object,referencing_Column<br>
 nvarchar(128),nvarchar(128),nvarchar(max),nvarchar(max),nvarchar(500),nvarchar(max),nvarchar(max),nvarchar(128),nvarchar(128),nvarchar(128)<br>
-PK, Unique, Real: 0, 1, 0</p>
+PK, Unique, Real: 1, 1, 0</p>
 </li>
 <li>
 <p><a href="../repo.index_ssas.html#index-pkunderlineindexunderlinessas" class="xref page">repo.Index_ssas - PK_Index_ssas</a><br>
@@ -5803,10 +5909,10 @@ nvarchar(max),nvarchar(max),nvarchar(max),nvarchar(max),nvarchar(max),nvarchar(m
 PK, Unique, Real: 1, 1, 0</p>
 </li>
 <li>
-<p><a href="../reference.additional_reference_wo_columns_from_properties_tgt.html#index-ukunderlineadditionalunderlinereferenceunderlinewounderlinecolumnsunderlinefromunderlinepropertiesunderlinetgtunderlineunderline3" class="xref page">reference.additional_Reference_wo_columns_from_properties_tgt - UK_additional_Reference_wo_columns_from_properties_tgt__3</a><br>
+<p><a href="../reference.additional_reference_wo_columns_from_properties_tgt.html#index-pkunderlineadditionalunderlinereferenceunderlinewounderlinecolumnsunderlinefromunderlinepropertiesunderlinetgt" class="xref page">reference.additional_Reference_wo_columns_from_properties_tgt - PK_additional_Reference_wo_columns_from_properties_tgt</a><br>
 referenced_AntoraComponent,referenced_AntoraModule,referenced_Schema,referenced_Object,referencing_AntoraComponent,referencing_AntoraModule,referencing_Schema,referencing_Object<br>
 nvarchar(max),nvarchar(max),nvarchar(max),nvarchar(max),nvarchar(max),nvarchar(max),nvarchar(max),nvarchar(max)<br>
-PK, Unique, Real: 0, 1, 0</p>
+PK, Unique, Real: 1, 1, 0</p>
 </li>
 <li>
 <p><a href="../reference.additional_reference_from_properties_src.html#index-pkunderlineadditionalunderlinereferenceunderlinefromunderlinepropertiesunderlinesrc" class="xref page">reference.additional_Reference_from_properties_src - PK_additional_Reference_from_properties_src</a><br>
@@ -5815,10 +5921,16 @@ nvarchar(max),nvarchar(max),nvarchar(max),nvarchar(max),nvarchar(max),nvarchar(m
 PK, Unique, Real: 1, 1, 0</p>
 </li>
 <li>
-<p><a href="../reference.additional_reference_from_properties_tgt.html#index-ukunderlineadditionalunderlinereferenceunderlinefromunderlinepropertiesunderlinetgtunderlineunderline3" class="xref page">reference.additional_Reference_from_properties_tgt - UK_additional_Reference_from_properties_tgt__3</a><br>
+<p><a href="../reference.additional_reference_from_properties_tgt.html#index-pkunderlineadditionalunderlinereferenceunderlinefromunderlinepropertiesunderlinetgt" class="xref page">reference.additional_Reference_from_properties_tgt - PK_additional_Reference_from_properties_tgt</a><br>
 referenced_AntoraComponent,referenced_AntoraModule,referenced_Schema,referenced_Object,referenced_Column,referencing_AntoraComponent,referencing_AntoraModule,referencing_Schema,referencing_Object,referencing_Column<br>
 nvarchar(max),nvarchar(max),nvarchar(max),nvarchar(max),nvarchar(max),nvarchar(max),nvarchar(max),nvarchar(max),nvarchar(max),nvarchar(max)<br>
-PK, Unique, Real: 0, 1, 0</p>
+PK, Unique, Real: 1, 1, 0</p>
+</li>
+<li>
+<p><a href="../docs.measure_measurepropertylist.html#index-idxunderlinemeasureunderlinemeasurepropertylistunderlineunderline1" class="xref page">docs.Measure_MeasurePropertyList - idx_Measure_MeasurePropertyList__1</a><br>
+Measure_guid<br>
+uniqueidentifier<br>
+PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
 <p><a href="../docs.repoobject_adoc.html#index-idxunderlinerepoobjectunderlineadocunderlineunderline2" class="xref page">docs.RepoObject_Adoc - idx_RepoObject_Adoc__2</a><br>
@@ -6001,6 +6113,12 @@ uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
+<p><a href="../property.measureproperty.html#index-idxunderlinemeasurepropertyunderlineunderline1" class="xref page">property.MeasureProperty - idx_MeasureProperty__1</a><br>
+Measure_guid<br>
+uniqueidentifier<br>
+PK, Unique, Real: 0, 0, 0</p>
+</li>
+<li>
 <p><a href="../property.repoobjectcolumnproperty.html#index-idxunderlinerepoobjectcolumnpropertyunderlineunderline1" class="xref page">property.RepoObjectColumnProperty - idx_RepoObjectColumnProperty__1</a><br>
 RepoObjectColumn_guid<br>
 uniqueidentifier<br>
@@ -6013,14 +6131,14 @@ uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../property.repoobjectcolumnproperty_forupdate.html#index-idxunderlinerepoobjectcolumnpropertyunderlineforupdateunderlineunderline6" class="xref page">property.RepoObjectColumnProperty_ForUpdate - idx_RepoObjectColumnProperty_ForUpdate__6</a><br>
-RepoObject_guid<br>
+<p><a href="../property.repoobjectcolumnproperty_forupdate.html#index-idxunderlinerepoobjectcolumnpropertyunderlineforupdateunderlineunderline3" class="xref page">property.RepoObjectColumnProperty_ForUpdate - idx_RepoObjectColumnProperty_ForUpdate__3</a><br>
+RepoObjectColumn_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../property.repoobjectcolumnproperty_forupdate.html#index-idxunderlinerepoobjectcolumnpropertyunderlineforupdateunderlineunderline3" class="xref page">property.RepoObjectColumnProperty_ForUpdate - idx_RepoObjectColumnProperty_ForUpdate__3</a><br>
-RepoObjectColumn_guid<br>
+<p><a href="../property.repoobjectcolumnproperty_forupdate.html#index-idxunderlinerepoobjectcolumnpropertyunderlineforupdateunderlineunderline6" class="xref page">property.RepoObjectColumnProperty_ForUpdate - idx_RepoObjectColumnProperty_ForUpdate__6</a><br>
+RepoObject_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
@@ -6331,14 +6449,8 @@ uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../reference.repoobjectcolumn_reference_bysamepredecessors.html#index-idxunderlinerepoobjectcolumnunderlinereferenceunderlinebysamepredecessorsunderlineunderline4" class="xref page">reference.RepoObjectColumn_reference_BySamePredecessors - idx_RepoObjectColumn_reference_BySamePredecessors__4</a><br>
-referencing_RepoObjectColumn_guid<br>
-uniqueidentifier<br>
-PK, Unique, Real: 0, 0, 0</p>
-</li>
-<li>
-<p><a href="../reference.repoobjectcolumn_reference_bysamepredecessors.html#index-idxunderlinerepoobjectcolumnunderlinereferenceunderlinebysamepredecessorsunderlineunderline5" class="xref page">reference.RepoObjectColumn_reference_BySamePredecessors - idx_RepoObjectColumn_reference_BySamePredecessors__5</a><br>
-referenced_RepoObjectColumn_guid<br>
+<p><a href="../reference.repoobjectcolumn_reference_bysamepredecessors.html#index-idxunderlinerepoobjectcolumnunderlinereferenceunderlinebysamepredecessorsunderlineunderline1" class="xref page">reference.RepoObjectColumn_reference_BySamePredecessors - idx_RepoObjectColumn_reference_BySamePredecessors__1</a><br>
+referenced_RepoObject_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
@@ -6349,8 +6461,14 @@ uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../reference.repoobjectcolumn_reference_bysamepredecessors.html#index-idxunderlinerepoobjectcolumnunderlinereferenceunderlinebysamepredecessorsunderlineunderline1" class="xref page">reference.RepoObjectColumn_reference_BySamePredecessors - idx_RepoObjectColumn_reference_BySamePredecessors__1</a><br>
-referenced_RepoObject_guid<br>
+<p><a href="../reference.repoobjectcolumn_reference_bysamepredecessors.html#index-idxunderlinerepoobjectcolumnunderlinereferenceunderlinebysamepredecessorsunderlineunderline4" class="xref page">reference.RepoObjectColumn_reference_BySamePredecessors - idx_RepoObjectColumn_reference_BySamePredecessors__4</a><br>
+referencing_RepoObjectColumn_guid<br>
+uniqueidentifier<br>
+PK, Unique, Real: 0, 0, 0</p>
+</li>
+<li>
+<p><a href="../reference.repoobjectcolumn_reference_bysamepredecessors.html#index-idxunderlinerepoobjectcolumnunderlinereferenceunderlinebysamepredecessorsunderlineunderline5" class="xref page">reference.RepoObjectColumn_reference_BySamePredecessors - idx_RepoObjectColumn_reference_BySamePredecessors__5</a><br>
+referenced_RepoObjectColumn_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
@@ -6397,6 +6515,12 @@ uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
+<p><a href="../reference.repoobjectcolumn_reference_queryplan.html#index-idxunderlinerepoobjectcolumnunderlinereferenceunderlinequeryplanunderlineunderline3" class="xref page">reference.RepoObjectColumn_reference_QueryPlan - idx_RepoObjectColumn_reference_QueryPlan__3</a><br>
+referencing_RepoObject_guid<br>
+uniqueidentifier<br>
+PK, Unique, Real: 0, 0, 0</p>
+</li>
+<li>
 <p><a href="../reference.repoobjectcolumn_reference_queryplan.html#index-idxunderlinerepoobjectcolumnunderlinereferenceunderlinequeryplanunderlineunderline5" class="xref page">reference.RepoObjectColumn_reference_QueryPlan - idx_RepoObjectColumn_reference_QueryPlan__5</a><br>
 referencing_RepoObjectColumn_guid<br>
 uniqueidentifier<br>
@@ -6411,12 +6535,6 @@ PK, Unique, Real: 0, 0, 0</p>
 <li>
 <p><a href="../reference.repoobjectcolumn_reference_queryplan.html#index-idxunderlinerepoobjectcolumnunderlinereferenceunderlinequeryplanunderlineunderline7" class="xref page">reference.RepoObjectColumn_reference_QueryPlan - idx_RepoObjectColumn_reference_QueryPlan__7</a><br>
 referenced_RepoObject_guid<br>
-uniqueidentifier<br>
-PK, Unique, Real: 0, 0, 0</p>
-</li>
-<li>
-<p><a href="../reference.repoobjectcolumn_reference_queryplan.html#index-idxunderlinerepoobjectcolumnunderlinereferenceunderlinequeryplanunderlineunderline3" class="xref page">reference.RepoObjectColumn_reference_QueryPlan - idx_RepoObjectColumn_reference_QueryPlan__3</a><br>
-referencing_RepoObject_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
@@ -6547,6 +6665,12 @@ uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
+<p><a href="../repo.foreignkey_indexes.html#index-idxunderlineforeignkeyunderlineindexesunderlineunderline1" class="xref page">repo.ForeignKey_Indexes - idx_ForeignKey_Indexes__1</a><br>
+ForeignKey_guid<br>
+uniqueidentifier<br>
+PK, Unique, Real: 0, 0, 0</p>
+</li>
+<li>
 <p><a href="../repo.foreignkey_indexes.html#index-idxunderlineforeignkeyunderlineindexesunderlineunderline2" class="xref page">repo.ForeignKey_Indexes - idx_ForeignKey_Indexes__2</a><br>
 referenced_index_guid<br>
 uniqueidentifier<br>
@@ -6555,12 +6679,6 @@ PK, Unique, Real: 0, 0, 0</p>
 <li>
 <p><a href="../repo.foreignkey_indexes.html#index-idxunderlineforeignkeyunderlineindexesunderlineunderline3" class="xref page">repo.ForeignKey_Indexes - idx_ForeignKey_Indexes__3</a><br>
 referencing_index_guid<br>
-uniqueidentifier<br>
-PK, Unique, Real: 0, 0, 0</p>
-</li>
-<li>
-<p><a href="../repo.foreignkey_indexes.html#index-idxunderlineforeignkeyunderlineindexesunderlineunderline1" class="xref page">repo.ForeignKey_Indexes - idx_ForeignKey_Indexes__1</a><br>
-ForeignKey_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
@@ -6607,6 +6725,12 @@ uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
+<p><a href="../repo.foreignkey_virtual.html#index-pkunderlineforeignkeyunderlinevirtual" class="xref page">repo.ForeignKey_virtual - PK_ForeignKey_virtual</a><br>
+ForeignKey_guid<br>
+uniqueidentifier<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
 <p><a href="../repo.foreignkey_virtual.html#index-ukunderlineforeignkeyunderlinevirtualunderlineunderline1" class="xref page">repo.ForeignKey_virtual - UK_ForeignKey_virtual__1</a><br>
 referenced_index_guid<br>
 uniqueidentifier<br>
@@ -6617,12 +6741,6 @@ PK, Unique, Real: 0, 1, 0</p>
 referencing_index_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
-</li>
-<li>
-<p><a href="../repo.foreignkey_virtual.html#index-pkunderlineforeignkeyunderlinevirtual" class="xref page">repo.ForeignKey_virtual - PK_ForeignKey_virtual</a><br>
-ForeignKey_guid<br>
-uniqueidentifier<br>
-PK, Unique, Real: 1, 1, 1</p>
 </li>
 <li>
 <p><a href="../repo.foreignkey_virtual_indexes.html#index-idxunderlineforeignkeyunderlinevirtualunderlineindexesunderlineunderline1" class="xref page">repo.ForeignKey_virtual_Indexes - idx_ForeignKey_virtual_Indexes__1</a><br>
@@ -6715,16 +6833,16 @@ uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../repo.index_virtual.html#index-idxunderlineindexunderlinevirtualunderlineunderline1" class="xref page">repo.Index_virtual - idx_Index_virtual__1</a><br>
-parent_RepoObject_guid<br>
-uniqueidentifier<br>
-PK, Unique, Real: 0, 0, 0</p>
-</li>
-<li>
 <p><a href="../repo.index_virtual.html#index-pkunderlineindexunderlinevirtual" class="xref page">repo.Index_virtual - PK_Index_virtual</a><br>
 index_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../repo.index_virtual.html#index-idxunderlineindexunderlinevirtualunderlineunderline1" class="xref page">repo.Index_virtual - idx_Index_virtual__1</a><br>
+parent_RepoObject_guid<br>
+uniqueidentifier<br>
+PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
 <p><a href="../repo.index_virtual_forupdate.html#index-idxunderlineindexunderlinevirtualunderlineforupdateunderlineunderline1" class="xref page">repo.Index_virtual_ForUpdate - idx_Index_virtual_ForUpdate__1</a><br>
@@ -6835,14 +6953,8 @@ uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../repo.measures.html#index-idxunderlinemeasuresunderlineunderline1" class="xref page">repo.Measures - idx_Measures__1</a><br>
+<p><a href="../repo.measure.html#index-idxunderlinemeasureunderlineunderline1" class="xref page">repo.Measure - idx_Measure__1</a><br>
 Measure_guid<br>
-uniqueidentifier<br>
-PK, Unique, Real: 0, 0, 0</p>
-</li>
-<li>
-<p><a href="../repo.repoobject.html#index-idxunderlinerepoobjectunderlineunderline1" class="xref page">repo.RepoObject - idx_RepoObject__1</a><br>
-pk_index_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
@@ -6851,6 +6963,12 @@ PK, Unique, Real: 0, 0, 0</p>
 RepoObject_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../repo.repoobject.html#index-idxunderlinerepoobjectunderlineunderline1" class="xref page">repo.RepoObject - idx_RepoObject__1</a><br>
+pk_index_guid<br>
+uniqueidentifier<br>
+PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
 <p><a href="../repo.repoobject_columnlist.html#index-idxunderlinerepoobjectunderlinecolumnlistunderlineunderline1" class="xref page">repo.RepoObject_ColumnList - idx_RepoObject_ColumnList__1</a><br>
@@ -6895,6 +7013,24 @@ uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
+<p><a href="../repo.repoobject_gross_persistence.html#index-idxunderlinerepoobjectunderlinegrossunderlinepersistenceunderlineunderline5" class="xref page">repo.RepoObject_gross_persistence - idx_RepoObject_gross_persistence__5</a><br>
+pk_index_guid<br>
+uniqueidentifier<br>
+PK, Unique, Real: 0, 0, 0</p>
+</li>
+<li>
+<p><a href="../repo.repoobject_gross_persistence.html#index-idxunderlinerepoobjectunderlinegrossunderlinepersistenceunderlineunderline1" class="xref page">repo.RepoObject_gross_persistence - idx_RepoObject_gross_persistence__1</a><br>
+RepoObject_guid<br>
+uniqueidentifier<br>
+PK, Unique, Real: 0, 0, 0</p>
+</li>
+<li>
+<p><a href="../repo.repoobject_gross_persistence.html#index-idxunderlinerepoobjectunderlinegrossunderlinepersistenceunderlineunderline2" class="xref page">repo.RepoObject_gross_persistence - idx_RepoObject_gross_persistence__2</a><br>
+usp_persistence_RepoObject_guid<br>
+uniqueidentifier<br>
+PK, Unique, Real: 0, 0, 0</p>
+</li>
+<li>
 <p><a href="../repo.repoobject_gross2.html#index-idxunderlinerepoobjectunderlinegross2underlineunderline1" class="xref page">repo.RepoObject_gross2 - idx_RepoObject_gross2__1</a><br>
 RepoObject_guid<br>
 uniqueidentifier<br>
@@ -6919,14 +7055,14 @@ uniqueidentifier<br>
 PK, Unique, Real: 1, 1, 1</p>
 </li>
 <li>
-<p><a href="../repo.repoobject_persistence_column.html#index-idxunderlinerepoobjectunderlinepersistenceunderlinecolumnunderlineunderline7" class="xref page">repo.RepoObject_persistence_column - idx_RepoObject_persistence_column__7</a><br>
-target_RepoObject_guid<br>
+<p><a href="../repo.repoobject_persistence_column.html#index-idxunderlinerepoobjectunderlinepersistenceunderlinecolumnunderlineunderline4" class="xref page">repo.RepoObject_persistence_column - idx_RepoObject_persistence_column__4</a><br>
+RepoObjectColumn_guid_s<br>
 uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../repo.repoobject_persistence_column.html#index-idxunderlinerepoobjectunderlinepersistenceunderlinecolumnunderlineunderline4" class="xref page">repo.RepoObject_persistence_column - idx_RepoObject_persistence_column__4</a><br>
-RepoObjectColumn_guid_s<br>
+<p><a href="../repo.repoobject_persistence_column.html#index-idxunderlinerepoobjectunderlinepersistenceunderlinecolumnunderlineunderline7" class="xref page">repo.RepoObject_persistence_column - idx_RepoObject_persistence_column__7</a><br>
+target_RepoObject_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
@@ -6943,6 +7079,12 @@ uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
+<p><a href="../repo.repoobject_persistence_sourcemismatch.html#index-idxunderlinerepoobjectunderlinepersistenceunderlinesourcemismatchunderlineunderline5" class="xref page">repo.RepoObject_persistence_SourceMismatch - idx_RepoObject_persistence_SourceMismatch__5</a><br>
+target_RepoObject_guid<br>
+uniqueidentifier<br>
+PK, Unique, Real: 0, 0, 0</p>
+</li>
+<li>
 <p><a href="../repo.repoobject_persistence_sourcemismatch.html#index-idxunderlinerepoobjectunderlinepersistenceunderlinesourcemismatchunderlineunderline1" class="xref page">repo.RepoObject_persistence_SourceMismatch - idx_RepoObject_persistence_SourceMismatch__1</a><br>
 source_RepoObject_guid_via_name<br>
 uniqueidentifier<br>
@@ -6951,12 +7093,6 @@ PK, Unique, Real: 0, 0, 0</p>
 <li>
 <p><a href="../repo.repoobject_persistence_sourcemismatch.html#index-idxunderlinerepoobjectunderlinepersistenceunderlinesourcemismatchunderlineunderline2" class="xref page">repo.RepoObject_persistence_SourceMismatch - idx_RepoObject_persistence_SourceMismatch__2</a><br>
 source_RepoObject_guid_via_default_name<br>
-uniqueidentifier<br>
-PK, Unique, Real: 0, 0, 0</p>
-</li>
-<li>
-<p><a href="../repo.repoobject_persistence_sourcemismatch.html#index-idxunderlinerepoobjectunderlinepersistenceunderlinesourcemismatchunderlineunderline5" class="xref page">repo.RepoObject_persistence_SourceMismatch - idx_RepoObject_persistence_SourceMismatch__5</a><br>
-target_RepoObject_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
@@ -6997,25 +7133,19 @@ uniqueidentifier<br>
 PK, Unique, Real: 1, 1, 0</p>
 </li>
 <li>
-<p><a href="../repo.repoobject_ssas_tgt.html#index-idxunderlinerepoobjectunderlinessasunderlinetgtunderlineunderline4" class="xref page">repo.RepoObject_SSAS_tgt - idx_RepoObject_SSAS_tgt__4</a><br>
-pk_index_guid<br>
-uniqueidentifier<br>
-PK, Unique, Real: 0, 0, 0</p>
-</li>
-<li>
 <p><a href="../repo.repoobject_ssas_tgt.html#index-pkunderlinerepoobjectunderlinessasunderlinetgt" class="xref page">repo.RepoObject_SSAS_tgt - PK_RepoObject_SSAS_tgt</a><br>
 RepoObject_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 1, 1, 0</p>
 </li>
 <li>
-<p><a href="../repo.repoobject_wo_referencing.html#index-idxunderlinerepoobjectunderlinewounderlinereferencingunderlineunderline1" class="xref page">repo.RepoObject_wo_referencing - idx_RepoObject_wo_referencing__1</a><br>
-RepoObject_guid<br>
+<p><a href="../repo.repoobject_ssas_tgt.html#index-idxunderlinerepoobjectunderlinessasunderlinetgtunderlineunderline4" class="xref page">repo.RepoObject_SSAS_tgt - idx_RepoObject_SSAS_tgt__4</a><br>
+pk_index_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../repo.repoobjectcolumn.html#index-idxunderlinerepoobjectcolumnunderlineunderline1" class="xref page">repo.RepoObjectColumn - idx_RepoObjectColumn__1</a><br>
+<p><a href="../repo.repoobject_wo_referencing.html#index-idxunderlinerepoobjectunderlinewounderlinereferencingunderlineunderline1" class="xref page">repo.RepoObject_wo_referencing - idx_RepoObject_wo_referencing__1</a><br>
 RepoObject_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
@@ -7025,6 +7155,12 @@ PK, Unique, Real: 0, 0, 0</p>
 RepoObjectColumn_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../repo.repoobjectcolumn.html#index-idxunderlinerepoobjectcolumnunderlineunderline1" class="xref page">repo.RepoObjectColumn - idx_RepoObjectColumn__1</a><br>
+RepoObject_guid<br>
+uniqueidentifier<br>
+PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
 <p><a href="../repo.repoobjectcolumn_external_src.html#index-pkunderlinerepoobjectcolumnunderlineexternalunderlinesrc" class="xref page">repo.RepoObjectColumn_external_src - PK_RepoObjectColumn_external_src</a><br>
@@ -7039,16 +7175,16 @@ uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../repo.repoobjectcolumn_external_tgt.html#index-idxunderlinerepoobjectcolumnunderlineexternalunderlinetgtunderlineunderline4" class="xref page">repo.RepoObjectColumn_external_tgt - idx_RepoObjectColumn_external_tgt__4</a><br>
-RepoObject_guid<br>
-uniqueidentifier<br>
-PK, Unique, Real: 0, 0, 0</p>
-</li>
-<li>
 <p><a href="../repo.repoobjectcolumn_external_tgt.html#index-pkunderlinerepoobjectcolumnunderlineexternalunderlinetgt" class="xref page">repo.RepoObjectColumn_external_tgt - PK_RepoObjectColumn_external_tgt</a><br>
 RepoObjectColumn_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 1, 1, 0</p>
+</li>
+<li>
+<p><a href="../repo.repoobjectcolumn_external_tgt.html#index-idxunderlinerepoobjectcolumnunderlineexternalunderlinetgtunderlineunderline4" class="xref page">repo.RepoObjectColumn_external_tgt - idx_RepoObjectColumn_external_tgt__4</a><br>
+RepoObject_guid<br>
+uniqueidentifier<br>
+PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
 <p><a href="../repo.repoobjectcolumn_gross.html#index-idxunderlinerepoobjectcolumnunderlinegrossunderlineunderline6" class="xref page">repo.RepoObjectColumn_gross - idx_RepoObjectColumn_gross__6</a><br>
@@ -7099,14 +7235,14 @@ uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../repo.repoobjectcolumn_missingsource_typev.html#index-idxunderlinerepoobjectcolumnunderlinemissingsourceunderlinetypevunderlineunderline1" class="xref page">repo.RepoObjectColumn_MissingSource_TypeV - idx_RepoObjectColumn_MissingSource_TypeV__1</a><br>
-RepoObjectColumn_guid<br>
+<p><a href="../repo.repoobjectcolumn_missingsource_typev.html#index-idxunderlinerepoobjectcolumnunderlinemissingsourceunderlinetypevunderlineunderline4" class="xref page">repo.RepoObjectColumn_MissingSource_TypeV - idx_RepoObjectColumn_MissingSource_TypeV__4</a><br>
+RepoObject_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../repo.repoobjectcolumn_missingsource_typev.html#index-idxunderlinerepoobjectcolumnunderlinemissingsourceunderlinetypevunderlineunderline4" class="xref page">repo.RepoObjectColumn_MissingSource_TypeV - idx_RepoObjectColumn_MissingSource_TypeV__4</a><br>
-RepoObject_guid<br>
+<p><a href="../repo.repoobjectcolumn_missingsource_typev.html#index-idxunderlinerepoobjectcolumnunderlinemissingsourceunderlinetypevunderlineunderline1" class="xref page">repo.RepoObjectColumn_MissingSource_TypeV - idx_RepoObjectColumn_MissingSource_TypeV__1</a><br>
+RepoObjectColumn_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
@@ -7135,16 +7271,16 @@ uniqueidentifier<br>
 PK, Unique, Real: 1, 1, 0</p>
 </li>
 <li>
-<p><a href="../repo.repoobjectcolumn_ssas_tgt.html#index-idxunderlinerepoobjectcolumnunderlinessasunderlinetgtunderlineunderline4" class="xref page">repo.RepoObjectColumn_SSAS_tgt - idx_RepoObjectColumn_SSAS_tgt__4</a><br>
-RepoObject_guid<br>
-uniqueidentifier<br>
-PK, Unique, Real: 0, 0, 0</p>
-</li>
-<li>
 <p><a href="../repo.repoobjectcolumn_ssas_tgt.html#index-pkunderlinerepoobjectcolumnunderlinessasunderlinetgt" class="xref page">repo.RepoObjectColumn_SSAS_tgt - PK_RepoObjectColumn_SSAS_tgt</a><br>
 RepoObjectColumn_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 1, 1, 0</p>
+</li>
+<li>
+<p><a href="../repo.repoobjectcolumn_ssas_tgt.html#index-idxunderlinerepoobjectcolumnunderlinessasunderlinetgtunderlineunderline4" class="xref page">repo.RepoObjectColumn_SSAS_tgt - idx_RepoObjectColumn_SSAS_tgt__4</a><br>
+RepoObject_guid<br>
+uniqueidentifier<br>
+PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
 <p><a href="../repo.reposchema.html#index-pkunderlinereposchema" class="xref page">repo.RepoSchema - PK_RepoSchema</a><br>
@@ -7292,13 +7428,13 @@ PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
 <p><a href="../repo_sys.sql_expression_dependencies.html#index-idxunderlinesqlunderlineexpressionunderlinedependenciesunderlineunderline3" class="xref page">repo_sys.sql_expression_dependencies - idx_sql_expression_dependencies__3</a><br>
-referenced_RepoObjectColumn_guid<br>
+referencing_RepoObjectColumn_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
 <p><a href="../repo_sys.sql_expression_dependencies.html#index-idxunderlinesqlunderlineexpressionunderlinedependenciesunderlineunderline4" class="xref page">repo_sys.sql_expression_dependencies - idx_sql_expression_dependencies__4</a><br>
-referencing_RepoObjectColumn_guid<br>
+referenced_RepoObjectColumn_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
@@ -7604,6 +7740,30 @@ PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
 <p><a href="../workflow.proceduredependency_input_persistencedependency_s.html#index-idxunderlineproceduredependencyunderlineinputunderlinepersistencedependencyunderlinesunderlineunderline3" class="xref page">workflow.ProcedureDependency_input_PersistenceDependency_S - idx_ProcedureDependency_input_PersistenceDependency_S__3</a><br>
+referencing_Procedure_RepoObject_guid<br>
+uniqueidentifier<br>
+PK, Unique, Real: 0, 0, 0</p>
+</li>
+<li>
+<p><a href="../workflow.proceduredependency_persistencedependency_src.html#index-idxunderlineproceduredependencyunderlinepersistencedependencyunderlinesrcunderlineunderline2" class="xref page">workflow.ProcedureDependency_PersistenceDependency_src - idx_ProcedureDependency_PersistenceDependency_src__2</a><br>
+referenced_Procedure_RepoObject_guid<br>
+uniqueidentifier<br>
+PK, Unique, Real: 0, 0, 0</p>
+</li>
+<li>
+<p><a href="../workflow.proceduredependency_persistencedependency_src.html#index-idxunderlineproceduredependencyunderlinepersistencedependencyunderlinesrcunderlineunderline3" class="xref page">workflow.ProcedureDependency_PersistenceDependency_src - idx_ProcedureDependency_PersistenceDependency_src__3</a><br>
+referencing_Procedure_RepoObject_guid<br>
+uniqueidentifier<br>
+PK, Unique, Real: 0, 0, 0</p>
+</li>
+<li>
+<p><a href="../workflow.proceduredependency_persistencedependency_tgt.html#index-idxunderlineproceduredependencyunderlinepersistencedependencyunderlinetgtunderlineunderline2" class="xref page">workflow.ProcedureDependency_PersistenceDependency_tgt - idx_ProcedureDependency_PersistenceDependency_tgt__2</a><br>
+referenced_Procedure_RepoObject_guid<br>
+uniqueidentifier<br>
+PK, Unique, Real: 0, 0, 0</p>
+</li>
+<li>
+<p><a href="../workflow.proceduredependency_persistencedependency_tgt.html#index-idxunderlineproceduredependencyunderlinepersistencedependencyunderlinetgtunderlineunderline3" class="xref page">workflow.ProcedureDependency_PersistenceDependency_tgt - idx_ProcedureDependency_PersistenceDependency_tgt__3</a><br>
 referencing_Procedure_RepoObject_guid<br>
 uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
@@ -7963,13 +8123,13 @@ uniqueidentifier,nvarchar(10)<br>
 PK, Unique, Real: 1, 1, 0</p>
 </li>
 <li>
-<p><a href="../ssas.measures_translation.html#index-ukunderlinemeasuresunderlinetranslationunderlineunderline1" class="xref page">ssas.Measures_translation - UK_Measures_translation__1</a><br>
+<p><a href="../ssas.measure_translation.html#index-ukunderlinemeasureunderlinetranslationunderlineunderline1" class="xref page">ssas.Measure_translation - UK_Measure_translation__1</a><br>
 Measure_guid,cultures_name<br>
 uniqueidentifier,nvarchar(10)<br>
 PK, Unique, Real: 0, 1, 0</p>
 </li>
 <li>
-<p><a href="../ssas.measures_translation_t.html#index-ukunderlinemeasuresunderlinetranslationunderlinetunderlineunderline1" class="xref page">ssas.Measures_translation_T - UK_Measures_translation_T__1</a><br>
+<p><a href="../ssas.measure_translation_t.html#index-ukunderlinemeasureunderlinetranslationunderlinetunderlineunderline1" class="xref page">ssas.Measure_translation_T - UK_Measure_translation_T__1</a><br>
 Measure_guid,cultures_name<br>
 uniqueidentifier,nvarchar(10)<br>
 PK, Unique, Real: 0, 1, 0</p>
@@ -7987,13 +8147,7 @@ uniqueidentifier,nvarchar(10)<br>
 PK, Unique, Real: 1, 1, 1</p>
 </li>
 <li>
-<p><a href="../ssas.measures_translation.html#index-pkunderlinemeasuresunderlinetranslation" class="xref page">ssas.Measures_translation - PK_Measures_translation</a><br>
-Measure_guid,cultures_name,RepoObject_name<br>
-uniqueidentifier,nvarchar(10),nvarchar(128)<br>
-PK, Unique, Real: 1, 1, 0</p>
-</li>
-<li>
-<p><a href="../ssas.measures_translation_t.html#index-pkunderlinemeasuresunderlinetranslationunderlinet" class="xref page">ssas.Measures_translation_T - PK_Measures_translation_T</a><br>
+<p><a href="../ssas.measure_translation_t.html#index-pkunderlinemeasuresunderlinetranslationunderlinet" class="xref page">ssas.Measure_translation_T - PK_Measures_translation_T</a><br>
 Measure_guid,cultures_name,RepoObject_name<br>
 uniqueidentifier,nvarchar(10),nvarchar(128)<br>
 PK, Unique, Real: 1, 1, 1</p>
@@ -8035,6 +8189,12 @@ uniqueidentifier,nvarchar(128)<br>
 PK, Unique, Real: 1, 1, 1</p>
 </li>
 <li>
+<p><a href="../property.measureproperty.html#index-ukunderlinemeasureproperty" class="xref page">property.MeasureProperty - UK_MeasureProperty</a><br>
+Measure_guid,property_name<br>
+uniqueidentifier,nvarchar(128)<br>
+PK, Unique, Real: 0, 1, 1</p>
+</li>
+<li>
 <p><a href="../property.repoobjectcolumnproperty.html#index-ukunderlinerepoobjectcolumnproperty" class="xref page">property.RepoObjectColumnProperty - UK_RepoObjectColumnProperty</a><br>
 RepoObjectColumn_guid,property_name<br>
 uniqueidentifier,nvarchar(128)<br>
@@ -8053,14 +8213,14 @@ uniqueidentifier,nvarchar(128)<br>
 PK, Unique, Real: 1, 1, 0</p>
 </li>
 <li>
-<p><a href="../property.repoobjectcolumnproperty_forupdate.html#index-idxunderlinerepoobjectcolumnpropertyunderlineforupdateunderlineunderline5" class="xref page">property.RepoObjectColumnProperty_ForUpdate - idx_RepoObjectColumnProperty_ForUpdate__5</a><br>
-RepoObject_guid,RepoObjectColumn_name<br>
+<p><a href="../property.repoobjectcolumnproperty_forupdate.html#index-idxunderlinerepoobjectcolumnpropertyunderlineforupdateunderlineunderline2" class="xref page">property.RepoObjectColumnProperty_ForUpdate - idx_RepoObjectColumnProperty_ForUpdate__2</a><br>
+RepoObjectColumn_guid,property_name<br>
 uniqueidentifier,nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../property.repoobjectcolumnproperty_forupdate.html#index-idxunderlinerepoobjectcolumnpropertyunderlineforupdateunderlineunderline2" class="xref page">property.RepoObjectColumnProperty_ForUpdate - idx_RepoObjectColumnProperty_ForUpdate__2</a><br>
-RepoObjectColumn_guid,property_name<br>
+<p><a href="../property.repoobjectcolumnproperty_forupdate.html#index-idxunderlinerepoobjectcolumnpropertyunderlineforupdateunderlineunderline5" class="xref page">property.RepoObjectColumnProperty_ForUpdate - idx_RepoObjectColumnProperty_ForUpdate__5</a><br>
+RepoObject_guid,RepoObjectColumn_name<br>
 uniqueidentifier,nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
@@ -8150,13 +8310,13 @@ PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
 <p><a href="../reference.repoobjectcolumn_reference_virtual.html#index-idxunderlinerepoobjectcolumnunderlinereferenceunderlinevirtualunderlineunderline5" class="xref page">reference.RepoObjectColumn_reference_virtual - idx_RepoObjectColumn_reference_virtual__5</a><br>
-referencing_RepoObjectColumn_guid,referencing_column_name<br>
+referenced_RepoObjectColumn_guid,referencing_column_name<br>
 uniqueidentifier,nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
 <p><a href="../reference.repoobjectcolumn_reference_virtual.html#index-idxunderlinerepoobjectcolumnunderlinereferenceunderlinevirtualunderlineunderline6" class="xref page">reference.RepoObjectColumn_reference_virtual - idx_RepoObjectColumn_reference_virtual__6</a><br>
-referenced_RepoObjectColumn_guid,referenced_column_name<br>
+referencing_RepoObjectColumn_guid,referenced_column_name<br>
 uniqueidentifier,nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
@@ -8173,14 +8333,14 @@ uniqueidentifier,nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../repo.repoobjectcolumn.html#index-ukunderlinerepoobjectcolumnunderlineunderlinesysnames" class="xref page">repo.RepoObjectColumn - UK_RepoObjectColumn__SysNames</a><br>
-RepoObjectColumn_guid,SysObjectColumn_name<br>
+<p><a href="../repo.repoobjectcolumn.html#index-ukunderlinerepoobjectcolumnunderlineunderlinereponames" class="xref page">repo.RepoObjectColumn - UK_RepoObjectColumn__RepoNames</a><br>
+RepoObject_guid,RepoObjectColumn_name<br>
 uniqueidentifier,nvarchar(128)<br>
 PK, Unique, Real: 0, 1, 1</p>
 </li>
 <li>
-<p><a href="../repo.repoobjectcolumn.html#index-ukunderlinerepoobjectcolumnunderlineunderlinereponames" class="xref page">repo.RepoObjectColumn - UK_RepoObjectColumn__RepoNames</a><br>
-RepoObject_guid,RepoObjectColumn_name<br>
+<p><a href="../repo.repoobjectcolumn.html#index-ukunderlinerepoobjectcolumnunderlineunderlinesysnames" class="xref page">repo.RepoObjectColumn - UK_RepoObjectColumn__SysNames</a><br>
+RepoObjectColumn_guid,SysObjectColumn_name<br>
 uniqueidentifier,nvarchar(128)<br>
 PK, Unique, Real: 0, 1, 1</p>
 </li>
@@ -8234,13 +8394,13 @@ PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
 <p><a href="../repo.repoobjectcolumn_requiredrepoobjectcolumnmerge.html#index-idxunderlinerepoobjectcolumnunderlinerequiredrepoobjectcolumnmergeunderlineunderline3" class="xref page">repo.RepoObjectColumn_RequiredRepoObjectColumnMerge - idx_RepoObjectColumn_RequiredRepoObjectColumnMerge__3</a><br>
-roc2_RepoObjectColumn_guid,SysObjectColumn_name<br>
+RepoObjectColumn_guid,SysObjectColumn_name<br>
 uniqueidentifier,nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
 <p><a href="../repo.repoobjectcolumn_requiredrepoobjectcolumnmerge.html#index-idxunderlinerepoobjectcolumnunderlinerequiredrepoobjectcolumnmergeunderlineunderline4" class="xref page">repo.RepoObjectColumn_RequiredRepoObjectColumnMerge - idx_RepoObjectColumn_RequiredRepoObjectColumnMerge__4</a><br>
-RepoObjectColumn_guid,roc2_SysObjectColumn_name<br>
+roc2_RepoObjectColumn_guid,roc2_SysObjectColumn_name<br>
 uniqueidentifier,nvarchar(128)<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
@@ -8438,7 +8598,7 @@ PK, Unique, Real: 1, 1, 0</p>
 </li>
 <li>
 <p><a href="../reference.referencetree_cyclic_ref_persistenceusp.html#index-idxunderlinereferencetreeunderlinecyclicunderlinerefunderlinepersistenceuspunderlineunderline1" class="xref page">reference.ReferenceTree_cyclic_ref_PersistenceUsp - idx_ReferenceTree_cyclic_ref_PersistenceUsp__1</a><br>
-Referencing_guid,Referenced_guid<br>
+Referenced_guid,Referencing_guid<br>
 uniqueidentifier,uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
@@ -8581,10 +8741,10 @@ uniqueidentifier,uniqueidentifier<br>
 PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
-<p><a href="../workflow.proceduredependency_input_persistencedependency.html#index-pkunderlineproceduredependencyunderlineinputunderlinepersistencedependency" class="xref page">workflow.ProcedureDependency_input_PersistenceDependency - PK_ProcedureDependency_input_PersistenceDependency</a><br>
+<p><a href="../workflow.proceduredependency_input_persistencedependency.html#index-idxunderlineproceduredependencyunderlineinputunderlinepersistencedependencyunderlineunderline3" class="xref page">workflow.ProcedureDependency_input_PersistenceDependency - idx_ProcedureDependency_input_PersistenceDependency__3</a><br>
 referenced_Procedure_RepoObject_guid,referencing_Procedure_RepoObject_guid<br>
 uniqueidentifier,uniqueidentifier<br>
-PK, Unique, Real: 1, 1, 0</p>
+PK, Unique, Real: 0, 0, 0</p>
 </li>
 <li>
 <p><a href="../workflow.proceduredependency_input_persistencedependency_s.html#index-pkunderlineproceduredependencyunderlineinputunderlinepersistencedependencyunderlines" class="xref page">workflow.ProcedureDependency_input_PersistenceDependency_S - PK_ProcedureDependency_input_PersistenceDependency_S</a><br>
@@ -9363,7 +9523,7 @@ PK, Unique, Real: 1, 1, 0</p>
 <li>
 <p><a href="../configt.parameter_default.html#index-pkunderlineparameterunderlinedefault" class="xref page">configT.Parameter_default - PK_Parameter_default</a><br>
 Parameter_name,sub_Parameter<br>
-varchar(52),nvarchar(27)<br>
+varchar(52),nvarchar(26)<br>
 PK, Unique, Real: 1, 1, 0</p>
 </li>
 </ul>
@@ -9371,7 +9531,7 @@ PK, Unique, Real: 1, 1, 0</p>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="objectrefcyclic.html">Cyclic Object References</a></span>
+  <span class="prev"><a href="../objectrefcyclic.html">Cyclic Object References</a></span>
   <span class="next"><a href="../../user-guide/create-update-connect-repo-db.html">Create, update and connect repository database</a></span>
 </nav>
 </article>

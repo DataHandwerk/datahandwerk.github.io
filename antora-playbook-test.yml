@@ -1,0 +1,80 @@
+site:
+  title: DataHandwerk Docs
+  url: https://datahandwerk.gitlab.io
+  start_page: dhw::index.adoc
+  # start_page: dhw:sqldb:nav/objects-by-schema.adoc
+  # start_page: dhw:arc:architecture.adoc
+  keys:
+    google_analytics: 'G-L4RM6Q8D27'
+content:
+  sources:
+  - url: D:\Repos\gitlab\DataHandwerk\dhw-antora-docs
+    branches:
+    - HEAD
+    # - v*
+    start_path: docs
+  # - url: D:\Repos\gitlab\DataHandwerk\dhw-antora-sqldb
+  #   branches:
+  #   - HEAD
+  #   # - v*
+  #   start_paths: docs, docsmanual
+  - url: D:\Repos\gitlab\DataHandwerk\dhw-antora-adventureworks
+    branches:
+    - HEAD
+    # - v*
+    start_paths: docs, docsmanual
+  - url: D:\Repos\gitlab\DataHandwerk\dhw-antora-ssis
+    branches:
+    - HEAD
+    # - v*
+    start_paths: docs, docsmanual
+asciidoc:
+  attributes:
+    page-pagination: ''
+    experimental: ''
+    :plantuml-server-url: http://www.plantuml.com/plantuml
+    # You can use the kroki-fetch-diagram option to download the images from Kroki at build time. In other words, while viewing pages you won't rely on Kroki anymore.
+    # However, in Antora, this is not currently compatible with inline SVG images.
+    kroki-fetch-diagram: false
+    # required for interactive diagram, but it is good idea in general
+    # use SVG unless otherwise specified
+    kroki-default-format: svg
+    # Make SVG inline so that we can get interactive (can be overridden by schema with "opts=none")
+    kroki-default-options: interactive
+  extensions:
+  - asciidoctor-kroki
+  - ./lib/inline-puml-link-macro.js
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+  supplemental_files: ./supplemental-ui
+  # - path: ui.yml
+  #   contents: |
+  #     static_files: [ .nojekyll ]
+  # - path: .nojekyll
+output:
+  clean: true
+  dir: ./test
+  # destinations:
+  # - provider: archive
+  #   path: ./public/blue.zip
+urls:
+  # latest_version_segment: current
+  # no redirects will be created in combination with redirect_facility: static
+  # but this could be useful if the site would be published on netlify or gitlab
+  # but the required redirect logic is not supported on github
+  # 'redirect:to' will create 'current' instead of the latest version
+  # this would allow static link to the latest version, also on github
+  # but it will not work for renamed, added, deleted pages
+  ## Github requires replace (this is the default), because it doesn't support redirect
+  latest_version_segment_strategy: replace
+  # latest_version_segment_strategy: redirect:to
+  # latest_prerelease_version_segment: unstable
+  # # static is default
+  # 'redirect_facility: static' doesn't work for the latest version, no static pages are created
+  # a hoster like netlify would be required, then the value could be netlify
+  # use 'netlify' for gitlab in folder public and 'static' for github in folder docs
+  redirect_facility: static
+runtime:
+  fetch: true

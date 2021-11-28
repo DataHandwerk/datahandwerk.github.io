@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="234px" preserveAspectRatio="none" style="width:266px;height:234px;background:#FFFFFF;" version="1.1" viewBox="0 0 266 234" width="266px" zoomAndPan="magnify"><defs><filter height="300%" id="f51sq5dk2qm5u" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[7e008c8eb8b850f7614a22fe1ecd2e25]
+class sqlparse.RepoObject_SqlModules_31_object--><rect codeLine="28" fill="#F5F5F5" filter="url(#f51sq5dk2qm5u)" height="213.199" id="sqlparse.RepoObject_SqlModules_31_object" style="stroke:#A80036;stroke-width:1.5;" width="245" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="120.5" y="24.0001">«V»</text><a href="../sqlparse.repoobject_sqlmodules_31_object.html" target="_top" title="../sqlparse.repoobject_sqlmodules_31_object.html" xlink:actuate="onRequest" xlink:href="../sqlparse.repoobject_sqlmodules_31_object.html" xlink:show="new" xlink:title="../sqlparse.repoobject_sqlmodules_31_object.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="239" x="10" y="38.4002">sqlparse.RepoObject_SqlModules_31_object</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="251" y1="45.8002" y2="45.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="84" x="27" y="60.8001">is_1_create : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="74" x="27" y="74">is_2_view : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="94" x="27" y="87.1999">is_3_Identifier : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="64" x="27" y="100.3998">is_4_as : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="81" x="27" y="113.5997">is_5_select : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="94" x="27" y="126.7996">is_6_Identifier : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="110" x="27" y="139.9995">is_6_IdentifierList : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="75" x="27" y="153.1994">is_7_from : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="110" x="27" y="166.3993">is_7_IdentifierList : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="110" x="27" y="179.5992">is_8_IdentifierList : (int)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="185.7992"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="174" x="27" y="192.7991">RepoObject_guid : (uniqueidentifier)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="182" x="27" y="205.999">SysObject_fullname : (nvarchar(261))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="251" y1="212.199" y2="212.199"/><!--MD5=[84225da07308da5b1c4b4c883d66a2a9]
+@startuml
+'Left to right direction
+top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>>  Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>>  White
+  BackgroundColor<<V>>  WhiteSmoke
+  BackgroundColor<<X>>  Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../sqlparse.repoobject_sqlmodules_31_object.html sqlparse.RepoObject_SqlModules_31_object]]" as sqlparse.RepoObject_SqlModules_31_object << V >> {
+  is_1_create : (int)
+  is_2_view : (int)
+  is_3_Identifier : (int)
+  is_4_as : (int)
+  is_5_select : (int)
+  is_6_Identifier : (int)
+  is_6_IdentifierList : (int)
+  is_7_from : (int)
+  is_7_IdentifierList : (int)
+  is_8_IdentifierList : (int)
+  - RepoObject_guid : (uniqueidentifier)
+  SysObject_fullname : (nvarchar(261))
+  - -
+}
+@enduml
+
+@startuml
+top to bottom direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>>  Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>>  White
+  BackgroundColor<<V>>  WhiteSmoke
+  BackgroundColor<<X>>  Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../sqlparse.repoobject_sqlmodules_31_object.html sqlparse.RepoObject_SqlModules_31_object]]" as sqlparse.RepoObject_SqlModules_31_object << V >> {
+  is_1_create : (int)
+  is_2_view : (int)
+  is_3_Identifier : (int)
+  is_4_as : (int)
+  is_5_select : (int)
+  is_6_Identifier : (int)
+  is_6_IdentifierList : (int)
+  is_7_from : (int)
+  is_7_IdentifierList : (int)
+  is_8_IdentifierList : (int)
+  - RepoObject_guid : (uniqueidentifier)
+  SysObject_fullname : (nvarchar(261))
+  - -
+}
+@enduml
+
+PlantUML version 1.2021.10(Mon Aug 30 13:43:48 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

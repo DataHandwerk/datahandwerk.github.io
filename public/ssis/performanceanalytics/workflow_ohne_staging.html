@@ -1,0 +1,1889 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Workflow_ohne_staging.dtsx :: DataHandwerk Docs</title>
+    <link rel="canonical" href="https://datahandwerk.gitlab.io/ssis/performanceanalytics/workflow_ohne_staging.html">
+    <link rel="prev" href="workflow_mdh.html">
+    <link rel="next" href="workflow_staging_remis.html">
+    <meta name="generator" content="Antora 3.0.0-beta.2">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <link rel="stylesheet" href="../../_/css/custom.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4RM6Q8D27"></script>
+    <script>function gtag(){dataLayer.push(arguments)};window.dataLayer=window.dataLayer||[];gtag('js',new Date());gtag('config','G-L4RM6Q8D27')</script>
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://datahandwerk.gitlab.io">DataHandwerk Docs</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://gitlab.com/datahandwerk/DataHandwerk-toolkit-mssql" target="_blank">dhw project on GitLab</a>
+            <a class="navbar-item" href="https://gitlab.com/datahandwerk/DataHandwerk-toolkit-mssql/-/issues" target="_blank">dhw issues on GitLab</a>
+            <a class="navbar-item" href="https://datahandwerk.zulipchat.com/" target="_blank">dhw community on Zulip (streams with topics)</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <form action="https://www.google.com/search" method="get" target="searchresult">
+              <input type="hidden" name="q" value="site:datahandwerk.gitlab.io">
+              <input type="text" name="q" alt="search">
+              <input type="submit" value="Search">
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ssis" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Demo SSIS</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">PerformanceAnalytics</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="config_calendar_t.html">config_Calendar_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="config_currentdate_t.html">config_CurrentDate_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="config_diverse_t.html">config_diverse_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="configh_portfolio_scd_excel_isbw_ispw.html">configH_Portfolio_SCD_Excel_isBW_isPW.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ih_mandant_portfolio_gewicht_at.html">ih_Mandant_Portfolio_Gewicht_AT.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ih_mandant_portfolio_obersub.html">ih_Mandant_Portfolio_OberSub.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ih_mandant_portfolio_share_md.html">ih_Mandant_Portfolio_share_md.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ih_portfolio_eigenschaften.html">ih_Portfolio_Eigenschaften.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ih_portfolio_mandant_share_at.html">ih_Portfolio_Mandant_share_AT.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="it_date_portfolio_perfrisk_hub_t.html">it_Date_Portfolio_Perfrisk_hub_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="it_date_portfolio_scd_hub_t.html">it_Date_Portfolio_SCD_hub_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="it_date_portfolio_scd_vortag_t.html">it_Date_Portfolio_SCD_Vortag_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="it_date_portfolio_share_hub_t.html">it_Date_Portfolio_share_hub_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="it_date_portfolio_share_mandant_obersub_t.html">it_Date_Portfolio_share_Mandant_OberSub_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="it_date_portfolio_share_step10_t.html">it_Date_Portfolio_share_step10_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="it_date_steuerung_union_t.html">it_Date_Steuerung_Union_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="it_mandant_portfolioattributesobersub_t.html">it_Mandant_PortfolioAttributesOberSub_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="it_portfolio_eigenschaftendatefrommin_md_t.html">it_Portfolio_EigenschaftenDateFromMin_md_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="it_portfolio_istinperfrisk_t.html">it_Portfolio_istInPerfrisk_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="it_portfolioattributesobersub_t.html">it_PortfolioAttributesOberSub_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="it_steuerung__date_portfolio_id_share_t.html">it_Steuerung__Date_Portfolio_ID_share_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="mdh_mandant.html">mdh_Mandant.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="mdh_mandant_metamandant.html">mdh_Mandant_MetaMandant.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="mdh_mandant_portfolio_share.html">mdh_Mandant_Portfolio_share.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="mdh_metamandant.html">mdh_MetaMandant.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="mdh_oberfond.html">mdh_Oberfond.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="mdh_portfolio.html">mdh_Portfolio.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="mdh_portfolio_eigenschaften.html">mdh_Portfolio_Eigenschaften.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="mdh_steuerung.html">mdh_Steuerung.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="sth_date_portfolio_perfrisk_excel.html">sth_Date_Portfolio_Perfrisk_Excel.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="sth_date_portfolio_remis.html">sth_Date_Portfolio_Remis.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="sth_steuerung_excel.html">sth_Steuerung_Excel.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="sthat.html">sthAT.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="sthat_allgemein.html">sthAT_allgemein.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="sthat_date_portfolio_mis.html">sthAT_Date_Portfolio_MIS.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="sthat_date_portfolio_scd.html">sthAT_Date_Portfolio_SCD.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="sthat_datum_mandant_portfolio_bestand_merkmale.html">sthAT_Datum_Mandant_Portfolio_Bestand_Merkmale.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="sthat_devisenkurs.html">sthAT_Devisenkurs.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="sti_portfolio_scd_excel_bw_pw.html">sti_Portfolio_SCD_Excel_BW_PW.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="sti_remis_pa.html">sti_remis_pa.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="stiat.html">stiAT.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="stiat_allgemein.html">stiAT_allgemein.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="stiat_date_portfolio_mis.html">stiAT_Date_Portfolio_MIS.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="stiat_date_portfolio_scd.html">stiAT_Date_Portfolio_SCD.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="stiat_datum_mandant_portfolio_bestand_merkmale.html">stiAT_Datum_Mandant_Portfolio_Bestand_Merkmale.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="stiat_devisenkurs.html">stiAT_Devisenkurs.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflowblankpackage.html">Workflow package.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflow_mdh.html">Workflow_mdh.dtsx</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="workflow_ohne_staging.html">Workflow_ohne_staging.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflow_staging_remis.html">Workflow_staging_Remis.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflow_staging_remis_m18_m19.html">Workflow_staging_Remis_M18_M19.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflow_sth_remis.html">Workflow_sth_Remis.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflow_sti_configh_portfolio_scd_excel_isbw_ispw.html">Workflow_sti_configH_Portfolio_SCD_Excel_isBW_isPW.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflow_stiat_sthat.html">Workflow_stiAT_sthAT.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflow_stiat_sthat_allgemein.html">Workflow_stiAT_sthAT_allgemein.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflow_stiat_sthat_date_portfolio_scd.html">Workflow_stiAT_sthAT_Date_Portfolio_SCD.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflow_stiat_sthat_devisenkurs.html">Workflow_stiAT_sthAT_Devisenkurs.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflow_taeglich.html">Workflow_taeglich.dtsx</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">ServiceNow</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../servicenow/config_calendar_t.html">config_Calendar_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../servicenow/config_currentdate_t.html">config_CurrentDate_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../servicenow/ilhsn_eventtablefield.html">ILHSN_EventTableField.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../servicenow/ilhsn_eventtablefieldoldnew.html">ILHSN_EventTableFieldOldNew.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../servicenow/ilhsn_sysaudit.html">ILHSN_SysAudit.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../servicenow/iltsn_user_used_t.html">ILTSN_User_used_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../servicenow/iltsn_usergroup_used_t.html">ILTSN_UserGroup_used_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../servicenow/sstsn_update_request_dwh_attibutes.html">SSTSN_update_Request_dwh_attibutes.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../servicenow/sthsn_main.html">STHSN_main.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../servicenow/sthsn_request_historized.html">STHSN_Request_Historized.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../servicenow/sthsn_sys_choice.html">STHSN_sys_choice.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../servicenow/sttsn_request_table__tablename_comparingdatetime_t.html">STTSN_request_table__tablename_ComparingDatetime_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../servicenow/workflowblankpackage.html">Workflow package.dtsx</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Demo SSIS</span>
+    <span class="version">default</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../dhw/index.html">DataHandwerk</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../dhw/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../aw/index.html">Demo AdventureWorks</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../aw/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../index.html">Demo SSIS</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">default</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../dhw/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Demo SSIS</a></li>
+    <li>PerformanceAnalytics</li>
+    <li><a href="workflow_ohne_staging.html">Workflow_ohne_staging.dtsx</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="file:///D:/Repos/gitlab/DataHandwerk/dhw-antora-ssis/docs/modules/performanceanalytics/pages/workflow_ohne_staging.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Workflow_ohne_staging.dtsx</h1>
+<div class="sect1">
+<h2 id="_package_properties"><a class="anchor" href="#_package_properties"></a>Package Properties</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PackageCreationDate</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>2020-07-29 17:16:05</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PackageCreatorComputerName</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>ACPROD</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PackageCreatorName</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>ACPROD\dsorokin</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PackageDTSID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>8D3E6AE6-459E-4278-8615-D9EEA96C0F42</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PackageLastModifiedProductVersion</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>13.0.4604.0</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PackageLocaleID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>1031</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PackageProtectionLevel</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>0</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PackageProtectionLevelName</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>DontSaveSensitive</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PackageVersionGUID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>01B134FA-CE99-48AC-889D-9D9F982A3DDB</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ProjectPath</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>D:\Repos\Azure\aisberg\PerformanceAnalytics\SSIS\SSIS_PerformanceAnalytics</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_description"><a class="anchor" href="#_description"></a>Description</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_control_flow_diagram"><a class="anchor" href="#_control_flow_diagram"></a>Control Flow Diagram</h2>
+<div class="sectionbody">
+<div class="imageblock kroki">
+<div class="content">
+<object type="image/svg+xml" data="_images/diag-13cdfee5034deb2d8a935aa7264218963701323a.svg"><span class="alt">ssis-workflow_ohne_staging</span></object>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tasks"><a class="anchor" href="#_tasks"></a>Tasks</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="task-packagebackslashetl"><a class="anchor" href="#task-packagebackslashetl"></a>Package\ETL</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Path</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Package\ETL</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Name</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>ETL</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Type</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>STOCK:SEQUENCE</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is Disabled</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>False</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="task-packagebackslashetlblankerror"><a class="anchor" href="#task-packagebackslashetlblankerror"></a>Package\ETL ERROR</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Path</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Package\ETL ERROR</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Name</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>ETL ERROR</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Type</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Microsoft.ExecuteSQLTask</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is Disabled</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>False</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sql Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>C4B70225-809E-4C1D-9862-91B100B66B8A</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sql Package Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><a href="#connection-config">config</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sql Statement</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><details>
+<summary class="title">Details</summary>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">EXEC LOG.ETL_STARTSTOP 2</code></pre>
+</div>
+</div>
+</div>
+</details></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="task-packagebackslashetlblankstart"><a class="anchor" href="#task-packagebackslashetlblankstart"></a>Package\ETL START</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Path</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Package\ETL START</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Name</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>ETL START</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Type</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Microsoft.ExecuteSQLTask</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is Disabled</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>False</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sql Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>C4B70225-809E-4C1D-9862-91B100B66B8A</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sql Package Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><a href="#connection-config">config</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sql Statement</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><details>
+<summary class="title">Details</summary>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">EXEC LOG.ETL_STARTSTOP 1</code></pre>
+</div>
+</div>
+</div>
+</details></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="task-packagebackslashetlblankstop"><a class="anchor" href="#task-packagebackslashetlblankstop"></a>Package\ETL STOP</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Path</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Package\ETL STOP</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Name</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>ETL STOP</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Type</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Microsoft.ExecuteSQLTask</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is Disabled</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>False</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sql Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>C4B70225-809E-4C1D-9862-91B100B66B8A</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sql Package Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><a href="#connection-config">config</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sql Statement</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><details>
+<summary class="title">Details</summary>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">EXEC LOG.ETL_STARTSTOP 0</code></pre>
+</div>
+</div>
+</div>
+</details></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="task-packagebackslashetlbackslashconfigunderlinecalendarunderlinet"><a class="anchor" href="#task-packagebackslashetlbackslashconfigunderlinecalendarunderlinet"></a>Package\ETL\config_Calendar_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Path</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Package\ETL\config_Calendar_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Name</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>config_Calendar_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Type</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Microsoft.ExecutePackageTask</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is Disabled</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>False</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Execute Package Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>{3969DC69-CDD1-4BBF-A0CE-62EDC82D9826}</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="task-packagebackslashetlbackslashconfigunderlinecurrentdateunderlinet"><a class="anchor" href="#task-packagebackslashetlbackslashconfigunderlinecurrentdateunderlinet"></a>Package\ETL\config_CurrentDate_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Path</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Package\ETL\config_CurrentDate_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Name</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>config_CurrentDate_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Type</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Microsoft.ExecutePackageTask</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is Disabled</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>False</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Execute Package Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>{DEDDA555-506A-42D6-A26B-05ABC490C28E}</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="task-packagebackslashetlbackslashconfigunderlinediverseunderlinet"><a class="anchor" href="#task-packagebackslashetlbackslashconfigunderlinediverseunderlinet"></a>Package\ETL\config_diverse_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Path</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Package\ETL\config_diverse_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Name</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>config_diverse_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Type</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Microsoft.ExecutePackageTask</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is Disabled</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>False</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Execute Package Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>{C96FD6CB-4844-44CB-A7F2-8124A087F753}</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="task-packagebackslashetlbackslashihunderlinemandantunderlineportfoliounderlinegewichtunderlineat"><a class="anchor" href="#task-packagebackslashetlbackslashihunderlinemandantunderlineportfoliounderlinegewichtunderlineat"></a>Package\ETL\ih_Mandant_Portfolio_Gewicht_AT</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Path</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Package\ETL\ih_Mandant_Portfolio_Gewicht_AT</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Name</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>ih_Mandant_Portfolio_Gewicht_AT</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Type</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Microsoft.ExecutePackageTask</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is Disabled</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>False</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Execute Package Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>{84707470-DE71-4A63-ABB3-D3DAFBD06038}</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="task-packagebackslashetlbackslashihunderlinemandantunderlineportfoliounderlineobersub"><a class="anchor" href="#task-packagebackslashetlbackslashihunderlinemandantunderlineportfoliounderlineobersub"></a>Package\ETL\ih_Mandant_Portfolio_OberSub</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Path</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Package\ETL\ih_Mandant_Portfolio_OberSub</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Name</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>ih_Mandant_Portfolio_OberSub</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Type</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Microsoft.ExecutePackageTask</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is Disabled</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>False</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Execute Package Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>{328CE13D-7B4F-4D6A-9D4A-4EE00F22D2C0}</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="task-packagebackslashetlbackslashihunderlinemandantunderlineportfoliounderlineshareunderlinemd"><a class="anchor" href="#task-packagebackslashetlbackslashihunderlinemandantunderlineportfoliounderlineshareunderlinemd"></a>Package\ETL\ih_Mandant_Portfolio_share_md</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Path</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Package\ETL\ih_Mandant_Portfolio_share_md</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Name</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>ih_Mandant_Portfolio_share_md</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Type</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Microsoft.ExecutePackageTask</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is Disabled</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>False</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Execute Package Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>{D289786A-AFEF-4DB9-B0D5-A70CD5EE58AE}</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="task-packagebackslashetlbackslashihunderlineportfoliounderlineeigenschaften"><a class="anchor" href="#task-packagebackslashetlbackslashihunderlineportfoliounderlineeigenschaften"></a>Package\ETL\ih_Portfolio_Eigenschaften</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Path</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Package\ETL\ih_Portfolio_Eigenschaften</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Name</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>ih_Portfolio_Eigenschaften</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Type</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Microsoft.ExecutePackageTask</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is Disabled</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>False</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Execute Package Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>{E2308287-AA16-4C76-A1E2-5C1CEECCC183}</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="task-packagebackslashetlbackslashihunderlineportfoliounderlinemandantunderlineshareunderlineat"><a class="anchor" href="#task-packagebackslashetlbackslashihunderlineportfoliounderlinemandantunderlineshareunderlineat"></a>Package\ETL\ih_Portfolio_Mandant_share_AT</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Path</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Package\ETL\ih_Portfolio_Mandant_share_AT</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Name</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>ih_Portfolio_Mandant_share_AT</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Type</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Microsoft.ExecutePackageTask</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is Disabled</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>False</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Execute Package Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>{2203B667-E78A-45F6-B3E2-C8785CC2BD26}</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="task-packagebackslashetlbackslashitunderlinedateunderlineportfoliounderlineperfriskunderlinehubunderlinet"><a class="anchor" href="#task-packagebackslashetlbackslashitunderlinedateunderlineportfoliounderlineperfriskunderlinehubunderlinet"></a>Package\ETL\it_Date_Portfolio_Perfrisk_hub_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Path</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Package\ETL\it_Date_Portfolio_Perfrisk_hub_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Name</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>it_Date_Portfolio_Perfrisk_hub_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Type</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Microsoft.ExecutePackageTask</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is Disabled</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>False</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Execute Package Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>{5BFDB471-79AC-4D3A-A3A3-629C36310439}</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="task-packagebackslashetlbackslashitunderlinedateunderlineportfoliounderlinescdunderlinehubunderlinet"><a class="anchor" href="#task-packagebackslashetlbackslashitunderlinedateunderlineportfoliounderlinescdunderlinehubunderlinet"></a>Package\ETL\it_Date_Portfolio_SCD_hub_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Path</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Package\ETL\it_Date_Portfolio_SCD_hub_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Name</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>it_Date_Portfolio_SCD_hub_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Type</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Microsoft.ExecutePackageTask</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is Disabled</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>False</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Execute Package Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>{E96E3D22-AB24-4500-AAC3-895BD407DD38}</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="task-packagebackslashetlbackslashitunderlinedateunderlineportfoliounderlinescdunderlinevortagunderlinet"><a class="anchor" href="#task-packagebackslashetlbackslashitunderlinedateunderlineportfoliounderlinescdunderlinevortagunderlinet"></a>Package\ETL\it_Date_Portfolio_SCD_Vortag_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Path</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Package\ETL\it_Date_Portfolio_SCD_Vortag_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Name</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>it_Date_Portfolio_SCD_Vortag_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Type</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Microsoft.ExecutePackageTask</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is Disabled</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>False</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Execute Package Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>{FB2EB1C7-F077-4CD4-8BB3-ABFA26EA66D6}</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="task-packagebackslashetlbackslashitunderlinedateunderlineportfoliounderlineshareunderlinehubunderlinet"><a class="anchor" href="#task-packagebackslashetlbackslashitunderlinedateunderlineportfoliounderlineshareunderlinehubunderlinet"></a>Package\ETL\it_Date_Portfolio_share_hub_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Path</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Package\ETL\it_Date_Portfolio_share_hub_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Name</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>it_Date_Portfolio_share_hub_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Type</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Microsoft.ExecutePackageTask</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is Disabled</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>False</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Execute Package Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>{2253BE5C-D45F-4336-82AE-AB4A5F14DD58}</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="task-packagebackslashetlbackslashitunderlinedateunderlineportfoliounderlineshareunderlinemandantunderlineobersubunderlinet"><a class="anchor" href="#task-packagebackslashetlbackslashitunderlinedateunderlineportfoliounderlineshareunderlinemandantunderlineobersubunderlinet"></a>Package\ETL\it_Date_Portfolio_share_Mandant_OberSub_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Path</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Package\ETL\it_Date_Portfolio_share_Mandant_OberSub_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Name</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>it_Date_Portfolio_share_Mandant_OberSub_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Type</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Microsoft.ExecutePackageTask</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is Disabled</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>False</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Execute Package Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>{AE21794D-6AAD-46FE-8685-9284E2EE34AB}</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="task-packagebackslashetlbackslashitunderlinedateunderlineportfoliounderlineshareunderlinestep10underlinet"><a class="anchor" href="#task-packagebackslashetlbackslashitunderlinedateunderlineportfoliounderlineshareunderlinestep10underlinet"></a>Package\ETL\it_Date_Portfolio_share_step10_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Path</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Package\ETL\it_Date_Portfolio_share_step10_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Name</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>it_Date_Portfolio_share_step10_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Type</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Microsoft.ExecutePackageTask</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is Disabled</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>False</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Execute Package Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>{A4B028EC-37AE-43D0-9F73-D41EB8A6942F}</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="task-packagebackslashetlbackslashitunderlinedateunderlinesteuerungunderlineunionunderlinet"><a class="anchor" href="#task-packagebackslashetlbackslashitunderlinedateunderlinesteuerungunderlineunionunderlinet"></a>Package\ETL\it_Date_Steuerung_Union_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Path</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Package\ETL\it_Date_Steuerung_Union_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Name</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>it_Date_Steuerung_Union_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Type</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Microsoft.ExecutePackageTask</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is Disabled</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>False</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Execute Package Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>{3314D1F7-482B-452E-9B74-3512A5F4E2C9}</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="task-packagebackslashetlbackslashitunderlinemandantunderlineportfolioattributesobersubunderlinet"><a class="anchor" href="#task-packagebackslashetlbackslashitunderlinemandantunderlineportfolioattributesobersubunderlinet"></a>Package\ETL\it_Mandant_PortfolioAttributesOberSub_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Path</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Package\ETL\it_Mandant_PortfolioAttributesOberSub_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Name</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>it_Mandant_PortfolioAttributesOberSub_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Type</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Microsoft.ExecutePackageTask</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is Disabled</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>False</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Execute Package Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>{FC9B364B-DB0E-4F32-A8CE-A3DE07D87B9C}</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="task-packagebackslashetlbackslashitunderlineportfoliounderlineeigenschaftendatefromminunderlinemdunderlinet"><a class="anchor" href="#task-packagebackslashetlbackslashitunderlineportfoliounderlineeigenschaftendatefromminunderlinemdunderlinet"></a>Package\ETL\it_Portfolio_EigenschaftenDateFromMin_md_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Path</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Package\ETL\it_Portfolio_EigenschaftenDateFromMin_md_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Name</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>it_Portfolio_EigenschaftenDateFromMin_md_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Type</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Microsoft.ExecutePackageTask</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is Disabled</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>False</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Execute Package Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>{C729C3EB-2DF0-43D2-A76D-3762D4C6B007}</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="task-packagebackslashetlbackslashitunderlineportfoliounderlineistinperfriskunderlinet"><a class="anchor" href="#task-packagebackslashetlbackslashitunderlineportfoliounderlineistinperfriskunderlinet"></a>Package\ETL\it_Portfolio_istInPerfrisk_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Path</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Package\ETL\it_Portfolio_istInPerfrisk_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Name</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>it_Portfolio_istInPerfrisk_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Type</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Microsoft.ExecutePackageTask</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is Disabled</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>False</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Execute Package Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>{820A36D7-3D32-45C4-A967-B925E86CD0F8}</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="task-packagebackslashetlbackslashitunderlineportfolioattributesobersubunderlinet"><a class="anchor" href="#task-packagebackslashetlbackslashitunderlineportfolioattributesobersubunderlinet"></a>Package\ETL\it_PortfolioAttributesOberSub_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Path</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Package\ETL\it_PortfolioAttributesOberSub_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Name</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>it_PortfolioAttributesOberSub_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Type</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Microsoft.ExecutePackageTask</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is Disabled</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>False</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Execute Package Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>{67296258-8DC1-41D9-B83C-90D118BE77BE}</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="task-packagebackslashetlbackslashitunderlinesteuerungunderlineunderlinedateunderlineportfoliounderlineidunderlineshareunderlinet"><a class="anchor" href="#task-packagebackslashetlbackslashitunderlinesteuerungunderlineunderlinedateunderlineportfoliounderlineidunderlineshareunderlinet"></a>Package\ETL\it_Steuerung__Date_Portfolio_ID_share_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Path</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Package\ETL\it_Steuerung__Date_Portfolio_ID_share_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Name</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>it_Steuerung__Date_Portfolio_ID_share_T</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Type</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Microsoft.ExecutePackageTask</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is Disabled</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>False</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Execute Package Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>{CEE72048-B76F-4CA9-B9CA-CFD7A302D9B1}</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="task-packagebackslashrefreshunderlinesnapshots"><a class="anchor" href="#task-packagebackslashrefreshunderlinesnapshots"></a>Package\REFRESH_SNAPSHOTS</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Path</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Package\REFRESH_SNAPSHOTS</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Name</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>REFRESH_SNAPSHOTS</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Type</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Microsoft.ExecuteSQLTask</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is Disabled</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>False</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sql Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>C4B70225-809E-4C1D-9862-91B100B66B8A</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sql Package Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><a href="#connection-config">config</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sql Statement</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><details>
+<summary class="title">Details</summary>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">EXEC [CFG].[UPDATE_SNAPSHOTS]</code></pre>
+</div>
+</div>
+</div>
+</details></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_parameters"><a class="anchor" href="#_parameters"></a>Parameters</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_variables"><a class="anchor" href="#_variables"></a>Variables</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_project_connections"><a class="anchor" href="#_project_connections"></a>Project Connections</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_package_connections"><a class="anchor" href="#_package_connections"></a>Package Connections</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="connection-config"><a class="anchor" href="#connection-config"></a>config</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerType</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>OLEDB</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>C4B70225-809E-4C1D-9862-91B100B66B8A</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ExpressionValue</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>@[$Project::Config]</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="connection-configunderlinecalendarunderlinet"><a class="anchor" href="#connection-configunderlinecalendarunderlinet"></a>config_Calendar_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerType</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>FILE</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionString</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>C:\AC\SSIS_PerformanceAnalytics\config_Calendar_T.dtsx</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>3969DC69-CDD1-4BBF-A0CE-62EDC82D9826</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="connection-configunderlinecurrentdateunderlinet"><a class="anchor" href="#connection-configunderlinecurrentdateunderlinet"></a>config_CurrentDate_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerType</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>FILE</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionString</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>C:\AC\SSIS_PerformanceAnalytics\config_CurrentDate_T.dtsx</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>DEDDA555-506A-42D6-A26B-05ABC490C28E</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="connection-configunderlinediverseunderlinet"><a class="anchor" href="#connection-configunderlinediverseunderlinet"></a>config_diverse_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerType</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>FILE</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionString</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>C:\AC\SSIS_PerformanceAnalytics\config_diverse_T.dtsx</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>C96FD6CB-4844-44CB-A7F2-8124A087F753</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="connection-ihunderlinemandantunderlineportfoliounderlinegewichtunderlineat"><a class="anchor" href="#connection-ihunderlinemandantunderlineportfoliounderlinegewichtunderlineat"></a>ih_Mandant_Portfolio_Gewicht_AT</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerType</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>FILE</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionString</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>C:\AC\SSIS_PerformanceAnalytics\ih_Mandant_Portfolio_Gewicht_AT.dtsx</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>84707470-DE71-4A63-ABB3-D3DAFBD06038</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="connection-ihunderlinemandantunderlineportfoliounderlineobersub"><a class="anchor" href="#connection-ihunderlinemandantunderlineportfoliounderlineobersub"></a>ih_Mandant_Portfolio_OberSub</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerType</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>FILE</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionString</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>C:\AC\SSIS_PerformanceAnalytics\ih_Mandant_Portfolio_OberSub.dtsx</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>328CE13D-7B4F-4D6A-9D4A-4EE00F22D2C0</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="connection-ihunderlinemandantunderlineportfoliounderlineshareunderlinemd"><a class="anchor" href="#connection-ihunderlinemandantunderlineportfoliounderlineshareunderlinemd"></a>ih_Mandant_Portfolio_share_md</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerType</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>FILE</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionString</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>C:\AC\SSIS_PerformanceAnalytics\ih_Mandant_Portfolio_share_md.dtsx</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>D289786A-AFEF-4DB9-B0D5-A70CD5EE58AE</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="connection-ihunderlineportfoliounderlineeigenschaften"><a class="anchor" href="#connection-ihunderlineportfoliounderlineeigenschaften"></a>ih_Portfolio_Eigenschaften</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerType</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>FILE</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionString</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>C:\AC\SSIS_PerformanceAnalytics\ih_Portfolio_Eigenschaften.dtsx</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>E2308287-AA16-4C76-A1E2-5C1CEECCC183</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="connection-ihunderlineportfoliounderlinemandantunderlineshareunderlineat"><a class="anchor" href="#connection-ihunderlineportfoliounderlinemandantunderlineshareunderlineat"></a>ih_Portfolio_Mandant_share_AT</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerType</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>FILE</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionString</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>C:\AC\SSIS_PerformanceAnalytics\ih_Portfolio_Mandant_share_AT.dtsx</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>2203B667-E78A-45F6-B3E2-C8785CC2BD26</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="connection-itunderlinedateunderlineportfoliounderlineperfriskunderlinehubunderlinet"><a class="anchor" href="#connection-itunderlinedateunderlineportfoliounderlineperfriskunderlinehubunderlinet"></a>it_Date_Portfolio_Perfrisk_hub_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerType</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>FILE</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionString</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>C:\AC\SSIS_PerformanceAnalytics\it_Date_Portfolio_Perfrisk_hub_T.dtsx</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>5BFDB471-79AC-4D3A-A3A3-629C36310439</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="connection-itunderlinedateunderlineportfoliounderlinescdunderlinehubunderlinet"><a class="anchor" href="#connection-itunderlinedateunderlineportfoliounderlinescdunderlinehubunderlinet"></a>it_Date_Portfolio_SCD_hub_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerType</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>FILE</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionString</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>C:\AC\SSIS_PerformanceAnalytics\it_Date_Portfolio_SCD_hub_T.dtsx</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>E96E3D22-AB24-4500-AAC3-895BD407DD38</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="connection-itunderlinedateunderlineportfoliounderlinescdunderlinevortagunderlinet"><a class="anchor" href="#connection-itunderlinedateunderlineportfoliounderlinescdunderlinevortagunderlinet"></a>it_Date_Portfolio_SCD_Vortag_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerType</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>FILE</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionString</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>C:\AC\SSIS_PerformanceAnalytics\it_Date_Portfolio_SCD_Vortag_T.dtsx</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>FB2EB1C7-F077-4CD4-8BB3-ABFA26EA66D6</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="connection-itunderlinedateunderlineportfoliounderlineshareunderlinehubunderlinet"><a class="anchor" href="#connection-itunderlinedateunderlineportfoliounderlineshareunderlinehubunderlinet"></a>it_Date_Portfolio_share_hub_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerType</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>FILE</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionString</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>C:\AC\SSIS_PerformanceAnalytics\it_Date_Portfolio_share_hub_T.dtsx</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>2253BE5C-D45F-4336-82AE-AB4A5F14DD58</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="connection-itunderlinedateunderlineportfoliounderlineshareunderlinemandantunderlineobersubunderlinet"><a class="anchor" href="#connection-itunderlinedateunderlineportfoliounderlineshareunderlinemandantunderlineobersubunderlinet"></a>it_Date_Portfolio_share_Mandant_OberSub_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerType</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>FILE</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionString</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>C:\AC\SSIS_PerformanceAnalytics\it_Date_Portfolio_share_Mandant_OberSub_T.dtsx</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>AE21794D-6AAD-46FE-8685-9284E2EE34AB</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="connection-itunderlinedateunderlineportfoliounderlineshareunderlinestep10underlinet"><a class="anchor" href="#connection-itunderlinedateunderlineportfoliounderlineshareunderlinestep10underlinet"></a>it_Date_Portfolio_share_step10_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerType</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>FILE</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionString</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>C:\AC\SSIS_PerformanceAnalytics\it_Date_Portfolio_share_step10_T.dtsx</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>A4B028EC-37AE-43D0-9F73-D41EB8A6942F</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="connection-itunderlinedateunderlinesteuerungunderlineunionunderlinet"><a class="anchor" href="#connection-itunderlinedateunderlinesteuerungunderlineunionunderlinet"></a>it_Date_Steuerung_Union_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerType</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>FILE</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionString</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>C:\AC\SSIS_PerformanceAnalytics\it_Date_Steuerung_Union_T.dtsx</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>3314D1F7-482B-452E-9B74-3512A5F4E2C9</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="connection-itunderlinemandantunderlineportfolioattributesobersubunderlinet"><a class="anchor" href="#connection-itunderlinemandantunderlineportfolioattributesobersubunderlinet"></a>it_Mandant_PortfolioAttributesOberSub_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerType</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>FILE</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionString</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>C:\AC\SSIS_PerformanceAnalytics\it_Mandant_PortfolioAttributesOberSub_T.dtsx</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>FC9B364B-DB0E-4F32-A8CE-A3DE07D87B9C</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="connection-itunderlineportfoliounderlineeigenschaftendatefromminunderlinemdunderlinet"><a class="anchor" href="#connection-itunderlineportfoliounderlineeigenschaftendatefromminunderlinemdunderlinet"></a>it_Portfolio_EigenschaftenDateFromMin_md_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerType</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>FILE</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionString</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>C:\AC\SSIS_PerformanceAnalytics\it_Portfolio_EigenschaftenDateFromMin_md_T.dtsx</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>C729C3EB-2DF0-43D2-A76D-3762D4C6B007</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="connection-itunderlineportfoliounderlineistinperfriskunderlinet"><a class="anchor" href="#connection-itunderlineportfoliounderlineistinperfriskunderlinet"></a>it_Portfolio_istInPerfrisk_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerType</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>FILE</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionString</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>C:\AC\SSIS_PerformanceAnalytics\it_Portfolio_istInPerfrisk_T.dtsx</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>820A36D7-3D32-45C4-A967-B925E86CD0F8</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="connection-itunderlineportfolioattributesobersubunderlinet"><a class="anchor" href="#connection-itunderlineportfolioattributesobersubunderlinet"></a>it_PortfolioAttributesOberSub_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerType</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>FILE</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionString</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>C:\AC\SSIS_PerformanceAnalytics\it_PortfolioAttributesOberSub_T.dtsx</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>67296258-8DC1-41D9-B83C-90D118BE77BE</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="connection-itunderlinesteuerungunderlineunderlinedateunderlineportfoliounderlineidunderlineshareunderlinet"><a class="anchor" href="#connection-itunderlinesteuerungunderlineunderlinedateunderlineportfoliounderlineidunderlineshareunderlinet"></a>it_Steuerung__Date_Portfolio_ID_share_T</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerType</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>FILE</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionString</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>C:\AC\SSIS_PerformanceAnalytics\it_Steuerung__Date_Portfolio_ID_share_T.dtsx</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>CEE72048-B76F-4CA9-B9CA-CFD7A302D9B1</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="connection-target"><a class="anchor" href="#connection-target"></a>Target</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerType</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>OLEDB</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>0326024A-887C-47A1-86AC-B52FC0A6F3D3</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ExpressionValue</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>@[$Project::Target]</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="workflow_mdh.html">Workflow_mdh.dtsx</a></span>
+  <span class="next"><a href="workflow_staging_remis.html">Workflow_staging_Remis.dtsx</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content" onclick="closeModal()">
+        <!--suppress HtmlRequiredAltAttribute as this will be set when selecting the image via JavaScript,
+        RequiredAttributes as src will be set by when selecting the image via JavaScript -->
+        <img id="imageinmodal">
+    </div>
+</div>
+<script>
+    function openModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+
+    document.querySelectorAll('.imageblock kroki').forEach(element => {
+        element.className += " lightbox";
+        element.addEventListener('click', evt => {
+            document.getElementById("imageinmodal").setAttribute("data", evt.currentTarget.getAttribute("data"))
+            openModal();
+        })
+    });
+
+</script>
+<style>
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 10;
+        padding-top: 5vh;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        backdrop-filter: blur(3px);
+        background-color: rgba(30, 30, 30, 0.8);
+    }
+    img.lightbox {
+        cursor: pointer;
+    }
+    /* Modal Content */
+    .modal-content {
+        position: relative;
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        max-height: 90vh;
+        cursor: pointer;
+    }
+
+    .modal-content img {
+        width: auto;
+        height: auto;
+        max-width: 90vw;
+        max-height: 90vh;
+        min-width: 90vw;
+        min-height: 90vh;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        object-fit: contain;
+    }
+
+    /* The Close Button */
+    .close {
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Index SemanticGroup :: DataHandwerk Docs</title>
+    <link rel="canonical" href="https://datahandwerk.gitlab.io/aw/sqldb/other/indexsemanticgroup.html">
+    <link rel="prev" href="../objectrefcyclic.html">
+    <link rel="next" href="../../sqldwdb/nav/objects-by-schema.html">
+    <meta name="generator" content="Antora 3.0.0-beta.2">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="stylesheet" href="../../../_/css/custom.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4RM6Q8D27"></script>
+    <script>function gtag(){dataLayer.push(arguments)};window.dataLayer=window.dataLayer||[];gtag('js',new Date());gtag('config','G-L4RM6Q8D27')</script>
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://datahandwerk.gitlab.io">DataHandwerk Docs</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://gitlab.com/datahandwerk/DataHandwerk-toolkit-mssql" target="_blank">dhw project on GitLab</a>
+            <a class="navbar-item" href="https://gitlab.com/datahandwerk/DataHandwerk-toolkit-mssql/-/issues" target="_blank">dhw issues on GitLab</a>
+            <a class="navbar-item" href="https://datahandwerk.zulipchat.com/" target="_blank">dhw community on Zulip (streams with topics)</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <form action="https://www.google.com/search" method="get" target="searchresult">
+              <input type="hidden" name="q" value="site:datahandwerk.gitlab.io">
+              <input type="text" name="q" alt="search">
+              <input type="submit" value="Search">
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="aw" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../index.html">Demo AdventureWorks</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">AdventureWorks (DB)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../nav/objects-by-schema.html">AdventureWorks2019 - Objects by schema</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../nav/nav-schema-dbo.html">dbo</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dbo.awbuildversion.html">dbo.AWBuildVersion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dbo.databaselog.html">dbo.DatabaseLog</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dbo.errorlog.html">dbo.ErrorLog</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dbo.ufngetaccountingenddate.html">dbo.ufnGetAccountingEndDate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dbo.ufngetaccountingstartdate.html">dbo.ufnGetAccountingStartDate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dbo.ufngetcontactinformation.html">dbo.ufnGetContactInformation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dbo.ufngetdocumentstatustext.html">dbo.ufnGetDocumentStatusText</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dbo.ufngetproductdealerprice.html">dbo.ufnGetProductDealerPrice</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dbo.ufngetproductlistprice.html">dbo.ufnGetProductListPrice</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dbo.ufngetproductstandardcost.html">dbo.ufnGetProductStandardCost</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dbo.ufngetpurchaseorderstatustext.html">dbo.ufnGetPurchaseOrderStatusText</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dbo.ufngetsalesorderstatustext.html">dbo.ufnGetSalesOrderStatusText</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dbo.ufngetstock.html">dbo.ufnGetStock</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dbo.ufnleadingzeros.html">dbo.ufnLeadingZeros</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dbo.uspgetbillofmaterials.html">dbo.uspGetBillOfMaterials</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dbo.uspgetemployeemanagers.html">dbo.uspGetEmployeeManagers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dbo.uspgetmanageremployees.html">dbo.uspGetManagerEmployees</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dbo.uspgetwhereusedproductid.html">dbo.uspGetWhereUsedProductID</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dbo.usplogerror.html">dbo.uspLogError</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dbo.uspprinterror.html">dbo.uspPrintError</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dbo.uspsearchcandidateresumes.html">dbo.uspSearchCandidateResumes</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../nav/nav-schema-humanresources.html">HumanResources</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../humanresources.demployee.html">HumanResources.dEmployee</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../humanresources.department.html">HumanResources.Department</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../humanresources.employee.html">HumanResources.Employee</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../humanresources.employeedepartmenthistory.html">HumanResources.EmployeeDepartmentHistory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../humanresources.employeepayhistory.html">HumanResources.EmployeePayHistory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../humanresources.jobcandidate.html">HumanResources.JobCandidate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../humanresources.shift.html">HumanResources.Shift</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../humanresources.uspupdateemployeehireinfo.html">HumanResources.uspUpdateEmployeeHireInfo</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../humanresources.uspupdateemployeelogin.html">HumanResources.uspUpdateEmployeeLogin</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../humanresources.uspupdateemployeepersonalinfo.html">HumanResources.uspUpdateEmployeePersonalInfo</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../humanresources.vemployee.html">HumanResources.vEmployee</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../humanresources.vemployeedepartment.html">HumanResources.vEmployeeDepartment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../humanresources.vemployeedepartmenthistory.html">HumanResources.vEmployeeDepartmentHistory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../humanresources.vjobcandidate.html">HumanResources.vJobCandidate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../humanresources.vjobcandidateeducation.html">HumanResources.vJobCandidateEducation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../humanresources.vjobcandidateemployment.html">HumanResources.vJobCandidateEmployment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../nav/nav-schema-person.html">Person</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../person.address.html">Person.Address</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../person.addresstype.html">Person.AddressType</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../person.businessentity.html">Person.BusinessEntity</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../person.businessentityaddress.html">Person.BusinessEntityAddress</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../person.businessentitycontact.html">Person.BusinessEntityContact</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../person.contacttype.html">Person.ContactType</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../person.countryregion.html">Person.CountryRegion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../person.emailaddress.html">Person.EmailAddress</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../person.iuperson.html">Person.iuPerson</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../person.password.html">Person.Password</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../person.person.html">Person.Person</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../person.personphone.html">Person.PersonPhone</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../person.phonenumbertype.html">Person.PhoneNumberType</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../person.stateprovince.html">Person.StateProvince</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../person.vadditionalcontactinfo.html">Person.vAdditionalContactInfo</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../person.vstateprovincecountryregion.html">Person.vStateProvinceCountryRegion</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../nav/nav-schema-production.html">Production</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.billofmaterials.html">Production.BillOfMaterials</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.culture.html">Production.Culture</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.document.html">Production.Document</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.illustration.html">Production.Illustration</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.iworkorder.html">Production.iWorkOrder</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.location.html">Production.Location</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.product.html">Production.Product</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.productcategory.html">Production.ProductCategory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.productcosthistory.html">Production.ProductCostHistory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.productdescription.html">Production.ProductDescription</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.productdocument.html">Production.ProductDocument</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.productinventory.html">Production.ProductInventory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.productlistpricehistory.html">Production.ProductListPriceHistory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.productmodel.html">Production.ProductModel</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.productmodelillustration.html">Production.ProductModelIllustration</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.productmodelproductdescriptionculture.html">Production.ProductModelProductDescriptionCulture</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.productphoto.html">Production.ProductPhoto</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.productproductphoto.html">Production.ProductProductPhoto</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.productreview.html">Production.ProductReview</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.productsubcategory.html">Production.ProductSubcategory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.scrapreason.html">Production.ScrapReason</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.transactionhistory.html">Production.TransactionHistory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.transactionhistoryarchive.html">Production.TransactionHistoryArchive</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.unitmeasure.html">Production.UnitMeasure</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.uworkorder.html">Production.uWorkOrder</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.vproductanddescription.html">Production.vProductAndDescription</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.vproductmodelcatalogdescription.html">Production.vProductModelCatalogDescription</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.vproductmodelinstructions.html">Production.vProductModelInstructions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.workorder.html">Production.WorkOrder</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../production.workorderrouting.html">Production.WorkOrderRouting</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../nav/nav-schema-purchasing.html">Purchasing</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../purchasing.dvendor.html">Purchasing.dVendor</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../purchasing.ipurchaseorderdetail.html">Purchasing.iPurchaseOrderDetail</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../purchasing.productvendor.html">Purchasing.ProductVendor</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../purchasing.purchaseorderdetail.html">Purchasing.PurchaseOrderDetail</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../purchasing.purchaseorderheader.html">Purchasing.PurchaseOrderHeader</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../purchasing.shipmethod.html">Purchasing.ShipMethod</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../purchasing.upurchaseorderdetail.html">Purchasing.uPurchaseOrderDetail</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../purchasing.upurchaseorderheader.html">Purchasing.uPurchaseOrderHeader</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../purchasing.vendor.html">Purchasing.Vendor</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../purchasing.vvendorwithaddresses.html">Purchasing.vVendorWithAddresses</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../purchasing.vvendorwithcontacts.html">Purchasing.vVendorWithContacts</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../nav/nav-schema-sales.html">Sales</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sales.countryregioncurrency.html">Sales.CountryRegionCurrency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sales.creditcard.html">Sales.CreditCard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sales.currency.html">Sales.Currency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sales.currencyrate.html">Sales.CurrencyRate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sales.customer.html">Sales.Customer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sales.idusalesorderdetail.html">Sales.iduSalesOrderDetail</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sales.personcreditcard.html">Sales.PersonCreditCard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sales.salesorderdetail.html">Sales.SalesOrderDetail</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sales.salesorderheader.html">Sales.SalesOrderHeader</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sales.salesorderheadersalesreason.html">Sales.SalesOrderHeaderSalesReason</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sales.salesperson.html">Sales.SalesPerson</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sales.salespersonquotahistory.html">Sales.SalesPersonQuotaHistory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sales.salesreason.html">Sales.SalesReason</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sales.salestaxrate.html">Sales.SalesTaxRate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sales.salesterritory.html">Sales.SalesTerritory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sales.salesterritoryhistory.html">Sales.SalesTerritoryHistory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sales.shoppingcartitem.html">Sales.ShoppingCartItem</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sales.specialoffer.html">Sales.SpecialOffer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sales.specialofferproduct.html">Sales.SpecialOfferProduct</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sales.store.html">Sales.Store</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sales.usalesorderheader.html">Sales.uSalesOrderHeader</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sales.vindividualcustomer.html">Sales.vIndividualCustomer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sales.vpersondemographics.html">Sales.vPersonDemographics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sales.vsalesperson.html">Sales.vSalesPerson</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sales.vsalespersonsalesbyfiscalyears.html">Sales.vSalesPersonSalesByFiscalYears</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sales.vstorewithaddresses.html">Sales.vStoreWithAddresses</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sales.vstorewithcontacts.html">Sales.vStoreWithContacts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sales.vstorewithdemographics.html">Sales.vStoreWithDemographics</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../objectrefcyclic.html">Cyclic Object References</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="indexsemanticgroup.html">Index SemanticGroup</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">AdventureWorksDW (DB)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../sqldwdb/nav/objects-by-schema.html">AdventureWorksDW2019 - Objects by schema</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../sqldwdb/nav/nav-schema-dbo.html">dbo</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.adventureworksdwbuildversion.html">dbo.AdventureWorksDWBuildVersion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.databaselog.html">dbo.DatabaseLog</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.dimaccount.html">dbo.DimAccount</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.dimcurrency.html">dbo.DimCurrency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.dimcustomer.html">dbo.DimCustomer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.dimdate.html">dbo.DimDate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.dimdepartmentgroup.html">dbo.DimDepartmentGroup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.dimemployee.html">dbo.DimEmployee</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.dimgeography.html">dbo.DimGeography</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.dimorganization.html">dbo.DimOrganization</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.dimproduct.html">dbo.DimProduct</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.dimproductcategory.html">dbo.DimProductCategory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.dimproductsubcategory.html">dbo.DimProductSubcategory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.dimpromotion.html">dbo.DimPromotion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.dimreseller.html">dbo.DimReseller</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.dimsalesreason.html">dbo.DimSalesReason</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.dimsalesterritory.html">dbo.DimSalesTerritory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.dimscenario.html">dbo.DimScenario</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.factadditionalinternationalproductdescription.html">dbo.FactAdditionalInternationalProductDescription</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.factcallcenter.html">dbo.FactCallCenter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.factcurrencyrate.html">dbo.FactCurrencyRate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.factfinance.html">dbo.FactFinance</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.factinternetsales.html">dbo.FactInternetSales</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.factinternetsalesreason.html">dbo.FactInternetSalesReason</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.factproductinventory.html">dbo.FactProductInventory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.factresellersales.html">dbo.FactResellerSales</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.factsalesquota.html">dbo.FactSalesQuota</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.factsurveyresponse.html">dbo.FactSurveyResponse</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.newfactcurrencyrate.html">dbo.NewFactCurrencyRate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.prospectivebuyer.html">dbo.ProspectiveBuyer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.sysdiagrams.html">dbo.sysdiagrams</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.udfbuildiso8601date.html">dbo.udfBuildISO8601Date</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.udfminimumdate.html">dbo.udfMinimumDate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.udftwodigitzerofill.html">dbo.udfTwoDigitZeroFill</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.vassocseqlineitems.html">dbo.vAssocSeqLineItems</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.vassocseqorders.html">dbo.vAssocSeqOrders</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.vdmprep.html">dbo.vDMPrep</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.vtargetmail.html">dbo.vTargetMail</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sqldwdb/dbo.vtimeseries.html">dbo.vTimeSeries</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../sqldwdb/objectrefcyclic.html">Cyclic Object References</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../sqldwdb/other/indexsemanticgroup.html">Index SemanticGroup</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../ssasdb/nav/objects-by-schema.html">SSAS Tabular Models</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../ssasdb/nav/nav-schema-adventureworks.html">AdventureWorks</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ssasdb/adventureworks._measures.html">AdventureWorks._measures</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ssasdb/adventureworks.customer.html">AdventureWorks.Customer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ssasdb/adventureworks.date.html">AdventureWorks.Date</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ssasdb/adventureworks.geography.html">AdventureWorks.Geography</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ssasdb/adventureworks.internetblanksales.html">AdventureWorks.Internet Sales</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ssasdb/adventureworks.product.html">AdventureWorks.Product</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ssasdb/adventureworks.productblankcategory.html">AdventureWorks.Product Category</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ssasdb/adventureworks.productblanksubcategory.html">AdventureWorks.Product Subcategory</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Demo AdventureWorks</span>
+    <span class="version">default</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../dhw/index.html">DataHandwerk</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../dhw/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../../index.html">Demo AdventureWorks</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../ssis/index.html">Demo SSIS</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../ssis/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../dhw/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Demo AdventureWorks</a></li>
+    <li>AdventureWorks (DB)</li>
+    <li><a href="indexsemanticgroup.html">Index SemanticGroup</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="file:///D:/Repos/gitlab/DataHandwerk/dhw-antora-adventureworks/docs/modules/sqldb/pages/other/indexsemanticgroup.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Index SemanticGroup</h1>
+<div class="sect1">
+<h2 id="startbnoblankgroupendb"><a class="anchor" href="#startbnoblankgroupendb"></a>(no group)</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../production.document.html#index-pkunderlinedocumentunderlinedocumentnode" class="xref page">Production.Document - PK_Document_DocumentNode</a><br>
+DocumentNode<br>
+hierarchyid<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../dbo.databaselog.html#index-pkunderlinedatabaselogunderlinedatabaselogid" class="xref page">dbo.DatabaseLog - PK_DatabaseLog_DatabaseLogID</a><br>
+DatabaseLogID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../dbo.errorlog.html#index-pkunderlineerrorlogunderlineerrorlogid" class="xref page">dbo.ErrorLog - PK_ErrorLog_ErrorLogID</a><br>
+ErrorLogID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../humanresources.employee.html#index-pkunderlineemployeeunderlinebusinessentityid" class="xref page">HumanResources.Employee - PK_Employee_BusinessEntityID</a><br>
+BusinessEntityID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../humanresources.jobcandidate.html#index-pkunderlinejobcandidateunderlinejobcandidateid" class="xref page">HumanResources.JobCandidate - PK_JobCandidate_JobCandidateID</a><br>
+JobCandidateID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../person.address.html#index-pkunderlineaddressunderlineaddressid" class="xref page">Person.Address - PK_Address_AddressID</a><br>
+AddressID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../person.addresstype.html#index-pkunderlineaddresstypeunderlineaddresstypeid" class="xref page">Person.AddressType - PK_AddressType_AddressTypeID</a><br>
+AddressTypeID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../person.businessentity.html#index-pkunderlinebusinessentityunderlinebusinessentityid" class="xref page">Person.BusinessEntity - PK_BusinessEntity_BusinessEntityID</a><br>
+BusinessEntityID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../person.contacttype.html#index-pkunderlinecontacttypeunderlinecontacttypeid" class="xref page">Person.ContactType - PK_ContactType_ContactTypeID</a><br>
+ContactTypeID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../person.password.html#index-pkunderlinepasswordunderlinebusinessentityid" class="xref page">Person.Password - PK_Password_BusinessEntityID</a><br>
+BusinessEntityID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../person.person.html#index-pkunderlinepersonunderlinebusinessentityid" class="xref page">Person.Person - PK_Person_BusinessEntityID</a><br>
+BusinessEntityID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../person.phonenumbertype.html#index-pkunderlinephonenumbertypeunderlinephonenumbertypeid" class="xref page">Person.PhoneNumberType - PK_PhoneNumberType_PhoneNumberTypeID</a><br>
+PhoneNumberTypeID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../person.stateprovince.html#index-pkunderlinestateprovinceunderlinestateprovinceid" class="xref page">Person.StateProvince - PK_StateProvince_StateProvinceID</a><br>
+StateProvinceID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../production.billofmaterials.html#index-pkunderlinebillofmaterialsunderlinebillofmaterialsid" class="xref page">Production.BillOfMaterials - PK_BillOfMaterials_BillOfMaterialsID</a><br>
+BillOfMaterialsID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../production.illustration.html#index-pkunderlineillustrationunderlineillustrationid" class="xref page">Production.Illustration - PK_Illustration_IllustrationID</a><br>
+IllustrationID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../production.product.html#index-pkunderlineproductunderlineproductid" class="xref page">Production.Product - PK_Product_ProductID</a><br>
+ProductID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../production.productcategory.html#index-pkunderlineproductcategoryunderlineproductcategoryid" class="xref page">Production.ProductCategory - PK_ProductCategory_ProductCategoryID</a><br>
+ProductCategoryID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../production.productdescription.html#index-pkunderlineproductdescriptionunderlineproductdescriptionid" class="xref page">Production.ProductDescription - PK_ProductDescription_ProductDescriptionID</a><br>
+ProductDescriptionID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../production.productmodel.html#index-pkunderlineproductmodelunderlineproductmodelid" class="xref page">Production.ProductModel - PK_ProductModel_ProductModelID</a><br>
+ProductModelID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../production.productphoto.html#index-pkunderlineproductphotounderlineproductphotoid" class="xref page">Production.ProductPhoto - PK_ProductPhoto_ProductPhotoID</a><br>
+ProductPhotoID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../production.productreview.html#index-pkunderlineproductreviewunderlineproductreviewid" class="xref page">Production.ProductReview - PK_ProductReview_ProductReviewID</a><br>
+ProductReviewID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../production.productsubcategory.html#index-pkunderlineproductsubcategoryunderlineproductsubcategoryid" class="xref page">Production.ProductSubcategory - PK_ProductSubcategory_ProductSubcategoryID</a><br>
+ProductSubcategoryID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../production.transactionhistory.html#index-pkunderlinetransactionhistoryunderlinetransactionid" class="xref page">Production.TransactionHistory - PK_TransactionHistory_TransactionID</a><br>
+TransactionID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../production.transactionhistoryarchive.html#index-pkunderlinetransactionhistoryarchiveunderlinetransactionid" class="xref page">Production.TransactionHistoryArchive - PK_TransactionHistoryArchive_TransactionID</a><br>
+TransactionID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../production.workorder.html#index-pkunderlineworkorderunderlineworkorderid" class="xref page">Production.WorkOrder - PK_WorkOrder_WorkOrderID</a><br>
+WorkOrderID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../purchasing.purchaseorderheader.html#index-pkunderlinepurchaseorderheaderunderlinepurchaseorderid" class="xref page">Purchasing.PurchaseOrderHeader - PK_PurchaseOrderHeader_PurchaseOrderID</a><br>
+PurchaseOrderID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../purchasing.shipmethod.html#index-pkunderlineshipmethodunderlineshipmethodid" class="xref page">Purchasing.ShipMethod - PK_ShipMethod_ShipMethodID</a><br>
+ShipMethodID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../purchasing.vendor.html#index-pkunderlinevendorunderlinebusinessentityid" class="xref page">Purchasing.Vendor - PK_Vendor_BusinessEntityID</a><br>
+BusinessEntityID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../sales.creditcard.html#index-pkunderlinecreditcardunderlinecreditcardid" class="xref page">Sales.CreditCard - PK_CreditCard_CreditCardID</a><br>
+CreditCardID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../sales.currencyrate.html#index-pkunderlinecurrencyrateunderlinecurrencyrateid" class="xref page">Sales.CurrencyRate - PK_CurrencyRate_CurrencyRateID</a><br>
+CurrencyRateID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../sales.customer.html#index-pkunderlinecustomerunderlinecustomerid" class="xref page">Sales.Customer - PK_Customer_CustomerID</a><br>
+CustomerID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../sales.salesorderheader.html#index-pkunderlinesalesorderheaderunderlinesalesorderid" class="xref page">Sales.SalesOrderHeader - PK_SalesOrderHeader_SalesOrderID</a><br>
+SalesOrderID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../sales.salesperson.html#index-pkunderlinesalespersonunderlinebusinessentityid" class="xref page">Sales.SalesPerson - PK_SalesPerson_BusinessEntityID</a><br>
+BusinessEntityID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../sales.salesreason.html#index-pkunderlinesalesreasonunderlinesalesreasonid" class="xref page">Sales.SalesReason - PK_SalesReason_SalesReasonID</a><br>
+SalesReasonID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../sales.salestaxrate.html#index-pkunderlinesalestaxrateunderlinesalestaxrateid" class="xref page">Sales.SalesTaxRate - PK_SalesTaxRate_SalesTaxRateID</a><br>
+SalesTaxRateID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../sales.salesterritory.html#index-pkunderlinesalesterritoryunderlineterritoryid" class="xref page">Sales.SalesTerritory - PK_SalesTerritory_TerritoryID</a><br>
+TerritoryID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../sales.shoppingcartitem.html#index-pkunderlineshoppingcartitemunderlineshoppingcartitemid" class="xref page">Sales.ShoppingCartItem - PK_ShoppingCartItem_ShoppingCartItemID</a><br>
+ShoppingCartItemID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../sales.specialoffer.html#index-pkunderlinespecialofferunderlinespecialofferid" class="xref page">Sales.SpecialOffer - PK_SpecialOffer_SpecialOfferID</a><br>
+SpecialOfferID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../sales.store.html#index-pkunderlinestoreunderlinebusinessentityid" class="xref page">Sales.Store - PK_Store_BusinessEntityID</a><br>
+BusinessEntityID<br>
+int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../humanresources.employeepayhistory.html#index-pkunderlineemployeepayhistoryunderlinebusinessentityidunderlineratechangedate" class="xref page">HumanResources.EmployeePayHistory - PK_EmployeePayHistory_BusinessEntityID_RateChangeDate</a><br>
+BusinessEntityID,RateChangeDate<br>
+int,datetime<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../production.productcosthistory.html#index-pkunderlineproductcosthistoryunderlineproductidunderlinestartdate" class="xref page">Production.ProductCostHistory - PK_ProductCostHistory_ProductID_StartDate</a><br>
+ProductID,StartDate<br>
+int,datetime<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../production.productlistpricehistory.html#index-pkunderlineproductlistpricehistoryunderlineproductidunderlinestartdate" class="xref page">Production.ProductListPriceHistory - PK_ProductListPriceHistory_ProductID_StartDate</a><br>
+ProductID,StartDate<br>
+int,datetime<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../sales.salespersonquotahistory.html#index-pkunderlinesalespersonquotahistoryunderlinebusinessentityidunderlinequotadate" class="xref page">Sales.SalesPersonQuotaHistory - PK_SalesPersonQuotaHistory_BusinessEntityID_QuotaDate</a><br>
+BusinessEntityID,QuotaDate<br>
+int,datetime<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../production.productdocument.html#index-pkunderlineproductdocumentunderlineproductidunderlinedocumentnode" class="xref page">Production.ProductDocument - PK_ProductDocument_ProductID_DocumentNode</a><br>
+ProductID,DocumentNode<br>
+int,hierarchyid<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../person.emailaddress.html#index-pkunderlineemailaddressunderlinebusinessentityidunderlineemailaddressid" class="xref page">Person.EmailAddress - PK_EmailAddress_BusinessEntityID_EmailAddressID</a><br>
+BusinessEntityID,EmailAddressID<br>
+int,int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../production.productmodelillustration.html#index-pkunderlineproductmodelillustrationunderlineproductmodelidunderlineillustrationid" class="xref page">Production.ProductModelIllustration - PK_ProductModelIllustration_ProductModelID_IllustrationID</a><br>
+ProductModelID,IllustrationID<br>
+int,int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../production.productproductphoto.html#index-pkunderlineproductproductphotounderlineproductidunderlineproductphotoid" class="xref page">Production.ProductProductPhoto - PK_ProductProductPhoto_ProductID_ProductPhotoID</a><br>
+ProductID,ProductPhotoID<br>
+int,int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../purchasing.productvendor.html#index-pkunderlineproductvendorunderlineproductidunderlinebusinessentityid" class="xref page">Purchasing.ProductVendor - PK_ProductVendor_ProductID_BusinessEntityID</a><br>
+ProductID,BusinessEntityID<br>
+int,int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../purchasing.purchaseorderdetail.html#index-pkunderlinepurchaseorderdetailunderlinepurchaseorderidunderlinepurchaseorderdetailid" class="xref page">Purchasing.PurchaseOrderDetail - PK_PurchaseOrderDetail_PurchaseOrderID_PurchaseOrderDetailID</a><br>
+PurchaseOrderID,PurchaseOrderDetailID<br>
+int,int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../sales.personcreditcard.html#index-pkunderlinepersoncreditcardunderlinebusinessentityidunderlinecreditcardid" class="xref page">Sales.PersonCreditCard - PK_PersonCreditCard_BusinessEntityID_CreditCardID</a><br>
+BusinessEntityID,CreditCardID<br>
+int,int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../sales.salesorderdetail.html#index-pkunderlinesalesorderdetailunderlinesalesorderidunderlinesalesorderdetailid" class="xref page">Sales.SalesOrderDetail - PK_SalesOrderDetail_SalesOrderID_SalesOrderDetailID</a><br>
+SalesOrderID,SalesOrderDetailID<br>
+int,int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../sales.salesorderheadersalesreason.html#index-pkunderlinesalesorderheadersalesreasonunderlinesalesorderidunderlinesalesreasonid" class="xref page">Sales.SalesOrderHeaderSalesReason - PK_SalesOrderHeaderSalesReason_SalesOrderID_SalesReasonID</a><br>
+SalesOrderID,SalesReasonID<br>
+int,int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../sales.specialofferproduct.html#index-pkunderlinespecialofferproductunderlinespecialofferidunderlineproductid" class="xref page">Sales.SpecialOfferProduct - PK_SpecialOfferProduct_SpecialOfferID_ProductID</a><br>
+SpecialOfferID,ProductID<br>
+int,int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../sales.salesterritoryhistory.html#index-pkunderlinesalesterritoryhistoryunderlinebusinessentityidunderlinestartdateunderlineterritoryid" class="xref page">Sales.SalesTerritoryHistory - PK_SalesTerritoryHistory_BusinessEntityID_StartDate_TerritoryID</a><br>
+BusinessEntityID,TerritoryID,StartDate<br>
+int,int,datetime<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../person.businessentityaddress.html#index-pkunderlinebusinessentityaddressunderlinebusinessentityidunderlineaddressidunderlineaddresstypeid" class="xref page">Person.BusinessEntityAddress - PK_BusinessEntityAddress_BusinessEntityID_AddressID_AddressTypeID</a><br>
+BusinessEntityID,AddressID,AddressTypeID<br>
+int,int,int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../person.businessentitycontact.html#index-pkunderlinebusinessentitycontactunderlinebusinessentityidunderlinepersonidunderlinecontacttypeid" class="xref page">Person.BusinessEntityContact - PK_BusinessEntityContact_BusinessEntityID_PersonID_ContactTypeID</a><br>
+BusinessEntityID,PersonID,ContactTypeID<br>
+int,int,int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../production.productmodelproductdescriptionculture.html#index-pkunderlineproductmodelproductdescriptioncultureunderlineproductmodelidunderlineproductdescriptionidunderlinecultureid" class="xref page">Production.ProductModelProductDescriptionCulture - PK_ProductModelProductDescriptionCulture_ProductModelID_ProductDescriptionID_CultureID</a><br>
+ProductModelID,ProductDescriptionID,CultureID<br>
+int,int,nchar(6)<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../production.workorderrouting.html#index-pkunderlineworkorderroutingunderlineworkorderidunderlineproductidunderlineoperationsequence" class="xref page">Production.WorkOrderRouting - PK_WorkOrderRouting_WorkOrderID_ProductID_OperationSequence</a><br>
+WorkOrderID,ProductID,OperationSequence<br>
+int,int,smallint<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../person.personphone.html#index-pkunderlinepersonphoneunderlinebusinessentityidunderlinephonenumberunderlinephonenumbertypeid" class="xref page">Person.PersonPhone - PK_PersonPhone_BusinessEntityID_PhoneNumber_PhoneNumberTypeID</a><br>
+BusinessEntityID,PhoneNumber,PhoneNumberTypeID<br>
+int,Phone,int<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../production.productinventory.html#index-pkunderlineproductinventoryunderlineproductidunderlinelocationid" class="xref page">Production.ProductInventory - PK_ProductInventory_ProductID_LocationID</a><br>
+ProductID,LocationID<br>
+int,smallint<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../humanresources.employeedepartmenthistory.html#index-pkunderlineemployeedepartmenthistoryunderlinebusinessentityidunderlinestartdateunderlinedepartmentid" class="xref page">HumanResources.EmployeeDepartmentHistory - PK_EmployeeDepartmentHistory_BusinessEntityID_StartDate_DepartmentID</a><br>
+BusinessEntityID,DepartmentID,ShiftID,StartDate<br>
+int,smallint,tinyint,date<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../production.unitmeasure.html#index-pkunderlineunitmeasureunderlineunitmeasurecode" class="xref page">Production.UnitMeasure - PK_UnitMeasure_UnitMeasureCode</a><br>
+UnitMeasureCode<br>
+nchar(3)<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../sales.currency.html#index-pkunderlinecurrencyunderlinecurrencycode" class="xref page">Sales.Currency - PK_Currency_CurrencyCode</a><br>
+CurrencyCode<br>
+nchar(3)<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../production.culture.html#index-pkunderlinecultureunderlinecultureid" class="xref page">Production.Culture - PK_Culture_CultureID</a><br>
+CultureID<br>
+nchar(6)<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../person.countryregion.html#index-pkunderlinecountryregionunderlinecountryregioncode" class="xref page">Person.CountryRegion - PK_CountryRegion_CountryRegionCode</a><br>
+CountryRegionCode<br>
+nvarchar(3)<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../sales.countryregioncurrency.html#index-pkunderlinecountryregioncurrencyunderlinecountryregioncodeunderlinecurrencycode" class="xref page">Sales.CountryRegionCurrency - PK_CountryRegionCurrency_CountryRegionCode_CurrencyCode</a><br>
+CountryRegionCode,CurrencyCode<br>
+nvarchar(3),nchar(3)<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../humanresources.department.html#index-pkunderlinedepartmentunderlinedepartmentid" class="xref page">HumanResources.Department - PK_Department_DepartmentID</a><br>
+DepartmentID<br>
+smallint<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../production.location.html#index-pkunderlinelocationunderlinelocationid" class="xref page">Production.Location - PK_Location_LocationID</a><br>
+LocationID<br>
+smallint<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../production.scrapreason.html#index-pkunderlinescrapreasonunderlinescrapreasonid" class="xref page">Production.ScrapReason - PK_ScrapReason_ScrapReasonID</a><br>
+ScrapReasonID<br>
+smallint<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../dbo.awbuildversion.html#index-pkunderlineawbuildversionunderlinesysteminformationid" class="xref page">dbo.AWBuildVersion - PK_AWBuildVersion_SystemInformationID</a><br>
+SystemInformationID<br>
+tinyint<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../humanresources.shift.html#index-pkunderlineshiftunderlineshiftid" class="xref page">HumanResources.Shift - PK_Shift_ShiftID</a><br>
+ShiftID<br>
+tinyint<br>
+PK, Unique, Real: 1, 1, 1</p>
+</li>
+<li>
+<p><a href="../production.document.html#index-uqunderlineunderlinedocumentunderlineunderlinef73921f7c5112c2e" class="xref page">Production.Document - UQ__Document__F73921F7C5112C2E</a><br>
+rowguid<br>
+uniqueidentifier<br>
+PK, Unique, Real: 0, 1, 1</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="../objectrefcyclic.html">Cyclic Object References</a></span>
+  <span class="next"><a href="../../sqldwdb/nav/objects-by-schema.html">AdventureWorksDW2019 - Objects by schema</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content" onclick="closeModal()">
+        <!--suppress HtmlRequiredAltAttribute as this will be set when selecting the image via JavaScript,
+        RequiredAttributes as src will be set by when selecting the image via JavaScript -->
+        <img id="imageinmodal">
+    </div>
+</div>
+<script>
+    function openModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+
+    document.querySelectorAll('.imageblock kroki').forEach(element => {
+        element.className += " lightbox";
+        element.addEventListener('click', evt => {
+            document.getElementById("imageinmodal").setAttribute("data", evt.currentTarget.getAttribute("data"))
+            openModal();
+        })
+    });
+
+</script>
+<style>
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 10;
+        padding-top: 5vh;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        backdrop-filter: blur(3px);
+        background-color: rgba(30, 30, 30, 0.8);
+    }
+    img.lightbox {
+        cursor: pointer;
+    }
+    /* Modal Content */
+    .modal-content {
+        position: relative;
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        max-height: 90vh;
+        cursor: pointer;
+    }
+
+    .modal-content img {
+        width: auto;
+        height: auto;
+        max-width: 90vw;
+        max-height: 90vh;
+        min-width: 90vw;
+        min-height: 90vh;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        object-fit: contain;
+    }
+
+    /* The Close Button */
+    .close {
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

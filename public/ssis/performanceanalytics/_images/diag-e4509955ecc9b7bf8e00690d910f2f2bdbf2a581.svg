@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="145px" preserveAspectRatio="none" style="width:377px;height:145px;background:#FFFFFF;" version="1.1" viewBox="0 0 377 145" width="377px" zoomAndPan="magnify"><defs><filter height="300%" id="f1awz8p7zbwk04" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[920aadfb36d84c79efde66d8b1a0b04d]
+cluster mdh_Steuerung.dtsx--><polygon fill="#FFFFFF" filter="url(#f1awz8p7zbwk04)" points="16,6,165,6,172,28.7999,360,28.7999,360,121,16,121,16,6" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="16" x2="172" y1="28.7999" y2="28.7999"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="143" x="20" y="21.9999">mdh_Steuerung.dtsx</text><!--MD5=[8a1e8745b163ca1d45491f0c0add04ee]
+entity packagebackslashrunblankprocedureblankcfgunderlinehistunderlinemdhunderlinesteuerung--><a href="../mdh_steuerung.html#task-packagebackslashrunblankprocedureblankcfgunderlinehistunderlinemdhunderlinesteuerung" target="_top" title="../mdh_steuerung.html#task-packagebackslashrunblankprocedureblankcfgunderlinehistunderlinemdhunderlinesteuerung" xlink:actuate="onRequest" xlink:href="../mdh_steuerung.html#task-packagebackslashrunblankprocedureblankcfgunderlinehistunderlinemdhunderlinesteuerung" xlink:show="new" xlink:title="../mdh_steuerung.html#task-packagebackslashrunblankprocedureblankcfgunderlinehistunderlinemdhunderlinesteuerung" xlink:type="simple"><rect fill="#F0E68C" filter="url(#f1awz8p7zbwk04)" height="63.5999" style="stroke:#A80036;stroke-width:1.5;" width="312" x="32" y="41"/><rect fill="#F0E68C" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="324" y="46"/><rect fill="#F0E68C" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="322" y="48"/><rect fill="#F0E68C" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="322" y="52"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="184" x="91" y="74.9999">«Microsoft.ExecuteSQLTask»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="272" x="47" y="91.7999">Run procedure CFG_HIST_mdh_Steuerung</text></a><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="191" x="86.5" y="137">The diagram is interactive and contains links.</text><!--MD5=[0c32bd0db9ac13b96260a7b65353f228]
+@startuml
+package "mdh_Steuerung.dtsx" {
+  component "Run procedure CFG_HIST_mdh_Steuerung" as packagebackslashrunblankprocedureblankcfgunderlinehistunderlinemdhunderlinesteuerung <<Microsoft.ExecuteSQLTask>>  [[../mdh_steuerung.html#task-packagebackslashrunblankprocedureblankcfgunderlinehistunderlinemdhunderlinesteuerung]]
+}
+
+
+
+
+
+skinparam component {
+    backgroundColor<<Microsoft.ASExecuteDDLTask>>   Aqua
+    backgroundColor<<Microsoft.DTSProcessingTask>>  DeepSkyBlue
+    backgroundColor<<Microsoft.ExecutePackageTask>> Yellow
+    backgroundColor<<Microsoft.ExecuteSQLTask>>     Khaki
+    backgroundColor<<Microsoft.ExpressionTask>>     Pink
+    backgroundColor<<Microsoft.Pipeline>>           LightCyan
+    backgroundColor<<Microsoft.ScriptTask>>         LightGreen
+    backgroundColor<<STOCK:FOREACHLOOP>>            LightGray
+    backgroundColor<<STOCK:SEQUENCE>>               White
+}
+
+
+
+footer The diagram is interactive and contains links.
+@enduml
+
+PlantUML version 1.2021.10(Mon Aug 30 13:43:48 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>docs.usp_AntoraExport_ObjectPuml :: DataHandwerk Docs</title>
     <link rel="canonical" href="https://datahandwerk.gitlab.io/dhw/sqldb/docs.usp_antoraexport_objectpuml.html">
-    <link rel="prev" href="docs.usp_antoraexport_objectpartialproperties.html">
+    <link rel="prev" href="docs.usp_antoraexport_objectpartialscontent.html">
     <link rel="next" href="docs.usp_antoraexport_objectrefcyclic.html">
-    <meta name="generator" content="Antora 3.0.0-beta.1">
+    <meta name="generator" content="Antora 3.0.0-beta.2">
     <link rel="stylesheet" href="../../_/css/site.css">
     <link rel="stylesheet" href="../../_/css/custom.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4RM6Q8D27"></script>
@@ -102,6 +102,9 @@
     <a class="nav-link" href="config.usp_connect_database.html">config.usp_connect_database</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="config.usp_extract_dacpac.html">config.usp_extract_dacpac</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="config.usp_init_parameter.html">config.usp_init_parameter</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -178,6 +181,21 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="dbo.crlf.html">dbo.crlf</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.usp_altertablesdatacompression.html">dbo.usp_AlterTablesDataCompression</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.usp_generate_merge.html">dbo.usp_generate_merge</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.usp_longprint.html">dbo.usp_longprint</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.usp_refreshviews.html">dbo.usp_RefreshViews</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.usp_truncatetables.html">dbo.usp_TruncateTables</a>
   </li>
 </ul>
   </li>
@@ -264,6 +282,9 @@
     <a class="nav-link" href="docs.ftv_repoobject_reference_plantuml_entityreflist.html">docs.ftv_RepoObject_Reference_PlantUml_EntityRefList</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.measure_measurepropertylist.html">docs.Measure_MeasurePropertyList</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.objectrefcyclic.html">docs.ObjectRefCyclic</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -292,6 +313,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.repoobject_indexlist_t.html">docs.RepoObject_IndexList_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.repoobject_measuredescriptionlist.html">docs.RepoObject_MeasureDescriptionList</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.repoobject_measurelist.html">docs.RepoObject_MeasureList</a>
@@ -441,7 +465,7 @@
     <a class="nav-link" href="docs.usp_antoraexport_objectpagetemplate.html">docs.usp_AntoraExport_ObjectPageTemplate</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="docs.usp_antoraexport_objectpartialproperties.html">docs.usp_AntoraExport_ObjectPartialProperties</a>
+    <a class="nav-link" href="docs.usp_antoraexport_objectpartialscontent.html">docs.usp_AntoraExport_ObjectPartialsContent</a>
   </li>
   <li class="nav-item is-current-page" data-depth="3">
     <a class="nav-link" href="docs.usp_antoraexport_objectpuml.html">docs.usp_AntoraExport_ObjectPuml</a>
@@ -462,7 +486,7 @@
     <a class="nav-link" href="docs.usp_antoraexport_ssispagetemplate.html">docs.usp_AntoraExport_SsisPageTemplate</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="docs.usp_antoraexport_ssispartialproperties.html">docs.usp_AntoraExport_SsisPartialProperties</a>
+    <a class="nav-link" href="docs.usp_antoraexport_ssispartialscontent.html">docs.usp_AntoraExport_SsisPartialsContent</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.usp_antoraexport_ssispuml.html">docs.usp_AntoraExport_SsisPuml</a>
@@ -564,6 +588,15 @@
     <a class="nav-link" href="property.fs_get_repoobjectproperty_nvarchar.html">property.fs_get_RepoObjectProperty_nvarchar</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.measureproperty.html">property.MeasureProperty</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.propertyname_measure.html">property.PropertyName_Measure</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.propertyname_measure_t.html">property.PropertyName_Measure_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.propertyname_repoobject.html">property.PropertyName_RepoObject</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -646,6 +679,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.usp_external_repoobjectproperty.html">property.usp_external_RepoObjectProperty</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.usp_measureproperty_set.html">property.usp_MeasureProperty_set</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.usp_persist_propertyname_measure_t.html">property.usp_PERSIST_PropertyName_Measure_T</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.usp_persist_propertyname_repoobject_t.html">property.usp_PERSIST_PropertyName_RepoObject_T</a>
@@ -1014,6 +1053,12 @@
     <a class="nav-link" href="repo.foreignkey_virtual_indexes.html">repo.ForeignKey_virtual_Indexes</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.fs_measure_fullname2.html">repo.fs_Measure_fullname2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.fs_repoobject_fullname2.html">repo.fs_RepoObject_fullname2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.index_columlist.html">repo.Index_ColumList</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -1104,10 +1149,10 @@
     <a class="nav-link" href="repo.indexreferencedreferencing_hasfullcolumnsinreferencing.html">repo.IndexReferencedReferencing_HasFullColumnsInReferencing</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.measures.html">repo.Measures</a>
+    <a class="nav-link" href="repo.measure.html">repo.Measure</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.measures_union.html">repo.Measures_union</a>
+    <a class="nav-link" href="repo.measure_union.html">repo.Measure_union</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.repoobject.html">repo.RepoObject</a>
@@ -1132,6 +1177,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.repoobject_gross.html">repo.RepoObject_gross</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.repoobject_gross_persistence.html">repo.RepoObject_gross_persistence</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.repoobject_gross2.html">repo.RepoObject_gross2</a>
@@ -1285,6 +1333,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.usp_persist_reposchema_ssas_tgt.html">repo.usp_PERSIST_RepoSchema_ssas_tgt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.usp_persistence_delete.html">repo.usp_persistence_delete</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.usp_persistence_set.html">repo.usp_persistence_set</a>
@@ -1524,13 +1575,13 @@
     <a class="nav-link" href="ssas.indexcolumn_union.html">ssas.IndexColumn_union</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="ssas.measures_translation.html">ssas.Measures_translation</a>
+    <a class="nav-link" href="ssas.measure_translation.html">ssas.Measure_translation</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="ssas.measures_translation_displayfolder_union.html">ssas.Measures_translation_displayfolder_union</a>
+    <a class="nav-link" href="ssas.measure_translation_displayfolder_union.html">ssas.Measure_translation_displayfolder_union</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="ssas.measures_translation_t.html">ssas.Measures_translation_T</a>
+    <a class="nav-link" href="ssas.measure_translation_t.html">ssas.Measure_translation_T</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="ssas.model_json.html">ssas.model_json</a>
@@ -1803,7 +1854,7 @@
     <a class="nav-link" href="ssas.tmschema_variations.html">ssas.TMSCHEMA_VARIATIONS</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="ssas.usp_persist_measures_translation_t.html">ssas.usp_PERSIST_Measures_translation_T</a>
+    <a class="nav-link" href="ssas.usp_persist_measure_translation_t.html">ssas.usp_PERSIST_Measure_translation_T</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="ssas.usp_persist_model_json_31_tables_t.html">ssas.usp_PERSIST_model_json_31_tables_T</a>
@@ -2288,24 +2339,15 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="tool.ftv_extract_substrings.html">tool.ftv_extract_substrings</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="tool.usp_generate_merge.html">tool.usp_generate_merge</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="tool.usp_longprint.html">tool.usp_longprint</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="tool.usp_refreshviews.html">tool.usp_RefreshViews</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="tool.usp_truncatetables.html">tool.usp_TruncateTables</a>
-  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="nav/nav-schema-uspgenerator.html">uspgenerator</a>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.fs_usp_fullname.html">uspgenerator.fs_usp_fullname</a>
+  </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="uspgenerator.ftv_generatoruspstep_sql.html">uspgenerator.ftv_GeneratorUspStep_sql</a>
   </li>
@@ -2341,6 +2383,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="uspgenerator.generatoruspstep_sql.html">uspgenerator.GeneratorUspStep_Sql</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.usp_copy_procedure.html">uspgenerator.usp_copy_procedure</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="uspgenerator.usp_generatorusp_insert_update_persistence.html">uspgenerator.usp_GeneratorUsp_insert_update_persistence</a>
@@ -2382,7 +2427,16 @@
     <a class="nav-link" href="workflow.proceduredependency_input_persistencedependency_s.html">workflow.ProcedureDependency_input_PersistenceDependency_S</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="workflow.proceduredependency_persistencedependency_src.html">workflow.ProcedureDependency_PersistenceDependency_src</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="workflow.proceduredependency_persistencedependency_tgt.html">workflow.ProcedureDependency_PersistenceDependency_tgt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="workflow.usp_persist_proceduredependency_input_persistencedependency.html">workflow.usp_PERSIST_ProcedureDependency_input_PersistenceDependency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="workflow.usp_persist_proceduredependency_persistencedependency_tgt.html">workflow.usp_PERSIST_ProcedureDependency_PersistenceDependency_tgt</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="workflow.usp_persist_workflow_proceduredependency_t.html">workflow.usp_PERSIST_Workflow_ProcedureDependency_T</a>
@@ -2458,7 +2512,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="other/objectrefcyclic.html">Cyclic Object References</a>
+    <a class="nav-link" href="objectrefcyclic.html">Cyclic Object References</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="other/indexsemanticgroup.html">Index SemanticGroup</a>
@@ -2476,6 +2530,9 @@
     <a class="nav-link" href="../user-guide/backup-repo-db.html">Backup and restore repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../user-guide/documentation-generator.html">Database documentation generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../user-guide/sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
 <ul class="nav-list">
@@ -2491,16 +2548,13 @@
     <a class="nav-link" href="../user-guide/properties-inheritance.html">Properties Inheritance</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../user-guide/documentation-generator.html">Database documentation generator</a>
-  </li>
-  <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../user-guide/execution-log.html">Execution log</a>
-  </li>
-  <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../user-guide/uspgenerator.html">usp generator</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../user-guide/persistence-generator.html">Persistence generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../user-guide/execution-log.html">Execution log</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../user-guide/ssms-configuration.html">SSMS configuration</a>
@@ -2524,6 +2578,22 @@
       <ul class="versions">
         <li class="version is-current is-latest">
           <a href="../index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../aw/index.html">Demo AdventureWorks</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../aw/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../ssis/index.html">Demo SSIS</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ssis/index.html">default</a>
         </li>
       </ul>
     </li>
@@ -2561,7 +2631,7 @@ P
 (
 stored procedure
 ), modify_date:
-2021-11-07 17:28:34</p>
+2021-11-25 17:58:45</p>
 </div>
 <div class="paragraph">
 <p>RepoObject_guid:
@@ -2585,113 +2655,30 @@ F40B29C2-E595-EB11-84F4-A81E8446D5B0</p>
 <li>
 <p>export procedure: <a href="docs.usp_antoraexport_objectpuml.html" class="xref page">docs.usp_AntoraExport_ObjectPuml</a></p>
 </li>
+</ul>
+</div>
+</li>
+<li>
+<p>current implementation</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Puml diagrams are not exported as individual files but they are included into the the page content where they are required</p>
+</li>
+<li>
+<p>This significantly improves the performance of the Antora export, since fewer files need to be exported.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>obsolete implementation</p>
+<div class="ulist">
+<ul>
 <li>
 <p>individual diagrams per object are exported into (AntoraModuleFolder)<code>/</code>(AntoraModuleName)<code>/partials/puml/</code></p>
 </li>
 </ul>
-</div>
-</li>
-</ul>
-</div>
-<h3 id="_prerequisites" class="discrete">Prerequisites</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>export folders should exist in the Antora modul folder, no error message is generated, if they are missing</p>
-<div class="ulist">
-<ul>
-<li>
-<p>pages</p>
-<div class="ulist">
-<ul>
-<li>
-<p>index</p>
-</li>
-<li>
-<p>nav</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>partials</p>
-<div class="ulist">
-<ul>
-<li>
-<p>docsnippet</p>
-</li>
-<li>
-<p>navlist</p>
-</li>
-<li>
-<p>puml</p>
-<div class="ulist">
-<ul>
-<li>
-<p>entity_0_30_objectref</p>
-</li>
-<li>
-<p>entity_1_1_colref</p>
-</li>
-<li>
-<p>entity_1_1_fk</p>
-</li>
-<li>
-<p>entity_1_1_objectref</p>
-</li>
-<li>
-<p>entity_30_0_objectref</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>template</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>uses <code>xp_cmdshell</code>, to call <code>bcp</code>, you need to enable:</p>
-<div class="exampleblock">
-<div class="content">
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">--before executing the procedure:
---Temporarily or permanently enable xp_cmdshell
-sp_configure 'show advanced options'
- , 1;
-
-RECONFIGURE
-GO
-
-sp_configure 'xp_cmdshell'
- , 1;
-
-RECONFIGURE
-GO
-
-EXEC docs.usp_AntoraExport
-
---you can also disable later again:
---Disable xp_cmdshell
-sp_configure 'xp_cmdshell'
- , 0
-
-RECONFIGURE
-GO
-
-sp_configure 'show advanced options'
- , 0
-
-RECONFIGURE
-GO</code></pre>
-</div>
-</div>
-</div>
 </div>
 </li>
 </ul>
@@ -2857,425 +2844,6 @@ DECLARE @SchemaName NVARCHAR(128)</code></pre>
 </details></div></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">410</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><strong>export puml from [docs].[RepoObject_Plantuml_T]</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>u</p>
-</li>
-<li>
-<p>[docs].[RepoObject_Plantuml_T]</p>
-</li>
-</ul>
-</div>
-<details>
-<summary class="title">Statement</summary>
-<div class="content">
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">Declare db_cursor Cursor Local Fast_Forward For
-Select
-    cultures_name
-  , RepoObject_fullname2
-From
-    docs.RepoObject_OutputFilter_T
-Where
-    is_external = 0
-Order By
-    cultures_name
-  , RepoObject_fullname
-
-Open db_cursor
-
-Fetch Next From db_cursor
-Into
-    @cultures_name
-  , @Object_fullname2
-
-While @@Fetch_Status = 0
-Begin
-    Set @command
-        = 'bcp "SELECT [PlantumlEntity_1_1_ColRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
-          --
-          + @Object_fullname2
-          --
-          + ''' AND cultures_name = ''' + @cultures_name
-          --
-          + '''" queryout "'
-          --
-          + docs.fs_AntoraModuleFolder ( @cultures_name )
-          + '\partials\puml\entity_1_1_colref\' + docs.fs_cleanStringForFilename ( @Object_fullname2 ) + '.puml"'
-          --
-          + ' -S ' + @instanceName
-          --
-          + ' -d ' + @databaseName
-          --
-          + ' -c -C 65001'
-          --
-          + @TrustedUserPassword
-
-    Print @command
-
-    --Execute the BCP command
-    Exec sys.xp_cmdshell @command, no_output
-
-    Set @command
-        = 'bcp "SELECT [PlantumlEntity_1_1_FkRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
-          --
-          + @Object_fullname2
-          --
-          + ''' AND cultures_name = ''' + @cultures_name
-          --
-          + '''" queryout "'
-          --
-          + docs.fs_AntoraModuleFolder ( @cultures_name )
-          + '\partials\puml\entity_1_1_fk\' + docs.fs_cleanStringForFilename ( @Object_fullname2 ) + '.puml"'
-          --
-          + ' -S ' + @instanceName
-          --
-          + ' -d ' + @databaseName
-          --
-          + ' -c -C 65001'
-          --
-          + @TrustedUserPassword
-
-    Print @command
-
-    --Execute the BCP command
-    Exec sys.xp_cmdshell @command, no_output
-
-    Set @command
-        = 'bcp "SELECT [PlantumlEntity_1_1_ObjectRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
-          --
-          + @Object_fullname2
-          --
-          + ''' AND cultures_name = ''' + @cultures_name
-          --
-          + '''" queryout "'
-          --
-          + docs.fs_AntoraModuleFolder ( @cultures_name )
-          + '\partials\puml\entity_1_1_objectref\' + docs.fs_cleanStringForFilename ( @Object_fullname2 ) + '.puml"'
-          --
-          + ' -S ' + @instanceName
-          --
-          + ' -d ' + @databaseName
-          --
-          + ' -c -C 65001'
-          --
-          + @TrustedUserPassword
-
-    Print @command
-
-    --Execute the BCP command
-    Exec sys.xp_cmdshell @command, no_output
-
-    If
-    (
-        Select config.fs_get_parameter_value ( 'sync enable', 'dwh' )
-    ) = 1
-    Begin
-        Set @command
-            = 'bcp "SELECT [PlantumlEntity_0_30_ObjectRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
-              --
-              + @Object_fullname2
-              --
-              + ''' AND cultures_name = ''' + @cultures_name
-              --
-              + '''" queryout "'
-              --
-              + docs.fs_AntoraModuleFolder ( @cultures_name )
-              + '\partials\puml\entity_0_30_objectref\' + docs.fs_cleanStringForFilename ( @Object_fullname2 ) + '.puml"'
-              --
-              + ' -S ' + @instanceName
-              --
-              + ' -d ' + @databaseName
-              --
-              + ' -c -C 65001'
-              --
-              + @TrustedUserPassword
-
-        Print @command
-
-        --Execute the BCP command
-        Exec sys.xp_cmdshell @command, no_output
-
-        Set @command
-            = 'bcp "SELECT [PlantumlEntity_30_0_ObjectRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
-              --
-              + @Object_fullname2
-              --
-              + ''' AND cultures_name = ''' + @cultures_name
-              --
-              + '''" queryout "'
-              --
-              + docs.fs_AntoraModuleFolder ( @cultures_name )
-              + '\partials\puml\entity_30_0_objectref\' + docs.fs_cleanStringForFilename ( @Object_fullname2 ) + '.puml"'
-              --
-              + ' -S ' + @instanceName
-              --
-              + ' -d ' + @databaseName
-              --
-              + ' -c -C 65001'
-              --
-              + @TrustedUserPassword
-
-        Print @command
-
-        --Execute the BCP command
-        Exec sys.xp_cmdshell @command, no_output
-    End
-
-    Fetch Next From db_cursor
-    Into
-        @cultures_name
-      , @Object_fullname2
-End
-
-Close db_cursor
-Deallocate db_cursor</code></pre>
-</div>
-</div>
-</div>
-</details></div></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">420</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><strong>export FROM [docs].[RepoObject_Plantuml_Entity_T]</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>u</p>
-</li>
-<li>
-<p>[docs].[RepoObject_Plantuml_Entity_T]</p>
-</li>
-</ul>
-</div>
-<details>
-<summary class="title">Statement</summary>
-<div class="content">
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">Declare db_cursor Cursor Local Fast_Forward For
-Select
-    cultures_name
-  , RepoObject_fullname2
-From
-    docs.RepoObject_OutputFilter_T
-Where
-    is_external = 0
-Order By
-    cultures_name
-  , RepoObject_fullname
-
-Open db_cursor
-
-Fetch Next From db_cursor
-Into
-    @cultures_name
-  , @Object_fullname2
-
-While @@Fetch_Status = 0
-Begin
-    Set @command
-        = 'bcp "SELECT docs.fs_PumlHeaderTopToBottom () + [RepoObject_Puml] FROM [docs].[RepoObject_Plantuml_Entity_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
-          + @Object_fullname2
-          --
-          + ''' AND cultures_name = ''' + @cultures_name
-          --
-          + '''" queryout "'
-          --
-          + docs.fs_AntoraModuleFolder ( @cultures_name )
-          + '\partials\puml\entity\' + docs.fs_cleanStringForFilename ( @Object_fullname2 ) + '.puml"'
-          --
-          + ' -S ' + @instanceName
-          --
-          + ' -d ' + @databaseName
-          --
-          + ' -c -C 65001'
-          --
-          + @TrustedUserPassword
-
-    Print @command
-
-    --Execute the BCP command
-    Exec sys.xp_cmdshell @command, no_output
-
-    Set @command
-        = 'bcp "SELECT docs.fs_PumlHeaderTopToBottom () + [RepoObject_PumlOnlyPK] FROM [docs].[RepoObject_Plantuml_Entity_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
-          + @Object_fullname2
-          --
-          + ''' AND cultures_name = ''' + @cultures_name
-          --
-          + '''" queryout "'
-          --
-          + docs.fs_AntoraModuleFolder ( @cultures_name )
-          + '\partials\puml\entity_pk\' + docs.fs_cleanStringForFilename ( @Object_fullname2 ) + '.puml"'
-          --
-          + ' -S ' + @instanceName
-          --
-          + ' -d ' + @databaseName
-          --
-          + ' -c -C 65001'
-          --
-          + @TrustedUserPassword
-
-    Print @command
-
-    --Execute the BCP command
-    Exec sys.xp_cmdshell @command, no_output
-
-    Set @command
-        = 'bcp "SELECT docs.fs_PumlHeaderTopToBottom () + [RepoObject_PumlOnlyPkOrIndex] FROM [docs].[RepoObject_Plantuml_Entity_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
-          + @Object_fullname2
-          --
-          + ''' AND cultures_name = ''' + @cultures_name
-          --
-          + '''" queryout "'
-          --
-          + docs.fs_AntoraModuleFolder ( @cultures_name )
-          + '\partials\puml\entity_pk_or_index\' + docs.fs_cleanStringForFilename ( @Object_fullname2 ) + '.puml"'
-          --
-          + ' -S ' + @instanceName
-          --
-          + ' -d ' + @databaseName
-          --
-          + ' -c -C 65001'
-          --
-          + @TrustedUserPassword
-
-    Print @command
-
-    --Execute the BCP command
-    Exec sys.xp_cmdshell @command, no_output
-
-    Set @command
-        = 'bcp "SELECT docs.fs_PumlHeaderTopToBottom () + [RepoObject_PumlOnlyPkOrNotHidden] FROM [docs].[RepoObject_Plantuml_Entity_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
-          + @Object_fullname2
-          --
-          + ''' AND cultures_name = ''' + @cultures_name
-          --
-          + '''" queryout "'
-          --
-          + docs.fs_AntoraModuleFolder ( @cultures_name )
-          + '\partials\puml\entity_pk_or_nothidden\' + docs.fs_cleanStringForFilename ( @Object_fullname2 ) + '.puml"'
-          --
-          + ' -S ' + @instanceName
-          --
-          + ' -d ' + @databaseName
-          --
-          + ' -c -C 65001'
-          --
-          + @TrustedUserPassword
-
-    Print @command
-
-    --Execute the BCP command
-    Exec sys.xp_cmdshell @command, no_output
-
-    Fetch Next From db_cursor
-    Into
-        @cultures_name
-      , @Object_fullname2
-End
-
-Close db_cursor
-Deallocate db_cursor</code></pre>
-</div>
-</div>
-</div>
-</details></div></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">425</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><strong>export FROM [docs].[Schema_puml] [PumlSchemaSsasEr]</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>u</p>
-</li>
-<li>
-<p>[docs].[Schema_puml]</p>
-</li>
-</ul>
-</div>
-<details>
-<summary class="title">Statement</summary>
-<div class="content">
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">Declare db_cursor Cursor Local Fast_Forward For
-Select
-    cultures_name
-  , RepoSchema_name
-From
-    docs.Schema_puml
-Where
-    is_ssas = 1
-Order By
-    cultures_name
-  , RepoSchema_name
-
-Open db_cursor
-
-Fetch Next From db_cursor
-Into
-    @cultures_name
-  , @SchemaName
-
-While @@Fetch_Status = 0
-Begin
-    --Dynamically construct the BCP command
-    --
-    Set @command
-        = 'bcp "SELECT [PumlSchemaSsasEr] FROM [docs].[Schema_puml] WITH (READUNCOMMITTED) where [RepoSchema_name] = '''
-          --
-          + @SchemaName
-          --
-          + ''' AND cultures_name = ''' + @cultures_name
-          --
-          + '''" queryout "'
-          --
-          + docs.fs_AntoraModuleFolder ( @cultures_name )
-          + '\partials\puml\schema_ssas_er\' + docs.fs_cleanStringForFilename ( @SchemaName ) + '.puml"'
-          --
-          + ' -S ' + @instanceName
-          --
-          + ' -d ' + @databaseName
-          --
-          + ' -c -C 65001'
-          --
-          + @TrustedUserPassword
-
-    Print @command
-
-    --Execute the BCP command
-    Exec sys.xp_cmdshell @command, no_output
-
-    Fetch Next From db_cursor
-    Into
-        @cultures_name
-      , @SchemaName
-End
-
-Close db_cursor
-Deallocate db_cursor</code></pre>
-</div>
-</div>
-</div>
-</details></div></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -3285,7 +2853,7 @@ Deallocate db_cursor</code></pre>
 <div class="sectionbody">
 <div class="imageblock kroki">
 <div class="content">
-<object type="image/svg+xml" data="_images/diag-1b24b2a9de1b8c23fcd0e0ab342c98df014ec7c1.svg"><span class="alt">entity-docs.usp_antoraexport_objectpuml</span></object>
+<object type="image/svg+xml" data="_images/diag-32559901f1ff2f51afee45c022e7dbeeba5b4187.svg"><span class="alt">entity-docs.usp_antoraexport_objectpuml</span></object>
 </div>
 </div>
 </div>
@@ -3297,21 +2865,6 @@ Deallocate db_cursor</code></pre>
 <h3 id="_referenced_objects"><a class="anchor" href="#_referenced_objects"></a>Referenced Objects</h3>
 <div class="ulist">
 <ul>
-<li>
-<p><a href="config.fs_get_parameter_value.html" class="xref page">config.fs_get_parameter_value</a></p>
-</li>
-<li>
-<p><a href="docs.fs_antoramodulefolder.html" class="xref page">docs.fs_AntoraModuleFolder</a></p>
-</li>
-<li>
-<p><a href="docs.fs_cleanstringforfilename.html" class="xref page">docs.fs_cleanStringForFilename</a></p>
-</li>
-<li>
-<p><a href="docs.repoobject_outputfilter_t.html" class="xref page">docs.RepoObject_OutputFilter_T</a></p>
-</li>
-<li>
-<p><a href="docs.schema_puml.html" class="xref page">docs.Schema_puml</a></p>
-</li>
 <li>
 <p><a href="docs.usp_persist_repoobject_plantuml_entity_t.html" class="xref page">docs.usp_PERSIST_RepoObject_Plantuml_Entity_T</a></p>
 </li>
@@ -3338,7 +2891,7 @@ Deallocate db_cursor</code></pre>
 <h3 id="_object_reference_diagram_1_1"><a class="anchor" href="#_object_reference_diagram_1_1"></a>Object Reference Diagram - 1 1</h3>
 <div class="imageblock kroki">
 <div class="content">
-<object type="image/svg+xml" data="_images/diag-d1bbdebcc94ea9a1217ab3668d4529e3c86dd5bd.svg"><span class="alt">entity_1_1_objectref-docs.usp_antoraexport_objectpuml</span></object>
+<object type="image/svg+xml" data="_images/diag-b22dcfcd7c9247515dcd3bb6628b952681f0480a.svg"><span class="alt">entity_1_1_objectref-docs.usp_antoraexport_objectpuml</span></object>
 </div>
 </div>
 </div>
@@ -3346,7 +2899,7 @@ Deallocate db_cursor</code></pre>
 <h3 id="_object_reference_diagram_referenced_30_0"><a class="anchor" href="#_object_reference_diagram_referenced_30_0"></a>Object Reference Diagram - Referenced - 30 0</h3>
 <div class="imageblock kroki">
 <div class="content">
-<object type="image/svg+xml" data="_images/diag-5301a9eb63d21afad90b7b32c58a3e0579259bb1.svg"><span class="alt">entity_30_0_objectref-docs.usp_antoraexport_objectpuml</span></object>
+<object type="image/svg+xml" data="_images/diag-e20d09b0f989f6615fec790eff8e0fcaa75f69f9.svg"><span class="alt">entity_30_0_objectref-docs.usp_antoraexport_objectpuml</span></object>
 </div>
 </div>
 </div>
@@ -3354,7 +2907,7 @@ Deallocate db_cursor</code></pre>
 <h3 id="_object_reference_diagram_referencing_0_30"><a class="anchor" href="#_object_reference_diagram_referencing_0_30"></a>Object Reference Diagram - Referencing - 0 30</h3>
 <div class="imageblock kroki">
 <div class="content">
-<object type="image/svg+xml" data="_images/diag-88c86f81ab878ff2c8866d261743c0599b50c824.svg"><span class="alt">entity_0_30_objectref-docs.usp_antoraexport_objectpuml</span></object>
+<object type="image/svg+xml" data="_images/diag-d755c779db4c92f0f25a59448eadc8d182666fcc.svg"><span class="alt">entity_0_30_objectref-docs.usp_antoraexport_objectpuml</span></object>
 </div>
 </div>
 </div>
@@ -3383,6 +2936,7 @@ CREATE   PROCEDURE [docs].[usp_AntoraExport_ObjectPuml]
 , @ssis_execution_id BIGINT = NULL --only SSIS system variable ServerExecutionID should be used, or any other consistent number system, do not mix different number systems
 , @sub_execution_id INT = NULL --in case you log some sub_executions, for example in SSIS loops or sub packages
 , @parent_execution_log_id BIGINT = NULL --in case a sup procedure is called, the @current_execution_log_id of the parent procedure should be propagated here. It allowes call stack analyzing
+
 AS
 BEGIN
 DECLARE
@@ -3486,431 +3040,6 @@ EXEC [docs].[usp_PERSIST_RepoObject_Plantuml_T]
  , @parent_execution_log_id = @current_execution_log_id
 
 
-/*{"ReportUspStep":[{"Number":410,"Name":"export puml from [docs].[RepoObject_Plantuml_T]","has_logging":1,"is_condition":0,"is_inactive":0,"is_SubProcedure":0,"log_source_object":"[docs].[RepoObject_Plantuml_T]","log_flag_InsertUpdateDelete":"u"}]}*/
-PRINT CONCAT('usp_id;Number;Parent_Number: ',32,';',410,';',NULL);
-
-Declare db_cursor Cursor Local Fast_Forward For
-Select
-    cultures_name
-  , RepoObject_fullname2
-From
-    docs.RepoObject_OutputFilter_T
-Where
-    is_external = 0
-Order By
-    cultures_name
-  , RepoObject_fullname
-
-Open db_cursor
-
-Fetch Next From db_cursor
-Into
-    @cultures_name
-  , @Object_fullname2
-
-While @@Fetch_Status = 0
-Begin
-    Set @command
-        = 'bcp "SELECT [PlantumlEntity_1_1_ColRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
-          --
-          + @Object_fullname2
-          --
-          + ''' AND cultures_name = ''' + @cultures_name
-          --
-          + '''" queryout "'
-          --
-          + docs.fs_AntoraModuleFolder ( @cultures_name )
-          + '\partials\puml\entity_1_1_colref\' + docs.fs_cleanStringForFilename ( @Object_fullname2 ) + '.puml"'
-          --
-          + ' -S ' + @instanceName
-          --
-          + ' -d ' + @databaseName
-          --
-          + ' -c -C 65001'
-          --
-          + @TrustedUserPassword
-
-    Print @command
-
-    --Execute the BCP command
-    Exec sys.xp_cmdshell @command, no_output
-
-    Set @command
-        = 'bcp "SELECT [PlantumlEntity_1_1_FkRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
-          --
-          + @Object_fullname2
-          --
-          + ''' AND cultures_name = ''' + @cultures_name
-          --
-          + '''" queryout "'
-          --
-          + docs.fs_AntoraModuleFolder ( @cultures_name )
-          + '\partials\puml\entity_1_1_fk\' + docs.fs_cleanStringForFilename ( @Object_fullname2 ) + '.puml"'
-          --
-          + ' -S ' + @instanceName
-          --
-          + ' -d ' + @databaseName
-          --
-          + ' -c -C 65001'
-          --
-          + @TrustedUserPassword
-
-    Print @command
-
-    --Execute the BCP command
-    Exec sys.xp_cmdshell @command, no_output
-
-    Set @command
-        = 'bcp "SELECT [PlantumlEntity_1_1_ObjectRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
-          --
-          + @Object_fullname2
-          --
-          + ''' AND cultures_name = ''' + @cultures_name
-          --
-          + '''" queryout "'
-          --
-          + docs.fs_AntoraModuleFolder ( @cultures_name )
-          + '\partials\puml\entity_1_1_objectref\' + docs.fs_cleanStringForFilename ( @Object_fullname2 ) + '.puml"'
-          --
-          + ' -S ' + @instanceName
-          --
-          + ' -d ' + @databaseName
-          --
-          + ' -c -C 65001'
-          --
-          + @TrustedUserPassword
-
-    Print @command
-
-    --Execute the BCP command
-    Exec sys.xp_cmdshell @command, no_output
-
-    If
-    (
-        Select config.fs_get_parameter_value ( 'sync enable', 'dwh' )
-    ) = 1
-    Begin
-        Set @command
-            = 'bcp "SELECT [PlantumlEntity_0_30_ObjectRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
-              --
-              + @Object_fullname2
-              --
-              + ''' AND cultures_name = ''' + @cultures_name
-              --
-              + '''" queryout "'
-              --
-              + docs.fs_AntoraModuleFolder ( @cultures_name )
-              + '\partials\puml\entity_0_30_objectref\' + docs.fs_cleanStringForFilename ( @Object_fullname2 ) + '.puml"'
-              --
-              + ' -S ' + @instanceName
-              --
-              + ' -d ' + @databaseName
-              --
-              + ' -c -C 65001'
-              --
-              + @TrustedUserPassword
-
-        Print @command
-
-        --Execute the BCP command
-        Exec sys.xp_cmdshell @command, no_output
-
-        Set @command
-            = 'bcp "SELECT [PlantumlEntity_30_0_ObjectRef] FROM [docs].[RepoObject_Plantuml_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
-              --
-              + @Object_fullname2
-              --
-              + ''' AND cultures_name = ''' + @cultures_name
-              --
-              + '''" queryout "'
-              --
-              + docs.fs_AntoraModuleFolder ( @cultures_name )
-              + '\partials\puml\entity_30_0_objectref\' + docs.fs_cleanStringForFilename ( @Object_fullname2 ) + '.puml"'
-              --
-              + ' -S ' + @instanceName
-              --
-              + ' -d ' + @databaseName
-              --
-              + ' -c -C 65001'
-              --
-              + @TrustedUserPassword
-
-        Print @command
-
-        --Execute the BCP command
-        Exec sys.xp_cmdshell @command, no_output
-    End
-
-    Fetch Next From db_cursor
-    Into
-        @cultures_name
-      , @Object_fullname2
-End
-
-Close db_cursor
-Deallocate db_cursor
-
--- Logging START --
-SET @rows = @@ROWCOUNT
-SET @step_id = @step_id + 1
-SET @step_name = 'export puml from [docs].[RepoObject_Plantuml_T]'
-SET @source_object = '[docs].[RepoObject_Plantuml_T]'
-SET @target_object = NULL
-
-EXEC logs.usp_ExecutionLog_insert
- @execution_instance_guid = @execution_instance_guid
- , @ssis_execution_id = @ssis_execution_id
- , @sub_execution_id = @sub_execution_id
- , @parent_execution_log_id = @parent_execution_log_id
- , @current_execution_guid = @current_execution_guid
- , @proc_id = @proc_id
- , @proc_schema_name = @proc_schema_name
- , @proc_name = @proc_name
- , @event_info = @event_info
- , @step_id = @step_id
- , @step_name = @step_name
- , @source_object = @source_object
- , @target_object = @target_object
- , @updated = @rows
--- Logging END --
-
-/*{"ReportUspStep":[{"Number":420,"Name":"export FROM [docs].[RepoObject_Plantuml_Entity_T]","has_logging":1,"is_condition":0,"is_inactive":0,"is_SubProcedure":0,"log_source_object":"[docs].[RepoObject_Plantuml_Entity_T]","log_flag_InsertUpdateDelete":"u"}]}*/
-PRINT CONCAT('usp_id;Number;Parent_Number: ',32,';',420,';',NULL);
-
-Declare db_cursor Cursor Local Fast_Forward For
-Select
-    cultures_name
-  , RepoObject_fullname2
-From
-    docs.RepoObject_OutputFilter_T
-Where
-    is_external = 0
-Order By
-    cultures_name
-  , RepoObject_fullname
-
-Open db_cursor
-
-Fetch Next From db_cursor
-Into
-    @cultures_name
-  , @Object_fullname2
-
-While @@Fetch_Status = 0
-Begin
-    Set @command
-        = 'bcp "SELECT docs.fs_PumlHeaderTopToBottom () + [RepoObject_Puml] FROM [docs].[RepoObject_Plantuml_Entity_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
-          + @Object_fullname2
-          --
-          + ''' AND cultures_name = ''' + @cultures_name
-          --
-          + '''" queryout "'
-          --
-          + docs.fs_AntoraModuleFolder ( @cultures_name )
-          + '\partials\puml\entity\' + docs.fs_cleanStringForFilename ( @Object_fullname2 ) + '.puml"'
-          --
-          + ' -S ' + @instanceName
-          --
-          + ' -d ' + @databaseName
-          --
-          + ' -c -C 65001'
-          --
-          + @TrustedUserPassword
-
-    Print @command
-
-    --Execute the BCP command
-    Exec sys.xp_cmdshell @command, no_output
-
-    Set @command
-        = 'bcp "SELECT docs.fs_PumlHeaderTopToBottom () + [RepoObject_PumlOnlyPK] FROM [docs].[RepoObject_Plantuml_Entity_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
-          + @Object_fullname2
-          --
-          + ''' AND cultures_name = ''' + @cultures_name
-          --
-          + '''" queryout "'
-          --
-          + docs.fs_AntoraModuleFolder ( @cultures_name )
-          + '\partials\puml\entity_pk\' + docs.fs_cleanStringForFilename ( @Object_fullname2 ) + '.puml"'
-          --
-          + ' -S ' + @instanceName
-          --
-          + ' -d ' + @databaseName
-          --
-          + ' -c -C 65001'
-          --
-          + @TrustedUserPassword
-
-    Print @command
-
-    --Execute the BCP command
-    Exec sys.xp_cmdshell @command, no_output
-
-    Set @command
-        = 'bcp "SELECT docs.fs_PumlHeaderTopToBottom () + [RepoObject_PumlOnlyPkOrIndex] FROM [docs].[RepoObject_Plantuml_Entity_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
-          + @Object_fullname2
-          --
-          + ''' AND cultures_name = ''' + @cultures_name
-          --
-          + '''" queryout "'
-          --
-          + docs.fs_AntoraModuleFolder ( @cultures_name )
-          + '\partials\puml\entity_pk_or_index\' + docs.fs_cleanStringForFilename ( @Object_fullname2 ) + '.puml"'
-          --
-          + ' -S ' + @instanceName
-          --
-          + ' -d ' + @databaseName
-          --
-          + ' -c -C 65001'
-          --
-          + @TrustedUserPassword
-
-    Print @command
-
-    --Execute the BCP command
-    Exec sys.xp_cmdshell @command, no_output
-
-    Set @command
-        = 'bcp "SELECT docs.fs_PumlHeaderTopToBottom () + [RepoObject_PumlOnlyPkOrNotHidden] FROM [docs].[RepoObject_Plantuml_Entity_T] WITH (READUNCOMMITTED) where [RepoObject_fullname2] = '''
-          + @Object_fullname2
-          --
-          + ''' AND cultures_name = ''' + @cultures_name
-          --
-          + '''" queryout "'
-          --
-          + docs.fs_AntoraModuleFolder ( @cultures_name )
-          + '\partials\puml\entity_pk_or_nothidden\' + docs.fs_cleanStringForFilename ( @Object_fullname2 ) + '.puml"'
-          --
-          + ' -S ' + @instanceName
-          --
-          + ' -d ' + @databaseName
-          --
-          + ' -c -C 65001'
-          --
-          + @TrustedUserPassword
-
-    Print @command
-
-    --Execute the BCP command
-    Exec sys.xp_cmdshell @command, no_output
-
-    Fetch Next From db_cursor
-    Into
-        @cultures_name
-      , @Object_fullname2
-End
-
-Close db_cursor
-Deallocate db_cursor
-
--- Logging START --
-SET @rows = @@ROWCOUNT
-SET @step_id = @step_id + 1
-SET @step_name = 'export FROM [docs].[RepoObject_Plantuml_Entity_T]'
-SET @source_object = '[docs].[RepoObject_Plantuml_Entity_T]'
-SET @target_object = NULL
-
-EXEC logs.usp_ExecutionLog_insert
- @execution_instance_guid = @execution_instance_guid
- , @ssis_execution_id = @ssis_execution_id
- , @sub_execution_id = @sub_execution_id
- , @parent_execution_log_id = @parent_execution_log_id
- , @current_execution_guid = @current_execution_guid
- , @proc_id = @proc_id
- , @proc_schema_name = @proc_schema_name
- , @proc_name = @proc_name
- , @event_info = @event_info
- , @step_id = @step_id
- , @step_name = @step_name
- , @source_object = @source_object
- , @target_object = @target_object
- , @updated = @rows
--- Logging END --
-
-/*{"ReportUspStep":[{"Number":425,"Name":"export FROM [docs].[Schema_puml] [PumlSchemaSsasEr]","has_logging":1,"is_condition":0,"is_inactive":0,"is_SubProcedure":0,"log_source_object":"[docs].[Schema_puml]","log_flag_InsertUpdateDelete":"u"}]}*/
-PRINT CONCAT('usp_id;Number;Parent_Number: ',32,';',425,';',NULL);
-
-Declare db_cursor Cursor Local Fast_Forward For
-Select
-    cultures_name
-  , RepoSchema_name
-From
-    docs.Schema_puml
-Where
-    is_ssas = 1
-Order By
-    cultures_name
-  , RepoSchema_name
-
-Open db_cursor
-
-Fetch Next From db_cursor
-Into
-    @cultures_name
-  , @SchemaName
-
-While @@Fetch_Status = 0
-Begin
-    --Dynamically construct the BCP command
-    --
-    Set @command
-        = 'bcp "SELECT [PumlSchemaSsasEr] FROM [docs].[Schema_puml] WITH (READUNCOMMITTED) where [RepoSchema_name] = '''
-          --
-          + @SchemaName
-          --
-          + ''' AND cultures_name = ''' + @cultures_name
-          --
-          + '''" queryout "'
-          --
-          + docs.fs_AntoraModuleFolder ( @cultures_name )
-          + '\partials\puml\schema_ssas_er\' + docs.fs_cleanStringForFilename ( @SchemaName ) + '.puml"'
-          --
-          + ' -S ' + @instanceName
-          --
-          + ' -d ' + @databaseName
-          --
-          + ' -c -C 65001'
-          --
-          + @TrustedUserPassword
-
-    Print @command
-
-    --Execute the BCP command
-    Exec sys.xp_cmdshell @command, no_output
-
-    Fetch Next From db_cursor
-    Into
-        @cultures_name
-      , @SchemaName
-End
-
-Close db_cursor
-Deallocate db_cursor
-
--- Logging START --
-SET @rows = @@ROWCOUNT
-SET @step_id = @step_id + 1
-SET @step_name = 'export FROM [docs].[Schema_puml] [PumlSchemaSsasEr]'
-SET @source_object = '[docs].[Schema_puml]'
-SET @target_object = NULL
-
-EXEC logs.usp_ExecutionLog_insert
- @execution_instance_guid = @execution_instance_guid
- , @ssis_execution_id = @ssis_execution_id
- , @sub_execution_id = @sub_execution_id
- , @parent_execution_log_id = @parent_execution_log_id
- , @current_execution_guid = @current_execution_guid
- , @proc_id = @proc_id
- , @proc_schema_name = @proc_schema_name
- , @proc_name = @proc_name
- , @event_info = @event_info
- , @step_id = @step_id
- , @step_name = @step_name
- , @source_object = @source_object
- , @target_object = @target_object
- , @updated = @rows
--- Logging END --
-
 --
 --finish your own code here
 --keep the code between "END" and the end of the procedure unchanged!
@@ -3946,7 +3075,7 @@ END</code></pre>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="docs.usp_antoraexport_objectpartialproperties.html">docs.usp_AntoraExport_ObjectPartialProperties</a></span>
+  <span class="prev"><a href="docs.usp_antoraexport_objectpartialscontent.html">docs.usp_AntoraExport_ObjectPartialsContent</a></span>
   <span class="next"><a href="docs.usp_antoraexport_objectrefcyclic.html">docs.usp_AntoraExport_ObjectRefCyclic</a></span>
 </nav>
 </article>

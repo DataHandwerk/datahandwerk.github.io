@@ -6,8 +6,8 @@
     <title>Backup and restore repository database :: DataHandwerk Docs</title>
     <link rel="canonical" href="https://datahandwerk.gitlab.io/dhw/user-guide/backup-repo-db.html">
     <link rel="prev" href="create-update-connect-repo-db.html">
-    <link rel="next" href="sqlparse-to-get-col-references.html">
-    <meta name="generator" content="Antora 3.0.0-beta.1">
+    <link rel="next" href="documentation-generator.html">
+    <meta name="generator" content="Antora 3.0.0-beta.2">
     <link rel="stylesheet" href="../../_/css/site.css">
     <link rel="stylesheet" href="../../_/css/custom.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4RM6Q8D27"></script>
@@ -102,6 +102,9 @@
     <a class="nav-link" href="../sqldb/config.usp_connect_database.html">config.usp_connect_database</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/config.usp_extract_dacpac.html">config.usp_extract_dacpac</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/config.usp_init_parameter.html">config.usp_init_parameter</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -178,6 +181,21 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/dbo.crlf.html">dbo.crlf</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/dbo.usp_altertablesdatacompression.html">dbo.usp_AlterTablesDataCompression</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/dbo.usp_generate_merge.html">dbo.usp_generate_merge</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/dbo.usp_longprint.html">dbo.usp_longprint</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/dbo.usp_refreshviews.html">dbo.usp_RefreshViews</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/dbo.usp_truncatetables.html">dbo.usp_TruncateTables</a>
   </li>
 </ul>
   </li>
@@ -264,6 +282,9 @@
     <a class="nav-link" href="../sqldb/docs.ftv_repoobject_reference_plantuml_entityreflist.html">docs.ftv_RepoObject_Reference_PlantUml_EntityRefList</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/docs.measure_measurepropertylist.html">docs.Measure_MeasurePropertyList</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/docs.objectrefcyclic.html">docs.ObjectRefCyclic</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -292,6 +313,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/docs.repoobject_indexlist_t.html">docs.RepoObject_IndexList_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/docs.repoobject_measuredescriptionlist.html">docs.RepoObject_MeasureDescriptionList</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/docs.repoobject_measurelist.html">docs.RepoObject_MeasureList</a>
@@ -441,7 +465,7 @@
     <a class="nav-link" href="../sqldb/docs.usp_antoraexport_objectpagetemplate.html">docs.usp_AntoraExport_ObjectPageTemplate</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/docs.usp_antoraexport_objectpartialproperties.html">docs.usp_AntoraExport_ObjectPartialProperties</a>
+    <a class="nav-link" href="../sqldb/docs.usp_antoraexport_objectpartialscontent.html">docs.usp_AntoraExport_ObjectPartialsContent</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/docs.usp_antoraexport_objectpuml.html">docs.usp_AntoraExport_ObjectPuml</a>
@@ -462,7 +486,7 @@
     <a class="nav-link" href="../sqldb/docs.usp_antoraexport_ssispagetemplate.html">docs.usp_AntoraExport_SsisPageTemplate</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/docs.usp_antoraexport_ssispartialproperties.html">docs.usp_AntoraExport_SsisPartialProperties</a>
+    <a class="nav-link" href="../sqldb/docs.usp_antoraexport_ssispartialscontent.html">docs.usp_AntoraExport_SsisPartialsContent</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/docs.usp_antoraexport_ssispuml.html">docs.usp_AntoraExport_SsisPuml</a>
@@ -564,6 +588,15 @@
     <a class="nav-link" href="../sqldb/property.fs_get_repoobjectproperty_nvarchar.html">property.fs_get_RepoObjectProperty_nvarchar</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/property.measureproperty.html">property.MeasureProperty</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/property.propertyname_measure.html">property.PropertyName_Measure</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/property.propertyname_measure_t.html">property.PropertyName_Measure_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/property.propertyname_repoobject.html">property.PropertyName_RepoObject</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -646,6 +679,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/property.usp_external_repoobjectproperty.html">property.usp_external_RepoObjectProperty</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/property.usp_measureproperty_set.html">property.usp_MeasureProperty_set</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/property.usp_persist_propertyname_measure_t.html">property.usp_PERSIST_PropertyName_Measure_T</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/property.usp_persist_propertyname_repoobject_t.html">property.usp_PERSIST_PropertyName_RepoObject_T</a>
@@ -1014,6 +1053,12 @@
     <a class="nav-link" href="../sqldb/repo.foreignkey_virtual_indexes.html">repo.ForeignKey_virtual_Indexes</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.fs_measure_fullname2.html">repo.fs_Measure_fullname2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.fs_repoobject_fullname2.html">repo.fs_RepoObject_fullname2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.index_columlist.html">repo.Index_ColumList</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -1104,10 +1149,10 @@
     <a class="nav-link" href="../sqldb/repo.indexreferencedreferencing_hasfullcolumnsinreferencing.html">repo.IndexReferencedReferencing_HasFullColumnsInReferencing</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/repo.measures.html">repo.Measures</a>
+    <a class="nav-link" href="../sqldb/repo.measure.html">repo.Measure</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/repo.measures_union.html">repo.Measures_union</a>
+    <a class="nav-link" href="../sqldb/repo.measure_union.html">repo.Measure_union</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.repoobject.html">repo.RepoObject</a>
@@ -1132,6 +1177,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.repoobject_gross.html">repo.RepoObject_gross</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.repoobject_gross_persistence.html">repo.RepoObject_gross_persistence</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.repoobject_gross2.html">repo.RepoObject_gross2</a>
@@ -1285,6 +1333,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.usp_persist_reposchema_ssas_tgt.html">repo.usp_PERSIST_RepoSchema_ssas_tgt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.usp_persistence_delete.html">repo.usp_persistence_delete</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.usp_persistence_set.html">repo.usp_persistence_set</a>
@@ -1524,13 +1575,13 @@
     <a class="nav-link" href="../sqldb/ssas.indexcolumn_union.html">ssas.IndexColumn_union</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/ssas.measures_translation.html">ssas.Measures_translation</a>
+    <a class="nav-link" href="../sqldb/ssas.measure_translation.html">ssas.Measure_translation</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/ssas.measures_translation_displayfolder_union.html">ssas.Measures_translation_displayfolder_union</a>
+    <a class="nav-link" href="../sqldb/ssas.measure_translation_displayfolder_union.html">ssas.Measure_translation_displayfolder_union</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/ssas.measures_translation_t.html">ssas.Measures_translation_T</a>
+    <a class="nav-link" href="../sqldb/ssas.measure_translation_t.html">ssas.Measure_translation_T</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/ssas.model_json.html">ssas.model_json</a>
@@ -1803,7 +1854,7 @@
     <a class="nav-link" href="../sqldb/ssas.tmschema_variations.html">ssas.TMSCHEMA_VARIATIONS</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/ssas.usp_persist_measures_translation_t.html">ssas.usp_PERSIST_Measures_translation_T</a>
+    <a class="nav-link" href="../sqldb/ssas.usp_persist_measure_translation_t.html">ssas.usp_PERSIST_Measure_translation_T</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/ssas.usp_persist_model_json_31_tables_t.html">ssas.usp_PERSIST_model_json_31_tables_T</a>
@@ -2288,24 +2339,15 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/tool.ftv_extract_substrings.html">tool.ftv_extract_substrings</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/tool.usp_generate_merge.html">tool.usp_generate_merge</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/tool.usp_longprint.html">tool.usp_longprint</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/tool.usp_refreshviews.html">tool.usp_RefreshViews</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/tool.usp_truncatetables.html">tool.usp_TruncateTables</a>
-  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../sqldb/nav/nav-schema-uspgenerator.html">uspgenerator</a>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/uspgenerator.fs_usp_fullname.html">uspgenerator.fs_usp_fullname</a>
+  </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/uspgenerator.ftv_generatoruspstep_sql.html">uspgenerator.ftv_GeneratorUspStep_sql</a>
   </li>
@@ -2341,6 +2383,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/uspgenerator.generatoruspstep_sql.html">uspgenerator.GeneratorUspStep_Sql</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/uspgenerator.usp_copy_procedure.html">uspgenerator.usp_copy_procedure</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/uspgenerator.usp_generatorusp_insert_update_persistence.html">uspgenerator.usp_GeneratorUsp_insert_update_persistence</a>
@@ -2382,7 +2427,16 @@
     <a class="nav-link" href="../sqldb/workflow.proceduredependency_input_persistencedependency_s.html">workflow.ProcedureDependency_input_PersistenceDependency_S</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/workflow.proceduredependency_persistencedependency_src.html">workflow.ProcedureDependency_PersistenceDependency_src</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/workflow.proceduredependency_persistencedependency_tgt.html">workflow.ProcedureDependency_PersistenceDependency_tgt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/workflow.usp_persist_proceduredependency_input_persistencedependency.html">workflow.usp_PERSIST_ProcedureDependency_input_PersistenceDependency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/workflow.usp_persist_proceduredependency_persistencedependency_tgt.html">workflow.usp_PERSIST_ProcedureDependency_PersistenceDependency_tgt</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/workflow.usp_persist_workflow_proceduredependency_t.html">workflow.usp_PERSIST_Workflow_ProcedureDependency_T</a>
@@ -2458,7 +2512,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../sqldb/other/objectrefcyclic.html">Cyclic Object References</a>
+    <a class="nav-link" href="../sqldb/objectrefcyclic.html">Cyclic Object References</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../sqldb/other/indexsemanticgroup.html">Index SemanticGroup</a>
@@ -2476,6 +2530,9 @@
     <a class="nav-link" href="backup-repo-db.html">Backup and restore repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="documentation-generator.html">Database documentation generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
 <ul class="nav-list">
@@ -2491,16 +2548,13 @@
     <a class="nav-link" href="properties-inheritance.html">Properties Inheritance</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="documentation-generator.html">Database documentation generator</a>
-  </li>
-  <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="execution-log.html">Execution log</a>
-  </li>
-  <li class="nav-item" data-depth="1">
     <a class="nav-link" href="uspgenerator.html">usp generator</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="persistence-generator.html">Persistence generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="execution-log.html">Execution log</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="ssms-configuration.html">SSMS configuration</a>
@@ -2524,6 +2578,22 @@
       <ul class="versions">
         <li class="version is-current is-latest">
           <a href="../index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../aw/index.html">Demo AdventureWorks</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../aw/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../ssis/index.html">Demo SSIS</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ssis/index.html">default</a>
         </li>
       </ul>
     </li>
@@ -2573,13 +2643,23 @@
 <p><a href="https://docs.microsoft.com/en-us/sql/relational-databases/data-tier-applications/data-tier-applications?view=sql-server-ver15">Data-tier Applications</a></p>
 </div>
 <div class="paragraph">
-<p>BACPAC, which are created by an "export", cannot be created from the repository database, because a validation is mandatory before the creation. This validation fails because the database is connected to other databases via synonyms and refers to system objects.</p>
+<p><strong>BACPAC</strong>, which are created by an "export", <strong>cannot be created from the repository database</strong>, because a validation is mandatory before the creation. This validation fails because the database is connected to other databases via synonyms and refers to system objects.</p>
 </div>
 <div class="paragraph">
-<p>However, it is possible to "extract" DACPAC with data if database validation is turned off in the process.</p>
+<p>However, <strong>it is possible to "extract" DACPAC with data</strong> if database validation is turned off in the process.</p>
 </div>
 <div class="paragraph">
-<p>This is not possible in SSMS or Azure Data Studio. SSMS does not allow you to turn off validation. ADS has validation turned off, but does not allow creating DACPAC with data. Only BACPAC can be created with data.</p>
+<p>This is not possible in SSMS or Azure Data Studio.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>SSMS does not allow you to turn off validation.</p>
+</li>
+<li>
+<p>ADS has validation turned off, but does not allow creating DACPAC with data. Only BACPAC can be created with data.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p>The contents of a DACPAC can also be viewed (and extracted) with a program that can browse zip archives.</p>
@@ -2593,7 +2673,7 @@
 <div class="sect2">
 <h3 id="_command_line_sqlpackage_exe"><a class="anchor" href="#_command_line_sqlpackage_exe"></a>Command Line - sqlpackage.exe</h3>
 <div class="paragraph">
-<p>Alle oben genannten GUI verwenden letztendlich sqlpackage.exe, man kann dieses Programm also auch direkt verwenden.</p>
+<p>All the above GUI eventually use sqlpackage.exe, so you can use this program directly.</p>
 </div>
 <div class="paragraph">
 <p><a href="https://docs.microsoft.com/en-us/sql/tools/sqlpackage/sqlpackage?view=sql-server-ver15">sqlpackage.exe</a></p>
@@ -2615,41 +2695,49 @@
 </ul>
 </div>
 <div class="paragraph">
-<p>It is necessary to prevent the extraction of the data of the graph tables, otherwise there will be problems with the recovery of the data. Instead of using <code>/p:ExtractAllTableData=TRUE</code>, one could list all tables individually, using <code>/p:TableData=(STRING)</code>. Alternatively, all data for all tables is extracted and the data for the graph tables is then manually deleted from DACPAC:</p>
+<p>Create DACPAC</p>
 </div>
 <div class="paragraph">
-<p>If the data of the graph tables have already been extracted, then you can open the DACPAC like a ZIP archive and delete these data there.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/backup-repo-db_2021-07-14-16-36-43.png" alt="backup repo db 2021 07 14 16 36 43">
-</div>
+<p>to get the required command, use <a href="../sqldb/config.usp_extract_dacpac.html" class="xref page">config.usp_extract_dacpac</a>. When you execute this procedure you get this kind of code.</p>
 </div>
 <div class="exampleblock">
+<div class="title">Example 1. sqlpackage.exe /Action:Extract</div>
 <div class="content">
 <div class="literalblock">
 <div class="content">
-<pre>"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\150\sqlpackage.exe" /TargetFile:"D:\Repos\GitHub\DataHandwerk\DataHandwerk-toolkit-mssql\db_DataHandwerk\Snapshots\dhw_self.dacpac" /Action:Extract /SourceServerName:"localhost\sql2019" /SourceDatabaseName:"dhw_self" /p:ExtractAllTableData=TRUE</pre>
+<pre>"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\150\sqlpackage.exe" /TargetFile:"D:\Repos\gitlab\DataHandwerk\DataHandwerk-toolkit-mssql\dhw_dacpac\dhw_self.dacpac" /Action:Extract /SourceServerName:"ACER-F17\SQL2019" /SourceDatabaseName:"dhw_self" /p:IgnorePermissions=TRUE /p:IgnoreUserLoginMappings=TRUE /p:TableData=[config].[Parameter] /p:TableData=[config].[SsasDatabasename] /p:TableData=[configT].[spt_values] /p:TableData=[property].[external_RepoObjectColumnProperty] /p:TableData=[property].[external_RepoObjectProperty] /p:TableData=[property].[PropertyName_RepoObject_T] /p:TableData=[property].[PropertyName_RepoObjectColumn_T] /p:TableData=[property].[RepoObjectColumnProperty] /p:TableData=[property].[RepoObjectProperty] /p:TableData=[property].[RepoSchemaProperty] /p:TableData=[reference].[additional_Reference] /p:TableData=[reference].[additional_Reference_database_T] /p:TableData=[reference].[additional_Reference_Object_T] /p:TableData=[reference].[additional_Reference_ObjectColumn_T] /p:TableData=[reference].[RepoObject_QueryPlan] /p:TableData=[reference].[RepoObject_reference_T] /p:TableData=[reference].[RepoObject_ReferenceTree] /p:TableData=[reference].[RepoObjectColumn_reference_T] /p:TableData=[reference].[RepoObjectColumnSource_virtual] /p:TableData=[reference].[RepoObjectSource_FirstResultSet] /p:TableData=[reference].[RepoObjectSource_QueryPlan] /p:TableData=[reference].[RepoObjectSource_virtual] /p:TableData=[repo].[ForeignKey_Indexes_union_T] /p:TableData=[repo].[ForeignKey_virtual] /p:TableData=[repo].[Index_ColumList_T] /p:TableData=[repo].[Index_Settings] /p:TableData=[repo].[Index_ssas_T] /p:TableData=[repo].[Index_virtual] /p:TableData=[repo].[IndexColumn_ssas_T] /p:TableData=[repo].[IndexColumn_union_T] /p:TableData=[repo].[IndexColumn_virtual] /p:TableData=[repo].[RepoObject] /p:TableData=[repo].[RepoObject_persistence] /p:TableData=[repo].[RepoObjectColumn] /p:TableData=[repo].[RepoSchema] /p:TableData=[sqlparse].[RepoObject_SqlModules] /p:TableData=[sqlparse].[RepoObject_SqlModules_41_from_T] /p:TableData=[sqlparse].[RepoObject_SqlModules_61_SelectIdentifier_Union_T] /p:TableData=[ssas].[Measures_translation_T] /p:TableData=[ssas].[model_json] /p:TableData=[ssas].[model_json_31_tables_T] /p:TableData=[ssas].[model_json_311_tables_columns_T] /p:TableData=[ssas].[model_json_312_tables_measures_T] /p:TableData=[ssas].[model_json_32_relationships_T] /p:TableData=[ssas].[model_json_33_dataSources_T] /p:TableData=[ssas].[model_json_3411_cultures_translations_model_T] /p:TableData=[ssas].[RepoObjectColumn_translation_T] /p:TableData=[ssis].[Package] /p:TableData=[ssis].[PackageConnection] /p:TableData=[ssis].[PackageFlow] /p:TableData=[ssis].[PackageParameter] /p:TableData=[ssis].[PackageTask] /p:TableData=[ssis].[PackageTask_Dft_Component] /p:TableData=[ssis].[PackageTask_Dft_Component_input] /p:TableData=[ssis].[PackageTask_Dft_Component_input_externalMetadataColumn] /p:TableData=[ssis].[PackageTask_Dft_Component_input_inputColumn] /p:TableData=[ssis].[PackageTask_Dft_Component_output] /p:TableData=[ssis].[PackageTask_Dft_Component_output_externalMetadataColumn] /p:TableData=[ssis].[PackageTask_Dft_Component_output_outputcolumn] /p:TableData=[ssis].[PackageTask_Dft_SrcDest] /p:TableData=[ssis].[PackageTask_Sql_Parameter] /p:TableData=[ssis].[PackageVariable] /p:TableData=[ssis].[Project] /p:TableData=[ssis].[ProjectConnection] /p:TableData=[uspgenerator].[GeneratorUsp] /p:TableData=[uspgenerator].[GeneratorUspParameter] /p:TableData=[uspgenerator].[GeneratorUspStep] /p:TableData=[workflow].[Connection] /p:TableData=[workflow].[ProcedureDependency] /p:TableData=[workflow].[Workflow] /p:TableData=[workflow].[Workflow_ProcedureDependency_T] /p:TableData=[workflow].[Workflow_ProcedureDependency_T_bidirectional_T] /p:TableData=[workflow].[WorkflowStep] /p:TableData=[workflow].[WorkflowStep_Sortorder]</pre>
 </div>
 </div>
 </div>
 </div>
-<div class="exampleblock">
-<div class="content">
-<div class="literalblock">
-<div class="content">
-<pre>"C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\150\sqlpackage.exe" /TargetFile:"C:\Users\GoerGer\Documents\dacpac\dhw_BudgetControlling.dacpac" /Action:Extract /SourceServerName:"hahnbidev04" /SourceDatabaseName:"dhw_BudgetControlling" /p:ExtractAllTableData=TRUE</pre>
+<div class="paragraph">
+<p>execute this command in a Command Prompt or Powershell terminal.</p>
 </div>
+<div class="paragraph">
+<p>Graph tables are no longer used because the handling is too complex. The following note is therefore obsolete.</p>
 </div>
-</div>
+<div class="ulist">
+<ul>
+<li>
+<p>It is necessary to prevent the extraction of the data of the graph tables, otherwise there will be problems with the recovery of the data. Instead of using <code>/p:ExtractAllTableData=TRUE</code>, one could list all tables individually, using <code>/p:TableData=(STRING)</code>. Alternatively, all data for all tables is extracted and the data for the graph tables is then manually deleted from DACPAC:</p>
+</li>
+<li>
+<p>If the data of the graph tables have already been extracted, then you can open the DACPAC like a ZIP archive and delete these data there.<br>
+image::backup-repo-db_2021-07-14-16-36-43.png[]</p>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_deploy_dacpac_including_data"><a class="anchor" href="#_deploy_dacpac_including_data"></a>deploy DACPAC including data</h3>
 <div class="paragraph">
-<p>It is possible to restore the database including data using SSMS. When trying to restore data from graph tables, an error occurs. The error messages are more visible if <code>sqlpackage.exe</code> is used with <code>publish</code> action.</p>
+<p>It is possible to restore the database including data using SSMS. When trying to restore data from graph tables, an error occurs.</p>
+</div>
+<div class="paragraph">
+<p>The error messages are better visible if <code>sqlpackage.exe</code> is used with <code>publish</code> action.</p>
 </div>
 <div class="exampleblock">
+<div class="title">Example 2. sqlpackage.exe /Action:Publish</div>
 <div class="content">
 <div class="literalblock">
 <div class="content">
@@ -2662,6 +2750,7 @@
 <p>If the DACPAC contains data for graph tables using edge constraints, then the database data cannot be restored, because <code>TRUNCATE</code> is not allowed in this case. (This is a bug in sqlpackage.exe)</p>
 </div>
 <div class="listingblock">
+<div class="title">sqlpackage error output</div>
 <div class="content">
 <pre>Updating database (Failed)
 *** Could not deploy package.
@@ -2672,14 +2761,14 @@ TRUNCATE TABLE [graph].[RepoObject];</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>If this error occurs (and it occurs when you extract all data of all tables, and there is content for graph tables), then the data of the tables in the schema <code>graph</code> must be deleted from DACPAC. See above.</p>
+<p>If this error occurs (and it occurs when you extract data of graph tables), then the data of the tables in the schema <code>graph</code> must be deleted from DACPAC. See above.</p>
 </div>
 </div>
 </div>
 </div>
 <nav class="pagination">
   <span class="prev"><a href="create-update-connect-repo-db.html">Create, update and connect repository database</a></span>
-  <span class="next"><a href="sqlparse-to-get-col-references.html">SqlParse to detect column references</a></span>
+  <span class="next"><a href="documentation-generator.html">Database documentation generator</a></span>
 </nav>
 </article>
   </div>

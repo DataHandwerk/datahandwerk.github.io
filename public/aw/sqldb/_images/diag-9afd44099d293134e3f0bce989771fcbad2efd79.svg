@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="212px" preserveAspectRatio="none" style="width:363px;height:212px;background:#FFFFFF;" version="1.1" viewBox="0 0 363 212" width="363px" zoomAndPan="magnify"><defs><filter height="300%" id="fkk2ne4qyxwer" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[aaa33348b87733f47856b642ed89103c]
+class dbo.ErrorLog--><rect codeLine="28" fill="#FFFFFF" filter="url(#fkk2ne4qyxwer)" height="173.5993" id="dbo.ErrorLog" style="stroke:#A80036;stroke-width:1.5;" width="188" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="91.5" y="24.0001">«U»</text><a href="../dbo.errorlog.html" target="_top" title="../dbo.errorlog.html" xlink:actuate="onRequest" xlink:href="../dbo.errorlog.html" xlink:show="new" xlink:title="../dbo.errorlog.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="69" x="66.5" y="38.4002">dbo.ErrorLog</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="194" y1="45.8002" y2="45.8002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="53.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="58" x="27" y="60.8001">ErrorLogID</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="25" x="88" y="60.8001">: (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="73" x="27" y="74">ErrorLine : (int)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="80.2"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="160" x="27" y="87.1999">ErrorMessage : (nvarchar(4000))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="93.3999"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="92" x="27" y="100.3998">ErrorNumber : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="162" x="27" y="113.5997">ErrorProcedure : (nvarchar(126))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="91" x="27" y="126.7996">ErrorSeverity : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="27" y="139.9995">ErrorState : (int)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="146.1995"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="107" x="27" y="153.1994">ErrorTime : (datetime)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="159.3994"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="111" x="27" y="166.3993">UserName : (sysname)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="194" y1="172.5993" y2="172.5993"/><!--MD5=[c8bb458453894cc416e6f53a48a8bbdc]
+class dbo.uspLogError--><rect codeLine="41" fill="#00FFFF" filter="url(#fkk2ne4qyxwer)" height="54.8002" id="dbo.uspLogError" style="stroke:#A80036;stroke-width:1.5;" width="94" x="255" y="66.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="293" y="83.5001">«P»</text><a href="../dbo.usplogerror.html" target="_top" title="../dbo.usplogerror.html" xlink:actuate="onRequest" xlink:href="../dbo.usplogerror.html" xlink:show="new" xlink:title="../dbo.usplogerror.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="88" x="258" y="97.9002">dbo.uspLogError</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="256" x2="348" y1="105.3002" y2="105.3002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="256" x2="348" y1="113.3002" y2="113.3002"/><!--MD5=[f617a9e8051f25f9d5317318cf7b57fa]
+reverse link dbo.ErrorLog to dbo.uspLogError--><path codeLine="45" d="M200.44,94 C219.43,94 238.47,94 254.8,94 " fill="none" id="dbo.ErrorLog-backto-dbo.uspLogError" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="195.09,94,204.09,98,200.09,94,204.09,90,195.09,94" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="191" x="79.5" y="203.5993">The diagram is interactive and contains links.</text><!--MD5=[09457f982b8329b131380b57652c22ef]
+@startuml
+left to right direction
+'top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>>  Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>>  White
+  BackgroundColor<<V>>  WhiteSmoke
+  BackgroundColor<<X>>  Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../dbo.errorlog.html dbo.ErrorLog]]" as dbo.ErrorLog << U >> {
+  - **ErrorLogID** : (int)
+  ErrorLine : (int)
+  - ErrorMessage : (nvarchar(4000))
+  - ErrorNumber : (int)
+  ErrorProcedure : (nvarchar(126))
+  ErrorSeverity : (int)
+  ErrorState : (int)
+  - ErrorTime : (datetime)
+  - UserName : (sysname)
+  - -
+}
+
+entity "[[../dbo.usplogerror.html dbo.uspLogError]]" as dbo.uspLogError << P >> {
+  - -
+}
+
+dbo.ErrorLog <.. dbo.uspLogError
+
+
+footer The diagram is interactive and contains links.
+@enduml
+
+@startuml
+left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>>  Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>>  White
+  BackgroundColor<<V>>  WhiteSmoke
+  BackgroundColor<<X>>  Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../dbo.errorlog.html dbo.ErrorLog]]" as dbo.ErrorLog << U >> {
+  - **ErrorLogID** : (int)
+  ErrorLine : (int)
+  - ErrorMessage : (nvarchar(4000))
+  - ErrorNumber : (int)
+  ErrorProcedure : (nvarchar(126))
+  ErrorSeverity : (int)
+  ErrorState : (int)
+  - ErrorTime : (datetime)
+  - UserName : (sysname)
+  - -
+}
+
+entity "[[../dbo.usplogerror.html dbo.uspLogError]]" as dbo.uspLogError << P >> {
+  - -
+}
+
+dbo.ErrorLog <.. dbo.uspLogError
+
+
+footer The diagram is interactive and contains links.
+@enduml
+
+PlantUML version 1.2021.10(Mon Aug 30 13:43:48 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

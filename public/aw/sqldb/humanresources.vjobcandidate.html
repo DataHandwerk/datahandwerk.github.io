@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HumanResources.vJobCandidate :: DataHandwerk Docs</title>
+    <link rel="canonical" href="https://datahandwerk.gitlab.io/aw/sqldb/humanresources.vjobcandidate.html">
+    <link rel="prev" href="humanresources.vemployeedepartmenthistory.html">
+    <link rel="next" href="humanresources.vjobcandidateeducation.html">
+    <meta name="generator" content="Antora 3.0.0-beta.2">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <link rel="stylesheet" href="../../_/css/custom.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4RM6Q8D27"></script>
+    <script>function gtag(){dataLayer.push(arguments)};window.dataLayer=window.dataLayer||[];gtag('js',new Date());gtag('config','G-L4RM6Q8D27')</script>
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://datahandwerk.gitlab.io">DataHandwerk Docs</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://gitlab.com/datahandwerk/DataHandwerk-toolkit-mssql" target="_blank">dhw project on GitLab</a>
+            <a class="navbar-item" href="https://gitlab.com/datahandwerk/DataHandwerk-toolkit-mssql/-/issues" target="_blank">dhw issues on GitLab</a>
+            <a class="navbar-item" href="https://datahandwerk.zulipchat.com/" target="_blank">dhw community on Zulip (streams with topics)</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <form action="https://www.google.com/search" method="get" target="searchresult">
+              <input type="hidden" name="q" value="site:datahandwerk.gitlab.io">
+              <input type="text" name="q" alt="search">
+              <input type="submit" value="Search">
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="aw" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Demo AdventureWorks</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">AdventureWorks (DB)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="nav/objects-by-schema.html">AdventureWorks2019 - Objects by schema</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="nav/nav-schema-dbo.html">dbo</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.awbuildversion.html">dbo.AWBuildVersion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.databaselog.html">dbo.DatabaseLog</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.errorlog.html">dbo.ErrorLog</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.ufngetaccountingenddate.html">dbo.ufnGetAccountingEndDate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.ufngetaccountingstartdate.html">dbo.ufnGetAccountingStartDate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.ufngetcontactinformation.html">dbo.ufnGetContactInformation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.ufngetdocumentstatustext.html">dbo.ufnGetDocumentStatusText</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.ufngetproductdealerprice.html">dbo.ufnGetProductDealerPrice</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.ufngetproductlistprice.html">dbo.ufnGetProductListPrice</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.ufngetproductstandardcost.html">dbo.ufnGetProductStandardCost</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.ufngetpurchaseorderstatustext.html">dbo.ufnGetPurchaseOrderStatusText</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.ufngetsalesorderstatustext.html">dbo.ufnGetSalesOrderStatusText</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.ufngetstock.html">dbo.ufnGetStock</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.ufnleadingzeros.html">dbo.ufnLeadingZeros</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.uspgetbillofmaterials.html">dbo.uspGetBillOfMaterials</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.uspgetemployeemanagers.html">dbo.uspGetEmployeeManagers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.uspgetmanageremployees.html">dbo.uspGetManagerEmployees</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.uspgetwhereusedproductid.html">dbo.uspGetWhereUsedProductID</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.usplogerror.html">dbo.uspLogError</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.uspprinterror.html">dbo.uspPrintError</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.uspsearchcandidateresumes.html">dbo.uspSearchCandidateResumes</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="nav/nav-schema-humanresources.html">HumanResources</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="humanresources.demployee.html">HumanResources.dEmployee</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="humanresources.department.html">HumanResources.Department</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="humanresources.employee.html">HumanResources.Employee</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="humanresources.employeedepartmenthistory.html">HumanResources.EmployeeDepartmentHistory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="humanresources.employeepayhistory.html">HumanResources.EmployeePayHistory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="humanresources.jobcandidate.html">HumanResources.JobCandidate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="humanresources.shift.html">HumanResources.Shift</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="humanresources.uspupdateemployeehireinfo.html">HumanResources.uspUpdateEmployeeHireInfo</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="humanresources.uspupdateemployeelogin.html">HumanResources.uspUpdateEmployeeLogin</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="humanresources.uspupdateemployeepersonalinfo.html">HumanResources.uspUpdateEmployeePersonalInfo</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="humanresources.vemployee.html">HumanResources.vEmployee</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="humanresources.vemployeedepartment.html">HumanResources.vEmployeeDepartment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="humanresources.vemployeedepartmenthistory.html">HumanResources.vEmployeeDepartmentHistory</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="humanresources.vjobcandidate.html">HumanResources.vJobCandidate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="humanresources.vjobcandidateeducation.html">HumanResources.vJobCandidateEducation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="humanresources.vjobcandidateemployment.html">HumanResources.vJobCandidateEmployment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="nav/nav-schema-person.html">Person</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="person.address.html">Person.Address</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="person.addresstype.html">Person.AddressType</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="person.businessentity.html">Person.BusinessEntity</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="person.businessentityaddress.html">Person.BusinessEntityAddress</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="person.businessentitycontact.html">Person.BusinessEntityContact</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="person.contacttype.html">Person.ContactType</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="person.countryregion.html">Person.CountryRegion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="person.emailaddress.html">Person.EmailAddress</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="person.iuperson.html">Person.iuPerson</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="person.password.html">Person.Password</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="person.person.html">Person.Person</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="person.personphone.html">Person.PersonPhone</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="person.phonenumbertype.html">Person.PhoneNumberType</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="person.stateprovince.html">Person.StateProvince</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="person.vadditionalcontactinfo.html">Person.vAdditionalContactInfo</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="person.vstateprovincecountryregion.html">Person.vStateProvinceCountryRegion</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="nav/nav-schema-production.html">Production</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.billofmaterials.html">Production.BillOfMaterials</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.culture.html">Production.Culture</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.document.html">Production.Document</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.illustration.html">Production.Illustration</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.iworkorder.html">Production.iWorkOrder</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.location.html">Production.Location</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.product.html">Production.Product</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.productcategory.html">Production.ProductCategory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.productcosthistory.html">Production.ProductCostHistory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.productdescription.html">Production.ProductDescription</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.productdocument.html">Production.ProductDocument</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.productinventory.html">Production.ProductInventory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.productlistpricehistory.html">Production.ProductListPriceHistory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.productmodel.html">Production.ProductModel</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.productmodelillustration.html">Production.ProductModelIllustration</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.productmodelproductdescriptionculture.html">Production.ProductModelProductDescriptionCulture</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.productphoto.html">Production.ProductPhoto</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.productproductphoto.html">Production.ProductProductPhoto</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.productreview.html">Production.ProductReview</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.productsubcategory.html">Production.ProductSubcategory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.scrapreason.html">Production.ScrapReason</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.transactionhistory.html">Production.TransactionHistory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.transactionhistoryarchive.html">Production.TransactionHistoryArchive</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.unitmeasure.html">Production.UnitMeasure</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.uworkorder.html">Production.uWorkOrder</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.vproductanddescription.html">Production.vProductAndDescription</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.vproductmodelcatalogdescription.html">Production.vProductModelCatalogDescription</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.vproductmodelinstructions.html">Production.vProductModelInstructions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.workorder.html">Production.WorkOrder</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="production.workorderrouting.html">Production.WorkOrderRouting</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="nav/nav-schema-purchasing.html">Purchasing</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="purchasing.dvendor.html">Purchasing.dVendor</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="purchasing.ipurchaseorderdetail.html">Purchasing.iPurchaseOrderDetail</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="purchasing.productvendor.html">Purchasing.ProductVendor</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="purchasing.purchaseorderdetail.html">Purchasing.PurchaseOrderDetail</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="purchasing.purchaseorderheader.html">Purchasing.PurchaseOrderHeader</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="purchasing.shipmethod.html">Purchasing.ShipMethod</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="purchasing.upurchaseorderdetail.html">Purchasing.uPurchaseOrderDetail</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="purchasing.upurchaseorderheader.html">Purchasing.uPurchaseOrderHeader</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="purchasing.vendor.html">Purchasing.Vendor</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="purchasing.vvendorwithaddresses.html">Purchasing.vVendorWithAddresses</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="purchasing.vvendorwithcontacts.html">Purchasing.vVendorWithContacts</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="nav/nav-schema-sales.html">Sales</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sales.countryregioncurrency.html">Sales.CountryRegionCurrency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sales.creditcard.html">Sales.CreditCard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sales.currency.html">Sales.Currency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sales.currencyrate.html">Sales.CurrencyRate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sales.customer.html">Sales.Customer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sales.idusalesorderdetail.html">Sales.iduSalesOrderDetail</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sales.personcreditcard.html">Sales.PersonCreditCard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sales.salesorderdetail.html">Sales.SalesOrderDetail</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sales.salesorderheader.html">Sales.SalesOrderHeader</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sales.salesorderheadersalesreason.html">Sales.SalesOrderHeaderSalesReason</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sales.salesperson.html">Sales.SalesPerson</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sales.salespersonquotahistory.html">Sales.SalesPersonQuotaHistory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sales.salesreason.html">Sales.SalesReason</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sales.salestaxrate.html">Sales.SalesTaxRate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sales.salesterritory.html">Sales.SalesTerritory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sales.salesterritoryhistory.html">Sales.SalesTerritoryHistory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sales.shoppingcartitem.html">Sales.ShoppingCartItem</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sales.specialoffer.html">Sales.SpecialOffer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sales.specialofferproduct.html">Sales.SpecialOfferProduct</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sales.store.html">Sales.Store</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sales.usalesorderheader.html">Sales.uSalesOrderHeader</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sales.vindividualcustomer.html">Sales.vIndividualCustomer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sales.vpersondemographics.html">Sales.vPersonDemographics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sales.vsalesperson.html">Sales.vSalesPerson</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sales.vsalespersonsalesbyfiscalyears.html">Sales.vSalesPersonSalesByFiscalYears</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sales.vstorewithaddresses.html">Sales.vStoreWithAddresses</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sales.vstorewithcontacts.html">Sales.vStoreWithContacts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sales.vstorewithdemographics.html">Sales.vStoreWithDemographics</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="objectrefcyclic.html">Cyclic Object References</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="other/indexsemanticgroup.html">Index SemanticGroup</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">AdventureWorksDW (DB)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../sqldwdb/nav/objects-by-schema.html">AdventureWorksDW2019 - Objects by schema</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../sqldwdb/nav/nav-schema-dbo.html">dbo</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.adventureworksdwbuildversion.html">dbo.AdventureWorksDWBuildVersion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.databaselog.html">dbo.DatabaseLog</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.dimaccount.html">dbo.DimAccount</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.dimcurrency.html">dbo.DimCurrency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.dimcustomer.html">dbo.DimCustomer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.dimdate.html">dbo.DimDate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.dimdepartmentgroup.html">dbo.DimDepartmentGroup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.dimemployee.html">dbo.DimEmployee</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.dimgeography.html">dbo.DimGeography</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.dimorganization.html">dbo.DimOrganization</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.dimproduct.html">dbo.DimProduct</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.dimproductcategory.html">dbo.DimProductCategory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.dimproductsubcategory.html">dbo.DimProductSubcategory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.dimpromotion.html">dbo.DimPromotion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.dimreseller.html">dbo.DimReseller</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.dimsalesreason.html">dbo.DimSalesReason</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.dimsalesterritory.html">dbo.DimSalesTerritory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.dimscenario.html">dbo.DimScenario</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.factadditionalinternationalproductdescription.html">dbo.FactAdditionalInternationalProductDescription</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.factcallcenter.html">dbo.FactCallCenter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.factcurrencyrate.html">dbo.FactCurrencyRate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.factfinance.html">dbo.FactFinance</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.factinternetsales.html">dbo.FactInternetSales</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.factinternetsalesreason.html">dbo.FactInternetSalesReason</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.factproductinventory.html">dbo.FactProductInventory</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.factresellersales.html">dbo.FactResellerSales</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.factsalesquota.html">dbo.FactSalesQuota</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.factsurveyresponse.html">dbo.FactSurveyResponse</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.newfactcurrencyrate.html">dbo.NewFactCurrencyRate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.prospectivebuyer.html">dbo.ProspectiveBuyer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.sysdiagrams.html">dbo.sysdiagrams</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.udfbuildiso8601date.html">dbo.udfBuildISO8601Date</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.udfminimumdate.html">dbo.udfMinimumDate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.udftwodigitzerofill.html">dbo.udfTwoDigitZeroFill</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.vassocseqlineitems.html">dbo.vAssocSeqLineItems</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.vassocseqorders.html">dbo.vAssocSeqOrders</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.vdmprep.html">dbo.vDMPrep</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.vtargetmail.html">dbo.vTargetMail</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldwdb/dbo.vtimeseries.html">dbo.vTimeSeries</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../sqldwdb/objectrefcyclic.html">Cyclic Object References</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../sqldwdb/other/indexsemanticgroup.html">Index SemanticGroup</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../ssasdb/nav/objects-by-schema.html">SSAS Tabular Models</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../ssasdb/nav/nav-schema-adventureworks.html">AdventureWorks</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ssasdb/adventureworks._measures.html">AdventureWorks._measures</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ssasdb/adventureworks.customer.html">AdventureWorks.Customer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ssasdb/adventureworks.date.html">AdventureWorks.Date</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ssasdb/adventureworks.geography.html">AdventureWorks.Geography</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ssasdb/adventureworks.internetblanksales.html">AdventureWorks.Internet Sales</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ssasdb/adventureworks.product.html">AdventureWorks.Product</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ssasdb/adventureworks.productblankcategory.html">AdventureWorks.Product Category</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ssasdb/adventureworks.productblanksubcategory.html">AdventureWorks.Product Subcategory</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Demo AdventureWorks</span>
+    <span class="version">default</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../dhw/index.html">DataHandwerk</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../dhw/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../index.html">Demo AdventureWorks</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../ssis/index.html">Demo SSIS</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ssis/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../dhw/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Demo AdventureWorks</a></li>
+    <li>AdventureWorks (DB)</li>
+    <li><a href="nav/objects-by-schema.html">AdventureWorks2019 - Objects by schema</a></li>
+    <li><a href="nav/nav-schema-humanresources.html">HumanResources</a></li>
+    <li><a href="humanresources.vjobcandidate.html">HumanResources.vJobCandidate</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="file:///D:/Repos/gitlab/DataHandwerk/dhw-antora-adventureworks/docs/modules/sqldb/pages/humanresources.vjobcandidate.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">HumanResources.vJobCandidate</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>type:
+V
+(
+view
+), modify_date:
+2017-10-27 14:33:14</p>
+</div>
+<div class="paragraph">
+<p>RepoObject_guid:
+C1CBEA31-AE4A-EC11-8531-A81E8446D5B0</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_description"><a class="anchor" href="#_description"></a>Description</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_examples"><a class="anchor" href="#_examples"></a>Examples</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_entity_diagram"><a class="anchor" href="#_entity_diagram"></a>Entity Diagram</h2>
+<div class="sectionbody">
+<div class="imageblock kroki">
+<div class="content">
+<object type="image/svg+xml" data="_images/diag-b4dca7b38a4c8ed7243f0ead10383ade1f2881ab.svg"><span class="alt">entity-humanresources.vjobcandidate</span></object>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_columns"><a class="anchor" href="#_columns"></a>Columns</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Columns of HumanResources.vJobCandidate</caption>
+<colgroup>
+<col style="width: 7.6923%;">
+<col style="width: 61.5384%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6924%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">PK</th>
+<th class="tableblock halign-left valign-top">Column Name</th>
+<th class="tableblock halign-left valign-top">Data Type</th>
+<th class="tableblock halign-left valign-top">NULL?</th>
+<th class="tableblock halign-left valign-top">ID</th>
+<th class="tableblock halign-left valign-top">Calc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-addrdotlocdotcity">Addr.Loc.City</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(100)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-addrdotlocdotcountryregion">Addr.Loc.CountryRegion</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(100)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-addrdotlocdotstate">Addr.Loc.State</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(100)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-addrdotpostalcode">Addr.PostalCode</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(20)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-addrdottype">Addr.Type</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(30)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-businessentityid">BusinessEntityID</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>int</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-email">EMail</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(max)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-jobcandidateid">JobCandidateID</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>int</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-modifieddate">ModifiedDate</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>datetime</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-namedotfirst">Name.First</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(30)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-namedotlast">Name.Last</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(30)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-namedotmiddle">Name.Middle</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(30)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-namedotprefix">Name.Prefix</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(30)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-namedotsuffix">Name.Suffix</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(30)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-skills">Skills</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(max)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-website">WebSite</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(max)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_foreign_key_diagram"><a class="anchor" href="#_foreign_key_diagram"></a>Foreign Key Diagram</h2>
+<div class="sectionbody">
+<div class="imageblock kroki">
+<div class="content">
+<object type="image/svg+xml" data="_images/diag-13c4e16939940412369c3d1576da609ac03ce3b0.svg"><span class="alt">entity_1_1_fk-humanresources.vjobcandidate</span></object>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references"><a class="anchor" href="#_references"></a>References</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_referenced_objects"><a class="anchor" href="#_referenced_objects"></a>Referenced Objects</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="humanresources.jobcandidate.html" class="xref page">HumanResources.JobCandidate</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_object_reference_diagram_1_1"><a class="anchor" href="#_object_reference_diagram_1_1"></a>Object Reference Diagram - 1 1</h3>
+<div class="imageblock kroki">
+<div class="content">
+<object type="image/svg+xml" data="_images/diag-e1605c5cdc6788f2583d3a23e10b3430e8aa7bd5.svg"><span class="alt">entity_1_1_objectref-humanresources.vjobcandidate</span></object>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_object_reference_diagram_referenced_30_0"><a class="anchor" href="#_object_reference_diagram_referenced_30_0"></a>Object Reference Diagram - Referenced - 30 0</h3>
+<div class="imageblock kroki">
+<div class="content">
+<object type="image/svg+xml" data="_images/diag-ad82b83f89530ba90873c2b06aa52708e434ca09.svg"><span class="alt">entity_30_0_objectref-humanresources.vjobcandidate</span></object>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_object_reference_diagram_referencing_0_30"><a class="anchor" href="#_object_reference_diagram_referencing_0_30"></a>Object Reference Diagram - Referencing - 0 30</h3>
+<div class="imageblock kroki">
+<div class="content">
+<object type="image/svg+xml" data="_images/diag-62e1aca16524e53249ca1b50fd32c3c9f64a1256.svg"><span class="alt">entity_0_30_objectref-humanresources.vjobcandidate</span></object>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_column_reference_diagram"><a class="anchor" href="#_column_reference_diagram"></a>Column Reference Diagram</h3>
+<div class="imageblock kroki">
+<div class="content">
+<object type="image/svg+xml" data="_images/diag-9875e6d783004fd6f5044a27a30781a405e27740.svg"><span class="alt">entity_1_1_colref-humanresources.vjobcandidate</span></object>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_column_details"><a class="anchor" href="#_column_details"></a>Column Details</h2>
+<div class="sectionbody">
+<h2 id="" class="discrete">_</h2>
+<div class="sect2">
+<h3 id="column-addrdotlocdotcity"><a class="anchor" href="#column-addrdotlocdotcity"></a>Addr.Loc.City</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 7.6923%;">
+<col style="width: 61.5384%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6924%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Addr.Loc.City</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(100)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="column-addrdotlocdotcountryregion"><a class="anchor" href="#column-addrdotlocdotcountryregion"></a>Addr.Loc.CountryRegion</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 7.6923%;">
+<col style="width: 61.5384%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6924%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Addr.Loc.CountryRegion</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(100)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="column-addrdotlocdotstate"><a class="anchor" href="#column-addrdotlocdotstate"></a>Addr.Loc.State</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 7.6923%;">
+<col style="width: 61.5384%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6924%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Addr.Loc.State</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(100)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="column-addrdotpostalcode"><a class="anchor" href="#column-addrdotpostalcode"></a>Addr.PostalCode</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 7.6923%;">
+<col style="width: 61.5384%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6924%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Addr.PostalCode</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(20)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="column-addrdottype"><a class="anchor" href="#column-addrdottype"></a>Addr.Type</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 7.6923%;">
+<col style="width: 61.5384%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6924%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Addr.Type</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(30)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="column-businessentityid"><a class="anchor" href="#column-businessentityid"></a>BusinessEntityID</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 7.6923%;">
+<col style="width: 61.5384%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6924%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>BusinessEntityID</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>int</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="humanresources.jobcandidate.html#column-businessentityid" class="xref page">HumanResources.JobCandidate.BusinessEntityID</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="column-email"><a class="anchor" href="#column-email"></a>EMail</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 7.6923%;">
+<col style="width: 61.5384%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6924%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>EMail</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(max)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="column-jobcandidateid"><a class="anchor" href="#column-jobcandidateid"></a>JobCandidateID</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 7.6923%;">
+<col style="width: 61.5384%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6924%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>JobCandidateID</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>int</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="humanresources.jobcandidate.html#column-jobcandidateid" class="xref page">HumanResources.JobCandidate.JobCandidateID</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="column-modifieddate"><a class="anchor" href="#column-modifieddate"></a>ModifiedDate</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 7.6923%;">
+<col style="width: 61.5384%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6924%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ModifiedDate</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>datetime</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="humanresources.jobcandidate.html#column-modifieddate" class="xref page">HumanResources.JobCandidate.ModifiedDate</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="column-namedotfirst"><a class="anchor" href="#column-namedotfirst"></a>Name.First</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 7.6923%;">
+<col style="width: 61.5384%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6924%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Name.First</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(30)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="column-namedotlast"><a class="anchor" href="#column-namedotlast"></a>Name.Last</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 7.6923%;">
+<col style="width: 61.5384%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6924%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Name.Last</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(30)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="column-namedotmiddle"><a class="anchor" href="#column-namedotmiddle"></a>Name.Middle</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 7.6923%;">
+<col style="width: 61.5384%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6924%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Name.Middle</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(30)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="column-namedotprefix"><a class="anchor" href="#column-namedotprefix"></a>Name.Prefix</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 7.6923%;">
+<col style="width: 61.5384%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6924%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Name.Prefix</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(30)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="column-namedotsuffix"><a class="anchor" href="#column-namedotsuffix"></a>Name.Suffix</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 7.6923%;">
+<col style="width: 61.5384%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6924%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Name.Suffix</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(30)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="column-skills"><a class="anchor" href="#column-skills"></a>Skills</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 7.6923%;">
+<col style="width: 61.5384%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6924%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Skills</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(max)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="column-website"><a class="anchor" href="#column-website"></a>WebSite</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 7.6923%;">
+<col style="width: 61.5384%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6924%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>WebSite</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(max)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sql_modules_definition"><a class="anchor" href="#_sql_modules_definition"></a>sql_modules_definition</h2>
+<div class="sectionbody">
+<details>
+<summary class="title">HumanResources.vJobCandidate script</summary>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">CREATE VIEW [HumanResources].[vJobCandidate]
+AS
+SELECT
+    jc.[JobCandidateID]
+    ,jc.[BusinessEntityID]
+    ,[Resume].ref.value(N'declare default element namespace "http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/Resume";
+        (/Resume/Name/Name.Prefix)[1]', 'nvarchar(30)') AS [Name.Prefix]
+    ,[Resume].ref.value(N'declare default element namespace "http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/Resume";
+        (/Resume/Name/Name.First)[1]', 'nvarchar(30)') AS [Name.First]
+    ,[Resume].ref.value(N'declare default element namespace "http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/Resume";
+        (/Resume/Name/Name.Middle)[1]', 'nvarchar(30)') AS [Name.Middle]
+    ,[Resume].ref.value(N'declare default element namespace "http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/Resume";
+        (/Resume/Name/Name.Last)[1]', 'nvarchar(30)') AS [Name.Last]
+    ,[Resume].ref.value(N'declare default element namespace "http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/Resume";
+        (/Resume/Name/Name.Suffix)[1]', 'nvarchar(30)') AS [Name.Suffix]
+    ,[Resume].ref.value(N'declare default element namespace "http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/Resume";
+        (/Resume/Skills)[1]', 'nvarchar(max)') AS [Skills]
+    ,[Resume].ref.value(N'declare default element namespace "http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/Resume";
+        (Address/Addr.Type)[1]', 'nvarchar(30)') AS [Addr.Type]
+    ,[Resume].ref.value(N'declare default element namespace "http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/Resume";
+        (Address/Addr.Location/Location/Loc.CountryRegion)[1]', 'nvarchar(100)') AS [Addr.Loc.CountryRegion]
+    ,[Resume].ref.value(N'declare default element namespace "http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/Resume";
+        (Address/Addr.Location/Location/Loc.State)[1]', 'nvarchar(100)') AS [Addr.Loc.State]
+    ,[Resume].ref.value(N'declare default element namespace "http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/Resume";
+        (Address/Addr.Location/Location/Loc.City)[1]', 'nvarchar(100)') AS [Addr.Loc.City]
+    ,[Resume].ref.value(N'declare default element namespace "http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/Resume";
+        (Address/Addr.PostalCode)[1]', 'nvarchar(20)') AS [Addr.PostalCode]
+    ,[Resume].ref.value(N'declare default element namespace "http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/Resume";
+        (/Resume/EMail)[1]', 'nvarchar(max)') AS [EMail]
+    ,[Resume].ref.value(N'declare default element namespace "http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/Resume";
+        (/Resume/WebSite)[1]', 'nvarchar(max)') AS [WebSite]
+    ,jc.[ModifiedDate]
+FROM [HumanResources].[JobCandidate] jc
+CROSS APPLY jc.[Resume].nodes(N'declare default element namespace "http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/Resume";
+    /Resume') AS Resume(ref);</code></pre>
+</div>
+</div>
+</div>
+</details>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="humanresources.vemployeedepartmenthistory.html">HumanResources.vEmployeeDepartmentHistory</a></span>
+  <span class="next"><a href="humanresources.vjobcandidateeducation.html">HumanResources.vJobCandidateEducation</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content" onclick="closeModal()">
+        <!--suppress HtmlRequiredAltAttribute as this will be set when selecting the image via JavaScript,
+        RequiredAttributes as src will be set by when selecting the image via JavaScript -->
+        <img id="imageinmodal">
+    </div>
+</div>
+<script>
+    function openModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+
+    document.querySelectorAll('.imageblock kroki').forEach(element => {
+        element.className += " lightbox";
+        element.addEventListener('click', evt => {
+            document.getElementById("imageinmodal").setAttribute("data", evt.currentTarget.getAttribute("data"))
+            openModal();
+        })
+    });
+
+</script>
+<style>
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 10;
+        padding-top: 5vh;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        backdrop-filter: blur(3px);
+        background-color: rgba(30, 30, 30, 0.8);
+    }
+    img.lightbox {
+        cursor: pointer;
+    }
+    /* Modal Content */
+    .modal-content {
+        position: relative;
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        max-height: 90vh;
+        cursor: pointer;
+    }
+
+    .modal-content img {
+        width: auto;
+        height: auto;
+        max-width: 90vw;
+        max-height: 90vh;
+        min-width: 90vw;
+        min-height: 90vh;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        object-fit: contain;
+    }
+
+    /* The Close Button */
+    .close {
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

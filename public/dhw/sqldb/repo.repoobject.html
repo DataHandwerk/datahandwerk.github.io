@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>repo.RepoObject :: DataHandwerk Docs</title>
     <link rel="canonical" href="https://datahandwerk.gitlab.io/dhw/sqldb/repo.repoobject.html">
-    <link rel="prev" href="repo.measures_union.html">
+    <link rel="prev" href="repo.measure_union.html">
     <link rel="next" href="repo.repoobject__after_delete.html">
-    <meta name="generator" content="Antora 3.0.0-beta.1">
+    <meta name="generator" content="Antora 3.0.0-beta.2">
     <link rel="stylesheet" href="../../_/css/site.css">
     <link rel="stylesheet" href="../../_/css/custom.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4RM6Q8D27"></script>
@@ -102,6 +102,9 @@
     <a class="nav-link" href="config.usp_connect_database.html">config.usp_connect_database</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="config.usp_extract_dacpac.html">config.usp_extract_dacpac</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="config.usp_init_parameter.html">config.usp_init_parameter</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -178,6 +181,21 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="dbo.crlf.html">dbo.crlf</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.usp_altertablesdatacompression.html">dbo.usp_AlterTablesDataCompression</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.usp_generate_merge.html">dbo.usp_generate_merge</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.usp_longprint.html">dbo.usp_longprint</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.usp_refreshviews.html">dbo.usp_RefreshViews</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="dbo.usp_truncatetables.html">dbo.usp_TruncateTables</a>
   </li>
 </ul>
   </li>
@@ -264,6 +282,9 @@
     <a class="nav-link" href="docs.ftv_repoobject_reference_plantuml_entityreflist.html">docs.ftv_RepoObject_Reference_PlantUml_EntityRefList</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.measure_measurepropertylist.html">docs.Measure_MeasurePropertyList</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.objectrefcyclic.html">docs.ObjectRefCyclic</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -292,6 +313,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.repoobject_indexlist_t.html">docs.RepoObject_IndexList_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="docs.repoobject_measuredescriptionlist.html">docs.RepoObject_MeasureDescriptionList</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.repoobject_measurelist.html">docs.RepoObject_MeasureList</a>
@@ -441,7 +465,7 @@
     <a class="nav-link" href="docs.usp_antoraexport_objectpagetemplate.html">docs.usp_AntoraExport_ObjectPageTemplate</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="docs.usp_antoraexport_objectpartialproperties.html">docs.usp_AntoraExport_ObjectPartialProperties</a>
+    <a class="nav-link" href="docs.usp_antoraexport_objectpartialscontent.html">docs.usp_AntoraExport_ObjectPartialsContent</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.usp_antoraexport_objectpuml.html">docs.usp_AntoraExport_ObjectPuml</a>
@@ -462,7 +486,7 @@
     <a class="nav-link" href="docs.usp_antoraexport_ssispagetemplate.html">docs.usp_AntoraExport_SsisPageTemplate</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="docs.usp_antoraexport_ssispartialproperties.html">docs.usp_AntoraExport_SsisPartialProperties</a>
+    <a class="nav-link" href="docs.usp_antoraexport_ssispartialscontent.html">docs.usp_AntoraExport_SsisPartialsContent</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="docs.usp_antoraexport_ssispuml.html">docs.usp_AntoraExport_SsisPuml</a>
@@ -564,6 +588,15 @@
     <a class="nav-link" href="property.fs_get_repoobjectproperty_nvarchar.html">property.fs_get_RepoObjectProperty_nvarchar</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.measureproperty.html">property.MeasureProperty</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.propertyname_measure.html">property.PropertyName_Measure</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.propertyname_measure_t.html">property.PropertyName_Measure_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.propertyname_repoobject.html">property.PropertyName_RepoObject</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -646,6 +679,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.usp_external_repoobjectproperty.html">property.usp_external_RepoObjectProperty</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.usp_measureproperty_set.html">property.usp_MeasureProperty_set</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="property.usp_persist_propertyname_measure_t.html">property.usp_PERSIST_PropertyName_Measure_T</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="property.usp_persist_propertyname_repoobject_t.html">property.usp_PERSIST_PropertyName_RepoObject_T</a>
@@ -1014,6 +1053,12 @@
     <a class="nav-link" href="repo.foreignkey_virtual_indexes.html">repo.ForeignKey_virtual_Indexes</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.fs_measure_fullname2.html">repo.fs_Measure_fullname2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.fs_repoobject_fullname2.html">repo.fs_RepoObject_fullname2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.index_columlist.html">repo.Index_ColumList</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -1104,10 +1149,10 @@
     <a class="nav-link" href="repo.indexreferencedreferencing_hasfullcolumnsinreferencing.html">repo.IndexReferencedReferencing_HasFullColumnsInReferencing</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.measures.html">repo.Measures</a>
+    <a class="nav-link" href="repo.measure.html">repo.Measure</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="repo.measures_union.html">repo.Measures_union</a>
+    <a class="nav-link" href="repo.measure_union.html">repo.Measure_union</a>
   </li>
   <li class="nav-item is-current-page" data-depth="3">
     <a class="nav-link" href="repo.repoobject.html">repo.RepoObject</a>
@@ -1132,6 +1177,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.repoobject_gross.html">repo.RepoObject_gross</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.repoobject_gross_persistence.html">repo.RepoObject_gross_persistence</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.repoobject_gross2.html">repo.RepoObject_gross2</a>
@@ -1285,6 +1333,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.usp_persist_reposchema_ssas_tgt.html">repo.usp_PERSIST_RepoSchema_ssas_tgt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="repo.usp_persistence_delete.html">repo.usp_persistence_delete</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="repo.usp_persistence_set.html">repo.usp_persistence_set</a>
@@ -1524,13 +1575,13 @@
     <a class="nav-link" href="ssas.indexcolumn_union.html">ssas.IndexColumn_union</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="ssas.measures_translation.html">ssas.Measures_translation</a>
+    <a class="nav-link" href="ssas.measure_translation.html">ssas.Measure_translation</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="ssas.measures_translation_displayfolder_union.html">ssas.Measures_translation_displayfolder_union</a>
+    <a class="nav-link" href="ssas.measure_translation_displayfolder_union.html">ssas.Measure_translation_displayfolder_union</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="ssas.measures_translation_t.html">ssas.Measures_translation_T</a>
+    <a class="nav-link" href="ssas.measure_translation_t.html">ssas.Measure_translation_T</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="ssas.model_json.html">ssas.model_json</a>
@@ -1803,7 +1854,7 @@
     <a class="nav-link" href="ssas.tmschema_variations.html">ssas.TMSCHEMA_VARIATIONS</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="ssas.usp_persist_measures_translation_t.html">ssas.usp_PERSIST_Measures_translation_T</a>
+    <a class="nav-link" href="ssas.usp_persist_measure_translation_t.html">ssas.usp_PERSIST_Measure_translation_T</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="ssas.usp_persist_model_json_31_tables_t.html">ssas.usp_PERSIST_model_json_31_tables_T</a>
@@ -2288,24 +2339,15 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="tool.ftv_extract_substrings.html">tool.ftv_extract_substrings</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="tool.usp_generate_merge.html">tool.usp_generate_merge</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="tool.usp_longprint.html">tool.usp_longprint</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="tool.usp_refreshviews.html">tool.usp_RefreshViews</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="tool.usp_truncatetables.html">tool.usp_TruncateTables</a>
-  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="nav/nav-schema-uspgenerator.html">uspgenerator</a>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.fs_usp_fullname.html">uspgenerator.fs_usp_fullname</a>
+  </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="uspgenerator.ftv_generatoruspstep_sql.html">uspgenerator.ftv_GeneratorUspStep_sql</a>
   </li>
@@ -2341,6 +2383,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="uspgenerator.generatoruspstep_sql.html">uspgenerator.GeneratorUspStep_Sql</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="uspgenerator.usp_copy_procedure.html">uspgenerator.usp_copy_procedure</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="uspgenerator.usp_generatorusp_insert_update_persistence.html">uspgenerator.usp_GeneratorUsp_insert_update_persistence</a>
@@ -2382,7 +2427,16 @@
     <a class="nav-link" href="workflow.proceduredependency_input_persistencedependency_s.html">workflow.ProcedureDependency_input_PersistenceDependency_S</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="workflow.proceduredependency_persistencedependency_src.html">workflow.ProcedureDependency_PersistenceDependency_src</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="workflow.proceduredependency_persistencedependency_tgt.html">workflow.ProcedureDependency_PersistenceDependency_tgt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="workflow.usp_persist_proceduredependency_input_persistencedependency.html">workflow.usp_PERSIST_ProcedureDependency_input_PersistenceDependency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="workflow.usp_persist_proceduredependency_persistencedependency_tgt.html">workflow.usp_PERSIST_ProcedureDependency_PersistenceDependency_tgt</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="workflow.usp_persist_workflow_proceduredependency_t.html">workflow.usp_PERSIST_Workflow_ProcedureDependency_T</a>
@@ -2458,7 +2512,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="other/objectrefcyclic.html">Cyclic Object References</a>
+    <a class="nav-link" href="objectrefcyclic.html">Cyclic Object References</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="other/indexsemanticgroup.html">Index SemanticGroup</a>
@@ -2476,6 +2530,9 @@
     <a class="nav-link" href="../user-guide/backup-repo-db.html">Backup and restore repository database</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../user-guide/documentation-generator.html">Database documentation generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../user-guide/sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
 <ul class="nav-list">
@@ -2491,16 +2548,13 @@
     <a class="nav-link" href="../user-guide/properties-inheritance.html">Properties Inheritance</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../user-guide/documentation-generator.html">Database documentation generator</a>
-  </li>
-  <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../user-guide/execution-log.html">Execution log</a>
-  </li>
-  <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../user-guide/uspgenerator.html">usp generator</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../user-guide/persistence-generator.html">Persistence generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../user-guide/execution-log.html">Execution log</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../user-guide/ssms-configuration.html">SSMS configuration</a>
@@ -2524,6 +2578,22 @@
       <ul class="versions">
         <li class="version is-current is-latest">
           <a href="../index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../aw/index.html">Demo AdventureWorks</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../aw/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../ssis/index.html">Demo SSIS</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ssis/index.html">default</a>
         </li>
       </ul>
     </li>
@@ -2561,12 +2631,18 @@ U
 (
 user table
 ), modify_date:
-2021-11-01 18:12:33</p>
+2021-11-28 12:10:37</p>
 </div>
 <div class="paragraph">
 <p>RepoObject_guid:
 EB8F291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_description"><a class="anchor" href="#_description"></a>Description</h2>
+<div class="sectionbody">
+
 </div>
 </div>
 <div class="sect1">
@@ -2580,7 +2656,7 @@ EB8F291C-9D61-EB11-84DC-A81E8446D5B0</p>
 <div class="sectionbody">
 <div class="imageblock kroki">
 <div class="content">
-<object type="image/svg+xml" data="_images/diag-d221ad9188f1df035ed2b10db06c3d7ade965637.svg"><span class="alt">entity-repo.repoobject</span></object>
+<object type="image/svg+xml" data="_images/diag-09b3ab9fff099320717ee898529a4e8d8e9940fc.svg"><span class="alt">entity-repo.repoobject</span></object>
 </div>
 </div>
 </div>
@@ -2645,6 +2721,14 @@ EB8F291C-9D61-EB11-84DC-A81E8446D5B0</p>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-hasunderlinegetunderlinereferencedunderlineissue">has_get_referenced_issue</a></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>bit</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-indentunderlinesqlunderlinemodulesunderlinedefinition">indent_sql_modules_definition</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tinyint</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"></td>
@@ -2923,6 +3007,14 @@ EB8F291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-uspunderlinepersistenceunderlinefullname">usp_persistence_fullname</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(273)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Calc</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#column-uspunderlinepersistenceunderlinefullname2">usp_persistence_fullname2</a></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(269)</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
@@ -2946,7 +3038,7 @@ EB8F291C-9D61-EB11-84DC-A81E8446D5B0</p>
 <div class="sectionbody">
 <div class="imageblock kroki">
 <div class="content">
-<object type="image/svg+xml" data="_images/diag-91f619a5bcf4d865a3a235ec74756c4661ca2327.svg"><span class="alt">entity_1_1_fk-repo.repoobject</span></object>
+<object type="image/svg+xml" data="_images/diag-0f6ada63dc8b29857a13d2fd18d91d8f8db60715.svg"><span class="alt">entity_1_1_fk-repo.repoobject</span></object>
 </div>
 </div>
 </div>
@@ -2958,12 +3050,6 @@ EB8F291C-9D61-EB11-84DC-A81E8446D5B0</p>
 <h3 id="_referenced_objects"><a class="anchor" href="#_referenced_objects"></a>Referenced Objects</h3>
 <div class="ulist">
 <ul>
-<li>
-<p><a href="property.repoobjectcolumnproperty_external_tgt.html" class="xref page">property.RepoObjectColumnProperty_external_tgt</a></p>
-</li>
-<li>
-<p><a href="property.repoobjectproperty_external_tgt.html" class="xref page">property.RepoObjectProperty_external_tgt</a></p>
-</li>
 <li>
 <p><a href="repo.repoobject_external_tgt.html" class="xref page">repo.RepoObject_external_tgt</a></p>
 </li>
@@ -3071,6 +3157,9 @@ EB8F291C-9D61-EB11-84DC-A81E8446D5B0</p>
 <p><a href="repo.check_indexcolumn_virtual_referenced_setpoint.html" class="xref page">repo.check_IndexColumn_virtual_referenced_setpoint</a></p>
 </li>
 <li>
+<p><a href="repo.fs_repoobject_fullname2.html" class="xref page">repo.fs_RepoObject_fullname2</a></p>
+</li>
+<li>
 <p><a href="repo.index_settings_forupdate.html" class="xref page">repo.Index_Settings_ForUpdate</a></p>
 </li>
 <li>
@@ -3092,13 +3181,13 @@ EB8F291C-9D61-EB11-84DC-A81E8446D5B0</p>
 <p><a href="repo.repoobject__after_update.html" class="xref page">repo.RepoObject__after_update</a></p>
 </li>
 <li>
-<p><a href="repo.repoobject_external_tgt.html" class="xref page">repo.RepoObject_external_tgt</a></p>
-</li>
-<li>
 <p><a href="repo.repoobject_fullname_u_v.html" class="xref page">repo.RepoObject_fullname_u_v</a></p>
 </li>
 <li>
 <p><a href="repo.repoobject_gross.html" class="xref page">repo.RepoObject_gross</a></p>
+</li>
+<li>
+<p><a href="repo.repoobject_gross_persistence.html" class="xref page">repo.RepoObject_gross_persistence</a></p>
 </li>
 <li>
 <p><a href="repo.repoobject_persistence_column.html" class="xref page">repo.RepoObject_persistence_column</a></p>
@@ -3120,9 +3209,6 @@ EB8F291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </li>
 <li>
 <p><a href="repo.repoobject_sqlcreatetable.html" class="xref page">repo.RepoObject_SqlCreateTable</a></p>
-</li>
-<li>
-<p><a href="repo.repoobject_ssas_tgt.html" class="xref page">repo.RepoObject_SSAS_tgt</a></p>
 </li>
 <li>
 <p><a href="repo.repoobject_wo_referencing.html" class="xref page">repo.RepoObject_wo_referencing</a></p>
@@ -3153,6 +3239,9 @@ EB8F291C-9D61-EB11-84DC-A81E8446D5B0</p>
 </li>
 <li>
 <p><a href="repo.usp_main.html" class="xref page">repo.usp_main</a></p>
+</li>
+<li>
+<p><a href="repo.usp_persistence_delete.html" class="xref page">repo.usp_persistence_delete</a></p>
 </li>
 <li>
 <p><a href="repo.usp_persistence_set.html" class="xref page">repo.usp_persistence_set</a></p>
@@ -3224,7 +3313,7 @@ EB8F291C-9D61-EB11-84DC-A81E8446D5B0</p>
 <h3 id="_object_reference_diagram_1_1"><a class="anchor" href="#_object_reference_diagram_1_1"></a>Object Reference Diagram - 1 1</h3>
 <div class="imageblock kroki">
 <div class="content">
-<object type="image/svg+xml" data="_images/diag-00f66fb281fa7f9ec732973a209bde61399314dc.svg"><span class="alt">entity_1_1_objectref-repo.repoobject</span></object>
+<object type="image/svg+xml" data="_images/diag-f4a3ae318b75cfcf38bd5a9214f24587f286ff4a.svg"><span class="alt">entity_1_1_objectref-repo.repoobject</span></object>
 </div>
 </div>
 </div>
@@ -3232,7 +3321,7 @@ EB8F291C-9D61-EB11-84DC-A81E8446D5B0</p>
 <h3 id="_object_reference_diagram_referenced_30_0"><a class="anchor" href="#_object_reference_diagram_referenced_30_0"></a>Object Reference Diagram - Referenced - 30 0</h3>
 <div class="imageblock kroki">
 <div class="content">
-<object type="image/svg+xml" data="_images/diag-01543b879b6c2dc44e1d305bd508fd1fb9b497d5.svg"><span class="alt">entity_30_0_objectref-repo.repoobject</span></object>
+<object type="image/svg+xml" data="_images/diag-fed6119fa0d862e2cec4ab75ce7681f1abc60bf8.svg"><span class="alt">entity_30_0_objectref-repo.repoobject</span></object>
 </div>
 </div>
 </div>
@@ -3240,7 +3329,7 @@ EB8F291C-9D61-EB11-84DC-A81E8446D5B0</p>
 <h3 id="_object_reference_diagram_referencing_0_30"><a class="anchor" href="#_object_reference_diagram_referencing_0_30"></a>Object Reference Diagram - Referencing - 0 30</h3>
 <div class="imageblock kroki">
 <div class="content">
-<object type="image/svg+xml" data="_images/diag-b4481730720a5585b8af0cf1e337f41fce3a940d.svg"><span class="alt">entity_0_30_objectref-repo.repoobject</span></object>
+<object type="image/svg+xml" data="_images/diag-dc126beb70626d1e2785bb6e6fe523a296b08c8a.svg"><span class="alt">entity_0_30_objectref-repo.repoobject</span></object>
 </div>
 </div>
 </div>
@@ -3248,7 +3337,7 @@ EB8F291C-9D61-EB11-84DC-A81E8446D5B0</p>
 <h3 id="_column_reference_diagram"><a class="anchor" href="#_column_reference_diagram"></a>Column Reference Diagram</h3>
 <div class="imageblock kroki">
 <div class="content">
-<object type="image/svg+xml" data="_images/diag-c5d0cc1621d9c580c99549abbfeeaad89734cc7c.svg"><span class="alt">entity_1_1_colref-repo.repoobject</span></object>
+<object type="image/svg+xml" data="_images/diag-7e5e969fa382674460b9427c98f0c6203c46b076.svg"><span class="alt">entity_1_1_colref-repo.repoobject</span></object>
 </div>
 </div>
 </div>
@@ -3442,6 +3531,12 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 <p><a href="repo.repoobject_gross.html#column-repoobjectunderlineguid" class="xref page">repo.RepoObject_gross.RepoObject_guid</a></p>
 </li>
 <li>
+<p><a href="repo.repoobject_gross_persistence.html#column-repoobjectunderlineguid" class="xref page">repo.RepoObject_gross_persistence.RepoObject_guid</a></p>
+</li>
+<li>
+<p><a href="repo.repoobject_gross_persistence.html#column-uspunderlinepersistenceunderlinerepoobjectunderlineguid" class="xref page">repo.RepoObject_gross_persistence.usp_persistence_RepoObject_guid</a></p>
+</li>
+<li>
 <p><a href="repo.repoobject_persistence_sourcemismatch.html#column-sourceunderlinerepoobjectunderlineguidunderlineviaunderlinename" class="xref page">repo.RepoObject_persistence_SourceMismatch.source_RepoObject_guid_via_name</a></p>
 </li>
 <li>
@@ -3546,6 +3641,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 <p><a href="repo.repoobject_gross.html#column-externalunderlineantoracomponent" class="xref page">repo.RepoObject_gross.external_AntoraComponent</a></p>
 </li>
 <li>
+<p><a href="repo.repoobject_gross_persistence.html#column-externalunderlineantoracomponent" class="xref page">repo.RepoObject_gross_persistence.external_AntoraComponent</a></p>
+</li>
+<li>
 <p><a href="repo.repoobject_ssas_tgt.html#column-externalunderlineantoracomponent" class="xref page">repo.RepoObject_SSAS_tgt.external_AntoraComponent</a></p>
 </li>
 </ul>
@@ -3593,6 +3691,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 <p><a href="repo.repoobject_gross.html#column-externalunderlineantoramodule" class="xref page">repo.RepoObject_gross.external_AntoraModule</a></p>
 </li>
 <li>
+<p><a href="repo.repoobject_gross_persistence.html#column-externalunderlineantoramodule" class="xref page">repo.RepoObject_gross_persistence.external_AntoraModule</a></p>
+</li>
+<li>
 <p><a href="repo.repoobject_ssas_tgt.html#column-externalunderlineantoramodule" class="xref page">repo.RepoObject_SSAS_tgt.external_AntoraModule</a></p>
 </li>
 </ul>
@@ -3632,6 +3733,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 </li>
 <li>
 <p><a href="repo.repoobject_gross.html#column-hasunderlineexecutionunderlineplanunderlineissue" class="xref page">repo.RepoObject_gross.has_execution_plan_issue</a></p>
+</li>
+<li>
+<p><a href="repo.repoobject_gross_persistence.html#column-hasunderlineexecutionunderlineplanunderlineissue" class="xref page">repo.RepoObject_gross_persistence.has_execution_plan_issue</a></p>
 </li>
 <li>
 <p><a href="repo.repoobject_ssas_tgt.html#column-hasunderlineexecutionunderlineplanunderlineissue" class="xref page">repo.RepoObject_SSAS_tgt.has_execution_plan_issue</a></p>
@@ -3675,10 +3779,48 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 <p><a href="repo.repoobject_gross.html#column-hasunderlinegetunderlinereferencedunderlineissue" class="xref page">repo.RepoObject_gross.has_get_referenced_issue</a></p>
 </li>
 <li>
+<p><a href="repo.repoobject_gross_persistence.html#column-hasunderlinegetunderlinereferencedunderlineissue" class="xref page">repo.RepoObject_gross_persistence.has_get_referenced_issue</a></p>
+</li>
+<li>
 <p><a href="repo.repoobject_ssas_tgt.html#column-hasunderlinegetunderlinereferencedunderlineissue" class="xref page">repo.RepoObject_SSAS_tgt.has_get_referenced_issue</a></p>
 </li>
 <li>
 <p><a href="repo.repoobjectcolumn_gross.html#column-hasunderlinegetunderlinereferencedunderlineissue" class="xref page">repo.RepoObjectColumn_gross.has_get_referenced_issue</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="column-indentunderlinesqlunderlinemodulesunderlinedefinition"><a class="anchor" href="#column-indentunderlinesqlunderlinemodulesunderlinedefinition"></a>indent_sql_modules_definition</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 7.6923%;">
+<col style="width: 61.5384%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6924%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>indent_sql_modules_definition</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tinyint</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="openblock">
+<div class="title">Referencing Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="repo.repoobject_gross.html#column-indentunderlinesqlunderlinemodulesunderlinedefinition" class="xref page">repo.RepoObject_gross.indent_sql_modules_definition</a></p>
 </li>
 </ul>
 </div>
@@ -3760,6 +3902,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 <p><a href="repo.repoobject_gross.html#column-inheritanceunderlinestringaggseparatorsql" class="xref page">repo.RepoObject_gross.Inheritance_StringAggSeparatorSql</a></p>
 </li>
 <li>
+<p><a href="repo.repoobject_gross_persistence.html#column-inheritanceunderlinestringaggseparatorsql" class="xref page">repo.RepoObject_gross_persistence.Inheritance_StringAggSeparatorSql</a></p>
+</li>
+<li>
 <p><a href="repo.repoobject_ssas_tgt.html#column-inheritanceunderlinestringaggseparatorsql" class="xref page">repo.RepoObject_SSAS_tgt.Inheritance_StringAggSeparatorSql</a></p>
 </li>
 </ul>
@@ -3802,6 +3947,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 </li>
 <li>
 <p><a href="repo.repoobject_gross.html#column-inheritancedefinition" class="xref page">repo.RepoObject_gross.InheritanceDefinition</a></p>
+</li>
+<li>
+<p><a href="repo.repoobject_gross_persistence.html#column-inheritancedefinition" class="xref page">repo.RepoObject_gross_persistence.InheritanceDefinition</a></p>
 </li>
 <li>
 <p><a href="repo.repoobject_ssas_tgt.html#column-inheritancedefinition" class="xref page">repo.RepoObject_SSAS_tgt.InheritanceDefinition</a></p>
@@ -3851,6 +3999,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 <p><a href="repo.repoobject_gross.html#column-inheritancetype" class="xref page">repo.RepoObject_gross.InheritanceType</a></p>
 </li>
 <li>
+<p><a href="repo.repoobject_gross_persistence.html#column-inheritancetype" class="xref page">repo.RepoObject_gross_persistence.InheritanceType</a></p>
+</li>
+<li>
 <p><a href="repo.repoobject_ssas_tgt.html#column-inheritancetype" class="xref page">repo.RepoObject_SSAS_tgt.InheritanceType</a></p>
 </li>
 </ul>
@@ -3893,6 +4044,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 <ul>
 <li>
 <p><a href="repo.repoobject_gross.html#column-isunderlinedocsexclude" class="xref page">repo.RepoObject_gross.is_DocsExclude</a></p>
+</li>
+<li>
+<p><a href="repo.repoobject_gross_persistence.html#column-isunderlinedocsexclude" class="xref page">repo.RepoObject_gross_persistence.is_DocsExclude</a></p>
 </li>
 </ul>
 </div>
@@ -3945,6 +4099,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 <p><a href="repo.repoobject_gross.html#column-isunderlineexternal" class="xref page">repo.RepoObject_gross.is_external</a></p>
 </li>
 <li>
+<p><a href="repo.repoobject_gross_persistence.html#column-isunderlineexternal" class="xref page">repo.RepoObject_gross_persistence.is_external</a></p>
+</li>
+<li>
 <p><a href="repo.repoobject_ssas_tgt.html#column-isunderlineexternal" class="xref page">repo.RepoObject_SSAS_tgt.is_external</a></p>
 </li>
 <li>
@@ -3993,6 +4150,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 </li>
 <li>
 <p><a href="repo.repoobject_gross.html#column-isunderlinerepounderlinemanaged" class="xref page">repo.RepoObject_gross.is_repo_managed</a></p>
+</li>
+<li>
+<p><a href="repo.repoobject_gross_persistence.html#column-isunderlinerepounderlinemanaged" class="xref page">repo.RepoObject_gross_persistence.is_repo_managed</a></p>
 </li>
 <li>
 <p><a href="repo.repoobject_persistence_column.html#column-isunderlinerepounderlinemanagedunderlinet" class="xref page">repo.RepoObject_persistence_column.is_repo_managed_t</a></p>
@@ -4066,6 +4226,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 <p><a href="repo.repoobject_gross.html#column-isunderlinerequiredunderlineobjectmerge" class="xref page">repo.RepoObject_gross.is_required_ObjectMerge</a></p>
 </li>
 <li>
+<p><a href="repo.repoobject_gross_persistence.html#column-isunderlinerequiredunderlineobjectmerge" class="xref page">repo.RepoObject_gross_persistence.is_required_ObjectMerge</a></p>
+</li>
+<li>
 <p><a href="repo.repoobject_ssas_tgt.html#column-isunderlinerequiredunderlineobjectmerge" class="xref page">repo.RepoObject_SSAS_tgt.is_required_ObjectMerge</a></p>
 </li>
 </ul>
@@ -4111,6 +4274,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 </li>
 <li>
 <p><a href="repo.repoobject_gross.html#column-isunderlinessas" class="xref page">repo.RepoObject_gross.is_ssas</a></p>
+</li>
+<li>
+<p><a href="repo.repoobject_gross_persistence.html#column-isunderlinessas" class="xref page">repo.RepoObject_gross_persistence.is_ssas</a></p>
 </li>
 <li>
 <p><a href="repo.repoobject_ssas_tgt.html#column-isunderlinessas" class="xref page">repo.RepoObject_SSAS_tgt.is_ssas</a></p>
@@ -4161,6 +4327,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 </li>
 <li>
 <p><a href="repo.repoobject_gross.html#column-isunderlinesysobjectunderlinemissing" class="xref page">repo.RepoObject_gross.is_SysObject_missing</a></p>
+</li>
+<li>
+<p><a href="repo.repoobject_gross_persistence.html#column-isunderlinesysobjectunderlinemissing" class="xref page">repo.RepoObject_gross_persistence.is_SysObject_missing</a></p>
 </li>
 <li>
 <p><a href="repo.repoobject_ssas_tgt.html#column-isunderlinesysobjectunderlinemissing" class="xref page">repo.RepoObject_SSAS_tgt.is_SysObject_missing</a></p>
@@ -4219,6 +4388,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 <p><a href="repo.repoobject_gross.html#column-modifyunderlinedt" class="xref page">repo.RepoObject_gross.modify_dt</a></p>
 </li>
 <li>
+<p><a href="repo.repoobject_gross_persistence.html#column-modifyunderlinedt" class="xref page">repo.RepoObject_gross_persistence.modify_dt</a></p>
+</li>
+<li>
 <p><a href="repo.repoobject_ssas_tgt.html#column-modifyunderlinedt" class="xref page">repo.RepoObject_SSAS_tgt.modify_dt</a></p>
 </li>
 <li>
@@ -4264,6 +4436,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 </li>
 <li>
 <p><a href="repo.repoobject_gross.html#column-pkunderlineindexunderlineguid" class="xref page">repo.RepoObject_gross.pk_index_guid</a></p>
+</li>
+<li>
+<p><a href="repo.repoobject_gross_persistence.html#column-pkunderlineindexunderlineguid" class="xref page">repo.RepoObject_gross_persistence.pk_index_guid</a></p>
 </li>
 <li>
 <p><a href="repo.repoobject_ssas_tgt.html#column-pkunderlineindexunderlineguid" class="xref page">repo.RepoObject_SSAS_tgt.pk_index_guid</a></p>
@@ -4351,6 +4526,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 <p><a href="repo.repoobject_gross.html#column-repounderlinehistoryunderlinetableunderlineguid" class="xref page">repo.RepoObject_gross.Repo_history_table_guid</a></p>
 </li>
 <li>
+<p><a href="repo.repoobject_gross_persistence.html#column-repounderlinehistoryunderlinetableunderlineguid" class="xref page">repo.RepoObject_gross_persistence.Repo_history_table_guid</a></p>
+</li>
+<li>
 <p><a href="repo.repoobject_ssas_tgt.html#column-repounderlinehistoryunderlinetableunderlineguid" class="xref page">repo.RepoObject_SSAS_tgt.Repo_history_table_guid</a></p>
 </li>
 <li>
@@ -4396,6 +4574,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 </li>
 <li>
 <p><a href="repo.repoobject_gross.html#column-repounderlinetemporalunderlinetype" class="xref page">repo.RepoObject_gross.Repo_temporal_type</a></p>
+</li>
+<li>
+<p><a href="repo.repoobject_gross_persistence.html#column-repounderlinetemporalunderlinetype" class="xref page">repo.RepoObject_gross_persistence.Repo_temporal_type</a></p>
 </li>
 <li>
 <p><a href="repo.repoobject_ssas_tgt.html#column-repounderlinetemporalunderlinetype" class="xref page">repo.RepoObject_SSAS_tgt.Repo_temporal_type</a></p>
@@ -4469,6 +4650,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 <p><a href="#column-repoobjectunderlinefullname2">repo.RepoObject.RepoObject_fullname2</a></p>
 </li>
 <li>
+<p><a href="#column-uspunderlinepersistenceunderlinefullname">repo.RepoObject.usp_persistence_fullname</a></p>
+</li>
+<li>
 <p><a href="#column-hasunderlinedifferentunderlinesysunderlinenames">repo.RepoObject.has_different_sys_names</a></p>
 </li>
 <li>
@@ -4485,6 +4669,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 </li>
 <li>
 <p><a href="repo.repoobject_gross.html#column-repoobjectunderlinename" class="xref page">repo.RepoObject_gross.RepoObject_name</a></p>
+</li>
+<li>
+<p><a href="repo.repoobject_gross_persistence.html#column-repoobjectunderlinename" class="xref page">repo.RepoObject_gross_persistence.RepoObject_name</a></p>
 </li>
 <li>
 <p><a href="repo.repoobject_persistence_column.html#column-repoobjectunderlinenameunderlinet" class="xref page">repo.RepoObject_persistence_column.RepoObject_name_t</a></p>
@@ -4558,6 +4745,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 <p><a href="repo.repoobject_gross.html#column-repoobjectunderlinereferencingunderlinecount" class="xref page">repo.RepoObject_gross.RepoObject_Referencing_Count</a></p>
 </li>
 <li>
+<p><a href="repo.repoobject_gross_persistence.html#column-repoobjectunderlinereferencingunderlinecount" class="xref page">repo.RepoObject_gross_persistence.RepoObject_Referencing_Count</a></p>
+</li>
+<li>
 <p><a href="repo.repoobject_ssas_tgt.html#column-repoobjectunderlinereferencingunderlinecount" class="xref page">repo.RepoObject_SSAS_tgt.RepoObject_Referencing_Count</a></p>
 </li>
 <li>
@@ -4617,6 +4807,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 <p><a href="repo.indexcolumn_ssas_gross.html#column-parentunderlineschemaunderlinename" class="xref page">repo.IndexColumn_ssas_gross.parent_schema_name</a></p>
 </li>
 <li>
+<p><a href="#column-uspunderlinepersistenceunderlinefullname">repo.RepoObject.usp_persistence_fullname</a></p>
+</li>
+<li>
 <p><a href="#column-uspunderlinepersistenceunderlinefullname2">repo.RepoObject.usp_persistence_fullname2</a></p>
 </li>
 <li>
@@ -4633,6 +4826,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 </li>
 <li>
 <p><a href="repo.repoobject_gross.html#column-repoobjectunderlineschemaunderlinename" class="xref page">repo.RepoObject_gross.RepoObject_schema_name</a></p>
+</li>
+<li>
+<p><a href="repo.repoobject_gross_persistence.html#column-repoobjectunderlineschemaunderlinename" class="xref page">repo.RepoObject_gross_persistence.RepoObject_schema_name</a></p>
 </li>
 <li>
 <p><a href="repo.repoobject_persistence_column.html#column-repoobjectunderlineschemaunderlinenameunderlinet" class="xref page">repo.RepoObject_persistence_column.RepoObject_schema_name_t</a></p>
@@ -4739,6 +4935,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 <p><a href="repo.repoobject_gross.html#column-repoobjectunderlinetype" class="xref page">repo.RepoObject_gross.RepoObject_type</a></p>
 </li>
 <li>
+<p><a href="repo.repoobject_gross_persistence.html#column-repoobjectunderlinetype" class="xref page">repo.RepoObject_gross_persistence.RepoObject_type</a></p>
+</li>
+<li>
 <p><a href="repo.repoobject_persistence_column.html#column-repoobjectunderlinetypeunderlinet" class="xref page">repo.RepoObject_persistence_column.RepoObject_type_t</a></p>
 </li>
 <li>
@@ -4840,6 +5039,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 <p><a href="repo.repoobject_gross.html#column-sysobjectunderlineid" class="xref page">repo.RepoObject_gross.SysObject_id</a></p>
 </li>
 <li>
+<p><a href="repo.repoobject_gross_persistence.html#column-sysobjectunderlineid" class="xref page">repo.RepoObject_gross_persistence.SysObject_id</a></p>
+</li>
+<li>
 <p><a href="repo.repoobject_ssas_tgt.html#column-sysobjectunderlineid" class="xref page">repo.RepoObject_SSAS_tgt.SysObject_id</a></p>
 </li>
 <li>
@@ -4894,6 +5096,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 </li>
 <li>
 <p><a href="repo.repoobject_gross.html#column-sysobjectunderlinemodifyunderlinedate" class="xref page">repo.RepoObject_gross.SysObject_modify_date</a></p>
+</li>
+<li>
+<p><a href="repo.repoobject_gross_persistence.html#column-sysobjectunderlinemodifyunderlinedate" class="xref page">repo.RepoObject_gross_persistence.SysObject_modify_date</a></p>
 </li>
 <li>
 <p><a href="repo.repoobject_ssas_tgt.html#column-sysobjectunderlinemodifyunderlinedate" class="xref page">repo.RepoObject_SSAS_tgt.SysObject_modify_date</a></p>
@@ -5006,6 +5211,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 <p><a href="repo.repoobject_gross.html#column-sysobjectunderlinename" class="xref page">repo.RepoObject_gross.SysObject_name</a></p>
 </li>
 <li>
+<p><a href="repo.repoobject_gross_persistence.html#column-sysobjectunderlinename" class="xref page">repo.RepoObject_gross_persistence.SysObject_name</a></p>
+</li>
+<li>
 <p><a href="repo.repoobject_persistence_column.html#column-sysobjectunderlinenameunderlines" class="xref page">repo.RepoObject_persistence_column.SysObject_name_s</a></p>
 </li>
 <li>
@@ -5075,6 +5283,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 </li>
 <li>
 <p><a href="repo.repoobject_gross.html#column-sysobjectunderlineparentunderlineobjectunderlineid" class="xref page">repo.RepoObject_gross.SysObject_parent_object_id</a></p>
+</li>
+<li>
+<p><a href="repo.repoobject_gross_persistence.html#column-sysobjectunderlineparentunderlineobjectunderlineid" class="xref page">repo.RepoObject_gross_persistence.SysObject_parent_object_id</a></p>
 </li>
 <li>
 <p><a href="repo.repoobject_ssas_tgt.html#column-sysobjectunderlineparentunderlineobjectunderlineid" class="xref page">repo.RepoObject_SSAS_tgt.SysObject_parent_object_id</a></p>
@@ -5172,6 +5383,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 <p><a href="repo.repoobject_gross.html#column-sysobjectunderlineschemaunderlinename" class="xref page">repo.RepoObject_gross.SysObject_schema_name</a></p>
 </li>
 <li>
+<p><a href="repo.repoobject_gross_persistence.html#column-sysobjectunderlineschemaunderlinename" class="xref page">repo.RepoObject_gross_persistence.SysObject_schema_name</a></p>
+</li>
+<li>
 <p><a href="repo.repoobject_persistence_column.html#column-sysobjectunderlineschemaunderlinenameunderlines" class="xref page">repo.RepoObject_persistence_column.SysObject_schema_name_s</a></p>
 </li>
 <li>
@@ -5262,6 +5476,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 </li>
 <li>
 <p><a href="repo.repoobject_gross.html#column-sysobjectunderlinetype" class="xref page">repo.RepoObject_gross.SysObject_type</a></p>
+</li>
+<li>
+<p><a href="repo.repoobject_gross_persistence.html#column-sysobjectunderlinetype" class="xref page">repo.RepoObject_gross_persistence.SysObject_type</a></p>
 </li>
 <li>
 <p><a href="repo.repoobject_persistence_column.html#column-sysobjectunderlinetypeunderlines" class="xref page">repo.RepoObject_persistence_column.SysObject_type_s</a></p>
@@ -5370,6 +5587,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 <p><a href="repo.repoobject_gross.html#column-hasunderlinedifferentunderlinesysunderlinenames" class="xref page">repo.RepoObject_gross.has_different_sys_names</a></p>
 </li>
 <li>
+<p><a href="repo.repoobject_gross_persistence.html#column-hasunderlinedifferentunderlinesysunderlinenames" class="xref page">repo.RepoObject_gross_persistence.has_different_sys_names</a></p>
+</li>
+<li>
 <p><a href="repo_sys.repoobjectreferenced.html#column-hasunderlinedifferentunderlinesysunderlinenames" class="xref page">repo_sys.RepoObjectReferenced.has_different_sys_names</a></p>
 </li>
 <li>
@@ -5438,6 +5658,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 <ul>
 <li>
 <p><a href="repo.repoobject_gross.html#column-isunderlinerepoobjectunderlinenameunderlineuniqueidentifier" class="xref page">repo.RepoObject_gross.is_RepoObject_name_uniqueidentifier</a></p>
+</li>
+<li>
+<p><a href="repo.repoobject_gross_persistence.html#column-isunderlinerepoobjectunderlinenameunderlineuniqueidentifier" class="xref page">repo.RepoObject_gross_persistence.is_RepoObject_name_uniqueidentifier</a></p>
 </li>
 <li>
 <p><a href="repo.repoobject_wo_referencing.html#column-isunderlinerepoobjectunderlinenameunderlineuniqueidentifier" class="xref page">repo.RepoObject_wo_referencing.is_RepoObject_name_uniqueidentifier</a></p>
@@ -5514,6 +5737,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 <ul>
 <li>
 <p><a href="repo.repoobject_gross.html#column-isunderlinesysobjectunderlinenameunderlineuniqueidentifier" class="xref page">repo.RepoObject_gross.is_SysObject_name_uniqueidentifier</a></p>
+</li>
+<li>
+<p><a href="repo.repoobject_gross_persistence.html#column-isunderlinesysobjectunderlinenameunderlineuniqueidentifier" class="xref page">repo.RepoObject_gross_persistence.is_SysObject_name_uniqueidentifier</a></p>
 </li>
 <li>
 <p><a href="repo.repoobjectcolumn_gross.html#column-isunderlinesysobjectunderlinenameunderlineuniqueidentifier" class="xref page">repo.RepoObjectColumn_gross.is_SysObject_name_uniqueidentifier</a></p>
@@ -5599,6 +5825,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 </li>
 <li>
 <p><a href="repo.repoobject_gross.html#column-nodeunderlineid" class="xref page">repo.RepoObject_gross.node_id</a></p>
+</li>
+<li>
+<p><a href="repo.repoobject_gross_persistence.html#column-nodeunderlineid" class="xref page">repo.RepoObject_gross_persistence.node_id</a></p>
 </li>
 <li>
 <p><a href="repo.repoobjectcolumn_gross.html#column-nodeunderlineid" class="xref page">repo.RepoObjectColumn_gross.node_id</a></p>
@@ -5717,6 +5946,12 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 </li>
 <li>
 <p><a href="repo.repoobject_gross.html#column-persistenceunderlinesourceunderlinerepoobjectunderlinefullname" class="xref page">repo.RepoObject_gross.persistence_source_RepoObject_fullname</a></p>
+</li>
+<li>
+<p><a href="repo.repoobject_gross_persistence.html#column-repoobjectunderlinefullname" class="xref page">repo.RepoObject_gross_persistence.RepoObject_fullname</a></p>
+</li>
+<li>
+<p><a href="repo.repoobject_gross_persistence.html#column-persistenceunderlinesourceunderlinerepoobjectunderlinefullname" class="xref page">repo.RepoObject_gross_persistence.persistence_source_RepoObject_fullname</a></p>
 </li>
 <li>
 <p><a href="repo.repoobject_persistence_forupdate.html#column-targetunderlinerepoobjectunderlinefullname" class="xref page">repo.RepoObject_persistence_ForUpdate.target_RepoObject_fullname</a></p>
@@ -5852,6 +6087,12 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 <p><a href="repo.repoobject_gross.html#column-persistenceunderlinesourceunderlinerepoobjectunderlinefullname2" class="xref page">repo.RepoObject_gross.persistence_source_RepoObject_fullname2</a></p>
 </li>
 <li>
+<p><a href="repo.repoobject_gross_persistence.html#column-repoobjectunderlinefullname2" class="xref page">repo.RepoObject_gross_persistence.RepoObject_fullname2</a></p>
+</li>
+<li>
+<p><a href="repo.repoobject_gross_persistence.html#column-persistenceunderlinesourceunderlinerepoobjectunderlinefullname2" class="xref page">repo.RepoObject_gross_persistence.persistence_source_RepoObject_fullname2</a></p>
+</li>
+<li>
 <p><a href="repo.repoobject_persistence_forupdate.html#column-targetunderlinerepoobjectunderlinefullname2" class="xref page">repo.RepoObject_persistence_ForUpdate.target_RepoObject_fullname2</a></p>
 </li>
 <li>
@@ -5953,6 +6194,12 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 </li>
 <li>
 <p><a href="repo.repoobject_gross.html#column-persistenceunderlinesourceunderlinesysobjectunderlinefullname" class="xref page">repo.RepoObject_gross.persistence_source_SysObject_fullname</a></p>
+</li>
+<li>
+<p><a href="repo.repoobject_gross_persistence.html#column-sysobjectunderlinefullname" class="xref page">repo.RepoObject_gross_persistence.SysObject_fullname</a></p>
+</li>
+<li>
+<p><a href="repo.repoobject_gross_persistence.html#column-persistenceunderlinesourceunderlinesysobjectunderlinefullname" class="xref page">repo.RepoObject_gross_persistence.persistence_source_SysObject_fullname</a></p>
 </li>
 <li>
 <p><a href="repo.repoobject_requiredrepoobjectmerge.html#column-sysobjectunderlinefullname" class="xref page">repo.RepoObject_RequiredRepoObjectMerge.SysObject_fullname</a></p>
@@ -6070,6 +6317,12 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 <p><a href="repo.repoobject_gross.html#column-persistenceunderlinesourceunderlinesysobjectunderlinefullname2" class="xref page">repo.RepoObject_gross.persistence_source_SysObject_fullname2</a></p>
 </li>
 <li>
+<p><a href="repo.repoobject_gross_persistence.html#column-sysobjectunderlinefullname2" class="xref page">repo.RepoObject_gross_persistence.SysObject_fullname2</a></p>
+</li>
+<li>
+<p><a href="repo.repoobject_gross_persistence.html#column-persistenceunderlinesourceunderlinesysobjectunderlinefullname2" class="xref page">repo.RepoObject_gross_persistence.persistence_source_SysObject_fullname2</a></p>
+</li>
+<li>
 <p><a href="repo.repoobjectcolumn_gross.html#column-sysobjectunderlinefullname2" class="xref page">repo.RepoObjectColumn_gross.SysObject_fullname2</a></p>
 </li>
 </ul>
@@ -6138,6 +6391,64 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 <ul>
 <li>
 <p><a href="repo.repoobject_gross.html#column-sysobjectunderlinequeryunderlinesql" class="xref page">repo.RepoObject_gross.SysObject_query_sql</a></p>
+</li>
+<li>
+<p><a href="repo.repoobject_gross_persistence.html#column-sysobjectunderlinequeryunderlinesql" class="xref page">repo.RepoObject_gross_persistence.SysObject_query_sql</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="column-uspunderlinepersistenceunderlinefullname"><a class="anchor" href="#column-uspunderlinepersistenceunderlinefullname"></a>usp_persistence_fullname</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 7.6923%;">
+<col style="width: 61.5384%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6924%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>usp_persistence_fullname</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nvarchar(273)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOT NULL</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Calc</p></td>
+</tr>
+</tbody>
+</table>
+<div class="openblock">
+<div class="title">Description</div>
+<div class="content">
+<div class="paragraph">
+<p>(concat('[',[RepoObject_schema_name],'].[','usp_PERSIST_',[RepoObject_name],']'))</p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p><br></p>
+</div>
+<div class="literalblock">
+<div class="title">Definition</div>
+<div class="content">
+<pre>(concat('[',[RepoObject_schema_name],'].[','usp_PERSIST_',[RepoObject_name],']'))</pre>
+</div>
+</div>
+<div class="openblock">
+<div class="title">Referenced Columns</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#column-repoobjectunderlinename">repo.RepoObject.RepoObject_name</a></p>
+</li>
+<li>
+<p><a href="#column-repoobjectunderlineschemaunderlinename">repo.RepoObject.RepoObject_schema_name</a></p>
 </li>
 </ul>
 </div>
@@ -6258,6 +6569,9 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 <li>
 <p><a href="repo.repoobject_gross.html#column-uspunderlinepersistenceunderlinename" class="xref page">repo.RepoObject_gross.usp_persistence_name</a></p>
 </li>
+<li>
+<p><a href="repo.repoobject_gross_persistence.html#column-uspunderlinepersistenceunderlinename" class="xref page">repo.RepoObject_gross_persistence.usp_persistence_name</a></p>
+</li>
 </ul>
 </div>
 </div>
@@ -6266,7 +6580,7 @@ referenced: <a href="repo.index_settings.html" class="xref page">repo.Index_Sett
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="repo.measures_union.html">repo.Measures_union</a></span>
+  <span class="prev"><a href="repo.measure_union.html">repo.Measure_union</a></span>
   <span class="next"><a href="repo.repoobject__after_delete.html">repo.RepoObject__after_delete</a></span>
 </nav>
 </article>

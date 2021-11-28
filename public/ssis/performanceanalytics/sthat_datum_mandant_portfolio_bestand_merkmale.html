@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>sthAT_Datum_Mandant_Portfolio_Bestand_Merkmale.dtsx :: DataHandwerk Docs</title>
+    <link rel="canonical" href="https://datahandwerk.gitlab.io/ssis/performanceanalytics/sthat_datum_mandant_portfolio_bestand_merkmale.html">
+    <link rel="prev" href="sthat_date_portfolio_scd.html">
+    <link rel="next" href="sthat_devisenkurs.html">
+    <meta name="generator" content="Antora 3.0.0-beta.2">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <link rel="stylesheet" href="../../_/css/custom.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4RM6Q8D27"></script>
+    <script>function gtag(){dataLayer.push(arguments)};window.dataLayer=window.dataLayer||[];gtag('js',new Date());gtag('config','G-L4RM6Q8D27')</script>
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://datahandwerk.gitlab.io">DataHandwerk Docs</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://gitlab.com/datahandwerk/DataHandwerk-toolkit-mssql" target="_blank">dhw project on GitLab</a>
+            <a class="navbar-item" href="https://gitlab.com/datahandwerk/DataHandwerk-toolkit-mssql/-/issues" target="_blank">dhw issues on GitLab</a>
+            <a class="navbar-item" href="https://datahandwerk.zulipchat.com/" target="_blank">dhw community on Zulip (streams with topics)</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <form action="https://www.google.com/search" method="get" target="searchresult">
+              <input type="hidden" name="q" value="site:datahandwerk.gitlab.io">
+              <input type="text" name="q" alt="search">
+              <input type="submit" value="Search">
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ssis" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Demo SSIS</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">PerformanceAnalytics</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="config_calendar_t.html">config_Calendar_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="config_currentdate_t.html">config_CurrentDate_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="config_diverse_t.html">config_diverse_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="configh_portfolio_scd_excel_isbw_ispw.html">configH_Portfolio_SCD_Excel_isBW_isPW.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ih_mandant_portfolio_gewicht_at.html">ih_Mandant_Portfolio_Gewicht_AT.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ih_mandant_portfolio_obersub.html">ih_Mandant_Portfolio_OberSub.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ih_mandant_portfolio_share_md.html">ih_Mandant_Portfolio_share_md.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ih_portfolio_eigenschaften.html">ih_Portfolio_Eigenschaften.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ih_portfolio_mandant_share_at.html">ih_Portfolio_Mandant_share_AT.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="it_date_portfolio_perfrisk_hub_t.html">it_Date_Portfolio_Perfrisk_hub_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="it_date_portfolio_scd_hub_t.html">it_Date_Portfolio_SCD_hub_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="it_date_portfolio_scd_vortag_t.html">it_Date_Portfolio_SCD_Vortag_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="it_date_portfolio_share_hub_t.html">it_Date_Portfolio_share_hub_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="it_date_portfolio_share_mandant_obersub_t.html">it_Date_Portfolio_share_Mandant_OberSub_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="it_date_portfolio_share_step10_t.html">it_Date_Portfolio_share_step10_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="it_date_steuerung_union_t.html">it_Date_Steuerung_Union_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="it_mandant_portfolioattributesobersub_t.html">it_Mandant_PortfolioAttributesOberSub_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="it_portfolio_eigenschaftendatefrommin_md_t.html">it_Portfolio_EigenschaftenDateFromMin_md_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="it_portfolio_istinperfrisk_t.html">it_Portfolio_istInPerfrisk_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="it_portfolioattributesobersub_t.html">it_PortfolioAttributesOberSub_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="it_steuerung__date_portfolio_id_share_t.html">it_Steuerung__Date_Portfolio_ID_share_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="mdh_mandant.html">mdh_Mandant.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="mdh_mandant_metamandant.html">mdh_Mandant_MetaMandant.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="mdh_mandant_portfolio_share.html">mdh_Mandant_Portfolio_share.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="mdh_metamandant.html">mdh_MetaMandant.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="mdh_oberfond.html">mdh_Oberfond.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="mdh_portfolio.html">mdh_Portfolio.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="mdh_portfolio_eigenschaften.html">mdh_Portfolio_Eigenschaften.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="mdh_steuerung.html">mdh_Steuerung.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="sth_date_portfolio_perfrisk_excel.html">sth_Date_Portfolio_Perfrisk_Excel.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="sth_date_portfolio_remis.html">sth_Date_Portfolio_Remis.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="sth_steuerung_excel.html">sth_Steuerung_Excel.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="sthat.html">sthAT.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="sthat_allgemein.html">sthAT_allgemein.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="sthat_date_portfolio_mis.html">sthAT_Date_Portfolio_MIS.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="sthat_date_portfolio_scd.html">sthAT_Date_Portfolio_SCD.dtsx</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="sthat_datum_mandant_portfolio_bestand_merkmale.html">sthAT_Datum_Mandant_Portfolio_Bestand_Merkmale.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="sthat_devisenkurs.html">sthAT_Devisenkurs.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="sti_portfolio_scd_excel_bw_pw.html">sti_Portfolio_SCD_Excel_BW_PW.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="sti_remis_pa.html">sti_remis_pa.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="stiat.html">stiAT.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="stiat_allgemein.html">stiAT_allgemein.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="stiat_date_portfolio_mis.html">stiAT_Date_Portfolio_MIS.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="stiat_date_portfolio_scd.html">stiAT_Date_Portfolio_SCD.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="stiat_datum_mandant_portfolio_bestand_merkmale.html">stiAT_Datum_Mandant_Portfolio_Bestand_Merkmale.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="stiat_devisenkurs.html">stiAT_Devisenkurs.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflowblankpackage.html">Workflow package.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflow_mdh.html">Workflow_mdh.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflow_ohne_staging.html">Workflow_ohne_staging.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflow_staging_remis.html">Workflow_staging_Remis.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflow_staging_remis_m18_m19.html">Workflow_staging_Remis_M18_M19.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflow_sth_remis.html">Workflow_sth_Remis.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflow_sti_configh_portfolio_scd_excel_isbw_ispw.html">Workflow_sti_configH_Portfolio_SCD_Excel_isBW_isPW.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflow_stiat_sthat.html">Workflow_stiAT_sthAT.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflow_stiat_sthat_allgemein.html">Workflow_stiAT_sthAT_allgemein.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflow_stiat_sthat_date_portfolio_scd.html">Workflow_stiAT_sthAT_Date_Portfolio_SCD.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflow_stiat_sthat_devisenkurs.html">Workflow_stiAT_sthAT_Devisenkurs.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workflow_taeglich.html">Workflow_taeglich.dtsx</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">ServiceNow</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../servicenow/config_calendar_t.html">config_Calendar_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../servicenow/config_currentdate_t.html">config_CurrentDate_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../servicenow/ilhsn_eventtablefield.html">ILHSN_EventTableField.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../servicenow/ilhsn_eventtablefieldoldnew.html">ILHSN_EventTableFieldOldNew.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../servicenow/ilhsn_sysaudit.html">ILHSN_SysAudit.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../servicenow/iltsn_user_used_t.html">ILTSN_User_used_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../servicenow/iltsn_usergroup_used_t.html">ILTSN_UserGroup_used_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../servicenow/sstsn_update_request_dwh_attibutes.html">SSTSN_update_Request_dwh_attibutes.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../servicenow/sthsn_main.html">STHSN_main.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../servicenow/sthsn_request_historized.html">STHSN_Request_Historized.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../servicenow/sthsn_sys_choice.html">STHSN_sys_choice.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../servicenow/sttsn_request_table__tablename_comparingdatetime_t.html">STTSN_request_table__tablename_ComparingDatetime_T.dtsx</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../servicenow/workflowblankpackage.html">Workflow package.dtsx</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Demo SSIS</span>
+    <span class="version">default</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../dhw/index.html">DataHandwerk</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../dhw/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../aw/index.html">Demo AdventureWorks</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../aw/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../index.html">Demo SSIS</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">default</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../dhw/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Demo SSIS</a></li>
+    <li>PerformanceAnalytics</li>
+    <li><a href="sthat_datum_mandant_portfolio_bestand_merkmale.html">sthAT_Datum_Mandant_Portfolio_Bestand_Merkmale.dtsx</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="file:///D:/Repos/gitlab/DataHandwerk/dhw-antora-ssis/docs/modules/performanceanalytics/pages/sthat_datum_mandant_portfolio_bestand_merkmale.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">sthAT_Datum_Mandant_Portfolio_Bestand_Merkmale.dtsx</h1>
+<div class="sect1">
+<h2 id="_package_properties"><a class="anchor" href="#_package_properties"></a>Package Properties</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PackageCreationDate</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>2020-07-29 17:15:53</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PackageCreatorComputerName</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>ACPROD</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PackageCreatorName</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>ACPROD\dsorokin</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PackageDTSID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>502B962E-4267-491A-859B-33F97F59AC90</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PackageLastModifiedProductVersion</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>13.0.4604.0</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PackageLocaleID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>1031</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PackageProtectionLevel</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>0</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PackageProtectionLevelName</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>DontSaveSensitive</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PackageVersionGUID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>893BFE9C-560D-4C24-AEF4-F5E3EE093730</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ProjectPath</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>D:\Repos\Azure\aisberg\PerformanceAnalytics\SSIS\SSIS_PerformanceAnalytics</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_description"><a class="anchor" href="#_description"></a>Description</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_control_flow_diagram"><a class="anchor" href="#_control_flow_diagram"></a>Control Flow Diagram</h2>
+<div class="sectionbody">
+<div class="imageblock kroki">
+<div class="content">
+<object type="image/svg+xml" data="_images/diag-76e5de749056cd98f46cfb672ecb1f06e4708184.svg"><span class="alt">ssis-sthat_datum_mandant_portfolio_bestand_merkmale</span></object>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tasks"><a class="anchor" href="#_tasks"></a>Tasks</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="task-packagebackslashrunblankprocedureblankcfgunderlinehistunderlinesthatunderlinedatumunderlinemandantunderlineportfoliounderlinebestandunderlinemerkmale"><a class="anchor" href="#task-packagebackslashrunblankprocedureblankcfgunderlinehistunderlinesthatunderlinedatumunderlinemandantunderlineportfoliounderlinebestandunderlinemerkmale"></a>Package\Run procedure CFG_HIST_sthAT_Datum_Mandant_Portfolio_Bestand_Merkmale</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Path</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Package\Run procedure CFG_HIST_sthAT_Datum_Mandant_Portfolio_Bestand_Merkmale</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Name</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Run procedure CFG_HIST_sthAT_Datum_Mandant_Portfolio_Bestand_Merkmale</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Task Type</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>Microsoft.ExecuteSQLTask</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is Disabled</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>False</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sql Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>5D900397-FA5A-4C20-99A6-F05745424D93</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sql Package Connection</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><a href="#connection-target">Target</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sql Statement</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><details>
+<summary class="title">Details</summary>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">EXEC [CFG].[HIST_sthAT_Datum_Mandant_Portfolio_Bestand_Merkmale]</code></pre>
+</div>
+</div>
+</div>
+</details></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_parameters"><a class="anchor" href="#_parameters"></a>Parameters</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_variables"><a class="anchor" href="#_variables"></a>Variables</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_project_connections"><a class="anchor" href="#_project_connections"></a>Project Connections</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_package_connections"><a class="anchor" href="#_package_connections"></a>Package Connections</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="connection-config"><a class="anchor" href="#connection-config"></a>config</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerType</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>OLEDB</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>D3846C84-3885-41FF-99CC-786602347E21</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ExpressionValue</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>@[$Project::Config]</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="connection-target"><a class="anchor" href="#connection-target"></a>Target</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerType</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>OLEDB</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerID</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>5D900397-FA5A-4C20-99A6-F05745424D93</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ExpressionValue</p></td>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>@[$Project::Target]</pre></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="sthat_date_portfolio_scd.html">sthAT_Date_Portfolio_SCD.dtsx</a></span>
+  <span class="next"><a href="sthat_devisenkurs.html">sthAT_Devisenkurs.dtsx</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content" onclick="closeModal()">
+        <!--suppress HtmlRequiredAltAttribute as this will be set when selecting the image via JavaScript,
+        RequiredAttributes as src will be set by when selecting the image via JavaScript -->
+        <img id="imageinmodal">
+    </div>
+</div>
+<script>
+    function openModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+
+    document.querySelectorAll('.imageblock kroki').forEach(element => {
+        element.className += " lightbox";
+        element.addEventListener('click', evt => {
+            document.getElementById("imageinmodal").setAttribute("data", evt.currentTarget.getAttribute("data"))
+            openModal();
+        })
+    });
+
+</script>
+<style>
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 10;
+        padding-top: 5vh;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        backdrop-filter: blur(3px);
+        background-color: rgba(30, 30, 30, 0.8);
+    }
+    img.lightbox {
+        cursor: pointer;
+    }
+    /* Modal Content */
+    .modal-content {
+        position: relative;
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        max-height: 90vh;
+        cursor: pointer;
+    }
+
+    .modal-content img {
+        width: auto;
+        height: auto;
+        max-width: 90vw;
+        max-height: 90vh;
+        min-width: 90vw;
+        min-height: 90vh;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        object-fit: contain;
+    }
+
+    /* The Close Button */
+    .close {
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

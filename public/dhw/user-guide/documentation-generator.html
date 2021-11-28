@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Database documentation generator :: DataHandwerk Docs</title>
     <link rel="canonical" href="https://datahandwerk.gitlab.io/dhw/user-guide/documentation-generator.html">
-    <link rel="prev" href="properties-inheritance.html">
-    <link rel="next" href="execution-log.html">
-    <meta name="generator" content="Antora 3.0.0-beta.1">
+    <link rel="prev" href="backup-repo-db.html">
+    <link rel="next" href="sqlparse-to-get-col-references.html">
+    <meta name="generator" content="Antora 3.0.0-beta.2">
     <link rel="stylesheet" href="../../_/css/site.css">
     <link rel="stylesheet" href="../../_/css/custom.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4RM6Q8D27"></script>
@@ -102,6 +102,9 @@
     <a class="nav-link" href="../sqldb/config.usp_connect_database.html">config.usp_connect_database</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/config.usp_extract_dacpac.html">config.usp_extract_dacpac</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/config.usp_init_parameter.html">config.usp_init_parameter</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -178,6 +181,21 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/dbo.crlf.html">dbo.crlf</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/dbo.usp_altertablesdatacompression.html">dbo.usp_AlterTablesDataCompression</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/dbo.usp_generate_merge.html">dbo.usp_generate_merge</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/dbo.usp_longprint.html">dbo.usp_longprint</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/dbo.usp_refreshviews.html">dbo.usp_RefreshViews</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/dbo.usp_truncatetables.html">dbo.usp_TruncateTables</a>
   </li>
 </ul>
   </li>
@@ -264,6 +282,9 @@
     <a class="nav-link" href="../sqldb/docs.ftv_repoobject_reference_plantuml_entityreflist.html">docs.ftv_RepoObject_Reference_PlantUml_EntityRefList</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/docs.measure_measurepropertylist.html">docs.Measure_MeasurePropertyList</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/docs.objectrefcyclic.html">docs.ObjectRefCyclic</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -292,6 +313,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/docs.repoobject_indexlist_t.html">docs.RepoObject_IndexList_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/docs.repoobject_measuredescriptionlist.html">docs.RepoObject_MeasureDescriptionList</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/docs.repoobject_measurelist.html">docs.RepoObject_MeasureList</a>
@@ -441,7 +465,7 @@
     <a class="nav-link" href="../sqldb/docs.usp_antoraexport_objectpagetemplate.html">docs.usp_AntoraExport_ObjectPageTemplate</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/docs.usp_antoraexport_objectpartialproperties.html">docs.usp_AntoraExport_ObjectPartialProperties</a>
+    <a class="nav-link" href="../sqldb/docs.usp_antoraexport_objectpartialscontent.html">docs.usp_AntoraExport_ObjectPartialsContent</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/docs.usp_antoraexport_objectpuml.html">docs.usp_AntoraExport_ObjectPuml</a>
@@ -462,7 +486,7 @@
     <a class="nav-link" href="../sqldb/docs.usp_antoraexport_ssispagetemplate.html">docs.usp_AntoraExport_SsisPageTemplate</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/docs.usp_antoraexport_ssispartialproperties.html">docs.usp_AntoraExport_SsisPartialProperties</a>
+    <a class="nav-link" href="../sqldb/docs.usp_antoraexport_ssispartialscontent.html">docs.usp_AntoraExport_SsisPartialsContent</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/docs.usp_antoraexport_ssispuml.html">docs.usp_AntoraExport_SsisPuml</a>
@@ -564,6 +588,15 @@
     <a class="nav-link" href="../sqldb/property.fs_get_repoobjectproperty_nvarchar.html">property.fs_get_RepoObjectProperty_nvarchar</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/property.measureproperty.html">property.MeasureProperty</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/property.propertyname_measure.html">property.PropertyName_Measure</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/property.propertyname_measure_t.html">property.PropertyName_Measure_T</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/property.propertyname_repoobject.html">property.PropertyName_RepoObject</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -646,6 +679,12 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/property.usp_external_repoobjectproperty.html">property.usp_external_RepoObjectProperty</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/property.usp_measureproperty_set.html">property.usp_MeasureProperty_set</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/property.usp_persist_propertyname_measure_t.html">property.usp_PERSIST_PropertyName_Measure_T</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/property.usp_persist_propertyname_repoobject_t.html">property.usp_PERSIST_PropertyName_RepoObject_T</a>
@@ -1014,6 +1053,12 @@
     <a class="nav-link" href="../sqldb/repo.foreignkey_virtual_indexes.html">repo.ForeignKey_virtual_Indexes</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.fs_measure_fullname2.html">repo.fs_Measure_fullname2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.fs_repoobject_fullname2.html">repo.fs_RepoObject_fullname2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.index_columlist.html">repo.Index_ColumList</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -1104,10 +1149,10 @@
     <a class="nav-link" href="../sqldb/repo.indexreferencedreferencing_hasfullcolumnsinreferencing.html">repo.IndexReferencedReferencing_HasFullColumnsInReferencing</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/repo.measures.html">repo.Measures</a>
+    <a class="nav-link" href="../sqldb/repo.measure.html">repo.Measure</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/repo.measures_union.html">repo.Measures_union</a>
+    <a class="nav-link" href="../sqldb/repo.measure_union.html">repo.Measure_union</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.repoobject.html">repo.RepoObject</a>
@@ -1132,6 +1177,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.repoobject_gross.html">repo.RepoObject_gross</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.repoobject_gross_persistence.html">repo.RepoObject_gross_persistence</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.repoobject_gross2.html">repo.RepoObject_gross2</a>
@@ -1285,6 +1333,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.usp_persist_reposchema_ssas_tgt.html">repo.usp_PERSIST_RepoSchema_ssas_tgt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/repo.usp_persistence_delete.html">repo.usp_persistence_delete</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/repo.usp_persistence_set.html">repo.usp_persistence_set</a>
@@ -1524,13 +1575,13 @@
     <a class="nav-link" href="../sqldb/ssas.indexcolumn_union.html">ssas.IndexColumn_union</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/ssas.measures_translation.html">ssas.Measures_translation</a>
+    <a class="nav-link" href="../sqldb/ssas.measure_translation.html">ssas.Measure_translation</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/ssas.measures_translation_displayfolder_union.html">ssas.Measures_translation_displayfolder_union</a>
+    <a class="nav-link" href="../sqldb/ssas.measure_translation_displayfolder_union.html">ssas.Measure_translation_displayfolder_union</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/ssas.measures_translation_t.html">ssas.Measures_translation_T</a>
+    <a class="nav-link" href="../sqldb/ssas.measure_translation_t.html">ssas.Measure_translation_T</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/ssas.model_json.html">ssas.model_json</a>
@@ -1803,7 +1854,7 @@
     <a class="nav-link" href="../sqldb/ssas.tmschema_variations.html">ssas.TMSCHEMA_VARIATIONS</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/ssas.usp_persist_measures_translation_t.html">ssas.usp_PERSIST_Measures_translation_T</a>
+    <a class="nav-link" href="../sqldb/ssas.usp_persist_measure_translation_t.html">ssas.usp_PERSIST_Measure_translation_T</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/ssas.usp_persist_model_json_31_tables_t.html">ssas.usp_PERSIST_model_json_31_tables_T</a>
@@ -2288,24 +2339,15 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/tool.ftv_extract_substrings.html">tool.ftv_extract_substrings</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/tool.usp_generate_merge.html">tool.usp_generate_merge</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/tool.usp_longprint.html">tool.usp_longprint</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/tool.usp_refreshviews.html">tool.usp_RefreshViews</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../sqldb/tool.usp_truncatetables.html">tool.usp_TruncateTables</a>
-  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../sqldb/nav/nav-schema-uspgenerator.html">uspgenerator</a>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/uspgenerator.fs_usp_fullname.html">uspgenerator.fs_usp_fullname</a>
+  </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/uspgenerator.ftv_generatoruspstep_sql.html">uspgenerator.ftv_GeneratorUspStep_sql</a>
   </li>
@@ -2341,6 +2383,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/uspgenerator.generatoruspstep_sql.html">uspgenerator.GeneratorUspStep_Sql</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/uspgenerator.usp_copy_procedure.html">uspgenerator.usp_copy_procedure</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/uspgenerator.usp_generatorusp_insert_update_persistence.html">uspgenerator.usp_GeneratorUsp_insert_update_persistence</a>
@@ -2382,7 +2427,16 @@
     <a class="nav-link" href="../sqldb/workflow.proceduredependency_input_persistencedependency_s.html">workflow.ProcedureDependency_input_PersistenceDependency_S</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/workflow.proceduredependency_persistencedependency_src.html">workflow.ProcedureDependency_PersistenceDependency_src</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/workflow.proceduredependency_persistencedependency_tgt.html">workflow.ProcedureDependency_PersistenceDependency_tgt</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/workflow.usp_persist_proceduredependency_input_persistencedependency.html">workflow.usp_PERSIST_ProcedureDependency_input_PersistenceDependency</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sqldb/workflow.usp_persist_proceduredependency_persistencedependency_tgt.html">workflow.usp_PERSIST_ProcedureDependency_PersistenceDependency_tgt</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sqldb/workflow.usp_persist_workflow_proceduredependency_t.html">workflow.usp_PERSIST_Workflow_ProcedureDependency_T</a>
@@ -2458,7 +2512,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../sqldb/other/objectrefcyclic.html">Cyclic Object References</a>
+    <a class="nav-link" href="../sqldb/objectrefcyclic.html">Cyclic Object References</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../sqldb/other/indexsemanticgroup.html">Index SemanticGroup</a>
@@ -2475,6 +2529,9 @@
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="backup-repo-db.html">Backup and restore repository database</a>
   </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="documentation-generator.html">Database documentation generator</a>
+  </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="sqlparse-to-get-col-references.html">SqlParse to detect column references</a>
@@ -2490,17 +2547,14 @@
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="properties-inheritance.html">Properties Inheritance</a>
   </li>
-  <li class="nav-item is-current-page" data-depth="1">
-    <a class="nav-link" href="documentation-generator.html">Database documentation generator</a>
-  </li>
-  <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="execution-log.html">Execution log</a>
-  </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="uspgenerator.html">usp generator</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="persistence-generator.html">Persistence generator</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="execution-log.html">Execution log</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="ssms-configuration.html">SSMS configuration</a>
@@ -2524,6 +2578,22 @@
       <ul class="versions">
         <li class="version is-current is-latest">
           <a href="../index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../aw/index.html">Demo AdventureWorks</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../aw/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../ssis/index.html">Demo SSIS</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ssis/index.html">default</a>
         </li>
       </ul>
     </li>
@@ -2560,13 +2630,10 @@
 <p>setup Antora (one time task)</p>
 </li>
 <li>
-<p>setup sqldb-docs repository (one time per database task)</p>
+<p>setup xxx-antora-sqldb and optional xxx-antora-docs repositories</p>
 </li>
 <li>
-<p>setup Antora Playbook project (one time per project task)</p>
-</li>
-<li>
-<p>setup <em>optional</em> additional docs repositories containing additional documentation (one time per project task)</p>
+<p>setup Antora Playbook project repository</p>
 </li>
 <li>
 <p>recurring steps</p>
@@ -2604,36 +2671,6 @@ Exec docs.usp_AntoraExport;</code></pre>
 <p>generate the static site</p>
 <div class="paragraph">
 <p>In the Antora Playbook project call Antora to build the local or the final site.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>You can use the prepared PowerShell scripts</p>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-powershell hljs" data-lang="powershell">./local-playbook.ps1</code></pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-powershell hljs" data-lang="powershell">./playbook.ps1</code></pre>
-</div>
-</div>
-</li>
-<li>
-<p>you can also use Windows bat files:</p>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">local-playbook.bat</code></pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">playbook.bat</code></pre>
-</div>
-</div>
-</li>
-</ul>
 </div>
 </li>
 </ul>
@@ -2711,7 +2748,7 @@ Exec docs.usp_AntoraExport;</code></pre>
 <div class="ulist">
 <ul>
 <li>
-<p>For optimal version control of the content, it makes sense to use plain-text formats for the sources of the documentation, such as Markdown or Asciidoc.</p>
+<p>For optimal version control of the content, it makes sense to use plain-text formats for the sources of the documentation, such as Markdown or <strong>Asciidoc</strong>.</p>
 </li>
 </ul>
 </div>
@@ -2776,9 +2813,6 @@ Exec docs.usp_AntoraExport;</code></pre>
 <div class="ulist">
 <ul>
 <li>
-<p>Use of <strong>extended properties</strong></p>
-</li>
-<li>
 <p><strong>Virtual indexes, PK and FK</strong></p>
 <div class="openblock">
 <div class="content">
@@ -2835,6 +2869,9 @@ The SQL Server only shows that the procedure depends on tables. However, it does
 </li>
 </ul>
 </div>
+</li>
+<li>
+<p><strong>cross-database references</strong></p>
 </li>
 </ul>
 </div>
@@ -2895,6 +2932,12 @@ The SQL Server only shows that the procedure depends on tables. However, it does
 </div>
 </div>
 </div>
+</li>
+<li>
+<p><strong>Combination of descriptions stored in the databases with descriptions that can be stored and maintained externally</strong></p>
+</li>
+<li>
+<p>Use of extended properties</p>
 </li>
 </ul>
 </div>
@@ -3044,14 +3087,15 @@ The SQL Server only shows that the procedure depends on tables. However, it does
 <p>The exact content is specified in <a href="../sqldb/config.parameter.html" class="xref page">config.Parameter</a> and can be customized for specific projects.</p>
 </div>
 <div class="exampleblock">
+<div class="title">Example 2. page template content</div>
 <div class="content">
-<div class="literalblock">
+<div class="listingblock">
 <div class="content">
-<pre>include::partial$template/master-page-1.adoc[]
+<pre class="highlightjs highlight"><code class="language-adoc hljs" data-lang="adoc">include::partial$template/master-page-1.adoc[]
 include::partial$template/master-page-examples.adoc[]
 include::partial$template/master-page-4.adoc[]
 include::partial$template/master-page-5_references.adoc[]
-include::partial$template/master-page-6.adoc[]</pre>
+include::partial$template/master-page-6.adoc[]</code></pre>
 </div>
 </div>
 </div>
@@ -3071,36 +3115,36 @@ include::partial$template/master-page-6.adoc[]</pre>
 <div class="content">
 <div class="listingblock">
 <div class="content">
-<pre>    = {docname} <i class="conum" data-value="1"></i><b>(1)</b>
+<pre class="highlightjs highlight"><code class="language-adoc hljs" data-lang="adoc">= {docname} <i class="conum" data-value="1"></i><b>(1)</b>
 
-    include::partial${docname}.adoc[tag=existing_properties] <i class="conum" data-value="3"></i><b>(3)</b>
-    include::partial${docname}.adoc[tag=boolean_attributes]
+include::partial${docname}.adoc[tag=existing_properties] <i class="conum" data-value="3"></i><b>(3)</b>
+include::partial${docname}.adoc[tag=boolean_attributes]
 
-    type:
-    include::partial${docname}.adoc[tag=SysObject_type]
-    (
-    include::partial${docname}.adoc[tag=SysObject_type_name]
-    ), modify_date:
-    include::partial${docname}.adoc[tag=SysObject_modify_date]
+type:
+include::partial${docname}.adoc[tag=SysObject_type]
+(
+include::partial${docname}.adoc[tag=SysObject_type_name]
+), modify_date:
+include::partial${docname}.adoc[tag=SysObject_modify_date]
 
-    RepoObject_guid:
-    include::partial${docname}.adoc[tag=RepoObject_guid]
+RepoObject_guid:
+include::partial${docname}.adoc[tag=RepoObject_guid]
 
-    ifdef::is_repo_managed[] <i class="conum" data-value="2"></i><b>(2)</b>
-    is_repo_managed: 1
-    endif::is_repo_managed[] <i class="conum" data-value="2"></i><b>(2)</b>
+ifdef::is_repo_managed[] <i class="conum" data-value="2"></i><b>(2)</b>
+is_repo_managed: 1
+endif::is_repo_managed[] <i class="conum" data-value="2"></i><b>(2)</b>
 
-    ifdef::is_ssas[] <i class="conum" data-value="2"></i><b>(2)</b>
-    is_ssas: 1
-    endif::is_ssas[] <i class="conum" data-value="2"></i><b>(2)</b>
+ifdef::is_ssas[] <i class="conum" data-value="2"></i><b>(2)</b>
+is_ssas: 1
+endif::is_ssas[] <i class="conum" data-value="2"></i><b>(2)</b>
 
-    ifdef::ExistsProperty--MS_Description[] <i class="conum" data-value="2"></i><b>(2)</b>
+ifdef::ExistsProperty--MS_Description[] <i class="conum" data-value="2"></i><b>(2)</b>
 
-    == Description
+== Description
 
-    include::partial${docname}.adoc[tag=ms_description]
+include::partial${docname}.adoc[tag=ms_description]
 
-    endif::ExistsProperty--ms_description[] <i class="conum" data-value="2"></i><b>(2)</b></pre>
+endif::ExistsProperty--ms_description[] <i class="conum" data-value="2"></i><b>(2)</b></code></pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -3126,37 +3170,7 @@ See: <a href="https://docs.asciidoctor.org/asciidoc/latest/directives/include-ta
 </div>
 </li>
 <li>
-<p>folder <code>partials\puml</code></p>
-<div class="openblock">
-<div class="content">
-<div class="paragraph">
-<p>contains different sub folders with different PlantUML diagrams per object</p>
-</div>
-</div>
-</div>
-</li>
-<li>
-<p>folder <code>partials\navlist</code></p>
-<div class="openblock">
-<div class="content">
-<div class="paragraph">
-<p>contains different Antora navigation lists</p>
-</div>
-</div>
-</div>
-</li>
-<li>
-<p>folder <code>partials\docsnippet</code></p>
-<div class="openblock">
-<div class="content">
-<div class="paragraph">
-<p>contains optional additional partial documents which could be used in project specific documentation</p>
-</div>
-</div>
-</div>
-</li>
-<li>
-<p>folder <code>partials</code> (no subfolder)</p>
+<p>folder <code>partials\content</code></p>
 <div class="openblock">
 <div class="content">
 <div class="paragraph">
@@ -3167,6 +3181,16 @@ See: <a href="https://docs.asciidoctor.org/asciidoc/latest/directives/include-ta
 </div>
 <div class="paragraph">
 <p>The content is addressed and used via the template files.</p>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>folder <code>partials\navlist</code></p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>contains different Antora navigation lists</p>
 </div>
 </div>
 </div>
@@ -3200,43 +3224,68 @@ See: <a href="https://docs.asciidoctor.org/asciidoc/latest/directives/include-ta
 <div class="paragraph">
 <p>It is a good idea to use additional docs repositories for additional manually created documentation.</p>
 </div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The Antora documentation explains how to install Antora globally. But it is recommended to install it locally in the repository where the documentation should be created.<br>
+In the following code adapt the antora version.</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="literalblock">
+<div class="content">
+<pre>node -e "require('fs').writeFileSync('package.json', '{}')"
+npm i -D @antora/cli@3.0.0-beta.2 @antora/site-generator-default@3.0.0-beta.2
+npm i -D asciidoctor asciidoctor-kroki</pre>
+</div>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
 <div class="sect2">
 <h3 id="_setup_sqldb_docs_repositories"><a class="anchor" href="#_setup_sqldb_docs_repositories"></a>setup sqldb-docs repositories</h3>
 <div class="paragraph">
-<p>Antora can collect the content from different repositories. So, if you want to combine the database documentation with other content, you can also distribute this content to different repositories. For example, the DataHandwerk documentation combines architecture, manual, and database documentation in a common and interlinked documentation. And we use two source repositories:</p>
+<p>Antora can collect the content from different repositories. So, if you want to combine the database documentation with other content, you can (and should) distribute this content to different repositories. For example, the DataHandwerk documentation combines architecture, user guid, and database documentation in a common and interlinked documentation. And we use multiple source repositories:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://gitlab.com/datahandwerk/dhw-antora-docs" class="bare">https://gitlab.com/datahandwerk/dhw-antora-docs</a> contains manually created content like architecture, manual</p>
+<p><a href="https://gitlab.com/datahandwerk/dhw-antora-docs" class="bare">https://gitlab.com/datahandwerk/dhw-antora-docs</a> contains manually created content like architecture, user guide</p>
 </li>
 <li>
-<p><a href="https://gitlab.com/datahandwerk/dhw-antora-sqldb" class="bare">https://gitlab.com/datahandwerk/dhw-antora-sqldb</a> contains automatically created content, created using <a href="../sqldb/docs.usp_antoraexport.html" class="xref page">docs.usp_AntoraExport</a></p>
+<p><a href="https://gitlab.com/datahandwerk/dhw-antora-sqldb" class="bare">https://gitlab.com/datahandwerk/dhw-antora-sqldb</a> contains automatically created content, created using <a href="../sqldb/docs.usp_antoraexport.html" class="xref page">docs.usp_AntoraExport</a>, under a second start path 'docsmanual' additional manual content is added, for example descriptions.</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>steps</p>
-</div>
+<div class="sect3">
+<h4 id="_steps_to_create_a_new_source_repository"><a class="anchor" href="#_steps_to_create_a_new_source_repository"></a>steps to create a new source repository</h4>
 <div class="ulist">
 <ul>
 <li>
-<p>create a new git repositories per database, for example <a href="https://gitlab.com/mygroup/dhw-antora-sqldb" class="bare">https://gitlab.com/mygroup/dhw-antora-sqldb</a></p>
+<p>create a new git repositories per dwh database, for example <a href="https://gitlab.com/mygroup/dhw-antora-sqldb" class="bare">https://gitlab.com/mygroup/dhw-antora-sqldb</a></p>
 <div class="ulist">
 <ul>
 <li>
 <p>you can create and use local repositories</p>
 </li>
 <li>
-<p>you can combine different documentation sources in one documentation</p>
+<p>you can combine different documentation source repositories in one documentation</p>
 <div class="ulist">
 <ul>
 <li>
-<p>each dwh database has its own repository database</p>
+<p>each dwh database has its own repository database (because of possible naming conflicts)</p>
 </li>
 <li>
 <p>for different database use different parameter settings in <a href="../sqldb/config.parameter.html" class="xref page">config.Parameter</a> for <code>AntoraComponent</code> and <code>AntoraModule</code><br>
-You can document each database as a separate component or as different modules of a common component. Each component has its own navigation bar, switching between components is done with a component selector, by default in the lower left corner.</p>
+As you prefer, you can document each database as a separate component or as different modules of a common component. Each component has its own navigation bar, switching between components is done with a component selector, by default in the lower left corner.</p>
 </li>
 </ul>
 </div>
@@ -3252,19 +3301,117 @@ You can document each database as a separate component or as different modules o
 <div class="ulist">
 <ul>
 <li>
-<p>copy the template for an Antora-component-folder from <code>DataHandwerk-toolkit-mssql\antora-template\docs</code> (including all content) into your target repository</p>
+<p>copy the required folder structure including all basic content from <a href="https://gitlab.com/datahandwerk/DataHandwerk-toolkit-mssql/-/tree/main/template-antora-db" class="bare">https://gitlab.com/datahandwerk/DataHandwerk-toolkit-mssql/-/tree/main/template-antora-db</a> into into your target repository.</p>
+</li>
+<li>
+<p>rename the folder, in our example 'dhw-antora-ssas'</p>
+</li>
+<li>
+<p>check and update the content of some files and rename some folders</p>
+</li>
+<li>
+<p>create a local git repository and do a first commit</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>the template structure:</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
-<p>On Windows you can also use <code>xcopy</code> to copy an existing folder structure without files</p>
+<p>'docs' and 'docsmanual' are two (2) start_paths, used in the Antora Playbook yaml files</p>
+<div class="ulist">
+<ul>
+<li>
+<p>'docs' should be filled using the export procedure [docs].[usp_AntoraExport]<br>
+when exporting the files in subfolders 'partials' and 'pages' are deleted, that&#8217;s why you should not add manuell context into these folder</p>
+</li>
+<li>
+<p>'docsmanual' contains additional manual created and updated content. We use this separate start_path to avoid automatic deletion of files by [docs].[usp_AntoraExport]</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>the next level folder in both start_path is the folder 'modules', containing Antora modules</p>
+</li>
+<li>
+<p>parallel to the folder 'modules' a file 'antora.yml' is required to define the Antora component. See <a href="https://docs.antora.org/antora/2.3/component-version/">What’s a Component Version?</a> and <a href="https://docs.antora.org/antora/2.3/component-version-descriptor/">What’s antora.yml?</a></p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Both 'antora.yml' files in 'docs' and 'docsmanual' needs to match.
+</td>
+</tr>
+</table>
+</div>
+<div class="exampleblock">
+<div class="content">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">xcopy C:\SourceFolder D:\TargetFolder /t /e</code></pre>
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">name: mycomponent <i class="conum" data-value="1"></i><b>(1)</b>
+title: My Project <i class="conum" data-value="2"></i><b>(2)</b>
+version: 0.1.0 <i class="conum" data-value="3"></i><b>(3)</b>
+nav:
+- modules/sqldb/nav.adoc <i class="conum" data-value="4"></i><b>(4)</b></code></pre>
 </div>
 </div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>use the same component name in multiple <code>antora.yml</code> to combine them in one component</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>define the component <code>title</code> <em>only in one file</em>, not in both</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>use the same version(s) in related <code>antora.yml</code> to get a consistent documentation,<br>
+use <code>~</code> to <a href="https://docs.antora.org/antora/3.0/component-with-no-version/">Define a Component with No Version</a></td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>define the <code>nav</code> (Navigation structure) <em>only in one file</em>, not in both</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>the default module in both start_path is 'sqldb'. if you don&#8217;t use the default AntoraModule 'sqldb' then rename the folder to match your 'AntoraModule' parameter settings in config.parameter.adoc[]. You also need to adapt the <code>nav</code> entry in 'antora.yml' to match</p>
+</li>
+<li>
+<p>the start_path 'docsmanual' contains an additional component ROOT. The file 'index.adoc' in the folder 'pages' defines the <strong>home page</strong> of the component. You need to update the content.</p>
+</li>
+<li>
+<p>'nav.adoc' - each module needs one (1) file 'nav.adoc' to define the navigation structure. See: <a href="https://docs.antora.org/antora/2.3/navigation/files-and-lists/">Navigation Files and Lists</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p>if a module has multiple source folders, for example the module 'sqldb' is included under both start_path 'docs' and 'docsmanual' you need to care about <em>having only one 'nav.adoc'</em> under 'docs\modules\sqldb' or 'docsmanual\modules\sqldb'<br>
+We suggest using the 'docs\modules\sqldb\nav.adoc' because it contains the links to automated exported content.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>When you document <strong>relational databases</strong> then you should keep the <code>include::partial$navlist/nav-by-schema.adoc[]</code></p>
+</li>
+<li>
+<p>to document <strong>SSAS Tabular models</strong>, uncomment</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">xcopy D:\Repos\gitlab\DataHandwerk\DataHandwerk-toolkit-mssql\antora-template\docs D:\Repos\aaa\bbb\MyDataBase_sqldb\docs /t /e</code></pre>
+<pre>* xref:objectrefcyclic.adoc[]
+* xref:other/indexsemanticgroup.adoc[]</pre>
 </div>
 </div>
 </li>
@@ -3272,27 +3419,14 @@ You can document each database as a separate component or as different modules o
 </div>
 </li>
 <li>
-<p>copy the folder <code>docs\modules\template</code> into a folder <code>docs\modules\sqldb</code>, if you use the default AntoraModule name "sqldb"</p>
-</li>
-<li>
-<p>if you don&#8217;t use the default AntoraModule "sqldb" then rename the folder to match your 'AntoraModule' parameter settings in <a href="../sqldb/config.parameter.html" class="xref page">config.Parameter</a></p>
-</li>
-<li>
-<p>check and change the Antora navigation files for each module</p>
-<div class="ulist">
-<ul>
-<li>
-<p><code>docs\modules\sqldb\nav.adoc</code></p>
-</li>
-<li>
-<p>example file content (Remove the <code>/</code> at the beginning of the line before the <code>include</code>.)</p>
+<p>example file content (unindent the content, if you want to use it, the indent should avoild <code>include</code> processing.)</p>
 <div class="exampleblock">
 <div class="content">
 <div class="literalblock">
 <div class="content">
-<pre>/include::partial$navlist/nav-by-schema.adoc[]
-* xref:other/objectrefcyclic.adoc[]
-* xref:other/indexsemanticgroup.adoc[]</pre>
+<pre> include::partial$navlist/nav-by-schema.adoc[]
+ * xref:objectrefcyclic.adoc[]
+ * xref:other/indexsemanticgroup.adoc[]</pre>
 </div>
 </div>
 </div>
@@ -3303,9 +3437,11 @@ You can document each database as a separate component or as different modules o
 </li>
 </ul>
 </div>
-</li>
+<div class="ulist">
+<ul>
 <li>
-<p>setup your 'AntoraComponentFolder' parameter settings in <a href="../sqldb/config.parameter.html" class="xref page">config.Parameter</a></p>
+<p>setup 'AntoraComponent', 'AntoraModule' and 'AntoraComponentFolder' parameter settings in <a href="../sqldb/config.parameter.html" class="xref page">config.Parameter</a><br>
+You can direct edit the table content or you can use tsql</p>
 </li>
 </ul>
 </div>
@@ -3328,109 +3464,33 @@ Where
 <div class="ulist">
 <ul>
 <li>
-<p>set your 'AntoraDeleteFilesInModuleFolders' parameter settings in <a href="../sqldb/config.parameter.html" class="xref page">config.Parameter</a> to '1'<br>
+<p>set ('AntoraDeleteFilesInModuleFolders', '') parameter settings in <a href="../sqldb/config.parameter.html" class="xref page">config.Parameter</a> to '1'<br>
 it is '0' by default to avoid uncontrolled deletion of data</p>
 </li>
-<li>
-<p>your source repositories should contain a file <code>antora.yml</code> in the same folder, where the folder <code>modules</code> is located. Read about <code>antora.yml</code> in <a href="https://docs.antora.org/antora/2.3/component-version-descriptor/" class="bare">https://docs.antora.org/antora/2.3/component-version-descriptor/</a></p>
-<div class="paragraph">
-<p>In DataHandwerk We use two (2) docs source repositories, and we need the <code>antora.yml</code> in each source repository. The <code>title</code> should be contained only in one <code>antora.yml</code>.</p>
-</div>
-<div class="paragraph">
-<p>The content could be</p>
-</div>
-<div class="exampleblock">
-<div class="content">
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">name: myproject <i class="conum" data-value="1"></i><b>(1)</b>
-# title: My Project <i class="conum" data-value="2"></i><b>(2)</b>
-version: 0.1.0 <i class="conum" data-value="3"></i><b>(3)</b>
-# nav:
-# - modules/sqldb/nav.adoc <i class="conum" data-value="4"></i><b>(4)</b></code></pre>
-</div>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>use the same project name in all <code>antora.yml</code></td>
-</tr>
-<tr>
-<td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>don&#8217;t define a title here, but define it only once in the main <code>antora.yml</code></td>
-</tr>
-<tr>
-<td><i class="conum" data-value="3"></i><b>3</b></td>
-<td>use the same version(s) to get a consistent documentation</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="4"></i><b>4</b></td>
-<td>don&#8217;t include the <code>sqldb</code> navigation file here, but use the main <code>antora.yml</code> to define the whole navigation in one place!</td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-</li>
 </ul>
+</div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_setup_optional_docs_source_repository"><a class="anchor" href="#_setup_optional_docs_source_repository"></a>setup optional docs source repository</h3>
 <div class="paragraph">
-<p>DataHandwerk <code>dhw-antora-sqldb</code> contains only automatically generated documentation. Additional manual documentation is located in an additional repository <code>dhw-antora-docs</code></p>
+<p>DataHandwerk <code>dhw-antora-sqldb</code> contains automatically generated documentation (under 'doc') and additonal manual content (under 'docsmanual') related to the database documentation. Other documentation (architecture, user guid) is located in an additional repository <code>dhw-antora-docs</code></p>
 </div>
 <div class="paragraph">
-<p>you can use xcopy to get a folder structure to start your own documentation:<br></p>
+<p>you could use the template folder 'docsmanual' from <a href="https://gitlab.com/datahandwerk/DataHandwerk-toolkit-mssql/-/tree/main/template-antora-db/docsmanual" class="bare">https://gitlab.com/datahandwerk/DataHandwerk-toolkit-mssql/-/tree/main/template-antora-db/docsmanual</a> to get the required structure</p>
+</div>
+<div class="paragraph">
+<p>you can also use xcopy to get a folder structure to start your own documentation:<br></p>
 </div>
 <div class="listingblock">
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-none hljs">xcopy D:\Repos\gitlab\DataHandwerk\dhw-antora-docs D:\Repos\aaa\bbb\antora-docs /t /e</code></pre>
 </div>
 </div>
-<div class="paragraph">
-<p>DataHandwerk main <code>antora.yml</code> is located in <code>D:\Repos\gitlab\DataHandwerk\dhw-antora-docs\docs</code> and has this content</p>
-</div>
-<div class="exampleblock">
-<div class="content">
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">name: myproject <i class="conum" data-value="1"></i><b>(1)</b>
-title: My Project
-version: 0.1.0
-nav: <i class="conum" data-value="2"></i><b>(2)</b>
-- modules/ROOT/nav.adoc
-- modules/arc/nav.adoc
-- modules/sqldb/nav.adoc <i class="conum" data-value="3"></i><b>(3)</b>
-- modules/manual/nav.adoc</code></pre>
-</div>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>this project name is used in the playbooks</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>4 navigation files for 4 modules are included</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="3"></i><b>3</b></td>
-<td>include the navigation file for <code>sqldb</code> module in the main <code>antora.yml</code></td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class="paragraph">
-<p>You could copy this file and modify.</p>
-</div>
 <div class="sect3">
 <h4 id="_add_index_adoc_to_be_used_as_starting_point"><a class="anchor" href="#_add_index_adoc_to_be_used_as_starting_point"></a>add index.adoc to be used as starting point</h4>
 <div class="paragraph">
-<p>It is useful to create a file <code>index.adoc</code> and define this file as the entry point of a documentation project. Place this file in <code>pages</code> of the <code>ROOT</code> module of the docs repository. Of course, you can also define a different entry point.</p>
+<p>It is useful to have one (1) file <code>index.adoc</code> per Antora component. Create this file in <code>pages</code> of the <code>ROOT</code> module of each used Antora component.</p>
 </div>
 </div>
 </div>
@@ -3469,22 +3529,7 @@ nav: <i class="conum" data-value="2"></i><b>(2)</b>
 <p><code>lib</code> (Folder)</p>
 </li>
 <li>
-<p>antora-playbook-local.bat</p>
-</li>
-<li>
-<p>antora-playbook-local.ps1</p>
-</li>
-<li>
 <p>antora-playbook-local.yml</p>
-</li>
-<li>
-<p>antora-playbook-local-validate.ps1</p>
-</li>
-<li>
-<p>antora-playbook-public.bat</p>
-</li>
-<li>
-<p>antora-playbook-public.ps1</p>
 </li>
 <li>
 <p>antora-playbook-public.yml</p>
@@ -3503,17 +3548,24 @@ It is also the output for the generated documentation.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>two (2) playbooks are included, one to create local output, one to create the final site.</p>
+<p>two (2) playbooks are included, one to create <em>local output</em>, one to create the final <em>public site</em>.</p>
 <div class="ulist">
 <ul>
 <li>
 <p>They are different in the output folder.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>the 'local' folder is included into .gitignore to exclude from git repository</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
-<p>they are different in the <code>kroki-fetch-diagram: true</code> option. It takes a lot of time to generate all diagrams and this option is used only to create the final site.</p>
+<p>both playbooks are different in the <code>kroki-fetch-diagram: true</code> option. It takes a lot of time to generate all diagrams and this option is used only to create the final public site.</p>
 </li>
 <li>
-<p>They could be also different in sources for testing</p>
+<p>both could be also different in sources for testing</p>
 <div class="exampleblock">
 <div class="content">
 <div class="listingblock">
@@ -3527,12 +3579,19 @@ It is also the output for the generated documentation.</p>
     google_analytics: 'G-abcdefghij'
 content:
   sources:
-  - url: D:\Repos\gitlab\DataHandwerk\DataHandwerk-docs
-    branches: HEAD
+  - url: D:\Repos\gitlab\DataHandwerk\dhw-antora-docs
+    branches:
+    - HEAD
+    # - v*
     start_path: docs
-  - url: D:\Repos\gitlab\DataHandwerk\sqldb-docs
-    branches: HEAD
-    start_path: docs
+  - url: D:\Repos\gitlab\DataHandwerk\dhw-antora-sqldb
+    branches:
+    - HEAD
+    # - v*
+    start_paths: docs, docsmanual
+  # - url: https://github.com/DataHandwerk/DataHandwerk-docs
+  #   branches: main
+  #   start_path: docs
 asciidoc:
   attributes:
     page-pagination: ''
@@ -3646,69 +3705,6 @@ The font size of the navigation bar was decreased to avoid too much line breaks 
 </div>
 </div>
 </li>
-<li>
-<p>some scripts to simplify the call of Antora (optional)</p>
-<div class="ulist">
-<ul>
-<li>
-<p>local-playbook.ps1</p>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-powershell hljs" data-lang="powershell">antora --fetch local-playbook.yml</code></pre>
-</div>
-</div>
-</li>
-<li>
-<p>local-playbook-validate.ps1</p>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-powershell hljs" data-lang="powershell">antora --generator @antora/xref-validator local-playbook.yml</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p><a href="https://gitlab.com/antora/xref-validator/" class="bare">https://gitlab.com/antora/xref-validator/</a></p>
-</div>
-<div class="paragraph">
-<p><code>$ npm install -g gitlab:antora/xref-validator</code></p>
-</div>
-</li>
-<li>
-<p>playbook.ps1</p>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-powershell hljs" data-lang="powershell">antora --fetch playbook.yml
-New-Item .\docs\.nojekyll -ItemType file -Force <i class="conum" data-value="1"></i><b>(1)</b></code></pre>
-</div>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>the file <code>.nojekyll</code> needs to be created if the site should be published as GitHub page. See: <a href="https://docs.antora.org/antora/2.3/publish-to-github-pages/#nojekyll" class="bare">https://docs.antora.org/antora/2.3/publish-to-github-pages/#nojekyll</a></td>
-</tr>
-</table>
-</div>
-</li>
-<li>
-<p>playbook.bat</p>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">antora --fetch playbook.yml
-copy /y NUL .\docs\.nojekyll <i class="conum" data-value="1"></i><b>(1)</b></code></pre>
-</div>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>the file <code>.nojekyll</code> needs to be created if the site should be published as GitHub page. See: <a href="https://docs.antora.org/antora/2.3/publish-to-github-pages/#nojekyll" class="bare">https://docs.antora.org/antora/2.3/publish-to-github-pages/#nojekyll</a></td>
-</tr>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</li>
 </ul>
 </div>
 </div>
@@ -3718,257 +3714,8 @@ copy /y NUL .\docs\.nojekyll <i class="conum" data-value="1"></i><b>(1)</b></cod
 <div class="sect1">
 <h2 id="_export_files_for_antora"><a class="anchor" href="#_export_files_for_antora"></a>Export files for Antora</h2>
 <div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>Database documentation uses <a href="https://antora.org/">Antora</a> and the markup language <a href="https://docs.asciidoctor.org/asciidoc/latest/">AsciiDoc</a>. One of many advantages of asciidoc over Markdown is the ability to use includes. This allows the <strong>docs-as-code</strong> and <strong>code-as-docs</strong> concepts to be implemented very well.</p>
-</li>
-<li>
-<p>The procedure <a href="../sqldb/docs.usp_antoraexport.html" class="xref page">docs.usp_AntoraExport</a> exports required files into the filesystem.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>check and correct <a href="../sqldb/config.parameter.html#column-parameter_value" class="xref page">config.Parameter.Parameter_value</a> for ('AntoraModuleFolder', ''), a possible parameter is</p>
 <div class="exampleblock">
-<div class="content">
-<div class="paragraph">
-<p>D:\Repos\GitHub\MyOrganisation\MyProject-docs\docs\modules</p>
-</div>
-</div>
-</div>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-<h3 id="_how_does_it_work_2" class="discrete">How does it work?</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>Antora uses <a href="https://docs.antora.org/antora/2.3/navigation/files-and-lists/">Navigation Files and Lists</a>. Content for these files is exported:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>export procedure: <a href="../sqldb/docs.usp_antoraexport_objectnavigation.html" class="xref page">docs.usp_AntoraExport_ObjectNavigation</a></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>exported object types are defined in the view <a href="../sqldb/configt.type.html" class="xref page">configT.type</a></p>
-<div class="literalblock">
-<div class="content">
-<pre>SELECT [type]
- , [type_desc]
- , [is_DocsOutput]
-FROM [config].[type]
-WHERE [is_DocsOutput] = 1
-order by [type_desc] desc</pre>
-</div>
-</div>
-</li>
-<li>
-<p>source pages per object are exported into (AntoraModuleFolder)<code>/</code>(AntoraModuleName)<code>/pages/schemaname.objectname.adoc</code></p>
-<div class="ulist">
-<ul>
-<li>
-<p>export procedure: <a href="../sqldb/docs.usp_antoraexport_objectpage.html" class="xref page">docs.usp_AntoraExport_ObjectPage</a></p>
-</li>
-<li>
-<p>the content of all page files per object is the same, it has only includes. The content is defined in <a href="../sqldb/config.parameter.html#column-parameter_value" class="xref page">config.Parameter.Parameter_value</a> for ('AntoraPageTemplate', '') (<strong>empty</strong> <code>Sub_parameter</code>)
-the default content is (real code without leading '/'):</p>
-<div class="exampleblock">
-<div class="content">
-<div class="literalblock">
-<div class="content">
-<pre>/include::partial$template/master-page-1.adoc[]
-/include::partial$template/master-page-examples.adoc[]
-/include::partial$template/master-page-4.adoc[]
-/include::partial$template/master-page-5.adoc[]</pre>
-</div>
-</div>
-</div>
-</div>
-</li>
-<li>
-<p>the content of these includes is defined in <a href="../sqldb/config.parameter.html#column-parameter_value" class="xref page">config.Parameter.Parameter_value</a> for ('AntoraPageTemplate', 'x') (<strong>non empty</strong> <code>Sub_parameter</code> 'x'). Avoild blanks, because these <code>Sub_parameter</code> values become filname suffix.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>the template content is the same for all objects. We use {docname} and get the final content from individual 'partials' per object. (real code without leading '/')</p>
-<div class="exampleblock">
-<div class="content">
-<div class="literalblock">
-<div class="content">
-<pre>= {docname}
-
-/include::partial${docname}.adoc[tag=existing_properties]
-
-type:
-/include::partial${docname}.adoc[tag=SysObject_type]
-(
-/include::partial${docname}.adoc[tag=SysObject_type_name]
-), modify_date:
-/include::partial${docname}.adoc[tag=SysObject_modify_date]
-
-/ifdef::ExistsProperty--is_repo_managed[]
-is_repo_managed:
-/include::partial${docname}.adoc[tag=is_repo_managed]
-/endif::ExistsProperty--is_repo_managed[]</pre>
-</div>
-</div>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>export procedure: <a href="../sqldb/docs.usp_antoraexport_objectpagetemplate.html" class="xref page">docs.usp_AntoraExport_ObjectPageTemplate</a></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>the individual content per object is exported as 'partial' into (AntoraModuleFolder)<code>/</code>(AntoraModuleName)<code>/partials/schemaname.objectname.adoc</code></p>
-<div class="ulist">
-<ul>
-<li>
-<p>export procedure: <a href="../sqldb/docs.usp_antoraexport_objectpartialproperties.html" class="xref page">docs.usp_AntoraExport_ObjectPartialProperties</a></p>
-</li>
-<li>
-<p>all properties from <a href="../sqldb/property.repoobjectproperty.html" class="xref page">property.RepoObjectProperty</a> are exported with a <code>tag</code> per property</p>
-</li>
-<li>
-<p>some additional <code>tag</code> are exported</p>
-</li>
-<li>
-<p>the exported content is defined in <a href="../sqldb/docs.repoobject_adoc.html" class="xref page">docs.RepoObject_Adoc</a></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>the documentation contains diagrams. These diagrams are defined using <a href="https://plantuml.com/">plantUML</a></p>
-<div class="ulist">
-<ul>
-<li>
-<p>export procedure: <a href="../sqldb/docs.usp_antoraexport_objectpuml.html" class="xref page">docs.usp_AntoraExport_ObjectPuml</a></p>
-</li>
-<li>
-<p>individual diagrams per object are exported into (AntoraModuleFolder)<code>/</code>(AntoraModuleName)<code>/partials/puml/</code></p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-<h3 id="_prerequisites" class="discrete">Prerequisites</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>export folders should exist in the Antora modul folder, no error message is generated, if they are missing</p>
-<div class="ulist">
-<ul>
-<li>
-<p>pages</p>
-<div class="ulist">
-<ul>
-<li>
-<p>index</p>
-</li>
-<li>
-<p>nav</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>partials</p>
-<div class="ulist">
-<ul>
-<li>
-<p>docsnippet</p>
-</li>
-<li>
-<p>navlist</p>
-</li>
-<li>
-<p>puml</p>
-<div class="ulist">
-<ul>
-<li>
-<p>entity_0_30_objectref</p>
-</li>
-<li>
-<p>entity_1_1_colref</p>
-</li>
-<li>
-<p>entity_1_1_fk</p>
-</li>
-<li>
-<p>entity_1_1_objectref</p>
-</li>
-<li>
-<p>entity_30_0_objectref</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>template</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>uses <code>xp_cmdshell</code>, to call <code>bcp</code>, you need to enable:</p>
-<div class="exampleblock">
-<div class="content">
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">--before executing the procedure:
---Temporarily or permanently enable xp_cmdshell
-sp_configure 'show advanced options'
- , 1;
-
-RECONFIGURE
-GO
-
-sp_configure 'xp_cmdshell'
- , 1;
-
-RECONFIGURE
-GO
-
-EXEC docs.usp_AntoraExport
-
---you can also disable later again:
---Disable xp_cmdshell
-sp_configure 'xp_cmdshell'
- , 0
-
-RECONFIGURE
-GO
-
-sp_configure 'show advanced options'
- , 0
-
-RECONFIGURE
-GO</code></pre>
-</div>
-</div>
-</div>
-</div>
-</li>
-</ul>
-</div>
-<div class="exampleblock">
-<div class="title">Example 2. Usage</div>
+<div class="title">Example 3. Usage</div>
 <div class="content">
 <div class="listingblock">
 <div class="content">
@@ -4005,7 +3752,8 @@ Exec docs.usp_AntoraExport;</code></pre>
 </td>
 <td class="content">
 The parameter 'dwh_readonly' is 0 by default.<br>
-No guid will be written as extended properties into the connected DWH database. This parameter should and can remain 0 if a database should only be documented but not modified.
+In this case no Schema_guid, RepoObject_guid or RepoObjectColumn_guid will be written as extended properties into the connected DWH database.<br>
+This parameter should and can remain 0 if a database should only be documented but not modified.
 </td>
 </tr>
 </table>
@@ -4037,60 +3785,54 @@ Antora Export can delete any content in the target folders. You can set this in 
 <div class="paragraph">
 <p>export the automated documentation</p>
 </div>
+<div class="exampleblock">
+<div class="content">
 <div class="listingblock">
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">--initial setup
 Exec repo.usp_main;
 
---use the sqlparser
+--use the sqlparser to extract column references
 --...
 --after using the sqlparser persist the results
 
-Exec sqlparse.usp_PERSIST_RepoObject_SqlModules_41_from_T;
-Exec sqlparse.usp_PERSIST_RepoObject_SqlModules_61_SelectIdentifier_Union_T;
+Exec sqlparse.usp_sqlparse
 
 --process the sqlparser results
 Exec repo.usp_main;
-
---import extended properties from source database into repository
-Exec [property].[usp_sync_ExtendedProperties_Sys2Repo_InsertUpdate]
 
 --export files for automated documentation
 Exec docs.usp_AntoraExport</code></pre>
 </div>
 </div>
+</div>
+</div>
 <div class="paragraph">
 <p>In the Antora Playbook project call Antora to build the local or the final site.</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>You can use the prepared PowerShell scripts</p>
-<div class="listingblock">
+<div class="exampleblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-powershell hljs" data-lang="powershell">./local-playbook.ps1</code></pre>
-</div>
-</div>
-<div class="listingblock">
+<div class="literalblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-powershell hljs" data-lang="powershell">./playbook.ps1</code></pre>
+<pre>npx antora antora-playbook-local.yml --stacktrace</pre>
 </div>
 </div>
-</li>
-<li>
-<p>you can also use Windows bat files:</p>
-<div class="listingblock">
+<div class="literalblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">local-playbook.bat</code></pre>
+<pre>npx antora antora-playbook-public.yml --stacktrace</pre>
 </div>
 </div>
-<div class="listingblock">
+<div class="literalblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">playbook.bat</code></pre>
+<pre>npx antora antora-playbook-local.yml --stacktrace --log-file antora-local.log</pre>
 </div>
 </div>
-</li>
-</ul>
+<div class="literalblock">
+<div class="content">
+<pre>npx antora antora-playbook-public.yml --stacktrace --log-file antora-public.log</pre>
+</div>
+</div>
+</div>
 </div>
 <div class="paragraph">
 <p>The result is a static site. You can browse the content locally on the PC where you created the documentation.</p>
@@ -4113,9 +3855,852 @@ here you can download a plantuml.war file to be used in a local webserver lice t
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_document_additional_and_external_references"><a class="anchor" href="#_document_additional_and_external_references"></a>document additional and external references</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>See examples:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../../aw/ssasdb/adventureworks.date.html#_references" class="xref page">aw:ssasdb:adventureworks.date.adoc#_references</a></p>
+</li>
+<li>
+<p><a href="../../aw/sqldwdb/dbo.dimdate.html#_references" class="xref page">aw:sqldwdb:dbo.dimdate.adoc#_references</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>It is possible to store additional and external references in order to document them. This is especially useful if there are references between different relational databases and these databases are part of the documentation. Likewise, relationships between SSAS Tabular models and a relational source database can be documented.</p>
+</div>
+<div class="paragraph">
+<p><strong>Additional references can be entered in the <a href="../sqldb/reference.additional_reference.html" class="xref page">reference.additional_Reference</a> table.</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>There are columns for the referenced and for the referencing objects and columns.</p>
+</li>
+<li>
+<p>The entry of the columns is optional; AntoraComponent, AntoraModule, Schema and Object are mandatory.</p>
+</li>
+<li>
+<p>the content of the table <a href="../sqldb/reference.additional_reference.html" class="xref page">reference.additional_Reference</a> is used by <a href="../sqldb/reference.usp_additional_reference.html" class="xref page">reference.usp_additional_Reference</a> and this procedure is called by <a href="../sqldb/repo.usp_main.html" class="xref page">repo.usp_main</a>. Thus, additional references are used automatically.</p>
+</li>
+<li>
+<p><strong>in the table <a href="../sqldb/reference.additional_reference_database_t.html" class="xref page">reference.additional_Reference_database_T</a> you need to enter values</strong> into the columns</p>
+<div class="ulist">
+<ul>
+<li>
+<p>'RepoDatabaseName'<br>
+the current repository needs information about the corresponding repository</p>
+</li>
+<li>
+<p>'DatabaseName'<br>
+this information is used in the documentation generator as the database name of the referenced or referencing databases.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_synchronization_of_cross_repository_references"><a class="anchor" href="#_synchronization_of_cross_repository_references"></a>Synchronization of cross-repository references</h3>
+<div class="paragraph">
+<p>If cross-repository references are defined in different repositories in <a href="../sqldb/reference.additional_reference.html" class="xref page">reference.additional_Reference</a>, then they should be able to be synchronized between these repositories. It should be possible to use the references in both repositories (for example for documentation) without having to enter the references twice.</p>
+</div>
+<div class="paragraph">
+<p>Several steps are required:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Because a repository cannot readily know in which other repositories references are entered with itself, and because we cannot or do not want to scan all repository databases, we need to enter metadata about the correspondig repository databases.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>cross-repository references are entered in one repository in <a href="../sqldb/reference.additional_reference.html" class="xref page">reference.additional_Reference</a>.</p>
+</li>
+<li>
+<p><strong>at least one entry must also be copied to the same table in the corresponding repository</strong>, to let them know about referenced and referencing repositories.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="../sqldb/reference.usp_additional_reference.html" class="xref page">reference.usp_additional_Reference</a> (or the parent procedure <a href="../sqldb/repo.usp_main.html" class="xref page">repo.usp_main</a>) must be executed in the second repository.</p>
+</li>
+<li>
+<p><strong>in the table <a href="../sqldb/reference.additional_reference_database_t.html" class="xref page">reference.additional_Reference_database_T</a> you need to enter values into the columns 'DatabaseName' and 'RepoDatabaseName'</strong> to link to the corresponding repository</p>
+</li>
+<li>
+<p>The procedure <a href="../sqldb/property.usp_external_property_import.html" class="xref page">property.usp_external_property_import</a> (which is also called in the parent procedure <a href="../sqldb/repo.usp_main.html" class="xref page">repo.usp_main</a>)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>imports other corresponding entries into <a href="../sqldb/reference.additional_reference.html" class="xref page">reference.additional_Reference</a></p>
+</li>
+<li>
+<p>imports properties from corresponding repository, if the PropertyName is marked for inheritance.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>condition for RepoObject properties:<br>
+<code>WHERE property.PropertyName_RepoObject_T.has_inheritance = 1</code></p>
+</li>
+<li>
+<p>condition for RepoObjectColumn properties:<br>
+<code>WHERE property.PropertyName_RepoObjectColumn_T.has_inheritance = 1</code></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_document_ssas_tabular_models"><a class="anchor" href="#_document_ssas_tabular_models"></a>document SSAS Tabular models</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>See example: <a href="../../aw/ssasdb/nav/objects-by-schema.html" class="xref page">SSAS Tabular Models</a></p>
+</div>
+<div class="paragraph">
+<p>Create a new dhw repository and don&#8217;t try to mix relational db documentation and SSAS Tabular documentation. Maybe it is possible to combine them in one repository, but there could be naming conflicts between relational table names and SSAS Tabular table names. Anyway we did not test.</p>
+</div>
+<div class="paragraph">
+<p>SSAS Tabular databases are documented as similar as if they were relational databases, so that broadly the same logic can be used. And there are differences as well.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>SSAS Model Name &#8658; Schema Name</p>
+<div class="ulist">
+<ul>
+<li>
+<p>This way it is possible to document multiple SSAS Models in one component and one module, if the model names are different</p>
+</li>
+<li>
+<p>we can use <strong>one repository for all ssas models</strong> instead of the required one repository per relational dwh database</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>SSAS Table Name &#8658; Table Name</p>
+</li>
+<li>
+<p>SSAS Measures are documented twice</p>
+<div class="ulist">
+<ul>
+<li>
+<p>in the table where they are defined</p>
+</li>
+<li>
+<p>in a pseudo table '_measures' where all measures of the model are documented in one place</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Translations: one extra Antora Module per translation is used</p>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>if the SSAS model contains the translation (cultures) 'en-us' and 'de-de' then 2 additional modules are used, where the suffix is defined by the culture. I this example the main Antora module is 'ssasdb'</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ssasdb</p>
+</li>
+<li>
+<p>ssasdb-de-DE</p>
+</li>
+<li>
+<p>ssasdb-en-US</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>to distinguish between sql server database and ssas database don&#8217;t use 'sqldb' as Antora module name, but use for example 'ssasdb'</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>set the Parameters in <a href="../sqldb/config.parameter.html" class="xref page">config.Parameter</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p>('AntoraComponent', '') and adapt 'antora.yml' <code>name</code>; for example 'ssas'</p>
+</li>
+<li>
+<p>('AntoraComponentFolder', '')</p>
+</li>
+<li>
+<p>('AntoraDeleteFilesInModuleFolders', '') &#8658; '1'</p>
+</li>
+<li>
+<p>('AntoraModule', '') &#8658; for example 'ssasdb'</p>
+</li>
+<li>
+<p>('sync enable', 'dwh') &#8658; '0'</p>
+</li>
+<li>
+<p>('sync enable', 'ssas') &#8658; '1'</p>
+</li>
+<li>
+<p>('sync enable', 'ssis') &#8658; '0'</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>ensure the existence of one Antora module per used translation (for example 'ssas' and 'ssas-de-DE')</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Define the SSAS Models you wan&#8217;t to document.</p>
+</div>
+<div class="paragraph">
+<p>in <a href="../sqldb/ssas.model_json.html" class="xref page">ssas.model_json</a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>create one row per ssas model</p>
+<div class="ulist">
+<ul>
+<li>
+<p>enter the model name to be used in the documentation in 'databasename', for example 'AdventureWorks'</p>
+</li>
+<li>
+<p>enter the local file location of the model into 'model_filename', for example 'D:\Repos\local\AdventureWorks\AdventureWorks_models\de-de\Model.bim'</p>
+</li>
+<li>
+<p>if you want to document multiple SSAS models, you can add multiple entries into the table</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>get the sql to import data, using</p>
+<div class="exampleblock">
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">Select
+    ImportModelSql
+  , databasename
+  , model_filename
+  , model_utf8
+  , isModelJson
+From
+    ssas.model_json_ImportModelSql</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Copy the content from column 'ImportModelSql' and execute it. this content could be</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">Update ssas.model_json Set model_utf8 =
+(
+Select BulkColumn
+From
+OpenRowset ( Bulk 'D:\Repos\local\AdventureWorks\AdventureWorks_models\de-de\Model.bim', Single_Blob )
+As j
+)
+Where databasename = 'AdventureWorks'
+GO</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>execute the query on 'ssas.model_json_ImportModelSql' again to check, if 'isModelJson' = 1. If this is not the case, then you have an issue.</p>
+</li>
+<li>
+<p>execute repo.usp_main</p>
+<div class="exampleblock">
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">Exec repo.usp_main</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>check the output. Any errors?</p>
+</li>
+<li>
+<p>check <a href="../sqldb/repo.repoobject.html" class="xref page">repo.RepoObject</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p>do you see the SSAS tables? And do you see only them?<br>
+Fine</p>
+</li>
+<li>
+<p>do you see some strange tables, for example objects containing in the repodatabase?<br>
+You forgot to set the parameter ('sync enable', 'dwh') &#8658; '0'<br>
+Correct this, remove unwanted RepoObjects</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>check the table <a href="../sqldb/repo.repoobjectcolumn.html" class="xref page">repo.RepoObjectColumn</a></p>
+</li>
+<li>
+<p>check the view <a href="../sqldb/repo.measure.html" class="xref page">repo.Measure</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If you want to export not only the main model documentation, but also <strong>translations</strong>, you need to configure this in <a href="../sqldb/ssas.model_json_3411_cultures_translations_model_t.html" class="xref page">ssas.model_json_3411_cultures_translations_model_T</a>!</p>
+</div>
+<div class="paragraph">
+<p><code>set  is_CultureDocsOutput = 1</code><br>
+for the Cultures, you want to export</p>
+</div>
+<div class="paragraph">
+<p>the case of the culture in 'cultures_name' and in the export folder should match. That&#8217;s why we use 'de-DE' but not 'de-de'.</p>
+</div>
+<div class="ulist checklist">
+<ul class="checklist">
+<li>
+<p><i class="fa fa-square-o"></i> the implementation could be changed to use only lower case.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>execute repo.usp_main a second time!<br>
+it is important to execute this procedure several times, because some tables are filled in the first execution which are required in the next execution: translation settings and some other content.</p>
+<div class="exampleblock">
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">Exec repo.usp_main</code></pre>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>execute docs.usp_AntoraExport</p>
+<div class="exampleblock">
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">Exec docs.usp_AntoraExport</code></pre>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>check the exported content</p>
+</li>
+<li>
+<p>create a git repository and do an initial commit</p>
+</li>
+<li>
+<p>update your Antora playbook and create the documentation</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_optional_add_relations_to_the_relational_data_source"><a class="anchor" href="#_optional_add_relations_to_the_relational_data_source"></a>optional: add relations to the relational data source</h3>
+<div class="paragraph">
+<p>See example: <a href="../../aw/ssasdb/adventureworks.date.html#_references" class="xref page">aw:ssasdb:adventureworks.date.adoc#_references</a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>in the table <a href="../sqldb/ssas.model_json_33_datasources_t.html" class="xref page">ssas.model_json_33_dataSources_T</a> you need to enter values into the columns 'referenced_AntoraComponent' and 'referenced_AntoraModule'</p>
+</li>
+<li>
+<p>in the table <a href="../sqldb/reference.additional_reference_database_t.html" class="xref page">reference.additional_Reference_database_T</a> you need to enter values into the columns 'DatabaseName' and 'RepoDatabaseName'</p>
+</li>
+<li>
+<p>SSAS models contain metadata about the data sources, these are extracted, combined with the entries of the two tables above and inserted into the <a href="../sqldb/reference.additional_reference.html" class="xref page">reference.additional_Reference</a> table.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_optional_document_measure_properties"><a class="anchor" href="#_optional_document_measure_properties"></a>optional: document measure properties</h3>
+<div class="paragraph">
+<p>By default, only the description and expression are documented per measure.</p>
+</div>
+<div class="paragraph">
+<p>Additional properties can be entered into the <a href="../sqldb/property.measureproperty.html" class="xref page">property.MeasureProperty</a> table, for example via import from external sources.</p>
+</div>
+<div class="paragraph">
+<p>Whether and how these properties are used in the generated documentation is controlled in the <a href="../sqldb/property.propertyname_measure_t.html" class="xref page">property.PropertyName_Measure_T</a> table:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>In the <code>OrderInAntoraMeasureDetails</code> column, the order is specified. Only <code>property_name</code> with <code>OrderInAntoraMeasureDetails &gt; 0</code> will appear in the documentation.</p>
+</li>
+<li>
+<p>In the following columns the formatting of the content can be specified</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>NoOfCollapsibleChars</code><br>
+a <code>[%collapsible]</code> can be defined<br>
+reasonable values are 0 (no collapsible) or values &gt;= 5<br>
+a variable value is used to avoid conflicts with nested blocks</p>
+</li>
+<li>
+<p><code>NoOfExampleChars</code><br>
+an example block <code>====</code> can be defined<br>
+reasonable values are 0 (no example block) or values &gt;= 4<br>
+a variable value is used to avoid conflicts with nested blocks</p>
+</li>
+<li>
+<p><code>NoOfListingChars</code><br>
+a listing block <code>----</code> can be defined<br>
+reasonable values are 0 (no listing block) or values &gt;= 4<br>
+a variable value is used to avoid conflicts with nested blocks</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_document_ssis_projects"><a class="anchor" href="#_document_ssis_projects"></a>document SSIS projects</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>See example: <a href="../../ssis/servicenow/workflowblankpackage.html" class="xref page">Workflow package.dtsx</a></p>
+</div>
+<div class="paragraph">
+<p>Multiple SSIS projects can be combined into one DHW repository.</p>
+</div>
+<div class="paragraph">
+<p>SSIS projects are documented differently than relational databases and SSAS tabular models:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>several SSIS projects can be combined in one Antora component</p>
+</li>
+<li>
+<p>each SSIS project is documented as a separate Antora module</p>
+</li>
+<li>
+<p>each SSIS package is documented as a separate page</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Create a new dhw repository to document SSIS projects. It should be possible to combine SSIS projects with relational databases or SSAS tabular models in one repository, but this was not tested.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>set the Parameters in <a href="../sqldb/config.parameter.html" class="xref page">config.Parameter</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p>('AntoraComponent', '') and adapt 'antora.yml' <code>name</code>; for example 'ssis'</p>
+</li>
+<li>
+<p>('AntoraComponentFolder', '')</p>
+</li>
+<li>
+<p>('AntoraDeleteFilesInModuleFolders', '') &#8658; '1'</p>
+</li>
+<li>
+<p>('AntoraModule', '') &#8658; <strong>value is ignored for ssis documentation</strong></p>
+</li>
+<li>
+<p>('sync enable', 'dwh') &#8658; '0'</p>
+</li>
+<li>
+<p>('sync enable', 'ssas') &#8658; '0'</p>
+</li>
+<li>
+<p>('sync enable', 'ssis') &#8658; '1'</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Define the SSIS projects you wan&#8217;t to document.</p>
+</div>
+<div class="paragraph">
+<p>in <a href="../sqldb/ssis.project.html" class="xref page">ssis.Project</a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>'AntoraModule' - define the Antora Module to used per project</p>
+</li>
+<li>
+<p>'ProjectPath' - enter the project path containing SSIS packages and connections</p>
+</li>
+<li>
+<p>if you want to document multiple SSIS projects, you can add multiple entries into the table</p>
+</li>
+<li>
+<p>use the column 'sql_import' to get the sql to import data from 'ProjectPath' into the repository. It looks like</p>
+<div class="exampleblock">
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">Exec ssis_t.usp_GetPackageDetails 'D:\Repos\aaa\bbb\ServiceNow\SSIS\SSIS_ServiceNow'
+Exec ssis_t.usp_GetProjectConnection 'D:\Repos\aaa\bbb\ServiceNow\SSIS\SSIS_ServiceNow'
+Exec ssis.usp_import</code></pre>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>execute this code</p>
+</li>
+<li>
+<p>now several tables in schema 'ssis' should contain data</p>
+</li>
+<li>
+<p>adapt the content of the Antora component folders</p>
+<div class="ulist">
+<ul>
+<li>
+<p>create required component folders (copy from template)</p>
+</li>
+<li>
+<p>check and update 'antora.yml' files in start_path 'docs' and 'docsmanual'</p>
+<div class="exampleblock">
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">name: ssis
+title: Demo SSIS
+version: ~
+nav:
+- modules/performanceanalytics/nav.adoc
+- modules/servicenow/nav.adoc</code></pre>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>update the content of the startpage (<code>.\docsmanual\modules\ROOT\pages\index.adoc</code>)</p>
+</li>
+<li>
+<p>create / update 'nav.adoc' per Antora Module</p>
+<div class="exampleblock">
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-adoc hljs" data-lang="adoc">.ServiceNow
+include::ssis:servicenow:partial$navlist/navlist-package.adoc[]</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-adoc hljs" data-lang="adoc">.PerformanceAnalytics
+include::ssis:performanceanalytics:partial$navlist/navlist-package.adoc[]</code></pre>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>process the repository and export the sources for the documentation</p>
+<div class="exampleblock">
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sql hljs" data-lang="sql">Exec repo.usp_main
+Exec docs.usp_AntoraExport</code></pre>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>check the exported content</p>
+</li>
+<li>
+<p>create a git repository and do an initial commit</p>
+</li>
+<li>
+<p>update your Antora playbook and create documentation</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Logic and implementation is based on this blog article <a href="https://www.sqlservercentral.com/articles/ssis-package-documentor">SSIS Package documentor</a><br>
+from 2016-11-04 (first published: 2015-09-01)<br>
+author: <a href="https://www.sqlservercentral.com/author/Divya-Agrawal" class="bare">https://www.sqlservercentral.com/author/Divya-Agrawal</a></p>
+</div>
+<div class="paragraph">
+<p>the article explains how does it work and provides a link for a procedure script:
+<a href="https://www.sqlservercentral.com/wp-content/uploads/2019/05/CodeReviewAcceleratior_v10.sql" class="bare">https://www.sqlservercentral.com/wp-content/uploads/2019/05/CodeReviewAcceleratior_v10.sql</a></p>
+</div>
+<div class="paragraph">
+<p>The original procedure has been modified and extended, tables and steps have been moved into separate steps and objects. Adaptations were made for newer SSIS versions and for contents that were not considered by the original procedure.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_external_descriptions"><a class="anchor" href="#_external_descriptions"></a>external descriptions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In principle, it is possible and useful to use AsciiDoc <code>include</code> directives in descriptions stored in the repository databases to include external content. This content is usually located in the Antora data source git repositories for the domain-oriented descriptions. This allows objects, columns, etc. to be described outside of the repository databases. This has several advantages:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Easy editing with text editors.</p>
+</li>
+<li>
+<p>Possibility of version control ('docs-as-code').</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If the 'description' property of objects or columns contains an <code>include</code>, then this content can also be inherited along the <a href="properties-inheritance.html" class="xref page">Properties Inheritance</a>. This can be especially useful for columns to specify the descriptions of the columns only once.</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="literalblock">
+<div class="content">
+<pre>&lt;&lt;property_start&gt;&gt;Description
+include::partial$docsnippet/reference-from-persistence.adoc[]
+&lt;&lt;property_end&gt;&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_descriptiontags"><a class="anchor" href="#_descriptiontags"></a>descriptiontags</h3>
+<div class="paragraph">
+<p>In addition, there is a formal method to store descriptions for tables and SSAS measures outside the repository database directly in the git repositories used by Antora as data sources. This makes it possible to define these optional descriptions and use them in the documentation without having to explicitly store the descriptions as <code>include</code>.</p>
+</div>
+<div class="paragraph">
+<p>However, this requires that the file names and the tags used follow a precise syntax.</p>
+</div>
+<div class="paragraph">
+<p>Since it can be difficult to use the filenames and tags correctly, a template is exported for each RepoObject. The export is done in AntoraExport in the <code>docs</code> startpath under <code>partial$<em>descriptiontags/schemaname.objectname.adoc</code>. Note the prefix '</em>' (underscore) of the foldername. These files are deleted and recreated on each export. Therefore, the contents cannot be added at this point, with the next AntoraExport the contents would be overwritten.</p>
+</div>
+<div class="paragraph">
+<p>Um diese Templates auszufüllen, können einzelne (oder alle) Dateien in den startpath <code>docsmanual</code> in den Ordner <code>partial$descriptiontags/schemaname.objectname.adoc</code> kopiert werden - ohne den Prefix '_'. Hier können diese Dateien nun mit Inhalt gefüllt werden und diese Inhalte bleiben beim AntoraExport erhalten.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example 4. descriptiontags content for config.Parameter</div>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-adoc hljs" data-lang="adoc">= config.Parameter
+
+// tag::description[]
+* default parameter values are defined (hard coded) in xref:sqldb:configt.parameter_default.adoc[] and available in xref:sqldb:config.parameter.adoc#column-parameter_default_value[config.Parameter.Parameter_default_value]
+* default parameter values can be overwritten by project specific content using xref:sqldb:config.parameter.adoc#column-parameter_value[config.Parameter.Parameter_value]
+* resulting content is available in
+** xref:sqldb:config.parameter.adoc#column-parameter_value_result[config.Parameter.Parameter_value_result]
+** xref:sqldb:config.parameter.adoc#column-parameter_value_result_date[config.Parameter.Parameter_value_result_date]
+** xref:sqldb:config.parameter.adoc#column-parameter_value_result_datetime[config.Parameter.Parameter_value_result_datetime]
+** xref:sqldb:config.parameter.adoc#column-parameter_value_result_int[config.Parameter.Parameter_value_result_int]
+// uncomment the following attribute, to hide exported descriptions
+
+:hide-exported-description:
+// end::description[]
+
+== Measures</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="qlist qanda">
+<ol>
+<li>
+<p><em>What is the ':hide-exported-description:' attribute for?</em></p>
+<p>There could be external descriptions and those exported via AntoraExport at the same time.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Without this attribute (if it is left commented out), both external and exported descriptions are used.</p>
+</li>
+<li>
+<p>If the attribute is set (as in the example), then exported descriptions for the concrete object or measure are not used in the documentation.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><em>Why is this so complicated?</em></p>
+<div class="ulist">
+<ul>
+<li>
+<p>we need different locations for content that is recreated with each AntoraExport and for content that must not be deleted during AntoraExport.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>in the startpath <code>docs</code> the contents of <code>pages</code> and <code>partials</code> will be deleted and recreated each time</p>
+</li>
+<li>
+<p>in the startpath <code>docsmanual</code> the contents of <code>pages</code> and <code>partials</code> are preserved</p>
+</li>
+<li>
+<p>since both startpaths belong to the same Antora module, the file paths within the module must be unique.<br>
+Therefore we need two different folder names and decided to use 'descriptiontags' and '_descriptiontags'.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><em>Is there a way to make this simpler?</em></p>
+<p>Maybe, we are open to constructive suggestions and improvements.</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+These formal files are a <em>technical</em> interface for the documentation. They <em>may</em> contain the descriptions. However, it is also possible to maintain the actual descriptions elsewhere and reference them here via <code>includes</code>. This is especially useful if the domain is responsible for the contents of the descriptions and these descriptions are maintained in other repositories or simply elsewhere. This is where the technical documentation takes place.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Since the <code>descriptiontags</code> descriptions are defined externally and are not known in the repository database, these descriptions cannot be <a href="properties-inheritance.html" class="xref page">inherited</a>.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Nevertheless, it is possible and useful to use these descriptions on other objects. In the following example, an external description for <a href="../sqldb/config.parameter.html" class="xref page">config.Parameter</a> is also used in the <a href="../sqldb/configt.parameter_default.html" class="xref page">configT.Parameter_default</a> view by including an <code>include</code> in a commented out section of this view.</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="literalblock">
+<div class="content">
+<pre>&lt;&lt;property_start&gt;&gt;Description
+include::sqldb:partial$descriptiontags/config.parameter.adoc[tag=description,opts=optional]
+&lt;&lt;property_end&gt;&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>In this case, these descriptions are again subject to possible inheritance.</p>
+</div>
+</div>
+</div>
+</div>
 <nav class="pagination">
-  <span class="prev"><a href="properties-inheritance.html">Properties Inheritance</a></span>
-  <span class="next"><a href="execution-log.html">Execution log</a></span>
+  <span class="prev"><a href="backup-repo-db.html">Backup and restore repository database</a></span>
+  <span class="next"><a href="sqlparse-to-get-col-references.html">SqlParse to detect column references</a></span>
 </nav>
 </article>
   </div>

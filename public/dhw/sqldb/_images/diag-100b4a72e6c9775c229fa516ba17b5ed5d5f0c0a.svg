@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="260px" preserveAspectRatio="none" style="width:323px;height:260px;background:#FFFFFF;" version="1.1" viewBox="0 0 323 260" width="323px" zoomAndPan="magnify"><defs><filter height="300%" id="f11iuevxcashu7" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[c2fe1a3c12619c03ff77c25a65062b3e]
+class repo.IndexColumn_union_T--><rect codeLine="28" fill="#FFFFFF" filter="url(#f11iuevxcashu7)" height="239.5988" id="repo.IndexColumn_union_T" style="stroke:#A80036;stroke-width:1.5;" width="302" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="148.5" y="24.0001">«U»</text><a href="../repo.indexcolumn_union_t.html" target="_top" title="../repo.indexcolumn_union_t.html" xlink:actuate="onRequest" xlink:href="../repo.indexcolumn_union_t.html" xlink:show="new" xlink:title="../repo.indexcolumn_union_t.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="143" x="86.5" y="38.4002">repo.IndexColumn_union_T</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="308" y1="45.8002" y2="45.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="59" x="27" y="60.8001">index_guid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="86" x="89" y="60.8001">: (uniqueidentifier)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="67.0001"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="91" x="27" y="74">index_column_id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="25" x="121" y="74">: (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="144" x="27" y="87.1999">index_name : (nvarchar(450))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="119" x="27" y="100.3998">is_descending_key : (bit)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="131" x="27" y="113.5997">is_index_primary_key : (bit)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="90" x="27" y="126.7996">is_index_real : (bit)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="104" x="27" y="139.9995">is_index_unique : (bit)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="211" x="27" y="153.1994">parent_RepoObject_guid : (uniqueidentifier)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="194" x="27" y="166.3993">parent_schema_name : (nvarchar(128))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="219" x="27" y="179.5992">parent_SysObject_fullname : (nvarchar(261))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="206" x="27" y="192.7991">parent_SysObject_name : (nvarchar(128))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="211" x="27" y="205.999">RepoObjectColumn_guid : (uniqueidentifier)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="210" x="27" y="219.1989">SysObject_column_name : (nvarchar(128))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="276" x="27" y="232.3988">SysObject_column_user_type_fullname : (nvarchar(182))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="308" y1="238.5988" y2="238.5988"/><!--MD5=[c25a6bfcd3f56982f2847a26ac514e94]
+@startuml
+'Left to right direction
+top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>>  Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>>  White
+  BackgroundColor<<V>>  WhiteSmoke
+  BackgroundColor<<X>>  Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../repo.indexcolumn_union_t.html repo.IndexColumn_union_T]]" as repo.IndexColumn_union_T << U >> {
+  **index_guid** : (uniqueidentifier)
+  - **index_column_id** : (int)
+  index_name : (nvarchar(450))
+  is_descending_key : (bit)
+  is_index_primary_key : (bit)
+  is_index_real : (bit)
+  is_index_unique : (bit)
+  parent_RepoObject_guid : (uniqueidentifier)
+  parent_schema_name : (nvarchar(128))
+  parent_SysObject_fullname : (nvarchar(261))
+  parent_SysObject_name : (nvarchar(128))
+  RepoObjectColumn_guid : (uniqueidentifier)
+  SysObject_column_name : (nvarchar(128))
+  SysObject_column_user_type_fullname : (nvarchar(182))
+  - -
+}
+@enduml
+
+@startuml
+top to bottom direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>>  Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>>  White
+  BackgroundColor<<V>>  WhiteSmoke
+  BackgroundColor<<X>>  Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../repo.indexcolumn_union_t.html repo.IndexColumn_union_T]]" as repo.IndexColumn_union_T << U >> {
+  **index_guid** : (uniqueidentifier)
+  - **index_column_id** : (int)
+  index_name : (nvarchar(450))
+  is_descending_key : (bit)
+  is_index_primary_key : (bit)
+  is_index_real : (bit)
+  is_index_unique : (bit)
+  parent_RepoObject_guid : (uniqueidentifier)
+  parent_schema_name : (nvarchar(128))
+  parent_SysObject_fullname : (nvarchar(261))
+  parent_SysObject_name : (nvarchar(128))
+  RepoObjectColumn_guid : (uniqueidentifier)
+  SysObject_column_name : (nvarchar(128))
+  SysObject_column_user_type_fullname : (nvarchar(182))
+  - -
+}
+@enduml
+
+PlantUML version 1.2021.10(Mon Aug 30 13:43:48 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

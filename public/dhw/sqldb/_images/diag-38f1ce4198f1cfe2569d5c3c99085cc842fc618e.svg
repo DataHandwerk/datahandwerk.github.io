@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="234px" preserveAspectRatio="none" style="width:368px;height:234px;background:#FFFFFF;" version="1.1" viewBox="0 0 368 234" width="368px" zoomAndPan="magnify"><defs><filter height="300%" id="fnanpbm6acasn" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[bafb7465d804534f123a2d7fb4f9e51e]
+class property.RepoObjectColumnProperty_sys_repo--><rect codeLine="28" fill="#F5F5F5" filter="url(#fnanpbm6acasn)" height="81.2" id="property.RepoObjectColumnProperty_sys_repo" style="stroke:#A80036;stroke-width:1.5;" width="253" x="54" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="171.5" y="24.0001">«V»</text><a href="../property.repoobjectcolumnproperty_sys_repo.html" target="_top" title="../property.repoobjectcolumnproperty_sys_repo.html" xlink:actuate="onRequest" xlink:href="../property.repoobjectcolumnproperty_sys_repo.html" xlink:show="new" xlink:title="../property.repoobjectcolumnproperty_sys_repo.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="247" x="57" y="38.4002">property.RepoObjectColumnProperty_sys_repo</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="55" x2="306" y1="45.8002" y2="45.8002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="62" y="53.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="135" x="74" y="60.8001">RepoObjectColumn_guid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="86" x="212" y="60.8001">: (uniqueidentifier)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="62" y="67.0001"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="80" x="74" y="74">property_name</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="56" x="157" y="74">: (sysname)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="55" x2="306" y1="80.2" y2="80.2"/><!--MD5=[ac127622f4294ccf33db3e2459631cc0]
+class property.usp_sync_ExtendedProperties_Sys2Repo_InsertUpdate--><rect codeLine="34" fill="#00FFFF" filter="url(#fnanpbm6acasn)" height="54.8002" id="property.usp_sync_ExtendedProperties_Sys2Repo_InsertUpdate" style="stroke:#A80036;stroke-width:1.5;" width="347" x="7" y="148"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="171.5" y="165.0001">«P»</text><a href="../property.usp_sync_extendedproperties_sys2repo_insertupdate.html" target="_top" title="../property.usp_sync_extendedproperties_sys2repo_insertupdate.html" xlink:actuate="onRequest" xlink:href="../property.usp_sync_extendedproperties_sys2repo_insertupdate.html" xlink:show="new" xlink:title="../property.usp_sync_extendedproperties_sys2repo_insertupdate.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="341" x="10" y="179.4002">property.usp_sync_ExtendedProperties_Sys2Repo_InsertUpdate</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="353" y1="186.8002" y2="186.8002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="353" y1="194.8002" y2="194.8002"/><!--MD5=[f360b6822bd00abea216d71136a87d91]
+reverse link property.RepoObjectColumnProperty_sys_repo to property.usp_sync_ExtendedProperties_Sys2Repo_InsertUpdate--><path codeLine="38" d="M180.5,93.12 C180.5,111.42 180.5,131.98 180.5,147.86 " fill="none" id="property.RepoObjectColumnProperty_sys_repo-backto-property.usp_sync_ExtendedProperties_Sys2Repo_InsertUpdate" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="180.5,88.02,176.5,97.02,180.5,93.02,184.5,97.02,180.5,88.02" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="191" x="82" y="225.8002">The diagram is interactive and contains links.</text><!--MD5=[66703e30e1bde65507bc56af07e19b91]
+@startuml
+'Left to right direction
+top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>>  Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>>  White
+  BackgroundColor<<V>>  WhiteSmoke
+  BackgroundColor<<X>>  Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../property.repoobjectcolumnproperty_sys_repo.html property.RepoObjectColumnProperty_sys_repo]]" as property.RepoObjectColumnProperty_sys_repo << V >> {
+  - **RepoObjectColumn_guid** : (uniqueidentifier)
+  - **property_name** : (sysname)
+  - -
+}
+
+entity "[[../property.usp_sync_extendedproperties_sys2repo_insertupdate.html property.usp_sync_ExtendedProperties_Sys2Repo_InsertUpdate]]" as property.usp_sync_ExtendedProperties_Sys2Repo_InsertUpdate << P >> {
+  - -
+}
+
+property.RepoObjectColumnProperty_sys_repo <.. property.usp_sync_ExtendedProperties_Sys2Repo_InsertUpdate
+
+footer The diagram is interactive and contains links.
+@enduml
+
+@startuml
+top to bottom direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>>  Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>>  White
+  BackgroundColor<<V>>  WhiteSmoke
+  BackgroundColor<<X>>  Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../property.repoobjectcolumnproperty_sys_repo.html property.RepoObjectColumnProperty_sys_repo]]" as property.RepoObjectColumnProperty_sys_repo << V >> {
+  - **RepoObjectColumn_guid** : (uniqueidentifier)
+  - **property_name** : (sysname)
+  - -
+}
+
+entity "[[../property.usp_sync_extendedproperties_sys2repo_insertupdate.html property.usp_sync_ExtendedProperties_Sys2Repo_InsertUpdate]]" as property.usp_sync_ExtendedProperties_Sys2Repo_InsertUpdate << P >> {
+  - -
+}
+
+property.RepoObjectColumnProperty_sys_repo <.. property.usp_sync_ExtendedProperties_Sys2Repo_InsertUpdate
+
+footer The diagram is interactive and contains links.
+@enduml
+
+PlantUML version 1.2021.10(Mon Aug 30 13:43:48 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

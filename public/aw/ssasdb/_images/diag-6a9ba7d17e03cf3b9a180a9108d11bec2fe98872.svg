@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="96px" preserveAspectRatio="none" style="width:579px;height:96px;background:#FFFFFF;" version="1.1" viewBox="0 0 579 96" width="579px" zoomAndPan="magnify"><defs><filter height="300%" id="fkhe6uzb36vhm" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[b9f4061c1cab2ae8d052596bd5c43356]
+class AdventureWorks.Product_Subcategory--><rect codeLine="28" fill="#FFFFFF" filter="url(#fkhe6uzb36vhm)" height="54.8002" id="AdventureWorks.Product_Subcategory" style="stroke:#A80036;stroke-width:1.5;" width="203" x="362" y="10"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="454" y="27.0001">«U»</text><a href="../adventureworks.productblanksubcategory.html" target="_top" title="../adventureworks.productblanksubcategory.html" xlink:actuate="onRequest" xlink:href="../adventureworks.productblanksubcategory.html" xlink:show="new" xlink:title="../adventureworks.productblanksubcategory.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="197" x="365" y="41.4002">AdventureWorks.Product Subcategory</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="363" x2="564" y1="48.8002" y2="48.8002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="363" x2="564" y1="56.8002" y2="56.8002"/><!--MD5=[37b6835d3deff8a29c9f36ca57b4ed98]
+class aw.sqldwdb.dbo.DimProductSubcategory--><rect codeLine="32" fill="#F0F8FF" filter="url(#fkhe6uzb36vhm)" height="54.8002" id="aw.sqldwdb.dbo.DimProductSubcategory" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="295" x="7" y="10"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="53" x="58.5" y="27.0001">«external»</text><a href="../../sqldwdb/dbo.dimproductsubcategory.html" target="_top" title="../../sqldwdb/dbo.dimproductsubcategory.html" xlink:actuate="onRequest" xlink:href="../../sqldwdb/dbo.dimproductsubcategory.html" xlink:show="new" xlink:title="../../sqldwdb/dbo.dimproductsubcategory.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="150" x="10" y="41.4002">dbo.DimProductSubcategory</text></a><rect fill="#FFFFFF" height="16.4001" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="137" x="168" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="135" x="169" y="20.0001">AdventureWorksDW2019</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="301" y1="48.8002" y2="48.8002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="301" y1="56.8002" y2="56.8002"/><!--MD5=[d1bc1b8777e2300b32f4bea938a23b3f]
+reverse link aw.sqldwdb.dbo.DimProductSubcategory to AdventureWorks.Product_Subcategory--><path codeLine="36" d="M307.47,37.5 C325.94,37.5 344.44,37.5 361.91,37.5 " fill="none" id="aw.sqldwdb.dbo.DimProductSubcategory-backto-AdventureWorks.Product_Subcategory" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="302.26,37.5,311.26,41.5,307.26,37.5,311.26,33.5,302.26,37.5" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="191" x="187.5" y="87.8002">The diagram is interactive and contains links.</text><!--MD5=[3f9f35c2cf4540fef5ccfbeadf68766f]
+@startuml
+left to right direction
+'top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>>  Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>>  White
+  BackgroundColor<<V>>  WhiteSmoke
+  BackgroundColor<<X>>  Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../adventureworks.productblanksubcategory.html AdventureWorks.Product Subcategory]]" as AdventureWorks.Product_Subcategory << U >> {
+  - -
+}
+
+entity "[[../../sqldwdb/dbo.dimproductsubcategory.html dbo.DimProductSubcategory]]" as aw.sqldwdb.dbo.DimProductSubcategory <AdventureWorksDW2019>  << external >> #line.dashed {
+  - -
+}
+
+aw.sqldwdb.dbo.DimProductSubcategory <.. AdventureWorks.Product_Subcategory
+
+footer The diagram is interactive and contains links.
+@enduml
+
+@startuml
+left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>>  Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>>  White
+  BackgroundColor<<V>>  WhiteSmoke
+  BackgroundColor<<X>>  Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../adventureworks.productblanksubcategory.html AdventureWorks.Product Subcategory]]" as AdventureWorks.Product_Subcategory << U >> {
+  - -
+}
+
+entity "[[../../sqldwdb/dbo.dimproductsubcategory.html dbo.DimProductSubcategory]]" as aw.sqldwdb.dbo.DimProductSubcategory <AdventureWorksDW2019>  << external >> #line.dashed {
+  - -
+}
+
+aw.sqldwdb.dbo.DimProductSubcategory <.. AdventureWorks.Product_Subcategory
+
+footer The diagram is interactive and contains links.
+@enduml
+
+PlantUML version 1.2021.10(Mon Aug 30 13:43:48 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

@@ -18,9 +18,16 @@ content:
     - HEAD
     # - v*
     start_paths: docs, docsmanual
-  # - url: https://github.com/DataHandwerk/DataHandwerk-docs
-  #   branches: main
-  #   start_path: docs
+  - url: D:\Repos\gitlab\DataHandwerk\dhw-antora-adventureworks
+    branches:
+    - HEAD
+    # - v*
+    start_paths: docs, docsmanual
+  - url: D:\Repos\gitlab\DataHandwerk\dhw-antora-ssis
+    branches:
+    - HEAD
+    # - v*
+    start_paths: docs, docsmanual
 asciidoc:
   attributes:
     page-pagination: ''

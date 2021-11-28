@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="3310px" preserveAspectRatio="none" style="width:530px;height:3310px;background:#FFFFFF;" version="1.1" viewBox="0 0 530 3310" width="530px" zoomAndPan="magnify"><defs><filter height="300%" id="fahucjmu3nnej" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[1355e5697d62692a3bbd368f93f67bf5]
+class dbo.ufnGetContactInformation--><rect codeLine="28" fill="#D3D3D3" filter="url(#fahucjmu3nnej)" height="120.7997" id="dbo.ufnGetContactInformation" style="stroke:#A80036;stroke-width:1.5;" width="198" x="281" y="1146.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="24" x="368" y="1163.5001">«TF»</text><a href="../dbo.ufngetcontactinformation.html" target="_top" title="../dbo.ufngetcontactinformation.html" xlink:actuate="onRequest" xlink:href="../dbo.ufngetcontactinformation.html" xlink:show="new" xlink:title="../dbo.ufngetcontactinformation.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="153" x="303.5" y="1177.9002">dbo.ufnGetContactInformation</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="282" x2="478" y1="1185.3002" y2="1185.3002"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="172" x="301" y="1200.3001">BusinessEntityType : (nvarchar(50))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="130" x="301" y="1213.5">FirstName : (nvarchar(50))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="118" x="301" y="1226.6999">JobTitle : (nvarchar(50))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="129" x="301" y="1239.8998">LastName : (nvarchar(50))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="289" y="1246.0998"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="73" x="301" y="1253.0997">PersonID : (int)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="282" x2="478" y1="1259.2997" y2="1259.2997"/><!--MD5=[dd6f524f6ce6c8d66fa2c467d46699b7]
+class dbo.uspGetEmployeeManagers--><rect codeLine="37" fill="#00FFFF" filter="url(#fahucjmu3nnej)" height="54.8002" id="dbo.uspGetEmployeeManagers" style="stroke:#A80036;stroke-width:1.5;" width="171" x="294.5" y="272.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="371" y="289.5001">«P»</text><a href="../dbo.uspgetemployeemanagers.html" target="_top" title="../dbo.uspgetemployeemanagers.html" xlink:actuate="onRequest" xlink:href="../dbo.uspgetemployeemanagers.html" xlink:show="new" xlink:title="../dbo.uspgetemployeemanagers.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="165" x="297.5" y="303.9002">dbo.uspGetEmployeeManagers</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="295.5" x2="464.5" y1="311.3002" y2="311.3002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="295.5" x2="464.5" y1="319.3002" y2="319.3002"/><!--MD5=[01775039aece2a71dde8156432ddf219]
+class dbo.uspGetManagerEmployees--><rect codeLine="41" fill="#00FFFF" filter="url(#fahucjmu3nnej)" height="54.8002" id="dbo.uspGetManagerEmployees" style="stroke:#A80036;stroke-width:1.5;" width="171" x="294.5" y="784.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="371" y="801.5001">«P»</text><a href="../dbo.uspgetmanageremployees.html" target="_top" title="../dbo.uspgetmanageremployees.html" xlink:actuate="onRequest" xlink:href="../dbo.uspgetmanageremployees.html" xlink:show="new" xlink:title="../dbo.uspgetmanageremployees.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="165" x="297.5" y="815.9002">dbo.uspGetManagerEmployees</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="295.5" x2="464.5" y1="823.3002" y2="823.3002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="295.5" x2="464.5" y1="831.3002" y2="831.3002"/><!--MD5=[4d00cdb76a55c4282c8e14a1b664dbba]
+class HumanResources.vEmployee--><rect codeLine="45" fill="#F5F5F5" filter="url(#fahucjmu3nnej)" height="292.3984" id="HumanResources.vEmployee" style="stroke:#A80036;stroke-width:1.5;" width="173" x="293.5" y="1306.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="371" y="1323.5001">«V»</text><a href="../humanresources.vemployee.html" target="_top" title="../humanresources.vemployee.html" xlink:actuate="onRequest" xlink:href="../humanresources.vemployee.html" xlink:show="new" xlink:title="../humanresources.vemployee.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="154" x="303" y="1337.9002">HumanResources.vEmployee</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="294.5" x2="465.5" y1="1345.3002" y2="1345.3002"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="313.5" y="1360.3001">AdditionalContactInfo : (xml)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="301.5" y="1366.5001"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="145" x="313.5" y="1373.5">AddressLine1 : (nvarchar(60))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="145" x="313.5" y="1386.6999">AddressLine2 : (nvarchar(60))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="301.5" y="1392.8999"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="107" x="313.5" y="1399.8998">BusinessEntityID : (int)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="301.5" y="1406.0998"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="98" x="313.5" y="1413.0997">City : (nvarchar(30))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="301.5" y="1419.2997"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="147" x="313.5" y="1426.2996">CountryRegionName : (Name)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="145" x="313.5" y="1439.4995">EmailAddress : (nvarchar(50))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="301.5" y="1445.6995"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="103" x="313.5" y="1452.6994">EmailPromotion : (int)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="301.5" y="1458.8994"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="96" x="313.5" y="1465.8993">FirstName : (Name)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="301.5" y="1472.0993"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="118" x="313.5" y="1479.0992">JobTitle : (nvarchar(50))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="301.5" y="1485.2992"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="313.5" y="1492.2991">LastName : (Name)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="313.5" y="1505.499">MiddleName : (Name)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="118" x="313.5" y="1518.6989">PhoneNumber : (Phone)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="140" x="313.5" y="1531.8988">PhoneNumberType : (Name)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="301.5" y="1538.0988"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="313.5" y="1545.0987">PostalCode : (nvarchar(15))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="301.5" y="1551.2987"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="142" x="313.5" y="1558.2986">StateProvinceName : (Name)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="313.5" y="1571.4985">Suffix : (nvarchar(10))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="94" x="313.5" y="1584.6984">Title : (nvarchar(8))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="294.5" x2="465.5" y1="1590.8984" y2="1590.8984"/><!--MD5=[1ba55267eda5d3f6c65386294017d6e1]
+class HumanResources.vEmployeeDepartment--><rect codeLine="67" fill="#F5F5F5" filter="url(#fahucjmu3nnej)" height="186.7992" id="HumanResources.vEmployeeDepartment" style="stroke:#A80036;stroke-width:1.5;" width="220" x="270" y="3092.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="371" y="3109.5001">«V»</text><a href="../humanresources.vemployeedepartment.html" target="_top" title="../humanresources.vemployeedepartment.html" xlink:actuate="onRequest" xlink:href="../humanresources.vemployeedepartment.html" xlink:show="new" xlink:title="../humanresources.vemployeedepartment.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="214" x="273" y="3123.9002">HumanResources.vEmployeeDepartment</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="271" x2="489" y1="3131.3002" y2="3131.3002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="278" y="3139.3002"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="107" x="290" y="3146.3001">BusinessEntityID : (int)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="278" y="3152.5001"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="103" x="290" y="3159.5">Department : (Name)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="278" y="3165.7"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="96" x="290" y="3172.6999">FirstName : (Name)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="278" y="3178.8999"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="105" x="290" y="3185.8998">GroupName : (Name)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="278" y="3192.0998"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="118" x="290" y="3199.0997">JobTitle : (nvarchar(50))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="278" y="3205.2997"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="290" y="3212.2996">LastName : (Name)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="290" y="3225.4995">MiddleName : (Name)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="278" y="3231.6995"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="84" x="290" y="3238.6994">StartDate : (date)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="290" y="3251.8993">Suffix : (nvarchar(10))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="94" x="290" y="3265.0992">Title : (nvarchar(8))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="271" x2="489" y1="3271.2992" y2="3271.2992"/><!--MD5=[820d9cf45cc48bb04be2fe8689d8fd8f]
+class HumanResources.vEmployeeDepartmentHistory--><rect codeLine="81" fill="#F5F5F5" filter="url(#fahucjmu3nnej)" height="199.9991" id="HumanResources.vEmployeeDepartmentHistory" style="stroke:#A80036;stroke-width:1.5;" width="257" x="251.5" y="2851"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="371" y="2868.0001">«V»</text><a href="../humanresources.vemployeedepartmenthistory.html" target="_top" title="../humanresources.vemployeedepartmenthistory.html" xlink:actuate="onRequest" xlink:href="../humanresources.vemployeedepartmenthistory.html" xlink:show="new" xlink:title="../humanresources.vemployeedepartmenthistory.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="251" x="254.5" y="2882.4002">HumanResources.vEmployeeDepartmentHistory</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="252.5" x2="507.5" y1="2889.8002" y2="2889.8002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="259.5" y="2897.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="107" x="271.5" y="2904.8001">BusinessEntityID : (int)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="259.5" y="2911.0001"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="103" x="271.5" y="2918">Department : (Name)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="80" x="271.5" y="2931.1999">EndDate : (date)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="259.5" y="2937.3999"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="96" x="271.5" y="2944.3998">FirstName : (Name)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="259.5" y="2950.5998"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="105" x="271.5" y="2957.5997">GroupName : (Name)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="259.5" y="2963.7997"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="271.5" y="2970.7996">LastName : (Name)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="271.5" y="2983.9995">MiddleName : (Name)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="259.5" y="2990.1995"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="67" x="271.5" y="2997.1994">Shift : (Name)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="259.5" y="3003.3994"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="84" x="271.5" y="3010.3993">StartDate : (date)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="271.5" y="3023.5992">Suffix : (nvarchar(10))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="94" x="271.5" y="3036.7991">Title : (nvarchar(8))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="252.5" x2="507.5" y1="3042.9991" y2="3042.9991"/><!--MD5=[26e73aa6bffff6722b7dc71107c04139]
+class Person.iuPerson--><rect codeLine="96" fill="#FF6347" filter="url(#fahucjmu3nnej)" height="54.8002" id="Person.iuPerson" style="stroke:#A80036;stroke-width:1.5;" width="90" x="335" y="694.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="26" x="367" y="711.5001">«TR»</text><a href="../person.iuperson.html" target="_top" title="../person.iuperson.html" xlink:actuate="onRequest" xlink:href="../person.iuperson.html" xlink:show="new" xlink:title="../person.iuperson.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="84" x="338" y="725.9002">Person.iuPerson</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="336" x2="424" y1="733.3002" y2="733.3002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="336" x2="424" y1="741.3002" y2="741.3002"/><!--MD5=[b17bdffdd3f1685933c4a79793dc0207]
+class Person.Person--><rect codeLine="100" fill="#FFFFFF" filter="url(#fahucjmu3nnej)" height="226.3989" id="Person.Person" style="stroke:#A80036;stroke-width:1.5;" width="161" x="7" y="1944.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="78" y="1961.5001">«U»</text><a href="../person.person.html" target="_top" title="../person.person.html" xlink:actuate="onRequest" xlink:href="../person.person.html" xlink:show="new" xlink:title="../person.person.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="75" x="50" y="1975.9002">Person.Person</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="167" y1="1983.3002" y2="1983.3002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="1991.3002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="91" x="27" y="1998.3001">BusinessEntityID</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="25" x="121" y="1998.3001">: (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="27" y="2011.5">AdditionalContactInfo : (xml)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="103" x="27" y="2024.6999">Demographics : (xml)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="2030.8999"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="103" x="27" y="2037.8998">EmailPromotion : (int)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="2044.0998"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="96" x="27" y="2051.0997">FirstName : (Name)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="2057.2997"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="27" y="2064.2996">LastName : (Name)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="27" y="2077.4995">MiddleName : (Name)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="2083.6995"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="121" x="27" y="2090.6994">ModifiedDate : (datetime)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="2096.8994"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="121" x="27" y="2103.8993">NameStyle : (NameStyle)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="2110.0993"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="117" x="27" y="2117.0992">PersonType : (nchar(2))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="2123.2992"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="127" x="27" y="2130.2991">rowguid : (uniqueidentifier)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="27" y="2143.499">Suffix : (nvarchar(10))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="94" x="27" y="2156.6989">Title : (nvarchar(8))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="167" y1="2162.8989" y2="2162.8989"/><!--MD5=[d9688f3268750ef8d0d1345f2e09771e]
+class Person.vAdditionalContactInfo--><rect codeLine="117" fill="#F5F5F5" filter="url(#fahucjmu3nnej)" height="279.1985" id="Person.vAdditionalContactInfo" style="stroke:#A80036;stroke-width:1.5;" width="272" x="244" y="1638.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="371" y="1655.5001">«V»</text><a href="../person.vadditionalcontactinfo.html" target="_top" title="../person.vadditionalcontactinfo.html" xlink:actuate="onRequest" xlink:href="../person.vadditionalcontactinfo.html" xlink:show="new" xlink:title="../person.vadditionalcontactinfo.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="156" x="302" y="1669.9002">Person.vAdditionalContactInfo</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="245" x2="515" y1="1677.3002" y2="1677.3002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="252" y="1685.3002"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="107" x="264" y="1692.3001">BusinessEntityID : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="98" x="264" y="1705.5">City : (nvarchar(50))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="152" x="264" y="1718.6999">CountryRegion : (nvarchar(50))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="151" x="264" y="1731.8998">EMailAddress : (nvarchar(128))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="204" x="264" y="1745.0997">EMailSpecialInstructions : (nvarchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="196" x="264" y="1758.2996">EMailTelephoneNumber : (nvarchar(50))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="252" y="1764.4996"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="96" x="264" y="1771.4995">FirstName : (Name)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="246" x="264" y="1784.6994">HomeAddressSpecialInstructions : (nvarchar(max))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="252" y="1790.8994"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="264" y="1797.8993">LastName : (Name)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="264" y="1811.0992">MiddleName : (Name)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="252" y="1817.2992"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="121" x="264" y="1824.2991">ModifiedDate : (datetime)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="264" y="1837.499">PostalCode : (nvarchar(50))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="252" y="1843.699"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="127" x="264" y="1850.6989">rowguid : (uniqueidentifier)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="147" x="264" y="1863.8988">StateProvince : (nvarchar(50))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="109" x="264" y="1877.0987">Street : (nvarchar(50))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="170" x="264" y="1890.2986">TelephoneNumber : (nvarchar(50))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="229" x="264" y="1903.4985">TelephoneSpecialInstructions : (nvarchar(max))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="245" x2="515" y1="1909.6985" y2="1909.6985"/><!--MD5=[bb3db76b43e8c7eb6f46c17645a369ba]
+class Purchasing.vVendorWithContacts--><rect codeLine="138" fill="#F5F5F5" filter="url(#fahucjmu3nnej)" height="213.199" id="Purchasing.vVendorWithContacts" style="stroke:#A80036;stroke-width:1.5;" width="180" x="290" y="1956.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="371" y="1973.5001">«V»</text><a href="../purchasing.vvendorwithcontacts.html" target="_top" title="../purchasing.vvendorwithcontacts.html" xlink:actuate="onRequest" xlink:href="../purchasing.vvendorwithcontacts.html" xlink:show="new" xlink:title="../purchasing.vvendorwithcontacts.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="174" x="293" y="1987.9002">Purchasing.vVendorWithContacts</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="291" x2="469" y1="1995.3002" y2="1995.3002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="298" y="2003.3002"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="107" x="310" y="2010.3001">BusinessEntityID : (int)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="298" y="2016.5001"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="108" x="310" y="2023.5">ContactType : (Name)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="145" x="310" y="2036.6999">EmailAddress : (nvarchar(50))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="298" y="2042.8999"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="103" x="310" y="2049.8998">EmailPromotion : (int)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="298" y="2056.0998"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="96" x="310" y="2063.0997">FirstName : (Name)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="298" y="2069.2997"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="310" y="2076.2996">LastName : (Name)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="310" y="2089.4995">MiddleName : (Name)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="298" y="2095.6995"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="75" x="310" y="2102.6994">Name : (Name)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="118" x="310" y="2115.8993">PhoneNumber : (Phone)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="140" x="310" y="2129.0992">PhoneNumberType : (Name)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="310" y="2142.2991">Suffix : (nvarchar(10))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="94" x="310" y="2155.499">Title : (nvarchar(8))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="291" x2="469" y1="2161.699" y2="2161.699"/><!--MD5=[54573f4f3d389799135c94b6151bb383]
+class Sales.iduSalesOrderDetail--><rect codeLine="154" fill="#FF6347" filter="url(#fahucjmu3nnej)" height="54.8002" id="Sales.iduSalesOrderDetail" style="stroke:#A80036;stroke-width:1.5;" width="145" x="307.5" y="1056.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="26" x="367" y="1073.5001">«TR»</text><a href="../sales.idusalesorderdetail.html" target="_top" title="../sales.idusalesorderdetail.html" xlink:actuate="onRequest" xlink:href="../sales.idusalesorderdetail.html" xlink:show="new" xlink:title="../sales.idusalesorderdetail.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="139" x="310.5" y="1087.9002">Sales.iduSalesOrderDetail</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="308.5" x2="451.5" y1="1095.3002" y2="1095.3002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="308.5" x2="451.5" y1="1103.3002" y2="1103.3002"/><!--MD5=[5a2752e0cc4a769235b2bc7f1cb58260]
+class Sales.vIndividualCustomer--><rect codeLine="158" fill="#F5F5F5" filter="url(#fahucjmu3nnej)" height="292.3984" id="Sales.vIndividualCustomer" style="stroke:#A80036;stroke-width:1.5;" width="173" x="293.5" y="366.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="371" y="383.5001">«V»</text><a href="../sales.vindividualcustomer.html" target="_top" title="../sales.vindividualcustomer.html" xlink:actuate="onRequest" xlink:href="../sales.vindividualcustomer.html" xlink:show="new" xlink:title="../sales.vindividualcustomer.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="140" x="310" y="397.9002">Sales.vIndividualCustomer</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="294.5" x2="465.5" y1="405.3002" y2="405.3002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="301.5" y="413.3002"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="145" x="313.5" y="420.3001">AddressLine1 : (nvarchar(60))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="145" x="313.5" y="433.5">AddressLine2 : (nvarchar(60))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="301.5" y="439.7"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="109" x="313.5" y="446.6999">AddressType : (Name)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="301.5" y="452.8999"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="107" x="313.5" y="459.8998">BusinessEntityID : (int)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="301.5" y="466.0998"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="98" x="313.5" y="473.0997">City : (nvarchar(30))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="301.5" y="479.2997"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="147" x="313.5" y="486.2996">CountryRegionName : (Name)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="103" x="313.5" y="499.4995">Demographics : (xml)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="145" x="313.5" y="512.6994">EmailAddress : (nvarchar(50))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="301.5" y="518.8994"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="103" x="313.5" y="525.8993">EmailPromotion : (int)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="301.5" y="532.0993"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="96" x="313.5" y="539.0992">FirstName : (Name)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="301.5" y="545.2992"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="313.5" y="552.2991">LastName : (Name)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="313.5" y="565.499">MiddleName : (Name)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="118" x="313.5" y="578.6989">PhoneNumber : (Phone)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="140" x="313.5" y="591.8988">PhoneNumberType : (Name)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="301.5" y="598.0988"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="313.5" y="605.0987">PostalCode : (nvarchar(15))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="301.5" y="611.2987"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="142" x="313.5" y="618.2986">StateProvinceName : (Name)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="313.5" y="631.4985">Suffix : (nvarchar(10))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="94" x="313.5" y="644.6984">Title : (nvarchar(8))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="294.5" x2="465.5" y1="650.8984" y2="650.8984"/><!--MD5=[77486a3ca0491b73a170b193a78bbd5f]
+class Sales.vPersonDemographics--><rect codeLine="180" fill="#F5F5F5" filter="url(#fahucjmu3nnej)" height="226.3989" id="Sales.vPersonDemographics" style="stroke:#A80036;stroke-width:1.5;" width="174" x="293" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="371" y="24.0001">«V»</text><a href="../sales.vpersondemographics.html" target="_top" title="../sales.vpersondemographics.html" xlink:actuate="onRequest" xlink:href="../sales.vpersondemographics.html" xlink:show="new" xlink:title="../sales.vpersondemographics.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="151" x="304.5" y="38.4002">Sales.vPersonDemographics</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="294" x2="466" y1="45.8002" y2="45.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="103" x="313" y="60.8001">BirthDate : (datetime)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="301" y="67.0001"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="107" x="313" y="74">BusinessEntityID : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="148" x="313" y="87.1999">DateFirstPurchase : (datetime)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="313" y="100.3998">Education : (nvarchar(30))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="110" x="313" y="113.5997">Gender : (nvarchar(1))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="111" x="313" y="126.7996">HomeOwnerFlag : (bit)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="136" x="313" y="139.9995">MaritalStatus : (nvarchar(1))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="125" x="313" y="153.1994">NumberCarsOwned : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="146" x="313" y="166.3993">NumberChildrenAtHome : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="136" x="313" y="179.5992">Occupation : (nvarchar(30))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="92" x="313" y="192.7991">TotalChildren : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="141" x="313" y="205.999">TotalPurchaseYTD : (money)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="146" x="313" y="219.1989">YearlyIncome : (nvarchar(30))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="294" x2="466" y1="225.3989" y2="225.3989"/><!--MD5=[1be19c3336ab9e1320e49ce75f98db2b]
+class Sales.vSalesPerson--><rect codeLine="197" fill="#F5F5F5" filter="url(#fahucjmu3nnej)" height="345.198" id="Sales.vSalesPerson" style="stroke:#A80036;stroke-width:1.5;" width="177" x="291.5" y="2211"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="371" y="2228.0001">«V»</text><a href="../sales.vsalesperson.html" target="_top" title="../sales.vsalesperson.html" xlink:actuate="onRequest" xlink:href="../sales.vsalesperson.html" xlink:show="new" xlink:title="../sales.vsalesperson.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="105" x="327.5" y="2242.4002">Sales.vSalesPerson</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="292.5" x2="467.5" y1="2249.8002" y2="2249.8002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="299.5" y="2257.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="145" x="311.5" y="2264.8001">AddressLine1 : (nvarchar(60))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="145" x="311.5" y="2278">AddressLine2 : (nvarchar(60))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="299.5" y="2284.2"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="107" x="311.5" y="2291.1999">BusinessEntityID : (int)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="299.5" y="2297.3999"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="98" x="311.5" y="2304.3998">City : (nvarchar(30))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="299.5" y="2310.5998"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="147" x="311.5" y="2317.5997">CountryRegionName : (Name)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="145" x="311.5" y="2330.7996">EmailAddress : (nvarchar(50))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="299.5" y="2336.9996"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="103" x="311.5" y="2343.9995">EmailPromotion : (int)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="299.5" y="2350.1995"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="96" x="311.5" y="2357.1994">FirstName : (Name)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="299.5" y="2363.3994"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="118" x="311.5" y="2370.3993">JobTitle : (nvarchar(50))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="299.5" y="2376.5993"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="311.5" y="2383.5992">LastName : (Name)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="311.5" y="2396.7991">MiddleName : (Name)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="118" x="311.5" y="2409.999">PhoneNumber : (Phone)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="140" x="311.5" y="2423.1989">PhoneNumberType : (Name)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="299.5" y="2429.3989"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="311.5" y="2436.3988">PostalCode : (nvarchar(15))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="299.5" y="2442.5988"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="118" x="311.5" y="2449.5987">SalesLastYear : (money)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="105" x="311.5" y="2462.7986">SalesQuota : (money)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="299.5" y="2468.9986"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="97" x="311.5" y="2475.9985">SalesYTD : (money)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="299.5" y="2482.1985"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="142" x="311.5" y="2489.1984">StateProvinceName : (Name)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="311.5" y="2502.3983">Suffix : (nvarchar(10))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="151" x="311.5" y="2515.5982">TerritoryGroup : (nvarchar(50))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="116" x="311.5" y="2528.7982">TerritoryName : (Name)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="94" x="311.5" y="2541.9981">Title : (nvarchar(8))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="292.5" x2="467.5" y1="2548.198" y2="2548.198"/><!--MD5=[1720332069fb4f4dc016acd9666431e4]
+class Sales.vSalesPersonSalesByFiscalYears--><rect codeLine="223" fill="#F5F5F5" filter="url(#fahucjmu3nnej)" height="147.1995" id="Sales.vSalesPersonSalesByFiscalYears" style="stroke:#A80036;stroke-width:1.5;" width="218" x="271" y="874.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="371" y="891.5001">«V»</text><a href="../sales.vsalespersonsalesbyfiscalyears.html" target="_top" title="../sales.vsalespersonsalesbyfiscalyears.html" xlink:actuate="onRequest" xlink:href="../sales.vsalespersonsalesbyfiscalyears.html" xlink:show="new" xlink:title="../sales.vsalespersonsalesbyfiscalyears.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="212" x="274" y="905.9002">Sales.vSalesPersonSalesByFiscalYears</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="272" x2="488" y1="913.3002" y2="913.3002"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="73" x="291" y="928.3001">2002 : (money)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="73" x="291" y="941.5">2003 : (money)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="73" x="291" y="954.6999">2004 : (money)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="132" x="291" y="967.8998">FullName : (nvarchar(152))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="279" y="974.0998"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="118" x="291" y="981.0997">JobTitle : (nvarchar(50))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="99" x="291" y="994.2996">SalesPersonID : (int)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="279" y="1000.4996"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="113" x="291" y="1007.4995">SalesTerritory : (Name)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="272" x2="488" y1="1013.6995" y2="1013.6995"/><!--MD5=[fa874a2cfcfb1a8dbff044b4c5ba7c38]
+class Sales.vStoreWithContacts--><rect codeLine="234" fill="#F5F5F5" filter="url(#fahucjmu3nnej)" height="213.199" id="Sales.vStoreWithContacts" style="stroke:#A80036;stroke-width:1.5;" width="171" x="294.5" y="2596.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="371" y="2613.5001">«V»</text><a href="../sales.vstorewithcontacts.html" target="_top" title="../sales.vstorewithcontacts.html" xlink:actuate="onRequest" xlink:href="../sales.vstorewithcontacts.html" xlink:show="new" xlink:title="../sales.vstorewithcontacts.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="135" x="312.5" y="2627.9002">Sales.vStoreWithContacts</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="295.5" x2="464.5" y1="2635.3002" y2="2635.3002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="302.5" y="2643.3002"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="107" x="314.5" y="2650.3001">BusinessEntityID : (int)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="302.5" y="2656.5001"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="108" x="314.5" y="2663.5">ContactType : (Name)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="145" x="314.5" y="2676.6999">EmailAddress : (nvarchar(50))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="302.5" y="2682.8999"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="103" x="314.5" y="2689.8998">EmailPromotion : (int)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="302.5" y="2696.0998"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="96" x="314.5" y="2703.0997">FirstName : (Name)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="302.5" y="2709.2997"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="314.5" y="2716.2996">LastName : (Name)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="314.5" y="2729.4995">MiddleName : (Name)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="302.5" y="2735.6995"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="75" x="314.5" y="2742.6994">Name : (Name)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="118" x="314.5" y="2755.8993">PhoneNumber : (Phone)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="140" x="314.5" y="2769.0992">PhoneNumberType : (Name)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="314.5" y="2782.2991">Suffix : (nvarchar(10))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="94" x="314.5" y="2795.499">Title : (nvarchar(8))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="295.5" x2="464.5" y1="2801.699" y2="2801.699"/><!--MD5=[022f0a5c0c3f9dfc2a80945d43585bc9]
+reverse link Person.Person to Person.iuPerson--><path codeLine="250" d="M94.89,1935.08 C111.97,1631.71 162.4,856.19 236,767 C259.94,737.99 302.41,727.39 334.87,723.67 " fill="none" id="Person.Person-backto-Person.iuPerson" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="94.59,1940.39,99.0984,1931.6336,94.8761,1935.3982,91.1115,1931.1759,94.59,1940.39" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[10a9c510771228801d65ddf4962224fb]
+reverse link Person.Person to Sales.iduSalesOrderDetail--><path codeLine="251" d="M92.31,1935.05 C101.77,1712 133.55,1247.75 236,1129 C253.94,1108.21 281.38,1096.91 307.44,1090.82 " fill="none" id="Person.Person-backto-Sales.iduSalesOrderDetail" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="92.09,1940.28,96.4728,1931.4601,92.3047,1935.2846,88.4802,1931.1165,92.09,1940.28" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0455e97562aa8a760d2b5f9da3d21ab2]
+reverse link Person.Person to Person.vAdditionalContactInfo--><path codeLine="252" d="M180.06,1967.75 C197.8,1950.65 216.79,1932.34 235.74,1914.08 " fill="none" id="Person.Person-backto-Person.vAdditionalContactInfo" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="176.05,1971.61,185.3051,1968.2422,179.6492,1968.1393,179.7521,1962.4834,176.05,1971.61" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0455e97562aa8a760d2b5f9da3d21ab2]
+reverse link Person.Person to Person.vAdditionalContactInfo--><path codeLine="266" d="M174.66,1992.85 C304.19,1985.28 104.91,1687 243,1687 " fill="none" id="Person.Person-backto-Person.vAdditionalContactInfo-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,1993,178.6106,1996.7413,174.498,1992.8572,178.3821,1988.7446,169.5,1993" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0455e97562aa8a760d2b5f9da3d21ab2]
+reverse link Person.Person to Person.vAdditionalContactInfo--><path codeLine="275" d="M174.6,2044.84 C293.19,2037.4 116.1,1765 243,1765 " fill="none" id="Person.Person-backto-Person.vAdditionalContactInfo-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2045,178.6212,2048.7153,174.4975,2044.8429,178.3699,2040.7193,169.5,2045" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0455e97562aa8a760d2b5f9da3d21ab2]
+reverse link Person.Person to Person.vAdditionalContactInfo--><path codeLine="283" d="M174.72,2058.83 C287.59,2051.24 121.72,1792 243,1792 " fill="none" id="Person.Person-backto-Person.vAdditionalContactInfo-3" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2059,178.6212,2062.7153,174.4975,2058.8429,178.3699,2054.7193,169.5,2059" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0455e97562aa8a760d2b5f9da3d21ab2]
+reverse link Person.Person to Person.vAdditionalContactInfo--><path codeLine="291" d="M174.72,2071.83 C287.59,2064.24 121.72,1805 243,1805 " fill="none" id="Person.Person-backto-Person.vAdditionalContactInfo-4" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2072,178.6212,2075.7153,174.4975,2071.8429,178.3699,2067.7193,169.5,2072" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0455e97562aa8a760d2b5f9da3d21ab2]
+reverse link Person.Person to Person.vAdditionalContactInfo--><path codeLine="299" d="M174.72,2084.83 C287.59,2077.24 121.72,1818 243,1818 " fill="none" id="Person.Person-backto-Person.vAdditionalContactInfo-5" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2085,178.6212,2088.7153,174.4975,2084.8429,178.3699,2080.7193,169.5,2085" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0455e97562aa8a760d2b5f9da3d21ab2]
+reverse link Person.Person to Person.vAdditionalContactInfo--><path codeLine="300" d="M174.6,2123.84 C293.19,2116.4 116.1,1844 243,1844 " fill="none" id="Person.Person-backto-Person.vAdditionalContactInfo-6" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2124,178.6212,2127.7153,174.4975,2123.8429,178.3699,2119.7193,169.5,2124" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6ce181221f8abc6e53468ba62297bc6a]
+reverse link Person.Person to HumanResources.vEmployee--><path codeLine="253" d="M115.51,1935.54 C139.11,1844.24 178.64,1717.73 236,1617 C249.74,1592.87 267.27,1569 285.32,1547.21 " fill="none" id="Person.Person-backto-HumanResources.vEmployee" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="114.26,1940.41,120.3717,1932.6868,115.5029,1935.5669,112.6228,1930.6982,114.26,1940.41" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6ce181221f8abc6e53468ba62297bc6a]
+reverse link Person.Person to HumanResources.vEmployee--><path codeLine="265" d="M174.55,2005.73 C312.78,1990.83 147.48,1355 293,1355 " fill="none" id="Person.Person-backto-HumanResources.vEmployee-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2006,178.7041,2009.5048,174.4926,2005.7282,178.2692,2001.5167,169.5,2006" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6ce181221f8abc6e53468ba62297bc6a]
+reverse link Person.Person to HumanResources.vEmployee--><path codeLine="270" d="M174.8,2031.67 C298.53,2016.11 161.95,1447 293,1447 " fill="none" id="Person.Person-backto-HumanResources.vEmployee-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2032,178.7338,2035.4259,174.4901,2031.6854,178.2305,2027.4417,169.5,2032" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6ce181221f8abc6e53468ba62297bc6a]
+reverse link Person.Person to HumanResources.vEmployee--><path codeLine="276" d="M174.79,2044.68 C298.32,2029.14 162.17,1461 293,1461 " fill="none" id="Person.Person-backto-HumanResources.vEmployee-3" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2045,178.7338,2048.4259,174.4901,2044.6854,178.2305,2040.4417,169.5,2045" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6ce181221f8abc6e53468ba62297bc6a]
+reverse link Person.Person to HumanResources.vEmployee--><path codeLine="284" d="M174.69,2058.68 C295.86,2043.47 164.74,1487 293,1487 " fill="none" id="Person.Person-backto-HumanResources.vEmployee-4" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2059,178.7338,2062.4259,174.4901,2058.6854,178.2305,2054.4417,169.5,2059" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6ce181221f8abc6e53468ba62297bc6a]
+reverse link Person.Person to HumanResources.vEmployee--><path codeLine="292" d="M174.69,2071.68 C295.86,2056.47 164.74,1500 293,1500 " fill="none" id="Person.Person-backto-HumanResources.vEmployee-5" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2072,178.7338,2075.4259,174.4901,2071.6854,178.2305,2067.4417,169.5,2072" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6ce181221f8abc6e53468ba62297bc6a]
+reverse link Person.Person to HumanResources.vEmployee--><path codeLine="301" d="M174.8,2136.7 C282.79,2124.06 183.12,1718.76 236,1617 C251.81,1586.57 258.71,1565 293,1565 " fill="none" id="Person.Person-backto-HumanResources.vEmployee-6" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2137,178.7141,2140.4785,174.4918,2136.7139,178.2564,2132.4916,169.5,2137" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6ce181221f8abc6e53468ba62297bc6a]
+reverse link Person.Person to HumanResources.vEmployee--><path codeLine="308" d="M174.6,2149.72 C285.53,2137.44 174.78,1717.43 236,1617 C251.98,1590.79 262.3,1578 293,1578 " fill="none" id="Person.Person-backto-HumanResources.vEmployee-7" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2150,178.7036,2153.5063,174.4926,2149.729,178.2699,2145.518,169.5,2150" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[562357bb5291d45f9701a3dfcb5e6334]
+reverse link Person.Person to HumanResources.vEmployeeDepartment--><path codeLine="254" d="M94.98,2176.9 C109.36,2411.95 149.72,2920.66 236,3071 C243.03,3083.25 251.94,3094.69 261.86,3105.23 " fill="none" id="Person.Person-backto-HumanResources.vEmployeeDepartment" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="94.67,2171.74,91.2162,2180.9634,94.9695,2176.731,99.2018,2180.4843,94.67,2171.74" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[562357bb5291d45f9701a3dfcb5e6334]
+reverse link Person.Person to HumanResources.vEmployeeDepartment--><path codeLine="277" d="M174.48,2045.62 C290.69,2075.5 145.45,3168 269,3168 " fill="none" id="Person.Person-backto-HumanResources.vEmployeeDepartment-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2045,177.9272,2050.0973,174.4605,2045.6272,178.9307,2042.1605,169.5,2045" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[562357bb5291d45f9701a3dfcb5e6334]
+reverse link Person.Person to HumanResources.vEmployeeDepartment--><path codeLine="285" d="M174.6,2059.64 C293.41,2090.2 142.61,3208 269,3208 " fill="none" id="Person.Person-backto-HumanResources.vEmployeeDepartment-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2059,177.9253,2064.1004,174.4603,2059.629,178.9317,2056.1639,169.5,2059" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[562357bb5291d45f9701a3dfcb5e6334]
+reverse link Person.Person to HumanResources.vEmployeeDepartment--><path codeLine="293" d="M174.6,2072.64 C293.41,2103.2 142.61,3221 269,3221 " fill="none" id="Person.Person-backto-HumanResources.vEmployeeDepartment-3" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2072,177.9253,2077.1004,174.4603,2072.629,178.9317,2069.1639,169.5,2072" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[562357bb5291d45f9701a3dfcb5e6334]
+reverse link Person.Person to HumanResources.vEmployeeDepartment--><path codeLine="302" d="M174.77,2137.71 C289.05,2169.28 146.99,3247 269,3247 " fill="none" id="Person.Person-backto-HumanResources.vEmployeeDepartment-4" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2137,177.8817,2142.1718,174.4548,2137.6711,178.9554,2134.2442,169.5,2137" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[562357bb5291d45f9701a3dfcb5e6334]
+reverse link Person.Person to HumanResources.vEmployeeDepartment--><path codeLine="309" d="M174.77,2150.71 C289.05,2182.28 146.99,3260 269,3260 " fill="none" id="Person.Person-backto-HumanResources.vEmployeeDepartment-5" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2150,177.8817,2155.1718,174.4548,2150.6711,178.9554,2147.2442,169.5,2150" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[703425cf21876af71d680b555a93b42b]
+reverse link Person.Person to HumanResources.vEmployeeDepartmentHistory--><path codeLine="255" d="M101.59,2176.64 C123.69,2365.32 172.32,2719.95 236,2829 C239.53,2835.04 243.47,2840.92 247.73,2846.62 " fill="none" id="Person.Person-backto-HumanResources.vEmployeeDepartmentHistory" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="101.01,2171.66,98.0937,2181.0672,101.5967,2176.6255,106.0384,2180.1285,101.01,2171.66" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[703425cf21876af71d680b555a93b42b]
+reverse link Person.Person to HumanResources.vEmployeeDepartmentHistory--><path codeLine="278" d="M174.56,2045.82 C265.16,2076.15 153.01,2939 251,2939 " fill="none" id="Person.Person-backto-HumanResources.vEmployeeDepartmentHistory-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2045,177.7453,2050.3866,174.4358,2045.7989,179.0235,2042.4893,169.5,2045" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[703425cf21876af71d680b555a93b42b]
+reverse link Person.Person to HumanResources.vEmployeeDepartmentHistory--><path codeLine="286" d="M174.63,2059.83 C266.5,2090.61 151.59,2966 251,2966 " fill="none" id="Person.Person-backto-HumanResources.vEmployeeDepartmentHistory-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2059,177.7453,2064.3866,174.4358,2059.7989,179.0235,2056.4893,169.5,2059" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[703425cf21876af71d680b555a93b42b]
+reverse link Person.Person to HumanResources.vEmployeeDepartmentHistory--><path codeLine="294" d="M174.63,2072.83 C266.5,2103.61 151.59,2979 251,2979 " fill="none" id="Person.Person-backto-HumanResources.vEmployeeDepartmentHistory-3" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2072,177.7453,2077.3866,174.4358,2072.7989,179.0235,2069.4893,169.5,2072" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[703425cf21876af71d680b555a93b42b]
+reverse link Person.Person to HumanResources.vEmployeeDepartmentHistory--><path codeLine="303" d="M174.49,2137.81 C263.83,2167.7 154.42,3018 251,3018 " fill="none" id="Person.Person-backto-HumanResources.vEmployeeDepartmentHistory-4" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2137,177.7453,2142.3866,174.4358,2137.7989,179.0235,2134.4893,169.5,2137" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[703425cf21876af71d680b555a93b42b]
+reverse link Person.Person to HumanResources.vEmployeeDepartmentHistory--><path codeLine="310" d="M174.49,2150.81 C263.83,2180.7 154.42,3031 251,3031 " fill="none" id="Person.Person-backto-HumanResources.vEmployeeDepartmentHistory-5" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2150,177.7453,2155.3866,174.4358,2150.7989,179.0235,2147.4893,169.5,2150" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b05f4ae6d87b603d8ecf6e1414102cca]
+reverse link Person.Person to Sales.vIndividualCustomer--><path codeLine="256" d="M92.24,1935.18 C102.77,1642.31 138.5,902.06 236,677 C247.87,649.6 265.91,623.4 285.21,600.23 " fill="none" id="Person.Person-backto-Sales.vIndividualCustomer" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="92.06,1940.32,96.366,1931.4623,92.2313,1935.3229,88.3707,1931.1882,92.06,1940.32" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b05f4ae6d87b603d8ecf6e1414102cca]
+reverse link Person.Person to Sales.vIndividualCustomer--><path codeLine="267" d="M174.5,1990.98 C241.89,1935.35 225.25,747.68 236,677 C251.31,576.29 191.13,455 293,455 " fill="none" id="Person.Person-backto-Sales.vIndividualCustomer-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,1993,179.3432,1993.3348,174.1354,1991.1258,176.3444,1985.9181,169.5,1993" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b05f4ae6d87b603d8ecf6e1414102cca]
+reverse link Person.Person to Sales.vIndividualCustomer--><path codeLine="269" d="M174.59,2016.94 C243.17,1960.2 223.26,748.77 236,677 C250.89,593.12 207.81,494 293,494 " fill="none" id="Person.Person-backto-Sales.vIndividualCustomer-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2019,179.3428,2019.3453,174.1374,2017.1308,176.352,2011.9254,169.5,2019" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b05f4ae6d87b603d8ecf6e1414102cca]
+reverse link Person.Person to Sales.vIndividualCustomer--><path codeLine="271" d="M174.22,2030.25 C243.86,1977.51 221.37,749.28 236,677 C250.64,604.65 219.18,521 293,521 " fill="none" id="Person.Person-backto-Sales.vIndividualCustomer-3" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2032,179.3299,2032.6115,174.1863,2030.2569,176.5409,2025.1134,169.5,2032" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b05f4ae6d87b603d8ecf6e1414102cca]
+reverse link Person.Person to Sales.vIndividualCustomer--><path codeLine="279" d="M174.26,2043.23 C244.5,1989.98 220.19,749.76 236,677 C250.53,610.14 224.58,534 293,534 " fill="none" id="Person.Person-backto-Sales.vIndividualCustomer-4" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2045,179.3299,2045.6115,174.1863,2043.2569,176.5409,2038.1134,169.5,2045" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b05f4ae6d87b603d8ecf6e1414102cca]
+reverse link Person.Person to Sales.vIndividualCustomer--><path codeLine="287" d="M174.31,2057.22 C245.19,2003.4 218.81,750.22 236,677 C250.42,615.58 229.91,547 293,547 " fill="none" id="Person.Person-backto-Sales.vIndividualCustomer-5" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2059,179.3299,2059.6115,174.1863,2057.2569,176.5409,2052.1134,169.5,2059" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b05f4ae6d87b603d8ecf6e1414102cca]
+reverse link Person.Person to Sales.vIndividualCustomer--><path codeLine="295" d="M174.35,2070.2 C245.81,2015.86 217.18,750.55 236,677 C250.34,620.96 235.16,560 293,560 " fill="none" id="Person.Person-backto-Sales.vIndividualCustomer-6" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2072,179.3299,2072.6115,174.1863,2070.2569,176.5409,2065.1134,169.5,2072" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b05f4ae6d87b603d8ecf6e1414102cca]
+reverse link Person.Person to Sales.vIndividualCustomer--><path codeLine="304" d="M174.55,2135.11 C248.62,2078.03 202.28,748.94 236,677 C250.56,645.95 258.71,625 293,625 " fill="none" id="Person.Person-backto-Sales.vIndividualCustomer-7" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2137,179.3315,2137.5852,174.1816,2135.2444,176.5225,2130.0946,169.5,2137" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b05f4ae6d87b603d8ecf6e1414102cca]
+reverse link Person.Person to Sales.vIndividualCustomer--><path codeLine="311" d="M174.59,2148.09 C249.09,2090.4 197.01,747.04 236,677 C250.93,650.18 262.3,638 293,638 " fill="none" id="Person.Person-backto-Sales.vIndividualCustomer-8" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2150,179.333,2150.559,174.1769,2148.2319,176.504,2143.0758,169.5,2150" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[fd9808af0aa149735b462e5383bc605f]
+reverse link Person.Person to Sales.vPersonDemographics--><path codeLine="257" d="M93.39,1935.08 C109.42,1555.8 163.54,405.8 236,255 C247.61,230.84 265.54,208.81 284.83,189.86 " fill="none" id="Person.Person-backto-Sales.vPersonDemographics" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="93.17,1940.33,97.5517,1931.5095,93.3841,1935.3346,89.559,1931.167,93.17,1940.33" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[fd9808af0aa149735b462e5383bc605f]
+reverse link Person.Person to Sales.vPersonDemographics--><path codeLine="268" d="M174.46,1991.49 C264.53,1935.73 220.38,348.63 236,255 C250.21,169.85 205.67,69 292,69 " fill="none" id="Person.Person-backto-Sales.vPersonDemographics-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,1993,179.2715,1994.2318,174.2872,1991.5567,176.9623,1986.5723,169.5,1993" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0f9fcfc4eb6c1e78ab8a22525399bbc5]
+reverse link Person.Person to Sales.vSalesPerson--><path codeLine="258" d="M179.64,2158.28 C212.61,2195.27 249.91,2237.14 283.27,2274.57 " fill="none" id="Person.Person-backto-Sales.vSalesPerson" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="176.05,2154.25,179.0419,2163.6334,179.3727,2157.9863,185.0199,2158.3171,176.05,2154.25" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0f9fcfc4eb6c1e78ab8a22525399bbc5]
+reverse link Person.Person to Sales.vSalesPerson--><path codeLine="272" d="M174.51,2032.13 C311.86,2039.13 146.39,2338 291,2338 " fill="none" id="Person.Person-backto-Sales.vSalesPerson-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2032,178.3939,2036.2307,174.4983,2032.1289,178.6001,2028.2333,169.5,2032" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0f9fcfc4eb6c1e78ab8a22525399bbc5]
+reverse link Person.Person to Sales.vSalesPerson--><path codeLine="280" d="M174.51,2045.13 C311.86,2052.13 146.39,2351 291,2351 " fill="none" id="Person.Person-backto-Sales.vSalesPerson-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2045,178.3939,2049.2307,174.4983,2045.1289,178.6001,2041.2333,169.5,2045" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0f9fcfc4eb6c1e78ab8a22525399bbc5]
+reverse link Person.Person to Sales.vSalesPerson--><path codeLine="288" d="M174.68,2059.13 C316.6,2066.41 141.47,2377 291,2377 " fill="none" id="Person.Person-backto-Sales.vSalesPerson-3" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2059,178.3939,2063.2307,174.4983,2059.1289,178.6001,2055.2333,169.5,2059" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0f9fcfc4eb6c1e78ab8a22525399bbc5]
+reverse link Person.Person to Sales.vSalesPerson--><path codeLine="296" d="M174.7,2072.13 C317,2079.43 141.06,2391 291,2391 " fill="none" id="Person.Person-backto-Sales.vSalesPerson-4" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2072,178.3939,2076.2307,174.4983,2072.1289,178.6001,2068.2333,169.5,2072" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0f9fcfc4eb6c1e78ab8a22525399bbc5]
+reverse link Person.Person to Sales.vSalesPerson--><path codeLine="305" d="M174.8,2137.12 C333.36,2144.67 124.36,2496 291,2496 " fill="none" id="Person.Person-backto-Sales.vSalesPerson-5" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2137,178.4062,2141.2046,174.4987,2137.1143,178.5891,2133.2067,169.5,2137" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0f9fcfc4eb6c1e78ab8a22525399bbc5]
+reverse link Person.Person to Sales.vSalesPerson--><path codeLine="312" d="M174.64,2150.11 C344.33,2157.48 113.32,2535 291,2535 " fill="none" id="Person.Person-backto-Sales.vSalesPerson-6" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2150,178.4062,2154.2046,174.4987,2150.1143,178.5891,2146.2067,169.5,2150" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[4577bb7b68cf722c109ee9819bc63d49]
+reverse link Person.Person to Sales.vSalesPersonSalesByFiscalYears--><path codeLine="259" d="M93.55,1934.94 C105.43,1698.36 141.57,1185.02 236,1039 C245.19,1024.79 257.46,1012.38 270.98,1001.66 " fill="none" id="Person.Person-backto-Sales.vSalesPersonSalesByFiscalYears" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="93.3,1940.13,97.7331,1931.3353,93.5433,1935.1359,89.7426,1930.946,93.3,1940.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e1c891c030baafb81df4937f4370f729]
+reverse link Person.Person to Sales.vStoreWithContacts--><path codeLine="260" d="M103.35,2176.81 C121.25,2287.07 159.11,2451.1 236,2574 C249.43,2595.47 267.49,2615.47 286.25,2632.99 " fill="none" id="Person.Person-backto-Sales.vStoreWithContacts" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="102.51,2171.6,99.9725,2181.1164,103.2949,2176.538,107.8733,2179.8604,102.51,2171.6" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e1c891c030baafb81df4937f4370f729]
+reverse link Person.Person to Sales.vStoreWithContacts--><path codeLine="273" d="M174.56,2032.27 C313.26,2047.22 148.01,2685 294,2685 " fill="none" id="Person.Person-backto-Sales.vStoreWithContacts-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2032,178.2692,2036.4833,174.4926,2032.2718,178.7041,2028.4952,169.5,2032" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e1c891c030baafb81df4937f4370f729]
+reverse link Person.Person to Sales.vStoreWithContacts--><path codeLine="281" d="M174.56,2045.27 C313.26,2060.22 148.01,2698 294,2698 " fill="none" id="Person.Person-backto-Sales.vStoreWithContacts-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2045,178.2692,2049.4833,174.4926,2045.2718,178.7041,2041.4952,169.5,2045" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e1c891c030baafb81df4937f4370f729]
+reverse link Person.Person to Sales.vStoreWithContacts--><path codeLine="289" d="M174.56,2059.27 C313.26,2074.22 148.01,2712 294,2712 " fill="none" id="Person.Person-backto-Sales.vStoreWithContacts-3" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2059,178.2692,2063.4833,174.4926,2059.2718,178.7041,2055.4952,169.5,2059" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e1c891c030baafb81df4937f4370f729]
+reverse link Person.Person to Sales.vStoreWithContacts--><path codeLine="297" d="M174.56,2072.27 C313.26,2087.22 148.01,2725 294,2725 " fill="none" id="Person.Person-backto-Sales.vStoreWithContacts-4" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2072,178.2692,2076.4833,174.4926,2072.2718,178.7041,2068.4952,169.5,2072" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e1c891c030baafb81df4937f4370f729]
+reverse link Person.Person to Sales.vStoreWithContacts--><path codeLine="306" d="M174.87,2137.31 C310.24,2153.15 150.95,2777 294,2777 " fill="none" id="Person.Person-backto-Sales.vStoreWithContacts-5" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2137,178.2564,2141.5084,174.4918,2137.2861,178.7141,2133.5215,169.5,2137" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e1c891c030baafb81df4937f4370f729]
+reverse link Person.Person to Sales.vStoreWithContacts--><path codeLine="313" d="M174.87,2150.31 C310.24,2166.15 150.95,2790 294,2790 " fill="none" id="Person.Person-backto-Sales.vStoreWithContacts-6" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2150,178.2564,2154.5084,174.4918,2150.2861,178.7141,2146.5215,169.5,2150" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[39ef46e98192828e6983f9159804f0df]
+reverse link Person.Person to Purchasing.vVendorWithContacts--><path codeLine="261" d="M181.18,2057.91 C213.34,2058.58 249.48,2059.32 281.98,2060 " fill="none" id="Person.Person-backto-Purchasing.vVendorWithContacts" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="176.05,2057.81,184.9682,2061.9892,181.049,2057.91,185.1282,2053.9908,176.05,2057.81" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[39ef46e98192828e6983f9159804f0df]
+reverse link Person.Person to Purchasing.vVendorWithContacts--><path codeLine="274" d="M174.69,2032.04 C223.81,2032.85 237.35,2045 289,2045 " fill="none" id="Person.Person-backto-Purchasing.vVendorWithContacts-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2032,178.477,2036.0514,174.4999,2032.0286,178.5227,2028.0515,169.5,2032" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[39ef46e98192828e6983f9159804f0df]
+reverse link Person.Person to Purchasing.vVendorWithContacts--><path codeLine="282" d="M174.69,2045.04 C223.81,2045.85 237.35,2058 289,2058 " fill="none" id="Person.Person-backto-Purchasing.vVendorWithContacts-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2045,178.477,2049.0514,174.4999,2045.0286,178.5227,2041.0515,169.5,2045" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[39ef46e98192828e6983f9159804f0df]
+reverse link Person.Person to Purchasing.vVendorWithContacts--><path codeLine="290" d="M174.69,2059.04 C223.81,2059.85 237.35,2072 289,2072 " fill="none" id="Person.Person-backto-Purchasing.vVendorWithContacts-3" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2059,178.477,2063.0514,174.4999,2059.0286,178.5227,2055.0515,169.5,2059" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[39ef46e98192828e6983f9159804f0df]
+reverse link Person.Person to Purchasing.vVendorWithContacts--><path codeLine="298" d="M174.69,2072.04 C223.81,2072.85 237.35,2085 289,2085 " fill="none" id="Person.Person-backto-Purchasing.vVendorWithContacts-4" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2072,178.477,2076.0514,174.4999,2072.0286,178.5227,2068.0515,169.5,2072" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[39ef46e98192828e6983f9159804f0df]
+reverse link Person.Person to Purchasing.vVendorWithContacts--><path codeLine="307" d="M174.66,2137 C223.54,2137 237.65,2137 289,2137 " fill="none" id="Person.Person-backto-Purchasing.vVendorWithContacts-5" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2137,178.5,2141,174.5,2137,178.5,2133,169.5,2137" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[39ef46e98192828e6983f9159804f0df]
+reverse link Person.Person to Purchasing.vVendorWithContacts--><path codeLine="314" d="M174.66,2150 C223.54,2150 237.65,2150 289,2150 " fill="none" id="Person.Person-backto-Purchasing.vVendorWithContacts-6" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.5,2150,178.5,2154,174.5,2150,178.5,2146,169.5,2150" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e9a0260745818ae943dbc47c2e04c380]
+reverse link Person.Person to dbo.ufnGetContactInformation--><path codeLine="262" d="M99.03,1935.2 C117.65,1745.03 161.61,1386.97 236,1285 C247.67,1269.01 263.64,1255.93 280.7,1245.37 " fill="none" id="Person.Person-backto-dbo.ufnGetContactInformation" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="98.54,1940.22,103.3938,1931.6503,99.0248,1935.2436,95.4315,1930.8746,98.54,1940.22" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[a4c9a807470acfebdafe90d113b5ae8d]
+reverse link Person.Person to dbo.uspGetEmployeeManagers--><path codeLine="263" d="M91.24,1935.34 C100.69,1566.02 136.9,468.57 236,345 C250.49,326.93 272.19,315.99 294.34,309.4 " fill="none" id="Person.Person-backto-dbo.uspGetEmployeeManagers" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="91.11,1940.45,95.34,1931.5558,91.2385,1935.4517,87.3427,1931.3502,91.11,1940.45" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d4313b459e1da2fa63dec9cb941c4ef3]
+reverse link Person.Person to dbo.uspGetManagerEmployees--><path codeLine="264" d="M95.97,1935.44 C114.84,1647.77 167.76,938.98 236,857 C250.74,839.3 272.37,828.46 294.38,821.85 " fill="none" id="Person.Person-backto-dbo.uspGetManagerEmployees" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="95.64,1940.48,100.1967,1931.7487,95.9537,1935.4898,92.2125,1931.2468,95.64,1940.48" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="191" x="163" y="3302.2992">The diagram is interactive and contains links.</text><!--MD5=[7a9cc827c1a7428f5af1bbd3927f54cc]
+@startuml
+left to right direction
+'top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>>  Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>>  White
+  BackgroundColor<<V>>  WhiteSmoke
+  BackgroundColor<<X>>  Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../dbo.ufngetcontactinformation.html dbo.ufnGetContactInformation]]" as dbo.ufnGetContactInformation << TF >> {
+  BusinessEntityType : (nvarchar(50))
+  FirstName : (nvarchar(50))
+  JobTitle : (nvarchar(50))
+  LastName : (nvarchar(50))
+  - PersonID : (int)
+  - -
+}
+
+entity "[[../dbo.uspgetemployeemanagers.html dbo.uspGetEmployeeManagers]]" as dbo.uspGetEmployeeManagers << P >> {
+  - -
+}
+
+entity "[[../dbo.uspgetmanageremployees.html dbo.uspGetManagerEmployees]]" as dbo.uspGetManagerEmployees << P >> {
+  - -
+}
+
+entity "[[../humanresources.vemployee.html HumanResources.vEmployee]]" as HumanResources.vEmployee << V >> {
+  AdditionalContactInfo : (xml)
+  - AddressLine1 : (nvarchar(60))
+  AddressLine2 : (nvarchar(60))
+  - BusinessEntityID : (int)
+  - City : (nvarchar(30))
+  - CountryRegionName : (Name)
+  EmailAddress : (nvarchar(50))
+  - EmailPromotion : (int)
+  - FirstName : (Name)
+  - JobTitle : (nvarchar(50))
+  - LastName : (Name)
+  MiddleName : (Name)
+  PhoneNumber : (Phone)
+  PhoneNumberType : (Name)
+  - PostalCode : (nvarchar(15))
+  - StateProvinceName : (Name)
+  Suffix : (nvarchar(10))
+  Title : (nvarchar(8))
+  - -
+}
+
+entity "[[../humanresources.vemployeedepartment.html HumanResources.vEmployeeDepartment]]" as HumanResources.vEmployeeDepartment << V >> {
+  - BusinessEntityID : (int)
+  - Department : (Name)
+  - FirstName : (Name)
+  - GroupName : (Name)
+  - JobTitle : (nvarchar(50))
+  - LastName : (Name)
+  MiddleName : (Name)
+  - StartDate : (date)
+  Suffix : (nvarchar(10))
+  Title : (nvarchar(8))
+  - -
+}
+
+entity "[[../humanresources.vemployeedepartmenthistory.html HumanResources.vEmployeeDepartmentHistory]]" as HumanResources.vEmployeeDepartmentHistory << V >> {
+  - BusinessEntityID : (int)
+  - Department : (Name)
+  EndDate : (date)
+  - FirstName : (Name)
+  - GroupName : (Name)
+  - LastName : (Name)
+  MiddleName : (Name)
+  - Shift : (Name)
+  - StartDate : (date)
+  Suffix : (nvarchar(10))
+  Title : (nvarchar(8))
+  - -
+}
+
+entity "[[../person.iuperson.html Person.iuPerson]]" as Person.iuPerson << TR >> {
+  - -
+}
+
+entity "[[../person.person.html Person.Person]]" as Person.Person << U >> {
+  - **BusinessEntityID** : (int)
+  AdditionalContactInfo : (xml)
+  Demographics : (xml)
+  - EmailPromotion : (int)
+  - FirstName : (Name)
+  - LastName : (Name)
+  MiddleName : (Name)
+  - ModifiedDate : (datetime)
+  - NameStyle : (NameStyle)
+  - PersonType : (nchar(2))
+  - rowguid : (uniqueidentifier)
+  Suffix : (nvarchar(10))
+  Title : (nvarchar(8))
+  - -
+}
+
+entity "[[../person.vadditionalcontactinfo.html Person.vAdditionalContactInfo]]" as Person.vAdditionalContactInfo << V >> {
+  - BusinessEntityID : (int)
+  City : (nvarchar(50))
+  CountryRegion : (nvarchar(50))
+  EMailAddress : (nvarchar(128))
+  EMailSpecialInstructions : (nvarchar(max))
+  EMailTelephoneNumber : (nvarchar(50))
+  - FirstName : (Name)
+  HomeAddressSpecialInstructions : (nvarchar(max))
+  - LastName : (Name)
+  MiddleName : (Name)
+  - ModifiedDate : (datetime)
+  PostalCode : (nvarchar(50))
+  - rowguid : (uniqueidentifier)
+  StateProvince : (nvarchar(50))
+  Street : (nvarchar(50))
+  TelephoneNumber : (nvarchar(50))
+  TelephoneSpecialInstructions : (nvarchar(max))
+  - -
+}
+
+entity "[[../purchasing.vvendorwithcontacts.html Purchasing.vVendorWithContacts]]" as Purchasing.vVendorWithContacts << V >> {
+  - BusinessEntityID : (int)
+  - ContactType : (Name)
+  EmailAddress : (nvarchar(50))
+  - EmailPromotion : (int)
+  - FirstName : (Name)
+  - LastName : (Name)
+  MiddleName : (Name)
+  - Name : (Name)
+  PhoneNumber : (Phone)
+  PhoneNumberType : (Name)
+  Suffix : (nvarchar(10))
+  Title : (nvarchar(8))
+  - -
+}
+
+entity "[[../sales.idusalesorderdetail.html Sales.iduSalesOrderDetail]]" as Sales.iduSalesOrderDetail << TR >> {
+  - -
+}
+
+entity "[[../sales.vindividualcustomer.html Sales.vIndividualCustomer]]" as Sales.vIndividualCustomer << V >> {
+  - AddressLine1 : (nvarchar(60))
+  AddressLine2 : (nvarchar(60))
+  - AddressType : (Name)
+  - BusinessEntityID : (int)
+  - City : (nvarchar(30))
+  - CountryRegionName : (Name)
+  Demographics : (xml)
+  EmailAddress : (nvarchar(50))
+  - EmailPromotion : (int)
+  - FirstName : (Name)
+  - LastName : (Name)
+  MiddleName : (Name)
+  PhoneNumber : (Phone)
+  PhoneNumberType : (Name)
+  - PostalCode : (nvarchar(15))
+  - StateProvinceName : (Name)
+  Suffix : (nvarchar(10))
+  Title : (nvarchar(8))
+  - -
+}
+
+entity "[[../sales.vpersondemographics.html Sales.vPersonDemographics]]" as Sales.vPersonDemographics << V >> {
+  BirthDate : (datetime)
+  - BusinessEntityID : (int)
+  DateFirstPurchase : (datetime)
+  Education : (nvarchar(30))
+  Gender : (nvarchar(1))
+  HomeOwnerFlag : (bit)
+  MaritalStatus : (nvarchar(1))
+  NumberCarsOwned : (int)
+  NumberChildrenAtHome : (int)
+  Occupation : (nvarchar(30))
+  TotalChildren : (int)
+  TotalPurchaseYTD : (money)
+  YearlyIncome : (nvarchar(30))
+  - -
+}
+
+entity "[[../sales.vsalesperson.html Sales.vSalesPerson]]" as Sales.vSalesPerson << V >> {
+  - AddressLine1 : (nvarchar(60))
+  AddressLine2 : (nvarchar(60))
+  - BusinessEntityID : (int)
+  - City : (nvarchar(30))
+  - CountryRegionName : (Name)
+  EmailAddress : (nvarchar(50))
+  - EmailPromotion : (int)
+  - FirstName : (Name)
+  - JobTitle : (nvarchar(50))
+  - LastName : (Name)
+  MiddleName : (Name)
+  PhoneNumber : (Phone)
+  PhoneNumberType : (Name)
+  - PostalCode : (nvarchar(15))
+  - SalesLastYear : (money)
+  SalesQuota : (money)
+  - SalesYTD : (money)
+  - StateProvinceName : (Name)
+  Suffix : (nvarchar(10))
+  TerritoryGroup : (nvarchar(50))
+  TerritoryName : (Name)
+  Title : (nvarchar(8))
+  - -
+}
+
+entity "[[../sales.vsalespersonsalesbyfiscalyears.html Sales.vSalesPersonSalesByFiscalYears]]" as Sales.vSalesPersonSalesByFiscalYears << V >> {
+  2002 : (money)
+  2003 : (money)
+  2004 : (money)
+  FullName : (nvarchar(152))
+  - JobTitle : (nvarchar(50))
+  SalesPersonID : (int)
+  - SalesTerritory : (Name)
+  - -
+}
+
+entity "[[../sales.vstorewithcontacts.html Sales.vStoreWithContacts]]" as Sales.vStoreWithContacts << V >> {
+  - BusinessEntityID : (int)
+  - ContactType : (Name)
+  EmailAddress : (nvarchar(50))
+  - EmailPromotion : (int)
+  - FirstName : (Name)
+  - LastName : (Name)
+  MiddleName : (Name)
+  - Name : (Name)
+  PhoneNumber : (Phone)
+  PhoneNumberType : (Name)
+  Suffix : (nvarchar(10))
+  Title : (nvarchar(8))
+  - -
+}
+
+Person.Person <.. Person.iuPerson
+Person.Person <.. Sales.iduSalesOrderDetail
+Person.Person <.. Person.vAdditionalContactInfo
+Person.Person <.. HumanResources.vEmployee
+Person.Person <.. HumanResources.vEmployeeDepartment
+Person.Person <.. HumanResources.vEmployeeDepartmentHistory
+Person.Person <.. Sales.vIndividualCustomer
+Person.Person <.. Sales.vPersonDemographics
+Person.Person <.. Sales.vSalesPerson
+Person.Person <.. Sales.vSalesPersonSalesByFiscalYears
+Person.Person <.. Sales.vStoreWithContacts
+Person.Person <.. Purchasing.vVendorWithContacts
+Person.Person <.. dbo.ufnGetContactInformation
+Person.Person <.. dbo.uspGetEmployeeManagers
+Person.Person <.. dbo.uspGetManagerEmployees
+"Person.Person::AdditionalContactInfo" <- - "HumanResources.vEmployee::AdditionalContactInfo"
+"Person.Person::BusinessEntityID" <- - "Person.vAdditionalContactInfo::BusinessEntityID"
+"Person.Person::BusinessEntityID" <- - "Sales.vIndividualCustomer::BusinessEntityID"
+"Person.Person::BusinessEntityID" <- - "Sales.vPersonDemographics::BusinessEntityID"
+"Person.Person::Demographics" <- - "Sales.vIndividualCustomer::Demographics"
+"Person.Person::EmailPromotion" <- - "HumanResources.vEmployee::EmailPromotion"
+"Person.Person::EmailPromotion" <- - "Sales.vIndividualCustomer::EmailPromotion"
+"Person.Person::EmailPromotion" <- - "Sales.vSalesPerson::EmailPromotion"
+"Person.Person::EmailPromotion" <- - "Sales.vStoreWithContacts::EmailPromotion"
+"Person.Person::EmailPromotion" <- - "Purchasing.vVendorWithContacts::EmailPromotion"
+"Person.Person::FirstName" <- - "Person.vAdditionalContactInfo::FirstName"
+"Person.Person::FirstName" <- - "HumanResources.vEmployee::FirstName"
+"Person.Person::FirstName" <- - "HumanResources.vEmployeeDepartment::FirstName"
+"Person.Person::FirstName" <- - "HumanResources.vEmployeeDepartmentHistory::FirstName"
+"Person.Person::FirstName" <- - "Sales.vIndividualCustomer::FirstName"
+"Person.Person::FirstName" <- - "Sales.vSalesPerson::FirstName"
+"Person.Person::FirstName" <- - "Sales.vStoreWithContacts::FirstName"
+"Person.Person::FirstName" <- - "Purchasing.vVendorWithContacts::FirstName"
+"Person.Person::LastName" <- - "Person.vAdditionalContactInfo::LastName"
+"Person.Person::LastName" <- - "HumanResources.vEmployee::LastName"
+"Person.Person::LastName" <- - "HumanResources.vEmployeeDepartment::LastName"
+"Person.Person::LastName" <- - "HumanResources.vEmployeeDepartmentHistory::LastName"
+"Person.Person::LastName" <- - "Sales.vIndividualCustomer::LastName"
+"Person.Person::LastName" <- - "Sales.vSalesPerson::LastName"
+"Person.Person::LastName" <- - "Sales.vStoreWithContacts::LastName"
+"Person.Person::LastName" <- - "Purchasing.vVendorWithContacts::LastName"
+"Person.Person::MiddleName" <- - "Person.vAdditionalContactInfo::MiddleName"
+"Person.Person::MiddleName" <- - "HumanResources.vEmployee::MiddleName"
+"Person.Person::MiddleName" <- - "HumanResources.vEmployeeDepartment::MiddleName"
+"Person.Person::MiddleName" <- - "HumanResources.vEmployeeDepartmentHistory::MiddleName"
+"Person.Person::MiddleName" <- - "Sales.vIndividualCustomer::MiddleName"
+"Person.Person::MiddleName" <- - "Sales.vSalesPerson::MiddleName"
+"Person.Person::MiddleName" <- - "Sales.vStoreWithContacts::MiddleName"
+"Person.Person::MiddleName" <- - "Purchasing.vVendorWithContacts::MiddleName"
+"Person.Person::ModifiedDate" <- - "Person.vAdditionalContactInfo::ModifiedDate"
+"Person.Person::rowguid" <- - "Person.vAdditionalContactInfo::rowguid"
+"Person.Person::Suffix" <- - "HumanResources.vEmployee::Suffix"
+"Person.Person::Suffix" <- - "HumanResources.vEmployeeDepartment::Suffix"
+"Person.Person::Suffix" <- - "HumanResources.vEmployeeDepartmentHistory::Suffix"
+"Person.Person::Suffix" <- - "Sales.vIndividualCustomer::Suffix"
+"Person.Person::Suffix" <- - "Sales.vSalesPerson::Suffix"
+"Person.Person::Suffix" <- - "Sales.vStoreWithContacts::Suffix"
+"Person.Person::Suffix" <- - "Purchasing.vVendorWithContacts::Suffix"
+"Person.Person::Title" <- - "HumanResources.vEmployee::Title"
+"Person.Person::Title" <- - "HumanResources.vEmployeeDepartment::Title"
+"Person.Person::Title" <- - "HumanResources.vEmployeeDepartmentHistory::Title"
+"Person.Person::Title" <- - "Sales.vIndividualCustomer::Title"
+"Person.Person::Title" <- - "Sales.vSalesPerson::Title"
+"Person.Person::Title" <- - "Sales.vStoreWithContacts::Title"
+"Person.Person::Title" <- - "Purchasing.vVendorWithContacts::Title"
+
+footer The diagram is interactive and contains links.
+@enduml
+
+@startuml
+left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>>  Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>>  White
+  BackgroundColor<<V>>  WhiteSmoke
+  BackgroundColor<<X>>  Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../dbo.ufngetcontactinformation.html dbo.ufnGetContactInformation]]" as dbo.ufnGetContactInformation << TF >> {
+  BusinessEntityType : (nvarchar(50))
+  FirstName : (nvarchar(50))
+  JobTitle : (nvarchar(50))
+  LastName : (nvarchar(50))
+  - PersonID : (int)
+  - -
+}
+
+entity "[[../dbo.uspgetemployeemanagers.html dbo.uspGetEmployeeManagers]]" as dbo.uspGetEmployeeManagers << P >> {
+  - -
+}
+
+entity "[[../dbo.uspgetmanageremployees.html dbo.uspGetManagerEmployees]]" as dbo.uspGetManagerEmployees << P >> {
+  - -
+}
+
+entity "[[../humanresources.vemployee.html HumanResources.vEmployee]]" as HumanResources.vEmployee << V >> {
+  AdditionalContactInfo : (xml)
+  - AddressLine1 : (nvarchar(60))
+  AddressLine2 : (nvarchar(60))
+  - BusinessEntityID : (int)
+  - City : (nvarchar(30))
+  - CountryRegionName : (Name)
+  EmailAddress : (nvarchar(50))
+  - EmailPromotion : (int)
+  - FirstName : (Name)
+  - JobTitle : (nvarchar(50))
+  - LastName : (Name)
+  MiddleName : (Name)
+  PhoneNumber : (Phone)
+  PhoneNumberType : (Name)
+  - PostalCode : (nvarchar(15))
+  - StateProvinceName : (Name)
+  Suffix : (nvarchar(10))
+  Title : (nvarchar(8))
+  - -
+}
+
+entity "[[../humanresources.vemployeedepartment.html HumanResources.vEmployeeDepartment]]" as HumanResources.vEmployeeDepartment << V >> {
+  - BusinessEntityID : (int)
+  - Department : (Name)
+  - FirstName : (Name)
+  - GroupName : (Name)
+  - JobTitle : (nvarchar(50))
+  - LastName : (Name)
+  MiddleName : (Name)
+  - StartDate : (date)
+  Suffix : (nvarchar(10))
+  Title : (nvarchar(8))
+  - -
+}
+
+entity "[[../humanresources.vemployeedepartmenthistory.html HumanResources.vEmployeeDepartmentHistory]]" as HumanResources.vEmployeeDepartmentHistory << V >> {
+  - BusinessEntityID : (int)
+  - Department : (Name)
+  EndDate : (date)
+  - FirstName : (Name)
+  - GroupName : (Name)
+  - LastName : (Name)
+  MiddleName : (Name)
+  - Shift : (Name)
+  - StartDate : (date)
+  Suffix : (nvarchar(10))
+  Title : (nvarchar(8))
+  - -
+}
+
+entity "[[../person.iuperson.html Person.iuPerson]]" as Person.iuPerson << TR >> {
+  - -
+}
+
+entity "[[../person.person.html Person.Person]]" as Person.Person << U >> {
+  - **BusinessEntityID** : (int)
+  AdditionalContactInfo : (xml)
+  Demographics : (xml)
+  - EmailPromotion : (int)
+  - FirstName : (Name)
+  - LastName : (Name)
+  MiddleName : (Name)
+  - ModifiedDate : (datetime)
+  - NameStyle : (NameStyle)
+  - PersonType : (nchar(2))
+  - rowguid : (uniqueidentifier)
+  Suffix : (nvarchar(10))
+  Title : (nvarchar(8))
+  - -
+}
+
+entity "[[../person.vadditionalcontactinfo.html Person.vAdditionalContactInfo]]" as Person.vAdditionalContactInfo << V >> {
+  - BusinessEntityID : (int)
+  City : (nvarchar(50))
+  CountryRegion : (nvarchar(50))
+  EMailAddress : (nvarchar(128))
+  EMailSpecialInstructions : (nvarchar(max))
+  EMailTelephoneNumber : (nvarchar(50))
+  - FirstName : (Name)
+  HomeAddressSpecialInstructions : (nvarchar(max))
+  - LastName : (Name)
+  MiddleName : (Name)
+  - ModifiedDate : (datetime)
+  PostalCode : (nvarchar(50))
+  - rowguid : (uniqueidentifier)
+  StateProvince : (nvarchar(50))
+  Street : (nvarchar(50))
+  TelephoneNumber : (nvarchar(50))
+  TelephoneSpecialInstructions : (nvarchar(max))
+  - -
+}
+
+entity "[[../purchasing.vvendorwithcontacts.html Purchasing.vVendorWithContacts]]" as Purchasing.vVendorWithContacts << V >> {
+  - BusinessEntityID : (int)
+  - ContactType : (Name)
+  EmailAddress : (nvarchar(50))
+  - EmailPromotion : (int)
+  - FirstName : (Name)
+  - LastName : (Name)
+  MiddleName : (Name)
+  - Name : (Name)
+  PhoneNumber : (Phone)
+  PhoneNumberType : (Name)
+  Suffix : (nvarchar(10))
+  Title : (nvarchar(8))
+  - -
+}
+
+entity "[[../sales.idusalesorderdetail.html Sales.iduSalesOrderDetail]]" as Sales.iduSalesOrderDetail << TR >> {
+  - -
+}
+
+entity "[[../sales.vindividualcustomer.html Sales.vIndividualCustomer]]" as Sales.vIndividualCustomer << V >> {
+  - AddressLine1 : (nvarchar(60))
+  AddressLine2 : (nvarchar(60))
+  - AddressType : (Name)
+  - BusinessEntityID : (int)
+  - City : (nvarchar(30))
+  - CountryRegionName : (Name)
+  Demographics : (xml)
+  EmailAddress : (nvarchar(50))
+  - EmailPromotion : (int)
+  - FirstName : (Name)
+  - LastName : (Name)
+  MiddleName : (Name)
+  PhoneNumber : (Phone)
+  PhoneNumberType : (Name)
+  - PostalCode : (nvarchar(15))
+  - StateProvinceName : (Name)
+  Suffix : (nvarchar(10))
+  Title : (nvarchar(8))
+  - -
+}
+
+entity "[[../sales.vpersondemographics.html Sales.vPersonDemographics]]" as Sales.vPersonDemographics << V >> {
+  BirthDate : (datetime)
+  - BusinessEntityID : (int)
+  DateFirstPurchase : (datetime)
+  Education : (nvarchar(30))
+  Gender : (nvarchar(1))
+  HomeOwnerFlag : (bit)
+  MaritalStatus : (nvarchar(1))
+  NumberCarsOwned : (int)
+  NumberChildrenAtHome : (int)
+  Occupation : (nvarchar(30))
+  TotalChildren : (int)
+  TotalPurchaseYTD : (money)
+  YearlyIncome : (nvarchar(30))
+  - -
+}
+
+entity "[[../sales.vsalesperson.html Sales.vSalesPerson]]" as Sales.vSalesPerson << V >> {
+  - AddressLine1 : (nvarchar(60))
+  AddressLine2 : (nvarchar(60))
+  - BusinessEntityID : (int)
+  - City : (nvarchar(30))
+  - CountryRegionName : (Name)
+  EmailAddress : (nvarchar(50))
+  - EmailPromotion : (int)
+  - FirstName : (Name)
+  - JobTitle : (nvarchar(50))
+  - LastName : (Name)
+  MiddleName : (Name)
+  PhoneNumber : (Phone)
+  PhoneNumberType : (Name)
+  - PostalCode : (nvarchar(15))
+  - SalesLastYear : (money)
+  SalesQuota : (money)
+  - SalesYTD : (money)
+  - StateProvinceName : (Name)
+  Suffix : (nvarchar(10))
+  TerritoryGroup : (nvarchar(50))
+  TerritoryName : (Name)
+  Title : (nvarchar(8))
+  - -
+}
+
+entity "[[../sales.vsalespersonsalesbyfiscalyears.html Sales.vSalesPersonSalesByFiscalYears]]" as Sales.vSalesPersonSalesByFiscalYears << V >> {
+  2002 : (money)
+  2003 : (money)
+  2004 : (money)
+  FullName : (nvarchar(152))
+  - JobTitle : (nvarchar(50))
+  SalesPersonID : (int)
+  - SalesTerritory : (Name)
+  - -
+}
+
+entity "[[../sales.vstorewithcontacts.html Sales.vStoreWithContacts]]" as Sales.vStoreWithContacts << V >> {
+  - BusinessEntityID : (int)
+  - ContactType : (Name)
+  EmailAddress : (nvarchar(50))
+  - EmailPromotion : (int)
+  - FirstName : (Name)
+  - LastName : (Name)
+  MiddleName : (Name)
+  - Name : (Name)
+  PhoneNumber : (Phone)
+  PhoneNumberType : (Name)
+  Suffix : (nvarchar(10))
+  Title : (nvarchar(8))
+  - -
+}
+
+Person.Person <.. Person.iuPerson
+Person.Person <.. Sales.iduSalesOrderDetail
+Person.Person <.. Person.vAdditionalContactInfo
+Person.Person <.. HumanResources.vEmployee
+Person.Person <.. HumanResources.vEmployeeDepartment
+Person.Person <.. HumanResources.vEmployeeDepartmentHistory
+Person.Person <.. Sales.vIndividualCustomer
+Person.Person <.. Sales.vPersonDemographics
+Person.Person <.. Sales.vSalesPerson
+Person.Person <.. Sales.vSalesPersonSalesByFiscalYears
+Person.Person <.. Sales.vStoreWithContacts
+Person.Person <.. Purchasing.vVendorWithContacts
+Person.Person <.. dbo.ufnGetContactInformation
+Person.Person <.. dbo.uspGetEmployeeManagers
+Person.Person <.. dbo.uspGetManagerEmployees
+"Person.Person::AdditionalContactInfo" <- - "HumanResources.vEmployee::AdditionalContactInfo"
+"Person.Person::BusinessEntityID" <- - "Person.vAdditionalContactInfo::BusinessEntityID"
+"Person.Person::BusinessEntityID" <- - "Sales.vIndividualCustomer::BusinessEntityID"
+"Person.Person::BusinessEntityID" <- - "Sales.vPersonDemographics::BusinessEntityID"
+"Person.Person::Demographics" <- - "Sales.vIndividualCustomer::Demographics"
+"Person.Person::EmailPromotion" <- - "HumanResources.vEmployee::EmailPromotion"
+"Person.Person::EmailPromotion" <- - "Sales.vIndividualCustomer::EmailPromotion"
+"Person.Person::EmailPromotion" <- - "Sales.vSalesPerson::EmailPromotion"
+"Person.Person::EmailPromotion" <- - "Sales.vStoreWithContacts::EmailPromotion"
+"Person.Person::EmailPromotion" <- - "Purchasing.vVendorWithContacts::EmailPromotion"
+"Person.Person::FirstName" <- - "Person.vAdditionalContactInfo::FirstName"
+"Person.Person::FirstName" <- - "HumanResources.vEmployee::FirstName"
+"Person.Person::FirstName" <- - "HumanResources.vEmployeeDepartment::FirstName"
+"Person.Person::FirstName" <- - "HumanResources.vEmployeeDepartmentHistory::FirstName"
+"Person.Person::FirstName" <- - "Sales.vIndividualCustomer::FirstName"
+"Person.Person::FirstName" <- - "Sales.vSalesPerson::FirstName"
+"Person.Person::FirstName" <- - "Sales.vStoreWithContacts::FirstName"
+"Person.Person::FirstName" <- - "Purchasing.vVendorWithContacts::FirstName"
+"Person.Person::LastName" <- - "Person.vAdditionalContactInfo::LastName"
+"Person.Person::LastName" <- - "HumanResources.vEmployee::LastName"
+"Person.Person::LastName" <- - "HumanResources.vEmployeeDepartment::LastName"
+"Person.Person::LastName" <- - "HumanResources.vEmployeeDepartmentHistory::LastName"
+"Person.Person::LastName" <- - "Sales.vIndividualCustomer::LastName"
+"Person.Person::LastName" <- - "Sales.vSalesPerson::LastName"
+"Person.Person::LastName" <- - "Sales.vStoreWithContacts::LastName"
+"Person.Person::LastName" <- - "Purchasing.vVendorWithContacts::LastName"
+"Person.Person::MiddleName" <- - "Person.vAdditionalContactInfo::MiddleName"
+"Person.Person::MiddleName" <- - "HumanResources.vEmployee::MiddleName"
+"Person.Person::MiddleName" <- - "HumanResources.vEmployeeDepartment::MiddleName"
+"Person.Person::MiddleName" <- - "HumanResources.vEmployeeDepartmentHistory::MiddleName"
+"Person.Person::MiddleName" <- - "Sales.vIndividualCustomer::MiddleName"
+"Person.Person::MiddleName" <- - "Sales.vSalesPerson::MiddleName"
+"Person.Person::MiddleName" <- - "Sales.vStoreWithContacts::MiddleName"
+"Person.Person::MiddleName" <- - "Purchasing.vVendorWithContacts::MiddleName"
+"Person.Person::ModifiedDate" <- - "Person.vAdditionalContactInfo::ModifiedDate"
+"Person.Person::rowguid" <- - "Person.vAdditionalContactInfo::rowguid"
+"Person.Person::Suffix" <- - "HumanResources.vEmployee::Suffix"
+"Person.Person::Suffix" <- - "HumanResources.vEmployeeDepartment::Suffix"
+"Person.Person::Suffix" <- - "HumanResources.vEmployeeDepartmentHistory::Suffix"
+"Person.Person::Suffix" <- - "Sales.vIndividualCustomer::Suffix"
+"Person.Person::Suffix" <- - "Sales.vSalesPerson::Suffix"
+"Person.Person::Suffix" <- - "Sales.vStoreWithContacts::Suffix"
+"Person.Person::Suffix" <- - "Purchasing.vVendorWithContacts::Suffix"
+"Person.Person::Title" <- - "HumanResources.vEmployee::Title"
+"Person.Person::Title" <- - "HumanResources.vEmployeeDepartment::Title"
+"Person.Person::Title" <- - "HumanResources.vEmployeeDepartmentHistory::Title"
+"Person.Person::Title" <- - "Sales.vIndividualCustomer::Title"
+"Person.Person::Title" <- - "Sales.vSalesPerson::Title"
+"Person.Person::Title" <- - "Sales.vStoreWithContacts::Title"
+"Person.Person::Title" <- - "Purchasing.vVendorWithContacts::Title"
+
+footer The diagram is interactive and contains links.
+@enduml
+
+PlantUML version 1.2021.10(Mon Aug 30 13:43:48 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
