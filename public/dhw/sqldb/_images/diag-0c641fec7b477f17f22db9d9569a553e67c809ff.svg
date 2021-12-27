@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="93px" preserveAspectRatio="none" style="width:400px;height:93px;background:#FFFFFF;" version="1.1" viewBox="0 0 400 93" width="400px" zoomAndPan="magnify"><defs><filter height="300%" id="f2qr8o3fiew84" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[a07488a5fe404a212914d893d860276d]
+class repo_sys.SysColumn--><rect codeLine="28" fill="#F5F5F5" filter="url(#f2qr8o3fiew84)" height="54.8002" id="repo_sys.SysColumn" style="stroke:#A80036;stroke-width:1.5;" width="135" x="251" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="309.5" y="24.0001">«V»</text><a href="../repo_sys.syscolumn.html" target="_top" title="../repo_sys.syscolumn.html" xlink:actuate="onRequest" xlink:href="../repo_sys.syscolumn.html" xlink:show="new" xlink:title="../repo_sys.syscolumn.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="129" x="254" y="38.4002">repo_sys.SysColumn - V</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="252" x2="385" y1="45.8002" y2="45.8002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="252" x2="385" y1="53.8002" y2="53.8002"/><!--MD5=[2e8e63f6a6d20ce3c8803ba1112c34f0]
+class sys_dwh.computed_columns--><rect codeLine="32" fill="#FFFF00" filter="url(#f2qr8o3fiew84)" height="54.8002" id="sys_dwh.computed_columns" style="stroke:#A80036;stroke-width:1.5;" width="184" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="27" x="85.5" y="24.0001">«SN»</text><a href="../sys_dwh.computed_columns.html" target="_top" title="../sys_dwh.computed_columns.html" xlink:actuate="onRequest" xlink:href="../sys_dwh.computed_columns.html" xlink:show="new" xlink:title="../sys_dwh.computed_columns.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="178" x="10" y="38.4002">sys_dwh.computed_columns - SN</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="190" y1="45.8002" y2="45.8002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="190" y1="53.8002" y2="53.8002"/><!--MD5=[6ce5305535880cd531787807672932f0]
+reverse link sys_dwh.computed_columns to repo_sys.SysColumn--><path codeLine="36" d="M196.47,34.5 C214.85,34.5 233.71,34.5 250.91,34.5 " fill="none" id="sys_dwh.computed_columns-backto-repo_sys.SysColumn" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="191.29,34.5,200.29,38.5,196.29,34.5,200.29,30.5,191.29,34.5" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="191" x="98" y="84.8002">The diagram is interactive and contains links.</text><!--MD5=[7b382bebdc0bdfb54f57b02141cb5ea4]
+@startuml
+left to right direction
+'top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>>  Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>>  White
+  BackgroundColor<<V>>  WhiteSmoke
+  BackgroundColor<<X>>  Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../repo_sys.syscolumn.html repo_sys.SysColumn - V]]" as repo_sys.SysColumn << V >> {
+  - -
+}
+
+entity "[[../sys_dwh.computed_columns.html sys_dwh.computed_columns - SN]]" as sys_dwh.computed_columns << SN >> {
+  - -
+}
+
+sys_dwh.computed_columns <.. repo_sys.SysColumn
+
+footer The diagram is interactive and contains links.
+@enduml
+
+@startuml
+left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>>  Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>>  White
+  BackgroundColor<<V>>  WhiteSmoke
+  BackgroundColor<<X>>  Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../repo_sys.syscolumn.html repo_sys.SysColumn - V]]" as repo_sys.SysColumn << V >> {
+  - -
+}
+
+entity "[[../sys_dwh.computed_columns.html sys_dwh.computed_columns - SN]]" as sys_dwh.computed_columns << SN >> {
+  - -
+}
+
+sys_dwh.computed_columns <.. repo_sys.SysColumn
+
+footer The diagram is interactive and contains links.
+@enduml
+
+PlantUML version 1.2021.16(Wed Dec 08 17:25:22 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

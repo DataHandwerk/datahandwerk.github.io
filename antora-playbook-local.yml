@@ -9,21 +9,25 @@ site:
 content:
   sources:
   - url: D:\Repos\gitlab\DataHandwerk\dhw-antora-docs
+  # - url: https://gitlab.com/datahandwerk/dhw-antora-docs.git
     branches:
     - HEAD
     # - v*
     start_path: docs
   - url: D:\Repos\gitlab\DataHandwerk\dhw-antora-sqldb
+  # - url: https://gitlab.com/datahandwerk/dhw-antora-sqldb.git
     branches:
     - HEAD
     # - v*
     start_paths: docs, docsmanual
   - url: D:\Repos\gitlab\DataHandwerk\dhw-antora-adventureworks
+  # - url: https://gitlab.com/datahandwerk/dhw-antora-adventureworks.git
     branches:
     - HEAD
     # - v*
     start_paths: docs, docsmanual
   - url: D:\Repos\gitlab\DataHandwerk\dhw-antora-ssis
+  # - url: https://gitlab.com/datahandwerk/dhw-antora-ssis.git
     branches:
     - HEAD
     # - v*
@@ -45,6 +49,10 @@ asciidoc:
   extensions:
   - asciidoctor-kroki
   - ./lib/inline-puml-link-macro.js
+antora:
+  extensions:
+  - require: '@antora/lunr-extension'
+    index_latest_only: true
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable

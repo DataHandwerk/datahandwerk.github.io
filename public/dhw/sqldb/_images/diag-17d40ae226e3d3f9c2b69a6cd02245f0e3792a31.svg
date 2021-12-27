@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="3985px" preserveAspectRatio="none" style="width:1161px;height:3985px;background:#FFFFFF;" version="1.1" viewBox="0 0 1161 3985" width="1161px" zoomAndPan="magnify"><defs><filter height="300%" id="f164fiqrfsq5sh" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[503ba70d57b7c00ce0f4dfee00889ba3]
+class ssis.AntoraModule_tgt_filter--><rect codeLine="28" fill="#F5F5F5" filter="url(#f164fiqrfsq5sh)" height="68.0001" id="ssis.AntoraModule_tgt_filter" style="stroke:#A80036;stroke-width:1.5;" width="169" x="858.5" y="502.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="934" y="519.5001">«V»</text><a href="../ssis.antoramodule_tgt_filter.html" target="_top" title="../ssis.antoramodule_tgt_filter.html" xlink:actuate="onRequest" xlink:href="../ssis.antoramodule_tgt_filter.html" xlink:show="new" xlink:title="../ssis.antoramodule_tgt_filter.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="163" x="861.5" y="533.9002">ssis.AntoraModule_tgt_filter - V</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="859.5" x2="1026.5" y1="541.3002" y2="541.3002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="866.5" y="549.3002"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="141" x="878.5" y="556.3001">AntoraModule : (varchar(50))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="859.5" x2="1026.5" y1="562.5001" y2="562.5001"/><!--MD5=[485108ea0854c75f6d64412f8301588f]
+class ssis.Package_src--><rect codeLine="33" fill="#F5F5F5" filter="url(#f164fiqrfsq5sh)" height="265.9986" id="ssis.Package_src" style="stroke:#A80036;stroke-width:1.5;" width="289" x="374" y="2368"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="509.5" y="2385.0001">«V»</text><a href="../ssis.package_src.html" target="_top" title="../ssis.package_src.html" xlink:actuate="onRequest" xlink:href="../ssis.package_src.html" xlink:show="new" xlink:title="../ssis.package_src.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="112" x="462.5" y="2399.4002">ssis.Package_src - V</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="375" x2="662" y1="2406.8002" y2="2406.8002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="382" y="2414.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="76" x="394" y="2421.8001">AntoraModule</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="71" x="473" y="2421.8001">: (varchar(50))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="74" x="394" y="2435">PackageName</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="77" x="471" y="2435">: (varchar(200))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="394" y="2448.1999">PackageCreationDate : (datetime)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="243" x="394" y="2461.3998">PackageCreatorComputerName : (nvarchar(500))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="195" x="394" y="2474.5997">PackageCreatorName : (varchar(1000))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="185" x="394" y="2487.7996">PackageDescription : (nvarchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="394" y="2500.9995">PackageDTSID : (uniqueidentifier)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="263" x="394" y="2514.1994">PackageLastModifiedProductVersion : (nvarchar(500))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="114" x="394" y="2527.3993">PackageLocaleID : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="191" x="394" y="2540.5992">PackageObjectName : (nvarchar(500))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="382" y="2546.7992"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="151" x="394" y="2553.7991">PackagePath : (varchar(8000))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="197" x="394" y="2566.999">PackageProtectionLevel : (varchar(100))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="220" x="394" y="2580.1989">PackageProtectionLevelName : (varchar(28))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="195" x="394" y="2593.3988">PackageVersionGUID : (uniqueidentifier)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="382" y="2599.5988"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="143" x="394" y="2606.5987">ProjectPath : (varchar(8000))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="382" y="2612.7987"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="61" x="394" y="2619.7986">RowID : (int)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="375" x2="662" y1="2625.9986" y2="2625.9986"/><!--MD5=[7735d4c8b11336041f8e3e4d5fdc0043]
+class ssis.Package_tgt--><rect codeLine="53" fill="#F5F5F5" filter="url(#f164fiqrfsq5sh)" height="279.1985" id="ssis.Package_tgt" style="stroke:#A80036;stroke-width:1.5;" width="289" x="798.5" y="3674.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="934" y="3691.5001">«V»</text><a href="../ssis.package_tgt.html" target="_top" title="../ssis.package_tgt.html" xlink:actuate="onRequest" xlink:href="../ssis.package_tgt.html" xlink:show="new" xlink:title="../ssis.package_tgt.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="109" x="888.5" y="3705.9002">ssis.Package_tgt - V</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="799.5" x2="1086.5" y1="3713.3002" y2="3713.3002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="806.5" y="3721.3002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="76" x="818.5" y="3728.3001">AntoraModule</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="71" x="897.5" y="3728.3001">: (varchar(50))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="74" x="818.5" y="3741.5">PackageName</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="77" x="895.5" y="3741.5">: (varchar(200))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="818.5" y="3754.6999">PackageCreationDate : (datetime)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="243" x="818.5" y="3767.8998">PackageCreatorComputerName : (nvarchar(500))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="195" x="818.5" y="3781.0997">PackageCreatorName : (varchar(1000))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="185" x="818.5" y="3794.2996">PackageDescription : (nvarchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="818.5" y="3807.4995">PackageDTSID : (uniqueidentifier)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="263" x="818.5" y="3820.6994">PackageLastModifiedProductVersion : (nvarchar(500))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="114" x="818.5" y="3833.8993">PackageLocaleID : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="191" x="818.5" y="3847.0992">PackageObjectName : (nvarchar(500))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="806.5" y="3853.2992"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="151" x="818.5" y="3860.2991">PackagePath : (varchar(8000))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="197" x="818.5" y="3873.499">PackageProtectionLevel : (varchar(100))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="220" x="818.5" y="3886.6989">PackageProtectionLevelName : (varchar(28))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="195" x="818.5" y="3899.8988">PackageVersionGUID : (uniqueidentifier)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="806.5" y="3906.0988"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="98" x="818.5" y="3913.0987">PackageXML : (xml)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="806.5" y="3919.2987"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="143" x="818.5" y="3926.2986">ProjectPath : (varchar(8000))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="806.5" y="3932.4986"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="61" x="818.5" y="3939.4985">RowID : (int)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="799.5" x2="1086.5" y1="3945.6985" y2="3945.6985"/><!--MD5=[c69fe0eebf4821b32a0d446658d99483]
+class ssis.PackageConnection_src--><rect codeLine="74" fill="#F5F5F5" filter="url(#f164fiqrfsq5sh)" height="160.3994" id="ssis.PackageConnection_src" style="stroke:#A80036;stroke-width:1.5;" width="269" x="808.5" y="612.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="934" y="629.5001">«V»</text><a href="../ssis.packageconnection_src.html" target="_top" title="../ssis.packageconnection_src.html" xlink:actuate="onRequest" xlink:href="../ssis.packageconnection_src.html" xlink:show="new" xlink:title="../ssis.packageconnection_src.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="169" x="858.5" y="643.9002">ssis.PackageConnection_src - V</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="809.5" x2="1076.5" y1="651.3002" y2="651.3002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="816.5" y="659.3002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="76" x="828.5" y="666.3001">AntoraModule</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="71" x="907.5" y="666.3001">: (varchar(50))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="74" x="828.5" y="679.5">PackageName</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="77" x="905.5" y="679.5">: (varchar(200))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="119" x="828.5" y="692.6999">ConnectionManagerID</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="86" x="950.5" y="692.6999">: (uniqueidentifier)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="209" x="828.5" y="705.8998">ConnectionManagerName : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="204" x="828.5" y="719.0997">ConnectionManagerType : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="828.5" y="732.2996">ConnectionString : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="161" x="828.5" y="745.4995">ExpressionValue : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="243" x="828.5" y="758.6994">RetainSameConnectionProperty : (nvarchar(max))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="809.5" x2="1076.5" y1="764.8994" y2="764.8994"/><!--MD5=[a93d0c726d0cadd6e2b622f4d69f3e87]
+class ssis.PackageFlow_src--><rect codeLine="86" fill="#F5F5F5" filter="url(#f164fiqrfsq5sh)" height="199.9991" id="ssis.PackageFlow_src" style="stroke:#A80036;stroke-width:1.5;" width="184" x="851" y="815"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="934" y="832.0001">«V»</text><a href="../ssis.packageflow_src.html" target="_top" title="../ssis.packageflow_src.html" xlink:actuate="onRequest" xlink:href="../ssis.packageflow_src.html" xlink:show="new" xlink:title="../ssis.packageflow_src.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="137" x="874.5" y="846.4002">ssis.PackageFlow_src - V</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="852" x2="1034" y1="853.8002" y2="853.8002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="859" y="861.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="76" x="871" y="868.8001">AntoraModule</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="71" x="950" y="868.8001">: (varchar(50))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="74" x="871" y="882">PackageName</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="77" x="948" y="882">: (varchar(200))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="53" x="871" y="895.1999">TaskFrom</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="83" x="927" y="895.1999">: (varchar(2000))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="36" x="871" y="908.3998">Taskto</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="83" x="910" y="908.3998">: (varchar(2000))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="158" x="871" y="921.5997">CreationName : (nvarchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="122" x="871" y="934.7996">DTSID : (uniqueidentifier)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="63" x="871" y="947.9995">EvalOp : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="140" x="871" y="961.1994">Expression : (nvarchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="133" x="871" y="974.3993">FlowType : (varchar(1000))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="81" x="871" y="987.5992">LogicalAnd : (bit)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="150" x="871" y="1000.7991">ObjectName : (nvarchar(max))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="852" x2="1034" y1="1006.9991" y2="1006.9991"/><!--MD5=[2c8b3fd443a01ba895492f51293a33f7]
+class ssis.PackageParameter_src--><rect codeLine="101" fill="#F5F5F5" filter="url(#f164fiqrfsq5sh)" height="147.1995" id="ssis.PackageParameter_src" style="stroke:#A80036;stroke-width:1.5;" width="209" x="838.5" y="1056.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="934" y="1073.5001">«V»</text><a href="../ssis.packageparameter_src.html" target="_top" title="../ssis.packageparameter_src.html" xlink:actuate="onRequest" xlink:href="../ssis.packageparameter_src.html" xlink:show="new" xlink:title="../ssis.packageparameter_src.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="167" x="859.5" y="1087.9002">ssis.PackageParameter_src - V</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="839.5" x2="1046.5" y1="1095.3002" y2="1095.3002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="846.5" y="1103.3002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="76" x="858.5" y="1110.3001">AntoraModule</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="71" x="937.5" y="1110.3001">: (varchar(50))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="74" x="858.5" y="1123.5">PackageName</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="77" x="935.5" y="1123.5">: (varchar(200))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="83" x="858.5" y="1136.6999">ParameterName</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="77" x="944.5" y="1136.6999">: (varchar(500))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="858.5" y="1149.8998">ExpressionValue : (varchar(5000))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="180" x="858.5" y="1163.0997">ParameterDataType : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="183" x="858.5" y="1176.2996">ParameterHexValue : (varchar(1000))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="160" x="858.5" y="1189.4995">ParameterValue : (varchar(max))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="839.5" x2="1046.5" y1="1195.6995" y2="1195.6995"/><!--MD5=[125aa01e2b6234bd7ce0c9727b9b062e]
+class ssis.PackageTask_Dft_Component_input_externalMetadataColumn_src--><rect codeLine="112" fill="#F5F5F5" filter="url(#f164fiqrfsq5sh)" height="279.1985" id="ssis.PackageTask_Dft_Component_input_externalMetadataColumn_src" style="stroke:#A80036;stroke-width:1.5;" width="402" x="742" y="1244.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="934" y="1261.5001">«V»</text><a href="../ssis.packagetask_dft_component_input_externalmetadatacolumn_src.html" target="_top" title="../ssis.packagetask_dft_component_input_externalmetadatacolumn_src.html" xlink:actuate="onRequest" xlink:href="../ssis.packagetask_dft_component_input_externalmetadatacolumn_src.html" xlink:show="new" xlink:title="../ssis.packagetask_dft_component_input_externalmetadatacolumn_src.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="396" x="745" y="1275.9002">ssis.PackageTask_Dft_Component_input_externalMetadataColumn_src - V</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="743" x2="1143" y1="1283.3002" y2="1283.3002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="750" y="1291.3002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="76" x="762" y="1298.3001">AntoraModule</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="71" x="841" y="1298.3001">: (varchar(50))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="74" x="762" y="1311.5">PackageName</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="77" x="839" y="1311.5">: (varchar(200))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="72" x="762" y="1324.6999">Column_refId</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="79" x="837" y="1324.6999">: (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="168" x="762" y="1337.8998">Column_dataType : (varchar(100))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="100" x="762" y="1351.0997">Column_length : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="152" x="762" y="1364.2996">Column_name : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="114" x="762" y="1377.4995">Column_precision : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="96" x="762" y="1390.6994">Column_scale : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="166" x="762" y="1403.8993">Component_refId : (varchar(max))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="750" y="1410.0993"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="151" x="762" y="1417.0992">ControlFlowDetailsRowID : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="189" x="762" y="1430.2991">externalMetadataColumns_isused : (bit)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="246" x="762" y="1443.499">input_errorOrTruncationOperation : (varchar(100))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="206" x="762" y="1456.6989">input_errorRowDisposition : (varchar(100))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="762" y="1469.8988">input_hasSideEffects : (bit)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="136" x="762" y="1483.0987">input_name : (varchar(500))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="133" x="762" y="1496.2986">input_refId : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="132" x="762" y="1509.4985">TaskPath : (varchar(8000))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="743" x2="1143" y1="1515.6985" y2="1515.6985"/><!--MD5=[3f37fd3743a9d40a386cd14f44b9e453]
+class ssis.PackageTask_Dft_Component_input_inputColumn_src--><rect codeLine="133" fill="#F5F5F5" filter="url(#f164fiqrfsq5sh)" height="252.7987" id="ssis.PackageTask_Dft_Component_input_inputColumn_src" style="stroke:#A80036;stroke-width:1.5;" width="336" x="775" y="1564.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="934" y="1581.5001">«V»</text><a href="../ssis.packagetask_dft_component_input_inputcolumn_src.html" target="_top" title="../ssis.packagetask_dft_component_input_inputcolumn_src.html" xlink:actuate="onRequest" xlink:href="../ssis.packagetask_dft_component_input_inputcolumn_src.html" xlink:show="new" xlink:title="../ssis.packagetask_dft_component_input_inputcolumn_src.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="330" x="778" y="1595.9002">ssis.PackageTask_Dft_Component_input_inputColumn_src - V</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="776" x2="1110" y1="1603.3002" y2="1603.3002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="783" y="1611.3002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="76" x="795" y="1618.3001">AntoraModule</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="71" x="874" y="1618.3001">: (varchar(50))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="74" x="795" y="1631.5">PackageName</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="77" x="872" y="1631.5">: (varchar(200))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="72" x="795" y="1644.6999">Column_refId</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="79" x="870" y="1644.6999">: (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="206" x="795" y="1657.8998">Column_cachedDataType : (varchar(100))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="190" x="795" y="1671.0997">Column_cachedName : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="254" x="795" y="1684.2996">Column_externalMetadataColumnId : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="168" x="795" y="1697.4995">Column_lineageId : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="166" x="795" y="1710.6994">Component_refId : (varchar(max))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="783" y="1716.8994"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="151" x="795" y="1723.8993">ControlFlowDetailsRowID : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="246" x="795" y="1737.0992">input_errorOrTruncationOperation : (varchar(100))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="206" x="795" y="1750.2991">input_errorRowDisposition : (varchar(100))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="795" y="1763.499">input_hasSideEffects : (bit)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="136" x="795" y="1776.6989">input_name : (varchar(500))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="133" x="795" y="1789.8988">input_refId : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="132" x="795" y="1803.0987">TaskPath : (varchar(8000))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="776" x2="1110" y1="1809.2987" y2="1809.2987"/><!--MD5=[f92ec4011a2402a553e5acc435888518]
+class ssis.PackageTask_Dft_Component_input_src--><rect codeLine="152" fill="#F5F5F5" filter="url(#f164fiqrfsq5sh)" height="186.7992" id="ssis.PackageTask_Dft_Component_input_src" style="stroke:#A80036;stroke-width:1.5;" width="272" x="807" y="1858.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="934" y="1875.5001">«V»</text><a href="../ssis.packagetask_dft_component_input_src.html" target="_top" title="../ssis.packagetask_dft_component_input_src.html" xlink:actuate="onRequest" xlink:href="../ssis.packagetask_dft_component_input_src.html" xlink:show="new" xlink:title="../ssis.packagetask_dft_component_input_src.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="258" x="814" y="1889.9002">ssis.PackageTask_Dft_Component_input_src - V</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="808" x2="1078" y1="1897.3002" y2="1897.3002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="815" y="1905.3002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="76" x="827" y="1912.3001">AntoraModule</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="71" x="906" y="1912.3001">: (varchar(50))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="74" x="827" y="1925.5">PackageName</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="77" x="904" y="1925.5">: (varchar(200))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="58" x="827" y="1938.6999">input_refId</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="79" x="888" y="1938.6999">: (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="166" x="827" y="1951.8998">Component_refId : (varchar(max))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="815" y="1958.0998"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="151" x="827" y="1965.0997">ControlFlowDetailsRowID : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="246" x="827" y="1978.2996">input_errorOrTruncationOperation : (varchar(100))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="206" x="827" y="1991.4995">input_errorRowDisposition : (varchar(100))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="827" y="2004.6994">input_hasSideEffects : (bit)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="136" x="827" y="2017.8993">input_name : (varchar(500))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="132" x="827" y="2031.0992">TaskPath : (varchar(8000))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="808" x2="1078" y1="2037.2992" y2="2037.2992"/><!--MD5=[2fcf3126ed61ef39884ef83a9f5259f8]
+class ssis.PackageTask_Dft_Component_output_externalMetadataColumn_src--><rect codeLine="166" fill="#F5F5F5" filter="url(#f164fiqrfsq5sh)" height="239.5988" id="ssis.PackageTask_Dft_Component_output_externalMetadataColumn_src" style="stroke:#A80036;stroke-width:1.5;" width="408" x="739" y="2087"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="934" y="2104.0001">«V»</text><a href="../ssis.packagetask_dft_component_output_externalmetadatacolumn_src.html" target="_top" title="../ssis.packagetask_dft_component_output_externalmetadatacolumn_src.html" xlink:actuate="onRequest" xlink:href="../ssis.packagetask_dft_component_output_externalmetadatacolumn_src.html" xlink:show="new" xlink:title="../ssis.packagetask_dft_component_output_externalmetadatacolumn_src.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="402" x="742" y="2118.4002">ssis.PackageTask_Dft_Component_output_externalMetadataColumn_src - V</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="740" x2="1146" y1="2125.8002" y2="2125.8002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="747" y="2133.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="76" x="759" y="2140.8001">AntoraModule</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="71" x="838" y="2140.8001">: (varchar(50))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="74" x="759" y="2154">PackageName</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="77" x="836" y="2154">: (varchar(200))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="72" x="759" y="2167.1999">Column_refId</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="79" x="834" y="2167.1999">: (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="168" x="759" y="2180.3998">Column_dataType : (varchar(100))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="100" x="759" y="2193.5997">Column_length : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="152" x="759" y="2206.7996">Column_name : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="114" x="759" y="2219.9995">Column_precision : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="96" x="759" y="2233.1994">Column_scale : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="166" x="759" y="2246.3993">Component_refId : (varchar(max))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="747" y="2252.5993"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="151" x="759" y="2259.5992">ControlFlowDetailsRowID : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="189" x="759" y="2272.7991">externalMetadataColumns_isused : (bit)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="143" x="759" y="2285.999">output_name : (varchar(500))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="140" x="759" y="2299.1989">output_refId : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="132" x="759" y="2312.3988">TaskPath : (varchar(8000))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="740" x2="1146" y1="2318.5988" y2="2318.5988"/><!--MD5=[2d18e8df8502cac74ba16bd7ae3c310e]
+class ssis.PackageTask_Dft_Component_output_outputcolumn_src--><rect codeLine="184" fill="#F5F5F5" filter="url(#f164fiqrfsq5sh)" height="305.5983" id="ssis.PackageTask_Dft_Component_output_outputcolumn_src" style="stroke:#A80036;stroke-width:1.5;" width="345" x="770.5" y="2368"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="934" y="2385.0001">«V»</text><a href="../ssis.packagetask_dft_component_output_outputcolumn_src.html" target="_top" title="../ssis.packagetask_dft_component_output_outputcolumn_src.html" xlink:actuate="onRequest" xlink:href="../ssis.packagetask_dft_component_output_outputcolumn_src.html" xlink:show="new" xlink:title="../ssis.packagetask_dft_component_output_outputcolumn_src.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="339" x="773.5" y="2399.4002">ssis.PackageTask_Dft_Component_output_outputcolumn_src - V</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="771.5" x2="1114.5" y1="2406.8002" y2="2406.8002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="778.5" y="2414.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="76" x="790.5" y="2421.8001">AntoraModule</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="71" x="869.5" y="2421.8001">: (varchar(50))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="74" x="790.5" y="2435">PackageName</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="77" x="867.5" y="2435">: (varchar(200))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="72" x="790.5" y="2448.1999">Column_refId</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="79" x="865.5" y="2448.1999">: (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="168" x="790.5" y="2461.3998">Column_dataType : (varchar(100))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="260" x="790.5" y="2474.5997">Column_errorOrTruncationOperation : (varchar(100))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="220" x="790.5" y="2487.7996">Column_errorRowDisposition : (varchar(100))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="254" x="790.5" y="2500.9995">Column_externalMetadataColumnId : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="100" x="790.5" y="2514.1994">Column_length : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="168" x="790.5" y="2527.3993">Column_lineageId : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="152" x="790.5" y="2540.5992">Column_name : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="114" x="790.5" y="2553.7991">Column_precision : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="96" x="790.5" y="2566.999">Column_scale : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="246" x="790.5" y="2580.1989">Column_truncationRowDisposition : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="166" x="790.5" y="2593.3988">Component_refId : (varchar(max))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="778.5" y="2599.5988"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="151" x="790.5" y="2606.5987">ControlFlowDetailsRowID : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="114" x="790.5" y="2619.7986">output_isErrorOut : (bit)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="143" x="790.5" y="2632.9985">output_name : (varchar(500))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="140" x="790.5" y="2646.1984">output_refId : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="132" x="790.5" y="2659.3983">TaskPath : (varchar(8000))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="771.5" x2="1114.5" y1="2665.5983" y2="2665.5983"/><!--MD5=[02f6c0d06b6392e20763196062e49ea6]
+class ssis.PackageTask_Dft_Component_output_src--><rect codeLine="207" fill="#F5F5F5" filter="url(#f164fiqrfsq5sh)" height="160.3994" id="ssis.PackageTask_Dft_Component_output_src" style="stroke:#A80036;stroke-width:1.5;" width="270" x="808" y="2715.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="934" y="2732.5001">«V»</text><a href="../ssis.packagetask_dft_component_output_src.html" target="_top" title="../ssis.packagetask_dft_component_output_src.html" xlink:actuate="onRequest" xlink:href="../ssis.packagetask_dft_component_output_src.html" xlink:show="new" xlink:title="../ssis.packagetask_dft_component_output_src.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="264" x="811" y="2746.9002">ssis.PackageTask_Dft_Component_output_src - V</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="809" x2="1077" y1="2754.3002" y2="2754.3002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="816" y="2762.3002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="76" x="828" y="2769.3001">AntoraModule</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="71" x="907" y="2769.3001">: (varchar(50))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="74" x="828" y="2782.5">PackageName</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="77" x="905" y="2782.5">: (varchar(200))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="66" x="828" y="2795.6999">output_refId</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="79" x="897" y="2795.6999">: (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="166" x="828" y="2808.8998">Component_refId : (varchar(max))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="816" y="2815.0998"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="151" x="828" y="2822.0997">ControlFlowDetailsRowID : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="114" x="828" y="2835.2996">output_isErrorOut : (bit)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="143" x="828" y="2848.4995">output_name : (varchar(500))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="132" x="828" y="2861.6994">TaskPath : (varchar(8000))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="809" x2="1077" y1="2867.8994" y2="2867.8994"/><!--MD5=[459319b9abcf12cc7a8b46ae7ebf507e]
+class ssis.PackageTask_Dft_Component_src--><rect codeLine="219" fill="#F5F5F5" filter="url(#f164fiqrfsq5sh)" height="437.5973" id="ssis.PackageTask_Dft_Component_src" style="stroke:#A80036;stroke-width:1.5;" width="307" x="789.5" y="2917"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="934" y="2934.0001">«V»</text><a href="../ssis.packagetask_dft_component_src.html" target="_top" title="../ssis.packagetask_dft_component_src.html" xlink:actuate="onRequest" xlink:href="../ssis.packagetask_dft_component_src.html" xlink:show="new" xlink:title="../ssis.packagetask_dft_component_src.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="226" x="830" y="2948.4002">ssis.PackageTask_Dft_Component_src - V</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="790.5" x2="1095.5" y1="2955.8002" y2="2955.8002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="797.5" y="2963.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="76" x="809.5" y="2970.8001">AntoraModule</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="71" x="888.5" y="2970.8001">: (varchar(50))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="74" x="809.5" y="2984">PackageName</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="77" x="886.5" y="2984">: (varchar(200))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="93" x="809.5" y="2997.1999">Component_refId</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="79" x="905.5" y="2997.1999">: (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="206" x="809.5" y="3010.3998">Component_AccessMode : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="281" x="809.5" y="3023.5997">Component_AlwaysUseDefaultCodePage : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="179" x="809.5" y="3036.7996">Component_CommandTimeout : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="235" x="809.5" y="3049.9995">Component_componentClassID : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="257" x="809.5" y="3063.1994">Component_Connection_description : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="232" x="809.5" y="3076.3993">Component_Connection_name : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="227" x="809.5" y="3089.5992">Component_Connection_refId : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="251" x="809.5" y="3102.7991">Component_connectionManagerID : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="266" x="809.5" y="3115.999">Component_connectionManagerRefId : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="200" x="809.5" y="3129.1989">Component_ContactInfo : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="175" x="809.5" y="3142.3988">Component_DefaultCodePage : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="196" x="809.5" y="3155.5987">Component_description : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="194" x="809.5" y="3168.7986">Component_FastLoadKeepIdentity : (bit)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="183" x="809.5" y="3181.9985">Component_FastLoadKeepNulls : (bit)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="239" x="809.5" y="3195.1984">Component_FastLoadMaxInsertCommitSize : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="226" x="809.5" y="3208.3983">Component_FastLoadOptions : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="217" x="809.5" y="3221.5982">Component_IsSortedProperty : (varchar(10))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="171" x="809.5" y="3234.7982">Component_name : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="207" x="809.5" y="3247.9981">Component_OpenRowset : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="246" x="809.5" y="3261.198">Component_OpenRowsetVariable : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="236" x="809.5" y="3274.3979">Component_ParameterMapping : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="209" x="809.5" y="3287.5978">Component_SqlCommand : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="248" x="809.5" y="3300.7977">Component_SqlCommandVariable : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="212" x="809.5" y="3313.9976">Component_VariableName : (varchar(max))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="797.5" y="3320.1975"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="151" x="809.5" y="3327.1975">ControlFlowDetailsRowID : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="132" x="809.5" y="3340.3974">TaskPath : (varchar(8000))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="790.5" x2="1095.5" y1="3346.5973" y2="3346.5973"/><!--MD5=[5f7c0479858f6b3738282a8bbbdac09b]
+class ssis.PackageTask_Sql_Parameter_src--><rect codeLine="252" fill="#F5F5F5" filter="url(#f164fiqrfsq5sh)" height="147.1995" id="ssis.PackageTask_Sql_Parameter_src" style="stroke:#A80036;stroke-width:1.5;" width="278" x="804" y="3396.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="934" y="3413.5001">«V»</text><a href="../ssis.packagetask_sql_parameter_src.html" target="_top" title="../ssis.packagetask_sql_parameter_src.html" xlink:actuate="onRequest" xlink:href="../ssis.packagetask_sql_parameter_src.html" xlink:show="new" xlink:title="../ssis.packagetask_sql_parameter_src.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="226" x="830" y="3427.9002">ssis.PackageTask_Sql_Parameter_src - V</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="805" x2="1081" y1="3435.3002" y2="3435.3002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="812" y="3443.3002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="76" x="824" y="3450.3001">AntoraModule</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="71" x="903" y="3450.3001">: (varchar(50))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="74" x="824" y="3463.5">PackageName</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="77" x="901" y="3463.5">: (varchar(200))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="49" x="824" y="3476.6999">TaskPath</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="83" x="876" y="3476.6999">: (varchar(8000))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="147" x="824" y="3489.8998">ParameterBindingSequence</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="83" x="974" y="3489.8998">: (varchar(1000))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="812" y="3496.0998"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="151" x="824" y="3503.0997">ControlFlowDetailsRowID : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="252" x="824" y="3516.2996">ParameterBindingParameterName : (varchar(1000))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="212" x="824" y="3529.4995">ResultSetParameterName : (varchar(1000))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="805" x2="1081" y1="3535.6995" y2="3535.6995"/><!--MD5=[889f8b5f0d09393ba49a702240b3c416]
+class ssis.PackageTask_src--><rect codeLine="263" fill="#F5F5F5" filter="url(#f164fiqrfsq5sh)" height="265.9986" id="ssis.PackageTask_src" style="stroke:#A80036;stroke-width:1.5;" width="249" x="818.5" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="934" y="24.0001">«V»</text><a href="../ssis.packagetask_src.html" target="_top" title="../ssis.packagetask_src.html" xlink:actuate="onRequest" xlink:href="../ssis.packagetask_src.html" xlink:show="new" xlink:title="../ssis.packagetask_src.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="139" x="873.5" y="38.4002">ssis.PackageTask_src - V</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="819.5" x2="1066.5" y1="45.8002" y2="45.8002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="826.5" y="53.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="76" x="838.5" y="60.8001">AntoraModule</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="71" x="917.5" y="60.8001">: (varchar(50))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="74" x="838.5" y="74">PackageName</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="77" x="915.5" y="74">: (varchar(200))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="49" x="838.5" y="87.1999">TaskPath</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="83" x="890.5" y="87.1999">: (varchar(8000))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="826.5" y="93.3999"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="151" x="838.5" y="100.3998">ControlFlowDetailsRowID : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="221" x="838.5" y="113.5997">DelayValidationPropertyValue : (varchar(100))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="203" x="838.5" y="126.7996">ExecutedPackageName : (varchar(1000))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="223" x="838.5" y="139.9995">ExecutePackageConnection : (varchar(1000))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="220" x="838.5" y="153.1994">ExecutePackageExpression : (varchar(1000))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="838.5" y="166.3993">ExpressionValue : (varchar(5000))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="123" x="838.5" y="179.5992">IsDisabled : (varchar(10))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="110" x="838.5" y="192.7991">Script : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="159" x="838.5" y="205.999">SqlConnection : (uniqueidentifier)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="187" x="838.5" y="219.1989">SqlStatementSource : (nvarchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="160" x="838.5" y="232.3988">TaskDescription : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="139" x="838.5" y="245.5987">TaskName : (varchar(2000))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="134" x="838.5" y="258.7986">TaskType : (varchar(5000))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="819.5" x2="1066.5" y1="264.9986" y2="264.9986"/><!--MD5=[1158267f073028fa4e1e3ebcabc57fda]
+class ssis.PackageVariable_src--><rect codeLine="283" fill="#F5F5F5" filter="url(#f164fiqrfsq5sh)" height="147.1995" id="ssis.PackageVariable_src" style="stroke:#A80036;stroke-width:1.5;" width="197" x="844.5" y="314.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="934" y="331.5001">«V»</text><a href="../ssis.packagevariable_src.html" target="_top" title="../ssis.packagevariable_src.html" xlink:actuate="onRequest" xlink:href="../ssis.packagevariable_src.html" xlink:show="new" xlink:title="../ssis.packagevariable_src.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="157" x="864.5" y="345.9002">ssis.PackageVariable_src - V</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="845.5" x2="1040.5" y1="353.3002" y2="353.3002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="852.5" y="361.3002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="76" x="864.5" y="368.3001">AntoraModule</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="71" x="943.5" y="368.3001">: (varchar(50))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="74" x="864.5" y="381.5">PackageName</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="77" x="941.5" y="381.5">: (varchar(200))</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="72" x="864.5" y="394.6999">VariableName</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="77" x="939.5" y="394.6999">: (varchar(500))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="864.5" y="407.8998">ExpressionValue : (varchar(5000))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="168" x="864.5" y="421.0997">VariableDataType : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="171" x="864.5" y="434.2996">VariableHexValue : (varchar(1000))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="148" x="864.5" y="447.4995">VariableValue : (varchar(max))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="845.5" x2="1040.5" y1="453.6995" y2="453.6995"/><!--MD5=[5b49f878b1246a6e75aeeadee9b99b2b]
+class ssis.Project--><rect codeLine="294" fill="#FFFFFF" filter="url(#f164fiqrfsq5sh)" height="94.3999" id="ssis.Project" style="stroke:#A80036;stroke-width:1.5;" width="176" x="65.5" y="2244.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="144" y="2261.5001">«U»</text><a href="../ssis.project.html" target="_top" title="../ssis.project.html" xlink:actuate="onRequest" xlink:href="../ssis.project.html" xlink:show="new" xlink:title="../ssis.project.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="79" x="114" y="2275.9002">ssis.Project - U</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="66.5" x2="240.5" y1="2283.3002" y2="2283.3002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="73.5" y="2291.3002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="76" x="85.5" y="2298.3001">AntoraModule</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="71" x="164.5" y="2298.3001">: (varchar(50))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="143" x="85.5" y="2311.5">ProjectPath : (varchar(8000))</text><polygon fill="#4177AF" points="76.5,2316.7,72.5,2322.7,80.5,2322.7" style="stroke:#1963A0;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="85.5" y="2324.6999">sql_import : (varchar(8000))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="66.5" x2="240.5" y1="2330.8999" y2="2330.8999"/><!--MD5=[0f4f319cb4b667a31bd6932ba3cc5ddf]
+class ssis.usp_PERSIST_Package_tgt--><rect codeLine="301" fill="#00FFFF" filter="url(#f164fiqrfsq5sh)" height="54.8002" id="ssis.usp_PERSIST_Package_tgt" style="stroke:#A80036;stroke-width:1.5;" width="200" x="843" y="3580.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="934" y="3597.5001">«P»</text><a href="../ssis.usp_persist_package_tgt.html" target="_top" title="../ssis.usp_persist_package_tgt.html" xlink:actuate="onRequest" xlink:href="../ssis.usp_persist_package_tgt.html" xlink:show="new" xlink:title="../ssis.usp_persist_package_tgt.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="194" x="846" y="3611.9002">ssis.usp_PERSIST_Package_tgt - P</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="844" x2="1042" y1="3619.3002" y2="3619.3002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="844" x2="1042" y1="3627.3002" y2="3627.3002"/><!--MD5=[0de1e623c57860e358b6562ec25a34a3]
+class ssis_t.pkgStats--><rect codeLine="305" fill="#FFFFFF" filter="url(#f164fiqrfsq5sh)" height="265.9986" id="ssis_t.pkgStats" style="stroke:#A80036;stroke-width:1.5;" width="289" x="9" y="2381"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="144" y="2398.0001">«U»</text><a href="../ssis_t.pkgstats.html" target="_top" title="../ssis_t.pkgstats.html" xlink:actuate="onRequest" xlink:href="../ssis_t.pkgstats.html" xlink:show="new" xlink:title="../ssis_t.pkgstats.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="100" x="103.5" y="2412.4002">ssis_t.pkgStats - U</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="10" x2="297" y1="2419.8002" y2="2419.8002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="17" y="2427.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="35" x="29" y="2434.8001">RowID</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="25" x="67" y="2434.8001">: (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="29" y="2448">PackageCreationDate : (datetime)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="243" x="29" y="2461.1999">PackageCreatorComputerName : (nvarchar(500))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="195" x="29" y="2474.3998">PackageCreatorName : (varchar(1000))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="185" x="29" y="2487.5997">PackageDescription : (nvarchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="29" y="2500.7996">PackageDTSID : (uniqueidentifier)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="263" x="29" y="2513.9995">PackageLastModifiedProductVersion : (nvarchar(500))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="114" x="29" y="2527.1994">PackageLocaleID : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="191" x="29" y="2540.3993">PackageObjectName : (nvarchar(500))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="17" y="2546.5993"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="151" x="29" y="2553.5992">PackagePath : (varchar(8000))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="197" x="29" y="2566.7991">PackageProtectionLevel : (varchar(100))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="195" x="29" y="2579.999">PackageVersionGUID : (uniqueidentifier)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="17" y="2586.199"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="98" x="29" y="2593.1989">PackageXML : (xml)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="17" y="2599.3989"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="143" x="29" y="2606.3988">ProjectPath : (varchar(8000))</text><polygon fill="#FFFF44" points="20,2610.5988,24,2614.5988,20,2618.5988,16,2614.5988" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="152" x="29" y="2619.5987">PackageName : (varchar(200))</text><polygon fill="#4177AF" points="20,2624.7987,16,2630.7987,24,2630.7987" style="stroke:#1963A0;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="220" x="29" y="2632.7986">PackageProtectionLevelName : (varchar(28))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="10" x2="297" y1="2638.9986" y2="2638.9986"/><!--MD5=[60758bb514006cab2b166ce68b44da25]
+reverse link ssis.Package_src to ssis.PackageTask_Dft_Component_output_externalMetadataColumn_src--><path codeLine="325" d="M675.41,2385.13 C694.06,2371.83 712.91,2358.54 731,2346 C739.04,2340.43 747.28,2334.77 755.61,2329.08 " fill="none" id="ssis.Package_src-backto-ssis.PackageTask_Dft_Component_output_externalMetadataColumn_src" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="671.18,2388.15,680.8266,2386.1642,675.2458,2385.2398,676.1702,2379.659,671.18,2388.15" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[60758bb514006cab2b166ce68b44da25]
+reverse link ssis.Package_src to ssis.PackageTask_Dft_Component_output_externalMetadataColumn_src--><path codeLine="355" d="M669.62,2415.84 C788.6,2408.37 610.67,2135 738,2135 " fill="none" id="ssis.Package_src-backto-ssis.PackageTask_Dft_Component_output_externalMetadataColumn_src-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2416,673.6212,2419.7153,669.4975,2415.8429,673.3699,2411.7193,664.5,2416" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[60758bb514006cab2b166ce68b44da25]
+reverse link ssis.Package_src to ssis.PackageTask_Dft_Component_output_externalMetadataColumn_src--><path codeLine="375" d="M669.62,2428.84 C788.6,2421.37 610.67,2148 738,2148 " fill="none" id="ssis.Package_src-backto-ssis.PackageTask_Dft_Component_output_externalMetadataColumn_src-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2429,673.6212,2432.7153,669.4975,2428.8429,673.3699,2424.7193,664.5,2429" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[72b745e195c0caa038f4eff3c6da3f65]
+reverse link ssis.Package_src to ssis.PackageTask_Dft_Component_input_inputColumn_src--><path codeLine="326" d="M537.46,2358.64 C561.51,2215.77 615.41,1993.63 731,1837 C741.47,1822.81 753.74,1809.5 766.99,1797.14 " fill="none" id="ssis.Package_src-backto-ssis.PackageTask_Dft_Component_input_inputColumn_src" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="536.61,2363.68,542.0467,2355.4677,537.4389,2358.7492,534.1575,2354.1414,536.61,2363.68" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[72b745e195c0caa038f4eff3c6da3f65]
+reverse link ssis.Package_src to ssis.PackageTask_Dft_Component_input_inputColumn_src--><path codeLine="356" d="M669.59,2415.09 C751.85,2384.94 685.71,1613 774,1613 " fill="none" id="ssis.Package_src-backto-ssis.PackageTask_Dft_Component_input_inputColumn_src-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2416,674.059,2418.3719,669.4236,2415.1294,672.6661,2410.4941,664.5,2416" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[72b745e195c0caa038f4eff3c6da3f65]
+reverse link ssis.Package_src to ssis.PackageTask_Dft_Component_input_inputColumn_src--><path codeLine="374" d="M669.59,2428.09 C751.85,2397.94 685.71,1626 774,1626 " fill="none" id="ssis.Package_src-backto-ssis.PackageTask_Dft_Component_input_inputColumn_src-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2429,674.059,2431.3719,669.4236,2428.1294,672.6661,2423.4941,664.5,2429" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[775aaaa24803da25f40972a21b570b27]
+reverse link ssis.Package_src to ssis.PackageTask_Dft_Component_src--><path codeLine="327" d="M583.91,2638.71 C622.41,2716.96 674.71,2814.84 731,2896 C746.38,2918.17 763.55,2940.57 781.28,2962.3 " fill="none" id="ssis.Package_src-backto-ssis.PackageTask_Dft_Component_src" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="581.62,2634.05,581.9794,2643.8923,583.8161,2638.5419,589.1664,2640.3786,581.62,2634.05" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[775aaaa24803da25f40972a21b570b27]
+reverse link ssis.Package_src to ssis.PackageTask_Dft_Component_src--><path codeLine="346" d="M669.71,2416.31 C769.4,2428.59 687.98,2799.23 731,2896 C747.27,2932.61 748.94,2965 789,2965 " fill="none" id="ssis.Package_src-backto-ssis.PackageTask_Dft_Component_src-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2416,673.2443,2420.5318,669.491,2416.2995,673.7234,2412.5462,664.5,2416" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[775aaaa24803da25f40972a21b570b27]
+reverse link ssis.Package_src to ssis.PackageTask_Dft_Component_src--><path codeLine="372" d="M669.57,2429.3 C766.8,2441.2 692.9,2800.21 731,2896 C747.5,2937.48 744.36,2978 789,2978 " fill="none" id="ssis.Package_src-backto-ssis.PackageTask_Dft_Component_src-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2429,673.2435,2433.5333,669.491,2429.3003,673.724,2425.5478,664.5,2429" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[5716993bfc5182fd51cecab8033d0892]
+reverse link ssis.Package_src to ssis.PackageTask_Dft_Component_input_src--><path codeLine="328" d="M562.56,2358.67 C596.5,2266.43 651.49,2147.91 731,2065 C750.45,2044.72 774.32,2027.2 798.91,2012.41 " fill="none" id="ssis.Package_src-backto-ssis.PackageTask_Dft_Component_input_src" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="560.76,2363.6,567.6018,2356.5155,562.4733,2358.9027,560.0861,2353.7742,560.76,2363.6" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[5716993bfc5182fd51cecab8033d0892]
+reverse link ssis.Package_src to ssis.PackageTask_Dft_Component_input_src--><path codeLine="352" d="M669.89,2415.55 C742.16,2403.19 706.97,2138.71 731,2065 C755.1,1991.1 728.27,1907 806,1907 " fill="none" id="ssis.Package_src-backto-ssis.PackageTask_Dft_Component_input_src-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2416,673.8003,2419.241,669.4828,2415.586,673.1379,2411.2685,664.5,2416" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[5716993bfc5182fd51cecab8033d0892]
+reverse link ssis.Package_src to ssis.PackageTask_Dft_Component_input_src--><path codeLine="378" d="M669.63,2428.61 C744.94,2416.8 705,2141.15 731,2065 C754.44,1996.34 733.45,1920 806,1920 " fill="none" id="ssis.Package_src-backto-ssis.PackageTask_Dft_Component_input_src-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2429,673.7817,2432.2939,669.4851,2428.6143,673.1647,2424.3177,664.5,2429" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d6a6262b4cc725f2b7a797a1daa64d45]
+reverse link ssis.Package_src to ssis.PackageTask_Dft_Component_output_src--><path codeLine="329" d="M658.21,2637.53 C681.57,2657.68 706.28,2677.25 731,2694 C752.43,2708.53 776.27,2722.08 800,2734.25 " fill="none" id="ssis.Package_src-backto-ssis.PackageTask_Dft_Component_output_src" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="654.17,2634.03,658.3643,2642.9411,657.9532,2637.2992,663.595,2636.8881,654.17,2634.03" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d6a6262b4cc725f2b7a797a1daa64d45]
+reverse link ssis.Package_src to ssis.PackageTask_Dft_Component_output_src--><path codeLine="353" d="M669.57,2416.09 C788.16,2420.59 667.59,2585.93 731,2694 C754.24,2733.61 761.08,2764 807,2764 " fill="none" id="ssis.Package_src-backto-ssis.PackageTask_Dft_Component_output_src-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2416,673.4301,2420.1537,669.4993,2416.0857,673.5672,2412.1549,664.5,2416" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d6a6262b4cc725f2b7a797a1daa64d45]
+reverse link ssis.Package_src to ssis.PackageTask_Dft_Component_output_src--><path codeLine="377" d="M669.69,2429.1 C782.67,2433.62 674.31,2588.63 731,2694 C754.7,2738.05 756.98,2777 807,2777 " fill="none" id="ssis.Package_src-backto-ssis.PackageTask_Dft_Component_output_src-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2429,673.4182,2433.1792,669.499,2429.1,673.5782,2425.1808,664.5,2429" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0d36c0d91d1af256eaae75f7e70bb63c]
+reverse link ssis.Package_src to ssis.PackageTask_Dft_Component_output_outputcolumn_src--><path codeLine="330" d="M676.35,2506.8 C704.38,2508.19 733.79,2509.65 762.4,2511.07 " fill="none" id="ssis.Package_src-backto-ssis.PackageTask_Dft_Component_output_outputcolumn_src" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="671.14,2506.54,679.922,2510.9983,676.1334,2506.7975,680.3341,2503.0089,671.14,2506.54" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0d36c0d91d1af256eaae75f7e70bb63c]
+reverse link ssis.Package_src to ssis.PackageTask_Dft_Component_output_outputcolumn_src--><path codeLine="354" d="M669.58,2416 C712.31,2416 724.85,2416 770,2416 " fill="none" id="ssis.Package_src-backto-ssis.PackageTask_Dft_Component_output_outputcolumn_src-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2416,673.5,2420,669.5,2416,673.5,2412,664.5,2416" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0d36c0d91d1af256eaae75f7e70bb63c]
+reverse link ssis.Package_src to ssis.PackageTask_Dft_Component_output_outputcolumn_src--><path codeLine="376" d="M669.58,2429 C712.31,2429 724.85,2429 770,2429 " fill="none" id="ssis.Package_src-backto-ssis.PackageTask_Dft_Component_output_outputcolumn_src-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2429,673.5,2433,669.5,2429,673.5,2425,664.5,2429" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[18580b9707bf9fc1a6d4ce998af10bac]
+reverse link ssis.Package_src to ssis.PackageConnection_src--><path codeLine="331" d="M519.99,2358.93 C523.84,1997.23 551.23,1042.77 731,793 C748.56,768.61 773.59,749.88 800.32,735.58 " fill="none" id="ssis.Package_src-backto-ssis.PackageConnection_src" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="519.94,2363.95,524.0426,2354.9963,519.9971,2358.9503,516.0431,2354.9049,519.94,2363.95" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[18580b9707bf9fc1a6d4ce998af10bac]
+reverse link ssis.Package_src to ssis.PackageConnection_src--><path codeLine="343" d="M669.63,2414.26 C752.85,2356.54 706.16,877.92 731,793 C750.06,727.81 740.08,661 808,661 " fill="none" id="ssis.Package_src-backto-ssis.PackageConnection_src-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2416,674.3073,2416.9043,669.2362,2414.3974,671.7431,2409.3264,664.5,2416" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[18580b9707bf9fc1a6d4ce998af10bac]
+reverse link ssis.Package_src to ssis.PackageConnection_src--><path codeLine="366" d="M669.42,2427.42 C753.56,2372.01 703.98,878.09 731,793 C750.07,732.96 745,674 808,674 " fill="none" id="ssis.Package_src-backto-ssis.PackageConnection_src-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2429,674.2941,2430.037,669.2575,2427.4617,671.8328,2422.425,664.5,2429" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[006259b203cf60a9f5023328c0138c55]
+reverse link ssis.Package_src to ssis.PackageFlow_src--><path codeLine="332" d="M524.35,2358.67 C537.92,2035.35 585.39,1249.31 731,1035 C757.76,995.62 801.88,967.45 842.87,948.27 " fill="none" id="ssis.Package_src-backto-ssis.PackageFlow_src" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="524.13,2363.86,528.4865,2355.0271,524.3298,2358.864,520.4929,2354.7073,524.13,2363.86" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[006259b203cf60a9f5023328c0138c55]
+reverse link ssis.Package_src to ssis.PackageFlow_src--><path codeLine="351" d="M669.3,2414.21 C739.84,2360.36 706.88,1106.19 731,1035 C760.83,946.96 757.04,863 850,863 " fill="none" id="ssis.Package_src-backto-ssis.PackageFlow_src-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2416,674.3299,2416.6115,669.1863,2414.2569,671.5409,2409.1134,664.5,2416" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[006259b203cf60a9f5023328c0138c55]
+reverse link ssis.Package_src to ssis.PackageFlow_src--><path codeLine="369" d="M669.34,2427.2 C740.46,2372.81 705.34,1106.39 731,1035 C760.86,951.94 761.73,876 850,876 " fill="none" id="ssis.Package_src-backto-ssis.PackageFlow_src-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2429,674.3315,2429.5852,669.1816,2427.2444,671.5225,2422.0946,664.5,2429" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[076d277f480b46d2f69b114beca9475e]
+reverse link ssis.Package_src to ssis.PackageParameter_src--><path codeLine="333" d="M526.24,2358.81 C542.94,2065.31 595.13,1398.8 731,1223 C755.65,1191.11 793.46,1169.77 830.3,1155.62 " fill="none" id="ssis.Package_src-backto-ssis.PackageParameter_src" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="525.95,2363.96,530.4584,2355.2036,526.2361,2358.9682,522.4715,2354.7459,525.95,2363.96" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[076d277f480b46d2f69b114beca9475e]
+reverse link ssis.Package_src to ssis.PackageParameter_src--><path codeLine="347" d="M669.81,2415.4 C794.08,2386.91 680.48,1343.81 731,1223 C758.32,1157.69 767.2,1105 838,1105 " fill="none" id="ssis.Package_src-backto-ssis.PackageParameter_src-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2416,673.8895,2418.9728,669.4689,2415.4431,672.9985,2411.0225,664.5,2416" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[076d277f480b46d2f69b114beca9475e]
+reverse link ssis.Package_src to ssis.PackageParameter_src--><path codeLine="370" d="M669.49,2428.48 C795.61,2401.64 676.37,1343.71 731,1223 C758.47,1162.3 771.37,1118 838,1118 " fill="none" id="ssis.Package_src-backto-ssis.PackageParameter_src-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2429,673.8638,2432.0527,669.4735,2428.4855,673.0406,2424.0951,664.5,2429" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b79064fe2283d58823b90594d62d28f2]
+reverse link ssis.Package_src to ssis.PackageTask_Sql_Parameter_src--><path codeLine="334" d="M538.08,2639.27 C569.43,2857.28 638.57,3263.98 731,3375 C748.45,3395.96 771.51,3412.41 795.98,3425.28 " fill="none" id="ssis.Package_src-backto-ssis.PackageTask_Sql_Parameter_src" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="537.35,2634.15,534.6783,2643.6296,538.0651,2639.0986,542.5961,2642.4854,537.35,2634.15" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b79064fe2283d58823b90594d62d28f2]
+reverse link ssis.Package_src to ssis.PackageTask_Sql_Parameter_src--><path codeLine="348" d="M669.66,2416.71 C768.52,2444.41 686.8,3279.72 731,3375 C749.78,3415.49 758.37,3445 803,3445 " fill="none" id="ssis.Package_src-backto-ssis.PackageTask_Sql_Parameter_src-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2416,672.8817,2421.1718,669.4548,2416.6711,673.9554,2413.2442,664.5,2416" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b79064fe2283d58823b90594d62d28f2]
+reverse link ssis.Package_src to ssis.PackageTask_Sql_Parameter_src--><path codeLine="371" d="M669.6,2429.69 C767.28,2456.97 691.38,3279.25 731,3375 C749.67,3420.12 754.17,3458 803,3458 " fill="none" id="ssis.Package_src-backto-ssis.PackageTask_Sql_Parameter_src-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2429,672.8817,2434.1718,669.4548,2429.6711,673.9554,2426.2442,664.5,2429" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[795b1280265c0f95d78d776529fccb32]
+reverse link ssis.Package_src to ssis.PackageTask_src--><path codeLine="335" d="M526.27,2358.96 C549.29,1901.84 628.78,472.38 731,293 C749.97,259.7 779.41,231.61 810.34,208.91 " fill="none" id="ssis.Package_src-backto-ssis.PackageTask_src" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="526.02,2363.96,530.477,2355.1773,526.2768,2358.9666,522.4875,2354.7664,526.02,2363.96" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[795b1280265c0f95d78d776529fccb32]
+reverse link ssis.Package_src to ssis.PackageTask_src--><path codeLine="349" d="M668.55,2412.65 C723.34,2320.3 720.07,349.57 731,293 C752.37,182.42 705.38,55 818,55 " fill="none" id="ssis.Package_src-backto-ssis.PackageTask_src-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2416,673.9806,2413.332,668.3481,2412.8075,668.8726,2407.175,664.5,2416" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[795b1280265c0f95d78d776529fccb32]
+reverse link ssis.Package_src to ssis.PackageTask_src--><path codeLine="367" d="M668.57,2425.63 C723.65,2332.71 719.48,349.81 731,293 C752.3,187.92 710.78,68 818,68 " fill="none" id="ssis.Package_src-backto-ssis.PackageTask_src-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2429,673.9806,2426.332,668.3481,2425.8075,668.8726,2420.175,664.5,2429" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[a37ba68e95d165c4946a03e7478280f3]
+reverse link ssis.Package_src to ssis.PackageVariable_src--><path codeLine="336" d="M526.13,2358.89 C547.7,1926.45 620.89,632.64 731,481 C756.21,446.28 797.21,424.16 836.39,410.18 " fill="none" id="ssis.Package_src-backto-ssis.PackageVariable_src" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="525.88,2363.94,530.337,2355.1573,526.1368,2358.9466,522.3475,2354.7464,525.88,2363.94" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[a37ba68e95d165c4946a03e7478280f3]
+reverse link ssis.Package_src to ssis.PackageVariable_src--><path codeLine="350" d="M669.4,2414.67 C769.5,2359.05 689.86,578.56 731,481 C759.21,414.09 771.39,363 844,363 " fill="none" id="ssis.Package_src-backto-ssis.PackageVariable_src-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2416,674.2304,2417.5227,669.3281,2414.7001,672.1506,2409.7978,664.5,2416" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[a37ba68e95d165c4946a03e7478280f3]
+reverse link ssis.Package_src to ssis.PackageVariable_src--><path codeLine="368" d="M669.43,2427.66 C770.11,2371.63 686.75,577.97 731,481 C759.46,418.63 775.44,376 844,376 " fill="none" id="ssis.Package_src-backto-ssis.PackageVariable_src-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2429,674.2304,2430.5227,669.3281,2427.7001,672.1506,2422.7978,664.5,2429" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[f69ad8e086bea0cf45474d4106584c31]
+reverse link ssis.Package_src to ssis.usp_PERSIST_Package_tgt--><path codeLine="337" d="M528.61,2639.39 C548.31,2897.76 603.76,3433.98 731,3563 C760,3592.4 803.15,3604.83 842.89,3609.44 " fill="none" id="ssis.Package_src-backto-ssis.usp_PERSIST_Package_tgt" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="528.21,2634.1,524.9161,2643.3817,528.5957,2639.0851,532.8923,2642.7647,528.21,2634.1" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[80fd31089122348b2585ee19be569212]
+reverse link ssis.Package_src to ssis.AntoraModule_tgt_filter--><path codeLine="338" d="M525.98,2358.5 C546.52,1940.3 615.69,724.32 731,591 C760.41,557 807.93,542.71 850.44,537.16 " fill="none" id="ssis.Package_src-backto-ssis.AntoraModule_tgt_filter" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="525.73,2363.69,530.1631,2354.8953,525.9733,2358.6959,522.1726,2354.506,525.73,2363.69" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[80fd31089122348b2585ee19be569212]
+reverse link ssis.Package_src to ssis.AntoraModule_tgt_filter--><path codeLine="345" d="M669.39,2414.57 C762.79,2358.54 670.25,670.15 731,591 C766.95,544.16 798.95,552 858,552 " fill="none" id="ssis.Package_src-backto-ssis.AntoraModule_tgt_filter-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2416,674.26,2417.32,669.3,2414.6,672.02,2409.64,664.5,2416" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d7be6236321a2b606cb1725c3b38f8e8]
+reverse link ssis.Package_src to ssis.Package_tgt--><path codeLine="339" d="M532.39,2639.13 C559.17,2908.05 627.13,3484.77 731,3653 C746.48,3678.08 767.48,3700.58 790.26,3720.22 " fill="none" id="ssis.Package_src-backto-ssis.Package_tgt" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="531.88,2634.02,528.8007,2643.3751,532.3803,2638.9949,536.7606,2642.5745,531.88,2634.02" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d7be6236321a2b606cb1725c3b38f8e8]
+reverse link ssis.Package_src to ssis.Package_tgt--><path codeLine="344" d="M669.18,2417.91 C731.96,2470.41 704.3,3591.32 731,3653 C748.11,3692.52 754.93,3723 798,3723 " fill="none" id="ssis.Package_src-backto-ssis.Package_tgt-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2416,671.3333,2423.0927,669.1325,2417.8815,674.3437,2415.6807,664.5,2416" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d7be6236321a2b606cb1725c3b38f8e8]
+reverse link ssis.Package_src to ssis.Package_tgt--><path codeLine="358" d="M669.46,2444.18 C730.75,2499.56 709.59,3590.92 731,3653 C747.96,3702.19 745.97,3749 798,3749 " fill="none" id="ssis.Package_src-backto-ssis.Package_tgt-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2442,671.1314,2449.2818,669.0778,2444.0108,674.3488,2441.9572,664.5,2442" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d7be6236321a2b606cb1725c3b38f8e8]
+reverse link ssis.Package_src to ssis.Package_tgt--><path codeLine="359" d="M669.41,2457.16 C730.16,2511.92 711.6,3591 731,3653 C747.98,3707.27 741.14,3762 798,3762 " fill="none" id="ssis.Package_src-backto-ssis.Package_tgt-3" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2455,671.1231,2462.2894,669.0755,2457.0161,674.3488,2454.9685,664.5,2455" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d7be6236321a2b606cb1725c3b38f8e8]
+reverse link ssis.Package_src to ssis.Package_tgt--><path codeLine="360" d="M669.36,2470.13 C729.57,2524.27 713.29,3591.22 731,3653 C748.04,3712.47 736.14,3775 798,3775 " fill="none" id="ssis.Package_src-backto-ssis.Package_tgt-4" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2468,671.1421,2475.272,669.0808,2470.0041,674.3487,2467.9427,664.5,2468" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d7be6236321a2b606cb1725c3b38f8e8]
+reverse link ssis.Package_src to ssis.Package_tgt--><path codeLine="361" d="M669.31,2483.11 C728.95,2536.64 714.74,3591.55 731,3653 C748.13,3717.75 731.02,3788 798,3788 " fill="none" id="ssis.Package_src-backto-ssis.Package_tgt-5" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2481,671.1505,2488.2644,669.0831,2482.9988,674.3486,2480.9315,664.5,2481" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d7be6236321a2b606cb1725c3b38f8e8]
+reverse link ssis.Package_src to ssis.Package_tgt--><path codeLine="362" d="M669.26,2496.09 C728.33,2549.01 715.99,3591.96 731,3653 C748.25,3723.11 725.8,3801 798,3801 " fill="none" id="ssis.Package_src-backto-ssis.Package_tgt-6" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2494,671.1505,2501.2644,669.0831,2495.9988,674.3486,2493.9315,664.5,2494" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d7be6236321a2b606cb1725c3b38f8e8]
+reverse link ssis.Package_src to ssis.Package_tgt--><path codeLine="363" d="M669.21,2510.06 C727.65,2562.33 717.14,3592.47 731,3653 C748.39,3728.95 720.09,3815 798,3815 " fill="none" id="ssis.Package_src-backto-ssis.Package_tgt-7" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2508,671.1505,2515.2644,669.0831,2509.9988,674.3486,2507.9315,664.5,2508" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d7be6236321a2b606cb1725c3b38f8e8]
+reverse link ssis.Package_src to ssis.Package_tgt--><path codeLine="364" d="M669.16,2523.04 C727.02,2574.71 718.07,3592.98 731,3653 C748.54,3734.42 714.72,3828 798,3828 " fill="none" id="ssis.Package_src-backto-ssis.Package_tgt-8" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2521,671.1505,2528.2644,669.0831,2522.9988,674.3486,2520.9315,664.5,2521" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d7be6236321a2b606cb1725c3b38f8e8]
+reverse link ssis.Package_src to ssis.Package_tgt--><path codeLine="365" d="M669.14,2430.88 C731.41,2482.79 707.16,3590.92 731,3653 C748,3697.26 750.59,3736 798,3736 " fill="none" id="ssis.Package_src-backto-ssis.Package_tgt-9" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2429,671.3256,2436.1,669.1305,2430.8865,674.344,2428.6913,664.5,2429" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d7be6236321a2b606cb1725c3b38f8e8]
+reverse link ssis.Package_src to ssis.Package_tgt--><path codeLine="379" d="M669.11,2536.01 C726.37,2587.08 718.89,3593.53 731,3653 C748.7,3739.92 709.3,3841 798,3841 " fill="none" id="ssis.Package_src-backto-ssis.Package_tgt-10" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2534,671.1421,2541.272,669.0808,2536.0041,674.3487,2533.9427,664.5,2534" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d7be6236321a2b606cb1725c3b38f8e8]
+reverse link ssis.Package_src to ssis.Package_tgt--><path codeLine="380" d="M669.4,2549.3 C725.7,2603.44 719.64,3594.22 731,3653 C748.87,3745.45 703.83,3854 798,3854 " fill="none" id="ssis.Package_src-backto-ssis.Package_tgt-11" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2547,670.9436,2554.4485,669.0251,2549.1269,674.3467,2547.2084,664.5,2547" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d7be6236321a2b606cb1725c3b38f8e8]
+reverse link ssis.Package_src to ssis.Package_tgt--><path codeLine="381" d="M669.34,2562.28 C725.05,2615.77 720.28,3594.81 731,3653 C749.05,3751.02 698.34,3867 798,3867 " fill="none" id="ssis.Package_src-backto-ssis.Package_tgt-12" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2560,670.9436,2567.4485,669.0251,2562.1269,674.3467,2560.2084,664.5,2560" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d7be6236321a2b606cb1725c3b38f8e8]
+reverse link ssis.Package_src to ssis.Package_tgt--><path codeLine="382" d="M669.29,2575.25 C724.4,2628.11 720.86,3595.42 731,3653 C749.24,3756.6 692.81,3880 798,3880 " fill="none" id="ssis.Package_src-backto-ssis.Package_tgt-13" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2573,670.9436,2580.4485,669.0251,2575.1269,674.3467,2573.2084,664.5,2573" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d7be6236321a2b606cb1725c3b38f8e8]
+reverse link ssis.Package_src to ssis.Package_tgt--><path codeLine="383" d="M669.23,2588.22 C723.75,2640.44 721.38,3596.04 731,3653 C749.43,3762.2 687.25,3893 798,3893 " fill="none" id="ssis.Package_src-backto-ssis.Package_tgt-14" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2586,670.9436,2593.4485,669.0251,2588.1269,674.3467,2586.2084,664.5,2586" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d7be6236321a2b606cb1725c3b38f8e8]
+reverse link ssis.Package_src to ssis.Package_tgt--><path codeLine="384" d="M669.18,2601.19 C723.11,2652.77 722.2,3596.62 731,3653 C749.81,3773.46 676.09,3919 798,3919 " fill="none" id="ssis.Package_src-backto-ssis.Package_tgt-15" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2599,670.9436,2606.4485,669.0251,2601.1269,674.3467,2599.2084,664.5,2599" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d7be6236321a2b606cb1725c3b38f8e8]
+reverse link ssis.Package_src to ssis.Package_tgt--><path codeLine="385" d="M669.12,2614.17 C722.45,2665.1 722.59,3597.26 731,3653 C750.02,3779.1 670.47,3932 798,3932 " fill="none" id="ssis.Package_src-backto-ssis.Package_tgt-16" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2612,670.9436,2619.4485,669.0251,2614.1269,674.3467,2612.2084,664.5,2612" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[4824fa9c9b90de6781c4828975fe1ce2]
+reverse link ssis.Package_src to ssis.PackageTask_Dft_Component_input_externalMetadataColumn_src--><path codeLine="340" d="M520.93,2358.76 C529.14,2161.63 567.49,1798.18 731,1543 C734.78,1537.1 738.86,1531.33 743.19,1525.7 " fill="none" id="ssis.Package_src-backto-ssis.PackageTask_Dft_Component_input_externalMetadataColumn_src" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="520.72,2363.97,525.0775,2355.1376,520.9204,2358.974,517.084,2354.8169,520.72,2363.97" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[4824fa9c9b90de6781c4828975fe1ce2]
+reverse link ssis.Package_src to ssis.PackageTask_Dft_Component_input_externalMetadataColumn_src--><path codeLine="357" d="M669.46,2415.38 C784.87,2385.5 617.64,1293 741,1293 " fill="none" id="ssis.Package_src-backto-ssis.PackageTask_Dft_Component_input_externalMetadataColumn_src-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2416,673.9317,2418.8361,669.4603,2415.371,672.9253,2410.8996,664.5,2416" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[4824fa9c9b90de6781c4828975fe1ce2]
+reverse link ssis.Package_src to ssis.PackageTask_Dft_Component_input_externalMetadataColumn_src--><path codeLine="373" d="M669.46,2428.38 C784.87,2398.5 617.64,1306 741,1306 " fill="none" id="ssis.Package_src-backto-ssis.PackageTask_Dft_Component_input_externalMetadataColumn_src-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="664.5,2429,673.9317,2431.8361,669.4603,2428.371,672.9253,2423.8996,664.5,2429" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b38ce46883bcbb8d5f3168aa27dcbca8]
+reverse link ssis.Project to ssis.Package_src--><path codeLine="341" d="M254.7,2333.19 C272.04,2341.28 289.73,2350.04 306,2359 C325.77,2369.88 346.1,2382.02 365.97,2394.48 " fill="none" id="ssis.Project-backto-ssis.Package_src" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="249.81,2330.93,256.2818,2338.354,254.3431,2333.0397,259.6574,2331.1011,249.81,2330.93" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b38ce46883bcbb8d5f3168aa27dcbca8]
+reverse link ssis.Project to ssis.Package_src--><path codeLine="386" d="M247.92,2294.2 C320.8,2299.65 295.8,2416 373.5,2416 " fill="none" id="ssis.Project-backto-ssis.Package_src-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="242.5,2294,251.3453,2298.3313,247.4966,2294.1856,251.6423,2290.3368,242.5,2294" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[287727105c86c19bdd20f181af099caa]
+reverse link ssis_t.pkgStats to ssis.Package_src--><path codeLine="342" d="M311.18,2506.39 C329.28,2505.74 347.72,2505.08 365.76,2504.43 " fill="none" id="ssis_t.pkgStats-backto-ssis.Package_src" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="306.08,2506.57,315.2223,2510.2332,311.0766,2506.3844,314.9253,2502.2387,306.08,2506.57" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[287727105c86c19bdd20f181af099caa]
+reverse link ssis_t.pkgStats to ssis.Package_src--><path codeLine="387" d="M304.68,2442 C333.36,2442 342.41,2442 373.5,2442 " fill="none" id="ssis_t.pkgStats-backto-ssis.Package_src-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="299.5,2442,308.5,2446,304.5,2442,308.5,2438,299.5,2442" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[287727105c86c19bdd20f181af099caa]
+reverse link ssis_t.pkgStats to ssis.Package_src--><path codeLine="388" d="M304.68,2455 C333.36,2455 342.41,2455 373.5,2455 " fill="none" id="ssis_t.pkgStats-backto-ssis.Package_src-2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="299.5,2455,308.5,2459,304.5,2455,308.5,2451,299.5,2455" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[287727105c86c19bdd20f181af099caa]
+reverse link ssis_t.pkgStats to ssis.Package_src--><path codeLine="389" d="M304.68,2468 C333.36,2468 342.41,2468 373.5,2468 " fill="none" id="ssis_t.pkgStats-backto-ssis.Package_src-3" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="299.5,2468,308.5,2472,304.5,2468,308.5,2464,299.5,2468" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[287727105c86c19bdd20f181af099caa]
+reverse link ssis_t.pkgStats to ssis.Package_src--><path codeLine="390" d="M304.68,2481 C333.36,2481 342.41,2481 373.5,2481 " fill="none" id="ssis_t.pkgStats-backto-ssis.Package_src-4" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="299.5,2481,308.5,2485,304.5,2481,308.5,2477,299.5,2481" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[287727105c86c19bdd20f181af099caa]
+reverse link ssis_t.pkgStats to ssis.Package_src--><path codeLine="391" d="M304.68,2494 C333.36,2494 342.41,2494 373.5,2494 " fill="none" id="ssis_t.pkgStats-backto-ssis.Package_src-5" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="299.5,2494,308.5,2498,304.5,2494,308.5,2490,299.5,2494" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[287727105c86c19bdd20f181af099caa]
+reverse link ssis_t.pkgStats to ssis.Package_src--><path codeLine="392" d="M304.68,2507.01 C333.36,2507.11 342.41,2508 373.5,2508 " fill="none" id="ssis_t.pkgStats-backto-ssis.Package_src-6" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="299.5,2507,308.5,2511,304.5,2507,308.5,2503,299.5,2507" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[287727105c86c19bdd20f181af099caa]
+reverse link ssis_t.pkgStats to ssis.Package_src--><path codeLine="393" d="M304.68,2521 C333.36,2521 342.41,2521 373.5,2521 " fill="none" id="ssis_t.pkgStats-backto-ssis.Package_src-7" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="299.5,2521,308.5,2525,304.5,2521,308.5,2517,299.5,2521" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[287727105c86c19bdd20f181af099caa]
+reverse link ssis_t.pkgStats to ssis.Package_src--><path codeLine="394" d="M304.9,2611.75 C382.96,2604.22 287.65,2429 373.5,2429 " fill="none" id="ssis_t.pkgStats-backto-ssis.Package_src-8" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="299.5,2612,308.6835,2615.5587,304.4941,2611.7574,308.2953,2607.5681,299.5,2612" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[287727105c86c19bdd20f181af099caa]
+reverse link ssis_t.pkgStats to ssis.Package_src--><path codeLine="395" d="M304.68,2534 C333.36,2534 342.41,2534 373.5,2534 " fill="none" id="ssis_t.pkgStats-backto-ssis.Package_src-9" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="299.5,2534,308.5,2538,304.5,2534,308.5,2530,299.5,2534" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[287727105c86c19bdd20f181af099caa]
+reverse link ssis_t.pkgStats to ssis.Package_src--><path codeLine="396" d="M304.68,2547 C333.36,2547 342.41,2547 373.5,2547 " fill="none" id="ssis_t.pkgStats-backto-ssis.Package_src-10" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="299.5,2547,308.5,2551,304.5,2547,308.5,2543,299.5,2547" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[287727105c86c19bdd20f181af099caa]
+reverse link ssis_t.pkgStats to ssis.Package_src--><path codeLine="397" d="M304.68,2560 C333.36,2560 342.41,2560 373.5,2560 " fill="none" id="ssis_t.pkgStats-backto-ssis.Package_src-11" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="299.5,2560,308.5,2564,304.5,2560,308.5,2556,299.5,2560" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[287727105c86c19bdd20f181af099caa]
+reverse link ssis_t.pkgStats to ssis.Package_src--><path codeLine="398" d="M304.86,2624.67 C339.2,2620.24 335.19,2573 373.5,2573 " fill="none" id="ssis_t.pkgStats-backto-ssis.Package_src-12" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="299.5,2625,308.7332,2628.4275,304.4902,2624.6863,308.2313,2620.4433,299.5,2625" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[287727105c86c19bdd20f181af099caa]
+reverse link ssis_t.pkgStats to ssis.Package_src--><path codeLine="399" d="M304.75,2573.11 C333.76,2574.38 341.93,2586 373.5,2586 " fill="none" id="ssis_t.pkgStats-backto-ssis.Package_src-13" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="299.5,2573,308.4062,2577.2046,304.4987,2573.1143,308.5891,2569.2067,299.5,2573" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[287727105c86c19bdd20f181af099caa]
+reverse link ssis_t.pkgStats to ssis.Package_src--><path codeLine="400" d="M304.68,2599 C333.36,2599 342.41,2599 373.5,2599 " fill="none" id="ssis_t.pkgStats-backto-ssis.Package_src-14" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="299.5,2599,308.5,2603,304.5,2599,308.5,2595,299.5,2599" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[287727105c86c19bdd20f181af099caa]
+reverse link ssis_t.pkgStats to ssis.Package_src--><path codeLine="401" d="M304.9,2429.25 C382.96,2436.78 287.65,2612 373.5,2612 " fill="none" id="ssis_t.pkgStats-backto-ssis.Package_src-15" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="299.5,2429,308.2953,2433.4319,304.4941,2429.2426,308.6835,2425.4413,299.5,2429" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="191" x="478.5" y="3976.6985">The diagram is interactive and contains links.</text><!--MD5=[5cc04edc45ed3b51b54d68fbc4adcf05]
+@startuml
+left to right direction
+'top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>>  Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>>  White
+  BackgroundColor<<V>>  WhiteSmoke
+  BackgroundColor<<X>>  Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../ssis.antoramodule_tgt_filter.html ssis.AntoraModule_tgt_filter - V]]" as ssis.AntoraModule_tgt_filter << V >> {
+  - AntoraModule : (varchar(50))
+  - -
+}
+
+entity "[[../ssis.package_src.html ssis.Package_src - V]]" as ssis.Package_src << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  PackageCreationDate : (datetime)
+  PackageCreatorComputerName : (nvarchar(500))
+  PackageCreatorName : (varchar(1000))
+  PackageDescription : (nvarchar(max))
+  PackageDTSID : (uniqueidentifier)
+  PackageLastModifiedProductVersion : (nvarchar(500))
+  PackageLocaleID : (int)
+  PackageObjectName : (nvarchar(500))
+  - PackagePath : (varchar(8000))
+  PackageProtectionLevel : (varchar(100))
+  PackageProtectionLevelName : (varchar(28))
+  PackageVersionGUID : (uniqueidentifier)
+  - ProjectPath : (varchar(8000))
+  - RowID : (int)
+  - -
+}
+
+entity "[[../ssis.package_tgt.html ssis.Package_tgt - V]]" as ssis.Package_tgt << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  PackageCreationDate : (datetime)
+  PackageCreatorComputerName : (nvarchar(500))
+  PackageCreatorName : (varchar(1000))
+  PackageDescription : (nvarchar(max))
+  PackageDTSID : (uniqueidentifier)
+  PackageLastModifiedProductVersion : (nvarchar(500))
+  PackageLocaleID : (int)
+  PackageObjectName : (nvarchar(500))
+  - PackagePath : (varchar(8000))
+  PackageProtectionLevel : (varchar(100))
+  PackageProtectionLevelName : (varchar(28))
+  PackageVersionGUID : (uniqueidentifier)
+  - PackageXML : (xml)
+  - ProjectPath : (varchar(8000))
+  - RowID : (int)
+  - -
+}
+
+entity "[[../ssis.packageconnection_src.html ssis.PackageConnection_src - V]]" as ssis.PackageConnection_src << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  **ConnectionManagerID** : (uniqueidentifier)
+  ConnectionManagerName : (varchar(max))
+  ConnectionManagerType : (varchar(max))
+  ConnectionString : (varchar(max))
+  ExpressionValue : (varchar(max))
+  RetainSameConnectionProperty : (nvarchar(max))
+  - -
+}
+
+entity "[[../ssis.packageflow_src.html ssis.PackageFlow_src - V]]" as ssis.PackageFlow_src << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  **TaskFrom** : (varchar(2000))
+  **Taskto** : (varchar(2000))
+  CreationName : (nvarchar(max))
+  DTSID : (uniqueidentifier)
+  EvalOp : (int)
+  Expression : (nvarchar(max))
+  FlowType : (varchar(1000))
+  LogicalAnd : (bit)
+  ObjectName : (nvarchar(max))
+  - -
+}
+
+entity "[[../ssis.packageparameter_src.html ssis.PackageParameter_src - V]]" as ssis.PackageParameter_src << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  **ParameterName** : (varchar(500))
+  ExpressionValue : (varchar(5000))
+  ParameterDataType : (varchar(max))
+  ParameterHexValue : (varchar(1000))
+  ParameterValue : (varchar(max))
+  - -
+}
+
+entity "[[../ssis.packagetask_dft_component_input_externalmetadatacolumn_src.html ssis.PackageTask_Dft_Component_input_externalMetadataColumn_src - V]]" as ssis.PackageTask_Dft_Component_input_externalMetadataColumn_src << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  **Column_refId** : (varchar(max))
+  Column_dataType : (varchar(100))
+  Column_length : (int)
+  Column_name : (varchar(max))
+  Column_precision : (int)
+  Column_scale : (int)
+  Component_refId : (varchar(max))
+  - ControlFlowDetailsRowID : (int)
+  externalMetadataColumns_isused : (bit)
+  input_errorOrTruncationOperation : (varchar(100))
+  input_errorRowDisposition : (varchar(100))
+  input_hasSideEffects : (bit)
+  input_name : (varchar(500))
+  input_refId : (varchar(max))
+  TaskPath : (varchar(8000))
+  - -
+}
+
+entity "[[../ssis.packagetask_dft_component_input_inputcolumn_src.html ssis.PackageTask_Dft_Component_input_inputColumn_src - V]]" as ssis.PackageTask_Dft_Component_input_inputColumn_src << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  **Column_refId** : (varchar(max))
+  Column_cachedDataType : (varchar(100))
+  Column_cachedName : (varchar(max))
+  Column_externalMetadataColumnId : (varchar(max))
+  Column_lineageId : (varchar(max))
+  Component_refId : (varchar(max))
+  - ControlFlowDetailsRowID : (int)
+  input_errorOrTruncationOperation : (varchar(100))
+  input_errorRowDisposition : (varchar(100))
+  input_hasSideEffects : (bit)
+  input_name : (varchar(500))
+  input_refId : (varchar(max))
+  TaskPath : (varchar(8000))
+  - -
+}
+
+entity "[[../ssis.packagetask_dft_component_input_src.html ssis.PackageTask_Dft_Component_input_src - V]]" as ssis.PackageTask_Dft_Component_input_src << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  **input_refId** : (varchar(max))
+  Component_refId : (varchar(max))
+  - ControlFlowDetailsRowID : (int)
+  input_errorOrTruncationOperation : (varchar(100))
+  input_errorRowDisposition : (varchar(100))
+  input_hasSideEffects : (bit)
+  input_name : (varchar(500))
+  TaskPath : (varchar(8000))
+  - -
+}
+
+entity "[[../ssis.packagetask_dft_component_output_externalmetadatacolumn_src.html ssis.PackageTask_Dft_Component_output_externalMetadataColumn_src - V]]" as ssis.PackageTask_Dft_Component_output_externalMetadataColumn_src << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  **Column_refId** : (varchar(max))
+  Column_dataType : (varchar(100))
+  Column_length : (int)
+  Column_name : (varchar(max))
+  Column_precision : (int)
+  Column_scale : (int)
+  Component_refId : (varchar(max))
+  - ControlFlowDetailsRowID : (int)
+  externalMetadataColumns_isused : (bit)
+  output_name : (varchar(500))
+  output_refId : (varchar(max))
+  TaskPath : (varchar(8000))
+  - -
+}
+
+entity "[[../ssis.packagetask_dft_component_output_outputcolumn_src.html ssis.PackageTask_Dft_Component_output_outputcolumn_src - V]]" as ssis.PackageTask_Dft_Component_output_outputcolumn_src << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  **Column_refId** : (varchar(max))
+  Column_dataType : (varchar(100))
+  Column_errorOrTruncationOperation : (varchar(100))
+  Column_errorRowDisposition : (varchar(100))
+  Column_externalMetadataColumnId : (varchar(max))
+  Column_length : (int)
+  Column_lineageId : (varchar(max))
+  Column_name : (varchar(max))
+  Column_precision : (int)
+  Column_scale : (int)
+  Column_truncationRowDisposition : (varchar(max))
+  Component_refId : (varchar(max))
+  - ControlFlowDetailsRowID : (int)
+  output_isErrorOut : (bit)
+  output_name : (varchar(500))
+  output_refId : (varchar(max))
+  TaskPath : (varchar(8000))
+  - -
+}
+
+entity "[[../ssis.packagetask_dft_component_output_src.html ssis.PackageTask_Dft_Component_output_src - V]]" as ssis.PackageTask_Dft_Component_output_src << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  **output_refId** : (varchar(max))
+  Component_refId : (varchar(max))
+  - ControlFlowDetailsRowID : (int)
+  output_isErrorOut : (bit)
+  output_name : (varchar(500))
+  TaskPath : (varchar(8000))
+  - -
+}
+
+entity "[[../ssis.packagetask_dft_component_src.html ssis.PackageTask_Dft_Component_src - V]]" as ssis.PackageTask_Dft_Component_src << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  **Component_refId** : (varchar(max))
+  Component_AccessMode : (varchar(max))
+  Component_AlwaysUseDefaultCodePage : (varchar(max))
+  Component_CommandTimeout : (int)
+  Component_componentClassID : (varchar(max))
+  Component_Connection_description : (varchar(max))
+  Component_Connection_name : (varchar(max))
+  Component_Connection_refId : (varchar(max))
+  Component_connectionManagerID : (varchar(max))
+  Component_connectionManagerRefId : (varchar(max))
+  Component_ContactInfo : (varchar(max))
+  Component_DefaultCodePage : (int)
+  Component_description : (varchar(max))
+  Component_FastLoadKeepIdentity : (bit)
+  Component_FastLoadKeepNulls : (bit)
+  Component_FastLoadMaxInsertCommitSize : (int)
+  Component_FastLoadOptions : (varchar(max))
+  Component_IsSortedProperty : (varchar(10))
+  Component_name : (varchar(max))
+  Component_OpenRowset : (varchar(max))
+  Component_OpenRowsetVariable : (varchar(max))
+  Component_ParameterMapping : (varchar(max))
+  Component_SqlCommand : (varchar(max))
+  Component_SqlCommandVariable : (varchar(max))
+  Component_VariableName : (varchar(max))
+  - ControlFlowDetailsRowID : (int)
+  TaskPath : (varchar(8000))
+  - -
+}
+
+entity "[[../ssis.packagetask_sql_parameter_src.html ssis.PackageTask_Sql_Parameter_src - V]]" as ssis.PackageTask_Sql_Parameter_src << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  **TaskPath** : (varchar(8000))
+  **ParameterBindingSequence** : (varchar(1000))
+  - ControlFlowDetailsRowID : (int)
+  ParameterBindingParameterName : (varchar(1000))
+  ResultSetParameterName : (varchar(1000))
+  - -
+}
+
+entity "[[../ssis.packagetask_src.html ssis.PackageTask_src - V]]" as ssis.PackageTask_src << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  **TaskPath** : (varchar(8000))
+  - ControlFlowDetailsRowID : (int)
+  DelayValidationPropertyValue : (varchar(100))
+  ExecutedPackageName : (varchar(1000))
+  ExecutePackageConnection : (varchar(1000))
+  ExecutePackageExpression : (varchar(1000))
+  ExpressionValue : (varchar(5000))
+  IsDisabled : (varchar(10))
+  Script : (varchar(max))
+  SqlConnection : (uniqueidentifier)
+  SqlStatementSource : (nvarchar(max))
+  TaskDescription : (varchar(max))
+  TaskName : (varchar(2000))
+  TaskType : (varchar(5000))
+  - -
+}
+
+entity "[[../ssis.packagevariable_src.html ssis.PackageVariable_src - V]]" as ssis.PackageVariable_src << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  **VariableName** : (varchar(500))
+  ExpressionValue : (varchar(5000))
+  VariableDataType : (varchar(max))
+  VariableHexValue : (varchar(1000))
+  VariableValue : (varchar(max))
+  - -
+}
+
+entity "[[../ssis.project.html ssis.Project - U]]" as ssis.Project << U >> {
+  - **AntoraModule** : (varchar(50))
+  ProjectPath : (varchar(8000))
+  ~ sql_import : (varchar(8000))
+  - -
+}
+
+entity "[[../ssis.usp_persist_package_tgt.html ssis.usp_PERSIST_Package_tgt - P]]" as ssis.usp_PERSIST_Package_tgt << P >> {
+  - -
+}
+
+entity "[[../ssis_t.pkgstats.html ssis_t.pkgStats - U]]" as ssis_t.pkgStats << U >> {
+  - **RowID** : (int)
+  PackageCreationDate : (datetime)
+  PackageCreatorComputerName : (nvarchar(500))
+  PackageCreatorName : (varchar(1000))
+  PackageDescription : (nvarchar(max))
+  PackageDTSID : (uniqueidentifier)
+  PackageLastModifiedProductVersion : (nvarchar(500))
+  PackageLocaleID : (int)
+  PackageObjectName : (nvarchar(500))
+  - PackagePath : (varchar(8000))
+  PackageProtectionLevel : (varchar(100))
+  PackageVersionGUID : (uniqueidentifier)
+  - PackageXML : (xml)
+  - ProjectPath : (varchar(8000))
+  # PackageName : (varchar(200))
+  ~ PackageProtectionLevelName : (varchar(28))
+  - -
+}
+
+ssis.Package_src <.. ssis.PackageTask_Dft_Component_output_externalMetadataColumn_src
+ssis.Package_src <.. ssis.PackageTask_Dft_Component_input_inputColumn_src
+ssis.Package_src <.. ssis.PackageTask_Dft_Component_src
+ssis.Package_src <.. ssis.PackageTask_Dft_Component_input_src
+ssis.Package_src <.. ssis.PackageTask_Dft_Component_output_src
+ssis.Package_src <.. ssis.PackageTask_Dft_Component_output_outputcolumn_src
+ssis.Package_src <.. ssis.PackageConnection_src
+ssis.Package_src <.. ssis.PackageFlow_src
+ssis.Package_src <.. ssis.PackageParameter_src
+ssis.Package_src <.. ssis.PackageTask_Sql_Parameter_src
+ssis.Package_src <.. ssis.PackageTask_src
+ssis.Package_src <.. ssis.PackageVariable_src
+ssis.Package_src <.. ssis.usp_PERSIST_Package_tgt
+ssis.Package_src <.. ssis.AntoraModule_tgt_filter
+ssis.Package_src <.. ssis.Package_tgt
+ssis.Package_src <.. ssis.PackageTask_Dft_Component_input_externalMetadataColumn_src
+ssis.Project <.. ssis.Package_src
+ssis_t.pkgStats <.. ssis.Package_src
+"ssis.Package_src::AntoraModule" <- - "ssis.PackageConnection_src::AntoraModule"
+"ssis.Package_src::AntoraModule" <- - "ssis.Package_tgt::AntoraModule"
+"ssis.Package_src::AntoraModule" <- - "ssis.AntoraModule_tgt_filter::AntoraModule"
+"ssis.Package_src::AntoraModule" <- - "ssis.PackageTask_Dft_Component_src::AntoraModule"
+"ssis.Package_src::AntoraModule" <- - "ssis.PackageParameter_src::AntoraModule"
+"ssis.Package_src::AntoraModule" <- - "ssis.PackageTask_Sql_Parameter_src::AntoraModule"
+"ssis.Package_src::AntoraModule" <- - "ssis.PackageTask_src::AntoraModule"
+"ssis.Package_src::AntoraModule" <- - "ssis.PackageVariable_src::AntoraModule"
+"ssis.Package_src::AntoraModule" <- - "ssis.PackageFlow_src::AntoraModule"
+"ssis.Package_src::AntoraModule" <- - "ssis.PackageTask_Dft_Component_input_src::AntoraModule"
+"ssis.Package_src::AntoraModule" <- - "ssis.PackageTask_Dft_Component_output_src::AntoraModule"
+"ssis.Package_src::AntoraModule" <- - "ssis.PackageTask_Dft_Component_output_outputcolumn_src::AntoraModule"
+"ssis.Package_src::AntoraModule" <- - "ssis.PackageTask_Dft_Component_output_externalMetadataColumn_src::AntoraModule"
+"ssis.Package_src::AntoraModule" <- - "ssis.PackageTask_Dft_Component_input_inputColumn_src::AntoraModule"
+"ssis.Package_src::AntoraModule" <- - "ssis.PackageTask_Dft_Component_input_externalMetadataColumn_src::AntoraModule"
+"ssis.Package_src::PackageCreationDate" <- - "ssis.Package_tgt::PackageCreationDate"
+"ssis.Package_src::PackageCreatorComputerName" <- - "ssis.Package_tgt::PackageCreatorComputerName"
+"ssis.Package_src::PackageCreatorName" <- - "ssis.Package_tgt::PackageCreatorName"
+"ssis.Package_src::PackageDescription" <- - "ssis.Package_tgt::PackageDescription"
+"ssis.Package_src::PackageDTSID" <- - "ssis.Package_tgt::PackageDTSID"
+"ssis.Package_src::PackageLastModifiedProductVersion" <- - "ssis.Package_tgt::PackageLastModifiedProductVersion"
+"ssis.Package_src::PackageLocaleID" <- - "ssis.Package_tgt::PackageLocaleID"
+"ssis.Package_src::PackageName" <- - "ssis.Package_tgt::PackageName"
+"ssis.Package_src::PackageName" <- - "ssis.PackageConnection_src::PackageName"
+"ssis.Package_src::PackageName" <- - "ssis.PackageTask_src::PackageName"
+"ssis.Package_src::PackageName" <- - "ssis.PackageVariable_src::PackageName"
+"ssis.Package_src::PackageName" <- - "ssis.PackageFlow_src::PackageName"
+"ssis.Package_src::PackageName" <- - "ssis.PackageParameter_src::PackageName"
+"ssis.Package_src::PackageName" <- - "ssis.PackageTask_Sql_Parameter_src::PackageName"
+"ssis.Package_src::PackageName" <- - "ssis.PackageTask_Dft_Component_src::PackageName"
+"ssis.Package_src::PackageName" <- - "ssis.PackageTask_Dft_Component_input_externalMetadataColumn_src::PackageName"
+"ssis.Package_src::PackageName" <- - "ssis.PackageTask_Dft_Component_input_inputColumn_src::PackageName"
+"ssis.Package_src::PackageName" <- - "ssis.PackageTask_Dft_Component_output_externalMetadataColumn_src::PackageName"
+"ssis.Package_src::PackageName" <- - "ssis.PackageTask_Dft_Component_output_outputcolumn_src::PackageName"
+"ssis.Package_src::PackageName" <- - "ssis.PackageTask_Dft_Component_output_src::PackageName"
+"ssis.Package_src::PackageName" <- - "ssis.PackageTask_Dft_Component_input_src::PackageName"
+"ssis.Package_src::PackageObjectName" <- - "ssis.Package_tgt::PackageObjectName"
+"ssis.Package_src::PackagePath" <- - "ssis.Package_tgt::PackagePath"
+"ssis.Package_src::PackageProtectionLevel" <- - "ssis.Package_tgt::PackageProtectionLevel"
+"ssis.Package_src::PackageProtectionLevelName" <- - "ssis.Package_tgt::PackageProtectionLevelName"
+"ssis.Package_src::PackageVersionGUID" <- - "ssis.Package_tgt::PackageVersionGUID"
+"ssis.Package_src::ProjectPath" <- - "ssis.Package_tgt::ProjectPath"
+"ssis.Package_src::RowID" <- - "ssis.Package_tgt::RowID"
+"ssis.Project::AntoraModule" <- - "ssis.Package_src::AntoraModule"
+"ssis_t.pkgStats::PackageCreationDate" <- - "ssis.Package_src::PackageCreationDate"
+"ssis_t.pkgStats::PackageCreatorComputerName" <- - "ssis.Package_src::PackageCreatorComputerName"
+"ssis_t.pkgStats::PackageCreatorName" <- - "ssis.Package_src::PackageCreatorName"
+"ssis_t.pkgStats::PackageDescription" <- - "ssis.Package_src::PackageDescription"
+"ssis_t.pkgStats::PackageDTSID" <- - "ssis.Package_src::PackageDTSID"
+"ssis_t.pkgStats::PackageLastModifiedProductVersion" <- - "ssis.Package_src::PackageLastModifiedProductVersion"
+"ssis_t.pkgStats::PackageLocaleID" <- - "ssis.Package_src::PackageLocaleID"
+"ssis_t.pkgStats::PackageName" <- - "ssis.Package_src::PackageName"
+"ssis_t.pkgStats::PackageObjectName" <- - "ssis.Package_src::PackageObjectName"
+"ssis_t.pkgStats::PackagePath" <- - "ssis.Package_src::PackagePath"
+"ssis_t.pkgStats::PackageProtectionLevel" <- - "ssis.Package_src::PackageProtectionLevel"
+"ssis_t.pkgStats::PackageProtectionLevelName" <- - "ssis.Package_src::PackageProtectionLevelName"
+"ssis_t.pkgStats::PackageVersionGUID" <- - "ssis.Package_src::PackageVersionGUID"
+"ssis_t.pkgStats::ProjectPath" <- - "ssis.Package_src::ProjectPath"
+"ssis_t.pkgStats::RowID" <- - "ssis.Package_src::RowID"
+
+footer The diagram is interactive and contains links.
+@enduml
+
+@startuml
+left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>>  Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>>  White
+  BackgroundColor<<V>>  WhiteSmoke
+  BackgroundColor<<X>>  Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../ssis.antoramodule_tgt_filter.html ssis.AntoraModule_tgt_filter - V]]" as ssis.AntoraModule_tgt_filter << V >> {
+  - AntoraModule : (varchar(50))
+  - -
+}
+
+entity "[[../ssis.package_src.html ssis.Package_src - V]]" as ssis.Package_src << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  PackageCreationDate : (datetime)
+  PackageCreatorComputerName : (nvarchar(500))
+  PackageCreatorName : (varchar(1000))
+  PackageDescription : (nvarchar(max))
+  PackageDTSID : (uniqueidentifier)
+  PackageLastModifiedProductVersion : (nvarchar(500))
+  PackageLocaleID : (int)
+  PackageObjectName : (nvarchar(500))
+  - PackagePath : (varchar(8000))
+  PackageProtectionLevel : (varchar(100))
+  PackageProtectionLevelName : (varchar(28))
+  PackageVersionGUID : (uniqueidentifier)
+  - ProjectPath : (varchar(8000))
+  - RowID : (int)
+  - -
+}
+
+entity "[[../ssis.package_tgt.html ssis.Package_tgt - V]]" as ssis.Package_tgt << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  PackageCreationDate : (datetime)
+  PackageCreatorComputerName : (nvarchar(500))
+  PackageCreatorName : (varchar(1000))
+  PackageDescription : (nvarchar(max))
+  PackageDTSID : (uniqueidentifier)
+  PackageLastModifiedProductVersion : (nvarchar(500))
+  PackageLocaleID : (int)
+  PackageObjectName : (nvarchar(500))
+  - PackagePath : (varchar(8000))
+  PackageProtectionLevel : (varchar(100))
+  PackageProtectionLevelName : (varchar(28))
+  PackageVersionGUID : (uniqueidentifier)
+  - PackageXML : (xml)
+  - ProjectPath : (varchar(8000))
+  - RowID : (int)
+  - -
+}
+
+entity "[[../ssis.packageconnection_src.html ssis.PackageConnection_src - V]]" as ssis.PackageConnection_src << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  **ConnectionManagerID** : (uniqueidentifier)
+  ConnectionManagerName : (varchar(max))
+  ConnectionManagerType : (varchar(max))
+  ConnectionString : (varchar(max))
+  ExpressionValue : (varchar(max))
+  RetainSameConnectionProperty : (nvarchar(max))
+  - -
+}
+
+entity "[[../ssis.packageflow_src.html ssis.PackageFlow_src - V]]" as ssis.PackageFlow_src << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  **TaskFrom** : (varchar(2000))
+  **Taskto** : (varchar(2000))
+  CreationName : (nvarchar(max))
+  DTSID : (uniqueidentifier)
+  EvalOp : (int)
+  Expression : (nvarchar(max))
+  FlowType : (varchar(1000))
+  LogicalAnd : (bit)
+  ObjectName : (nvarchar(max))
+  - -
+}
+
+entity "[[../ssis.packageparameter_src.html ssis.PackageParameter_src - V]]" as ssis.PackageParameter_src << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  **ParameterName** : (varchar(500))
+  ExpressionValue : (varchar(5000))
+  ParameterDataType : (varchar(max))
+  ParameterHexValue : (varchar(1000))
+  ParameterValue : (varchar(max))
+  - -
+}
+
+entity "[[../ssis.packagetask_dft_component_input_externalmetadatacolumn_src.html ssis.PackageTask_Dft_Component_input_externalMetadataColumn_src - V]]" as ssis.PackageTask_Dft_Component_input_externalMetadataColumn_src << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  **Column_refId** : (varchar(max))
+  Column_dataType : (varchar(100))
+  Column_length : (int)
+  Column_name : (varchar(max))
+  Column_precision : (int)
+  Column_scale : (int)
+  Component_refId : (varchar(max))
+  - ControlFlowDetailsRowID : (int)
+  externalMetadataColumns_isused : (bit)
+  input_errorOrTruncationOperation : (varchar(100))
+  input_errorRowDisposition : (varchar(100))
+  input_hasSideEffects : (bit)
+  input_name : (varchar(500))
+  input_refId : (varchar(max))
+  TaskPath : (varchar(8000))
+  - -
+}
+
+entity "[[../ssis.packagetask_dft_component_input_inputcolumn_src.html ssis.PackageTask_Dft_Component_input_inputColumn_src - V]]" as ssis.PackageTask_Dft_Component_input_inputColumn_src << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  **Column_refId** : (varchar(max))
+  Column_cachedDataType : (varchar(100))
+  Column_cachedName : (varchar(max))
+  Column_externalMetadataColumnId : (varchar(max))
+  Column_lineageId : (varchar(max))
+  Component_refId : (varchar(max))
+  - ControlFlowDetailsRowID : (int)
+  input_errorOrTruncationOperation : (varchar(100))
+  input_errorRowDisposition : (varchar(100))
+  input_hasSideEffects : (bit)
+  input_name : (varchar(500))
+  input_refId : (varchar(max))
+  TaskPath : (varchar(8000))
+  - -
+}
+
+entity "[[../ssis.packagetask_dft_component_input_src.html ssis.PackageTask_Dft_Component_input_src - V]]" as ssis.PackageTask_Dft_Component_input_src << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  **input_refId** : (varchar(max))
+  Component_refId : (varchar(max))
+  - ControlFlowDetailsRowID : (int)
+  input_errorOrTruncationOperation : (varchar(100))
+  input_errorRowDisposition : (varchar(100))
+  input_hasSideEffects : (bit)
+  input_name : (varchar(500))
+  TaskPath : (varchar(8000))
+  - -
+}
+
+entity "[[../ssis.packagetask_dft_component_output_externalmetadatacolumn_src.html ssis.PackageTask_Dft_Component_output_externalMetadataColumn_src - V]]" as ssis.PackageTask_Dft_Component_output_externalMetadataColumn_src << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  **Column_refId** : (varchar(max))
+  Column_dataType : (varchar(100))
+  Column_length : (int)
+  Column_name : (varchar(max))
+  Column_precision : (int)
+  Column_scale : (int)
+  Component_refId : (varchar(max))
+  - ControlFlowDetailsRowID : (int)
+  externalMetadataColumns_isused : (bit)
+  output_name : (varchar(500))
+  output_refId : (varchar(max))
+  TaskPath : (varchar(8000))
+  - -
+}
+
+entity "[[../ssis.packagetask_dft_component_output_outputcolumn_src.html ssis.PackageTask_Dft_Component_output_outputcolumn_src - V]]" as ssis.PackageTask_Dft_Component_output_outputcolumn_src << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  **Column_refId** : (varchar(max))
+  Column_dataType : (varchar(100))
+  Column_errorOrTruncationOperation : (varchar(100))
+  Column_errorRowDisposition : (varchar(100))
+  Column_externalMetadataColumnId : (varchar(max))
+  Column_length : (int)
+  Column_lineageId : (varchar(max))
+  Column_name : (varchar(max))
+  Column_precision : (int)
+  Column_scale : (int)
+  Column_truncationRowDisposition : (varchar(max))
+  Component_refId : (varchar(max))
+  - ControlFlowDetailsRowID : (int)
+  output_isErrorOut : (bit)
+  output_name : (varchar(500))
+  output_refId : (varchar(max))
+  TaskPath : (varchar(8000))
+  - -
+}
+
+entity "[[../ssis.packagetask_dft_component_output_src.html ssis.PackageTask_Dft_Component_output_src - V]]" as ssis.PackageTask_Dft_Component_output_src << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  **output_refId** : (varchar(max))
+  Component_refId : (varchar(max))
+  - ControlFlowDetailsRowID : (int)
+  output_isErrorOut : (bit)
+  output_name : (varchar(500))
+  TaskPath : (varchar(8000))
+  - -
+}
+
+entity "[[../ssis.packagetask_dft_component_src.html ssis.PackageTask_Dft_Component_src - V]]" as ssis.PackageTask_Dft_Component_src << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  **Component_refId** : (varchar(max))
+  Component_AccessMode : (varchar(max))
+  Component_AlwaysUseDefaultCodePage : (varchar(max))
+  Component_CommandTimeout : (int)
+  Component_componentClassID : (varchar(max))
+  Component_Connection_description : (varchar(max))
+  Component_Connection_name : (varchar(max))
+  Component_Connection_refId : (varchar(max))
+  Component_connectionManagerID : (varchar(max))
+  Component_connectionManagerRefId : (varchar(max))
+  Component_ContactInfo : (varchar(max))
+  Component_DefaultCodePage : (int)
+  Component_description : (varchar(max))
+  Component_FastLoadKeepIdentity : (bit)
+  Component_FastLoadKeepNulls : (bit)
+  Component_FastLoadMaxInsertCommitSize : (int)
+  Component_FastLoadOptions : (varchar(max))
+  Component_IsSortedProperty : (varchar(10))
+  Component_name : (varchar(max))
+  Component_OpenRowset : (varchar(max))
+  Component_OpenRowsetVariable : (varchar(max))
+  Component_ParameterMapping : (varchar(max))
+  Component_SqlCommand : (varchar(max))
+  Component_SqlCommandVariable : (varchar(max))
+  Component_VariableName : (varchar(max))
+  - ControlFlowDetailsRowID : (int)
+  TaskPath : (varchar(8000))
+  - -
+}
+
+entity "[[../ssis.packagetask_sql_parameter_src.html ssis.PackageTask_Sql_Parameter_src - V]]" as ssis.PackageTask_Sql_Parameter_src << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  **TaskPath** : (varchar(8000))
+  **ParameterBindingSequence** : (varchar(1000))
+  - ControlFlowDetailsRowID : (int)
+  ParameterBindingParameterName : (varchar(1000))
+  ResultSetParameterName : (varchar(1000))
+  - -
+}
+
+entity "[[../ssis.packagetask_src.html ssis.PackageTask_src - V]]" as ssis.PackageTask_src << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  **TaskPath** : (varchar(8000))
+  - ControlFlowDetailsRowID : (int)
+  DelayValidationPropertyValue : (varchar(100))
+  ExecutedPackageName : (varchar(1000))
+  ExecutePackageConnection : (varchar(1000))
+  ExecutePackageExpression : (varchar(1000))
+  ExpressionValue : (varchar(5000))
+  IsDisabled : (varchar(10))
+  Script : (varchar(max))
+  SqlConnection : (uniqueidentifier)
+  SqlStatementSource : (nvarchar(max))
+  TaskDescription : (varchar(max))
+  TaskName : (varchar(2000))
+  TaskType : (varchar(5000))
+  - -
+}
+
+entity "[[../ssis.packagevariable_src.html ssis.PackageVariable_src - V]]" as ssis.PackageVariable_src << V >> {
+  - **AntoraModule** : (varchar(50))
+  **PackageName** : (varchar(200))
+  **VariableName** : (varchar(500))
+  ExpressionValue : (varchar(5000))
+  VariableDataType : (varchar(max))
+  VariableHexValue : (varchar(1000))
+  VariableValue : (varchar(max))
+  - -
+}
+
+entity "[[../ssis.project.html ssis.Project - U]]" as ssis.Project << U >> {
+  - **AntoraModule** : (varchar(50))
+  ProjectPath : (varchar(8000))
+  ~ sql_import : (varchar(8000))
+  - -
+}
+
+entity "[[../ssis.usp_persist_package_tgt.html ssis.usp_PERSIST_Package_tgt - P]]" as ssis.usp_PERSIST_Package_tgt << P >> {
+  - -
+}
+
+entity "[[../ssis_t.pkgstats.html ssis_t.pkgStats - U]]" as ssis_t.pkgStats << U >> {
+  - **RowID** : (int)
+  PackageCreationDate : (datetime)
+  PackageCreatorComputerName : (nvarchar(500))
+  PackageCreatorName : (varchar(1000))
+  PackageDescription : (nvarchar(max))
+  PackageDTSID : (uniqueidentifier)
+  PackageLastModifiedProductVersion : (nvarchar(500))
+  PackageLocaleID : (int)
+  PackageObjectName : (nvarchar(500))
+  - PackagePath : (varchar(8000))
+  PackageProtectionLevel : (varchar(100))
+  PackageVersionGUID : (uniqueidentifier)
+  - PackageXML : (xml)
+  - ProjectPath : (varchar(8000))
+  # PackageName : (varchar(200))
+  ~ PackageProtectionLevelName : (varchar(28))
+  - -
+}
+
+ssis.Package_src <.. ssis.PackageTask_Dft_Component_output_externalMetadataColumn_src
+ssis.Package_src <.. ssis.PackageTask_Dft_Component_input_inputColumn_src
+ssis.Package_src <.. ssis.PackageTask_Dft_Component_src
+ssis.Package_src <.. ssis.PackageTask_Dft_Component_input_src
+ssis.Package_src <.. ssis.PackageTask_Dft_Component_output_src
+ssis.Package_src <.. ssis.PackageTask_Dft_Component_output_outputcolumn_src
+ssis.Package_src <.. ssis.PackageConnection_src
+ssis.Package_src <.. ssis.PackageFlow_src
+ssis.Package_src <.. ssis.PackageParameter_src
+ssis.Package_src <.. ssis.PackageTask_Sql_Parameter_src
+ssis.Package_src <.. ssis.PackageTask_src
+ssis.Package_src <.. ssis.PackageVariable_src
+ssis.Package_src <.. ssis.usp_PERSIST_Package_tgt
+ssis.Package_src <.. ssis.AntoraModule_tgt_filter
+ssis.Package_src <.. ssis.Package_tgt
+ssis.Package_src <.. ssis.PackageTask_Dft_Component_input_externalMetadataColumn_src
+ssis.Project <.. ssis.Package_src
+ssis_t.pkgStats <.. ssis.Package_src
+"ssis.Package_src::AntoraModule" <- - "ssis.PackageConnection_src::AntoraModule"
+"ssis.Package_src::AntoraModule" <- - "ssis.Package_tgt::AntoraModule"
+"ssis.Package_src::AntoraModule" <- - "ssis.AntoraModule_tgt_filter::AntoraModule"
+"ssis.Package_src::AntoraModule" <- - "ssis.PackageTask_Dft_Component_src::AntoraModule"
+"ssis.Package_src::AntoraModule" <- - "ssis.PackageParameter_src::AntoraModule"
+"ssis.Package_src::AntoraModule" <- - "ssis.PackageTask_Sql_Parameter_src::AntoraModule"
+"ssis.Package_src::AntoraModule" <- - "ssis.PackageTask_src::AntoraModule"
+"ssis.Package_src::AntoraModule" <- - "ssis.PackageVariable_src::AntoraModule"
+"ssis.Package_src::AntoraModule" <- - "ssis.PackageFlow_src::AntoraModule"
+"ssis.Package_src::AntoraModule" <- - "ssis.PackageTask_Dft_Component_input_src::AntoraModule"
+"ssis.Package_src::AntoraModule" <- - "ssis.PackageTask_Dft_Component_output_src::AntoraModule"
+"ssis.Package_src::AntoraModule" <- - "ssis.PackageTask_Dft_Component_output_outputcolumn_src::AntoraModule"
+"ssis.Package_src::AntoraModule" <- - "ssis.PackageTask_Dft_Component_output_externalMetadataColumn_src::AntoraModule"
+"ssis.Package_src::AntoraModule" <- - "ssis.PackageTask_Dft_Component_input_inputColumn_src::AntoraModule"
+"ssis.Package_src::AntoraModule" <- - "ssis.PackageTask_Dft_Component_input_externalMetadataColumn_src::AntoraModule"
+"ssis.Package_src::PackageCreationDate" <- - "ssis.Package_tgt::PackageCreationDate"
+"ssis.Package_src::PackageCreatorComputerName" <- - "ssis.Package_tgt::PackageCreatorComputerName"
+"ssis.Package_src::PackageCreatorName" <- - "ssis.Package_tgt::PackageCreatorName"
+"ssis.Package_src::PackageDescription" <- - "ssis.Package_tgt::PackageDescription"
+"ssis.Package_src::PackageDTSID" <- - "ssis.Package_tgt::PackageDTSID"
+"ssis.Package_src::PackageLastModifiedProductVersion" <- - "ssis.Package_tgt::PackageLastModifiedProductVersion"
+"ssis.Package_src::PackageLocaleID" <- - "ssis.Package_tgt::PackageLocaleID"
+"ssis.Package_src::PackageName" <- - "ssis.Package_tgt::PackageName"
+"ssis.Package_src::PackageName" <- - "ssis.PackageConnection_src::PackageName"
+"ssis.Package_src::PackageName" <- - "ssis.PackageTask_src::PackageName"
+"ssis.Package_src::PackageName" <- - "ssis.PackageVariable_src::PackageName"
+"ssis.Package_src::PackageName" <- - "ssis.PackageFlow_src::PackageName"
+"ssis.Package_src::PackageName" <- - "ssis.PackageParameter_src::PackageName"
+"ssis.Package_src::PackageName" <- - "ssis.PackageTask_Sql_Parameter_src::PackageName"
+"ssis.Package_src::PackageName" <- - "ssis.PackageTask_Dft_Component_src::PackageName"
+"ssis.Package_src::PackageName" <- - "ssis.PackageTask_Dft_Component_input_externalMetadataColumn_src::PackageName"
+"ssis.Package_src::PackageName" <- - "ssis.PackageTask_Dft_Component_input_inputColumn_src::PackageName"
+"ssis.Package_src::PackageName" <- - "ssis.PackageTask_Dft_Component_output_externalMetadataColumn_src::PackageName"
+"ssis.Package_src::PackageName" <- - "ssis.PackageTask_Dft_Component_output_outputcolumn_src::PackageName"
+"ssis.Package_src::PackageName" <- - "ssis.PackageTask_Dft_Component_output_src::PackageName"
+"ssis.Package_src::PackageName" <- - "ssis.PackageTask_Dft_Component_input_src::PackageName"
+"ssis.Package_src::PackageObjectName" <- - "ssis.Package_tgt::PackageObjectName"
+"ssis.Package_src::PackagePath" <- - "ssis.Package_tgt::PackagePath"
+"ssis.Package_src::PackageProtectionLevel" <- - "ssis.Package_tgt::PackageProtectionLevel"
+"ssis.Package_src::PackageProtectionLevelName" <- - "ssis.Package_tgt::PackageProtectionLevelName"
+"ssis.Package_src::PackageVersionGUID" <- - "ssis.Package_tgt::PackageVersionGUID"
+"ssis.Package_src::ProjectPath" <- - "ssis.Package_tgt::ProjectPath"
+"ssis.Package_src::RowID" <- - "ssis.Package_tgt::RowID"
+"ssis.Project::AntoraModule" <- - "ssis.Package_src::AntoraModule"
+"ssis_t.pkgStats::PackageCreationDate" <- - "ssis.Package_src::PackageCreationDate"
+"ssis_t.pkgStats::PackageCreatorComputerName" <- - "ssis.Package_src::PackageCreatorComputerName"
+"ssis_t.pkgStats::PackageCreatorName" <- - "ssis.Package_src::PackageCreatorName"
+"ssis_t.pkgStats::PackageDescription" <- - "ssis.Package_src::PackageDescription"
+"ssis_t.pkgStats::PackageDTSID" <- - "ssis.Package_src::PackageDTSID"
+"ssis_t.pkgStats::PackageLastModifiedProductVersion" <- - "ssis.Package_src::PackageLastModifiedProductVersion"
+"ssis_t.pkgStats::PackageLocaleID" <- - "ssis.Package_src::PackageLocaleID"
+"ssis_t.pkgStats::PackageName" <- - "ssis.Package_src::PackageName"
+"ssis_t.pkgStats::PackageObjectName" <- - "ssis.Package_src::PackageObjectName"
+"ssis_t.pkgStats::PackagePath" <- - "ssis.Package_src::PackagePath"
+"ssis_t.pkgStats::PackageProtectionLevel" <- - "ssis.Package_src::PackageProtectionLevel"
+"ssis_t.pkgStats::PackageProtectionLevelName" <- - "ssis.Package_src::PackageProtectionLevelName"
+"ssis_t.pkgStats::PackageVersionGUID" <- - "ssis.Package_src::PackageVersionGUID"
+"ssis_t.pkgStats::ProjectPath" <- - "ssis.Package_src::ProjectPath"
+"ssis_t.pkgStats::RowID" <- - "ssis.Package_src::RowID"
+
+footer The diagram is interactive and contains links.
+@enduml
+
+PlantUML version 1.2021.16(Wed Dec 08 17:25:22 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

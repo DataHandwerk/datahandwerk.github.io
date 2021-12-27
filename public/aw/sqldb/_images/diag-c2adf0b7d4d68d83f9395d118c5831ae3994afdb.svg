@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="126px" preserveAspectRatio="none" style="width:198px;height:126px;background:#FFFFFF;" version="1.1" viewBox="0 0 198 126" width="198px" zoomAndPan="magnify"><defs><filter height="300%" id="f1cmuz4i8wgv4p" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[20758a32584cdb774aeee67ee517df24]
+class Sales.Currency--><rect codeLine="28" fill="#FFFFFF" filter="url(#f1cmuz4i8wgv4p)" height="94.3999" id="Sales.Currency" style="stroke:#A80036;stroke-width:1.5;" width="161" x="15" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="86" y="24.0001">«U»</text><a href="../sales.currency.html" target="_top" title="../sales.currency.html" xlink:actuate="onRequest" xlink:href="../sales.currency.html" xlink:show="new" xlink:title="../sales.currency.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="99" x="46" y="38.4002">Sales.Currency - U</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="16" x2="175" y1="45.8002" y2="45.8002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="23" y="53.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="76" x="35" y="60.8001">CurrencyCode</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="56" x="114" y="60.8001">: (nchar(3))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="23" y="67.0001"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="121" x="35" y="74">ModifiedDate : (datetime)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="23" y="80.2"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="75" x="35" y="87.1999">Name : (Name)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="16" x2="175" y1="93.3999" y2="93.3999"/><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="191" x="0" y="118.3999">The diagram is interactive and contains links.</text><!--MD5=[691cd354cbbc78384c582d37fa094728]
+@startuml
+left to right direction
+'top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>>  Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>>  White
+  BackgroundColor<<V>>  WhiteSmoke
+  BackgroundColor<<X>>  Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../sales.currency.html Sales.Currency - U]]" as Sales.Currency << U >> {
+  - **CurrencyCode** : (nchar(3))
+  - ModifiedDate : (datetime)
+  - Name : (Name)
+  - -
+}
+
+
+
+
+footer The diagram is interactive and contains links.
+@enduml
+
+@startuml
+left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>>  Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>>  White
+  BackgroundColor<<V>>  WhiteSmoke
+  BackgroundColor<<X>>  Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../sales.currency.html Sales.Currency - U]]" as Sales.Currency << U >> {
+  - **CurrencyCode** : (nchar(3))
+  - ModifiedDate : (datetime)
+  - Name : (Name)
+  - -
+}
+
+
+
+
+footer The diagram is interactive and contains links.
+@enduml
+
+PlantUML version 1.2021.16(Wed Dec 08 17:25:22 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

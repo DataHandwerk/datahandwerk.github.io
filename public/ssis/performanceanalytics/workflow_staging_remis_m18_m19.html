@@ -7,7 +7,7 @@
     <link rel="canonical" href="https://datahandwerk.gitlab.io/ssis/performanceanalytics/workflow_staging_remis_m18_m19.html">
     <link rel="prev" href="workflow_staging_remis.html">
     <link rel="next" href="workflow_sth_remis.html">
-    <meta name="generator" content="Antora 3.0.0-beta.2">
+    <meta name="generator" content="Antora 3.0.0">
     <link rel="stylesheet" href="../../_/css/site.css">
     <link rel="stylesheet" href="../../_/css/custom.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4RM6Q8D27"></script>
@@ -35,12 +35,10 @@
             <a class="navbar-item" href="https://datahandwerk.zulipchat.com/" target="_blank">dhw community on Zulip (streams with topics)</a>
           </div>
         </div>
-        <div class="navbar-item">
-          <form action="https://www.google.com/search" method="get" target="searchresult">
-              <input type="hidden" name="q" value="site:datahandwerk.gitlab.io">
-              <input type="text" name="q" alt="search">
-              <input type="submit" value="Search">
-          </form>
+        <div class="navbar-item search hide-for-print">
+          <div id="search-field" class="field">
+            <input id="search-input" type="text" placeholder="Search the docs">
+          </div>
         </div>
       </div>
     </div>
@@ -610,6 +608,12 @@
 <td class="tableblock halign-left valign-top"><div class="literal"><pre>False</pre></div></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Executed PackageName</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><a href="sth_date_portfolio_remis.html" class="xref page">sth_Date_Portfolio_Remis.dtsx</a></p>
+</div></div></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Execute Package Connection</p></td>
 <td class="tableblock halign-left valign-top"><div class="literal"><pre>{97A7A43B-109C-49C5-9F7A-24E3EED3450A}</pre></div></td>
 </tr>
@@ -639,6 +643,12 @@
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Is Disabled</p></td>
 <td class="tableblock halign-left valign-top"><div class="literal"><pre>False</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Executed PackageName</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><a href="sti_remis_pa.html" class="xref page">sti_remis_pa.dtsx</a></p>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Execute Package Connection</p></td>
@@ -843,6 +853,12 @@ WHERE        (Date_Portfolio_Source = N'M18_M19')</code></pre>
 <td class="tableblock halign-left valign-top"><div class="literal"><pre>C:\AC\SSIS_PerformanceAnalytics\sth_Date_Portfolio_Remis.dtsx</pre></div></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Package Link</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><a href="sth_date_portfolio_remis.html" class="xref page">sth_Date_Portfolio_Remis.dtsx</a></p>
+</div></div></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerID</p></td>
 <td class="tableblock halign-left valign-top"><div class="literal"><pre>97A7A43B-109C-49C5-9F7A-24E3EED3450A</pre></div></td>
 </tr>
@@ -864,6 +880,12 @@ WHERE        (Date_Portfolio_Source = N'M18_M19')</code></pre>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionString</p></td>
 <td class="tableblock halign-left valign-top"><div class="literal"><pre>C:\AC\SSIS_PerformanceAnalytics\sti_remis_pa.dtsx</pre></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Package Link</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><a href="sti_remis_pa.html" class="xref page">sti_remis_pa.dtsx</a></p>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ConnectionManagerID</p></td>
@@ -996,5 +1018,8 @@ WHERE        (Date_Portfolio_Source = N'M18_M19')</code></pre>
 </style>
 <script src="../../_/js/site.js"></script>
 <script async src="../../_/js/vendor/highlight.js"></script>
+<script src="../../_/js/vendor/lunr.js"></script>
+<script src="../../_/js/search-ui.js" id="search-script" data-site-root-path="../.." data-stylesheet="../../_/css/search.css"></script>
+<script async src="../../search-index.js"></script>
   </body>
 </html>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="140px" preserveAspectRatio="none" style="width:319px;height:140px;background:#FFFFFF;" version="1.1" viewBox="0 0 319 140" width="319px" zoomAndPan="magnify"><defs><filter height="300%" id="fpcf48tvjh2t2" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[1ca38e81f5b8ece272480ffa0506d2dd]
+class Sales.PersonCreditCard--><rect codeLine="28" fill="#FFFFFF" filter="url(#fpcf48tvjh2t2)" height="107.5998" id="Sales.PersonCreditCard" style="stroke:#A80036;stroke-width:1.5;" width="298" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="146.5" y="24.0001">«U»</text><a href="../sales.personcreditcard.html" target="_top" title="../sales.personcreditcard.html" xlink:actuate="onRequest" xlink:href="../sales.personcreditcard.html" xlink:show="new" xlink:title="../sales.personcreditcard.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="147" x="82.5" y="38.4002">Sales.PersonCreditCard - U</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="304" y1="45.8002" y2="45.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="286" x="13" y="60.8001">PK_PersonCreditCard_BusinessEntityID_CreditCardID</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="0" x="16" y="74"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="8" x2="304" y1="80.2" y2="80.2"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="96" x="13" y="95.1999">BusinessEntityID; int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="81" x="13" y="108.3998">CreditCardID; int</text><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="191" x="60.5" y="131.5998">The diagram is interactive and contains links.</text><!--MD5=[19105cc2589a548f8c882e55058c204c]
+@startuml
+left to right direction
+'top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>>  Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>>  White
+  BackgroundColor<<V>>  WhiteSmoke
+  BackgroundColor<<X>>  Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../sales.personcreditcard.html Sales.PersonCreditCard - U]]" as Sales.PersonCreditCard << U >> {
+**PK_PersonCreditCard_BusinessEntityID_CreditCardID**
+
+..
+BusinessEntityID; int
+CreditCardID; int
+}
+
+
+
+footer The diagram is interactive and contains links.
+@enduml
+
+@startuml
+left to right direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>>  Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>>  White
+  BackgroundColor<<V>>  WhiteSmoke
+  BackgroundColor<<X>>  Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../sales.personcreditcard.html Sales.PersonCreditCard - U]]" as Sales.PersonCreditCard << U >> {
+**PK_PersonCreditCard_BusinessEntityID_CreditCardID**
+
+..
+BusinessEntityID; int
+CreditCardID; int
+}
+
+
+
+footer The diagram is interactive and contains links.
+@enduml
+
+PlantUML version 1.2021.16(Wed Dec 08 17:25:22 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

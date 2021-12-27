@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="273px" preserveAspectRatio="none" style="width:335px;height:273px;background:#FFFFFF;" version="1.1" viewBox="0 0 335 273" width="335px" zoomAndPan="magnify"><defs><filter height="300%" id="f1q22ekvz4hqs4" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[d67e26885e9621e58d4c47f9bfceb4eb]
+class ssis.PackageTask_Dft_Component_input_inputColumn--><rect codeLine="28" fill="#FFFFFF" filter="url(#f1q22ekvz4hqs4)" height="252.7987" id="ssis.PackageTask_Dft_Component_input_inputColumn" style="stroke:#A80036;stroke-width:1.5;" width="314" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="154.5" y="24.0001">«U»</text><a href="../ssis.packagetask_dft_component_input_inputcolumn.html" target="_top" title="../ssis.packagetask_dft_component_input_inputcolumn.html" xlink:actuate="onRequest" xlink:href="../ssis.packagetask_dft_component_input_inputcolumn.html" xlink:show="new" xlink:title="../ssis.packagetask_dft_component_input_inputcolumn.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="308" x="10" y="38.4002">ssis.PackageTask_Dft_Component_input_inputColumn - U</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="320" y1="45.8002" y2="45.8002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="53.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="141" x="27" y="60.8001">AntoraModule : (varchar(50))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="206" x="27" y="74">Column_cachedDataType : (varchar(100))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="190" x="27" y="87.1999">Column_cachedName : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="254" x="27" y="100.3998">Column_externalMetadataColumnId : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="168" x="27" y="113.5997">Column_lineageId : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="147" x="27" y="126.7996">Column_refId : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="166" x="27" y="139.9995">Component_refId : (varchar(max))</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="146.1995"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="151" x="27" y="153.1994">ControlFlowDetailsRowID : (int)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="246" x="27" y="166.3993">input_errorOrTruncationOperation : (varchar(100))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="206" x="27" y="179.5992">input_errorRowDisposition : (varchar(100))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="27" y="192.7991">input_hasSideEffects : (bit)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="136" x="27" y="205.999">input_name : (varchar(500))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="133" x="27" y="219.1989">input_refId : (varchar(max))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="152" x="27" y="232.3988">PackageName : (varchar(200))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="132" x="27" y="245.5987">TaskPath : (varchar(8000))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="320" y1="251.7987" y2="251.7987"/><!--MD5=[239d320fb4b766aabeeab2b9def8c138]
+@startuml
+'Left to right direction
+top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>>  Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>>  White
+  BackgroundColor<<V>>  WhiteSmoke
+  BackgroundColor<<X>>  Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../ssis.packagetask_dft_component_input_inputcolumn.html ssis.PackageTask_Dft_Component_input_inputColumn - U]]" as ssis.PackageTask_Dft_Component_input_inputColumn << U >> {
+  - AntoraModule : (varchar(50))
+  Column_cachedDataType : (varchar(100))
+  Column_cachedName : (varchar(max))
+  Column_externalMetadataColumnId : (varchar(max))
+  Column_lineageId : (varchar(max))
+  Column_refId : (varchar(max))
+  Component_refId : (varchar(max))
+  - ControlFlowDetailsRowID : (int)
+  input_errorOrTruncationOperation : (varchar(100))
+  input_errorRowDisposition : (varchar(100))
+  input_hasSideEffects : (bit)
+  input_name : (varchar(500))
+  input_refId : (varchar(max))
+  PackageName : (varchar(200))
+  TaskPath : (varchar(8000))
+  - -
+}
+@enduml
+
+@startuml
+top to bottom direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>>  Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>>  White
+  BackgroundColor<<V>>  WhiteSmoke
+  BackgroundColor<<X>>  Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../ssis.packagetask_dft_component_input_inputcolumn.html ssis.PackageTask_Dft_Component_input_inputColumn - U]]" as ssis.PackageTask_Dft_Component_input_inputColumn << U >> {
+  - AntoraModule : (varchar(50))
+  Column_cachedDataType : (varchar(100))
+  Column_cachedName : (varchar(max))
+  Column_externalMetadataColumnId : (varchar(max))
+  Column_lineageId : (varchar(max))
+  Column_refId : (varchar(max))
+  Component_refId : (varchar(max))
+  - ControlFlowDetailsRowID : (int)
+  input_errorOrTruncationOperation : (varchar(100))
+  input_errorRowDisposition : (varchar(100))
+  input_hasSideEffects : (bit)
+  input_name : (varchar(500))
+  input_refId : (varchar(max))
+  PackageName : (varchar(200))
+  TaskPath : (varchar(8000))
+  - -
+}
+@enduml
+
+PlantUML version 1.2021.16(Wed Dec 08 17:25:22 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

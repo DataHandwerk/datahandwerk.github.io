@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="234px" preserveAspectRatio="none" style="width:219px;height:234px;background:#FFFFFF;" version="1.1" viewBox="0 0 219 234" width="219px" zoomAndPan="magnify"><defs><filter height="300%" id="fr49zjs4hx4k2" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[23379ab4f048eb74c9b25d02082ccc14]
+class property.MeasureProperty--><rect codeLine="28" fill="#FFFFFF" filter="url(#fr49zjs4hx4k2)" height="68.0001" id="property.MeasureProperty" style="stroke:#A80036;stroke-width:1.5;" width="160" x="26" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="96.5" y="24.0001">«U»</text><a href="../property.measureproperty.html" target="_top" title="../property.measureproperty.html" xlink:actuate="onRequest" xlink:href="../property.measureproperty.html" xlink:show="new" xlink:title="../property.measureproperty.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="154" x="29" y="38.4002">property.MeasureProperty - U</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="27" x2="185" y1="45.8002" y2="45.8002"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="34" y="53.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="106" x="46" y="60.8001">MeasureProperty_id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="25" x="155" y="60.8001">: (int)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="27" x2="185" y1="67.0001" y2="67.0001"/><!--MD5=[f89054bfea513859317a79f1caa54aa6]
+class property.PropertyName_Measure--><rect codeLine="33" fill="#F5F5F5" filter="url(#fr49zjs4hx4k2)" height="68.0001" id="property.PropertyName_Measure" style="stroke:#A80036;stroke-width:1.5;" width="198" x="7" y="135"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="97" y="152.0001">«V»</text><a href="../property.propertyname_measure.html" target="_top" title="../property.propertyname_measure.html" xlink:actuate="onRequest" xlink:href="../property.propertyname_measure.html" xlink:show="new" xlink:title="../property.propertyname_measure.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="192" x="10" y="166.4002">property.PropertyName_Measure - V</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="204" y1="173.8002" y2="173.8002"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="80" x="13" y="188.8001">property_name</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="83" x="96" y="188.8001">: (nvarchar(128))</text><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="204" y1="195.0001" y2="195.0001"/><!--MD5=[a840f8b297574dfe9da87200a6e248fa]
+reverse link property.MeasureProperty to property.PropertyName_Measure--><path codeLine="38" d="M106,80.38 C106,97.71 106,118 106,134.68 " fill="none" id="property.MeasureProperty-backto-property.PropertyName_Measure" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="106,75.11,102.0257,84.1214,106.0143,80.11,110.0257,84.0985,106,75.11" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="191" x="7.5" y="226.0001">The diagram is interactive and contains links.</text><!--MD5=[bb0842b2cb978a7102084add8e99d327]
+@startuml
+'Left to right direction
+top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>>  Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>>  White
+  BackgroundColor<<V>>  WhiteSmoke
+  BackgroundColor<<X>>  Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../property.measureproperty.html property.MeasureProperty - U]]" as property.MeasureProperty << U >> {
+  - **MeasureProperty_id** : (int)
+  - -
+}
+
+entity "[[../property.propertyname_measure.html property.PropertyName_Measure - V]]" as property.PropertyName_Measure << V >> {
+  **property_name** : (nvarchar(128))
+  - -
+}
+
+property.MeasureProperty <.. property.PropertyName_Measure
+
+footer The diagram is interactive and contains links.
+@enduml
+
+@startuml
+top to bottom direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>>  Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>>  White
+  BackgroundColor<<V>>  WhiteSmoke
+  BackgroundColor<<X>>  Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../property.measureproperty.html property.MeasureProperty - U]]" as property.MeasureProperty << U >> {
+  - **MeasureProperty_id** : (int)
+  - -
+}
+
+entity "[[../property.propertyname_measure.html property.PropertyName_Measure - V]]" as property.PropertyName_Measure << V >> {
+  **property_name** : (nvarchar(128))
+  - -
+}
+
+property.MeasureProperty <.. property.PropertyName_Measure
+
+footer The diagram is interactive and contains links.
+@enduml
+
+PlantUML version 1.2021.16(Wed Dec 08 17:25:22 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

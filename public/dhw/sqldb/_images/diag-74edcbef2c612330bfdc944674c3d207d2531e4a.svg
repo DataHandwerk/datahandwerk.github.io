@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="208px" preserveAspectRatio="none" style="width:216px;height:208px;background:#FFFFFF;" version="1.1" viewBox="0 0 216 208" width="216px" zoomAndPan="magnify"><defs><filter height="300%" id="fowc72mpudivj" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[165334f8756871db2b9a4af31463c4e7]
+class ssis_t.TblProjectConnection_src--><rect codeLine="28" fill="#F5F5F5" filter="url(#fowc72mpudivj)" height="54.8002" id="ssis_t.TblProjectConnection_src" style="stroke:#A80036;stroke-width:1.5;" width="192" x="8.5" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="95.5" y="24.0001">«V»</text><a href="../ssis_t.tblprojectconnection_src.html" target="_top" title="../ssis_t.tblprojectconnection_src.html" xlink:actuate="onRequest" xlink:href="../ssis_t.tblprojectconnection_src.html" xlink:show="new" xlink:title="../ssis_t.tblprojectconnection_src.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="186" x="11.5" y="38.4002">ssis_t.TblProjectConnection_src - V</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="9.5" x2="199.5" y1="45.8002" y2="45.8002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="9.5" x2="199.5" y1="53.8002" y2="53.8002"/><!--MD5=[efc0b16feea38c91acc7e22681d73bb6]
+class ssis_t.usp_GetProjectConnection--><rect codeLine="32" fill="#00FFFF" filter="url(#fowc72mpudivj)" height="54.8002" id="ssis_t.usp_GetProjectConnection" style="stroke:#A80036;stroke-width:1.5;" width="195" x="7" y="122"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="18" x="95.5" y="139.0001">«P»</text><a href="../ssis_t.usp_getprojectconnection.html" target="_top" title="../ssis_t.usp_getprojectconnection.html" xlink:actuate="onRequest" xlink:href="../ssis_t.usp_getprojectconnection.html" xlink:show="new" xlink:title="../ssis_t.usp_getprojectconnection.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="189" x="10" y="153.4002">ssis_t.usp_GetProjectConnection - P</text></a><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="201" y1="160.8002" y2="160.8002"/><line style="stroke:#A80036;stroke-width:1.0;" x1="8" x2="201" y1="168.8002" y2="168.8002"/><!--MD5=[86c1177738878d7a986360d92103a910]
+reverse link ssis_t.TblProjectConnection_src to ssis_t.usp_GetProjectConnection--><path codeLine="36" d="M104.5,67.48 C104.5,84.68 104.5,105.62 104.5,121.91 " fill="none" id="ssis_t.TblProjectConnection_src-backto-ssis_t.usp_GetProjectConnection" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="104.5,62.28,100.5,71.28,104.5,67.28,108.5,71.28,104.5,62.28" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="191" x="6" y="199.8002">The diagram is interactive and contains links.</text><!--MD5=[493a0bcef53d6e4e1e0fcc95058993d0]
+@startuml
+'Left to right direction
+top to bottom direction
+hide circle
+'avoide "." issues:
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>>  Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>>  White
+  BackgroundColor<<V>>  WhiteSmoke
+  BackgroundColor<<X>>  Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../ssis_t.tblprojectconnection_src.html ssis_t.TblProjectConnection_src - V]]" as ssis_t.TblProjectConnection_src << V >> {
+  - -
+}
+
+entity "[[../ssis_t.usp_getprojectconnection.html ssis_t.usp_GetProjectConnection - P]]" as ssis_t.usp_GetProjectConnection << P >> {
+  - -
+}
+
+ssis_t.TblProjectConnection_src <.. ssis_t.usp_GetProjectConnection
+
+footer The diagram is interactive and contains links.
+@enduml
+
+@startuml
+top to bottom direction
+hide circle
+set namespaceSeparator none
+
+
+skinparam class {
+  BackgroundColor White
+  BackgroundColor<<FN>> Yellow
+  BackgroundColor<<FS>> Yellow
+  BackgroundColor<<FT>> LightGray
+  BackgroundColor<<IF>> Yellow
+  BackgroundColor<<IS>> Yellow
+  BackgroundColor<<P>>  Aqua
+  BackgroundColor<<PC>> Aqua
+  BackgroundColor<<SN>> Yellow
+  BackgroundColor<<SO>> SlateBlue
+  BackgroundColor<<TF>> LightGray
+  BackgroundColor<<TR>> Tomato
+  BackgroundColor<<U>>  White
+  BackgroundColor<<V>>  WhiteSmoke
+  BackgroundColor<<X>>  Aqua
+  BackgroundColor<<external>> AliceBlue
+}
+
+
+entity "[[../ssis_t.tblprojectconnection_src.html ssis_t.TblProjectConnection_src - V]]" as ssis_t.TblProjectConnection_src << V >> {
+  - -
+}
+
+entity "[[../ssis_t.usp_getprojectconnection.html ssis_t.usp_GetProjectConnection - P]]" as ssis_t.usp_GetProjectConnection << P >> {
+  - -
+}
+
+ssis_t.TblProjectConnection_src <.. ssis_t.usp_GetProjectConnection
+
+footer The diagram is interactive and contains links.
+@enduml
+
+PlantUML version 1.2021.16(Wed Dec 08 17:25:22 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

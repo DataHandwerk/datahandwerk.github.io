@@ -24,8 +24,14 @@ ____
 
 ....
 node -e "require('fs').writeFileSync('package.json', '{}')"
-npm i -D @antora/cli@3.0.0-beta.2 @antora/site-generator-default@3.0.0-beta.2
+
+npm i -D @antora/cli@testing @antora/site-generator@testing
+npm i -D @antora/cli@3.0.0-beta.4 @antora/site-generator@3.0.0-beta.4
+
+npm i -D @antora/cli @antora/site-generator
 npm i -D asciidoctor asciidoctor-kroki
+npm i -D @antora/lunr-extension
+
 
 npx antora antora-playbook-test.yml --stacktrace
 npx antora antora-playbook-local.yml --stacktrace
@@ -34,6 +40,16 @@ npx antora antora-playbook-local.yml --stacktrace --log-file antora-local.log
 npx antora antora-playbook-public.yml --stacktrace --log-file antora-public.log
 ....
 
+check the installed versions
+....
+npm list --depth 0. 
+....
+
+== lunr issues
+
+____
+It appears that JavaScript is running out of memory, possibly when building the index. You can increase the memory size using the environment variable `NODE_OPTIONS = "--max-old-space-size=8192"` or similar. That is a general problem with using Lunr and not directly related to this extension.
+____
 
 == GitHub pages vs GtLab Pages
 

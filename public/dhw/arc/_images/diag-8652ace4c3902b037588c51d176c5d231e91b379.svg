@@ -4,7 +4,7 @@ entity 2--><rect fill="#DDDDDD" height="51.2" style="stroke:#DDDDDD;stroke-width
 entity 3--><rect fill="#DDDDDD" height="84.7999" style="stroke:#DDDDDD;stroke-width:1.5;" width="172" x="32" y="62.5999"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="152" x="42" y="88.5999">Project B DWH User</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="36" x="100" y="101.7999">[Person]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="120" y="117.7998"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="148" x="44" y="134.5998">user of DWH (Project B)</text><!--MD5=[b6d0185b0422599d1d13f977d85ea789]
 entity 28--><rect fill="#DDDDDD" height="51.2" style="stroke:#DDDDDD;stroke-width:1.5;" width="163" x="96.5" y="232.5999"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="143" x="106.5" y="258.5999">DWH B Production</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="80" x="138" y="271.7999">[Software System]</text><!--MD5=[c884baaa33b8b3c167cea6593841b2a1]
 link 2 to 28--><path d="M295.19,130.6999 C270.28,157.5699 230.43,200.5499 204.24,228.7999 " fill="none" id="2-to-28" style="stroke:#707070;stroke-width:2.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#707070" points="200.8,232.5099,209.85,228.6244,204.1973,228.8413,203.9804,223.1886,200.8,232.5099" style="stroke:#707070;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="100" x="249" y="188.5999">deployes on production</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="31" x="283.5" y="200.5998">system</text><!--MD5=[7635191503cb2bdf4b2dacce0912f9e1]
-link 3 to 28--><path d="M134.55,147.7599 C144.66,173.1899 157.33,205.0699 166.37,227.8399 " fill="none" id="3-to-28" style="stroke:#707070;stroke-width:2.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#707070" points="168.25,232.5499,168.6579,222.7095,166.4103,227.9006,161.2191,225.653,168.25,232.5499" style="stroke:#707070;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="20" x="156" y="194.5999">uses</text><!--MD5=[f605aad11ec68432279c63ac37a6150a]
+link 3 to 28--><path d="M134.55,147.7599 C144.66,173.1899 157.33,205.0699 166.37,227.8399 " fill="none" id="3-to-28" style="stroke:#707070;stroke-width:2.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#707070" points="168.25,232.5499,168.6579,222.7095,166.4103,227.9006,161.2191,225.653,168.25,232.5499" style="stroke:#707070;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="20" x="156" y="194.5999">uses</text><!--MD5=[dbb3e4f9efd238bd12d8ac4d2e7fbc94]
 @startuml
 title DWH B Production - System Context
 
@@ -41,7 +41,7 @@ package "Customer" {
 3 .[#707070,thickness=2].> 28 : "uses"
 @enduml
 
-PlantUML version 1.2021.10(Mon Aug 30 13:43:48 GMT 2021)
+PlantUML version 1.2021.16(Wed Dec 08 17:25:22 GMT 2021)
 (GPL source distribution)
 Java Runtime: OpenJDK Runtime Environment
 JVM: OpenJDK 64-Bit Server VM

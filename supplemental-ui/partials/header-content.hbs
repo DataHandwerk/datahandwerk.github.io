@@ -30,13 +30,20 @@
             {{!-- <a class="navbar-item" href="https://dev.azure.com/DataHandwerk/DataHandwerk-toolkit-mssql/_boards/board/t/DataHandwerk-toolkit-mssql%20Team/Stories" target="_blank">Azure Boards</a> --}}
           </div>
         </div>
-        <div class="navbar-item">
+        {{#if env.SITE_SEARCH_PROVIDER}}
+        <div class="navbar-item search hide-for-print">
+          <div id="search-field" class="field">
+            <input id="search-input" type="text" placeholder="Search the docs"{{#if page.home}} autofocus{{/if}}>
+          </div>
+        </div>
+        {{/if}}
+        {{!-- <div class="navbar-item">
           <form action="https://www.google.com/search" method="get" target="searchresult">
               <input type="hidden" name="q" value="site:datahandwerk.gitlab.io">
               <input type="text" name="q" alt="search">
               <input type="submit" value="Search">
           </form>
-        </div>
+        </div> --}}
         {{!-- <div class="navbar-item">
           <form action="https://www.google.com/search" class="d-flex">
                   <input name="q" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
