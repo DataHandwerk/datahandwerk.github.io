@@ -1,11 +1,22 @@
-image: alpine:latest
+image:
+  name: antora/antora:3.0.0
+
+# workaround for @antora/lunr-extension
+variables:
+  NODE_OPTIONS: "--max-old-space-size=4096"
+
+before_script:
+  - npm i asciidoctor-kroki @antora/lunr-extension
 
 pages:
   stage: deploy
+  only:
+  - main@datahandwerk/datahandwerk.gitlab.io
+  cache:
+    paths:
+    - .cache/
   script:
-    - echo 'Nothing to do...'
+  - antora --fetch --cache-dir .cache/antora --attribute page-pagination= --redirect-facility gitlab --to-dir public antora-playbook-public.yml
   artifacts:
     paths:
-      - public
-  only:
-    - master
+    - public/

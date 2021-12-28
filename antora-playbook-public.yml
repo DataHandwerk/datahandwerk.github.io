@@ -8,26 +8,26 @@ site:
     google_analytics: 'G-L4RM6Q8D27'
 content:
   sources:
-  - url: D:\Repos\gitlab\DataHandwerk\dhw-antora-docs
-  # - url: https://gitlab.com/datahandwerk/dhw-antora-docs.git
+  # - url: D:\Repos\gitlab\DataHandwerk\dhw-antora-docs
+  - url: https://gitlab.com/datahandwerk/dhw-antora-docs.git
     branches:
     - HEAD
     # - v*
     start_path: docs
-  - url: D:\Repos\gitlab\DataHandwerk\dhw-antora-sqldb
-  # - url: https://gitlab.com/datahandwerk/dhw-antora-sqldb.git
+  # - url: D:\Repos\gitlab\DataHandwerk\dhw-antora-sqldb
+  - url: https://gitlab.com/datahandwerk/dhw-antora-sqldb.git
     branches:
     - HEAD
     # - v*
     start_paths: docs, docsmanual
   - url: D:\Repos\gitlab\DataHandwerk\dhw-antora-adventureworks
-  # - url: https://gitlab.com/datahandwerk/dhw-antora-adventureworks.git
+  - url: https://gitlab.com/datahandwerk/dhw-antora-adventureworks.git
     branches:
     - HEAD
     # - v*
     start_paths: docs, docsmanual
-  - url: D:\Repos\gitlab\DataHandwerk\dhw-antora-ssis
-  # - url: https://gitlab.com/datahandwerk/dhw-antora-ssis.git
+  # - url: D:\Repos\gitlab\DataHandwerk\dhw-antora-ssis
+  - url: https://gitlab.com/datahandwerk/dhw-antora-ssis.git
     branches:
     - HEAD
     # - v*
@@ -70,8 +70,8 @@ output:
 urls:
   latest_version_segment: current
   # no redirects will be created in combination with redirect_facility: static
-  # but this could be useful if the site would be published on netlify or gitlab
-  # but the required redirect logic is not supported on github
+  # but redirects could be useful if the site would be published on netlify or gitlab
+  # the required redirect logic is not supported on github
   # 'redirect:to' will create 'current' instead of the latest version
   # this would allow static link to the latest version, also on github
   # but it will not work for renamed, added, deleted pages

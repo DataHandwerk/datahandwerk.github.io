@@ -29,9 +29,11 @@ npm i -D @antora/cli@testing @antora/site-generator@testing
 npm i -D @antora/cli@3.0.0-beta.4 @antora/site-generator@3.0.0-beta.4
 
 npm i -D @antora/cli @antora/site-generator
-npm i -D asciidoctor asciidoctor-kroki
+npm i -D asciidoctor-kroki
 npm i -D @antora/lunr-extension
 
+
+SET NODE_OPTIONS = "--max-old-space-size=8192"
 
 npx antora antora-playbook-test.yml --stacktrace
 npx antora antora-playbook-local.yml --stacktrace
