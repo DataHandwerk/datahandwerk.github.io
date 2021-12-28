@@ -11,7 +11,7 @@ before_script:
 pages:
   stage: deploy
   only:
-  - main@datahandwerk/datahandwerk.gitlab.io
+  - master
   cache:
     paths:
     - .cache/
